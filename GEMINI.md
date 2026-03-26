@@ -37,6 +37,29 @@ All skills live in `Teams/skills/`. Each skill is a specialised AI expert module
 
 ---
 
+## Non-Negotiable Standards
+
+These standards apply to **every project, every team member, and every deliverable** — without exception.
+
+### Security First
+Security is a fundamental part of the development process, not an afterthought. Every team member must:
+- Consider security implications at every stage: design, development, testing, and deployment
+- Raise security concerns immediately — never defer or suppress them
+- Apply secure coding practices by default (input validation, least privilege, secrets management, dependency hygiene)
+- Treat a security gap as a blocker, not a backlog item
+
+This standard is **non-negotiable** and applies regardless of the client, project size, or timeline pressure.
+
+### Consistent Quality
+Every project must be delivered to the highest possible standard. There is no tiered quality based on client type:
+- Internal stakeholders receive the same rigour and care as external clients
+- No shortcuts, no "good enough for now" that is not documented and tracked
+- Code, design, documentation, and communication must all meet the same bar
+
+Consistency, excellence, and fairness define how Number Pii works — always.
+
+---
+
 ## Initialize Protocol
 
 When told **"initialize"**, **"initialize CLAUDE.md"**, or **"initialize GEMINI.md"**,
