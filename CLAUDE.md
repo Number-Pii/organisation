@@ -58,6 +58,14 @@ Every project must be delivered to the highest possible standard. There is no ti
 
 Consistency, excellence, and fairness define how Number Pii works — always.
 
+### Documentation Discipline
+The `doc/` folder must contain only documentation that is directly required for building and maintaining the project. Every team member must:
+- Include only documents tied to active project deliverables, team coordination, or ongoing maintenance
+- Exclude any document created solely for troubleshooting, ad-hoc debugging, or investigation — these must not be committed to the project repository
+- Treat unnecessary documentation as a security surface: the less extraneous content in `doc/`, the smaller the exposure
+
+This standard is **non-negotiable** and applies regardless of project size, phase, or urgency.
+
 ---
 
 ## Initialize Protocol
@@ -106,6 +114,8 @@ With the project brief and confirmed team, fill in the scaffolded files:
 | `doc/workflow.md` | Step-by-step responsibility chain — mark each task as sequential or parallel |
 | `doc/version_control.md` | Git branching strategy appropriate for project complexity |
 | `doc/handover/consolidated_handover.md` | Current state: project brief summary + what's done (nothing yet) + next steps |
+
+> **Documentation discipline:** Only create and populate files that are directly required for building or maintaining this project. Do not create documents for troubleshooting or investigation purposes — see [Documentation Discipline](#documentation-discipline) in Non-Negotiable Standards.
 
 #### Workflow format (doc/workflow.md)
 List tasks in execution order. Mark dependencies:
