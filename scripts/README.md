@@ -1,6 +1,6 @@
 # Number Pii — Scripts
 
-Two Python 3 scripts that automate deterministic work, saving tokens and time.
+Three Python 3 scripts that automate deterministic work, saving tokens and time.
 
 ---
 
@@ -91,6 +91,45 @@ The `doc/handover/` system saves tokens and time when switching AI sessions:
 
 ---
 
+---
+
+## `update.py` — Toolkit Updater
+
+Checks for updates to this toolkit and pulls the latest version safely.
+**Your project `doc/` files are never affected** — they live in your own project repo, not here.
+
+### Usage
+```bash
+# Check if an update is available (no changes made)
+python3 scripts/update.py --check
+
+# Check and prompt to install
+python3 scripts/update.py
+
+# Update without prompting
+python3 scripts/update.py --yes
+
+# Show full changelog
+python3 scripts/update.py --changelog
+```
+
+### What It Does
+1. Runs `git fetch` to check the remote for new commits
+2. Shows the current and latest version numbers
+3. Lists what changed (commit summaries)
+4. Warns if a **MAJOR** version bump requires reading migration notes
+5. Runs `git pull --ff-only` if confirmed
+
+### Version Types
+| Bump | Meaning | Safe to update? |
+|------|---------|----------------|
+| PATCH (3.1.x) | Wording fixes, skill additions | Always safe |
+| MINOR (3.x.0) | New steps or features in the protocol | Safe — read changelog |
+| MAJOR (x.0.0) | Initialize Protocol restructured | Read migration notes first |
+
+---
+
 ## Requirements
 - Python 3.9+ (no external dependencies)
 - Run from the repo root or provide the full path to the script
+- `update.py` requires the repo to have been cloned via git (not downloaded as a ZIP)

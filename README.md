@@ -225,6 +225,40 @@ Both `CLAUDE.md` and `GEMINI.md` are kept in sync with identical content.
 
 ---
 
+## Keeping Up to Date
+
+When this toolkit is updated, you can pull the latest version without affecting any of your existing projects.
+
+**Your project files (`doc/`) live in your own project repo — they are never touched by a toolkit update.**
+
+### Check for updates
+```bash
+python3 scripts/update.py --check
+```
+
+### Install an update
+```bash
+python3 scripts/update.py
+```
+
+### What changes between versions
+See [CHANGELOG.md](CHANGELOG.md) for full release notes, or run:
+```bash
+python3 scripts/update.py --changelog
+```
+
+### Version types
+| Version bump | What it means | Action needed |
+|---|---|---|
+| PATCH `3.1.x` | Wording fixes, role/skill updates | None — update freely |
+| MINOR `3.x.0` | New protocol steps or features | Read changelog before new sessions |
+| MAJOR `x.0.0` | Initialize Protocol restructured | Read migration notes before re-initializing |
+
+> **Note:** Updates require cloning via git. If you downloaded this repo as a ZIP, re-clone it to enable updates:
+> `git clone https://github.com/olatunbosun-iyare/organisation.git`
+
+---
+
 ## Contributing
 
 All changes to this repository require review by the relevant department head and sign-off from the CEO or Chief of Staff for structural changes.
