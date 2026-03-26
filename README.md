@@ -1,8 +1,16 @@
 # Number Pii — Organisation
 
-> The virtual organisational structure for Number Pii — a fully-staffed, elite team operating across products, services, and consultancy. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
+> The virtual organisational structure for Number Pii — a fully-staffed, elite team built to help sole traders, startups, and SMEs grow through digital solutions. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
 
-Number Pii is a **product company that also offers services and consultancy**. This document set covers every department — from Executive Leadership through Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, and Operations — reflecting the company as a complete, fully-staffed virtual operation.
+Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company operates across three pillars:
+
+| Pillar | What They Do |
+|--------|-------------|
+| **Products** | Build proprietary software — flagship product is **Thirty X**, a Business Operating System |
+| **Services** | Web app, mobile app, and custom software development |
+| **Consultancy** | Digital transformation & technology strategy advisory |
+
+This document set covers every department — from Executive Leadership through Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, and Operations — reflecting the company as a complete, fully-staffed virtual operation.
 
 ---
 
