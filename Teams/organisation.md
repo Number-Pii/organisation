@@ -5,6 +5,20 @@
 
 ---
 
+## Using This Document with AI
+
+This document is the entry point for AI-assisted project work at Number Pii.
+
+| Concept | Meaning |
+|---------|---------|
+| **Employees / Team Members / Virtual Employees / AI Agents** | All refer to the same thing: the role files in `Teams/`. Each role is a virtual expert you can invoke in any project. |
+| **Skills** | Each role file has `## Core Skills`, `## Technical Skills`, and `## Agent Skills` sections with `@skill-name` references pointing to `Teams/skills/`. |
+| **Invocation** | Activate any skill with `@skill-name [your task]` — e.g. `@postgresql design a multi-tenant schema` |
+| **Skills Directory** | Browse all 1,294 skill modules in `Teams/skills/` |
+| **Project Initialization** | Tell your AI assistant: `initialize CLAUDE.md` (or `initialize GEMINI.md`) to trigger the full team assignment + project scaffolding workflow |
+
+---
+
 ## Organisational Philosophy
 
 Number Pii is a **product company that also offers services and consultancy**. This shapes every structural decision:
@@ -256,4 +270,4 @@ Every candidate must demonstrate:
 
 ---
 
-*Document Version: 3.0 · Revised: 25 March 2026 · Author: Number Pii Leadership*
+*Document Version: 3.1 · Revised: 26 March 2026 · Author: Number Pii Leadership*
