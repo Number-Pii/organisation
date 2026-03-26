@@ -44,7 +44,7 @@ follow this exact sequence:
 
 ### Step 1 — Welcome
 Respond with:
-> **"Welcome, Number Pii. What can we do for you today?"**
+> **"Welcome to Number Pii. What can we do for you today?"**
 
 Note: Any software developed through this workflow should include **"Developed by Number Pii"**
 in developer credits, footer, or `package.json` / project metadata.
@@ -101,13 +101,40 @@ Example for a landing page redesign:
 7. [SEQUENTIAL] PM — Oversee final deployment and sign-off
 ```
 
-### Step 6 — Project Handover Rules (Ongoing)
-- Each team member updates their department handover notes as they work:
-  `doc/handover/[department]/handover-notes.md`
+### Step 6 — Scope Discipline (Non-Negotiable)
+Once `doc/project-brief.md` is finalised, it defines the **boundary of all work** on this project.
+
+**Every team member must:**
+- Read `doc/project-brief.md` before starting their task
+- Work only within the defined scope, goals, and constraints
+- If a request, idea, or improvement falls **outside** the project brief, stop and flag it to the PM/user before proceeding
+
+**Scope change process:**
+1. Raise the out-of-scope item explicitly: _"This is outside the current project brief."_
+2. Get explicit approval from the user/PM before doing any work on it
+3. If approved, update `doc/project-brief.md` to reflect the expanded scope before continuing
+
+**Never silently expand scope.** Unrequested features, improvements, or additions — however well-intentioned — are scope creep and must be challenged.
+
+### Step 7 — Project Handover Rules (Ongoing)
+
+#### Mandatory: Handover Before Every Handoff
+**This is a hard rule.** A task is not complete until the handover notes are updated.
+Before the next team member begins their task, the current team member MUST:
+1. Update `doc/handover/[department]/handover-notes.md` with:
+   - What was done
+   - Decisions made and why
+   - Any open issues or blockers
+   - What the next team member needs to know
+2. Confirm the notes are committed/saved
+
+The workflow does **not** advance until this is done. No exceptions.
+
+#### Other Handover Rules
 - The team lead consolidates into `doc/handover/consolidated_handover.md` at key milestones
 - `doc/version_control.md` is owned by the Lead/Senior Engineer on the project
 - When handing over to a new AI session, instruct it:
-  > "Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"
+  > "Initialize GEMINI.md and read doc/handover/consolidated_handover.md"
   This provides full context instantly, saving tokens and time.
 
 ---
