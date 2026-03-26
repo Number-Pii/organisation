@@ -51,7 +51,14 @@ organisation/
 │   ├── 03-Product-Design/                     # Product managers, designers, UX researcher, analyst
 │   ├── 04-Sales-Consultancy/                  # Consultants, BDMs, account managers
 │   ├── 05-Growth-Marketing/                   # Content, SEO, social, performance marketing
-│   └── 06-Operations/                         # Finance, people & talent, operations, facilities
+│   ├── 06-Operations/                         # Finance, people & talent, operations, facilities
+│   └── skills/                                # 1,294 AI skill modules
+├── scripts/
+│   ├── audit_skills.py                        # Skill coverage auditor
+│   ├── init_project.py                        # Project doc/ scaffolder
+│   └── README.md                              # Script usage docs
+├── CLAUDE.md                                  # Claude Code context + Initialize Protocol
+├── GEMINI.md                                  # Gemini CLI context (identical to CLAUDE.md)
 └── README.md                                  # This file
 ```
 
@@ -173,6 +180,48 @@ For the full org chart, delegation model, and approval authority matrix, see [Te
 **For project leads** — Consult the *Project Delegation Model* in `organisation.md` to determine who leads, who executes, and who signs off for any given project type.
 
 **For leadership** — The *Approval Authority Matrix* in `organisation.md` defines decision-making boundaries for every level of the organisation.
+
+---
+
+## Using With AI Coding Assistants
+
+### Initialize (Claude or Gemini)
+Clone or download this repo into your project folder, then tell your AI assistant:
+```
+initialize CLAUDE.md
+```
+or (for Gemini CLI):
+```
+initialize GEMINI.md
+```
+
+The assistant will:
+1. Welcome you as Number Pii
+2. Collect your project brief
+3. Assign the right team members from `Teams/`
+4. Run `scripts/init_project.py` to scaffold your `doc/` folder
+5. Fill in project documentation (brief, workflow, version control, handover)
+
+### Skill Linking Convention
+Every role file now has three layers:
+- **Core Skills** — listed with inline `(@skill-name)` references
+- **Technical Skills** — listed with inline `(@skill-name)` references
+- **Agent Skills** — curated `@skill-name` list for direct invocation
+
+Invoke any skill: `@skill-name [your task]`
+Example: `@security-audit review this authentication implementation`
+
+### Auditing Skill Coverage
+```bash
+python3 scripts/audit_skills.py --report
+```
+Generates a full report of which role bullets are linked and which skills are unused.
+
+### Cross-Platform Support
+Both `CLAUDE.md` and `GEMINI.md` are kept in sync with identical content.
+- **Claude Code** reads `CLAUDE.md` automatically
+- **Gemini CLI** reads `GEMINI.md` automatically
+- Both support the same `initialize` command and follow the same protocol
 
 ---
 

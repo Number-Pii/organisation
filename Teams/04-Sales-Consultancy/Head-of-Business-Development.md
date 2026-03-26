@@ -10,12 +10,12 @@
 Owns pipeline generation, partnerships, and new business acquisition. Builds and leads the BDR team. Focused on filling the pipeline with high-value development and consultancy opportunities.
 
 ## Core Skills
-- Pipeline management and forecasting
-- Partnership development
-- Sales strategy and target setting
-- Team leadership and coaching
-- CRM management and reporting
-- Proposal and pitch development
+- Pipeline management and forecasting (@revops, @risk-metrics-calculation)
+- Partnership development (@sales-enablement, @competitive-landscape)
+- Sales strategy and target setting (@sales-enablement, @startup-metrics-framework)
+- Team leadership and coaching (@interview-coach, @internal-comms)
+- CRM management and reporting (@hubspot-automation, @pipedrive-automation)
+- Proposal and pitch development (@writing-plans, @copywriting)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -27,3 +27,12 @@ Owns pipeline generation, partnerships, and new business acquisition. Builds and
 ## Approval Authority
 - **Can approve:** BDR targets, outreach strategy, partnership proposals
 - **Needs approval from:** VP Sales (pricing, large deal terms)
+
+## Agent Skills
+Invoke these skills when working as this role:
+- @sales-enablement — sales strategy and enablement
+- @cold-email — outbound prospecting sequences
+- @pipedrive-automation — CRM pipeline management
+- @hubspot-automation — HubSpot CRM workflows
+- @revops — revenue operations and reporting
+- @competitive-landscape — market and competitor analysis
