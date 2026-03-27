@@ -14,11 +14,24 @@ Usage:
       -- python test.py
 """
 
+import re
 import subprocess
 import socket
 import time
 import sys
 import argparse
+
+# Patterns that indicate command substitution / injection — never legitimate in server commands
+_UNSAFE_CMD_PATTERN = re.compile(r"`|\$\(")
+
+def _validate_server_cmd(cmd: str) -> None:
+    """Raise ValueError if cmd contains command substitution patterns.
+
+    --server accepts only trusted operator-supplied commands (e.g. 'cd backend && python server.py').
+    It must never receive end-user input.
+    """
+    if _UNSAFE_CMD_PATTERN.search(cmd):
+        raise ValueError(f"Unsafe pattern in server command: {cmd!r}")
 
 def is_server_ready(port, timeout=30):
     """Wait for server to be ready by polling the port."""
@@ -56,6 +69,7 @@ def main():
 
     servers = []
     for cmd, port in zip(args.servers, args.ports):
+        _validate_server_cmd(cmd)
         servers.append({'cmd': cmd, 'port': port})
 
     server_processes = []

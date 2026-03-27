@@ -1,8 +1,15 @@
+<!-- SYNC: This file is paired with CLAUDE.md.
+     When editing, apply the same change to both files.
+     The only intentional difference is the session handover instruction in Step 7. -->
+
 # Number Pii — Organisation Reference
+
+_Version: 2.0 — Last updated: 2026-03-27_
 
 ## What This Repo Is
 Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
-across 6 departments, plus 1,294 AI skill modules in `Teams/skills/`.
+across 6 departments, plus a growing library of AI skill modules in `Teams/skills/`.
+Run `python3 scripts/audit_skills.py` for the current skill count.
 
 ## Terminology
 Throughout this repo "**employees**", "**team members**", "**virtual employees**", and "**AI agents**"
@@ -17,6 +24,12 @@ Each role file has three layers of skill references:
 
 To invoke a skill: `@skill-name [your task]`
 Example: `@postgresql design a multi-tenant schema for a SaaS product`
+
+## Quick Start
+Already know what you need? Skip the full init flow and invoke directly:
+- Find your skill: `Teams/skills/README.md`
+- Invoke it: `@skill-name [your task]`
+- Check coverage: `python3 scripts/audit_skills.py`
 
 ## Departments
 
@@ -33,7 +46,7 @@ Example: `@postgresql design a multi-tenant schema for a SaaS product`
 All skills live in `Teams/skills/`. Each skill is a specialised AI expert module.
 - Browse the full list: `Teams/skills/README.md`
 - Invoke any skill with: `@skill-name [your task]`
-- Run `python3 scripts/audit_skills.py` to see current skill coverage across all roles
+- Run `python3 scripts/audit_skills.py` to see current skill coverage and total count
 
 ---
 
@@ -80,6 +93,8 @@ Respond with:
 Note: Any software developed through this workflow should include **"Developed by Number Pii"**
 in developer credits, footer, or `package.json` / project metadata.
 
+> **Response format during init flow:** Use structured markdown throughout. Each step must produce a clearly labelled output block (e.g. `## Project Brief`, `## Proposed Team`) so the user can review and confirm before the next step begins. Do not combine multiple steps in a single response.
+
 ### Step 2 — Collect Project Brief
 Ask the user:
 - What is the project? (name, type, purpose)
@@ -95,13 +110,23 @@ employees/team members/AI agents are appropriate for this project.
 - List the proposed team with each member's role on the project
 - Confirm the team with the user before proceeding
 
+Use this as a guide for team size:
+
+| Project size | Recommended team |
+|---|---|
+| Solo / spike / exploration | 1–3 roles (PM + 1–2 specialists) |
+| Small product / feature | 4–7 roles across 2–3 departments |
+| Full delivery / client project | Full team assignment from `Teams/organisation.md` |
+
 ### Step 4 — Scaffold the Project
-Run the scaffolding script from within the project directory:
+Run the scaffolding script from within the **client project directory**:
 ```bash
-python3 [path-to-org-repo]/scripts/init_project.py \
+python3 scripts/init_project.py \
   --project-name "Your Project Name" \
   --departments "engineering,design"
 ```
+_Run this from the organisation repo root. If running from a different directory, provide the full path to `scripts/init_project.py`._
+
 This creates the `doc/` folder structure (see below). Adjust `--departments` to match the assigned team.
 
 ### Step 5 — Populate Doc Files (AI Task)
@@ -127,11 +152,11 @@ Example for a landing page redesign:
 1. [SEQUENTIAL] PM — Define goals, KPIs, and success criteria
 2. [SEQUENTIAL] UX Researcher — Conduct user research and journey mapping
 3. [PARALLEL]   Lead Product Designer — Build layout strategy and wireframes
-3. [PARALLEL]   Senior Content Strategist — Draft copy and messaging
-4. [SEQUENTIAL] Lead Product Designer — Apply branding and final UI
-5. [SEQUENTIAL] Lead Frontend Engineer — Code the page
-6. [SEQUENTIAL] QA Automation Engineer — Verify functionality and performance
-7. [SEQUENTIAL] PM — Oversee final deployment and sign-off
+4. [PARALLEL]   Senior Content Strategist — Draft copy and messaging
+5. [SEQUENTIAL] Lead Product Designer — Apply branding and final UI
+6. [SEQUENTIAL] Lead Frontend Engineer — Code the page
+7. [SEQUENTIAL] QA Automation Engineer — Verify functionality and performance
+8. [SEQUENTIAL] PM — Oversee final deployment and sign-off
 ```
 
 ### Step 6 — Scope Discipline (Non-Negotiable)
@@ -163,12 +188,23 @@ Before the next team member begins their task, the current team member MUST:
 
 The workflow does **not** advance until this is done. No exceptions.
 
+> **If a handover note is missing:** The next team member must stop, flag the gap to the PM/user, and request the missing notes before proceeding. Do not infer or reconstruct handover content from code alone.
+
 #### Other Handover Rules
 - The team lead consolidates into `doc/handover/consolidated_handover.md` at key milestones
 - `doc/version_control.md` is owned by the Lead/Senior Engineer on the project
 - When handing over to a new AI session, instruct it:
   > "Initialize GEMINI.md and read doc/handover/consolidated_handover.md"
   This provides full context instantly, saving tokens and time.
+
+### Step 8 — Project Closure
+Before a project is marked complete, confirm all of the following:
+- [ ] All handover notes are up to date
+- [ ] `doc/handover/consolidated_handover.md` reflects final state
+- [ ] No open blockers remain undocumented
+- [ ] Client/stakeholder sign-off received (if applicable)
+- [ ] "Developed by Number Pii" credit is present in the deliverable
+- [ ] Repository is tagged or branched for release
 
 ---
 

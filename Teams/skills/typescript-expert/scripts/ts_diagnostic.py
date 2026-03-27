@@ -4,17 +4,24 @@ TypeScript Project Diagnostic Script
 Analyzes TypeScript projects for configuration, performance, and common issues.
 """
 
+import re
 import subprocess
 import sys
 import os
 import json
 from pathlib import Path
 
-def run_cmd(cmd: str) -> str:
-    """Run shell command and return output."""
+def run_cmd(cmd: list, suppress_stderr: bool = False) -> str:
+    """Run a command and return combined stdout+stderr.
+
+    Args:
+        cmd: List of arguments — never pass user-controlled input.
+        suppress_stderr: If True, discard stderr (equivalent to 2>/dev/null).
+    """
     try:
-        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-        return result.stdout + result.stderr
+        stderr = subprocess.DEVNULL if suppress_stderr else subprocess.PIPE
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=stderr, text=True)
+        return result.stdout + (result.stderr or "" if not suppress_stderr else "")
     except Exception as e:
         return str(e)
 
@@ -23,8 +30,8 @@ def check_versions():
     print("\n📦 Versions:")
     print("-" * 40)
     
-    ts_version = run_cmd("npx tsc --version 2>/dev/null").strip()
-    node_version = run_cmd("node -v 2>/dev/null").strip()
+    ts_version = run_cmd(["npx", "tsc", "--version"], suppress_stderr=True).strip()
+    node_version = run_cmd(["node", "-v"], suppress_stderr=True).strip()
     
     print(f"  TypeScript: {ts_version or 'Not found'}")
     print(f"  Node.js: {node_version or 'Not found'}")
@@ -134,11 +141,11 @@ def check_type_errors():
     print("\n🔍 Type Check:")
     print("-" * 40)
     
-    result = run_cmd("npx tsc --noEmit 2>&1 | head -20")
+    result = run_cmd(["npx", "tsc", "--noEmit"])
     if "error TS" in result:
         errors = result.count("error TS")
         print(f"  ❌ {errors}+ type errors found")
-        print(result[:500])
+        print(result)
     else:
         print("  ✅ No type errors")
 
@@ -147,11 +154,11 @@ def check_any_usage():
     print("\n⚠️ 'any' Type Usage:")
     print("-" * 40)
     
-    result = run_cmd("grep -r ': any' --include='*.ts' --include='*.tsx' src/ 2>/dev/null | wc -l")
-    count = result.strip()
+    result = run_cmd(["grep", "-r", ": any", "--include=*.ts", "--include=*.tsx", "src/"], suppress_stderr=True)
+    count = str(len(result.splitlines())) if result.strip() else "0"
     if count and count != "0":
         print(f"  ⚠️ Found {count} occurrences of ': any'")
-        sample = run_cmd("grep -rn ': any' --include='*.ts' --include='*.tsx' src/ 2>/dev/null | head -5")
+        sample = run_cmd(["grep", "-rn", "-m", "5", ": any", "--include=*.ts", "--include=*.tsx", "src/"], suppress_stderr=True)
         if sample:
             print(sample)
     else:
@@ -162,8 +169,8 @@ def check_type_assertions():
     print("\n⚠️ Type Assertions (as):")
     print("-" * 40)
     
-    result = run_cmd("grep -r ' as ' --include='*.ts' --include='*.tsx' src/ 2>/dev/null | grep -v 'import' | wc -l")
-    count = result.strip()
+    result = run_cmd(["grep", "-r", " as ", "--include=*.ts", "--include=*.tsx", "src/"], suppress_stderr=True)
+    count = str(len([l for l in result.splitlines() if "import" not in l]))
     if count and count != "0":
         print(f"  ⚠️ Found {count} type assertions")
     else:
@@ -174,7 +181,8 @@ def check_performance():
     print("\n⏱️ Type Check Performance:")
     print("-" * 40)
     
-    result = run_cmd("npx tsc --extendedDiagnostics --noEmit 2>&1 | grep -E 'Check time|Files:|Lines:|Nodes:'")
+    output = run_cmd(["npx", "tsc", "--extendedDiagnostics", "--noEmit"])
+    result = "\n".join(l for l in output.splitlines() if re.search(r"Check time|Files:|Lines:|Nodes:", l))
     if result.strip():
         for line in result.strip().split('\n'):
             print(f"  {line}")
