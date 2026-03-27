@@ -13,6 +13,25 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.2.0] — 2026-03-27
+
+### Changed
+- Step 4 of the Initialize Protocol now requires `--output-dir` pointing to the consuming
+  project root. Prevents `doc/` being created inside the organisation toolkit by mistake.
+  Updated in both `CLAUDE.md` and `GEMINI.md` (protocol version 2.1).
+
+### Added
+- `scripts/init_project.py` safety guard: exits with a clear error if `--output-dir`
+  resolves to the organisation toolkit root.
+- `README.md`: new "Using This Toolkit in Your Projects" section documenting two consumption
+  patterns (git submodule and static copy) and the three-step fix for existing projects.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- If you re-run `init_project.py`, you must now supply `--output-dir`.
+
+---
+
 ## [3.1.0] — 2026-03-26
 
 ### Added
