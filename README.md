@@ -225,6 +225,65 @@ Both `CLAUDE.md` and `GEMINI.md` are kept in sync with identical content.
 
 ---
 
+## Using This Toolkit in Your Projects
+
+Because this repo has its own `.git` directory, placing it inside another project requires care — Git will otherwise treat it as a submodule pointer (empty folder on clone) rather than tracking the files directly.
+
+Choose one of the two patterns below.
+
+### Pattern A — Git Submodule (recommended)
+
+Use this when you want to receive toolkit updates in future.
+
+```bash
+cd your-project
+git submodule add <organisation-repo-url> organisation
+git submodule update --init
+```
+
+- The parent repo tracks a pinned commit; collaborators get the files on `git clone --recurse-submodules`
+- Update the toolkit later with: `git submodule update --remote organisation`
+- `organisation/.git` becomes a gitlink file — the parent repo tracks files correctly
+
+### Pattern B — Static Copy (simple, no updates)
+
+Use this for a one-time snapshot with no ongoing update path.
+
+```bash
+git clone <organisation-repo-url> /tmp/organisation
+cp -r /tmp/organisation your-project/organisation
+rm -rf your-project/organisation/.git
+git -C your-project add organisation/
+git -C your-project commit -m "Add organisation toolkit (static copy)"
+```
+
+- No submodule issues; all files tracked directly in your project
+- To upgrade: repeat the process and overwrite the folder
+
+### Fix for Existing Projects
+
+If you have already placed `organisation/` inside a project and Git is treating it as a submodule, run these three commands from the consuming project root:
+
+```bash
+git rm --cached organisation
+rm -rf organisation/.git
+git add organisation/
+git commit -m "Convert organisation from submodule to tracked directory"
+```
+
+### Scaffolding doc/ in Your Project
+
+Always provide `--output-dir` so `doc/` is created in the consuming project, not inside this toolkit:
+
+```bash
+python3 /path/to/organisation/scripts/init_project.py \
+  --project-name "My Project" \
+  --departments "engineering,design" \
+  --output-dir /path/to/my-project
+```
+
+---
+
 ## Keeping Up to Date
 
 When this toolkit is updated, you can pull the latest version without affecting any of your existing projects.

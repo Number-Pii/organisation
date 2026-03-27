@@ -358,6 +358,17 @@ if __name__ == "__main__":
     depts = [d.strip() for d in args.departments.split(",") if d.strip()]
     out   = Path(args.output_dir).resolve()
 
+    # Safety check: prevent doc/ being created inside the organisation toolkit itself.
+    org_root = Path(__file__).resolve().parent.parent
+    if out == org_root:
+        print(
+            "\nERROR: --output-dir points to the organisation toolkit itself.\n"
+            "  doc/ must be created in your consuming project, not here.\n"
+            f"  Toolkit root: {org_root}\n"
+            "  Use: --output-dir /path/to/your-project\n"
+        )
+        raise SystemExit(1)
+
     scaffold(
         project_name=args.project_name,
         departments=depts,
