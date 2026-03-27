@@ -13,6 +13,26 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.3.0] — 2026-03-27
+
+### Changed
+- Recommended consumption pattern is now **gitignored local clone**: clone the toolkit into
+  your project root and add `organisation/` to `.gitignore`. The toolkit stays local and
+  updatable but is never committed to the consuming project.
+- Step 4 of the Initialize Protocol updated to show the simpler `--output-dir .` form
+  (works when toolkit is gitignored inside the project root). Protocol version bumped to 2.2.
+
+### Removed
+- Static copy pattern (Pattern B) removed from documentation — strictly inferior to gitignored clone.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- If you had `organisation/` tracked as files in a consuming project, remove it:
+  `git rm -r organisation/ && echo "organisation/" >> .gitignore`
+  then re-clone: `git clone https://github.com/olatunbosun-iyare/organisation.git organisation`
+
+---
+
 ## [3.2.0] — 2026-03-27
 
 ### Changed

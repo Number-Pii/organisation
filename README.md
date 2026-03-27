@@ -227,59 +227,65 @@ Both `CLAUDE.md` and `GEMINI.md` are kept in sync with identical content.
 
 ## Using This Toolkit in Your Projects
 
-Because this repo has its own `.git` directory, placing it inside another project requires care — Git will otherwise treat it as a submodule pointer (empty folder on clone) rather than tracking the files directly.
+The organisation toolkit is a **local development tool** — it is not a dependency of your project.
+It lives alongside your project files, the AI reads it, and your project's git never needs to know about it.
 
-Choose one of the two patterns below.
+### Recommended — Gitignored Local Clone
 
-### Pattern A — Git Submodule (recommended)
+Clone the toolkit into your project root, then add it to `.gitignore`.
+It stays local and updatable, but is completely invisible to your project's git history.
 
-Use this when you want to receive toolkit updates in future.
-
+**Setup (once per project):**
 ```bash
 cd your-project
-git submodule add <organisation-repo-url> organisation
-git submodule update --init
+git clone https://github.com/olatunbosun-iyare/organisation.git organisation
+echo "organisation/" >> .gitignore
 ```
 
-- The parent repo tracks a pinned commit; collaborators get the files on `git clone --recurse-submodules`
-- Update the toolkit later with: `git submodule update --remote organisation`
-- `organisation/.git` becomes a gitlink file — the parent repo tracks files correctly
-
-### Pattern B — Static Copy (simple, no updates)
-
-Use this for a one-time snapshot with no ongoing update path.
-
+**Update anytime:**
 ```bash
-git clone <organisation-repo-url> /tmp/organisation
-cp -r /tmp/organisation your-project/organisation
-rm -rf your-project/organisation/.git
-git -C your-project add organisation/
-git -C your-project commit -m "Add organisation toolkit (static copy)"
+python3 organisation/scripts/update.py
 ```
 
-- No submodule issues; all files tracked directly in your project
-- To upgrade: repeat the process and overwrite the folder
-
-### Fix for Existing Projects
-
-If you have already placed `organisation/` inside a project and Git is treating it as a submodule, run these three commands from the consuming project root:
-
-```bash
-git rm --cached organisation
-rm -rf organisation/.git
-git add organisation/
-git commit -m "Convert organisation from submodule to tracked directory"
-```
+Only `doc/` (scaffolded by `init_project.py`) is committed to your project. The toolkit itself never is.
 
 ### Scaffolding doc/ in Your Project
 
-Always provide `--output-dir` so `doc/` is created in the consuming project, not inside this toolkit:
+Run from your project root (with toolkit gitignored inside it):
+```bash
+python3 organisation/scripts/init_project.py \
+  --project-name "My Project" \
+  --departments "engineering,design" \
+  --output-dir .
+```
 
+Or if the toolkit lives elsewhere on your machine:
 ```bash
 python3 /path/to/organisation/scripts/init_project.py \
   --project-name "My Project" \
   --departments "engineering,design" \
   --output-dir /path/to/my-project
+```
+
+> **`--output-dir` is required.** Never run without it — the default is the current directory, which will create `doc/` inside the toolkit if you are in that directory.
+
+### For Team Repos (Git Submodule)
+
+If multiple collaborators need the toolkit files on clone, use a git submodule instead:
+```bash
+git submodule add https://github.com/olatunbosun-iyare/organisation.git organisation
+git submodule update --init
+```
+Collaborators clone with: `git clone --recurse-submodules <your-repo-url>`
+Update with: `git submodule update --remote organisation`
+
+### Fix for Existing Projects
+
+If `organisation/` is already inside a project and Git is treating it as an unintended submodule:
+```bash
+git rm --cached organisation
+rm -rf organisation/.git
+git add organisation/   # only if you want to track it as files — skip if gitignoring it
 ```
 
 ---

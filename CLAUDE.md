@@ -4,7 +4,7 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.1 — Last updated: 2026-03-27_
+_Version: 2.2 — Last updated: 2026-03-27_
 
 ## What This Repo Is
 Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
@@ -119,14 +119,21 @@ Use this as a guide for team size:
 | Full delivery / client project | Full team assignment from `Teams/organisation.md` |
 
 ### Step 4 — Scaffold the Project
-Run the scaffolding script, always specifying `--output-dir` as the **consuming project root**:
+Run the scaffolding script from the **consuming project root**. If the toolkit is gitignored inside it:
+```bash
+python3 organisation/scripts/init_project.py \
+  --project-name "Your Project Name" \
+  --departments "engineering,design" \
+  --output-dir .
+```
+Or if the toolkit lives elsewhere on the machine:
 ```bash
 python3 /path/to/organisation/scripts/init_project.py \
   --project-name "Your Project Name" \
   --departments "engineering,design" \
   --output-dir /path/to/consuming-project
 ```
-> **`--output-dir` is required.** It must point to the consuming project root (e.g. `thirty-x/`). Never run without it — the default is the current directory, which will create `doc/` inside the organisation toolkit if you are in that directory.
+> **`--output-dir` is required.** Never run without it — the default is the current directory, which will create `doc/` inside the toolkit if you are in that directory.
 
 This creates the `doc/` folder structure in the consuming project. Adjust `--departments` to match the assigned team.
 
