@@ -4,7 +4,7 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.2 — Last updated: 2026-03-27_
+_Version: 2.3 — Last updated: 2026-03-28_
 
 ## What This Repo Is
 Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
@@ -102,6 +102,29 @@ Ask the user:
 - What are the goals and success criteria?
 - Any known constraints (timeline, tech stack, budget)?
 - Any existing codebase or starting point?
+- **Is this a new project, or are you taking ownership of an existing product?**
+
+If the answer is an existing product, proceed to **Step 2b** before continuing.
+
+### Step 2b — Existing Project Intake (Brownfield Only)
+> Skip this step entirely for new projects.
+
+When taking ownership of an existing codebase, collect the following before assigning the team or scaffolding:
+
+- Current tech stack and major dependencies (language, framework, infra)
+- Approximate codebase age and size (rough LOC, number of services)
+- Known issues, bugs, or instability
+- Prior architectural decisions and their rationale (if documented)
+- Current test coverage and CI/CD state (if known)
+- Security posture — any known vulnerabilities, last audit date
+- Any existing documentation (README, ADRs, wikis, runbooks)
+
+Then invoke the appropriate audit skill to build a fuller picture of the codebase before proceeding:
+- `@production-code-audit` — full autonomous scan of the codebase (recommended first choice)
+- `@legacy-modernizer` — if the goal includes modernisation or framework migration
+- `@codebase-cleanup-tech-debt` — if quantifying and prioritising tech debt is the primary need
+
+The findings from this step feed directly into the doc files populated in Step 5.
 
 ### Step 3 — Assign Team
 Read `Teams/organisation.md` and the relevant role files in `Teams/` to determine which
@@ -121,10 +144,18 @@ Use this as a guide for team size:
 ### Step 4 — Scaffold the Project
 Run the scaffolding script from the **consuming project root**. If the toolkit is gitignored inside it:
 ```bash
+# New project
 python3 organisation/scripts/init_project.py \
   --project-name "Your Project Name" \
   --departments "engineering,design" \
   --output-dir .
+
+# Existing product (brownfield) — adds codebase-assessment.md and expands the handover template
+python3 organisation/scripts/init_project.py \
+  --project-name "Your Project Name" \
+  --departments "engineering,design" \
+  --output-dir . \
+  --existing
 ```
 Or if the toolkit lives elsewhere on the machine:
 ```bash
@@ -147,6 +178,7 @@ With the project brief and confirmed team, fill in the scaffolded files:
 | `doc/workflow.md` | Step-by-step responsibility chain — mark each task as sequential or parallel |
 | `doc/version_control.md` | Git branching strategy appropriate for project complexity |
 | `doc/handover/consolidated_handover.md` | Current state: project brief summary + what's done (nothing yet) + next steps |
+| `doc/codebase-assessment.md` | Existing architecture, stack, tech debt, quality baseline, risks — **brownfield only** (created by `--existing`) |
 
 > **Documentation discipline:** Only create and populate files that are directly required for building or maintaining this project. Do not create documents for troubleshooting or investigation purposes — see [Documentation Discipline](#documentation-discipline) in Non-Negotiable Standards.
 

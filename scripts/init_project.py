@@ -9,11 +9,13 @@ Usage:
     python3 scripts/init_project.py --project-name "My Project"
     python3 scripts/init_project.py --project-name "Client Landing Page" --departments "engineering,design,marketing"
     python3 scripts/init_project.py --project-name "API Build" --departments "engineering" --output-dir /path/to/project
+    python3 scripts/init_project.py --project-name "Inherited App" --departments "engineering" --output-dir /path/to/project --existing
 
 Arguments:
     --project-name   Name of the project (used in file headers)
     --departments    Comma-separated dept names for handover sub-folders (default: engineering)
     --output-dir     Directory to create doc/ in (default: current working directory)
+    --existing       Brownfield mode: adds codebase-assessment.md and expands the handover template
     --dry-run        Preview what would be created without creating anything
 """
 
@@ -203,7 +205,86 @@ types: feat | fix | docs | style | refactor | test | chore
 """
 
 
-def consolidated_handover_template(name):
+def codebase_assessment_template(name):
+    return f"""# Codebase Assessment — {name}
+
+> Created: {TODAY} | Maintained by: Lead Engineer / Technical Lead
+> Complete this from the output of an initial audit (@production-code-audit or equivalent).
+
+---
+
+## Tech Stack & Dependencies
+| Component | Version / Detail | Notes |
+|-----------|-----------------|-------|
+| Language  | [FILL IN] | |
+| Framework | [FILL IN] | |
+| Database  | [FILL IN] | |
+| Infra / Hosting | [FILL IN] | |
+| Key libraries | [FILL IN] | |
+
+## Architecture Overview
+<!-- Brief description of how the system is structured. -->
+[FILL IN — e.g. monolith / microservices / serverless, key boundaries, data flow]
+
+### Services / Components
+| Name | Purpose | Language / Tech |
+|------|---------|-----------------|
+| [FILL IN] | [FILL IN] | [FILL IN] |
+
+## Codebase Health
+| Metric | Value | Notes |
+|--------|-------|-------|
+| Approximate LOC | [FILL IN] | |
+| Test coverage | [FILL IN %] | |
+| CI/CD state | [passing / failing / none] | |
+| Last security audit | [date or unknown] | |
+| Known vulnerabilities | [FILL IN or none] | |
+
+## Known Technical Debt
+| Area | Severity (High/Med/Low) | Estimated Effort | Notes |
+|------|------------------------|-----------------|-------|
+| [FILL IN] | [FILL IN] | [FILL IN] | |
+
+## Prior Decisions & Rationale
+| Decision | Why | Approximate Date |
+|----------|-----|-----------------|
+| [FILL IN] | [FILL IN] | [FILL IN] |
+
+## External Integrations
+| Service / API | Purpose | Auth Method | Notes |
+|---------------|---------|------------|-------|
+| [FILL IN] | [FILL IN] | [FILL IN] | |
+
+## Known Issues & Risks
+| Issue | Severity | Owner | Status |
+|-------|---------|-------|--------|
+| [FILL IN] | [FILL IN] | [FILL IN] | Open |
+
+## Existing Documentation
+<!-- Links to READMEs, wikis, ADRs, runbooks, or other prior docs. -->
+| Document | Location | Relevance |
+|----------|---------|-----------|
+| [FILL IN] | [FILL IN] | [FILL IN] |
+"""
+
+
+def consolidated_handover_template(name, existing=False):
+    existing_context_section = ""
+    if existing:
+        existing_context_section = f"""
+## Existing Project Context
+> This project was active before the toolkit was introduced.
+> Fill this section from the findings in `doc/codebase-assessment.md`.
+
+**Tech Stack:** [FILL IN]
+**Architecture:** [FILL IN — brief summary]
+**Codebase Health:** [test coverage, CI state, last audit date]
+**Key Technical Debt:** [top 2–3 items — see codebase-assessment.md for full list]
+**Prior Decisions to Honour:** [FILL IN]
+
+---
+"""
+
     return f"""# Consolidated Handover — {name}
 
 > Last updated: {TODAY} | Maintained by: Team Lead / Project Manager
@@ -213,7 +294,7 @@ This document is the single source of truth for project state. When starting a n
 instruct the assistant: **"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"**
 
 ---
-
+{existing_context_section}
 ## Project Summary
 <!-- One paragraph: what this project is and who it's for. -->
 [FILL IN — copy from project-brief.md]
@@ -310,7 +391,7 @@ to update `doc/handover/consolidated_handover.md`.
 
 # ── Scaffold ──────────────────────────────────────────────────────────────────
 
-def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_run: bool):
+def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_run: bool, existing: bool = False):
     doc_dir = output_dir / "doc"
     handover_dir = doc_dir / "handover"
 
@@ -319,8 +400,11 @@ def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_ru
         doc_dir / "team-assignment.md": team_assignment_template(project_name),
         doc_dir / "workflow.md":         workflow_template(project_name),
         doc_dir / "version_control.md":  version_control_template(project_name),
-        handover_dir / "consolidated_handover.md": consolidated_handover_template(project_name),
+        handover_dir / "consolidated_handover.md": consolidated_handover_template(project_name, existing=existing),
     }
+
+    if existing:
+        files[doc_dir / "codebase-assessment.md"] = codebase_assessment_template(project_name)
 
     for dept in departments:
         dept_dir = handover_dir / dept.strip().lower().replace(" ", "-")
@@ -352,6 +436,8 @@ if __name__ == "__main__":
     parser.add_argument("--departments",   default="engineering",
                         help="Comma-separated dept names (default: engineering)")
     parser.add_argument("--output-dir",    default=".", help="Target directory (default: .)")
+    parser.add_argument("--existing",      action="store_true",
+                        help="Brownfield mode: add codebase-assessment.md and expand handover template")
     parser.add_argument("--dry-run",       action="store_true", help="Preview without creating files")
     args = parser.parse_args()
 
@@ -374,4 +460,5 @@ if __name__ == "__main__":
         departments=depts,
         output_dir=out,
         dry_run=args.dry_run,
+        existing=args.existing,
     )
