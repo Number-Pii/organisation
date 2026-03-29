@@ -238,7 +238,7 @@ It stays local and updatable, but is completely invisible to your project's git 
 **Setup (once per project):**
 ```bash
 cd your-project
-git clone https://github.com/olatunbosun-iyare/organisation.git organisation
+git clone https://github.com/Number-Pii/organisation.git organisation
 echo "organisation/" >> .gitignore
 ```
 
@@ -273,7 +273,7 @@ python3 /path/to/organisation/scripts/init_project.py \
 
 If multiple collaborators need the toolkit files on clone, use a git submodule instead:
 ```bash
-git submodule add https://github.com/olatunbosun-iyare/organisation.git organisation
+git submodule add https://github.com/Number-Pii/organisation.git organisation
 git submodule update --init
 ```
 Collaborators clone with: `git clone --recurse-submodules <your-repo-url>`
@@ -320,7 +320,7 @@ python3 scripts/update.py --changelog
 | MAJOR `x.0.0` | Initialize Protocol restructured | Read migration notes before re-initializing |
 
 > **Note:** Updates require cloning via git. If you downloaded this repo as a ZIP, re-clone it to enable updates:
-> `git clone https://github.com/olatunbosun-iyare/organisation.git`
+> `git clone https://github.com/Number-Pii/organisation.git`
 
 ---
 

@@ -29,7 +29,7 @@ Version format: `MAJOR.MINOR.PATCH`
 - No action required for existing projects. Your `doc/` folder is unchanged.
 - If you had `organisation/` tracked as files in a consuming project, remove it:
   `git rm -r organisation/ && echo "organisation/" >> .gitignore`
-  then re-clone: `git clone https://github.com/olatunbosun-iyare/organisation.git organisation`
+  then re-clone: `git clone https://github.com/Number-Pii/organisation.git organisation`
 
 ---
 

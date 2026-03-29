@@ -110,7 +110,7 @@ def main():
     if not is_git_repo():
         print("This directory is not a git repository.")
         print("To enable updates, clone the repo:")
-        print("  git clone https://github.com/olatunbosun-iyare/organisation.git")
+        print("  git clone https://github.com/Number-Pii/organisation.git")
         sys.exit(1)
 
     print("Fetching remote...", end=" ", flush=True)
