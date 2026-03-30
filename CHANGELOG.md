@@ -13,6 +13,20 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.4.0] — 2026-03-30
+
+### Added
+- **Version Control Discipline** added to Non-Negotiable Standards in `CLAUDE.md` and `GEMINI.md`.
+  Mandates branch-based workflow, bans direct pushes to `main`, and requires `doc/version_control.md`
+  to be read before any git operation. Applies to all team members including AI agents.
+- Protocol version bumped to 2.4.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- If you re-initialize an existing project session, the version control discipline rules will apply.
+
+---
+
 ## [3.3.0] — 2026-03-27
 
 ### Changed
