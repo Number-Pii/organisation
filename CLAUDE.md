@@ -4,7 +4,7 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.3 — Last updated: 2026-03-28_
+_Version: 2.4 — Last updated: 2026-03-30_
 
 ## What This Repo Is
 Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
@@ -78,6 +78,17 @@ The `doc/` folder must contain only documentation that is directly required for 
 - Treat unnecessary documentation as a security surface: the less extraneous content in `doc/`, the smaller the exposure
 
 This standard is **non-negotiable** and applies regardless of project size, phase, or urgency.
+
+### Version Control Discipline
+All code changes — regardless of size, urgency, or who is making them — must follow the branching strategy defined in `doc/version_control.md`. Every team member (including AI agents) must:
+- **Never push directly to `main`** — no exceptions, including hotfixes, typo fixes, or deployment retries
+- Create a branch using the correct prefix (`feature/`, `fix/`, `chore/`, `hotfix/`) before making any code change
+- Open a pull request and wait for the required approval before merging
+- If `doc/version_control.md` does not exist for the project, stop and ask the PM to define the branching strategy before writing any code
+
+**Before writing any code or running any git command, read `doc/version_control.md`.** If it specifies branch protection, PR reviews, or a specific branching model, those rules are binding and must be followed for every single change.
+
+This standard is **non-negotiable** and applies regardless of urgency, timeline pressure, or the number of people on the team.
 
 ---
 
