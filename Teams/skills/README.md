@@ -1,6 +1,10 @@
 # Skills Directory
 
-**Welcome to the skills folder!** This is where all 179+ specialized AI skills live.
+**Welcome to the skills folder!** This is where all 1,294 specialized AI skills live.
+
+> ~195 skills are actively referenced in the 53 role files across `Teams/`. The remaining ~1,099 are
+> specialised modules (cloud SDKs, niche frameworks, domain tools) available for direct invocation
+> when a project requires them. Run `python3 scripts/audit_skills.py` for the current breakdown.
 
 ## 🤔 What Are Skills?
 
@@ -115,7 +119,7 @@ ls skills/ | grep "keyword"
 ```
 
 ### Method 3: Check the main README
-See the [main README](../README.md) for the complete list of all 179+ skills organized by category.
+See the [main README](../README.md) for an overview or run `python3 scripts/audit_skills.py` for the full audit.
 
 ---
 

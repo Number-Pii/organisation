@@ -342,6 +342,28 @@ See `doc/team-assignment.md` for full detail.
 | Design | [FILL IN] |
 
 ---
+
+## How to Consolidate
+
+Pull key items from each `doc/handover/[dept]/handover-notes.md` into this file at milestones.
+
+**Example — after the design phase completes:**
+
+> **What Has Been Done**
+> - [x] UX research: 8 user interviews completed, journey map created
+> - [x] Wireframes: 12 screens approved by PM (Figma link in Resources)
+>
+> **Key Decisions Made**
+> | Decision | Rationale | Date |
+> |----------|-----------|------|
+> | Single-page app over multi-page | User research showed 90% of tasks are sequential | 2026-04-01 |
+> | Tailwind CSS over custom CSS | Team velocity — 3 engineers already proficient | 2026-04-02 |
+>
+> **What Is Next**
+> 1. Frontend implementation (Lead Frontend Engineer)
+> 2. API endpoints for user flows (Lead Backend Engineer)
+
+---
 *This file is updated by the team lead from department handover notes in `doc/handover/[dept]/`.*
 """
 
