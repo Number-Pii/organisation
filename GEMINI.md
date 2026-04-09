@@ -131,9 +131,12 @@ When taking ownership of an existing codebase, collect the following before assi
 - Any existing documentation (README, ADRs, wikis, runbooks)
 
 Then invoke the appropriate audit skill to build a fuller picture of the codebase before proceeding:
-- `@production-code-audit` — full autonomous scan of the codebase (recommended first choice)
-- `@legacy-modernizer` — if the goal includes modernisation or framework migration
-- `@codebase-cleanup-tech-debt` — if quantifying and prioritising tech debt is the primary need
+
+| Your primary goal | Recommended skill | What it does |
+|---|---|---|
+| General health check | `@production-code-audit` | Full autonomous scan — architecture, quality, security, dependencies (start here) |
+| Framework or platform migration | `@legacy-modernizer` | Assesses migration paths, compatibility risks, and modernisation strategy |
+| Quantify and prioritise tech debt | `@codebase-cleanup-tech-debt` | Catalogues debt by severity and effort, produces a prioritised remediation backlog |
 
 The findings from this step feed directly into the doc files populated in Step 5.
 
