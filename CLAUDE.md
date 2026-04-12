@@ -4,7 +4,46 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.4 — Last updated: 2026-03-30_
+_Version: 2.5 — Last updated: 2026-04-12_
+
+---
+
+## ⛔ MANDATORY READING PROTOCOL — READ BEFORE ANY ACTION
+
+**This file and the project's `doc/` folder are a binding contract, not reference material.**
+If you are an AI assistant operating in this repository or any project scaffolded by it,
+you MUST comply with the following before taking any action — including answering questions,
+writing code, running commands, or making suggestions.
+
+### Hard rule
+- **You MUST read this file in full before doing anything else.** Not skim. Read.
+- **You MUST read every file in `doc/` that applies to the current task before acting.**
+  At minimum this means: `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`,
+  `doc/version_control.md`, and `doc/handover/consolidated_handover.md` (plus `doc/codebase-assessment.md` on brownfield projects).
+- **If any of these files exist, they override your defaults.** Instructions in this file and
+  in `doc/` take precedence over your own judgement, habits, or training priors.
+- **If a required file is missing, STOP and tell the user.** Do not guess, reconstruct, or
+  proceed without it. Ask the PM/user to create or provide it first.
+- **You may not silently skip, summarise away, or deprioritise these rules.** Treat each
+  Non-Negotiable Standard below as a blocker — violating one is a task failure, not a style preference.
+
+### Session start acknowledgement
+At the start of every session in a project using this toolkit, your first action MUST be to
+confirm (briefly, in plain text) that you have read:
+1. This file (`CLAUDE.md`)
+2. `doc/project-brief.md` — to know scope and constraints
+3. `doc/version_control.md` — to know branching rules before any git command
+4. `doc/handover/consolidated_handover.md` — to know current project state
+
+If any of those files do not exist, state which are missing and wait for instructions.
+**Do not proceed to the user's request until this acknowledgement is done.**
+
+### Why this exists
+Past sessions have skipped project context files, expanded scope without permission, pushed
+directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those
+failures traces back to an AI assistant treating this file as optional reading. It is not.
+
+---
 
 ## What This Repo Is
 Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
@@ -78,6 +117,24 @@ The `doc/` folder must contain only documentation that is directly required for 
 - Treat unnecessary documentation as a security surface: the less extraneous content in `doc/`, the smaller the exposure
 
 This standard is **non-negotiable** and applies regardless of project size, phase, or urgency.
+
+### Mandatory Context Files
+Before any work begins on a project — code, design, docs, planning, or advice — every team member (including AI agents) MUST read the project's context files. These files are not optional reference material; they are the project's operating contract:
+
+- `doc/project-brief.md` — defines scope, constraints, and success criteria
+- `doc/team-assignment.md` — defines who owns what
+- `doc/workflow.md` — defines execution order and dependencies
+- `doc/version_control.md` — defines branching rules (binding before any git command)
+- `doc/handover/consolidated_handover.md` — defines current state
+- `doc/codebase-assessment.md` — brownfield projects only
+
+Rules:
+- **Never act without reading the relevant context files first.** Answering a question, writing code, or running a command without having read them is a standards violation.
+- **If a required file is missing, stop and escalate to the PM/user.** Do not infer, reconstruct, or proceed from code alone.
+- **Instructions in these files override AI defaults and training priors.** If this file or a `doc/` file says to do (or not do) something, that rule wins.
+- **Do not silently skip, summarise away, or deprioritise the rules in these files.** Treat every directive as binding.
+
+This standard is **non-negotiable** and applies to every session, every task, and every team member — including AI assistants in any model or tool.
 
 ### Version Control Discipline
 All code changes — regardless of size, urgency, or who is making them — must follow the branching strategy defined in `doc/version_control.md`. Every team member (including AI agents) must:

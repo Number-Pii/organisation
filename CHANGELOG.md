@@ -13,6 +13,30 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.5.0] — 2026-04-12
+
+### Added
+- **Mandatory Reading Protocol** at the top of `CLAUDE.md` and `GEMINI.md`. Declares both
+  files and the project `doc/` folder as a binding contract, requires a session-start
+  acknowledgement that the core context files have been read, and forbids acting without
+  them. Directly addresses AI sessions that had been skipping project context.
+- **Mandatory Context Files** added to Non-Negotiable Standards in `CLAUDE.md` and
+  `GEMINI.md`. Lists the required `doc/` files and makes clear that their instructions
+  override AI defaults and training priors.
+- `init_project.py` now scaffolds a `CLAUDE.md` and `GEMINI.md` in the consuming project
+  root that carry the same Mandatory Reading Protocol and the inherited Non-Negotiable
+  Standards — so every new AI session in a scaffolded project is bound by the rules
+  immediately, without depending on the toolkit being present.
+- Protocol version bumped to 2.5.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- To get the new project-level `CLAUDE.md` / `GEMINI.md` in an existing project, re-run
+  `init_project.py` against that project — existing `doc/` files are preserved (the
+  scaffolder skips files that already exist).
+
+---
+
 ## [3.4.0] — 2026-03-30
 
 ### Added
