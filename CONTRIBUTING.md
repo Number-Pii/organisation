@@ -98,8 +98,28 @@ Examples:
 
 ## Keeping CLAUDE.md and GEMINI.md in Sync
 
-These files must be identical except for the session handover instruction in Step 7:
-- CLAUDE.md says: `"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"`
-- GEMINI.md says: `"Initialize GEMINI.md and read doc/handover/consolidated_handover.md"`
+`CLAUDE.md` is the **source of truth**. `GEMINI.md` is generated from it by `scripts/sync_ai_context.py` — do not edit `GEMINI.md` by hand.
 
-When editing one, apply the same change to both. CI will flag any drift.
+### Why both files exist
+Claude Code auto-loads `CLAUDE.md`; Gemini CLI auto-loads `GEMINI.md`. The toolkit must work in both, so both files must be present.
+
+### How sync works
+Edit `CLAUDE.md`, then run:
+
+```bash
+python3 scripts/sync_ai_context.py
+```
+
+The script rewrites `GEMINI.md` with the two known substitutions:
+- Tool-name references (`CLAUDE.md` → `GEMINI.md`, `Claude Code` → `Gemini CLI`) in the acknowledgement list and Step 7 handover pointer
+- Sync-comment header
+
+CI and the pre-commit hook run the same script and fail the build if drift is detected (`python3 scripts/sync_ai_context.py --check`).
+
+---
+
+## Why the Mandatory Reading Protocol Exists
+
+Past sessions have skipped project context files, expanded scope without permission, pushed directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those failures traced back to an AI assistant treating the protocol as optional reading.
+
+The Mandatory Reading Protocol in `CLAUDE.md` / `GEMINI.md` — and every Non-Negotiable Standard under it — is written as a hard rule precisely because soft guidance produced repeated regressions. When tempted to compress further, remember: the rules are short because they are terminal, not because they are flexible.

@@ -274,13 +274,12 @@ def consolidated_handover_template(name, existing=False):
         existing_context_section = f"""
 ## Existing Project Context
 > This project was active before the toolkit was introduced.
-> Fill this section from the findings in `doc/codebase-assessment.md`.
+> Fill from `doc/codebase-assessment.md`.
 
-**Tech Stack:** [FILL IN]
-**Architecture:** [FILL IN — brief summary]
-**Codebase Health:** [test coverage, CI state, last audit date]
-**Key Technical Debt:** [top 2–3 items — see codebase-assessment.md for full list]
-**Prior Decisions to Honour:** [FILL IN]
+- **Tech Stack:** [FILL IN]
+- **Architecture:** [FILL IN — one line]
+- **Key Tech Debt:** [top 2–3 — see codebase-assessment.md]
+- **Prior Decisions to Honour:** [FILL IN]
 
 ---
 """
@@ -288,83 +287,95 @@ def consolidated_handover_template(name, existing=False):
     return f"""# Consolidated Handover — {name}
 
 > Last updated: {TODAY} | Maintained by: Team Lead / Project Manager
+> **Keep this file ≤150 lines.** When it grows, roll prior state into `handover/archive/YYYY-MM.md`.
 
 ## Purpose
-This document is the single source of truth for project state. When starting a new AI session,
-instruct the assistant: **"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"**
+Single source of truth for **current** project state. When starting a new AI session:
+**"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"**
 
 ---
 {existing_context_section}
 ## Project Summary
-<!-- One paragraph: what this project is and who it's for. -->
-[FILL IN — copy from project-brief.md]
+[FILL IN — one paragraph; copy from project-brief.md]
 
 ## Current Status
-**Phase:** [Discovery / Design / Development / Testing / Deployment / Maintenance]
-**As of:** {TODAY}
+- **Phase:** [Discovery / Design / Development / Testing / Deployment / Maintenance]
+- **As of:** {TODAY}
 
-## What Has Been Done
-<!-- Chronological list of completed work. Update as milestones are hit. -->
-- [ ] [Nothing completed yet — project is at kickoff stage]
+## What Has Been Done (current phase only)
+<!-- Prior-phase work goes to handover/archive/. Keep this to the active phase. -->
+- [Nothing completed yet — project is at kickoff stage]
 
 ## What Is In Progress
-<!-- What is actively being worked on right now. -->
 - [FILL IN]
 
 ## What Is Next
-<!-- Immediate next steps in priority order. -->
 1. [FILL IN]
 2. [FILL IN]
-3. [FILL IN]
 
 ## Blockers & Issues
-<!-- Anything blocking progress that needs to be resolved. -->
 | Blocker | Owner | Status |
 |---------|-------|--------|
 | None currently | — | — |
 
-## Key Decisions Made
-<!-- Important decisions that affect the project — with rationale. -->
+## Key Decisions (still load-bearing)
+<!-- Decisions that still shape today's work. Archive superseded decisions. -->
 | Decision | Rationale | Date |
 |----------|-----------|------|
 | [FILL IN] | [FILL IN] | {TODAY} |
 
 ## Team Context
-<!-- Quick reference: who is doing what. -->
 See `doc/team-assignment.md` for full detail.
 
 ## Links & Resources
-<!-- Figma, repo, staging URL, Notion, etc. -->
 | Resource | URL |
 |----------|-----|
 | Repository | [FILL IN] |
 | Staging | [FILL IN] |
 | Design | [FILL IN] |
 
----
-
-## How to Consolidate
-
-Pull key items from each `doc/handover/[dept]/handover-notes.md` into this file at milestones.
-
-**Example — after the design phase completes:**
-
-> **What Has Been Done**
-> - [x] UX research: 8 user interviews completed, journey map created
-> - [x] Wireframes: 12 screens approved by PM (Figma link in Resources)
->
-> **Key Decisions Made**
-> | Decision | Rationale | Date |
-> |----------|-----------|------|
-> | Single-page app over multi-page | User research showed 90% of tasks are sequential | 2026-04-01 |
-> | Tailwind CSS over custom CSS | Team velocity — 3 engineers already proficient | 2026-04-02 |
->
-> **What Is Next**
-> 1. Frontend implementation (Lead Frontend Engineer)
-> 2. API endpoints for user flows (Lead Backend Engineer)
+## Archive
+Prior phase summaries live in `doc/handover/archive/YYYY-MM.md`. Roll on every milestone.
+See `doc/handover/archive/README.md` for the roll process.
 
 ---
-*This file is updated by the team lead from department handover notes in `doc/handover/[dept]/`.*
+*Updated by the team lead from department handover notes in `doc/handover/[dept]/`.*
+"""
+
+
+def handover_archive_readme_template(name):
+    return f"""# Handover Archive — {name}
+
+> Purpose: keep `consolidated_handover.md` lean (≤150 lines, ~4K tokens) regardless of project age.
+
+## Why this exists
+Without rolling, `consolidated_handover.md` grows unbounded — by month three of a real project,
+it commonly exceeds 1,000 lines and becomes the single largest file loaded every session.
+Rolling prior phases into dated archive files keeps session startup cost constant.
+
+## When to roll
+At every milestone, or at month-boundaries — whichever comes first. The team lead:
+
+1. Creates `archive/{{YYYY-MM}}.md` (e.g. `2026-04.md`) for the just-completed phase
+2. Moves the completed items from `consolidated_handover.md`'s "What Has Been Done" and
+   any superseded decisions from "Key Decisions"
+3. Leaves in `consolidated_handover.md` **only** work from the current/next phase
+4. Adds a one-line entry to the Archive Index below
+
+## Archive Index
+| File | Covers | Phase |
+|------|--------|-------|
+| *(none yet)* | — | — |
+
+## What to include in an archive file
+- Timeline of completed work (dated bullets)
+- Decisions made during the archived window, with rationale
+- Links to PRs / commits / artefacts from that phase
+- Anything future sessions may want to consult for *why*, not *what*
+
+## What NOT to archive
+- In-progress work, active blockers, live stakeholders — those belong in `consolidated_handover.md`
+- Anything the current phase still depends on
 """
 
 
@@ -495,6 +506,7 @@ def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_ru
         doc_dir / "workflow.md":         workflow_template(project_name),
         doc_dir / "version_control.md":  version_control_template(project_name),
         handover_dir / "consolidated_handover.md": consolidated_handover_template(project_name, existing=existing),
+        handover_dir / "archive" / "README.md": handover_archive_readme_template(project_name),
         output_dir / "CLAUDE.md":  project_context_pointer_template(project_name, "CLAUDE.md"),
         output_dir / "GEMINI.md":  project_context_pointer_template(project_name, "GEMINI.md"),
     }
