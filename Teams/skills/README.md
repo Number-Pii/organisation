@@ -108,18 +108,29 @@ Skills for extending AI capabilities:
 
 ## Finding Skills
 
-### Method 1: Browse this folder
+### Method 1: Scoped search (preferred — lowest token cost)
+Use the search script. It reads `CATEGORIES.md` (plus the folder listing as fallback)
+and prints matching skill names without loading any `SKILL.md` file.
+
 ```bash
-ls skills/
+python3 scripts/find_skill.py testing                       # keyword across all domains
+python3 scripts/find_skill.py --domain security             # every skill in one domain
+python3 scripts/find_skill.py --domain "ai & machine learning" rag
+python3 scripts/find_skill.py --list-domains                # print the domain index
+python3 scripts/find_skill.py --names-only react            # pipeable output
 ```
 
-### Method 2: Search by keyword
+### Method 2: Browse the categorised index
+Open [CATEGORIES.md](CATEGORIES.md) — skills grouped by domain; Ctrl+F to search.
+
+### Method 3: Browse this folder
 ```bash
+ls skills/
 ls skills/ | grep "keyword"
 ```
 
-### Method 3: Check the main README
-See the [main README](../README.md) for an overview or run `python3 scripts/audit_skills.py` for the full audit.
+### Method 4: Full audit
+Run `python3 scripts/audit_skills.py` for the complete role-to-skill coverage report.
 
 ---
 
