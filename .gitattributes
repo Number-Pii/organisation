@@ -1,0 +1,16 @@
+# Binary assets referenced by skills at runtime — keep tracked in-place
+# (SKILL.md files reference them via relative path) but exclude from
+# `git archive` tarballs to keep release artefacts small.
+
+Teams/skills/canvas-design/canvas-fonts/**  binary export-ignore
+Teams/skills/canvas-design/canvas-fonts/**  linguist-vendored
+Teams/skills/loki-mode/demo/**              binary export-ignore
+Teams/skills/loki-mode/docs/screenshots/**  binary export-ignore
+Teams/skills/notebooklm/images/**           binary export-ignore
+Teams/skills/shadcn/assets/**               binary export-ignore
+Teams/skills/last30days/assets/**           binary export-ignore
+Teams/skills/theme-factory/*.pdf            binary export-ignore
+Teams/skills/web-artifacts-builder/scripts/*.tar.gz  binary export-ignore
+
+# Generated file — do not diff in PRs by default
+GEMINI.md  linguist-generated

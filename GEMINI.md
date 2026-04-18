@@ -1,47 +1,24 @@
-<!-- SYNC: This file is paired with CLAUDE.md.
-     When editing, apply the same change to both files.
-     The only intentional difference is the session handover instruction in Step 7. -->
+<!-- GENERATED FILE — do not edit by hand.
+     This file is generated from CLAUDE.md by scripts/sync_ai_context.py.
+     To change its contents, edit CLAUDE.md and re-run the sync script. -->
 
 # Number Pii — Organisation Reference
 
-_Version: 2.5 — Last updated: 2026-04-12_
+_Version: 2.6 — Last updated: 2026-04-18_
 
 ---
 
 ## ⛔ MANDATORY READING PROTOCOL — READ BEFORE ANY ACTION
 
-**This file and the project's `doc/` folder are a binding contract, not reference material.**
-If you are an AI assistant operating in this repository or any project scaffolded by it,
-you MUST comply with the following before taking any action — including answering questions,
-writing code, running commands, or making suggestions.
+This file and the project's `doc/` folder are a binding contract. Before answering, coding, or running any command you MUST:
 
-### Hard rule
-- **You MUST read this file in full before doing anything else.** Not skim. Read.
-- **You MUST read every file in `doc/` that applies to the current task before acting.**
-  At minimum this means: `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`,
-  `doc/version_control.md`, and `doc/handover/consolidated_handover.md` (plus `doc/codebase-assessment.md` on brownfield projects).
-- **If any of these files exist, they override your defaults.** Instructions in this file and
-  in `doc/` take precedence over your own judgement, habits, or training priors.
-- **If a required file is missing, STOP and tell the user.** Do not guess, reconstruct, or
-  proceed without it. Ask the PM/user to create or provide it first.
-- **You may not silently skip, summarise away, or deprioritise these rules.** Treat each
-  Non-Negotiable Standard below as a blocker — violating one is a task failure, not a style preference.
+1. **Read this file in full.**
+2. **Read every relevant `doc/` file**: `project-brief.md`, `team-assignment.md`, `workflow.md`, `version_control.md`, `handover/consolidated_handover.md` (and `codebase-assessment.md` on brownfield projects).
+3. **Acknowledge in plain text** at session start that you have read `GEMINI.md`, `doc/project-brief.md`, `doc/version_control.md`, and `doc/handover/consolidated_handover.md`.
+4. **Stop and escalate** if any required file is missing — do not infer or reconstruct.
+5. **Treat every Non-Negotiable Standard below as a hard blocker** — violating one is task failure, not a style choice.
 
-### Session start acknowledgement
-At the start of every session in a project using this toolkit, your first action MUST be to
-confirm (briefly, in plain text) that you have read:
-1. This file (`GEMINI.md`)
-2. `doc/project-brief.md` — to know scope and constraints
-3. `doc/version_control.md` — to know branching rules before any git command
-4. `doc/handover/consolidated_handover.md` — to know current project state
-
-If any of those files do not exist, state which are missing and wait for instructions.
-**Do not proceed to the user's request until this acknowledgement is done.**
-
-### Why this exists
-Past sessions have skipped project context files, expanded scope without permission, pushed
-directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those
-failures traces back to an AI assistant treating this file as optional reading. It is not.
+> Rationale and past-incident history for this protocol live in [CONTRIBUTING.md](CONTRIBUTING.md#why-the-mandatory-reading-protocol-exists).
 
 ---
 
@@ -71,15 +48,7 @@ Already know what you need? Skip the full init flow and invoke directly:
 - Check coverage: `python3 scripts/audit_skills.py`
 
 ## Departments
-
-| Department | Folder | Roles |
-|---|---|---|
-| Executive Leadership | `Teams/01-Executive-Leadership/` | CEO, CTO, CPO, CMO, COO, Chief of Staff, VP Sales |
-| Engineering | `Teams/02-Engineering/` | 22 roles across product, client, DevOps, security, QA |
-| Product & Design | `Teams/03-Product-Design/` | PMs, designers, UX researcher, product analyst |
-| Sales & Consultancy | `Teams/04-Sales-Consultancy/` | Consultants, BDMs, account managers |
-| Growth & Marketing | `Teams/05-Growth-Marketing/` | SEO, content, social, performance marketing |
-| Operations | `Teams/06-Operations/` | Finance, people, operations, facilities |
+Full department structure lives in [Teams/organisation.md](Teams/organisation.md). Six departments: Executive Leadership, Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, Operations.
 
 ## Skills Directory
 All skills live in `Teams/skills/`. Each skill is a specialised AI expert module.
@@ -198,8 +167,7 @@ Then invoke the appropriate audit skill to build a fuller picture of the codebas
 The findings from this step feed directly into the doc files populated in Step 5.
 
 ### Step 3 — Assign Team
-Read `Teams/organisation.md` and the relevant role files in `Teams/` to determine which
-employees/team members/AI agents are appropriate for this project.
+Read `Teams/organisation.md` (structural facts: org chart, delegation, approval matrix) and `Teams/philosophy.md` (hiring standards, structural principles — read at this step, not earlier) plus the relevant role files in `Teams/` to determine which employees/team members/AI agents are appropriate for this project.
 - Match the project type to department expertise
 - List the proposed team with each member's role on the project
 - Confirm the team with the user before proceeding
