@@ -24,6 +24,8 @@ jobs:
           python -m py_compile scripts/update.py
           python -m py_compile scripts/check_version.py
           python -m py_compile scripts/sync_ai_context.py
+          python -m py_compile scripts/find_skill.py
+          python -m py_compile scripts/generate_skill_frontmatter.py
 
       # Run the skill audit — fails if any @skill refs are broken
       - name: Audit skill coverage
