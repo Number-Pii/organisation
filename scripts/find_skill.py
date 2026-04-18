@@ -3,9 +3,15 @@
 find_skill.py — scoped skill search for the Number Pii toolkit.
 
 Searches `Teams/skills/CATEGORIES.md` (with a filesystem fallback) and prints
-matching skill names only — without loading any `SKILL.md` file. The AI
+matching skill names only — without loading any full `SKILL.md`. The AI
 assistant picks the right skill from the short result list before spending
 tokens to load its full definition.
+
+When a skill carries extended frontmatter (opt-in; see
+`scripts/generate_skill_frontmatter.py`), the `domain` field overrides
+CATEGORIES.md in the result display and the `summary` field is surfaced
+inline. Frontmatter is read only for skills already in the result set, so
+queries stay cheap.
 
 Usage:
     python3 scripts/find_skill.py <keyword>               # match keyword across all domains
@@ -17,7 +23,7 @@ Arguments:
     keyword          Case-insensitive substring matched against skill folder names
     --domain, -d     Restrict results to a domain (case-insensitive partial match)
     --list-domains   Print every domain in CATEGORIES.md and exit
-    --names-only     Output skill names only (no domain suffix); useful for piping
+    --names-only     Output skill names only (no domain/summary suffix); useful for piping
 
 Examples:
     python3 scripts/find_skill.py testing
@@ -31,7 +37,12 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+
+from audit_skills import parse_frontmatter  # noqa: E402
+
+ROOT = HERE.parent
 SKILLS_DIR = ROOT / "Teams" / "skills"
 CATEGORIES_FILE = SKILLS_DIR / "CATEGORIES.md"
 SKILL_TOKEN = re.compile(r"`([a-z0-9][a-z0-9\-]*)`")
@@ -84,6 +95,21 @@ def build_index(
 def match_domains(query: str, available: list[str]) -> list[str]:
     q = query.lower().strip()
     return [d for d in available if q in d.lower()]
+
+
+def enrich_from_frontmatter(skill: str) -> tuple[str | None, str | None]:
+    """Return (domain, summary) from a skill's frontmatter, or (None, None).
+
+    Only fields that are non-empty strings are returned — callers use CATEGORIES.md
+    and name-only formatting as the respective fallbacks.
+    """
+    skill_md = SKILLS_DIR / skill / "SKILL.md"
+    if not skill_md.exists():
+        return None, None
+    fm, _ = parse_frontmatter(skill_md)
+    domain = fm.get("domain") if isinstance(fm.get("domain"), str) and fm.get("domain").strip() else None
+    summary = fm.get("summary") if isinstance(fm.get("summary"), str) and fm.get("summary").strip() else None
+    return domain, summary
 
 
 def main() -> int:
@@ -141,8 +167,13 @@ def main() -> int:
     for skill in sorted(candidates):
         if args.names_only:
             print(skill)
+            continue
+        fm_domain, fm_summary = enrich_from_frontmatter(skill)
+        domain = fm_domain or candidates[skill]
+        if fm_summary:
+            print(f"{skill}  [{domain}]  — {fm_summary}")
         else:
-            print(f"{skill}  [{candidates[skill]}]")
+            print(f"{skill}  [{domain}]")
     return 0
 
 
