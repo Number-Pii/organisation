@@ -117,6 +117,8 @@ All code changes — regardless of size, urgency, or who is making them — must
 
 This standard is **non-negotiable** and applies regardless of urgency, timeline pressure, or the number of people on the team.
 
+<!-- CACHE_BOUNDARY -->
+
 ---
 
 ## Initialize Protocol
