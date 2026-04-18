@@ -4,6 +4,12 @@ description: "Guide for quality focused software architecture. This skill should
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Guide for quality focused software architecture.
+detail_sections:
+  - Code Style Rules
+  - When to Use
 ---
 
 # Software Architecture Development Skill

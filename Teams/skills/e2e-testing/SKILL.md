@@ -5,6 +5,15 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "End-to-end testing workflow with Playwright for browser automation, visual regression, cross-browser testing, and CI/CD integration."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # E2E Testing Workflow

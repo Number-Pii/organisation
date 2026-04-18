@@ -35,6 +35,7 @@ def cyan(t):   return c(t, "36")
 REPO_ROOT   = Path(__file__).resolve().parent.parent
 TEAMS_DIR   = REPO_ROOT / "Teams"
 SKILLS_DIR  = TEAMS_DIR / "skills"
+CATEGORIES_MD = SKILLS_DIR / "CATEGORIES.md"
 DEPT_DIRS   = ["01-Executive-Leadership", "02-Engineering", "03-Product-Design",
                "04-Sales-Consultancy", "05-Growth-Marketing", "06-Operations"]
 
@@ -111,11 +112,143 @@ def parse_role_file(path: Path):
     }
 
 
+# ── Frontmatter parser (zero-dep, subset of YAML) ─────────────────────────────
+
+EXTENSION_FIELDS = ("domain", "size_class", "summary", "detail_sections")
+VALID_SIZE_CLASSES = {"xs", "s", "m", "l", "xl"}
+
+
+def size_class_for(line_count: int) -> str:
+    """Band line counts: <50 xs, 50-199 s, 200-499 m, 500-999 l, 1000+ xl."""
+    if line_count < 50:   return "xs"
+    if line_count < 200:  return "s"
+    if line_count < 500:  return "m"
+    if line_count < 1000: return "l"
+    return "xl"
+
+
+def _unquote(value: str) -> str:
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+        return value[1:-1]
+    return value
+
+
+def _parse_scalar(value: str):
+    # Flow sequence: [a, b, c]
+    if value.startswith("[") and value.endswith("]"):
+        inner = value[1:-1].strip()
+        return [_unquote(item.strip()) for item in inner.split(",") if item.strip()]
+    return _unquote(value)
+
+
+def parse_frontmatter(path: Path):
+    """
+    Return (frontmatter_dict, total_line_count).
+    Handles the subset of YAML used in SKILL.md files: flat scalar keys and
+    one-level block lists (`- item`). Returns ({}, total) if no frontmatter.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return {}, 0
+
+    lines = text.splitlines()
+    total = len(lines)
+
+    if not lines or lines[0].strip() != "---":
+        return {}, total
+
+    end = None
+    for i in range(1, min(len(lines), 200)):
+        if lines[i].strip() == "---":
+            end = i
+            break
+    if end is None:
+        return {}, total
+
+    fm: dict = {}
+    current_list_key = None
+    for raw in lines[1:end]:
+        stripped = raw.rstrip()
+        if not stripped or stripped.lstrip().startswith("#"):
+            continue
+
+        # list item under the most recent empty-value key
+        lstripped = stripped.lstrip()
+        if current_list_key and lstripped.startswith("- "):
+            fm[current_list_key].append(_unquote(lstripped[2:].strip()))
+            continue
+
+        # top-level key: value
+        if ":" in stripped and not stripped.startswith((" ", "\t")):
+            key, _, rest = stripped.partition(":")
+            key = key.strip()
+            rest = rest.strip()
+            if rest == "":
+                fm[key] = []
+                current_list_key = key
+            else:
+                fm[key] = _parse_scalar(rest)
+                current_list_key = None
+
+    return fm, total
+
+
+def parse_domains_from_categories(path: Path) -> set:
+    """Return set of canonical domain names from CATEGORIES.md's `## ` headings."""
+    if not path.exists():
+        return set()
+    domains = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("## ") and line[3:].strip():
+            domains.add(line[3:].strip())
+    return domains
+
+
+def validate_extension(fm: dict, line_count: int, valid_domains: set) -> list:
+    """Return a list of issue strings for an opt-in extended frontmatter block."""
+    issues = []
+    if fm.get("domain") not in valid_domains:
+        issues.append(f"domain '{fm.get('domain')}' not in CATEGORIES.md")
+    sc = fm.get("size_class")
+    if sc not in VALID_SIZE_CLASSES:
+        issues.append(f"size_class '{sc}' must be one of {sorted(VALID_SIZE_CLASSES)}")
+    else:
+        expected = size_class_for(line_count)
+        if sc != expected:
+            issues.append(
+                f"size_class '{sc}' doesn't match line count {line_count} (expected '{expected}')"
+            )
+    summary = fm.get("summary")
+    if not isinstance(summary, str) or not summary:
+        issues.append("summary missing or not a string")
+    elif len(summary) > 150:
+        issues.append(f"summary is {len(summary)} chars (>150 limit)")
+    if not isinstance(fm.get("detail_sections"), list):
+        issues.append("detail_sections must be a block list")
+    return issues
+
+
 # ── Main audit ────────────────────────────────────────────────────────────────
 
 def run_audit(write_report=False):
     skill_folders  = get_skill_folders()
     role_files     = get_role_files()
+    valid_domains  = parse_domains_from_categories(CATEGORIES_MD)
+
+    # Scan every SKILL.md for extended frontmatter opt-in
+    extended_count = 0
+    frontmatter_issues = []   # list of (skill_name, [issue strings])
+    for folder in sorted(skill_folders):
+        skill_md = SKILLS_DIR / folder / "SKILL.md"
+        if not skill_md.exists():
+            continue
+        fm, line_count = parse_frontmatter(skill_md)
+        if all(k in fm for k in EXTENSION_FIELDS):
+            extended_count += 1
+            issues = validate_extension(fm, line_count, valid_domains)
+            if issues:
+                frontmatter_issues.append((folder, issues))
 
     all_agent_refs     = set()
     broken_agent_refs  = set()
@@ -173,11 +306,15 @@ def run_audit(write_report=False):
     p(bold("═" * 65))
     p()
 
+    ext_pct = round(100 * extended_count / len(skill_folders)) if skill_folders else 0
+    ext_colour = green if ext_pct >= 50 else (yellow if ext_pct > 0 else cyan)
+
     p(bold("OVERVIEW"))
     p(f"  Total skill folders in Teams/skills/      : {bold(str(len(skill_folders)))}")
     p(f"  Role files scanned                        : {bold(str(len(role_files)))}")
     p(f"  Unique @skill refs in Agent Skills        : {bold(str(len(all_agent_refs)))}")
     p(f"  Broken @skill refs (no matching folder)   : {red(str(len(broken_agent_refs))) if broken_agent_refs else green('0')}")
+    p(f"  Skills with extended frontmatter          : {ext_colour(str(extended_count))}/{len(skill_folders)} ({ext_pct}%)")
     p()
 
     total_bullets = total_core_bullets + total_tech_bullets
@@ -198,6 +335,14 @@ def run_audit(write_report=False):
     p(f"  Skills in Teams/skills/ NOT referenced    : {yellow(str(len(unlinked_skills)))}")
     p(f"  (Many are highly specialised — Azure SDKs, health tools, etc.)")
     p()
+
+    if frontmatter_issues:
+        p(yellow(bold("EXTENDED FRONTMATTER ISSUES")))
+        for skill, issues in sorted(frontmatter_issues):
+            p(f"  {yellow('~')} {skill}")
+            for issue in issues:
+                p(f"      • {issue}")
+        p()
 
     if broken_agent_refs:
         p(red(bold("BROKEN @SKILL REFS (fix these)")))
@@ -238,14 +383,16 @@ def run_audit(write_report=False):
         print(f"\n{green('✓')} Report written to: {report_path}")
 
     return {
-        "total_skills":        len(skill_folders),
-        "total_roles":         len(role_files),
-        "agent_refs":          len(all_agent_refs),
-        "broken_refs":         sorted(broken_agent_refs),
-        "total_bullets":       total_bullets,
-        "linked_bullets":      total_linked,
-        "unlinked_bullets":    unlinked_in_core_tech,
-        "unlinked_skills":     len(unlinked_skills),
+        "total_skills":          len(skill_folders),
+        "total_roles":           len(role_files),
+        "agent_refs":            len(all_agent_refs),
+        "broken_refs":           sorted(broken_agent_refs),
+        "total_bullets":         total_bullets,
+        "linked_bullets":        total_linked,
+        "unlinked_bullets":      unlinked_in_core_tech,
+        "unlinked_skills":       len(unlinked_skills),
+        "extended_frontmatter":  extended_count,
+        "frontmatter_issues":    frontmatter_issues,
     }
 
 

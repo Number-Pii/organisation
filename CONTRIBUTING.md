@@ -72,10 +72,58 @@ Examples:
 ## Adding a New Skill
 
 1. Create a folder in `Teams/skills/` with a kebab-case name (e.g. `my-new-skill/`)
-2. Add a `SKILL.md` file (required) — see existing skills for format
+2. Add a `SKILL.md` file (required) with the full frontmatter block — see the schema below
 3. Optionally add `scripts/`, `examples/`, or `resources/` subdirectories
 4. Reference the skill in the relevant role file(s) if appropriate
-5. Run `python3 scripts/audit_skills.py` to confirm the skill is detected
+5. Run `python3 scripts/audit_skills.py` to confirm the skill is detected and the frontmatter validates
+
+### SKILL.md frontmatter schema
+
+Every new skill MUST ship with all nine fields — the five base fields (present on every legacy skill) plus the four extension fields used by the scoped-discovery tooling (`scripts/find_skill.py`) and the coverage auditor.
+
+```yaml
+---
+# Base fields (required on every skill)
+name: my-new-skill                # kebab-case, must match folder name
+description: "One paragraph describing what the skill does and when to invoke it."
+risk: none                        # none | low | medium | high | unknown
+source: community                 # community | vendor | internal | <attribution>
+date_added: "2026-04-18"          # ISO date, quoted
+
+# Extension fields (required on all new skills)
+domain: "Backend & APIs"          # MUST match one of the 17 headings in Teams/skills/CATEGORIES.md exactly
+size_class: m                     # xs <50 · s 50–199 · m 200–499 · l 500–999 · xl 1000+ lines
+summary: "One-line answer to 'what's this skill for' — ≤150 chars, surfaced by find_skill.py."
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - Examples
+---
+```
+
+#### Rules
+- `domain` is validated against `Teams/skills/CATEGORIES.md`. If your skill doesn't fit an existing domain, open the discussion in your PR — do not invent a new value.
+- `size_class` must match the actual line count band; the auditor warns on mismatches.
+- `summary` is what `find_skill.py` surfaces in result rows — make it informative, not a persona opener.
+- `detail_sections` lists your top-level `## ` headers, so a loader can expand sections on demand.
+
+#### Bootstrap with the generator
+
+`scripts/generate_skill_frontmatter.py` proposes all four extension fields from an existing SKILL.md:
+
+```bash
+# Preview the proposed block
+python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md
+
+# Write it in place (overwrites the four extension fields if already present)
+python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md --write
+```
+
+Always human-review the proposal: domain lookup falls back to `uncategorised` for skills not yet in CATEGORIES.md, and the summary is taken from the first sentence of `description` — tighten or rewrite it if the first sentence is a persona opener or too terse.
+
+#### Legacy skills
+
+Existing skills without the four extension fields still validate (the auditor treats extensions as opt-in during backfill). Coverage is reported in `scripts/audit_skills.py` output and is being expanded domain-by-domain — no single-PR mandate.
 
 ---
 

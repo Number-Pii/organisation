@@ -4,6 +4,14 @@ description: "Master REST and GraphQL API design principles to build intuitive, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers and stand the test of time."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # API Design Principles

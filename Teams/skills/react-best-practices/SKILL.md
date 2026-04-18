@@ -4,6 +4,15 @@ description: "Comprehensive performance optimization guide for React and Next.js
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: "Comprehensive performance optimization guide for React and Next.js applications, maintained by Vercel."
+detail_sections:
+  - When to Use
+  - Rule Categories by Priority
+  - Quick Reference
+  - How to Use
+  - Full Compiled Document
 ---
 
 # Vercel React Best Practices

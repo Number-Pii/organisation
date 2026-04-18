@@ -4,6 +4,27 @@ description: "Design a PostgreSQL-specific schema. Covers best-practices, data t
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Design PostgreSQL schemas — data types, indexing, constraints, RLS, partitioning, JSONB, and performance patterns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Core Rules
+  - PostgreSQL “Gotchas”
+  - Data Types
+  - Table Types
+  - Row-Level Security
+  - Constraints
+  - Indexing
+  - Partitioning
+  - Special Considerations
+  - Generated Columns
+  - Extensions
+  - JSONB Guidance
+  - Examples
 ---
 
 # PostgreSQL Table Design 
