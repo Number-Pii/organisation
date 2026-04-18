@@ -15,6 +15,22 @@ tags:
   - option
   - task
   - reader
+domain: "Programming Languages"
+size_class: xl
+summary: Comprehensive guide for refactoring imperative TypeScript code to fp-ts functional patterns
+detail_sections:
+  - Table of Contents
+  - 1. Converting try-catch to Either/TaskEither
+  - 2. Converting null checks to Option
+  - 3. Converting callbacks to Task
+  - 4. Converting class-based DI to Reader
+  - 5. Converting imperative loops to functional operations
+  - 6. Migrating Promise chains to TaskEither
+  - 7. Common Pitfalls
+  - 8. Gradual Adoption Strategies
+  - 9. When NOT to Refactor
+  - "Quick Reference: Imperative to fp-ts Mapping"
+  - Summary
 ---
 
 # Refactoring Imperative Code to fp-ts

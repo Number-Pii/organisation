@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Comprehensive security auditing workflow covering web application testing, API security, penetration testing, vulnerability scanning, and security…"
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Security Testing Checklist
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Security Auditing Workflow Bundle

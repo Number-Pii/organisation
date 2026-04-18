@@ -1,9 +1,17 @@
 ---
 name: javascript-testing-patterns
-description: "Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices."
+description: Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best…
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # JavaScript Testing Patterns

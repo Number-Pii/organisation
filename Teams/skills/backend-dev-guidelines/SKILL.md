@@ -4,6 +4,24 @@ description: "You are a senior backend engineer operating production-grade servi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Node/Express/TypeScript backend rules — architecture, DI, Prisma, error handling, observability, testing, and anti-patterns."
+detail_sections:
+  - "1. Backend Feasibility & Risk Index (BFRI)"
+  - When to Use
+  - 3. Core Architecture Doctrine (Non-Negotiable)
+  - 4. Directory Structure (Canonical)
+  - 5. Naming Conventions (Strict)
+  - 6. Dependency Injection Rules
+  - "7. Prisma & Repository Rules"
+  - "8. Async & Error Handling"
+  - "9. Observability & Monitoring"
+  - 10. Testing Discipline
+  - 11. Anti-Patterns (Immediate Rejection)
+  - 12. Integration With Other Skills
+  - 13. Operator Validation Checklist
+  - 14. Skill Status
 ---
 
 # Backend Development Guidelines

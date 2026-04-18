@@ -5,6 +5,13 @@ risk: unknown
 source: "https://github.com/anthropics/skills"
 date_added: "2026-03-21"
 license: Complete terms in LICENSE.txt
+domain: "Documentation & Office"
+size_class: xs
+summary: "Write internal communications such as status reports, leadership updates, 3P updates, newsletters, FAQs, incident reports, and project updates using…"
+detail_sections:
+  - When to use this skill
+  - How to use this skill
+  - Keywords
 ---
 
 ## When to use this skill

@@ -4,6 +4,17 @@ description: "Use when you have a spec or requirements for a multi-step task, be
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Structure a plan document before writing code — break a multi-step task into bite-sized steps with spec context."
+detail_sections:
+  - Overview
+  - Bite-Sized Task Granularity
+  - Plan Document Header
+  - Task Structure
+  - Remember
+  - Execution Handoff
+  - When to Use
 ---
 
 # Writing Plans

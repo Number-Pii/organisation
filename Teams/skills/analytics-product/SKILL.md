@@ -3,20 +3,44 @@ name: analytics-product
 description: "Analytics de produto — PostHog, Mixpanel, eventos, funnels, cohorts, retencao, north star metric, OKRs e dashboards de produto."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- analytics
-- product
-- metrics
-- posthog
-- mixpanel
+  - analytics
+  - product
+  - metrics
+  - posthog
+  - mixpanel
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Analytics de produto — PostHog, Mixpanel, eventos, funnels, cohorts, retencao, north star metric, OKRs e dashboards de produto."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Analytics-Product — Decida Com Dados
+  - Eventos Essenciais Da Auri
+  - Implementacao Posthog (Python)
+  - "Uso:"
+  - Funil De Ativacao Auri
+  - Otimizando O Funil
+  - Analise De Cohort (Retencao Semanal)
+  - Benchmarks De Retencao (Assistentes De Voz)
+  - Definindo A North Star Da Auri
+  - Dashboard North Star
+  - Feature Flags Com Posthog
+  - Calculadora De Significancia Estatistica
+  - 6. Comandos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # ANALYTICS-PRODUCT — Decida com Dados

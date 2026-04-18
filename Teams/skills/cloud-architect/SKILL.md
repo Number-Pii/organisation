@@ -1,9 +1,22 @@
 ---
 name: cloud-architect
-description: Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns.
+description: "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 
 ## Use this skill when
