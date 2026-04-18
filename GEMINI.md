@@ -53,6 +53,7 @@ Full department structure lives in [Teams/organisation.md](Teams/organisation.md
 ## Skills Directory
 All skills live in `Teams/skills/`. Each skill is a specialised AI expert module.
 - Browse the full list: `Teams/skills/README.md`
+- **Scoped search (preferred before loading any SKILL.md):** `python3 scripts/find_skill.py <keyword>` or `python3 scripts/find_skill.py --domain <name> <keyword>` — returns matching names only, no file loads
 - Invoke any skill with: `@skill-name [your task]`
 - Run `python3 scripts/audit_skills.py` to see current skill coverage and total count
 
@@ -169,6 +170,7 @@ The findings from this step feed directly into the doc files populated in Step 5
 ### Step 3 — Assign Team
 Read `Teams/organisation.md` (structural facts: org chart, delegation, approval matrix) and `Teams/philosophy.md` (hiring standards, structural principles — read at this step, not earlier) plus the relevant role files in `Teams/` to determine which employees/team members/AI agents are appropriate for this project.
 - Match the project type to department expertise
+- For skill discovery, run `python3 scripts/find_skill.py --domain <name> <keyword>` instead of loading `Teams/skills/README.md` wholesale — it returns names only and keeps the baseline small
 - List the proposed team with each member's role on the project
 - Confirm the team with the user before proceeding
 
