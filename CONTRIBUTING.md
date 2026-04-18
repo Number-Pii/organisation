@@ -166,6 +166,40 @@ CI and the pre-commit hook run the same script and fail the build if drift is de
 
 ---
 
+## Cache-safe vs Volatile Blocks
+
+Some parts of the toolkit change often; others barely change at all. Marking the stable blocks with a `<!-- CACHE_BOUNDARY -->` HTML comment gives contributors a clear "don't churn this without good reason" signal and gives future tooling a hook to place prompt-cache breakpoints.
+
+**This is a contributor convention, not a live Claude Code directive.** Claude Code does not parse these sentinels today — Anthropic's prompt cache operates at the SDK level via explicit `cache_control` breakpoints on API requests, not by scanning markdown. The sentinels exist so that (a) contributors treat the marked blocks as stable by default, and (b) any future wrapper that reads them can translate them into real cache breakpoints without a schema change.
+
+### Where the sentinels sit today
+
+**Cache-safe** (end with `<!-- CACHE_BOUNDARY -->`):
+
+- `CLAUDE.md` — end of the Non-Negotiable Standards section
+- `GEMINI.md` — same placement (propagates automatically via `sync_ai_context.py`)
+- `Teams/organisation.md` — end of file
+- `Teams/philosophy.md` — end of file
+
+**Volatile** (no sentinel — expect churn):
+
+- `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`, `doc/handover/**` — per-project, rewritten every engagement
+- `Agent Skills` sections inside role files — curated list changes as new skills land
+- `CHANGELOG.md`, `VERSION` — bumped every release
+- Individual `Teams/skills/**/SKILL.md` — edited as skills evolve
+
+### When editing a cache-safe block
+
+Churning a cache-safe block invalidates downstream cache for every context that loads it. Before editing one:
+
+1. Prefer a smaller, additive change over a rewrite
+2. Confirm the change is genuinely terminal — not "nice to have" wording
+3. Expect that the next session's warm cache is lost; this is fine for binding rules, wasteful for cosmetics
+
+`sync_ai_context.py` preserves HTML comments, so sentinels in `CLAUDE.md` appear in `GEMINI.md` automatically — never hand-edit `GEMINI.md` to add or remove one.
+
+---
+
 ## Why the Mandatory Reading Protocol Exists
 
 Past sessions have skipped project context files, expanded scope without permission, pushed directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those failures traced back to an AI assistant treating the protocol as optional reading.

@@ -245,3 +245,5 @@ Moved to **[philosophy.md](philosophy.md)** to keep this file lean for quick-loo
 ---
 
 *Document Version: 3.2 · Revised: 18 April 2026 · Author: Number Pii Leadership*
+
+<!-- CACHE_BOUNDARY -->

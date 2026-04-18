@@ -45,3 +45,5 @@ Every candidate must demonstrate:
 ---
 
 *Document Version: 1.0 · Derived from organisation.md v3.1 · 2026-04-18*
+
+<!-- CACHE_BOUNDARY -->
