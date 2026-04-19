@@ -13,6 +13,56 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.6.0] — 2026-04-19
+
+### Added
+- **Scoped skill discovery** — new `scripts/find_skill.py` returns matching skill
+  names only (no SKILL.md content loaded). Step 3 of the Initialize Protocol and
+  the Skills Directory section in `CLAUDE.md` / `GEMINI.md` now point to it as
+  the preferred scan before loading any full skill definition. (PR #4, PR #5)
+- **Extended SKILL.md frontmatter schema** for lazy-loading. Four new fields —
+  `domain`, `size_class`, `summary`, `detail_sections` — are now required on all
+  new skills. `find_skill.py` surfaces `summary` in result rows and prefers
+  frontmatter `domain` over the CATEGORIES.md lookup. (PR #6)
+- **`scripts/generate_skill_frontmatter.py`** — helper that proposes the four
+  extension fields from an existing SKILL.md and supports in-place `--write`. (PR #6)
+- **`scripts/audit_skills.py`** extended with a zero-dep YAML subset parser, an
+  opt-in validator for the four extension fields, and a new coverage stat
+  (`Skills with extended frontmatter: N/1294`). (PR #6)
+- **16 pilot skills** extended with the new frontmatter: `project-development`,
+  `internal-comms`, `analytics-product`, `api-design-principles`,
+  `writing-plans`, `security-audit`, `aws-skills`,
+  `javascript-testing-patterns`, `react-best-practices`, `workflow-automation`,
+  `postgresql`, `cloud-architect`, `backend-dev-guidelines`,
+  `software-architecture`, `e2e-testing`, `fp-refactor`. (PR #6)
+- **`<!-- CACHE_BOUNDARY -->` sentinel convention** on stable blocks: end of
+  Non-Negotiable Standards in `CLAUDE.md` / `GEMINI.md`, end of
+  `Teams/organisation.md`, end of `Teams/philosophy.md`. Framed as a contributor
+  "don't churn this without good reason" signal and a hook for future
+  prompt-cache tooling — not a live Claude Code directive. New "Cache-safe vs
+  Volatile Blocks" section in `CONTRIBUTING.md`. (PR #7)
+- **Token-efficiency optimisations** across the toolkit (items 1–5, 8, 10 of the
+  Token Efficiency & Context Window Optimization close-out plan). (PR #3)
+
+### Changed
+- `CONTRIBUTING.md` "Adding a New Skill" now documents the full nine-field
+  frontmatter contract (five base + four extension fields) and the
+  `generate_skill_frontmatter.py` bootstrap workflow.
+- **Protocol version** recorded as 2.6 in `CLAUDE.md` / `GEMINI.md`. The 2.5 → 2.6
+  transition was introduced in PR #3 without a corresponding `VERSION`/CHANGELOG
+  bump at the time; this release formalises it.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- New skills added to `Teams/skills/` MUST now include all four extension
+  fields. Use `python3 scripts/generate_skill_frontmatter.py <path> --write`
+  to bootstrap the proposal, then human-review `summary` and `detail_sections`
+  before committing.
+- Existing skills without the extension fields remain valid; the extension is
+  opt-in during backfill.
+
+---
+
 ## [3.5.0] — 2026-04-12
 
 ### Added
