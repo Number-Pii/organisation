@@ -117,6 +117,13 @@ All code changes — regardless of size, urgency, or who is making them — must
 
 This standard is **non-negotiable** and applies regardless of urgency, timeline pressure, or the number of people on the team.
 
+### Writing Style
+All prose, proposals, copy, and documentation produced by any team member (including AI agents) must follow this style rule:
+
+- **No em dashes (—).** Use commas for light pauses, semicolons for related clauses, and periods for full stops instead.
+
+This applies to every written output: docs, handover notes, client-facing copy, and in-code comments alike.
+
 <!-- CACHE_BOUNDARY -->
 
 ---
