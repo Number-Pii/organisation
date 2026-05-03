@@ -131,7 +131,7 @@ Existing skills without the four extension fields still validate (the auditor tr
 
 1. Update `VERSION` with the new version number
 2. Add a new section at the top of `CHANGELOG.md` with the changes and migration notes
-3. If the protocol changed, update the `_Version:` line in both `CLAUDE.md` and `GEMINI.md`
+3. If the protocol changed, update the `_Version:` line in `CLAUDE.md`, then run `sync_ai_context.py` to propagate to `GEMINI.md` and `AGENTS.md`
 4. Run `python3 scripts/check_version.py` to confirm everything is in sync
 
 ### Version types
@@ -144,12 +144,12 @@ Existing skills without the four extension fields still validate (the auditor tr
 
 ---
 
-## Keeping CLAUDE.md and GEMINI.md in Sync
+## Keeping CLAUDE.md, GEMINI.md, and AGENTS.md in Sync
 
-`CLAUDE.md` is the **source of truth**. `GEMINI.md` is generated from it by `scripts/sync_ai_context.py` — do not edit `GEMINI.md` by hand.
+`CLAUDE.md` is the **source of truth**. `GEMINI.md` and `AGENTS.md` are generated from it by `scripts/sync_ai_context.py` — do not edit either generated file by hand.
 
-### Why both files exist
-Claude Code auto-loads `CLAUDE.md`; Gemini CLI auto-loads `GEMINI.md`. The toolkit must work in both, so both files must be present.
+### Why all three files exist
+Claude Code auto-loads `CLAUDE.md`; Gemini CLI auto-loads `GEMINI.md`; OpenAI Codex auto-loads `AGENTS.md`. The toolkit must work in all three, so all three files must be present.
 
 ### How sync works
 Edit `CLAUDE.md`, then run:
@@ -158,8 +158,8 @@ Edit `CLAUDE.md`, then run:
 python3 scripts/sync_ai_context.py
 ```
 
-The script rewrites `GEMINI.md` with the two known substitutions:
-- Tool-name references (`CLAUDE.md` → `GEMINI.md`, `Claude Code` → `Gemini CLI`) in the acknowledgement list and Step 7 handover pointer
+The script rewrites both `GEMINI.md` and `AGENTS.md` with the known substitutions per target:
+- Tool-name references in the acknowledgement list and Step 7 handover pointer
 - Sync-comment header
 
 CI and the pre-commit hook run the same script and fail the build if drift is detected (`python3 scripts/sync_ai_context.py --check`).
@@ -177,7 +177,7 @@ Some parts of the toolkit change often; others barely change at all. Marking the
 **Cache-safe** (end with `<!-- CACHE_BOUNDARY -->`):
 
 - `CLAUDE.md` — end of the Non-Negotiable Standards section
-- `GEMINI.md` — same placement (propagates automatically via `sync_ai_context.py`)
+- `GEMINI.md` and `AGENTS.md` — same placement (propagates automatically via `sync_ai_context.py`)
 - `Teams/organisation.md` — end of file
 - `Teams/philosophy.md` — end of file
 

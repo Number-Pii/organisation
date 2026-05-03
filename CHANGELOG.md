@@ -13,6 +13,28 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.7.0] — 2026-05-03
+
+### Added
+- **OpenAI Codex support** — `AGENTS.md` is now generated alongside `GEMINI.md` from
+  `CLAUDE.md` via `scripts/sync_ai_context.py`. OpenAI Codex auto-loads `AGENTS.md`,
+  giving all three major AI coding assistants (Claude Code, Gemini CLI, Codex) full
+  access to the toolkit context without any manual setup.
+- `README.md` updated with Codex in the cross-platform support section and
+  `initialize AGENTS.md` as a third initialize command example.
+
+### Changed
+- `scripts/sync_ai_context.py` refactored to support multiple targets. Both
+  `GEMINI.md` and `AGENTS.md` are written (or checked) in a single run.
+- CI step now validates both generated files are in sync with `CLAUDE.md`.
+- Protocol version bumped to 2.7 in `CLAUDE.md`.
+
+### Migration Notes
+- No action required for existing projects. Your `doc/` folder is unchanged.
+- Run `python3 scripts/sync_ai_context.py` once after pulling to generate `AGENTS.md`.
+
+---
+
 ## [3.6.0] — 2026-04-19
 
 ### Added

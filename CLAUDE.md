@@ -1,10 +1,10 @@
-<!-- SYNC: This file is the SOURCE OF TRUTH. GEMINI.md is generated from it.
-     Never edit GEMINI.md by hand — run `python3 scripts/sync_ai_context.py`
+<!-- SYNC: This file is the SOURCE OF TRUTH. GEMINI.md and AGENTS.md are generated from it.
+     Never edit GEMINI.md or AGENTS.md by hand — run `python3 scripts/sync_ai_context.py`
      after editing this file. CI enforces sync with `--check`. -->
 
 # Number Pii — Organisation Reference
 
-_Version: 2.6 — Last updated: 2026-04-18_
+_Version: 2.7 — Last updated: 2026-05-03_
 
 ---
 

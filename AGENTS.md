@@ -14,7 +14,7 @@ This file and the project's `doc/` folder are a binding contract. Before answeri
 
 1. **Read this file in full.**
 2. **Read every relevant `doc/` file**: `project-brief.md`, `team-assignment.md`, `workflow.md`, `version_control.md`, `handover/consolidated_handover.md` (and `codebase-assessment.md` on brownfield projects).
-3. **Acknowledge in plain text** at session start that you have read `GEMINI.md`, `doc/project-brief.md`, `doc/version_control.md`, and `doc/handover/consolidated_handover.md`.
+3. **Acknowledge in plain text** at session start that you have read `AGENTS.md`, `doc/project-brief.md`, `doc/version_control.md`, and `doc/handover/consolidated_handover.md`.
 4. **Stop and escalate** if any required file is missing — do not infer or reconstruct.
 5. **Treat every Non-Negotiable Standard below as a hard blocker** — violating one is task failure, not a style choice.
 
@@ -284,7 +284,7 @@ The workflow does **not** advance until this is done. No exceptions.
 - The team lead consolidates into `doc/handover/consolidated_handover.md` at key milestones
 - `doc/version_control.md` is owned by the Lead/Senior Engineer on the project
 - When handing over to a new AI session, instruct it:
-  > "Initialize GEMINI.md and read doc/handover/consolidated_handover.md"
+  > "Initialize AGENTS.md and read doc/handover/consolidated_handover.md"
   This provides full context instantly, saving tokens and time.
 
 ### Step 8 — Project Closure
