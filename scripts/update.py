@@ -171,6 +171,15 @@ def main():
         print(f"Updated to version {new_version}.")
         print()
         print("Your project doc/ files are untouched.")
+        print()
+        print("New scaffold files may have been added in this release.")
+        print("Re-run init_project.py in each consuming project to create any missing")
+        print("files (existing files are always skipped):")
+        print()
+        print("  python3 organisation/scripts/init_project.py \\")
+        print('    --project-name "Your Project" \\')
+        print("    --output-dir /path/to/your-project")
+        print()
         if is_major:
             print("Read the migration notes in CHANGELOG.md before starting new sessions.")
     else:
