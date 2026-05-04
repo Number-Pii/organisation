@@ -509,6 +509,7 @@ def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_ru
         handover_dir / "archive" / "README.md": handover_archive_readme_template(project_name),
         output_dir / "CLAUDE.md":  project_context_pointer_template(project_name, "CLAUDE.md"),
         output_dir / "GEMINI.md":  project_context_pointer_template(project_name, "GEMINI.md"),
+        output_dir / "AGENTS.md":  project_context_pointer_template(project_name, "AGENTS.md"),
     }
 
     if existing:
