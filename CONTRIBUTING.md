@@ -159,8 +159,11 @@ python3 scripts/sync_ai_context.py
 ```
 
 The script rewrites both `GEMINI.md` and `AGENTS.md` with the known substitutions per target:
-- Tool-name references in the acknowledgement list and Step 7 handover pointer
+- Tool-name reference in the session-start acknowledgement list
 - Sync-comment header
+
+`INITIALIZE.md` (the Initialize Protocol body) is model-neutral and shared by all three
+context files directly; it needs no sync and is edited in place.
 
 CI and the pre-commit hook run the same script and fail the build if drift is detected (`python3 scripts/sync_ai_context.py --check`).
 
@@ -178,6 +181,7 @@ Some parts of the toolkit change often; others barely change at all. Marking the
 
 - `CLAUDE.md` — end of the Non-Negotiable Standards section
 - `GEMINI.md` and `AGENTS.md` — same placement (propagates automatically via `sync_ai_context.py`)
+- `INITIALIZE.md` — end of file
 - `Teams/organisation.md` — end of file
 - `Teams/philosophy.md` — end of file
 
