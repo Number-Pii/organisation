@@ -13,6 +13,31 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.10.0] — 2026-06-10
+
+### Added
+- **`INITIALIZE.md`** at the toolkit root: the full Initialize Protocol (Steps 1 through 8)
+  now lives in its own model-neutral file, loaded on demand when the user says
+  "initialize". It carries the same binding force as `CLAUDE.md` and ends with a
+  `CACHE_BOUNDARY` sentinel.
+
+### Changed
+- **Token optimisation: always-loaded context cut by 54%.** `CLAUDE.md` shrank from
+  19.5KB to 9.0KB (with `GEMINI.md` and `AGENTS.md` matching) by moving the Initialize
+  Protocol to `INITIALIZE.md`, merging the overlapping Skill Linking / Quick Start /
+  Skills Directory / Finding the Right Role sections into one Skills section, and
+  stating the non-negotiable preamble once instead of repeating it under each standard.
+  Total context for an init session is unchanged; every other session loads ~10.5KB less.
+- No rule was removed or weakened: all six Non-Negotiable Standards keep their full
+  operative bullets, and the Mandatory Reading Protocol gains an explicit instruction
+  to read `INITIALIZE.md` in full when the protocol is triggered (never run it from memory).
+- `sync_ai_context.py`: the Step 7 handover-pointer substitution was retired because the
+  protocol body is now model-neutral; only the acknowledgement-line substitution remains.
+- The trigger list now includes "initialize AGENTS.md" (previously only CLAUDE/GEMINI).
+- `CONTRIBUTING.md` sync and cache-boundary docs updated; `README.md` repository tree
+  updated. The user-facing init flow is unchanged, so this is a MINOR bump.
+- Protocol version bumped to 2.10 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.9.0] — 2026-06-10
 
 ### Added

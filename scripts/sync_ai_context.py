@@ -42,14 +42,12 @@ AGENTS_TARGET_HEADER = (
     "     To change its contents, edit CLAUDE.md and re-run the sync script. -->"
 )
 
+# The Initialize Protocol body lives in INITIALIZE.md (model-neutral, shared by all
+# three context files), so the only divergence left is the acknowledgement line.
 GEMINI_SUBSTITUTIONS: list[tuple[str, str]] = [
     (
         "at session start that you have read `CLAUDE.md`",
         "at session start that you have read `GEMINI.md`",
-    ),
-    (
-        '"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"',
-        '"Initialize GEMINI.md and read doc/handover/consolidated_handover.md"',
     ),
 ]
 
@@ -57,10 +55,6 @@ AGENTS_SUBSTITUTIONS: list[tuple[str, str]] = [
     (
         "at session start that you have read `CLAUDE.md`",
         "at session start that you have read `AGENTS.md`",
-    ),
-    (
-        '"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"',
-        '"Initialize AGENTS.md and read doc/handover/consolidated_handover.md"',
     ),
 ]
 

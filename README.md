@@ -57,8 +57,10 @@ organisation/
 │   ├── audit_skills.py                        # Skill coverage auditor
 │   ├── init_project.py                        # Project doc/ scaffolder
 │   └── README.md                              # Script usage docs
-├── CLAUDE.md                                  # Claude Code context + Initialize Protocol
-├── GEMINI.md                                  # Gemini CLI context (identical to CLAUDE.md)
+├── CLAUDE.md                                  # Claude Code context (source of truth)
+├── GEMINI.md                                  # Gemini CLI context (generated from CLAUDE.md)
+├── AGENTS.md                                  # OpenAI Codex context (generated from CLAUDE.md)
+├── INITIALIZE.md                              # Initialize Protocol (loaded on demand by all three)
 └── README.md                                  # This file
 ```
 
