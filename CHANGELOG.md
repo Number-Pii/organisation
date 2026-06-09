@@ -13,6 +13,24 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.11.0] — 2026-06-10
+
+### Added
+- **Software Delivery Lifecycle.** `INITIALIZE.md` now defines six stages (Discovery,
+  Planning, Implementation, Verification, Deployment, Operations) with their outputs,
+  mapped onto the existing init steps and doc files rather than added as a parallel
+  framework. Steps 2 to 2c complete Discovery; Steps 3 to 5 complete Planning; the
+  scaffolded doc files carry Stages 3 to 6. Applies to products, client services, and
+  consultancy alike; consultancy outputs adapt but the stages and gates still apply.
+- Step 8 closure checklist: operations ownership (monitoring, support, maintenance)
+  must be recorded in `consolidated_handover.md` before a project closes.
+
+### Changed
+- `init_project.py` workflow template: the Task Breakdown is now organised by lifecycle
+  stage (Stages 2 to 6) instead of unnamed phases, with the quality gates as the exit
+  criteria for Verification, and "all quality gates pass" added to Completion Criteria.
+- Protocol version bumped to 2.11 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.10.0] — 2026-06-10
 
 ### Added
