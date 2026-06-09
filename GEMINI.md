@@ -4,7 +4,7 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.8 — Last updated: 2026-06-10_
+_Version: 2.9 — Last updated: 2026-06-10_
 
 ---
 
@@ -184,6 +184,18 @@ Then invoke the appropriate audit skill to build a fuller picture of the codebas
 
 The findings from this step feed directly into the doc files populated in Step 5.
 
+### Step 2c — Classify the Project
+Propose a classification level with a one-line rationale and confirm it with the user before assigning the team:
+
+| Level | Profile | Reference examples |
+|---|---|---|
+| **1** | Simple task | Landing pages, internal tools, automation scripts, API integrations, technical documentation |
+| **2** | Standard application | SaaS platforms, marketplaces, CRM systems, mobile applications |
+| **3** | Advanced system | Multi-tenant SaaS, AI products, agentic systems, enterprise platforms, data pipelines |
+| **4** | Large-scale engineering | National platforms, government, financial, healthcare, distributed architectures |
+
+The level sets the depth of documentation, architecture, testing, security, and review for the whole project. It is passed to the scaffolder in Step 4 (`--level N`), which writes the matching quality gates into `doc/workflow.md` and, at Level 3+, adds `doc/architecture.md`. Changing the level later is a scope change and follows the Step 6 process.
+
 ### Step 3 — Assign Team
 Read `Teams/organisation.md` (structural facts: org chart, delegation, approval matrix) and `Teams/philosophy.md` (hiring standards, structural principles — read at this step, not earlier) plus the relevant role files in `Teams/` to determine which employees/team members/AI agents are appropriate for this project.
 - Match the project type to department expertise
@@ -191,27 +203,30 @@ Read `Teams/organisation.md` (structural facts: org chart, delegation, approval 
 - List the proposed team with each member's role on the project
 - Confirm the team with the user before proceeding
 
-Use this as a guide for team size:
+Use the classification level from Step 2c as the guide for team size:
 
-| Project size | Recommended team |
+| Level | Recommended team |
 |---|---|
-| Solo / spike / exploration | 1–3 roles (PM + 1–2 specialists) |
-| Small product / feature | 4–7 roles across 2–3 departments |
-| Full delivery / client project | Full team assignment from `Teams/organisation.md` |
+| Level 1 | 1–3 roles (PM + 1–2 specialists) |
+| Level 2 | 4–7 roles across 2–3 departments |
+| Level 3 | 8–12 roles across 3–4 departments |
+| Level 4 | Full team assignment from `Teams/organisation.md` |
 
 ### Step 4 — Scaffold the Project
 Run the scaffolding script from the **consuming project root**. If the toolkit is gitignored inside it:
 ```bash
-# New project
+# New project (--level from Step 2c; Level 3+ also creates doc/architecture.md)
 python3 organisation/scripts/init_project.py \
   --project-name "Your Project Name" \
   --departments "engineering,design" \
+  --level 2 \
   --output-dir .
 
 # Existing product (brownfield) — adds codebase-assessment.md and expands the handover template
 python3 organisation/scripts/init_project.py \
   --project-name "Your Project Name" \
   --departments "engineering,design" \
+  --level 3 \
   --output-dir . \
   --existing
 ```
@@ -236,6 +251,7 @@ With the project brief and confirmed team, fill in the scaffolded files:
 | `doc/workflow.md` | Step-by-step responsibility chain — mark each task as sequential or parallel |
 | `doc/version_control.md` | Git branching strategy appropriate for project complexity |
 | `doc/handover/consolidated_handover.md` | Current state: project brief summary + what's done (nothing yet) + next steps |
+| `doc/architecture.md` | System design, components, NFRs, failure modes; **Level 3+ only** (created by `--level 3` or `--level 4`) |
 | `doc/codebase-assessment.md` | Existing architecture, stack, tech debt, quality baseline, risks — **brownfield only** (created by `--existing`) |
 
 > **Documentation discipline:** Only create and populate files that are directly required for building or maintaining this project. Do not create documents for troubleshooting or investigation purposes — see [Documentation Discipline](#documentation-discipline) in Non-Negotiable Standards.
@@ -297,6 +313,7 @@ The workflow does **not** advance until this is done. No exceptions.
 
 ### Step 8 — Project Closure
 Before a project is marked complete, confirm all of the following:
+- [ ] All quality gates for the project's classification level pass (see `doc/workflow.md`)
 - [ ] All handover notes are up to date
 - [ ] `doc/handover/consolidated_handover.md` reflects final state
 - [ ] No open blockers remain undocumented

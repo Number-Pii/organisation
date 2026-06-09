@@ -48,11 +48,12 @@ python3 /path/to/org/scripts/init_project.py \
   --project-name "Client Landing Page" \
   --departments "engineering,design,marketing"
 
-# Into a specific project directory
+# Into a specific project directory, with a classification level
 python3 /path/to/org/scripts/init_project.py \
   --project-name "API Build" \
   --departments "engineering" \
-  --output-dir /path/to/my-project
+  --output-dir /path/to/my-project \
+  --level 2
 
 # Preview without creating files
 python3 /path/to/org/scripts/init_project.py \
@@ -66,15 +67,18 @@ python3 /path/to/org/scripts/init_project.py \
 | `--project-name` | (required) | Project name used in all file headers |
 | `--departments` | `engineering` | Comma-separated dept names for handover sub-folders |
 | `--output-dir` | `.` (current dir) | Directory where `doc/` will be created |
+| `--level` | `2` | Classification level 1-4; sets the quality gates written into the docs. Level 3+ adds `architecture.md` |
+| `--existing` | false | Brownfield mode; adds `codebase-assessment.md` and expands the handover template |
 | `--dry-run` | false | Preview the structure without creating files |
 
 ### What It Creates
 ```
 doc/
-├── project-brief.md          # Goals, scope, client, constraints, stakeholders
+├── project-brief.md          # Goals, scope, client, constraints, classification level
 ├── team-assignment.md        # Assigned team members and their responsibilities
-├── workflow.md               # Step-by-step task chain (sequential + parallel)
+├── workflow.md               # Step-by-step task chain + level quality gates
 ├── version_control.md        # Git strategy, branching, PR rules
+├── architecture.md           # System design (created at --level 3 and 4 only)
 └── handover/
     ├── consolidated_handover.md   # Current project state (always up to date)
     └── [dept-name]/               # One folder per department in the team

@@ -7,14 +7,16 @@ Run this after the AI coding assistant has determined the project brief and team
 
 Usage:
     python3 scripts/init_project.py --project-name "My Project"
-    python3 scripts/init_project.py --project-name "Client Landing Page" --departments "engineering,design,marketing"
-    python3 scripts/init_project.py --project-name "API Build" --departments "engineering" --output-dir /path/to/project
-    python3 scripts/init_project.py --project-name "Inherited App" --departments "engineering" --output-dir /path/to/project --existing
+    python3 scripts/init_project.py --project-name "Client Landing Page" --departments "engineering,design,marketing" --level 1
+    python3 scripts/init_project.py --project-name "API Build" --departments "engineering" --output-dir /path/to/project --level 2
+    python3 scripts/init_project.py --project-name "Inherited App" --departments "engineering" --output-dir /path/to/project --existing --level 3
 
 Arguments:
     --project-name   Name of the project (used in file headers)
     --departments    Comma-separated dept names for handover sub-folders (default: engineering)
     --output-dir     Directory to create doc/ in (default: current working directory)
+    --level          Project classification level 1-4 (default: 2). Sets the quality gates
+                     scaffolded into the doc files. Level 3+ adds architecture.md.
     --existing       Brownfield mode: adds codebase-assessment.md and expands the handover template
     --dry-run        Preview what would be created without creating anything
 """
@@ -26,12 +28,78 @@ from datetime import date
 
 TODAY = date.today().isoformat()
 
+# ── Project classification ────────────────────────────────────────────────────
+# Each level activates a matching depth of documentation, architecture, testing,
+# security, and review. The level is agreed with the user during Step 2c of the
+# Initialize Protocol and recorded in doc/project-brief.md.
+
+LEVELS = {
+    1: {
+        "name": "Simple Task",
+        "examples": "Landing pages, internal tools, automation scripts, API integrations, technical documentation",
+        "team": "1-3 roles (PM + 1-2 specialists)",
+        "documentation": "Core doc/ set only",
+        "architecture": "No separate document; note key technical choices in workflow.md",
+        "testing": "Manual verification plus smoke tests on critical paths",
+        "security": "Secure defaults: secrets management, input validation, dependency hygiene",
+        "review": "Self-review checklist plus one PR review",
+        "vc_strategy": "GitHub Flow (single main, short-lived branches, PR per change)",
+    },
+    2: {
+        "name": "Standard Application",
+        "examples": "SaaS platforms, marketplaces, CRM systems, mobile applications",
+        "team": "4-7 roles across 2-3 departments",
+        "documentation": "Core doc/ set only",
+        "architecture": "Lightweight design notes agreed before implementation (workflow.md Phase 1)",
+        "testing": "Unit and integration tests on critical paths; CI required",
+        "security": "Level 1 baseline plus dependency scanning and an authentication/authorisation review",
+        "review": "One approving PR review; lead sign-off on releases",
+        "vc_strategy": "GitHub Flow with required PR review and CI checks",
+    },
+    3: {
+        "name": "Advanced System",
+        "examples": "Multi-tenant SaaS, AI products, agentic systems, enterprise platforms, data pipelines",
+        "team": "8-12 roles across 3-4 departments",
+        "documentation": "Core doc/ set plus architecture.md",
+        "architecture": "architecture.md completed and approved before implementation begins",
+        "testing": "Unit, integration, and end-to-end suites; agreed coverage target; CI gates block merge",
+        "security": "Level 2 baseline plus a threat model and a security review before each release",
+        "review": "Lead engineer review on every PR; security sign-off on sensitive changes",
+        "vc_strategy": "GitHub Flow or Git Flow with protected main, required reviews, and CI gates",
+    },
+    4: {
+        "name": "Large-Scale Engineering",
+        "examples": "National platforms, government systems, financial systems, healthcare systems, distributed architectures",
+        "team": "Full team assignment from Teams/organisation.md",
+        "documentation": "Core doc/ set plus architecture.md with decision records",
+        "architecture": "architecture.md plus decision records; scalability and failure-mode design are mandatory",
+        "testing": "Full test pyramid plus performance, load, and security testing",
+        "security": "Level 3 baseline plus penetration testing, compliance review, and audit logging",
+        "review": "Two reviewers per PR; CTO-level architecture sign-off; mandatory security sign-off",
+        "vc_strategy": "Git Flow with protected main and develop, multi-reviewer approval, and signed releases",
+    },
+}
+
 # ── Template content ──────────────────────────────────────────────────────────
 
-def project_brief_template(name):
+def project_brief_template(name, level):
+    lv = LEVELS[level]
     return f"""# Project Brief — {name}
 
 > Created: {TODAY} | Maintained by: Project Manager / Team Lead
+
+## Project Classification
+<!-- Agreed during Step 2c of the Initialize Protocol. Changing the level is a scope
+     change: it requires user/founder approval and a re-run of the quality gate review. -->
+
+| Field | Value |
+|-------|-------|
+| **Level** | Level {level} ({lv['name']}) |
+| Reference examples | {lv['examples']} |
+| Recommended team size | {lv['team']} |
+| Documentation required | {lv['documentation']} |
+
+Quality gates activated by this level are listed in `workflow.md`.
 
 ## Project Overview
 <!-- What is this project? One paragraph. -->
@@ -106,10 +174,20 @@ def team_assignment_template(name):
 """
 
 
-def workflow_template(name):
+def workflow_template(name, level):
+    lv = LEVELS[level]
     return f"""# Project Workflow — {name}
 
 > Created: {TODAY} | Maintained by: Project Manager / Team Lead
+
+## Quality Gates (Level {level}: {lv['name']})
+<!-- Activated by the project classification in project-brief.md.
+     Every gate must pass before the project can be closed. -->
+
+- [ ] **Architecture:** {lv['architecture']}
+- [ ] **Testing:** {lv['testing']}
+- [ ] **Security:** {lv['security']}
+- [ ] **Review:** {lv['review']}
 
 ## Execution Model
 Tasks marked `[SEQUENTIAL]` must wait for the previous step to complete.
@@ -150,7 +228,8 @@ Tasks marked `[PARALLEL]` can run simultaneously.
 """
 
 
-def version_control_template(name):
+def version_control_template(name, level):
+    lv = LEVELS[level]
     return f"""# Version Control — {name}
 
 > Created: {TODAY} | Owner: Lead / Senior Engineer on this project
@@ -158,9 +237,10 @@ def version_control_template(name):
 ## Branching Strategy
 
 <!-- Choose and document the strategy for this project.
-     Options: Git Flow, GitHub Flow, trunk-based, feature branch, etc. -->
+     Options: Git Flow, GitHub Flow, trunk-based, feature branch, etc.
+     Suggested for Level {level} ({lv['name']}): {lv['vc_strategy']} -->
 
-### Strategy: [FILL IN — e.g. GitHub Flow]
+### Strategy: [FILL IN]
 
 ```
 main                  ← production-ready, protected
@@ -265,6 +345,59 @@ def codebase_assessment_template(name):
 | Document | Location | Relevance |
 |----------|---------|-----------|
 | [FILL IN] | [FILL IN] | [FILL IN] |
+"""
+
+
+def architecture_template(name, level):
+    lv = LEVELS[level]
+    level4_note = ""
+    if level == 4:
+        level4_note = """
+> **Level 4:** the Failure Modes and Decision Records sections below are mandatory,
+> not optional. Architecture sign-off comes from the CTO role before implementation.
+"""
+    return f"""# Architecture — {name}
+
+> Created: {TODAY} | Owner: Lead / Senior Engineer on this project
+> Required at Level {level} ({lv['name']}): complete and approve this document before implementation begins.
+{level4_note}
+## System Overview
+<!-- How is the system structured? Monolith, microservices, serverless, key boundaries, data flow. -->
+[FILL IN]
+
+## Components
+| Component | Purpose | Tech | Owner |
+|-----------|---------|------|-------|
+| [FILL IN] | [FILL IN] | [FILL IN] | [FILL IN] |
+
+## Data Model
+<!-- Key entities, relationships, and where the data lives. -->
+[FILL IN]
+
+## External Integrations
+| Service / API | Purpose | Auth Method | Failure Behaviour |
+|---------------|---------|-------------|-------------------|
+| [FILL IN] | [FILL IN] | [FILL IN] | [FILL IN] |
+
+## Non-Functional Requirements
+| Concern | Target | How It Is Met |
+|---------|--------|---------------|
+| Performance | [FILL IN] | [FILL IN] |
+| Scalability | [FILL IN] | [FILL IN] |
+| Availability | [FILL IN] | [FILL IN] |
+| Security | [FILL IN] | [FILL IN] |
+
+## Failure Modes & Mitigations
+<!-- What can fail, what happens when it does, and how the design copes. -->
+| Failure | Impact | Mitigation |
+|---------|--------|------------|
+| [FILL IN] | [FILL IN] | [FILL IN] |
+
+## Decision Records
+<!-- Significant, hard-to-reverse decisions with their rationale. Append as the project evolves. -->
+| # | Decision | Rationale | Date |
+|---|----------|-----------|------|
+| 1 | [FILL IN] | [FILL IN] | {TODAY} |
 """
 
 
@@ -379,10 +512,14 @@ At every milestone, or at month-boundaries — whichever comes first. The team l
 """
 
 
-def project_context_pointer_template(name, assistant_file):
+def project_context_pointer_template(name, assistant_file, level):
+    lv = LEVELS[level]
     return f"""# {name} — AI Assistant Context Contract
 
 _Generated: {TODAY} by Number Pii toolkit_
+
+**Project classification: Level {level} ({lv['name']}).** The quality gates this level
+activates are listed in `doc/workflow.md` and are binding for every deliverable.
 
 ---
 
@@ -496,21 +633,24 @@ to update `doc/handover/consolidated_handover.md`.
 
 # ── Scaffold ──────────────────────────────────────────────────────────────────
 
-def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_run: bool, existing: bool = False):
+def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_run: bool, existing: bool = False, level: int = 2):
     doc_dir = output_dir / "doc"
     handover_dir = doc_dir / "handover"
 
     files = {
-        doc_dir / "project-brief.md":   project_brief_template(project_name),
+        doc_dir / "project-brief.md":   project_brief_template(project_name, level),
         doc_dir / "team-assignment.md": team_assignment_template(project_name),
-        doc_dir / "workflow.md":         workflow_template(project_name),
-        doc_dir / "version_control.md":  version_control_template(project_name),
+        doc_dir / "workflow.md":         workflow_template(project_name, level),
+        doc_dir / "version_control.md":  version_control_template(project_name, level),
         handover_dir / "consolidated_handover.md": consolidated_handover_template(project_name, existing=existing),
         handover_dir / "archive" / "README.md": handover_archive_readme_template(project_name),
-        output_dir / "CLAUDE.md":  project_context_pointer_template(project_name, "CLAUDE.md"),
-        output_dir / "GEMINI.md":  project_context_pointer_template(project_name, "GEMINI.md"),
-        output_dir / "AGENTS.md":  project_context_pointer_template(project_name, "AGENTS.md"),
+        output_dir / "CLAUDE.md":  project_context_pointer_template(project_name, "CLAUDE.md", level),
+        output_dir / "GEMINI.md":  project_context_pointer_template(project_name, "GEMINI.md", level),
+        output_dir / "AGENTS.md":  project_context_pointer_template(project_name, "AGENTS.md", level),
     }
+
+    if level >= 3:
+        files[doc_dir / "architecture.md"] = architecture_template(project_name, level)
 
     if existing:
         files[doc_dir / "codebase-assessment.md"] = codebase_assessment_template(project_name)
@@ -534,6 +674,7 @@ def scaffold(project_name: str, departments: list[str], output_dir: Path, dry_ru
             print(f"  [OK]   {path.relative_to(output_dir)}")
 
     print(f"\n✓ Scaffolded doc/ structure for '{project_name}' in {output_dir}")
+    print(f"  Classification: Level {level} ({LEVELS[level]['name']}). Quality gates are in doc/workflow.md.")
     print("  Next: ask your AI assistant to fill in the template files based on your project brief.")
 
 
@@ -545,6 +686,8 @@ if __name__ == "__main__":
     parser.add_argument("--departments",   default="engineering",
                         help="Comma-separated dept names (default: engineering)")
     parser.add_argument("--output-dir",    default=".", help="Target directory (default: .)")
+    parser.add_argument("--level",         type=int, choices=[1, 2, 3, 4], default=2,
+                        help="Project classification level 1-4 (default: 2). Level 3+ adds architecture.md")
     parser.add_argument("--existing",      action="store_true",
                         help="Brownfield mode: add codebase-assessment.md and expand handover template")
     parser.add_argument("--dry-run",       action="store_true", help="Preview without creating files")
@@ -570,4 +713,5 @@ if __name__ == "__main__":
         output_dir=out,
         dry_run=args.dry_run,
         existing=args.existing,
+        level=args.level,
     )
