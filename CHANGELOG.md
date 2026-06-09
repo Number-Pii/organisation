@@ -13,6 +13,29 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.9.0] — 2026-06-10
+
+### Added
+- **Project Classification Framework.** New Step 2c in the Initialize Protocol: every
+  project is classified Level 1 (Simple Task) to Level 4 (Large-Scale Engineering) and
+  the level is confirmed with the user before team assignment. The level sets the depth
+  of documentation, architecture, testing, security, and review for the whole project.
+- `init_project.py --level {1,2,3,4}` (default 2). The scaffolder now writes the
+  classification into `project-brief.md`, level-matched quality gates into
+  `workflow.md`, and a suggested branching strategy into `version_control.md`. The
+  generated `CLAUDE.md`/`GEMINI.md`/`AGENTS.md` context contracts state the level.
+- `doc/architecture.md` template, created at Level 3 and 4 only: system overview,
+  components, data model, NFRs, failure modes, and decision records. At Level 4 the
+  failure-mode and decision-record sections are mandatory.
+- Step 8 closure checklist now requires all quality gates for the project's level
+  to pass before a project is marked complete.
+
+### Changed
+- Step 3 team-size guide now keys off the classification level (Level 1: 1-3 roles
+  through Level 4: full team assignment).
+- `scripts/README.md` documents `--level` and `--existing`.
+- Protocol version bumped to 2.9 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.8.0] — 2026-06-10
 
 ### Added
