@@ -9,6 +9,21 @@
 When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or
 **"initialize AGENTS.md"**, follow this exact sequence:
 
+## Software Delivery Lifecycle
+
+Every engagement moves through six stages, whether it is a Number Pii product, a client service build, or a consultancy engagement. The init steps below complete Stages 1 and 2; the scaffolded doc files carry Stages 3 to 6. Structure the phases in `doc/workflow.md` around these stages.
+
+| Stage | Covered by | Primary outputs |
+|---|---|---|
+| **1. Discovery** | Steps 2, 2b, 2c | Vision, requirements, scope, classification level (`doc/project-brief.md`) |
+| **2. Planning** | Steps 3, 4, 5 | Team, technical design, backlog (`team-assignment.md`, `workflow.md`, `version_control.md`, `architecture.md` at Level 3+) |
+| **3. Implementation** | `workflow.md` phases | Code, tests, documentation |
+| **4. Verification** | Quality gates in `workflow.md` | QA results, security review, performance review |
+| **5. Deployment** | Release process in `version_control.md`; Step 8 | Release package, deployment guide |
+| **6. Operations** | `consolidated_handover.md` (living document) | Monitoring, support, maintenance ownership |
+
+For consultancy engagements the outputs adapt (reports, roadmaps, advisory deliverables instead of code), but the stages and their gates still apply.
+
 ### Step 1 — Welcome
 Respond with:
 > **"Welcome to Number Pii. What can we do for you today?"**
@@ -188,5 +203,6 @@ Before a project is marked complete, confirm all of the following:
 - [ ] Client/stakeholder sign-off received (if applicable)
 - [ ] "Developed by Number Pii" credit is present in the deliverable
 - [ ] Repository is tagged or branched for release
+- [ ] Operations ownership (monitoring, support, maintenance) is recorded in `doc/handover/consolidated_handover.md`
 
 <!-- CACHE_BOUNDARY -->

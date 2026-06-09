@@ -4,7 +4,7 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.10 — Last updated: 2026-06-10_
+_Version: 2.11 — Last updated: 2026-06-10_
 
 ---
 
@@ -119,5 +119,5 @@ This applies to every written output: docs, handover notes, client-facing copy, 
 
 The full protocol lives in [INITIALIZE.md](INITIALIZE.md) at the toolkit root; it is loaded on demand to keep the always-loaded context small, and it carries the same binding force as this file.
 
-When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1–4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure. Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
+When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1–4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure, mapped onto the six-stage Software Delivery Lifecycle (Discovery, Planning, Implementation, Verification, Deployment, Operations). Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
 
