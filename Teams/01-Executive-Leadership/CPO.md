@@ -3,7 +3,7 @@
 ## Position Details
 - **Department:** Executive Leadership / Product & Design
 - **Reports To:** CEO
-- **Direct Reports:** Senior PM (Thirty X), PM (Future Products), Lead Product Designer, Product Analyst
+- **Direct Reports:** Senior Product Manager, Product Manager (Future Products), Lead Product Designer, Product Analyst
 - **Employment Type:** Full-time
 
 ## Role Summary
@@ -29,7 +29,7 @@ The CPO owns the product strategy, roadmap, and design direction for all Number 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Roadmap | Owner | Approve |
+| Product Roadmaps | Owner | Approve |
 | New Product Launch | Lead | Approve |
 | Feature Prioritisation | Owner | Approve |
 | Design System Changes | Approver | Approve |

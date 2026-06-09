@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-The technical lead for all backend engineering on Number Pii products. Owns API design, database architecture, data models, and backend performance for Thirty X and future products.
+The technical lead for all backend engineering on Number Pii products. Owns API design, database architecture, data models, and backend performance for all Number Pii products.
 
 ## Core Skills
 - Backend architecture and API design (@backend-dev-guidelines, @api-design-principles)
@@ -33,7 +33,7 @@ The technical lead for all backend engineering on Number Pii products. Owns API 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Backend | Technical lead | Approve (backend decisions) |
+| Product Backend | Technical lead | Approve (backend decisions) |
 | API Design | Owner | Approve |
 | Database Schema | Owner | Approve |
 | Backend Code Reviews | Reviewer | Approve |

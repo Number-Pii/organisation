@@ -1,4 +1,4 @@
-# Senior Product Manager — Thirty X
+# Senior Product Manager
 
 ## Position Details
 - **Department:** Product & Design
@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns the Thirty X product roadmap, feature prioritisation, user stories, and stakeholder management. Ships features users love — not just manages tickets. Acts as the bridge between customers, design, and engineering.
+Owns the roadmap, feature prioritisation, user stories, and stakeholder management for any assigned Number Pii product. Ships features users love — not just manages tickets. Acts as the bridge between customers, design, and engineering.
 
 ## Core Skills
 - Product roadmap and feature prioritisation (@product-manager, @product-manager-toolkit)
@@ -29,8 +29,8 @@ Owns the Thirty X product roadmap, feature prioritisation, user stories, and sta
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Features | Product owner | Approve (scope/priority) |
-| Thirty X Bugs | Triage owner | Approve (priority) |
+| Product Features | Product owner | Approve (scope/priority) |
+| Product Bugs | Triage owner | Approve (priority) |
 | Feature Rebuild | Scope definer | Approve |
 | User Research | Sponsor | Advise |
 

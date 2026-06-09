@@ -13,6 +13,28 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.8.0] — 2026-06-10
+
+### Added
+- **Governance: Two Layers.** `CLAUDE.md` and `Teams/organisation.md` now state explicitly that
+  Number Pii is owned and operated by its co-founders, Olatunbosun Iyare and Destiny Ihejirika,
+  who hold final decision-making authority. All virtual roles (including executive titles) hold
+  delegated execution authority only. The org chart and Approval Authority Matrix now show the
+  founders at the top.
+- **Product Neutrality policy.** All Number Pii products are treated equally; no product is
+  flagship, primary, or priority unless the founders explicitly instruct otherwise. Stated in
+  `CLAUDE.md`, `Teams/organisation.md`, and `README.md`.
+
+### Changed
+- `Senior-Product-Manager-ThirtyX.md` renamed to `Senior-Product-Manager.md`; the role is now
+  product neutral and works on any assigned product.
+- `CEO-Founder.md` renamed to `CEO.md`; the virtual CEO reports to the founders (not a fictional
+  Board of Directors) and no longer claims final decision-making authority.
+- All "Thirty X" references in role files, `organisation.md`, `philosophy.md`, `README.md`, and
+  the `init_project.py` team-assignment template replaced with product-neutral wording.
+- `Chief-of-Staff.md` Board references replaced with founder support duties.
+- Protocol version bumped to 2.8 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.7.0] — 2026-05-03
 
 ### Added

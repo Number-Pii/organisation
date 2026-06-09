@@ -30,7 +30,7 @@ The CTO owns the entire technology stack — product architecture, infrastructur
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Architecture | Technical authority | Approve |
+| Product Architecture | Technical authority | Approve |
 | Client Projects (complex) | Architecture reviewer | Approve |
 | Security Audits | Sponsor | Approve |
 | Infrastructure Scaling | Decision maker | Approve |

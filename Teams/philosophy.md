@@ -10,7 +10,7 @@
 
 Number Pii is a **product company that also offers services and consultancy**. This shapes every structural decision:
 
-- **Products First** — Engineering for Thirty X and future products is ring-fenced. Client work never cannibalises product development.
+- **Products First** — Engineering for Number Pii products is ring-fenced. Client work never cannibalises product development.
 - **Elite Services** — Senior engineers deliver client projects at a premium level, backed by dedicated leadership.
 - **Consultancy is Expert-Led** — Principal consultants with recognised domain expertise, not generalist advisors.
 - **Security by Design** — Dedicated information security protects our products, our clients' data, and our reputation.

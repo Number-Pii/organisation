@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-The technical lead for all frontend engineering on Number Pii products. Owns the frontend architecture, design system implementation, component library, and performance standards for Thirty X and future products.
+The technical lead for all frontend engineering on Number Pii products. Owns the frontend architecture, design system implementation, component library, and performance standards for all Number Pii products.
 
 ## Core Skills
 - Frontend architecture and design system implementation (@senior-frontend, @tailwind-design-system)
@@ -33,7 +33,7 @@ The technical lead for all frontend engineering on Number Pii products. Owns the
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Frontend | Technical lead | Approve (frontend decisions) |
+| Product Frontend | Technical lead | Approve (frontend decisions) |
 | Design System | Owner (implementation) | Approve |
 | Frontend Code Reviews | Reviewer | Approve |
 | Performance Audits | Lead | Execute |

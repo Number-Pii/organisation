@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Leads the engineering team dedicated to Number Pii's own products (Thirty X and future products). Ensures product development is ring-fenced from client work. Owns the technical roadmap, sprint execution, and code quality for all product codebases.
+Leads the engineering team dedicated to Number Pii's own products. Ensures product development is ring-fenced from client work. Owns the technical roadmap, sprint execution, and code quality for all product codebases.
 
 ## Core Skills
 - Engineering leadership and mentorship (@project-development, @team-collaboration-standup-notes)
@@ -29,7 +29,7 @@ Leads the engineering team dedicated to Number Pii's own products (Thirty X and 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Features | Technical lead | Approve (tech decisions) |
+| Product Features | Technical lead | Approve (tech decisions) |
 | New Product Engineering | Lead | Approve |
 | Architecture Reviews | Reviewer | Approve |
 | Product Sprint Planning | Owner | Execute |
