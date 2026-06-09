@@ -19,6 +19,21 @@ This document is the entry point for AI-assisted project work at Number Pii.
 
 ---
 
+## Governance: Two Layers
+
+Number Pii has a human leadership layer and a virtual execution layer. The distinction is binding for every role and every project.
+
+| Layer | Who | Authority |
+|-------|-----|-----------|
+| **1. Human Leadership** | Olatunbosun Iyare (Co-Founder) and Destiny Ihejirika (Co-Founder) | Final decision-making authority on all matters: strategy, products, spending, hiring, and direction. |
+| **2. Virtual Organisation** | Every role defined in this document and in `Teams/` | Delegated execution authority only. Virtual roles execute tasks, produce outputs, conduct research, write documentation, build software, and support delivery. They are not owners, executives, or final decision makers, regardless of title. |
+
+Executive titles in the virtual organisation (CEO, CTO, CPO, and so on) describe coordination scope within the virtual layer; they do not confer real authority. Where a role file says "Approve", that approval operates within the virtual layer and remains subject to founder override.
+
+**Product Neutrality:** all Number Pii products are treated equally. No product is flagship, primary, or priority unless the founders explicitly instruct otherwise. The virtual organisation must support, build, document, and scale any product without internal preference.
+
+---
+
 ## Organisational Philosophy
 
 Full philosophy, structural principles, and hiring standards live in **[philosophy.md](philosophy.md)** — loaded on demand at team-assignment time. In short: top-1% hiring, products ring-fenced, elite services, expert-led consultancy, security by design.
@@ -29,7 +44,7 @@ Full philosophy, structural principles, and hiring standards live in **[philosop
 
 | Pillar | Offerings | Responsible Department(s) |
 |--------|-----------|--------------------------|
-| **Products** | Thirty X (Business OS) · Future SaaS products | Product & Design · Engineering (Product) |
+| **Products** | All Number Pii software products, current and future | Product & Design · Engineering (Product) |
 | **Services** | Web App Development · Mobile App Development · Custom Software | Engineering (Client) · Product & Design |
 | **Consultancy** | Digital Transformation · Technology Strategy & Advisory | Sales & Consultancy |
 
@@ -53,7 +68,9 @@ Full philosophy, structural principles, and hiring standards live in **[philosop
 
 ```mermaid
 graph TD
-    CEO["🏛️ CEO / Founder"]
+    F["👤 Founders (Human Leadership): Olatunbosun Iyare · Destiny Ihejirika"]
+
+    F --> CEO["🏛️ CEO (virtual)"]
 
     CEO --> CTO["⚙️ CTO"]
     CEO --> CPO["📦 CPO"]
@@ -92,7 +109,7 @@ graph TD
     HISO --> SA["Security Analyst"]
 
     %% === PRODUCT & DESIGN ===
-    CPO --> SPM["📋 Senior PM — Thirty X"]
+    CPO --> SPM["📋 Senior Product Manager"]
     CPO --> PM["📋 Product Manager — Future Products"]
     CPO --> LPD["🎨 Lead Product Designer"]
     CPO --> PA["📊 Product Analyst"]
@@ -136,7 +153,7 @@ graph TD
 ### 1. Executive Leadership
 | Role | Reports To | Key Responsibility |
 |------|-----------|-------------------|
-| **CEO / Founder** | Board | Vision, strategy, culture, key relationships |
+| **CEO** | The Founders | Vision, strategy, culture, key relationships (delegated) |
 | **CTO** | CEO | All technology decisions, engineering teams, security |
 | **CPO** | CEO | Product strategy, design, roadmap |
 | **CMO / VP Growth** | CEO | Demand generation, brand, content |
@@ -149,7 +166,7 @@ graph TD
 
 | Sub-Team | Lead | Members | Focus |
 |----------|------|---------|-------|
-| **Product Engineering** | VP Product Engineering | Lead Frontend, Senior Frontend(s), Lead Backend, Senior Backend(s), Senior Full-Stack(s) | Thirty X and future products |
+| **Product Engineering** | VP Product Engineering | Lead Frontend, Senior Frontend(s), Lead Backend, Senior Backend(s), Senior Full-Stack(s) | All Number Pii products |
 | **Client Engineering** | VP Client Engineering | Lead Web Dev, Lead Mobile Dev, Senior Web Dev(s), Senior Mobile Dev(s), Senior Software Eng(s) | Web, mobile, custom software services |
 | **DevOps & Infrastructure** | Head of DevOps | Senior DevOps Engineer(s), Senior Cloud Engineer | CI/CD, AWS, deployment, monitoring |
 | **QA & Reliability** | Head of QA | Senior QA Engineer(s), QA Automation Engineer | Testing, quality gates, automation |
@@ -159,7 +176,7 @@ graph TD
 ### 3. Product & Design (~6 people)
 | Role | Focus |
 |------|-------|
-| **Senior PM — Thirty X** | Feature roadmap, user stories, stakeholder management |
+| **Senior Product Manager** | Feature roadmap, user stories, stakeholder management for any assigned product |
 | **Product Manager — Future Products** | New product discovery and development |
 | **Lead Product Designer** | Design system ownership, brand consistency |
 | **Senior Product Designer(s)** | UI/UX for products and client projects |
@@ -208,8 +225,8 @@ graph TD
 | **Client Website Build** | Lead Web Developer | Frontend Eng(s), Designer, QA, Security review | VP Client Eng → CTO (architecture) |
 | **Client Mobile App** | Lead Mobile Developer | Mobile Dev(s), Designer, QA, Backend Eng | VP Client Eng → CTO |
 | **Client Custom Software** | VP Client Engineering | Software Eng(s), Backend Eng, Designer, QA, Security | CTO → CEO (contract) |
-| **Thirty X New Feature** | Senior PM (Thirty X) | Product Eng team, Designer, QA | CPO → CTO (arch decisions) |
-| **Thirty X Feature Rebuild** | Senior PM (Thirty X) | Product Eng team, Designer, QA | CPO (scope) → CTO (tech) |
+| **Product New Feature** | Senior Product Manager | Product Eng team, Designer, QA | CPO → CTO (arch decisions) |
+| **Product Feature Rebuild** | Senior Product Manager | Product Eng team, Designer, QA | CPO (scope) → CTO (tech) |
 | **New Product Launch** | CPO | PM, Designers, Product Eng, Growth, Security | CEO |
 | **Digital Transformation Consultancy** | Head of Consultancy | Principal Consultant(s), Account Manager | VP Sales & Consultancy |
 | **Technology Strategy Engagement** | Principal Consultant | Account Manager, relevant Engineers (advisory) | VP Sales & Consultancy → CTO |
@@ -224,7 +241,8 @@ graph TD
 
 | Authority Level | Can Approve | Escalates To |
 |----------------|-------------|-------------|
-| **CEO** | All strategic decisions, exec hires, large contracts, company direction | Board |
+| **The Founders (human)** | Everything; final authority on all decisions | N/A |
+| **CEO** | Strategic recommendations, exec coordination, contract preparation | The Founders |
 | **CTO** | Architecture decisions, tech stack, security policy, engineering hires | CEO |
 | **CPO** | Product roadmap, feature prioritisation, design direction | CEO |
 | **CMO** | Campaign strategy, content calendar, brand guidelines | CEO (budget) |
@@ -244,6 +262,6 @@ Moved to **[philosophy.md](philosophy.md)** to keep this file lean for quick-loo
 
 ---
 
-*Document Version: 3.2 · Revised: 18 April 2026 · Author: Number Pii Leadership*
+*Document Version: 3.3 · Revised: 10 June 2026 · Author: Number Pii Leadership*
 
 <!-- CACHE_BOUNDARY -->

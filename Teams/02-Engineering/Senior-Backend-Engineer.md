@@ -31,7 +31,7 @@ Builds and maintains backend services, APIs, and database systems for Number Pii
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Backend Features | Implementer | Execute |
+| Product Backend Features | Implementer | Execute |
 | API Endpoints | Builder | Execute |
 | Database Migrations | Contributor | Execute |
 | Code Reviews | Reviewer / Reviewee | Execute |

@@ -13,7 +13,7 @@ The Chief of Staff is the CEO's strategic right hand — running cross-functiona
 - Strategic planning and execution tracking (@writing-plans, @project-development)
 - Cross-functional project management (@project-development, @team-collaboration-standup-notes)
 - Executive communication and presentation (@documentation, @internal-comms)
-- Board and investor relations support (@startup-financial-modeling, @startup-metrics-framework)
+- Founder and investor relations support (@startup-financial-modeling, @startup-metrics-framework)
 - Meeting facilitation and agenda management (@brainstorming, @team-collaboration-standup-notes)
 - Governance and policy coordination (@documentation, @risk-manager)
 - Confidential information handling (@secrets-management, @gdpr-data-handling)
@@ -23,7 +23,7 @@ The Chief of Staff is the CEO's strategic right hand — running cross-functiona
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
 | Strategic Initiatives | Coordinator / Program Manager | Execute |
-| Board Preparation | Owner | Execute |
+| Founder Briefing Preparation | Owner | Execute |
 | Cross-Dept Projects | Facilitator | Advise |
 | CEO Priorities | Execution partner | Execute |
 | Company Communications | Drafter / Reviewer | Execute |

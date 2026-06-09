@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns the security posture of all Number Pii products, infrastructure, and client deliveries. Designs and enforces security policies, conducts security reviews, manages vulnerability response, and ensures compliance with industry standards. This role is critical for protecting Thirty X user data and maintaining client trust.
+Owns the security posture of all Number Pii products, infrastructure, and client deliveries. Designs and enforces security policies, conducts security reviews, manages vulnerability response, and ensures compliance with industry standards. This role is critical for protecting product user data and maintaining client trust.
 
 ## Core Skills
 - Security architecture and threat modelling (@threat-modeling-expert, @security-audit)
@@ -35,7 +35,7 @@ Owns the security posture of all Number Pii products, infrastructure, and client
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
 | Security Audits / Pen Tests | Lead | Approve |
-| Thirty X Security Reviews | Owner | Approve (security sign-off) |
+| Product Security Reviews | Owner | Approve (security sign-off) |
 | Client Project Security | Reviewer | Advise / Approve |
 | Incident Response | Lead | Execute |
 | Compliance Initiatives | Owner | Approve |

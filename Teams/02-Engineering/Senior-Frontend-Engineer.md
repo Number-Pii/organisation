@@ -30,7 +30,7 @@ Implements features, components, and pages for Number Pii products. Works within
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Features | Implementer | Execute |
+| Product Features | Implementer | Execute |
 | Component Library | Contributor | Execute |
 | Code Reviews | Reviewer / Reviewee | Execute |
 | Bug Fixes | Owner | Execute |

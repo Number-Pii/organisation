@@ -87,7 +87,7 @@ def team_assignment_template(name):
 
 | Role | Team Member | Responsibilities on This Project | Authority |
 |------|-------------|----------------------------------|-----------|
-| [e.g. Senior PM — Thirty X] | [FILL IN] | [FILL IN] | [Approve / Execute / Advise] |
+| [e.g. Senior Product Manager] | [FILL IN] | [FILL IN] | [Approve / Execute / Advise] |
 | [e.g. Lead Frontend Engineer] | [FILL IN] | [FILL IN] | [FILL IN] |
 | [e.g. Lead Backend Engineer] | [FILL IN] | [FILL IN] | [FILL IN] |
 

@@ -2,11 +2,11 @@
 
 > The virtual organisational structure for Number Pii — a fully-staffed, elite team built to help sole traders, startups, and SMEs grow through digital solutions. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
 
-Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company operates across three pillars:
+Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company is owned and operated by its co-founders, **Olatunbosun Iyare** and **Destiny Ihejirika**, who hold final decision-making authority; the virtual organisation documented here exists to execute on their behalf (see [Governance](Teams/organisation.md#governance-two-layers)). The company operates across three pillars:
 
 | Pillar | What They Do |
 |--------|-------------|
-| **Products** | Build proprietary software — flagship product is **Thirty X**, a Business Operating System |
+| **Products** | Build proprietary software products; all products are treated equally under the [Product Neutrality policy](Teams/organisation.md#governance-two-layers) |
 | **Services** | Web app, mobile app, and custom software development |
 | **Consultancy** | Digital transformation & technology strategy advisory |
 
@@ -70,7 +70,7 @@ organisation/
 
 | Role | File |
 |------|------|
-| CEO / Founder | [CEO-Founder.md](Teams/01-Executive-Leadership/CEO-Founder.md) |
+| CEO | [CEO.md](Teams/01-Executive-Leadership/CEO.md) |
 | CTO | [CTO.md](Teams/01-Executive-Leadership/CTO.md) |
 | CPO | [CPO.md](Teams/01-Executive-Leadership/CPO.md) |
 | CMO / VP Growth | [CMO-VP-Growth.md](Teams/01-Executive-Leadership/CMO-VP-Growth.md) |
@@ -111,7 +111,7 @@ Split into two verticals to protect product development from client work:
 
 | Role | File |
 |------|------|
-| Senior PM — Thirty X | [Senior-Product-Manager-ThirtyX.md](Teams/03-Product-Design/Senior-Product-Manager-ThirtyX.md) |
+| Senior Product Manager | [Senior-Product-Manager.md](Teams/03-Product-Design/Senior-Product-Manager.md) |
 | Product Manager — Future Products | [Product-Manager-Future.md](Teams/03-Product-Design/Product-Manager-Future.md) |
 | Lead Product Designer | [Lead-Product-Designer.md](Teams/03-Product-Design/Lead-Product-Designer.md) |
 | Senior Product Designer | [Senior-Product-Designer.md](Teams/03-Product-Design/Senior-Product-Designer.md) |
@@ -321,11 +321,11 @@ python3 scripts/update.py --changelog
 
 ## Contributing
 
-All changes to this repository require review by the relevant department head and sign-off from the CEO or Chief of Staff for structural changes.
+All changes to this repository require review by the relevant department head; structural changes require sign-off from the founders.
 
 1. Create a branch from `main`
 2. Make your changes
 3. Open a pull request with a clear description of what changed and why
 4. Get approval from the relevant stakeholder before merging
 
-> Document Version: 3.0 · Revised: 25 March 2026 · Author: Number Pii Leadership
+> Document Version: 3.1 · Revised: 10 June 2026 · Author: Number Pii Leadership

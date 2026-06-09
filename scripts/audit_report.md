@@ -10,6 +10,7 @@ OVERVIEW
   Role files scanned                        : 53
   Unique @skill refs in Agent Skills        : 164
   Broken @skill refs (no matching folder)   : 0
+  Skills with extended frontmatter          : 16/1294 (1%)
 
 CORE + TECHNICAL SKILL BULLET COVERAGE
   Total Core Skill bullets                  : 336
@@ -27,7 +28,7 @@ UNLINKED SKILLS (not referenced in any role)
 PER-ROLE SUMMARY
   Role                                                    Agent   Core   Tech  Inline
   ───────────────────────────────────────────────────────────────────────────────────
-  ✓ CEO-Founder                                               7    7/7    0/0     7/7
+  ✓ CEO                                                       7    7/7    0/0     7/7
   ✓ CMO-VP-Growth                                             7    8/8    6/6   14/14
   ✓ COO                                                       6    8/8    0/0     8/8
   ✓ CPO                                                       6    8/8    5/5   13/13
@@ -60,7 +61,7 @@ PER-ROLE SUMMARY
   ✓ Product-Analyst                                           7    6/6    7/7   13/13
   ✓ Product-Manager-Future                                    5    6/6    5/5   11/11
   ✓ Senior-Product-Designer                                   6    5/5    4/4     9/9
-  ✓ Senior-Product-Manager-ThirtyX                            6    8/8    5/5   13/13
+  ✓ Senior-Product-Manager                                    6    8/8    5/5   13/13
   ✓ UX-Researcher                                             5    6/6    5/5   11/11
   ✓ Account-Manager                                           5    6/6    0/0     6/6
   ✓ Business-Development-Representative                       5    5/5    0/0     5/5

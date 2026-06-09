@@ -31,7 +31,7 @@ Builds bulletproof test infrastructure and owns the quality bar across all produ
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Releases | Quality gatekeeper | Approve (release readiness) |
+| Product Releases | Quality gatekeeper | Approve (release readiness) |
 | Client Project Delivery | Quality reviewer | Approve (delivery quality) |
 | Test Infrastructure | Owner | Approve |
 | CI/CD Quality Gates | Owner | Approve |

@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-A versatile engineer who context-switches between frontend and backend without losing quality. Works on Thirty X features end-to-end — from database schema to UI component. Makes architectural decisions independently.
+A versatile engineer who context-switches between frontend and backend without losing quality. Works on product features end-to-end — from database schema to UI component. Makes architectural decisions independently.
 
 ## Core Skills
 - Full-stack feature development (UI to database) (@senior-fullstack, @backend-dev-guidelines)
@@ -30,7 +30,7 @@ A versatile engineer who context-switches between frontend and backend without l
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X End-to-End Features | Owner | Execute |
+| Product End-to-End Features | Owner | Execute |
 | Cross-Stack Bug Fixes | Debugger | Execute |
 | Prototyping | Rapid builder | Execute |
 | Code Reviews | Reviewer | Execute |

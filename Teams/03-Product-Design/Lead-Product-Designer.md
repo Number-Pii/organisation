@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-World-class UI/UX and visual design — portfolio at Dribbble/Awwwards/Behance level. Owns the full design process: research → systems → implementation handoff. Defines and maintains the design language for Thirty X and all Number Pii surfaces.
+World-class UI/UX and visual design — portfolio at Dribbble/Awwwards/Behance level. Owns the full design process: research → systems → implementation handoff. Defines and maintains the design language for all Number Pii products and surfaces.
 
 ## Core Skills
 - Design system creation and maintenance (@tailwind-design-system, @ui-ux-pro-max)
@@ -31,7 +31,7 @@ World-class UI/UX and visual design — portfolio at Dribbble/Awwwards/Behance l
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
 |---|---|---|
-| Thirty X Design | Design lead | Approve (design decisions) |
+| Product Design | Design lead | Approve (design decisions) |
 | Design System | Owner | Approve |
 | Client Projects (design) | Reviewer / Lead | Approve |
 | Brand Materials | Design authority | Approve |

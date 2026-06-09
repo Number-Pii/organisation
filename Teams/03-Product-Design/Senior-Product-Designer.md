@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Designs features, flows, and interfaces for Thirty X and client projects within the established design system. Delivers production-ready designs with specifications for engineering handoff.
+Designs features, flows, and interfaces for Number Pii products and client projects within the established design system. Delivers production-ready designs with specifications for engineering handoff.
 
 ## Core Skills
 - UI/UX design (@ui-ux-pro-max, @ui-ux-designer)
