@@ -4,6 +4,14 @@ description: "Build read models and projections from event streams. Use when imp
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: Build read models and projections from event streams.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Projection Patterns

@@ -1,9 +1,22 @@
 ---
 name: database-optimizer
-description: Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.
+description: "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 
 ## Use this skill when

@@ -1,9 +1,17 @@
 ---
 name: screen-reader-testing
-description: "Practical guide to testing web applications with screen readers for comprehensive accessibility validation."
+description: Practical guide to testing web applications with screen readers for comprehensive accessibility validation.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: Practical guide to testing web applications with screen readers for comprehensive accessibility validation.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Screen Reader Testing

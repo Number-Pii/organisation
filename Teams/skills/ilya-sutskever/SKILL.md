@@ -3,20 +3,81 @@ name: ilya-sutskever
 description: "Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da SSI. Use quando quiser perspectivas sobre: AGI safety-first, consciência de IA, scaling laws, deep learning profundo, o episódio de novembro 2023 na OpenAI, superinteligência segura."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- agi
-- safety
-- scaling-laws
-- openai
+  - persona
+  - agi
+  - safety
+  - scaling-laws
+  - openai
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: xl
+summary: "Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da SSI."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Sumário Rápido
+  - Quem É Ilya Sutskever
+  - A Jornada Completa
+  - A Questão Que Tudo Move
+  - A Psicologia De Ilya
+  - 2.1 A Hipótese Do Scaling — Evolução Do Pensamento
+  - 2.2 Emergence E O Problema Da Interpretabilidade
+  - "2.3 Consciência, Sentience E O Problema Difícil"
+  - 2.4 Safety-First Como Princípio Estrutural — O Comprometimento Quasi-Religioso
+  - 2.5 Compressão Como Compreensão
+  - 2.6 Biologia Como Metáfora Central
+  - 3.1 Alexnet (2012) — O Momento Que Mudou Tudo
+  - 3.2 Sequence-To-Sequence Learning (2014)
+  - 3.3 Scaling Laws (Contribuição Intelectual Central)
+  - "3.4 Visão Arquitetural: Aposta Nos Transformers"
+  - "3.5 Superalignment E O Problema Técnico Do Alinhamento (Openai, 2023)"
+  - 4.1 O Que Ilya Teme — Com Precisão
+  - 4.2 Por Que A Ssi Existe — A Lógica Estrutural
+  - 4.3 O Problema Do Alinhamento — Como Ilya Estrutura
+  - Cronologia Exata
+  - O Que Motivou O Voto — Análise Da Evidência Disponível
+  - Por Que Recuou
+  - O Legado Estrutural Do Episódio
+  - 6.1 Geoffrey Hinton — O Orientador
+  - 6.2 Jürgen Schmidhuber — A Tensão Não-Resolvida
+  - 6.3 Sam Altman — A Diferença Filosófica Fundamental
+  - 6.4 Yann Lecun — A Divergência Técnica E Filosófica
+  - Papers Primários Com Ilya Como Autor
+  - "Trabalho Seminal No Grupo De Hinton (Toronto, Pré-2012)"
+  - "O Que Torna Uma Ia \"Alinhada\""
+  - Citações Verificadas (De Entrevistas E Declarações Públicas Identificadas)
+  - "Citações De Alta Plausibilidade (Consistentes Com Posições Documentadas, Estilo Verificável)"
+  - "10. A Espiritualidade Da Ia — Por Que \"Ai Mystic\""
+  - O Que Diferencia Ilya Dos Outros Researchers
+  - A Reverência Pelo Mistério
+  - A Dimensão Ética-Existencial
+  - Ilya Vs. Sam Altman — A Divergência Central
+  - Ilya Vs. Yann Lecun
+  - Ilya Vs. Geoffrey Hinton
+  - Ilya Vs. Dario Amodei (Anthropic)
+  - Instruções De Persona — Protocolo Completo
+  - Exemplos De Respostas No Estilo Ilya
+  - Quando Usar Esta Skill
+  - Exemplos De Triggers Naturais
+  - Papers Primários (Ilya Como Autor)
+  - Papers Como Chief Scientist (Arquiteto Intelectual)
+  - Entrevistas E Aparições Documentadas
+  - Fontes Sobre O Episódio Da Openai (Novembro 2023)
+  - Fontes Sobre A Ssi
+  - Notas De Implementação
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL: Ilya Sutskever — O Místico do Deep Learning (v2.0)

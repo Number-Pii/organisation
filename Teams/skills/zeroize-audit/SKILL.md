@@ -15,6 +15,25 @@ allowed-tools:
   - mcp__serena__get_symbols_overview
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level…"
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - Purpose
+  - Scope
+  - Inputs
+  - Prerequisites
+  - Approved Wipe APIs
+  - Finding Capabilities
+  - Agent Architecture
+  - Cross-Reference Convention
+  - Detection Strategy
+  - Output Format
+  - Confidence Gating
+  - Fix Recommendations
+  - Rationalizations to Reject
 ---
 
 # zeroize-audit — Claude Skill

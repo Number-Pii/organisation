@@ -4,6 +4,23 @@ description: "Comprehensive guide for creating and managing skills in Claude Cod
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: m
+summary: "Comprehensive guide for creating and managing skills in Claude Code with auto-activation system, following Anthropic's official best practices…"
+detail_sections:
+  - Purpose
+  - When to Use This Skill
+  - System Overview
+  - Skill Types
+  - "Quick Start: Creating a New Skill"
+  - When to Use
+  - Key Information
+  - Enforcement Levels
+  - "Skip Conditions & User Control"
+  - Testing Checklist
+  - Reference Files
+  - Quick Reference Summary
+  - Related Files
 ---
 
 # Skill Developer Guide

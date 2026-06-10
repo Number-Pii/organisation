@@ -4,6 +4,17 @@ description: "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attachments."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Outlook Automation via Rube MCP

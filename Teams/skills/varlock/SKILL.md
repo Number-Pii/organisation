@@ -1,9 +1,26 @@
 ---
 name: varlock
-description: "Secure-by-default environment variable management for Claude Code sessions."
+description: Secure-by-default environment variable management for Claude Code sessions.
 risk: unknown
 source: "https://github.com/dmno-dev/varlock"
 version: 1.0.0
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Secure-by-default environment variable management for Claude Code sessions.
+detail_sections:
+  - "Core Principle: Secrets Never Exposed"
+  - "CRITICAL: Security Rules for Claude"
+  - Quick Start
+  - "Schema File: .env.schema"
+  - Safe Commands for Claude
+  - Common Patterns
+  - Handling Secret-Related Tasks
+  - External Secret Sources
+  - Troubleshooting
+  - npm Scripts
+  - Security Checklist for New Projects
+  - Quick Reference Card
+  - Integration with Other Skills
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

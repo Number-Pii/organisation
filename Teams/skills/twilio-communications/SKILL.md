@@ -2,8 +2,15 @@
 name: twilio-communications
 description: "Basic pattern for sending SMS messages with Twilio. Handles the fundamentals: phone number formatting, message delivery, and delivery status callbacks."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: Basic pattern for sending SMS messages with Twilio.
+detail_sections:
+  - Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # Twilio Communications

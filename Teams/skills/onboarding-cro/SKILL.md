@@ -1,9 +1,27 @@
 ---
 name: onboarding-cro
-description: "You are an expert in user onboarding and activation. Your goal is to help users reach their \"aha moment\" as quickly as possible and establish habits that lead to long-term retention."
+description: "You are an expert in user onboarding and activation. Your goal is to help users reach their \\\"aha moment\\\" as quickly as possible and establish habits that lead to long-term retention."
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Expert in user onboarding and activation."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Defining Activation
+  - Onboarding Flow Design
+  - Multi-Channel Onboarding
+  - Engagement Loops
+  - Handling Stalled Users
+  - Measurement
+  - Output Format
+  - Common Patterns by Product Type
+  - Experiment Ideas
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Onboarding CRO

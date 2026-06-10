@@ -4,6 +4,32 @@ description: "Documentation templates and structure guidelines. README, API docs
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Documentation templates and structure guidelines.
+detail_sections:
+  - 1. README Structure
+  - Quick Start
+  - Features
+  - Configuration
+  - Documentation
+  - License
+  - 2. API Documentation Structure
+  - "GET /users/:id"
+  - 3. Code Comment Guidelines
+  - 4. Changelog Template (Keep a Changelog)
+  - "[Unreleased]"
+  - "[1.0.0] - 2025-01-01"
+  - 5. Architecture Decision Record (ADR)
+  - Status
+  - Context
+  - Decision
+  - Consequences
+  - 6. AI-Friendly Documentation (2025)
+  - Core Files
+  - Key Concepts
+  - 7. Structure Principles
+  - When to Use
 ---
 
 # Documentation Templates

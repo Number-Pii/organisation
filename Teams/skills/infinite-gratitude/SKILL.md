@@ -4,6 +4,13 @@ description: "Multi-agent research skill for parallel research execution (10 age
 risk: safe
 source: "https://github.com/sstklen/infinite-gratitude"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: "Multi-agent research skill for parallel research execution (10 agents, battle-tested with real case studies)."
+detail_sections:
+  - Description
+  - When to Use
+  - How to Use
 ---
 
 # Infinite Gratitude

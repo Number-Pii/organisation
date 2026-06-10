@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "React and Next.js 14+ application development with App Router, Server Components, TypeScript, Tailwind CSS, and modern frontend patterns."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Technology Stack
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # React/Next.js Development Workflow

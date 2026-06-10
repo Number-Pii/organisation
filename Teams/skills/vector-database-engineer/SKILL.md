@@ -4,6 +4,16 @@ description: "Expert in vector databases, embedding strategies, and semantic sea
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Expert in vector databases, embedding strategies, and semantic search implementation."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Capabilities
+  - Use this skill when
+  - Workflow
+  - Best Practices
 ---
 
 # Vector Database Engineer

@@ -4,6 +4,24 @@ description: "You are an expert in optimizing signup and registration flows. You
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Expert in optimizing signup and registration flows."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Field-by-Field Optimization
+  - Single-Step vs. Multi-Step
+  - Trust and Friction Reduction
+  - Mobile Signup Optimization
+  - Post-Submit Experience
+  - Measurement
+  - Output Format
+  - Common Signup Flow Patterns
+  - Experiment Ideas
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Signup Flow CRO

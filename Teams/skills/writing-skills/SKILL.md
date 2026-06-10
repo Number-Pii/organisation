@@ -5,6 +5,20 @@ category: meta
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: s
+summary: "Use when creating, updating, or improving agent skills."
+detail_sections:
+  - ⚡ Quick Decision Tree
+  - 📚 Component Index
+  - 🛠️ Templates
+  - When to Use
+  - How It Works
+  - Quick Example
+  - Common Mistakes
+  - ✅ Pre-Deploy Checklist
+  - 🔗 Related Skills
+  - Examples
 ---
 
 # Writing Skills (Excellence)

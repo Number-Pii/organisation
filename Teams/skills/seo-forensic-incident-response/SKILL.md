@@ -4,6 +4,18 @@ description: "Investigate sudden drops in organic traffic or rankings and run a 
 risk: safe
 source: original
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and…"
+detail_sections:
+  - When to Use
+  - Initial Incident Triage
+  - Incident Classification Framework
+  - Data-Driven Investigation Steps
+  - Forensic Hypothesis Building
+  - Output Format
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # SEO Forensic Incident Response

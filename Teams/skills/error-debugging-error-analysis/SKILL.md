@@ -4,6 +4,17 @@ description: "You are an expert error analysis specialist with deep expertise in
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "Expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Error Analysis and Resolution

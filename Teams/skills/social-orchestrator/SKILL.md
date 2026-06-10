@@ -3,19 +3,44 @@ name: social-orchestrator
 description: "Orquestrador unificado de canais sociais — coordena Instagram, Telegram e WhatsApp em um unico fluxo de trabalho. Publicacao cross-channel, metricas unificadas, reutilizacao de conteudo por formato, agendamento sincronizado e gestao centralizada de campanhas em todos os canais simultaneamente."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- social-media
-- cross-channel
-- scheduling
-- campaigns
+  - social-media
+  - cross-channel
+  - scheduling
+  - campaigns
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Orquestrador unificado de canais sociais — coordena Instagram, Telegram e WhatsApp em um unico fluxo de trabalho."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Principio De Orquestracao
+  - 2. Skills Integradas
+  - /Publish_All — Publicar Em Todos Os Canais
+  - /Campaign — Campanha Multi-Canal
+  - /Insights_All — Metricas Unificadas
+  - /Content_Plan — Plano De Conteudo Multi-Canal
+  - Instagram
+  - Telegram
+  - Whatsapp Business
+  - Principio De Adaptacao
+  - 6. Horarios Otimizados
+  - 7. Formato De Resposta
+  - 8. Gestao De Erros Cross-Canal
+  - 9. Integracao Com Ecossistema
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SOCIAL-ORCHESTRATOR: Canais Unificados

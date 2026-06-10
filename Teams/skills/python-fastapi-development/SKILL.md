@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Python FastAPI backend development with async patterns, SQLAlchemy, Pydantic, authentication, and production API patterns."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Technology Stack
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Python/FastAPI Development Workflow

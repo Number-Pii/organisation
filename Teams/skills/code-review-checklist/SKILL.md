@@ -4,6 +4,23 @@ description: "Comprehensive checklist for conducting thorough code reviews cover
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Functionality Review
+  - Security Review
+  - Code Quality Review
+  - Best Practices
+  - Complete Review Checklist
+  - Common Pitfalls
+  - Review Comment Templates
+  - Related Skills
+  - Additional Resources
 ---
 
 # Code Review Checklist

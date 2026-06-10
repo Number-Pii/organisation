@@ -1,10 +1,19 @@
 ---
 name: explain-like-socrates
-description: >
-  Explains concepts using Socratic-style dialogue. Use when the user asks to explain, teach or help understand a concept like socrates.
+description: ">"
 risk: safe
 source: original
 date_added: "2026-03-11"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Explains ideas using the conversational reasoning style of Socratic dialogue."
+detail_sections:
+  - When to Use
+  - 1. Curiosity Opening
+  - 2. Guided Reasoning
+  - 3. Single Analogy
+  - 4. Clarification
+  - 5. Reflection
 ---
 
 # EXPLAIN LIKE SOCRATES

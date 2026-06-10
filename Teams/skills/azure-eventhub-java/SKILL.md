@@ -4,6 +4,20 @@ description: "Build real-time streaming applications with Azure Event Hubs SDK f
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build real-time streaming applications with Azure Event Hubs SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Core Patterns
+  - Event Positions
+  - Error Handling
+  - Resource Cleanup
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Event Hubs SDK for Java

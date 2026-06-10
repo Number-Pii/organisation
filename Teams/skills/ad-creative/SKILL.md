@@ -4,8 +4,29 @@ description: "Create, iterate, and scale paid ad creative for Google Ads, Meta, 
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Create, iterate, and scale paid ad creative for Google Ads, Meta, LinkedIn, TikTok, and similar platforms."
+detail_sections:
+  - When to Use
+  - Before Starting
+  - How This Skill Works
+  - Platform Specs
+  - Generating Ad Visuals
+  - Generating Ad Copy
+  - Iterating from Performance Data
+  - Iteration Log
+  - Writing Quality Standards
+  - Output Formats
+  - "Angle: [Pain Point — Manual Reporting]"
+  - Performance Summary
+  - New Creative
+  - Recommendations
+  - Batch Generation Workflow
+  - Common Mistakes
+  - Tool Integrations
+  - Related Skills
 ---
 
 # Ad Creative

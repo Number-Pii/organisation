@@ -3,6 +3,40 @@ name: build
 description: build
 risk: unknown
 source: community
+domain: "Planning & Workflow"
+size_class: l
+summary: "Feature development pipeline: research, plan, track, and implement major features."
+detail_sections:
+  - Instructions
+  - "Subcommand: Help (empty args)"
+  - "Subcommand: research"
+  - Overview
+  - Problem Statement
+  - User Stories / Use Cases
+  - Technical Research
+  - UI/UX Considerations
+  - Integration Points
+  - Risks and Challenges
+  - Open Questions
+  - References
+  - "Subcommand: implementation"
+  - Prerequisites
+  - Phase Summary
+  - "Phase 1: [Phase Title]"
+  - "Phase 2: [Phase Title]"
+  - Post-Implementation
+  - Notes
+  - "Subcommand: progress"
+  - "Status: Phase 1 - Not Started"
+  - Quick Reference
+  - Phase Progress
+  - Session Log
+  - Files Changed
+  - Architectural Decisions
+  - Lessons Learned
+  - "Subcommand: phase"
+  - "Subcommand: status"
+  - Important Guidelines
 ---
 
 ---

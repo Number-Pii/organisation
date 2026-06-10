@@ -1,8 +1,32 @@
 ---
 name: hugging-face-datasets
-description: Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows.
+description: "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: l
+summary: Create and manage datasets on Hugging Face Hub.
+detail_sections:
+  - Integration with HF MCP Server
+  - 1. Dataset Lifecycle Management
+  - 2. SQL-Based Dataset Querying (NEW)
+  - 3. Multi-Format Dataset Support
+  - 4. Quality Assurance Features
+  - Quick Start
+  - SQL Query Syntax
+  - Common Operations
+  - Python API Usage
+  - HF Path Format
+  - Useful DuckDB SQL Functions
+  - MCP SERVER DEFINITIONS
+  - TRAINING EXAMPLE STRUCTURE
+  - QUALITY GUIDELINES
+  - EXAMPLE CATEGORIES
+  - "Example 1: Create Training Subset from Existing Dataset"
+  - "Example 2: Transform and Reshape Data"
+  - "Example 3: Merge Multiple Dataset Splits"
+  - "Example 4: Quality Filtering"
+  - "Example 5: Create Custom Training Dataset"
 ---
 
 # Overview

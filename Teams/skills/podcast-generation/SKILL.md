@@ -4,6 +4,18 @@ description: "Generate real audio narratives from text content using Azure OpenA
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Generate real audio narratives from text content using Azure OpenAI's Realtime API."
+detail_sections:
+  - Quick Start
+  - Environment Configuration
+  - Core Workflow
+  - Voice Options
+  - Realtime API Events
+  - Audio Format
+  - References
+  - When to Use
 ---
 
 # Podcast Generation with GPT Realtime Mini

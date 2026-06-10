@@ -1,21 +1,53 @@
 ---
 name: skill-installer
-description: Instala, valida, registra e verifica novas skills no ecossistema. 10 checks de seguranca, copia, registro no orchestrator e verificacao pos-instalacao.
+description: "Instala, valida, registra e verifica novas skills no ecossistema. 10 checks de seguranca, copia, registro no orchestrator e verificacao pos-instalacao."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- skill-management
-- deployment
-- validation
-- installation
+  - skill-management
+  - deployment
+  - validation
+  - installation
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: Skills Tooling
+size_class: m
+summary: "Instala, valida, registra e verifica novas skills no ecossistema."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - "Principio: Redundancia Maxima"
+  - Localizacao
+  - Workflow Principal
+  - "Cenario 1: Apos Skill-Creator Finalizar"
+  - "Cenario 2: Usuario Pede Para Instalar Uma Skill Especifica"
+  - "Cenario 3: Simular Instalacao Sem Fazer Nada (Dry-Run)"
+  - "Cenario 4: Detectar E Instalar Skills Pendentes"
+  - "Cenario 5: Desinstalar Uma Skill"
+  - "Cenario 6: Health Check + Auto-Repair"
+  - "Cenario 7: Rollback (Restaurar De Backup)"
+  - "Cenario 8: Reinstalar Todas As Skills"
+  - "Cenario 9: Dashboard De Status"
+  - "Cenario 10: Ver Historico De Operacoes"
+  - Validar Uma Skill
+  - Detectar Skills Nao-Instaladas
+  - Empacotar Zip Para Claude.Ai
+  - Verificar Integridade De Zips Existentes
+  - Install_Skill.Py
+  - O Que O Instalador Faz (11 Passos)
+  - Seguranca
+  - Integracao Com Orchestrator
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Skill Installer v3.0

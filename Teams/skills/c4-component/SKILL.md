@@ -1,9 +1,29 @@
 ---
 name: c4-component
-description: Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships.
+description: "Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Expert C4 Component-level documentation specialist.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - Purpose
+  - Software Features
+  - Code Elements
+  - Interfaces
+  - Dependencies
+  - Component Diagram
+  - Master Component Index Template
+  - System Components
+  - Component Relationships
+  - Example Interactions
+  - Key Distinctions
+  - Output Examples
 ---
 
 # C4 Component Level: [Component Name]

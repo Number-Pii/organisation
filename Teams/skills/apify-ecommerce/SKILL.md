@@ -3,6 +3,19 @@ name: apify-ecommerce
 description: "Extract product data, prices, reviews, and seller information from any e-commerce platform using Apify's E-commerce Scraping Tool."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Extract product data, prices, reviews, and seller information from any e-commerce platform using Apify's E-commerce Scraping Tool."
+detail_sections:
+  - Prerequisites
+  - Workflow Selection
+  - Progress Tracking
+  - "Workflow 1: Products & Pricing"
+  - "Workflow 2: Customer Reviews"
+  - "Workflow 3: Seller Intelligence"
+  - Supported Marketplaces
+  - Running the Extraction
+  - Error Handling
 ---
 
 # E-commerce Data Extraction

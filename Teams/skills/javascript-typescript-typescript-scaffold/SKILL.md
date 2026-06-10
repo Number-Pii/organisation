@@ -4,6 +4,16 @@ description: "You are a TypeScript project architecture expert specializing in s
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: "TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # TypeScript Project Scaffolding

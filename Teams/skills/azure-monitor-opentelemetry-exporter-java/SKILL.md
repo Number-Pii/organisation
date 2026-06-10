@@ -1,9 +1,28 @@
 ---
 name: azure-monitor-opentelemetry-exporter-java
-description: Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights.
+description: "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Monitor OpenTelemetry Exporter for Java.
+detail_sections:
+  - Installation (Deprecated)
+  - "Recommended: Use Autoconfigure Instead"
+  - Environment Variables
+  - Basic Setup with Autoconfigure (Recommended)
+  - Creating Spans
+  - Adding Span Attributes
+  - Custom Span Processor
+  - Nested Spans
+  - Recording Exceptions
+  - Metrics (via OpenTelemetry)
+  - Key Concepts
+  - Migration to Autoconfigure
+  - Best Practices
+  - Reference Links
+  - When to Use
 ---
 
 # Azure Monitor OpenTelemetry Exporter for Java

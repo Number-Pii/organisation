@@ -9,6 +9,17 @@ allowed-tools:
   - Grep
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: s
+summary: Identifies dependencies at heightened risk of exploitation or takeover.
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - Purpose
+  - Prerequisites
+  - Workflow (Initial Setup)
+  - Workflow (Dependency Audit)
+  - Workflow (Post-Audit)
 ---
 
 # Supply Chain Risk Auditor

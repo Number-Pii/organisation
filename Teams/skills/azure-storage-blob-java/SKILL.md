@@ -1,9 +1,21 @@
 ---
 name: azure-storage-blob-java
-description: "Build blob storage applications using the Azure Storage Blob SDK for Java."
+description: Build blob storage applications using the Azure Storage Blob SDK for Java.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build blob storage applications using the Azure Storage Blob SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Core Patterns
+  - Error Handling
+  - Proxy Configuration
+  - Environment Variables
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Storage Blob SDK for Java

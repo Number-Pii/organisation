@@ -3,6 +3,19 @@ name: sharp-edges
 description: sharp-edges
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: m
+summary: sharp-edges
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - Core Principle
+  - Rationalizations to Reject
+  - Sharp Edge Categories
+  - Analysis Workflow
+  - Severity Classification
+  - References
+  - Quality Checklist
 ---
 
 ---

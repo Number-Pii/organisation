@@ -1,9 +1,23 @@
 ---
 name: julia-pro
-description: Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices.
+description: "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
+  - Important Constraints
 ---
 
 ## Use this skill when

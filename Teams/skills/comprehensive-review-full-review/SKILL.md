@@ -1,9 +1,23 @@
 ---
 name: comprehensive-review-full-review
-description: "Use when working with comprehensive review full review"
+description: Use when working with comprehensive review full review
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: Use when working with comprehensive review full review
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Review Configuration Options
+  - "Phase 1: Code Quality & Architecture Review"
+  - "Phase 2: Security & Performance Review"
+  - "Phase 3: Testing & Documentation Review"
+  - "Phase 4: Best Practices & Standards Compliance"
+  - Consolidated Report Generation
+  - Success Criteria
 ---
 
 ## Use this skill when

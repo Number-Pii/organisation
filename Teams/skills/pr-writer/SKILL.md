@@ -3,6 +3,17 @@ name: pr-writer
 description: "Create pull requests following Sentry's engineering practices."
 risk: unknown
 source: community
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Create pull requests following Sentry's engineering practices."
+detail_sections:
+  - Prerequisites
+  - Process
+  - PR Description Examples
+  - Issue References
+  - Guidelines
+  - Editing Existing PRs
+  - References
 ---
 
 # PR Writer

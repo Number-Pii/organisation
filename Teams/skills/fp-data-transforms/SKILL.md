@@ -1,6 +1,6 @@
 ---
 name: fp-data-transforms
-description: Everyday data transformations using functional patterns - arrays, objects, grouping, aggregation, and null-safe access
+description: "Everyday data transformations using functional patterns - arrays, objects, grouping, aggregation, and null-safe access"
 risk: unknown
 source: community
 version: 1.0.0
@@ -15,6 +15,19 @@ tags:
   - grouping
   - aggregation
   - null-safety
+domain: "Backend & APIs"
+size_class: xl
+summary: "Everyday data transformations using functional patterns - arrays, objects, grouping, aggregation, and null-safe access"
+detail_sections:
+  - Table of Contents
+  - 1. Array Operations
+  - 2. Object Transformations
+  - 3. Data Normalization
+  - 4. Grouping and Aggregation
+  - 5. Null-Safe Access
+  - 6. Real-World Examples
+  - 7. When to Use What
+  - Summary
 ---
 
 # Practical Data Transformations

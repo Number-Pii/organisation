@@ -4,6 +4,13 @@ description: "Secure environment variable management ensuring secrets are never 
 risk: safe
 source: "https://github.com/wrsmith108/varlock-claude-skill"
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Varlock Claude Skill

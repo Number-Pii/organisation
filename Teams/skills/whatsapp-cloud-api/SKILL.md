@@ -1,21 +1,61 @@
 ---
 name: whatsapp-cloud-api
-description: Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA256, automacao de atendimento. Boilerplates Node.js e Python.
+description: "Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA256, automacao de atendimento. Boilerplates Node.js e Python."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- messaging
-- whatsapp
-- meta
-- webhooks
+  - messaging
+  - whatsapp
+  - meta
+  - webhooks
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Integracao com WhatsApp Business Cloud API (Meta).
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Decision Tree
+  - Ou
+  - 1. Configurar Variaveis De Ambiente
+  - 2. Enviar Mensagem De Texto Simples
+  - 3. Enviar Template Message (Fora Da Janela De 24H)
+  - 4. Verificar Entrega
+  - Tipos De Mensagem
+  - Webhooks
+  - Verificacao (Get) - Obrigatorio
+  - Recebimento (Post) - Com Seguranca Hmac-Sha256
+  - Eventos Recebidos
+  - Menu Principal Interativo
+  - Python - Menu Com Lista Interativa
+  - State Machine Para Fluxos
+  - Janela De 24 Horas
+  - Integracao Com Ia (Claude Api)
+  - Whatsapp Flows
+  - "Commerce & Catalogo"
+  - Template Management Api
+  - Whatsapp Channels
+  - Click-To-Whatsapp Ads
+  - Status Tracking
+  - Checklist Essencial
+  - Quality Rating
+  - Tier System (Limites De Mensagem)
+  - Troubleshooting
+  - Referencias (Leia Conforme Necessidade)
+  - Scripts
+  - Boilerplate
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # WhatsApp Cloud API - Integracao Profissional

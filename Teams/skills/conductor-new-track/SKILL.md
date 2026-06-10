@@ -1,9 +1,43 @@
 ---
 name: conductor-new-track
-description: "Create a new track with specification and phased implementation plan"
+description: Create a new track with specification and phased implementation plan
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: Create a new track with specification and phased implementation plan
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Pre-flight Checks
+  - Track Classification
+  - Interactive Specification Gathering
+  - Track ID Generation
+  - Specification Generation
+  - Summary
+  - Context
+  - User Story (for features)
+  - Problem Description (for bugs)
+  - Acceptance Criteria
+  - Dependencies
+  - Out of Scope
+  - Technical Notes
+  - User Review of Spec
+  - Plan Generation
+  - Overview
+  - "Phase 1: {Phase Name}"
+  - "Phase 2: {Phase Name}"
+  - "Phase 3: {Phase Name} (if needed)"
+  - Final Verification
+  - User Review of Plan
+  - Track Creation
+  - Documents
+  - Progress
+  - Quick Links
+  - Completion Message
+  - Error Handling
 ---
 
 # New Track

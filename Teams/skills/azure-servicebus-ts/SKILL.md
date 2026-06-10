@@ -4,6 +4,24 @@ description: "Enterprise messaging with queues, topics, and subscriptions."
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Enterprise messaging with queues, topics, and subscriptions."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Workflow
+  - Message Sessions
+  - Dead-Letter Handling
+  - Scheduled Messages
+  - Message Deferral
+  - Peek Messages (Non-Destructive)
+  - Key Types
+  - Receive Modes
+  - Best Practices
+  - Reference Documentation
+  - When to Use
 ---
 
 # Azure Service Bus SDK for TypeScript

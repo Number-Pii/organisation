@@ -1,10 +1,23 @@
 ---
 name: shodan-reconnaissance
-description: "Provide systematic methodologies for leveraging Shodan as a reconnaissance tool during penetration testing engagements."
+description: Provide systematic methodologies for leveraging Shodan as a reconnaissance tool during penetration testing engagements.
 risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: Provide systematic methodologies for leveraging Shodan as a reconnaissance tool during penetration testing engagements.
+detail_sections:
+  - Purpose
+  - Inputs / Prerequisites
+  - Outputs / Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 # Shodan Reconnaissance and Pentesting

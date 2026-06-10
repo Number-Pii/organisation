@@ -1,22 +1,94 @@
 ---
 name: cred-omega
-description: "CISO operacional enterprise para gestao total de credenciais e segredos."
+description: CISO operacional enterprise para gestao total de credenciais e segredos.
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- credentials
-- secrets
-- security
-- api-keys
-- vault
+  - credentials
+  - secrets
+  - security
+  - api-keys
+  - vault
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Security & Penetration Testing"
+size_class: l
+summary: CISO operacional enterprise para gestao total de credenciais e segredos.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 As 5 Missoes Inegociaveis
+  - 1.2 Regras De Ouro (Nunca Violar)
+  - 1.3 Mentalidade De Seguranca
+  - 2.1 Tipos De Credenciais (Taxonomia Completa)
+  - 2.2 Onde Vazam (Superficie De Ataque)
+  - Fase 0 — Reconhecimento (Mapear Ambiente)
+  - Fase 1 — Descoberta (Varredura Profunda)
+  - Scanner Principal — Padroes Regex De Alta Cobertura
+  - Encontrar Arquivos Que Tipicamente Contem Segredos
+  - Openai (Sk-...)
+  - Google Cloud (Aiza...)
+  - Aws (Akia...)
+  - Stripe (Sk_Live_...)
+  - Meta/Facebook (Token Longo Numerico)
+  - Telegram Bot Token
+  - Github Pat
+  - Jwt (Eyj...)
+  - Generic High-Entropy Strings (Possivel Segredo)
+  - Buscar Segredos Em Todos Os Commits
+  - Padroes Especificos No Historico
+  - Diffs Que Removeram Segredos (Sinal De Vazamento Anterior)
+  - Listar Images Locais
+  - Checar Docker-Compose Por Segredos Inline
+  - Listar Nomes De Variaveis Suspeitas (Sem Valores!)
+  - Github Actions — Checar Se Secrets Estao Sendo Logados
+  - Checar Se .Env Esta Sendo Copiado No Ci
+  - Fase 2 — Classificacao De Risco
+  - Fase 3 — Contencao (Acao Imediata)
+  - Fase 4 — Hardening (Protecao Profunda)
+  - Fase 5 — Governanca Continua
+  - 4.1 Openai
+  - 4.2 Google Cloud (Gcp)
+  - 4.3 Meta (Whatsapp / Facebook / Instagram)
+  - 4.4 Telegram (Bots)
+  - 4.5 Aws
+  - 4.6 Stripe / Pagamentos
+  - /Audit (Audit_All)
+  - /Lockdown (Lockdown_All)
+  - /Rotate (Rotate_All)
+  - /Incident (Incident_Mode)
+  - /Govern (Set_Governance)
+  - /Status
+  - 6. Formato De Entrega (Sempre)
+  - 7.1 Severidade E Tempo De Resposta
+  - 7.2 Protocolo De 4 Passos
+  - Bloquear Ip/Origem Suspeita
+  - Verificar Se Nao Ha Copias Em Backups/Forks/Mirrors
+  - Atualizar Registry
+  - Verificar Custos/Cobranças Anomalos Nos Provedores
+  - 8.1 Scanner De Segredos (Python)
+  - 8.2 Registry Manager
+  - 8.3 Pre-Commit Hook
+  - 8.4 Audit Report Generator
+  - 9.1 Estrutura De Diretorios
+  - 9.2 Padrao De Seguranca Na Vps
+  - 10.1 Comportamento Transversal
+  - 10.2 Sinais De Alerta Automaticos
+  - Score De Seguranca (0-100)
+  - Formula
+  - Skills Complementares
+  - Quando Outra Skill Deve Chamar Cred-Omega
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # CRED-OMEGA: Security Engine for All API Keys (Enterprise)

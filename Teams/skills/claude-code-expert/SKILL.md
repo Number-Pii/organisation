@@ -3,19 +3,84 @@ name: claude-code-expert
 description: "Especialista profundo em Claude Code - CLI da Anthropic. Maximiza produtividade com atalhos, hooks, MCPs, configuracoes avancadas, workflows, CLAUDE.md, memoria, sub-agentes, permissoes e integracao com ecossistemas."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- claude-code
-- productivity
-- cli
-- configuration
+  - claude-code
+  - productivity
+  - cli
+  - configuration
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: Especialista profundo em Claude Code - CLI da Anthropic.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Fundamentos Do Claude Code
+  - Instalacao E Setup
+  - Flags Essenciais
+  - 2. Claude.Md - O Cerebro Do Projeto
+  - Hierarquia De Claude.Md
+  - Estrutura Recomendada
+  - Contexto
+  - Comandos Essenciais
+  - Convencoes De Codigo
+  - Arquitetura
+  - Regras De Negocio Criticas
+  - Agentes E Skills Disponiveis
+  - Protocolo Pre-Tarefa
+  - Dicas De Claude.Md De Elite
+  - Localizacao Dos Arquivos De Memoria
+  - Memoria Ativa (Em Claude.Md)
+  - "Instrucao De Salvamento Automatico:"
+  - Context Guardian - Prevenir Perda De Contexto
+  - 4. Hooks - Automacao Poderosa
+  - Localizacao Dos Hooks
+  - Tipos De Hooks Disponiveis
+  - "Exemplo: Hook De Beep Ao Terminar"
+  - "Exemplo: Hook De Log De Acoes Bash"
+  - "Exemplo: Hook Scanner De Seguranca Pre-Commit"
+  - Ver E Validar Hooks Ativos
+  - 5. Mcp Servers - Extensoes De Ferramentas
+  - Comandos Mcp
+  - Mcps Mais Uteis
+  - Criar Mcp Server Customizado Em Node.Js
+  - Adicionar Mcp Customizado
+  - 6. Sub-Agentes - Paralelismo Total
+  - Padroes De Orquestracao
+  - Boas Praticas Com Sub-Agentes
+  - Configurar Permissoes Por Projeto (.Claude/Settings.Json)
+  - Flags De Permissao Em Linha De Comando
+  - Quando Usar --Dangerously-Skip-Permissions
+  - Workflow De Feature Completa (4 Fases)
+  - "Fase 1: Briefing E Planejamento"
+  - "Fase 2: Implementacao"
+  - "Fase 3: Testes"
+  - "Fase 4: Code Review"
+  - Modo Autonomo Para Ciclos Longos
+  - Script De Inicio De Sessao Produtiva
+  - Pipeline Ci/Cd Com Claude Code
+  - .Github/Workflows/Claude-Review.Yml
+  - Tabela De Problemas Comuns
+  - Ver Logs E Historico De Sessoes
+  - ~/.Claude/Settings.Json Completo E Recomendado
+  - Variaveis De Ambiente Essenciais
+  - Como Claude Code Se Integra Com As Skills Auri
+  - Comandos Rapidos Do Ecossistema
+  - Quando Esta Skill E Ativada
+  - 12. Slash Commands No Claude Code
+  - 13. Referencias Oficiais
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

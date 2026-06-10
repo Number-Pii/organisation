@@ -1,9 +1,27 @@
 ---
 name: azure-storage-blob-ts
-description: Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers.
+description: "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Hierarchy
+  - Container Operations
+  - Blob Operations
+  - "Blob Properties & Metadata"
+  - SAS Token Generation (Node.js only)
+  - Blob Types
+  - Error Handling
+  - TypeScript Types Reference
+  - Best Practices
+  - Platform Differences
+  - When to Use
 ---
 
 # @azure/storage-blob (TypeScript/JavaScript)

@@ -4,6 +4,20 @@ description: "Build evaluation frameworks for agent systems. Use when testing ag
 risk: safe
 source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: Build evaluation frameworks for agent systems.
+detail_sections:
+  - When to Use This Skill
+  - When to Use
+  - Core Concepts
+  - Detailed Topics
+  - Practical Guidance
+  - Examples
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 ## When to Use This Skill

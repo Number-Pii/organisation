@@ -4,6 +4,16 @@ description: "Expert capability for robust, stealthy, and efficient browser auto
 risk: safe
 source: "https://github.com/playwright-community/playwright-go"
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "Expert capability for robust, stealthy, and efficient browser automation using Playwright Go."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - "Safety & Risk"
+  - Limitations
+  - Strategic Implementation Guidelines
+  - Resources
 ---
 
 # Playwright Go Automation Expert

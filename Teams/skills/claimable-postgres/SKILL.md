@@ -3,6 +3,22 @@ name: claimable-postgres
 description: Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new). No login or credit card required. Use for quick Postgres environments and throwaway DATABASE_URL for prototyping.
 risk: unknown
 source: community
+domain: "Backend & APIs"
+size_class: m
+summary: Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new).
+detail_sections:
+  - Quick Start
+  - "Which Method?"
+  - REST API
+  - CLI
+  - SDK
+  - Vite Plugin
+  - Agent Workflow
+  - Claiming
+  - Defaults and Limits
+  - Auto-provisioning
+  - Safety and UX Notes
+  - When to Use
 ---
 
 # Claimable Postgres

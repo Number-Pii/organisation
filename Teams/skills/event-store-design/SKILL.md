@@ -4,6 +4,18 @@ description: "Design and implement event stores for event-sourced systems. Use w
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: Design and implement event stores for event-sourced systems.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Technology Comparison
+  - Templates
+  - Best Practices
+  - Resources
 ---
 
 # Event Store Design

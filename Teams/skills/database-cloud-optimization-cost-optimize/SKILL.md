@@ -4,6 +4,17 @@ description: "You are a cloud cost optimization expert specializing in reducing 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Cloud cost optimization expert specializing in reducing infrastructure expenses while maintaining performance and reliability."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Cloud Cost Optimization

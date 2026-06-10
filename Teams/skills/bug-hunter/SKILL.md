@@ -5,6 +5,20 @@ category: development
 risk: safe
 source: community
 date_added: "2026-03-05"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Systematically finds and fixes bugs using proven debugging techniques.
+detail_sections:
+  - When to Use This Skill
+  - The Debugging Process
+  - Debugging Techniques
+  - Common Bug Patterns
+  - Debugging Tools
+  - "When You're Stuck"
+  - Documentation Template
+  - "Bug: Login timeout after 30 seconds"
+  - Key Principles
+  - Related Skills
 ---
 
 # Bug Hunter

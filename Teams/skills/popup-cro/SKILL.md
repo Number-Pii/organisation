@@ -4,6 +4,24 @@ description: "Create and optimize popups, modals, overlays, slide-ins, and banne
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversions without harming user experience or brand trust."
+detail_sections:
+  - 1. Initial Assessment (Required)
+  - 2. Core Principles (Non-Negotiable)
+  - 3. Trigger Strategy (Choose Intentionally)
+  - "4. Popup Types & Use Cases"
+  - 5. Copy Frameworks
+  - "6. Design & UX Rules"
+  - "7. Frequency, Targeting & Rules"
+  - "8. Compliance & SEO Safety"
+  - "9. Measurement & Benchmarks"
+  - 10. Output Format (Required)
+  - 11. Common Mistakes (Flag These)
+  - 12. Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 # Popup CRO
 

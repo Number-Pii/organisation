@@ -1,8 +1,25 @@
 ---
 name: n8n-workflow-patterns
-description: "Proven architectural patterns for building n8n workflows."
+description: Proven architectural patterns for building n8n workflows.
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: Proven architectural patterns for building n8n workflows.
+detail_sections:
+  - The 5 Core Patterns
+  - Pattern Selection Guide
+  - Common Workflow Components
+  - Workflow Creation Checklist
+  - Data Flow Patterns
+  - Common Gotchas
+  - Integration with Other Skills
+  - Pattern Statistics
+  - Quick Start Examples
+  - Detailed Pattern Files
+  - Real Template Examples
+  - Best Practices
+  - Summary
 ---
 
 # n8n Workflow Patterns

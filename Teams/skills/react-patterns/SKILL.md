@@ -4,6 +4,21 @@ description: "Modern React patterns and principles. Hooks, composition, performa
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: Modern React patterns and principles.
+detail_sections:
+  - 1. Component Design Principles
+  - 2. Hook Patterns
+  - 3. State Management Selection
+  - 4. React 19 Patterns
+  - 5. Composition Patterns
+  - 6. Performance Principles
+  - 7. Error Handling
+  - 8. TypeScript Patterns
+  - 9. Testing Principles
+  - 10. Anti-Patterns
+  - When to Use
 ---
 
 # React Patterns

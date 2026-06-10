@@ -4,6 +4,17 @@ description: "You are a debugging expert specializing in setting up comprehensiv
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: "Debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Debug and Trace Configuration

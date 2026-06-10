@@ -4,6 +4,20 @@ description: "Git worktrees create isolated workspaces sharing the same reposito
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Git worktrees create isolated workspaces sharing the same repository, allowing work on multiple branches simultaneously without switching."
+detail_sections:
+  - Overview
+  - Directory Selection Process
+  - Safety Verification
+  - Creation Steps
+  - Quick Reference
+  - Common Mistakes
+  - Example Workflow
+  - Red Flags
+  - Integration
+  - When to Use
 ---
 
 # Using Git Worktrees

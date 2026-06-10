@@ -1,8 +1,25 @@
 ---
 name: threejs-animation
-description: Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations.
+description: "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations."
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: l
+summary: "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing."
+detail_sections:
+  - Quick Start
+  - Animation System Overview
+  - AnimationClip
+  - AnimationMixer
+  - AnimationAction
+  - Loading GLTF Animations
+  - Skeletal Animation
+  - Morph Targets
+  - Animation Blending
+  - Animation Utilities
+  - Procedural Animation Patterns
+  - Performance Tips
+  - See Also
 ---
 
 # Three.js Animation

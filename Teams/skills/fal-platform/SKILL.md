@@ -4,6 +4,13 @@ description: "Platform APIs for model management, pricing, and usage tracking"
 risk: safe
 source: "https://github.com/fal-ai-community/skills/blob/main/skills/claude.ai/fal-platform/SKILL.md"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: xs
+summary: "Platform APIs for model management, pricing, and usage tracking"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Fal Platform

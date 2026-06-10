@@ -4,6 +4,19 @@ description: "To provide a comprehensive reference for configuring and using Cla
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: To provide a comprehensive reference for configuring and using Claude Code (the agentic coding tool) to its full potential.
+detail_sections:
+  - Purpose
+  - "Configuration (`CLAUDE.md`)"
+  - Commands
+  - Code Style
+  - Workflow
+  - Advanced Features
+  - Best Practices
+  - Reference
+  - When to Use
 ---
 
 # Claude Code Guide

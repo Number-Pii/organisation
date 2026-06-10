@@ -1,10 +1,26 @@
 ---
 name: shadcn
-description: Manages shadcn/ui components and projects, providing context, documentation, and usage patterns for building modern design systems.
-user-invocable: false
+description: "Manages shadcn/ui components and projects, providing context, documentation, and usage patterns for building modern design systems."
+user-invocable: "false"
 risk: safe
-source: https://github.com/shadcn-ui/ui/tree/main/skills/shadcn
+source: "https://github.com/shadcn-ui/ui/tree/main/skills/shadcn"
 date_added: "2026-03-07"
+domain: "Frontend & UI"
+size_class: m
+summary: "Manages shadcn/ui components and projects, providing context, documentation, and usage patterns for building modern design systems."
+detail_sections:
+  - When to Use
+  - Current Project Context
+  - Principles
+  - Critical Rules
+  - Key Patterns
+  - Component Selection
+  - Key Fields
+  - "Component Docs, Examples, and Usage"
+  - Workflow
+  - Updating Components
+  - Quick Reference
+  - Detailed References
 ---
 
 # shadcn/ui

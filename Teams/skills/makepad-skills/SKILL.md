@@ -4,6 +4,13 @@ description: "Makepad UI development skills for Rust apps: setup, patterns, shad
 risk: safe
 source: "https://github.com/ZhangHanDong/makepad-skills"
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and troubleshooting."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Makepad Skills

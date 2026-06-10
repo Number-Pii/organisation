@@ -4,6 +4,21 @@ description: "Generative Engine Optimization for AI search engines (ChatGPT, Cla
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Health & Wellness"
+size_class: s
+summary: "Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity)."
+detail_sections:
+  - "1. What is GEO?"
+  - 2. AI Engine Landscape
+  - 3. RAG Retrieval Factors
+  - 4. Content That Gets Cited
+  - 5. GEO Content Checklist
+  - 6. Entity Building
+  - 7. AI Crawler Access
+  - 8. Measurement
+  - 9. Anti-Patterns
+  - Script
+  - When to Use
 ---
 
 # GEO Fundamentals

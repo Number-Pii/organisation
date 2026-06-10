@@ -5,6 +5,18 @@ risk: offensive
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "⚠️ AUTHORIZED USE ONLY > This skill is for educational purposes or authorized security assessments only."
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Troubleshooting
+  - When to Use
 ---
 
 # Metasploit Framework

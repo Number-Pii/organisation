@@ -1,9 +1,20 @@
 ---
 name: dx-optimizer
-description: Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.
+description: "Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: Developer Experience specialist.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Optimization Areas
+  - Analysis Process
+  - Deliverables
+  - Success Metrics
 ---
 
 ## Use this skill when

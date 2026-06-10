@@ -1,9 +1,24 @@
 ---
 name: frontend-slides
-description: Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files.
+description: "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files."
 risk: safe
-source: https://github.com/zarazhangrui/frontend-slides
+source: "https://github.com/zarazhangrui/frontend-slides"
 date_added: "2026-03-07"
+domain: "Frontend & UI"
+size_class: m
+summary: "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files."
+detail_sections:
+  - When to Use This Skill
+  - Core Principles
+  - Design Aesthetics
+  - Viewport Fitting Rules
+  - "Phase 0: Detect Mode"
+  - "Phase 1: Content Discovery (New Presentations)"
+  - "Phase 2: Style Discovery"
+  - "Phase 3: Generate Presentation"
+  - "Phase 4: PPT Conversion"
+  - "Phase 5: Delivery"
+  - Supporting Files
 ---
 
 # Frontend Slides

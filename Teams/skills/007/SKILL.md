@@ -1,23 +1,80 @@
 ---
-name: '007'
-description: Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.
+name: "007"
+description: "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- security
-- audit
-- owasp
-- threat-modeling
-- hardening
-- pentest
+  - security
+  - audit
+  - owasp
+  - threat-modeling
+  - hardening
+  - pentest
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 007 — Licenca Para Auditar
+  - Modos Operacionais
+  - "Modo 1: `Audit` (Padrao)"
+  - "Modo 2: `Threat-Model`"
+  - "Modo 3: `Approve`"
+  - "Modo 4: `Block`"
+  - "Modo 5: `Monitor`"
+  - "Modo 6: `Incident`"
+  - Processo De Analise — 6 Fases
+  - "Fase 1: Mapeamento Da Superficie De Ataque"
+  - "Fase 2: Threat Modeling (Stride + Pasta)"
+  - "Fase 3: Checklist Tecnico De Seguranca"
+  - "Fase 4: Red Team Mental (Ataque Realista)"
+  - "Fase 5: Blue Team (Defesa E Hardening)"
+  - "Fase 6: Veredito Final"
+  - Formato De Resposta
+  - 1. Resumo Do Sistema
+  - 2. Mapa De Ataque
+  - 3. Vulnerabilidades Encontradas
+  - 4. Threat Model
+  - 5. Correcoes Propostas
+  - 6. Hardening E Melhorias
+  - 7. Scoring
+  - 8. Veredito Final
+  - Modo Guardiao Automatico
+  - Integracao Com O Ecossistema
+  - Principios Absolutos (Nao-Negociaveis)
+  - Playbooks De Resposta A Incidente
+  - "Playbook: Token/Segredo Vazado"
+  - "Playbook: Prompt Injection / Jailbreak"
+  - "Playbook: Bot Banido (Whatsapp/Instagram/Telegram)"
+  - "Playbook: Webhook Falso / Replay Attack"
+  - Comandos Rapidos
+  - Scripts De Automacao
+  - Scan Rapido De Seguranca (Automatizado)
+  - Auditoria Completa
+  - Threat Modeling Automatizado
+  - Checklist Tecnico
+  - Scoring De Seguranca
+  - Mapa De Superficie De Ataque
+  - Advisor De Hardening
+  - Scan De Segredos
+  - Scan De Dependencias
+  - Scan De Injection Patterns
+  - Referencias
+  - Governanca Do 007
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # 007 — Licenca para Auditar

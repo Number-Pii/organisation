@@ -4,6 +4,22 @@ description: "Decision framework and patterns for architecting applications acro
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Decision framework and patterns for architecting applications across AWS, Azure, and GCP."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Cloud Service Comparison
+  - Multi-Cloud Patterns
+  - Cloud-Agnostic Architecture
+  - Cost Comparison
+  - Migration Strategy
+  - Best Practices
+  - Reference Files
+  - Related Skills
 ---
 
 # Multi-Cloud Architecture

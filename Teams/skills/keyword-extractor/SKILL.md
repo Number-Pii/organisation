@@ -1,10 +1,20 @@
 ---
 name: keyword-extractor
-description: >
-  Extracts up to 50 highly relevant SEO keywords from text. Use when user wants to generate or extract keywords for given text.
+description: ">"
 risk: safe
 source: original
 date_added: "2026-03-11"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Extracts up to 50 relevant keywords from text in a strict machine-ready structure."
+detail_sections:
+  - QUICK START
+  - When to Use
+  - Step 1 — Analyze
+  - Step 2 — Generate Keywords
+  - Step 3 — Rank
+  - Step 4 — Normalize
+  - Step 5 — Validate
 ---
 
 # Keyword Extractor

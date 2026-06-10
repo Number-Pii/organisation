@@ -3,6 +3,21 @@ name: makepad-widgets
 description: "Version: makepad-widgets (dev branch) | Last Updated: 2026-01-19 > > Check for updates: https://crates.io/crates/makepad-widgets"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Version: makepad-widgets (dev branch) | Last Updated: 2026-01-19 > > Check for updates: https://crates.io/crates/makepad-widgets"
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - Key Patterns
+  - Widget Traits (from source)
+  - All Built-in Widgets (84 files in widgets/src/)
+  - Core Widgets Reference
+  - View Variants
+  - Button Variants
+  - ImageFit Values
+  - When Writing Code
+  - When Answering Questions
 ---
 
 # Makepad Widgets Skill

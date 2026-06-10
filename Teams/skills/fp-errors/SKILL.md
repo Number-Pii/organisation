@@ -1,6 +1,6 @@
 ---
 name: fp-errors
-description: Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner, more predictable code
+description: "Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner, more predictable code"
 risk: unknown
 source: community
 version: 1.0.0
@@ -13,6 +13,19 @@ tags:
   - typescript
   - validation
   - practical
+domain: Programming Languages
+size_class: l
+summary: "Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner, more predictable code"
+detail_sections:
+  - 1. Stop Throwing Everywhere
+  - 2. The Result Pattern (Either)
+  - 3. Chaining Operations That Might Fail
+  - 4. Collecting Multiple Errors
+  - 5. Async Operations (TaskEither)
+  - 6. Converting Between Patterns
+  - Real Scenarios
+  - Quick Reference
+  - Summary
 ---
 
 # Practical Error Handling with fp-ts

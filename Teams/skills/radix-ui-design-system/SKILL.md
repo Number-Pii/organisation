@@ -4,6 +4,27 @@ description: "Build accessible design systems with Radix UI primitives. Headless
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: Build accessible design systems with Radix UI primitives.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do not use this skill when
+  - Core Principles
+  - Getting Started
+  - Theming Strategies
+  - Component Patterns
+  - Common Primitives Reference
+  - Accessibility Checklist
+  - Best Practices
+  - Real-World Examples
+  - Troubleshooting
+  - Performance Optimization
+  - Integration with Popular Tools
+  - Related Skills
+  - Resources
+  - Quick Reference
 ---
 
 # Radix UI Design System

@@ -4,6 +4,21 @@ description: "Use when building durable distributed systems with Temporal Go SDK
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: Use when building durable distributed systems with Temporal Go SDK.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do not use this skill when
+  - Step-by-Step Guide
+  - Capabilities
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Limitations
+  - Resources
+  - Related Skills
 ---
 
 # Temporal Go SDK (temporal-golang-pro)

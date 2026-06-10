@@ -6,8 +6,29 @@ risk: offensive
 source: community
 date_added: "2026-03-15"
 author: viliawang-pm
-tags: [prompt-engineering, rag, security, evaluation, ai-engineering, llm]
-tools: [claude, cursor, gemini, copilot]
+tags:
+  - prompt-engineering
+  - rag
+  - security
+  - evaluation
+  - ai-engineering
+  - llm
+tools:
+  - claude
+  - cursor
+  - gemini
+  - copilot
+domain: "AI & Machine Learning"
+size_class: s
+summary: "6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Installation
 ---
 
 # AI Engineering Toolkit

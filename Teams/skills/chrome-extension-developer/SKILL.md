@@ -4,6 +4,16 @@ description: "Expert in building Chrome Extensions using Manifest V3. Covers bac
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Expert in building Chrome Extensions using Manifest V3.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 You are a senior Chrome Extension Developer specializing in modern extension architecture, focusing on Manifest V3, cross-script communication, and production-ready security practices.

@@ -4,6 +4,16 @@ description: "You are a React component architecture expert specializing in scaf
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "React component architecture expert specializing in scaffolding production-ready, accessible, and performant components."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # React/React Native Component Scaffolding

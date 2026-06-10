@@ -1,8 +1,27 @@
 ---
 name: n8n-expression-syntax
-description: Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.
+description: "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Validate n8n expression syntax and fix common errors.
+detail_sections:
+  - Expression Format
+  - Core Variables
+  - "🚨 CRITICAL: Webhook Data Structure"
+  - Common Patterns
+  - When NOT to Use Expressions
+  - Validation Rules
+  - Common Mistakes
+  - Working Examples
+  - Data Type Handling
+  - Advanced Patterns
+  - Debugging Expressions
+  - Expression Helpers
+  - Best Practices
+  - Related Skills
+  - Summary
 ---
 
 # n8n Expression Syntax

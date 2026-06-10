@@ -1,9 +1,19 @@
 ---
 name: executing-plans
-description: "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
+description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: Use when you have a written implementation plan to execute in a separate session with review checkpoints
+detail_sections:
+  - Overview
+  - The Process
+  - When to Stop and Ask for Help
+  - When to Revisit Earlier Steps
+  - Remember
+  - When to Use
 ---
 
 # Executing Plans

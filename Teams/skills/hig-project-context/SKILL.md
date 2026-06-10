@@ -3,7 +3,22 @@ name: hig-project-context
 description: Create or update a shared Apple design context document that other HIG skills use to tailor guidance.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Create or update a shared Apple design context document that other HIG skills use to tailor guidance.
+detail_sections:
+  - Gathering Context
+  - Context Document Template
+  - Product
+  - Platforms
+  - Technology
+  - Design System
+  - Accessibility
+  - Users
+  - Updating Context
+  - Related Skills
+  - When to Use
 ---
 
 # Apple HIG: Project Context

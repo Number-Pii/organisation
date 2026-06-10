@@ -4,6 +4,21 @@ description: "PowerShell Windows patterns. Critical pitfalls, operator syntax, e
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: PowerShell Windows patterns.
+detail_sections:
+  - 1. Operator Syntax Rules
+  - 2. Unicode/Emoji Restriction
+  - 3. Null Check Patterns
+  - 4. String Interpolation
+  - 5. Error Handling
+  - 6. File Paths
+  - 7. Array Operations
+  - 8. JSON Operations
+  - 9. Common Errors
+  - 10. Script Template
+  - When to Use
 ---
 
 # PowerShell Windows Patterns

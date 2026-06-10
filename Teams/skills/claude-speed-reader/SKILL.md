@@ -4,6 +4,13 @@ description: "-Speed read Claude's responses at 600+ WPM using RSVP with Spritz-
 risk: safe
 source: "https://github.com/SeanZoR/claude-speed-reader"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: "-Speed read Claude's responses at 600+ WPM using RSVP with Spritz-style ORP highlighting"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Claude Speed Reader

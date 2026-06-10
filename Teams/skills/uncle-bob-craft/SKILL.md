@@ -6,8 +6,33 @@ risk: safe
 source: community
 date_added: "2026-03-06"
 author: antigravity-contributors
-tags: [clean-code, clean-architecture, solid, code-review, craftsmanship, uncle-bob]
-tools: [claude, cursor, gemini]
+tags:
+  - clean-code
+  - clean-architecture
+  - solid
+  - code-review
+  - craftsmanship
+  - uncle-bob
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Backend & APIs"
+size_class: s
+summary: "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Aggregators by Source
+  - "Design Patterns: Use vs Misuse"
+  - Smells and Heuristics (Summary)
+  - Review vs Production
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
+  - Limitations
 ---
 
 # Uncle Bob Craft

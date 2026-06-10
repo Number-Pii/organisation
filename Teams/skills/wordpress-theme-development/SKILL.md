@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "WordPress theme development workflow covering theme architecture, template hierarchy, custom post types, block editor support, and responsive design."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Theme Structure
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # WordPress Theme Development Workflow

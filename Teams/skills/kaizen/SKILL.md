@@ -4,6 +4,16 @@ description: "Guide for continuous improvement, error proofing, and standardizat
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: l
+summary: "Guide for continuous improvement, error proofing, and standardization."
+detail_sections:
+  - Overview
+  - When to Use
+  - The Four Pillars
+  - Integration with Commands
+  - Red Flags
+  - Remember
 ---
 
 # Kaizen: Continuous Improvement

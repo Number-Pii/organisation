@@ -6,8 +6,29 @@ risk: safe
 source: community
 date_added: "2025-03-08"
 author: amalsam18
-tags: [playwright, java, e2e-testing, junit5, page-object-model, allure, selenium-alternative]
-tools: [claude, cursor,antigravity]
+tags:
+  - playwright
+  - java
+  - e2e-testing
+  - junit5
+  - page-object-model
+  - allure
+  - selenium-alternative
+tools:
+  - claude
+  - cursor
+  - antigravity
+domain: "Testing & QA"
+size_class: m
+summary: "Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Page Object Model, JUnit 5, Allure reporting, and parallel…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Playwright Java – Advanced Test Automation

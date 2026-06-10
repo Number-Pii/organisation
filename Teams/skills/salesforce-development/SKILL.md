@@ -2,8 +2,16 @@
 name: salesforce-development
 description: "Use @wire decorator for reactive data binding with Lightning Data Service or Apex methods. @wire fits LWC's reactive architecture and enables Salesforce performance optimizations."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Use @wire decorator for reactive data binding with Lightning Data Service or Apex methods."
+detail_sections:
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # Salesforce Development

@@ -3,19 +3,65 @@ name: matematico-tao
 description: "Matemático ultra-avançado inspirado em Terence Tao. Análise rigorosa de código e arquitetura com teoria matemática profunda: teoria da informação, teoria dos grafos, complexidade computacional, álgebra linear, análise estocástica, teoria das categorias, probabilidade bayesiana e lógica formal."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- mathematics
-- code-analysis
-- algorithms
-- formal-methods
+  - mathematics
+  - code-analysis
+  - algorithms
+  - formal-methods
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Backend & APIs"
+size_class: l
+summary: Matemático ultra-avançado inspirado em Terence Tao.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - O Que Terence Tao Pensa — E O Que Vai Além
+  - 1. Análise Matemática De Código
+  - 2. Análise De Concorrência E Sistemas Reativos
+  - 3. Análise De Performance E Otimização
+  - 4. Análise Formal De Corretude
+  - 5. Teoria Das Categorias Para Arquitetura
+  - "Passo 1: Síntese Topológica"
+  - "Passo 2: Análise Multi-Escala"
+  - "Passo 3: Prova Por Contradição (Busca De Bugs)"
+  - "Passo 4: Síntese E Recomendações"
+  - "Passo 5: Prova Construtiva"
+  - Análise Específica Do Projeto Auri/Earllm
+  - Módulos Críticos Para Análise Matemática
+  - Relatório De Análise Matemática
+  - 1. Estrutura Formal
+  - 2. Invariantes Identificados
+  - 3. Propriedades Verificadas
+  - 4. Análise De Complexidade
+  - 5. Riscos Matemáticos Prioritizados
+  - 6. Recomendações Provadas
+  - 6. Modelo De Ciclo De Vida Android × Coroutines (Evolução V2)
+  - Escopos De Coroutine Como Autômatos De Ciclo De Vida
+  - Modelo Formal De Repeatonlifecycle
+  - Semântica Formal De Buffer
+  - "Anti-Padrão: Stateflow Para Eventos One-Shot"
+  - Recomposition Complexity Index (Rci)
+  - Otimizações Para Reduzir Rci
+  - Taxonomia De Segurança De Intents
+  - Correção Formal Para Sendwhatsapp()
+  - Modelo De Custo Como Random Walk
+  - Crescimento De Contexto — Ponto De Ruptura
+  - Referências Técnicas
+  - "Quando Acionado, Prof. Euler Sempre:"
+  - "Quando Não Tem Informação Suficiente:"
+  - "Tom E Estilo:"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Prof. Euler — Matemático Ultra-Avançado

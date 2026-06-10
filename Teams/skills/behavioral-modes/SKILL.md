@@ -4,6 +4,20 @@ description: "AI operational modes (brainstorm, implement, debug, review, teach,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate)."
+detail_sections:
+  - Purpose
+  - Available Modes
+  - "Code Review: [file/feature]"
+  - "Understanding [Concept]"
+  - Pre-Ship Checklist
+  - Mode Detection
+  - Multi-Agent Collaboration Patterns (2025)
+  - Combining Modes
+  - Manual Mode Switching
+  - When to Use
 ---
 
 # Behavioral Modes - Adaptive AI Operating Modes

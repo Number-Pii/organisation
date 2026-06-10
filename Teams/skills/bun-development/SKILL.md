@@ -4,6 +4,22 @@ description: "Fast, modern JavaScript/TypeScript development with the Bun runtim
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: l
+summary: "Fast, modern JavaScript/TypeScript development with the Bun runtime, inspired by [oven-sh/bun](https://github.com/oven-sh/bun)."
+detail_sections:
+  - When to Use This Skill
+  - 1. Getting Started
+  - 2. Project Setup
+  - 3. Package Management
+  - 4. Running Code
+  - 5. Built-in APIs
+  - 6. Testing
+  - 7. Bundling
+  - 8. Migration from Node.js
+  - 9. Performance Tips
+  - Quick Reference
+  - Resources
 ---
 
 <!-- security-allowlist: curl-pipe-bash, irm-pipe-iex -->

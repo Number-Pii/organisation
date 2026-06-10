@@ -2,7 +2,18 @@
 name: odoo-upgrade-advisor
 description: "Step-by-step Odoo version upgrade advisor: pre-upgrade checklist, community vs enterprise upgrade path, OCA module compatibility, and post-upgrade validation."
 risk: safe
-source: "self"
+source: self
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Step-by-step Odoo version upgrade advisor: pre-upgrade checklist, community vs enterprise upgrade path, OCA module compatibility, and post-upgrade…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Upgrade Paths
+  - Examples
+  - Best Practices
+  - Limitations
 ---
 
 # Odoo Upgrade Advisor

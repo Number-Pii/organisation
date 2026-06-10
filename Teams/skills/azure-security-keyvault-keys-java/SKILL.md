@@ -4,6 +4,29 @@ description: "Azure Key Vault Keys Java SDK for cryptographic key management. Us
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Key Vault Keys Java SDK for cryptographic key management.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Key Types
+  - Create Keys
+  - Get Key
+  - Update Key Properties
+  - List Keys
+  - Delete Key
+  - Cryptographic Operations
+  - Backup and Restore
+  - Key Rotation
+  - Import Key
+  - Encryption Algorithms
+  - Signature Algorithms
+  - Error Handling
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Key Vault Keys (Java)

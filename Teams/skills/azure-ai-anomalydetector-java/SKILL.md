@@ -4,6 +4,19 @@ description: "Build anomaly detection applications with Azure AI Anomaly Detecto
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Key Concepts
+  - Core Patterns
+  - Error Handling
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure AI Anomaly Detector SDK for Java

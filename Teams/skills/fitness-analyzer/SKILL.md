@@ -1,9 +1,32 @@
 ---
 name: fitness-analyzer
 description: 分析运动数据、识别运动模式、评估健身进展，并提供个性化训练建议。支持与慢性病数据的关联分析。
-allowed-tools: Read, Grep, Glob, Write
+allowed-tools: "Read, Grep, Glob, Write"
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: m
+summary: 分析运动数据、识别运动模式、评估健身进展，并提供个性化训练建议。支持与慢性病数据的关联分析。
+detail_sections:
+  - 功能
+  - 输出格式
+  - 分析周期
+  - 运动量趋势
+  - 运动频率
+  - 强度分布
+  - 运动类型分布
+  - 洞察与建议
+  - 数据来源
+  - 分析结果
+  - 配速进步
+  - 距离进步
+  - 心率改善
+  - 里程碑
+  - 下一步目标
+  - 数据源
+  - 算法说明
+  - 医学安全边界
+  - 使用示例
 ---
 
 # 运动分析器技能

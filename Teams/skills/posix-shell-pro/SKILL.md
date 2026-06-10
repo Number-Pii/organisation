@@ -1,9 +1,36 @@
 ---
 name: posix-shell-pro
-description: Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Specializes in shell scripts that run on any POSIX-compliant shell (dash, ash, sh, bash --posix).
+description: "Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Specializes in shell scripts that run on any POSIX-compliant shell (dash, ash, sh, bash --posix)."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Expert in strict POSIX sh scripting for maximum portability across Unix-like systems.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - POSIX Constraints
+  - Approach
+  - "Compatibility & Portability"
+  - "Readability & Maintainability"
+  - "Safety & Security Patterns"
+  - Performance Optimization
+  - Documentation Standards
+  - Working Without Arrays
+  - Portable Conditionals
+  - CI/CD Integration
+  - "Embedded Systems & Limited Environments"
+  - Migration from Bash to POSIX sh
+  - Quality Checklist
+  - Output
+  - Essential Tools
+  - Common Pitfalls to Avoid
+  - Advanced Techniques
+  - POSIX-Specific Best Practices
+  - "References & Further Reading"
 ---
 
 ## Use this skill when

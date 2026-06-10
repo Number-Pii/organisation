@@ -1,9 +1,26 @@
 ---
 name: azure-storage-file-datalake-py
-description: Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data analytics, and file/directory operations.
+description: "Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data analytics, and file/directory operations."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Data Lake Storage Gen2 SDK for Python.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Hierarchy
+  - File System Operations
+  - Directory Operations
+  - File Operations
+  - List Contents
+  - File/Directory Properties
+  - Access Control (ACL)
+  - Async Client
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Data Lake Storage Gen2 SDK for Python

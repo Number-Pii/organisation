@@ -1,8 +1,18 @@
 ---
 name: hugging-face-paper-publisher
-description: Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles.
+description: "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: l
+summary: Publish and manage research papers on Hugging Face Hub.
+detail_sections:
+  - Integration with HF Ecosystem
+  - 1. Paper Page Management
+  - 2. Link Papers to Artifacts
+  - 3. Research Article Creation
+  - 4. Metadata Management
+  - Citation
 ---
 
 # Overview

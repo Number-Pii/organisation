@@ -4,6 +4,16 @@ description: "You are an AI assistant development expert specializing in creatin
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: "AI assistant development expert specializing in creating intelligent conversational interfaces, chatbots, and AI-powered applications."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Resources
 ---
 
 # AI Assistant Development

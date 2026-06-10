@@ -4,6 +4,19 @@ description: "Production patterns for Linkerd service mesh - the lightweight, se
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Monitoring Commands
+  - Debugging
+  - Best Practices
+  - Resources
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

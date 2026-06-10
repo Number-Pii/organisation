@@ -4,6 +4,20 @@ description: "A user may ask you to create, edit, or analyze the contents of a .
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: "A user may ask you to create, edit, or analyze the contents of a .docx file."
+detail_sections:
+  - Overview
+  - Workflow Decision Tree
+  - Reading and analyzing content
+  - Creating a new Word document
+  - Editing an existing Word document
+  - Redlining workflow for document review
+  - Converting Documents to Images
+  - Code Style Guidelines
+  - Dependencies
+  - When to Use
 ---
 
 # DOCX creation, editing, and analysis

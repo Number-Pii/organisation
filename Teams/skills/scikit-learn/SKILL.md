@@ -1,11 +1,25 @@
 ---
 name: scikit-learn
-description: Machine learning in Python with scikit-learn. Use for classification, regression, clustering, model evaluation, and ML pipelines.
+description: "Machine learning in Python with scikit-learn. Use for classification, regression, clustering, model evaluation, and ML pipelines."
 license: BSD-3-Clause license
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Data Science & Visualisation"
+size_class: l
+summary: Machine learning in Python with scikit-learn.
+detail_sections:
+  - Overview
+  - Installation
+  - When to Use This Skill
+  - Quick Start
+  - Core Capabilities
+  - Example Scripts
+  - Reference Documentation
+  - Common Workflows
+  - Best Practices
+  - Troubleshooting Common Issues
+  - Additional Resources
 ---
 
 # Scikit-learn
@@ -518,4 +532,3 @@ model = MiniBatchKMeans(n_clusters=8, batch_size=100)
 - User Guide: https://scikit-learn.org/stable/user_guide.html
 - API Reference: https://scikit-learn.org/stable/api/index.html
 - Examples Gallery: https://scikit-learn.org/stable/auto_examples/index.html
-

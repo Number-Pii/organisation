@@ -1,6 +1,6 @@
 ---
 name: semgrep-rule-creator
-description: Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns. Use when writing Semgrep rules or building custom static analysis detections.
+description: "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns. Use when writing Semgrep rules or building custom static analysis detections."
 allowed-tools:
   - Bash
   - Read
@@ -11,6 +11,20 @@ allowed-tools:
   - WebFetch
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns."
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - Rationalizations to Reject
+  - Anti-Patterns
+  - Strictness Level
+  - Overview
+  - Quick Start
+  - Quick Reference
+  - Workflow
+  - Documentation
 ---
 
 # Semgrep Rule Creator

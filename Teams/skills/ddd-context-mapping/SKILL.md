@@ -1,10 +1,20 @@
 ---
 name: ddd-context-mapping
-description: "Map relationships between bounded contexts and define integration contracts using DDD context mapping patterns."
+description: Map relationships between bounded contexts and define integration contracts using DDD context mapping patterns.
 risk: safe
 source: self
 tags: "[ddd, context-map, anti-corruption-layer, integration]"
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Map relationships between bounded contexts and define integration contracts using DDD context mapping patterns.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Output requirements
+  - Examples
+  - Limitations
 ---
 
 # DDD Context Mapping

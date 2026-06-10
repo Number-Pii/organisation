@@ -4,6 +4,15 @@ description: "Optimize vector index performance for latency, recall, and memory.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: "Optimize vector index performance for latency, recall, and memory."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Vector Index Tuning

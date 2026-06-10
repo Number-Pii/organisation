@@ -1,21 +1,93 @@
 ---
 name: instagram
-description: Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, hashtags, agendamento, templates e gestao de contas Business/Creator.
+description: "Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, hashtags, agendamento, templates e gestao de contas Business/Creator."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- social-media
-- instagram
-- graph-api
-- content
+  - social-media
+  - instagram
+  - graph-api
+  - content
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: Mobile Development
+size_class: m
+summary: Integracao completa com Instagram via Graph API.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Resumo Rápido
+  - Localização
+  - Instalação (Uma Vez)
+  - Configuração Inicial
+  - 1. Verificar Tipo De Conta Instagram
+  - 2. Configurar Oauth (Abre Browser Para Autorização)
+  - 3. Verificar Se Está Tudo Funcionando
+  - Foto (Aceita Arquivo Local — Faz Upload Automático Via Imgur)
+  - Vídeo
+  - Reel
+  - Story
+  - Carrossel (2-10 Imagens)
+  - Criar Como Rascunho (Não Publica Imediatamente)
+  - Aprovar Rascunho Para Publicação
+  - Agendar Publicação Futura
+  - Listar Posts Agendados
+  - Processar Posts Prontos Para Publicar
+  - Cancelar Agendamento
+  - Listar Comentários De Um Post
+  - Responder A Um Comentário
+  - Deletar Comentário
+  - Ver Menções
+  - Comentários Não Respondidos
+  - Enviar Dm
+  - Listar Conversas
+  - Ver Mensagens De Uma Conversa
+  - Métricas De Um Post Específico
+  - Métricas Da Conta (Últimos 7 Dias)
+  - Buscar E Salvar Insights De Todos Os Posts Recentes
+  - Melhores Horários Para Postar (Baseado Nos Seus Dados)
+  - Top Posts Por Engajamento
+  - Tendências De Crescimento
+  - Buscar Posts Recentes Com Uma Hashtag
+  - Top Posts De Uma Hashtag
+  - Info Da Hashtag (Contagem De Posts)
+  - Criar Template
+  - Listar Templates
+  - Usar Template Em Um Post
+  - Ver Perfil
+  - Listar Posts Recentes
+  - Detalhes De Um Post
+  - Exportar Analytics Para Csv
+  - Exportar Comentários
+  - Exportar Tudo
+  - Iniciar Dashboard Web
+  - "Acesse: Http://Localhost:8000/Dashboard"
+  - Status Da Autenticação
+  - Sync Completo (Busca Perfil + Mídia + Insights + Comentários)
+  - Sync Parcial
+  - Rate Limits
+  - Confirmações
+  - Audit Log
+  - Token Auto-Refresh
+  - Limitações Da Api
+  - "\"Quero Publicar Uma Foto\""
+  - "\"Me Mostra Meus Analytics\""
+  - "\"Qual O Melhor Horário Para Postar?\""
+  - "\"Responde Esse Comentário\""
+  - "\"Sincroniza Tudo\""
+  - "\"Abre O Dashboard\""
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Skill: Instagram Integration

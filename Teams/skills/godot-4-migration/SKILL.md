@@ -4,6 +4,16 @@ description: "Specialized guide for migrating Godot 3.x projects to Godot 4 (GDS
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: s
+summary: "Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syntax changes, Tweens, and exports."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Key Changes
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Godot 4 Migration Guide

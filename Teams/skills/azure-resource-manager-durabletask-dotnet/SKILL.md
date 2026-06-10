@@ -3,7 +3,25 @@ name: azure-resource-manager-durabletask-dotnet
 description: Azure Resource Manager SDK for Durable Task Scheduler in .NET.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Resource Manager SDK for Durable Task Scheduler in .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Resource Hierarchy
+  - Core Workflow
+  - Key Types Reference
+  - SKU Options
+  - Extension Methods
+  - Best Practices
+  - Error Handling
+  - Complete Example
+  - Related SDKs
+  - Source Reference
+  - When to Use
 ---
 
 # Azure.ResourceManager.DurableTask (.NET)

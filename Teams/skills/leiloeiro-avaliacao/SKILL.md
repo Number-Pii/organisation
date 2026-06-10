@@ -1,21 +1,60 @@
 ---
 name: leiloeiro-avaliacao
-description: Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14653, metodos comparativo/renda/custo, CUB e margem de seguranca.
+description: "Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14653, metodos comparativo/renda/custo, CUB e margem de seguranca."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- real-estate
-- valuation
-- appraisal
-- brazilian
+  - real-estate
+  - valuation
+  - appraisal
+  - brazilian
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: l
+summary: Avaliacao pericial de imoveis em leilao.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Tipos De Valor (Abnt Nbr 14653-1)
+  - Método 1 — Comparativo Direto (Principal)
+  - Passo A Passo
+  - Método 2 — Renda (Imóveis Com Geração De Renda)
+  - Fórmula Básica
+  - Método 3 — Evolutivo / Custo (Imóveis Especiais)
+  - Fórmula
+  - Análise Do Laudo Pericial Judicial
+  - Checklist Do Laudo
+  - Análise De Localização (Score De Localização)
+  - Cálculo De Margem De Segurança
+  - Análise Por Tipo
+  - Pesquisa De Mercado Online — Passo A Passo
+  - Roteiro De Pesquisa Rápida (15 Min)
+  - Cub Referência 2025 (Sinduscon/Sp — Atualizar Mensalmente)
+  - Imóveis Populares (Até R$ 300K)
+  - Imóveis Médios (R$ 300K - R$ 800K)
+  - Imóveis De Alto Padrão (R$ 800K - R$ 2M)
+  - "Imóveis De Luxo (> R$ 2M)"
+  - "Quando É Possível Financiar Imóvel De Leilão?"
+  - Parcelamento No Leilão Judicial (Art. 895 Cpc)
+  - Instalação
+  - "Verificar Se A Skill Está Registrada:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"Qual O Valor De Mercado Desse Apartamento?\""
+  - Governança
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL DE AVALIAÇÃO DE IMÓVEL — PERITO AVALIADOR

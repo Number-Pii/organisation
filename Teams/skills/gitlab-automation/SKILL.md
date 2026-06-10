@@ -4,6 +4,17 @@ description: "Automate GitLab project management, issues, merge requests, pipeli
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # GitLab Automation via Rube MCP

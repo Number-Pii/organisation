@@ -5,6 +5,21 @@ category: development
 risk: safe
 source: community
 date_added: "2026-03-05"
+domain: "Backend & APIs"
+size_class: m
+summary: "Identifies and fixes performance bottlenecks in code, databases, and APIs."
+detail_sections:
+  - When to Use This Skill
+  - The Optimization Process
+  - Common Optimizations
+  - Measuring Impact
+  - Performance Budgets
+  - Tools
+  - Quick Wins
+  - Optimization Checklist
+  - When NOT to Optimize
+  - Key Principles
+  - Related Skills
 ---
 
 # Performance Optimizer

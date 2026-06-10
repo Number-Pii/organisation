@@ -1,9 +1,22 @@
 ---
 name: azure-keyvault-certificates-rust
-description: Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certificates.
+description: "Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certificates."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: s
+summary: Azure Key Vault Certificates SDK for Rust.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Operations
+  - Certificate Lifecycle
+  - Best Practices
+  - RBAC Permissions
+  - Reference Links
+  - When to Use
 ---
 
 # Azure Key Vault Certificates SDK for Rust

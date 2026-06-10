@@ -3,6 +3,20 @@ name: diary
 description: "Unified Diary System: A context-preserving automated logger for multi-project development."
 risk: safe
 source: self
+domain: "Planning & Workflow"
+size_class: s
+summary: "Unified Diary System: A context-preserving automated logger for multi-project development."
+detail_sections:
+  - When to Use This Skill
+  - "Step 1: Local Project Archiving (AI Generation)"
+  - "Step 1.5: Refresh Project Context (Automation Script)"
+  - "Step 2: Extract Global & Project Material (Script Execution)"
+  - "Step 3: AI Smart Fusion & Global Archiving (AI Execution) 🧠"
+  - "Step 4: Cloud Sync & Experience Extraction (Script + Human) 🛑"
+  - 📝 Templates and Writing Guidelines
+  - 📁 Project Tracking
+  - "🧠 Improvements & Learnings"
+  - ✅ Global Action Items
 ---
 
 # 📔 Unified Diary System

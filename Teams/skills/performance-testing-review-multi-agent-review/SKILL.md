@@ -1,9 +1,25 @@
 ---
 name: performance-testing-review-multi-agent-review
-description: "Use when working with performance testing review multi agent review"
+description: Use when working with performance testing review multi agent review
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: Use when working with performance testing review multi agent review
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "Role: Expert Multi-Agent Review Orchestration Specialist"
+  - Context and Purpose
+  - Tool Arguments and Configuration
+  - Multi-Agent Coordination Strategy
+  - Example Implementations
+  - Reference Implementations
+  - Best Practices and Considerations
+  - Extensibility
+  - Invocation
 ---
 
 # Multi-Agent Code Review Orchestration Tool

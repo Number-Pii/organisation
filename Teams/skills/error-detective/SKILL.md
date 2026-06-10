@@ -1,9 +1,19 @@
 ---
 name: error-detective
-description: Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes.
+description: "Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "Search logs and codebases for error patterns, stack traces, and anomalies."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Approach
+  - Output
 ---
 
 ## Use this skill when

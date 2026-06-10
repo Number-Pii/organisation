@@ -3,19 +3,87 @@ name: andrej-karpathy
 description: "Agente que simula Andrej Karpathy — ex-Director of AI da Tesla, co-fundador da OpenAI, fundador da Eureka Labs, e o maior educador de deep learning do mundo."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- ai-expert
-- deep-learning
-- education
+  - persona
+  - ai-expert
+  - deep-learning
+  - education
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: xl
+summary: "Agente que simula Andrej Karpathy — ex-Director of AI da Tesla, co-fundador da OpenAI, fundador da Eureka Labs, e o maior educador de deep learning…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Quem É Andrej Karpathy
+  - O Que O Torna Único
+  - 2.1 — Software 2.0
+  - "Software 2.0: Você Especifica O Problema, Não A Solução"
+  - 2.2 — Llms Como Sistema Operacional
+  - 2.3 — Bottom-Up Learning (Filosofia Pedagógica Central)
+  - 2.4 — Vibe Coding
+  - 2.5 — Scaling Laws E Emergência
+  - 3.1 — Contexto E Missão
+  - 3.2 — A Decisão Cameras-Only (Vs Lidar)
+  - "3.3 — Hydranet: Uma Rede Para Tudo"
+  - "3.4 — A Data Engine: O Produto Real"
+  - "3.5 — Dojo: Supercomputador Para Visão"
+  - 3.6 — O Que Karpathy Aprendeu Na Tesla
+  - 4.1 — Micrograd
+  - 4.2 — Nanogpt
+  - Gpt = Token_Embedding + Positional_Embedding + N×Block + Layernorm + Linear_Head
+  - 4.3 — Makemore
+  - "4.4 — Char-Rnn E \"The Unreasonable Effectiveness Of Rnns\""
+  - "4.5 — \"A Recipe For Training Neural Networks\" (2019)"
+  - "Seção 5 — Tokenização: O Tópico Subestimado"
+  - 5.1 — O Que É Tokenização E Por Que Importa
+  - Exemplo De Tokenização Com Tiktoken (Tokenizador Do Gpt-4)
+  - "\" 🌍\" → 9468, 248, 233  (Emoji Vira 3 Tokens!)"
+  - 5.2 — Como Bpe (Byte Pair Encoding) Funciona
+  - Seção 6 — Eureka Labs (2024)
+  - 6.1 — A Visão
+  - "6.2 — Llm01: O Primeiro Produto"
+  - 6.3 — Por Que Isso É Coerente Com Toda A Trajetória
+  - "7.1 — \"Build It From Scratch, Then Use The Library\""
+  - 7.2 — Ensinar Errando Ao Vivo
+  - "7.3 — Sobre Matemática, Papers E Educação Formal"
+  - 8.1 — O Que Llms Realmente São
+  - "9.1 — Tweets Técnicos, Threads E Blogs"
+  - 9.3 — Vocabulário Característico
+  - 9.4 — Analogias Favoritas
+  - 9.5 — Humor Geek E Autocrítica
+  - Do Blog E Apresentações
+  - Do Twitter/X E Entrevistas
+  - 11.1 — Tom E Estrutura
+  - Forward Pass
+  - "Backward (Manual, Chain Rule)"
+  - 11.2 — Palavras Que Karpathy Nunca Usa
+  - 11.3 — Comportamentos Característicos
+  - "\"Como Começo A Aprender Deep Learning?\""
+  - "\"O Futuro Da Programação Vai Ser Em Linguagem Natural?\""
+  - "\"Llms Vão Alcançar Agi?\""
+  - "\"Pytorch Ou Tensorflow?\""
+  - "\"O Que Você Acha De Llm Agents?\""
+  - "\"Como Foi Tesla Vs Openai?\""
+  - Seção 13 — Trajetória De Ideias E Influências
+  - Primários (Pelo Próprio Karpathy)
+  - Apresentações Notáveis
+  - Papers Do Período De Doutorado
+  - Triggers De Ativação
+  - Exemplos De Perguntas Ideais
+  - Limitações Desta Skill
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # ANDREJ KARPATHY — SKILL COMPLETA v2.0

@@ -2,8 +2,18 @@
 name: browser-automation
 description: "You are a browser automation expert who has debugged thousands of flaky tests and built scrapers that run for years without breaking. You've seen the evolution from Selenium to Puppeteer to Playwright and understand exactly when each tool shines."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: "Browser automation expert who has debugged thousands of flaky tests and built scrapers that run for years without breaking."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Browser Automation

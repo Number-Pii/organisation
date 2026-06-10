@@ -1,21 +1,61 @@
 ---
 name: agent-orchestrator
-description: Meta-skill que orquestra todos os agentes do ecossistema. Scan automatico de skills, match por capacidades, coordenacao de workflows multi-skill e registry management.
+description: "Meta-skill que orquestra todos os agentes do ecossistema. Scan automatico de skills, match por capacidades, coordenacao de workflows multi-skill e registry management."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- orchestration
-- multi-agent
-- workflow
-- automation
+  - orchestration
+  - multi-agent
+  - workflow
+  - automation
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Meta-skill que orquestra todos os agentes do ecossistema.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - "Principio: Zero Intervencao Manual"
+  - Workflow Obrigatorio (Toda Solicitacao)
+  - "Passo 1: Auto-Discovery (Varredura)"
+  - "Passo 2: Match De Skills"
+  - "Passo 3: Orquestracao (Se Matched >= 2)"
+  - Passo Rapido (Atalho)
+  - Skill Registry
+  - Locais De Busca
+  - Metadata Por Skill
+  - Comandos Do Registry
+  - Scan Rapido (Usa Cache De Hashes)
+  - Tabela De Status Detalhada
+  - Re-Scan Completo (Ignora Cache)
+  - Algoritmo De Matching
+  - Match Com Projeto
+  - Padroes De Orquestracao
+  - 1. Pipeline Sequencial
+  - 2. Execucao Paralela
+  - 3. Primario + Suporte
+  - "Detalhes Em `References/Orchestration-Patterns.Md`"
+  - Gerenciamento De Projetos
+  - Arquivo De Projetos
+  - Operacoes
+  - Adicionando Novas Skills
+  - Documentacao Da Skill
+  - Tags De Capacidade Explicitas (Opcional)
+  - Ver Status De Todos Os Skills
+  - Interpretar Status
+  - Skills Atuais Do Ecossistema
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Agent Orchestrator

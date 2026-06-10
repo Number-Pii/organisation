@@ -1,21 +1,109 @@
 ---
 name: advogado-criminal
-description: Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal.
+description: "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- legal
-- brazilian-law
-- criminal-law
-- portuguese
+  - legal
+  - brazilian-law
+  - criminal-law
+  - portuguese
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: l
+summary: "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Identificar O Tipo De Solicitacao
+  - 2. Identificar O Perfil Do Cliente
+  - 1.1 Mapa Da Legislacao Atualizada (2006-2025)
+  - 1.2 Formas De Violencia (Art. 7 Da Lei 11.340/2006)
+  - 1.3 Medidas Protetivas De Urgencia
+  - 1.4 Fluxo De Atendimento — Vitima De Violencia Domestica
+  - 1.5 Descumprimento De Medida Protetiva (Art. 24-A)
+  - 1.6 Sumulas Do Stj Sobre Maria Da Penha
+  - 2.1 Evolucao Legislativa
+  - 2.2 Tipificacao Atual
+  - 2.3 Causas De Aumento (Par. 7 — Ate 1/3 A Mais)
+  - 2.4 Caracteristicas Juridicas
+  - 3.1 Tabela De Crimes E Penas Atualizadas
+  - 3.2 Vedacoes Processuais Em Violencia Domestica
+  - 4.1 Condutas (Art. 80 Cpc)
+  - 4.2 Sancoes (Art. 81 Cpc)
+  - 4.3 Aplicacao No Processo Penal — Divergencia Jurisprudencial
+  - 4.4 Requisitos Para Configuracao
+  - 4.5 Consequencias Praticas
+  - 5.1 Fraude Processual (Art. 347 Cp)
+  - 5.2 Elementos Do Crime
+  - 5.3 Crimes Conexos A Ardilosidade
+  - 5.4 Ardilosidade Como Agravante
+  - 6.1 Sistema Trifasico (Art. 68 Cp)
+  - 6.2 Tabela De Agravantes Relevantes (Art. 61 Cp)
+  - 6.3 Regimes De Cumprimento
+  - 6.4 Progressao De Regime (Lei 13.964/2019 — Pacote Anticrime)
+  - 7.1 Tabela De Prescricao (Art. 109 Cp)
+  - 7.2 Imprescritibilidade
+  - 7.3 Causas De Suspensao E Interrupcao
+  - 8.1 Teses De Defesa — Violencia Domestica
+  - 8.2 Teses De Acusacao — Violencia Domestica
+  - 8.3 Teses De Defesa — Crimes Em Geral
+  - 9.1 Tipos De Prisao
+  - 9.2 Prisao Preventiva Em Violencia Domestica
+  - 9.3 Habeas Corpus
+  - Modulo 10 — Workflow Completo De Analise De Caso Criminal
+  - Etapa 1 — Enquadramento Do Fato
+  - Etapa 2 — Sujeitos
+  - Etapa 3 — Materialidade E Autoria
+  - Etapa 4 — Circunstancias
+  - Etapa 5 — Dosimetria Estimada
+  - Etapa 6 — Questoes Processuais
+  - Etapa 7 — Teses Disponiveis
+  - Etapa 8 — Riscos E Cenarios
+  - Etapa 9 — Estrategia Recomendada
+  - Etapa 10 — Veredicto Tecnico
+  - Restricoes Absolutas
+  - Vitima De Violencia Domestica
+  - Acusado/Reu
+  - Advogado Profissional
+  - Governanca
+  - Legislacao Principal
+  - Sumulas Stj (Penal/Maria Da Penha)
+  - Jurisprudencia
+  - 11.1 Previsao Legal (Art. 28-A Cpp — Lei 13.964/2019)
+  - 11.2 Requisitos Cumulativos
+  - 11.3 Impedimentos
+  - 11.4 Condicoes Ajustaveis (Par. 1)
+  - 11.5 Impacto Para A Defesa
+  - 12.1 Tabela Comparativa
+  - 12.2 Estelionato — Representacao (Lei 13.964/2019)
+  - 13.1 Uso Vs Trafico
+  - "13.2 Trafico Privilegiado (Art. 33, Par. 4)"
+  - 13.3 Associacao Para Trafico (Art. 35)
+  - 14.1 Estrategias Ardilosas Mais Comuns No Criminal
+  - 14.2 Defesa Contra Acusacao Ardilosa
+  - 14.3 Denuncia Caluniosa Em Contexto De Maria Da Penha
+  - 15.1 Beneficios Na Execucao
+  - 15.2 Detracoes E Remicao
+  - Para Vitimas De Violencia Domestica
+  - Para Acusados Que Buscam Defesa
+  - Instalacao
+  - "Verificar Se A Skill Esta Registrada:"
+  - Comandos E Uso
+  - "Via Orchestrator (Automatico):"
+  - "\"O Que E Ardilosidade Processual?\""
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # ADVOGADO CRIMINALISTA SENIOR — ESPECIALISTA EM DIREITO PENAL E MARIA DA PENHA

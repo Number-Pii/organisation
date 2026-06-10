@@ -2,8 +2,21 @@
 name: gcp-cloud-run
 description: "When to use: ['Web applications and APIs', 'Need any runtime or library', 'Complex services with multiple endpoints', 'Stateless containerized workloads']"
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "When to use: ['Web applications and APIs', 'Need any runtime or library', 'Complex services with multiple endpoints', 'Stateless containerized…"
+detail_sections:
+  - Patterns
+  - 1. Enable Startup CPU Boost
+  - 2. Set Minimum Instances
+  - 3. Optimize Container Image
+  - 4. Lazy Initialize Heavy Dependencies
+  - 5. Increase Memory (More CPU)
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # GCP Cloud Run

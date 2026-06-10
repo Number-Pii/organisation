@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate limiting, input validation, and security best…"
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - API Security Checklist
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # API Security Testing Workflow

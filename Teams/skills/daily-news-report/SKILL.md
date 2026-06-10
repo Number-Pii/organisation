@@ -4,6 +4,22 @@ description: "Scrapes content based on a preset URL list, filters high-quality t
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Scrapes content based on a preset URL list, filters high-quality technical information, and generates daily Markdown reports."
+detail_sections:
+  - Core Architecture
+  - Configuration Files
+  - Execution Process Details
+  - SubAgent Call Examples
+  - Output Template
+  - 1. Title
+  - 2. Title
+  - "Constraints & Principles"
+  - Expected Performance
+  - Error Handling
+  - "Compatibility & Fallback"
+  - When to Use
 ---
 
 # Daily News Report v3.0

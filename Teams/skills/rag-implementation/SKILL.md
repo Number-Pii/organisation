@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "RAG (Retrieval-Augmented Generation) implementation workflow covering embedding selection, vector database setup, chunking strategies, and retrieval…"
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - RAG Architecture
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # RAG Implementation Workflow

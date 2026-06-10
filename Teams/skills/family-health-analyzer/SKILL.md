@@ -1,9 +1,18 @@
 ---
 name: family-health-analyzer
 description: 分析家族病史、评估遗传风险、识别家庭健康模式、提供个性化预防建议
-allowed-tools: Read, Write, Grep, Glob
+allowed-tools: "Read, Write, Grep, Glob"
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: s
+summary: 分析家族病史、评估遗传风险、识别家庭健康模式、提供个性化预防建议
+detail_sections:
+  - 技能概述
+  - 触发条件
+  - 分析步骤
+  - 安全原则
+  - 集成现有模块
 ---
 
 # 家庭健康分析技能

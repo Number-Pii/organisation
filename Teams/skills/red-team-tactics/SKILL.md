@@ -4,6 +4,21 @@ description: "Red team tactics principles based on MITRE ATT&CK. Attack phases, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Red team tactics principles based on MITRE ATT&CK."
+detail_sections:
+  - "1. MITRE ATT&CK Phases"
+  - 2. Reconnaissance Principles
+  - 3. Initial Access Vectors
+  - 4. Privilege Escalation Principles
+  - 5. Defense Evasion Principles
+  - 6. Lateral Movement Principles
+  - 7. Active Directory Attacks
+  - 8. Reporting Principles
+  - 9. Ethical Boundaries
+  - 10. Anti-Patterns
+  - When to Use
 ---
 
 # Red Team Tactics

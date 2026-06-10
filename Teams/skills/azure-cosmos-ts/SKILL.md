@@ -1,9 +1,28 @@
 ---
 name: azure-cosmos-ts
-description: Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management.
+description: "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Resource Hierarchy
+  - Core Operations
+  - Queries
+  - Bulk Operations
+  - Partition Keys
+  - Error Handling
+  - Optimistic Concurrency (ETags)
+  - TypeScript Types Reference
+  - Best Practices
+  - Common Patterns
+  - Related SDKs
+  - When to Use
 ---
 
 # @azure/cosmos (TypeScript/JavaScript)

@@ -4,6 +4,16 @@ description: "Use when automating LinkedIn via CLI: fetch profiles, search peopl
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: l
+summary: "Use when automating LinkedIn via CLI: fetch profiles, search people/companies, send messages, manage connections, create posts, and Sales Navigator."
+detail_sections:
+  - When to Use
+  - Authentication
+  - Global Flags
+  - Output Format
+  - Commands
+  - Important Behavior
 ---
 
 ## When to Use

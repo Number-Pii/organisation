@@ -4,8 +4,29 @@ description: "Create or update a reusable product marketing context document wit
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Create or update a reusable product marketing context document with positioning, audience, ICP, use cases, and messaging."
+detail_sections:
+  - When to Use
+  - Workflow
+  - Sections to Capture
+  - "Step 3: Create the Document"
+  - Product Overview
+  - Target Audience
+  - Personas
+  - "Problems & Pain Points"
+  - Competitive Landscape
+  - Differentiation
+  - Objections
+  - Switching Dynamics
+  - Customer Language
+  - Brand Voice
+  - Proof Points
+  - Goals
+  - "Step 4: Confirm and Save"
+  - Tips
 ---
 
 # Product Marketing Context

@@ -3,19 +3,86 @@ name: auri-core
 description: "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do produto, persona Vitoria Neural, stack AWS, modelo Free/Pro/Business/Enterprise, roadmap 4 fases, GTM, north star WAC e analise competitiva."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- voice-assistant
-- product-vision
-- alexa
-- aws
+  - voice-assistant
+  - product-vision
+  - alexa
+  - aws
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805)."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Auri - Core Product Skill
+  - O Que E A Auri
+  - Proposta De Valor Unica
+  - Diferencial Estrategico
+  - Valores Da Marca
+  - Guia De Linguagem
+  - Exemplo De Interacao
+  - Ssml - Voz Otimizada
+  - Visao Geral Da Arquitetura
+  - 3.1 Dependencias
+  - 3.2 Lambda Handler Principal
+  - 3.3 Handler De Conversa Com Claude
+  - 3.4 Dynamodb Schema
+  - 3.5 Interaction Model
+  - 3.6 Configuracao Lambda
+  - 3.7 Exemplos De Codigo Completos
+  - Planos E Precos
+  - Detalhamento
+  - Projecao De Receita (Ano 1)
+  - Unit Economics
+  - Fase 1 - Lancamento Mvp (Meses 1-3)
+  - Fase 2 - Personalizacao (Meses 4-6)
+  - Fase 3 - Multi-Modal (Meses 7-12)
+  - Fase 4 - Ecossistema (Ano 2+)
+  - Segmentos Alvo
+  - Canais De Aquisicao
+  - Mensagem Central
+  - Calendario De Lancamento
+  - Wac - Weekly Active Conversationalists
+  - Hierarquia De Metricas
+  - Metas Wac Por Fase
+  - Como Calcular Wac
+  - Dashboard Cloudwatch (Exemplo De Estrutura)
+  - Tabela Comparativa
+  - Posicionamento No Mapa Competitivo
+  - Objecoes Frequentes E Respostas
+  - Brand Identity
+  - Taglines Alternativas
+  - Brand Values
+  - Brand Voice Guidelines
+  - Aplicacoes Da Marca
+  - 10. Comandos Do Skill
+  - /Auri-Status
+  - "/Auri-Roadmap [Fase]"
+  - "/Auri-Metrics [Periodo]"
+  - "/Auri-Persona [Aspecto]"
+  - "/Auri-Pricing [Plano]"
+  - "/Auri-Gtm [Canal]"
+  - "/Auri-Competitive [Competidor]"
+  - Deployment Via Aws Sam
+  - Monitoramento Cloudwatch Alarms
+  - Fallback Strategy (Claude Api Indisponivel)
+  - Gestao De Custos
+  - Lgpd (Lei 13.709/2018)
+  - Alexa Skills Store - Politicas
+  - 13. Glossario
+  - 14. Links E Recursos
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # Auri - Core Product Skill

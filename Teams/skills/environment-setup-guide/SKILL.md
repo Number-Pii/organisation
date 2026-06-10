@@ -4,6 +4,22 @@ description: "Guide developers through setting up development environments with 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Guide developers through setting up development environments with proper tools, dependencies, and configurations"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Setting Up Node.js Development Environment
+  - Setting Up Python Development Environment
+  - Setting Up Docker Development Environment
+  - Best Practices
+  - Common Pitfalls
+  - Setup Script Template
+  - Related Skills
+  - Additional Resources
 ---
 
 # Environment Setup Guide

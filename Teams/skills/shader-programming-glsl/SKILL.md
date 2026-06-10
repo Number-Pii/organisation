@@ -4,6 +4,16 @@ description: "Expert guide for writing efficient GLSL shaders (Vertex/Fragment) 
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert guide for writing efficient GLSL shaders (Vertex/Fragment) for web and game engines, covering syntax, uniforms, and common effects."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Shader Programming GLSL

@@ -1,14 +1,10 @@
 ---
 name: seo-plan
-description: >
-  Strategic SEO planning for new or existing websites. Industry-specific
-  templates, competitive analysis, content strategy, and implementation
-  roadmap. Use when user says "SEO plan", "SEO strategy", "content strategy",
-  "site architecture", or "SEO roadmap".
+description: ">"
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[business-type]"
 allowed-tools:
   - Read
@@ -17,6 +13,16 @@ allowed-tools:
   - Bash
   - WebFetch
   - Write
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Build an SEO strategy and roadmap for a new or existing site."
+detail_sections:
+  - When to Use
+  - Process
+  - Industry Templates
+  - Output
+  - DataForSEO Integration (Optional)
+  - Error Handling
 ---
 
 # Strategic SEO Planning

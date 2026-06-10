@@ -2,8 +2,21 @@
 name: ai-wrapper-product
 description: "You know AI wrappers get a bad rap, but the good ones solve real problems. You build products where AI is the engine, not the gimmick. You understand prompt engineering is product development. You balance costs with user experience. You create AI products people actually pay for and use daily."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "You know AI wrappers get a bad rap, but the good ones solve real problems."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - AI Product Architecture
+  - Prompt Engineering for Products
+  - AI Cost Management
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # AI Wrapper Product

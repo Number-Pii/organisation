@@ -6,8 +6,34 @@ risk: safe
 source: community
 date_added: "2026-03-13"
 author: christopherlhammer11-ai
-tags: [memory, context, rag, summarization, compression, long-context, agent-infrastructure]
-tools: [claude, cursor, codex, gemini, copilot, windsurf, antigravity, grok]
+tags:
+  - memory
+  - context
+  - rag
+  - summarization
+  - compression
+  - long-context
+  - agent-infrastructure
+tools:
+  - claude
+  - cursor
+  - codex
+  - gemini
+  - copilot
+  - windsurf
+  - antigravity
+  - grok
+domain: "AI & Machine Learning"
+size_class: s
+summary: FREE — God-tier long-context memory for AI agents.
+detail_sections:
+  - Overview
+  - Install
+  - When to Use This Skill
+  - How It Works
+  - Best Practices
+  - Related Skills
+  - Links
 ---
 
 # RecallMax — God-Tier Long-Context Memory

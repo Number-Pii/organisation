@@ -1,8 +1,25 @@
 ---
 name: n8n-validation-expert
-description: "Expert guide for interpreting and fixing n8n validation errors."
+description: Expert guide for interpreting and fixing n8n validation errors.
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Expert guide for interpreting and fixing n8n validation errors.
+detail_sections:
+  - Validation Philosophy
+  - Error Severity Levels
+  - The Validation Loop
+  - Validation Profiles
+  - Common Error Types
+  - Auto-Sanitization System
+  - False Positives
+  - Validation Result Structure
+  - Workflow Validation
+  - Recovery Strategies
+  - Best Practices
+  - Detailed Guides
+  - Summary
 ---
 
 # n8n Validation Expert

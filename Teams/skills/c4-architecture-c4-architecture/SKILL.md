@@ -1,9 +1,26 @@
 ---
 name: c4-architecture-c4-architecture
-description: "Generate comprehensive C4 architecture documentation for an existing repository/codebase using a bottom-up analysis approach."
+description: Generate comprehensive C4 architecture documentation for an existing repository/codebase using a bottom-up analysis approach.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: Generate comprehensive C4 architecture documentation for an existing repository/codebase using a bottom-up analysis approach.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - "Phase 1: Code-Level Documentation (Bottom-Up Analysis)"
+  - "Phase 2: Component-Level Synthesis"
+  - "Phase 3: Container-Level Synthesis"
+  - "Phase 4: Context-Level Documentation"
+  - Configuration Options
+  - Success Criteria
+  - Output Structure
+  - Coordination Notes
+  - Example Usage
 ---
 
 # C4 Architecture Documentation Workflow

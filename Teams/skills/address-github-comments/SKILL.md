@@ -1,9 +1,18 @@
 ---
 name: address-github-comments
-description: "Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI."
+description: Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI.
+detail_sections:
+  - Overview
+  - Prerequisites
+  - Workflow
+  - Common Mistakes
+  - When to Use
 ---
 
 # Address GitHub Comments

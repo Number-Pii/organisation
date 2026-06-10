@@ -5,6 +5,25 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Provide comprehensive techniques for testing REST, SOAP, and GraphQL APIs during bug bounty hunting and penetration testing engagements."
+detail_sections:
+  - Purpose
+  - Inputs/Prerequisites
+  - Outputs/Deliverables
+  - API Types Overview
+  - Core Workflow
+  - GraphQL-Specific Testing
+  - Endpoint Bypass Techniques
+  - Output Exploitation
+  - Common API Vulnerabilities Checklist
+  - Quick Reference
+  - Tools Reference
+  - Constraints
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 # API Fuzzing for Bug Bounty

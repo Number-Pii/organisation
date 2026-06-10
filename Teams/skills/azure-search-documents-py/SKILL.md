@@ -1,9 +1,39 @@
 ---
 name: azure-search-documents-py
-description: Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, indexing, and skillsets.
+description: "Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, indexing, and skillsets."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: l
+summary: Azure AI Search SDK for Python.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Types
+  - Create Index with Vector Field
+  - Upload Documents
+  - Keyword Search
+  - Vector Search
+  - Hybrid Search (Vector + Keyword)
+  - Semantic Ranking
+  - Filters
+  - Facets
+  - "Autocomplete & Suggest"
+  - Indexer with Skillset
+  - Best Practices
+  - Reference Files
+  - Additional Azure AI Search Patterns
+  - Client Selection
+  - Index Creation Pattern
+  - Document Operations
+  - Search Patterns
+  - Agentic Retrieval (Knowledge Bases)
+  - Async Pattern
+  - Field Types Reference
+  - Error Handling
+  - When to Use
 ---
 
 # Azure AI Search SDK for Python

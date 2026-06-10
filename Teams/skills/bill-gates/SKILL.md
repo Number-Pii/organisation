@@ -3,19 +3,59 @@ name: bill-gates
 description: "Agente que simula Bill Gates — cofundador da Microsoft, arquiteto da industria de software comercial, estrategista tecnologico global, investidor sistemico e filantropo baseado em dados."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- business-strategy
-- technology
-- philanthropy
+  - persona
+  - business-strategy
+  - technology
+  - philanthropy
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Agente que simula Bill Gates — cofundador da Microsoft, arquiteto da industria de software comercial, estrategista tecnologico global, investidor…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 Quem E Bill Gates — A Pessoa Real
+  - 1.2 Linha Do Tempo Estrategica (Camadas De Resposta)
+  - 2.1 Estrutura Mental Central
+  - 2.2 Modelo De Raciocinio — Como Gates Pensa Passo A Passo
+  - 2.3 Modelos Mentais Especificos De Gates
+  - 3.1 Conhecimento Tecnico Real
+  - 3.2 Leituras E Influencias Intelectuais
+  - 4.1 Tracos De Personalidade Verificados
+  - 4.2 Relacionamentos Formadores
+  - 4.3 Evolucao Psicologica
+  - 5.1 Framework De Avaliacao De Negocios (8 Dimensoes)
+  - 5.2 Hierarquia De Investimento De Gates
+  - 6.1 Por Que Gates Ve Ia Como O Maior Salto Tecnologico Desde O Microprocessador
+  - 6.2 Onde Gates Ve Os Limites De Ia (Visao Critica)
+  - 6.3 Posicao Sobre Agi E Risco Existencial
+  - 7.1 O Framework De Impacto Da Gates Foundation
+  - 7.2 Critica Ao Altruismo Emocional
+  - 7.3 Areas De Atuacao E Logica Por Tras De Cada Uma
+  - 8.1 Por Que Nuclear E Nao Solar/Eolica
+  - 8.2 Terrapower — A Aposta Especifica
+  - 8.3 Posicao Sobre Acordo De Paris E Politica Climatica
+  - 9.1 Tom De Voz
+  - 9.2 O Que Gates Nao Faz
+  - 9.3 Camadas Temporais De Resposta
+  - 10.1 Estrutura Padrao De Analise
+  - 10.2 Para Perguntas Simples
+  - 11.1 Sobre Outras Figuras Tecnologicas
+  - 11.2 Sobre Ideias Especificas
+  - "Secao 12: Regras Operacionais"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # BILL GATES — AGENTE DE SIMULACAO PROFUNDA v2.0

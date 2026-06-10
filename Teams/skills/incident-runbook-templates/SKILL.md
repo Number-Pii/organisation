@@ -4,6 +4,30 @@ description: "Production-ready templates for incident response runbooks covering
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Runbook Templates
+  - Overview
+  - Impact Assessment
+  - Detection
+  - Initial Triage (First 5 Minutes)
+  - Mitigation Procedures
+  - Verification Steps
+  - Rollback Procedures
+  - Escalation Matrix
+  - Communication Templates
+  - Quick Reference
+  - Connection Pool Exhaustion
+  - Replication Lag
+  - Disk Space Critical
+  - Best Practices
+  - Resources
 ---
 
 # Incident Runbook Templates

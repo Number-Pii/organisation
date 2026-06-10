@@ -4,6 +4,21 @@ description: "A user may ask you to create, edit, or analyze the contents of a .
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: "A user may ask you to create, edit, or analyze the contents of a .pptx file."
+detail_sections:
+  - Overview
+  - Reading and analyzing content
+  - "Creating a new PowerPoint presentation **without a template**"
+  - Editing an existing PowerPoint presentation
+  - "Creating a new PowerPoint presentation **using a template**"
+  - "[Category Name]"
+  - Creating Thumbnail Grids
+  - Converting Slides to Images
+  - Code Style Guidelines
+  - Dependencies
+  - When to Use
 ---
 
 # PPTX creation, editing, and analysis

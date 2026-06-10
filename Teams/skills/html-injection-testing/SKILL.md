@@ -5,6 +5,18 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: Identify and exploit HTML injection vulnerabilities that allow attackers to inject malicious HTML content into web applications.
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Troubleshooting
+  - When to Use
 ---
 
 # HTML Injection Testing

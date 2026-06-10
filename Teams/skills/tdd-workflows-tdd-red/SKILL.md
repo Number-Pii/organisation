@@ -1,9 +1,27 @@
 ---
 name: tdd-workflows-tdd-red
-description: "Generate failing tests for the TDD red phase to define expected behavior and edge cases."
+description: Generate failing tests for the TDD red phase to define expected behavior and edge cases.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: Generate failing tests for the TDD red phase to define expected behavior and edge cases.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Role
+  - Prompt Template
+  - Core Requirements
+  - Framework Patterns
+  - Quality Checklist
+  - Anti-Patterns to Avoid
+  - Edge Case Categories
+  - Output Requirements
+  - Validation
+  - Example (Minimal)
 ---
 
 Write comprehensive failing tests following TDD red phase principles.

@@ -1,9 +1,23 @@
 ---
 name: parallel-agents
-description: "Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives."
+description: Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Multi-agent orchestration patterns.
+detail_sections:
+  - Overview
+  - When to Use Orchestration
+  - Native Agent Invocation
+  - Orchestration Patterns
+  - Available Agents
+  - Claude Code Built-in Agents
+  - Synthesis Protocol
+  - Orchestration Synthesis
+  - Best Practices
+  - Key Benefits
 ---
 
 # Native Parallel Agents

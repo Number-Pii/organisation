@@ -1,9 +1,31 @@
 ---
 name: azure-ai-projects-py
-description: "Build AI applications on Microsoft Foundry using the azure-ai-projects SDK."
+description: Build AI applications on Microsoft Foundry using the azure-ai-projects SDK.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build AI applications on Microsoft Foundry using the azure-ai-projects SDK.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Operations Overview
+  - Two Client Approaches
+  - Agent Operations
+  - Tools Overview
+  - Thread and Message Flow
+  - Connections
+  - Deployments
+  - Datasets and Indexes
+  - Evaluation
+  - Async Client
+  - Memory Stores
+  - Best Practices
+  - SDK Comparison
+  - Reference Files
+  - When to Use
 ---
 
 # Azure AI Projects Python SDK (Foundry SDK)

@@ -15,7 +15,7 @@ allowed-tools:
   - Write
 domain: "SEO & Content Marketing"
 size_class: s
-summary: ">"
+summary: "Detect, validate, and generate Schema.org structured data."
 detail_sections:
   - When to Use
   - Detection

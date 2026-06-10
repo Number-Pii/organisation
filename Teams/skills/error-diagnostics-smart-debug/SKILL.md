@@ -1,9 +1,20 @@
 ---
 name: error-diagnostics-smart-debug
-description: "Use when working with error diagnostics smart debug"
+description: Use when working with error diagnostics smart debug
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: Use when working with error diagnostics smart debug
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Context
+  - Workflow
+  - "Example: Minimal Debug Session"
+  - Output Format
 ---
 
 ## Use this skill when

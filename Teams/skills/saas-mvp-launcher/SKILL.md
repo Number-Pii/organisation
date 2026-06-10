@@ -4,6 +4,15 @@ description: "Use when planning or building a SaaS MVP from scratch. Provides a 
 risk: safe
 source: community
 date_added: "2026-03-04"
+domain: "Planning & Workflow"
+size_class: m
+summary: Use when planning or building a SaaS MVP from scratch.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Best Practices
+  - Troubleshooting
 ---
 
 # SaaS MVP Launcher

@@ -2,7 +2,17 @@
 name: odoo-module-developer
 description: "Expert guide for creating custom Odoo modules. Covers __manifest__.py, model inheritance, ORM patterns, and module structure best practices."
 risk: safe
-source: "self"
+source: self
+domain: "Backend & APIs"
+size_class: s
+summary: Expert guide for creating custom Odoo modules.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Limitations
 ---
 
 # Odoo Module Developer

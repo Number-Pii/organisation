@@ -4,6 +4,22 @@ description: "Modern Angular UI patterns for loading states, error handling, and
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Modern Angular UI patterns for loading states, error handling, and data display."
+detail_sections:
+  - Core Principles
+  - Loading State Patterns
+  - Control Flow Patterns
+  - Error Handling Patterns
+  - Button State Patterns
+  - Empty States
+  - Form Patterns
+  - Dialog/Modal Patterns
+  - Anti-Patterns
+  - UI State Checklist
+  - Integration with Other Skills
+  - When to Use
 ---
 
 # Angular UI Patterns

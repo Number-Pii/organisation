@@ -3,7 +3,25 @@ name: team-composition-analysis
 description: "Design optimal team structures, hiring plans, compensation strategies, and equity allocation for early-stage startups from pre-seed through Series A."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Design optimal team structures, hiring plans, compensation strategies, and equity allocation for early-stage startups from pre-seed through Series A."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - Team Structure by Stage
+  - Role-by-Role Planning
+  - Compensation Strategy
+  - Equity Allocation
+  - Organizational Design
+  - Full-Time vs. Contract
+  - Hiring Velocity
+  - Budget Planning
+  - Additional Resources
+  - Quick Start
 ---
 
 # Team Composition Analysis

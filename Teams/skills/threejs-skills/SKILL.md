@@ -4,6 +4,20 @@ description: "Create 3D scenes, interactive experiences, and visual effects usin
 risk: safe
 source: "https://github.com/CloudAI-X/threejs-skills"
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Create 3D scenes, interactive experiences, and visual effects using Three.js."
+detail_sections:
+  - When to Use
+  - Core Setup Pattern
+  - Systematic Development Process
+  - Common Patterns
+  - Best Practices
+  - Example Workflow
+  - Troubleshooting
+  - Advanced Techniques
+  - Summary
+  - "Modern Three.js & Production Practices"
 ---
 
 # Three.js Skills

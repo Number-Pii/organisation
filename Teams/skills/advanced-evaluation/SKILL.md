@@ -1,9 +1,32 @@
 ---
 name: advanced-evaluation
-description: This skill should be used when the user asks to "implement LLM-as-judge", "compare model outputs", "create evaluation rubrics", "mitigate evaluation bias", or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment.
+description: "This skill should be used when the user asks to \"implement LLM-as-judge\", \"compare model outputs\", \"create evaluation rubrics\", \"mitigate evaluation bias\", or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment."
 risk: safe
 source: community
-date_added: 2026-03-18
+date_added: "2026-03-18"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "This skill should be used when the user asks to \"implement LLM-as-judge\", \"compare model outputs\", \"create evaluation rubrics\", \"mitigate evaluation…"
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - Evaluation Approaches
+  - Task
+  - Original Prompt
+  - Response to Evaluate
+  - Criteria
+  - Instructions
+  - Output Format
+  - Critical Instructions
+  - Response A
+  - Response B
+  - Comparison Criteria
+  - Practical Guidance
+  - Examples
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 # Advanced Evaluation
@@ -453,4 +476,3 @@ Related skills in this collection:
 **Last Updated**: 2024-12-24
 **Author**: Muratcan Koylan
 **Version**: 1.0.0
-

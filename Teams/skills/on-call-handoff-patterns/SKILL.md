@@ -4,6 +4,45 @@ description: "Effective patterns for on-call shift transitions, ensuring continu
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Effective patterns for on-call shift transitions, ensuring continuity, context transfer, and reliable incident response across shifts."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - 🔴 Active Incidents
+  - 🟡 Ongoing Investigations
+  - 🟢 Resolved This Shift
+  - 📋 Recent Changes
+  - "⚠️ Known Issues & Workarounds"
+  - 📅 Upcoming Events
+  - 📞 Escalation Reminders
+  - 🔧 Quick Reference
+  - Handoff Checklist
+  - TL;DR
+  - Watch List
+  - Recent
+  - Coming Up
+  - "Questions?"
+  - Current State
+  - What We Know
+  - "What We've Done"
+  - What Needs to Happen
+  - Key People
+  - Communication
+  - Resources
+  - Handoff Sync Meeting
+  - "Handoff Sync: @alice → @bob"
+  - On-Call Best Practices
+  - Pre-Shift Checklist
+  - Daily On-Call Routine
+  - Post-Shift Checklist
+  - Escalation Guidelines
+  - Escalation Triggers
+  - Best Practices
 ---
 
 # On-Call Handoff Patterns

@@ -1,11 +1,24 @@
 ---
 name: makepad-splash
-description: |
-  CRITICAL: Use for Makepad Splash scripting language. Triggers on:
-  splash language, makepad script, makepad scripting, script!, cx.eval,
-  makepad dynamic, makepad AI, splash 语言, makepad 脚本
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Splash screens and startup visuals for Makepad applications."
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - "What is Splash?"
+  - Script Macro
+  - Execution
+  - Basic Syntax
+  - Built-in Objects
+  - Widget Interaction
+  - Async Operations
+  - AI Workflow Integration
+  - Use Cases
+  - When Answering Questions
 ---
 
 # Makepad Splash Skill

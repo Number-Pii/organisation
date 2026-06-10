@@ -4,6 +4,16 @@ description: "These are instructions for creating design philosophies - aestheti
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY.
+detail_sections:
+  - DESIGN PHILOSOPHY CREATION
+  - DEDUCING THE SUBTLE REFERENCE
+  - CANVAS CREATION
+  - FINAL STEP
+  - MULTI-PAGE OPTION
+  - When to Use
 ---
 
 These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.

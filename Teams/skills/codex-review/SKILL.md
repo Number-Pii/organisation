@@ -4,6 +4,18 @@ description: "Professional code review with auto CHANGELOG generation, integrate
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Professional code review with auto CHANGELOG generation, integrated with Codex AI."
+detail_sections:
+  - Overview
+  - When to Use
+  - Installation
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Related Skills
 ---
 
 # codex-review

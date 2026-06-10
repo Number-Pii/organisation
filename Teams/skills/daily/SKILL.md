@@ -1,12 +1,19 @@
 ---
 name: daily
 description: Documentation and capabilities reference for Daily
-metadata:
-  mintlify-proj: daily
-  version: "1.0"
+metadata: []
 risk: safe
 source: community
 date_added: "2026-03-07"
+domain: "Documentation & Office"
+size_class: m
+summary: Documentation and capabilities reference for Daily
+detail_sections:
+  - Capabilities
+  - Skills
+  - Workflows
+  - Integration
+  - Context
 ---
 
 ## Capabilities

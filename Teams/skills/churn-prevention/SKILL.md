@@ -4,8 +4,21 @@ description: "Reduce voluntary and involuntary churn with cancel flows, save off
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "Business & Strategy"
+size_class: m
+summary: "Reduce voluntary and involuntary churn with cancel flows, save offers, dunning, win-back tactics, and retention strategy."
+detail_sections:
+  - When to Use
+  - Before Starting
+  - How This Skill Works
+  - Cancel Flow Design
+  - "Churn Prediction & Proactive Retention"
+  - "Involuntary Churn: Payment Recovery"
+  - "Metrics & Measurement"
+  - Common Mistakes
+  - Tool Integrations
+  - Related Skills
 ---
 
 # Churn Prevention

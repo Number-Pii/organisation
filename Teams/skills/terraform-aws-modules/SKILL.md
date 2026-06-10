@@ -4,6 +4,16 @@ description: "Terraform module creation for AWS — reusable modules, state mana
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Terraform module creation for AWS — reusable modules, state management, and HCL best practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 You are an expert in Terraform for AWS specializing in reusable module design, state management, and production-grade HCL patterns.
 

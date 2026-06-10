@@ -1,9 +1,33 @@
 ---
 name: skill-creator-ms
-description: "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills."
+description: Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: l
+summary: Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services.
+detail_sections:
+  - About Skills
+  - Core Principles
+  - Before Implementation
+  - Skill Structure
+  - Creating Azure SDK Skills
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Workflow
+  - Reference Files
+  - Skill Creation Process
+  - 1. Correct Import Patterns
+  - 2. Authentication Patterns
+  - Progressive Disclosure Patterns
+  - Quick Start
+  - Advanced Features
+  - Design Pattern References
+  - Anti-Patterns
+  - Checklist
+  - When to Use
 ---
 
 # Skill Creator

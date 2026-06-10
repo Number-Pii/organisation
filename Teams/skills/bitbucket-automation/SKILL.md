@@ -4,6 +4,17 @@ description: "Automate Bitbucket repositories, pull requests, branches, issues, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Bitbucket Automation via Rube MCP

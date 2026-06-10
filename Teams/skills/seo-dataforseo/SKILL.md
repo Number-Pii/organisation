@@ -4,7 +4,7 @@ description: "Use DataForSEO for live SERPs, keyword metrics, backlinks, competi
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[command] [query]"
 allowed-tools:
   - Read
@@ -13,6 +13,24 @@ allowed-tools:
   - Bash
   - WebFetch
   - Write
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Use DataForSEO for live SERPs, keyword metrics, backlinks, competitor analysis, on-page checks, and AI visibility data."
+detail_sections:
+  - When to Use
+  - Prerequisites
+  - API Credit Awareness
+  - Quick Reference
+  - SERP Analysis
+  - Keyword Research
+  - "Domain & Competitor Analysis"
+  - Technical / On-Page
+  - "Content & Business Data"
+  - AI Visibility / GEO
+  - Available Utility Tools
+  - Cross-Skill Integration
+  - Error Handling
+  - Output Formatting
 ---
 
 # DataForSEO: Live SEO Data (Extension)

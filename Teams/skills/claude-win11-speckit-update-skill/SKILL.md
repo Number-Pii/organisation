@@ -1,9 +1,16 @@
 ---
 name: claude-win11-speckit-update-skill
-description: "Windows 11 system management"
+description: Windows 11 system management
 risk: safe
 source: "https://github.com/NotMyself/claude-win11-speckit-update-skill"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: Windows 11 system management
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Claude Win11 Speckit Update Skill

@@ -3,6 +3,22 @@ name: differential-review
 description: "Security-focused code review for PRs, commits, and diffs."
 risk: unknown
 source: community
+domain: "Testing & QA"
+size_class: m
+summary: "Security-focused code review for PRs, commits, and diffs."
+detail_sections:
+  - Core Principles
+  - Rationalizations (Do Not Skip)
+  - Quick Reference
+  - Workflow Overview
+  - Decision Tree
+  - Quality Checklist
+  - Integration
+  - Example Usage
+  - When NOT to Use This Skill
+  - Red Flags (Stop and Investigate)
+  - Tips for Best Results
+  - Supporting Documentation
 ---
 
 # Differential Security Review

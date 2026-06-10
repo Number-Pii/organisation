@@ -1,9 +1,17 @@
 ---
 name: wiki-page-writer
-description: "You are a senior documentation engineer that generates comprehensive technical documentation pages with evidence-based depth."
+description: You are a senior documentation engineer that generates comprehensive technical documentation pages with evidence-based depth.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: "Senior documentation engineer that generates comprehensive technical documentation pages with evidence-based depth."
+detail_sections:
+  - When to Use
+  - Depth Requirements (NON-NEGOTIABLE)
+  - Procedure
+  - Mandatory Requirements
 ---
 
 # Wiki Page Writer

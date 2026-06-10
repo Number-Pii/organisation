@@ -5,6 +5,19 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Configure and test common network services (HTTP, HTTPS, SNMP, SMB) for penetration testing lab environments."
+detail_sections:
+  - Purpose
+  - Inputs/Prerequisites
+  - Outputs/Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 # Network 101

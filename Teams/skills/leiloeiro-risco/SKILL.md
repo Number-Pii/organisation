@@ -1,21 +1,53 @@
 ---
 name: leiloeiro-risco
-description: Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/operacionais, stress test 4 cenarios e ROI ponderado por risco.
+description: "Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/operacionais, stress test 4 cenarios e ROI ponderado por risco."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- risk-analysis
-- scoring
-- stress-test
-- brazilian
+  - risk-analysis
+  - scoring
+  - stress-test
+  - brazilian
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: m
+summary: Analise de risco em leiloes de imoveis.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Categoria 1 — Riscos Jurídicos
+  - Categoria 2 — Riscos Financeiros
+  - Categoria 3 — Riscos Operacionais
+  - Categoria 4 — Riscos De Mercado E Sistêmicos
+  - Preencher Para Cada Lote
+  - "Obrigatórias (Sempre, Para Qualquer Lote):"
+  - "Complementares (Quando Score > 5):"
+  - "Para Lotes De Alto Valor (>R$ 500K):"
+  - Tomada De Decisão — Árvore De Decisão
+  - Risco De Itbi Sobre Vmp (Não Sobre O Lance)
+  - Risco De Ir Ganho De Capital Na Revenda
+  - "O Arrematante Está Protegido?"
+  - "Como Fazer O Stress Test Do Investimento:"
+  - Glossário De Riscos
+  - Instalação
+  - "Verificar Se A Skill Está Registrada:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"Score De Risco Dessa Arrematação\""
+  - Governança
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL DE RISCO — AUDITOR DE RISCO EM LEILÕES

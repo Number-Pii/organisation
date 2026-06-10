@@ -4,6 +4,20 @@ description: "Orchestrate a comprehensive legacy system modernization using the 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, enabling gradual replacement of outdated components while…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "Phase 1: Legacy Assessment and Risk Analysis"
+  - "Phase 2: Test Coverage Establishment"
+  - "Phase 3: Incremental Migration Implementation"
+  - "Phase 4: Performance Validation and Optimization"
+  - "Phase 5: Migration Completion and Documentation"
+  - Configuration Options
+  - Success Criteria
 ---
 
 # Legacy Code Modernization Workflow

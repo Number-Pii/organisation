@@ -1,9 +1,17 @@
 ---
 name: azure-functions
-description: "Modern .NET execution model with process isolation"
+description: Modern .NET execution model with process isolation
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: xs
+summary: Modern .NET execution model with process isolation
+detail_sections:
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # Azure Functions

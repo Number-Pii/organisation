@@ -6,8 +6,27 @@ risk: safe
 source: community
 date_added: "2026-03-10"
 author: Svobikl
-tags: [legal, context, cross-jurisdictional, compliance, scaffolding]
-tools: [claude, cursor, gemini]
+tags:
+  - legal
+  - context
+  - cross-jurisdictional
+  - compliance
+  - scaffolding
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Business & Strategy"
+size_class: s
+summary: "Centralized 'Truth Engine' for cross-jurisdictional legal context (US, EU, CA) and contract scaffolding."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # LEX: Legal-Entity-X-ref

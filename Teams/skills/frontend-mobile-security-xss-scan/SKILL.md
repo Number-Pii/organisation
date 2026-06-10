@@ -4,6 +4,16 @@ description: "You are a frontend security specialist focusing on Cross-Site Scri
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerability detection and prevention."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # XSS Vulnerability Scanner for Frontend Code

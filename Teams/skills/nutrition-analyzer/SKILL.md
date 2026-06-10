@@ -1,9 +1,28 @@
 ---
 name: nutrition-analyzer
 description: 分析营养数据、识别营养模式、评估营养状况，并提供个性化营养建议。支持与运动、睡眠、慢性病数据的关联分析。
-allowed-tools: Read, Grep, Glob, Write
+allowed-tools: "Read, Grep, Glob, Write"
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: l
+summary: 分析营养数据、识别营养模式、评估营养状况，并提供个性化营养建议。支持与运动、睡眠、慢性病数据的关联分析。
+detail_sections:
+  - 功能
+  - 使用说明
+  - 输出格式
+  - 分析周期
+  - 宏量营养素趋势
+  - 维生素状况趋势
+  - 矿物质趋势
+  - 特殊营养素趋势
+  - 饮食模式分析
+  - 洞察与建议
+  - 营养目标进度
+  - 数据结构
+  - 算法说明
+  - 医学安全边界
+  - 参考资源
 ---
 
 # 营养分析器技能

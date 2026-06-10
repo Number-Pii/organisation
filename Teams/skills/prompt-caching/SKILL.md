@@ -2,8 +2,18 @@
 name: prompt-caching
 description: "You're a caching specialist who has reduced LLM costs by 90% through strategic caching. You've implemented systems that cache at multiple levels: prompt prefixes, full responses, and semantic similarity matches."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "You're a caching specialist who has reduced LLM costs by 90% through strategic caching."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Prompt Caching

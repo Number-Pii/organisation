@@ -4,6 +4,22 @@ description: "Angular performance optimization and best practices guide. Use whe
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: Angular performance optimization and best practices guide.
+detail_sections:
+  - When to Use
+  - Rule Categories by Priority
+  - 1. Change Detection (CRITICAL)
+  - "2. Async Operations & Waterfalls (CRITICAL)"
+  - 3. Bundle Optimization (CRITICAL)
+  - 4. Rendering Performance (HIGH)
+  - 5. Server-Side Rendering (HIGH)
+  - 6. Template Optimization (MEDIUM)
+  - 7. State Management (MEDIUM)
+  - 8. Memory Management (LOW-MEDIUM)
+  - Quick Reference Checklist
+  - Resources
 ---
 
 # Angular Best Practices

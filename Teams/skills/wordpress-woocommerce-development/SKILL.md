@@ -5,6 +5,15 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "WooCommerce store development workflow covering store setup, payment integration, shipping configuration, and customization."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # WordPress WooCommerce Development Workflow

@@ -4,6 +4,14 @@ description: "Master smart contract security best practices, vulnerability preve
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Master smart contract security best practices, vulnerability prevention, and secure Solidity development patterns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Solidity Security

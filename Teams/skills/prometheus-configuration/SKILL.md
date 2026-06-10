@@ -4,6 +4,25 @@ description: "Complete guide to Prometheus setup, metric collection, scrape conf
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Prometheus Architecture
+  - Installation
+  - Configuration File
+  - Scrape Configurations
+  - Recording Rules
+  - Alert Rules
+  - Validation
+  - Best Practices
+  - Troubleshooting
+  - Reference Files
+  - Related Skills
 ---
 
 # Prometheus Configuration

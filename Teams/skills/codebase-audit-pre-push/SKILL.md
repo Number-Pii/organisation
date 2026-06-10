@@ -5,6 +5,16 @@ category: development
 risk: safe
 source: community
 date_added: "2026-03-05"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Deep audit before GitHub push: removes junk files, dead code, security holes, and optimization issues."
+detail_sections:
+  - When to Use This Skill
+  - Your Job
+  - Audit Process
+  - Output Format
+  - Key Principles
+  - Related Skills
 ---
 
 # Pre-Push Codebase Audit
@@ -238,4 +248,3 @@ Overall: 9/10
 - `@security-auditor` - Deeper security review  
 - `@systematic-debugging` - Investigate specific issues  
 - `@git-pushing` - Push code after audit  
-

@@ -4,7 +4,7 @@ description: "Optimize content for AI Overviews, ChatGPT, Perplexity, and other 
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url]"
 allowed-tools:
   - Read
@@ -12,6 +12,26 @@ allowed-tools:
   - Glob
   - Bash
   - WebFetch
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Optimize content for AI Overviews, ChatGPT, Perplexity, and other AI search systems."
+detail_sections:
+  - When to Use
+  - Key Statistics
+  - "Critical Insight: Brand Mentions > Backlinks"
+  - GEO Analysis Criteria (Updated)
+  - AI Crawler Detection
+  - llms.txt Standard
+  - Main sections
+  - "Optional: Key facts"
+  - RSL 1.0 (Really Simple Licensing)
+  - Platform-Specific Optimization
+  - Output
+  - Quick Wins
+  - Medium Effort
+  - High Impact
+  - DataForSEO Integration (Optional)
+  - Error Handling
 ---
 
 # AI Search / GEO Optimization (February 2026)

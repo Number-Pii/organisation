@@ -4,6 +4,20 @@ description: "Structured task planning with clear breakdowns, dependencies, and 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Structured task planning with clear breakdowns, dependencies, and verification criteria."
+detail_sections:
+  - Overview
+  - Task Breakdown Principles
+  - Planning Principles (NOT Templates!)
+  - "Plan Structure (Flexible, Not Fixed!)"
+  - Goal
+  - Tasks
+  - Done When
+  - Notes
+  - Best Practices (Quick Reference)
+  - When to Use
 ---
 
 # Plan Writing

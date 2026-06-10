@@ -4,6 +4,25 @@ description: "Framework for defining and implementing Service Level Indicators (
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Framework for defining and implementing Service Level Indicators (SLIs), Service Level Objectives (SLOs), and error budgets."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - SLI/SLO/SLA Hierarchy
+  - Defining SLIs
+  - Setting SLO Targets
+  - Error Budget Calculation
+  - SLO Implementation
+  - SLO Dashboard
+  - Multi-Window Burn Rate Alerts
+  - SLO Review Process
+  - Best Practices
+  - Reference Files
+  - Related Skills
 ---
 
 # SLO Implementation

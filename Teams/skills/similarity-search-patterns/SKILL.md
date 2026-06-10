@@ -4,6 +4,14 @@ description: "Implement efficient similarity search with vector databases. Use w
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: Implement efficient similarity search with vector databases.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Similarity Search Patterns

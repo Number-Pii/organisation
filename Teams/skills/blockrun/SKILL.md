@@ -1,9 +1,25 @@
 ---
 name: blockrun
-description: "BlockRun works with Claude Code and Google Antigravity."
+description: BlockRun works with Claude Code and Google Antigravity.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: BlockRun works with Claude Code and Google Antigravity.
+detail_sections:
+  - Philosophy
+  - Budget Control (Optional)
+  - When to Use
+  - Example User Prompts
+  - "Wallet & Balance"
+  - SDK Usage
+  - xAI Live Search Reference
+  - Available Models
+  - Cost Reference
+  - "Setup & Funding"
+  - Troubleshooting
+  - Updates
 ---
 
 # BlockRun

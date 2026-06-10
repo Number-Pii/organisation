@@ -4,6 +4,21 @@ description: "Design and implement a complete ML pipeline for: $ARGUMENTS"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Design and implement a complete ML pipeline for: $ARGUMENTS"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Thinking
+  - "Phase 1: Data & Requirements Analysis"
+  - "Phase 2: Model Development & Training"
+  - "Phase 3: Production Deployment & Serving"
+  - "Phase 4: Monitoring & Continuous Improvement"
+  - Configuration Options
+  - Success Criteria
+  - Final Deliverables
 ---
 
 # Machine Learning Pipeline - Multi-Agent MLOps Orchestration

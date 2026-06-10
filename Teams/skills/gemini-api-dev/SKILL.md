@@ -4,6 +4,17 @@ description: "The Gemini API provides access to Google's most advanced AI models
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "The Gemini API provides access to Google's most advanced AI models."
+detail_sections:
+  - Overview
+  - Current Gemini Models
+  - SDKs
+  - Quick Start
+  - API spec (source of truth)
+  - How to use the Gemini API
+  - When to Use
 ---
 
 # Gemini API Development Skill

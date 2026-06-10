@@ -1,11 +1,21 @@
 ---
 id: 00-andruia-consultant
 name: 00-andruia-consultant
-description: "Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español."
+description: Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español.
 category: andruia
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: s
+summary: Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia.
+detail_sections:
+  - When to Use
+  - Description
+  - 📋 General Instructions (El Estándar Maestro)
+  - "🛠️ Workflow: Bifurcación de Diagnóstico"
+  - 🚀 Fase de Sincronización de Squad y Materialización
+  - ⚠️ Reglas de Oro
 ---
 
 ## When to Use

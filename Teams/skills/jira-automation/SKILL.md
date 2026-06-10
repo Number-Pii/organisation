@@ -4,6 +4,17 @@ description: "Automate Jira tasks via Rube MCP (Composio): issues, projects, spr
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, users."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Jira Automation via Rube MCP

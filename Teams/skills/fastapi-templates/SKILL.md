@@ -4,6 +4,14 @@ description: "Create production-ready FastAPI projects with async patterns, depe
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # FastAPI Project Templates

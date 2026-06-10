@@ -5,6 +5,26 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+domain: Mobile Development
+size_class: m
+summary: Guidelines for creating API routes in Expo Router with EAS Hosting
+detail_sections:
+  - When to Use API Routes
+  - When NOT to Use API Routes
+  - File Structure
+  - Basic API Route
+  - HTTP Methods
+  - Dynamic Routes
+  - Request Handling
+  - Environment Variables
+  - CORS Headers
+  - Error Handling
+  - Testing Locally
+  - Deployment to EAS Hosting
+  - EAS Hosting Runtime (Cloudflare Workers)
+  - Calling API Routes from Client
+  - Common Patterns
+  - Rules
 ---
 
 ## When to Use API Routes

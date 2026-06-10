@@ -4,6 +4,20 @@ description: "Build search applications with vector, hybrid, and semantic search
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Build search applications with vector, hybrid, and semantic search capabilities."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Workflow
+  - Filtering and Facets
+  - Autocomplete and Suggestions
+  - Batch Operations
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure AI Search SDK for TypeScript

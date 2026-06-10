@@ -1,8 +1,23 @@
 ---
 name: threejs-interaction
-description: Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences.
+description: "Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences."
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: l
+summary: "Three.js interaction - raycasting, controls, mouse/touch input, object selection."
+detail_sections:
+  - Quick Start
+  - Raycaster
+  - Camera Controls
+  - TransformControls
+  - DragControls
+  - Selection System
+  - Keyboard Input
+  - World-Screen Coordinate Conversion
+  - Event Handling Best Practices
+  - Performance Tips
+  - See Also
 ---
 
 # Three.js Interaction

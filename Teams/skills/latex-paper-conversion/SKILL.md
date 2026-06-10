@@ -4,6 +4,17 @@ description: "This skill should be used when the user asks to convert an academi
 risk: safe
 source: community
 date_added: "2026-03-14"
+domain: "Documentation & Office"
+size_class: s
+summary: "This skill should be used when the user asks to convert an academic paper in LaTeX from one format (e.g., Springer, IPOL) to another format (e.g.…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Additional Resources
 ---
 
 # LaTeX Paper Conversion

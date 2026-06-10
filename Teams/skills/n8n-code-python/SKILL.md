@@ -1,8 +1,28 @@
 ---
 name: n8n-code-python
-description: Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes.
+description: "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Write Python code in n8n Code nodes.
+detail_sections:
+  - "⚠️ Important: JavaScript First"
+  - Quick Start
+  - Mode Selection Guide
+  - "Python Modes: Beta vs Native"
+  - Data Access Patterns
+  - "Critical: Webhook Data Structure"
+  - Return Format Requirements
+  - "Critical Limitation: No External Libraries"
+  - Common Patterns Overview
+  - Error Prevention - Top 5 Mistakes
+  - Standard Library Reference
+  - Best Practices
+  - When to Use Python vs JavaScript
+  - Integration with Other Skills
+  - Quick Reference Checklist
+  - Additional Resources
 ---
 
 # Python Code Node (Beta)

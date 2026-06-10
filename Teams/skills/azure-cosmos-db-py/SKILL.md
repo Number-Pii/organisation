@@ -4,6 +4,20 @@ description: "Build production-grade Azure Cosmos DB NoSQL services following cl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Build production-grade Azure Cosmos DB NoSQL services following clean code, security best practices, and TDD principles."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Architecture Overview
+  - Quick Start
+  - Core Principles
+  - Reference Files
+  - Template Files
+  - Quality Attributes (NFRs)
+  - When to Use
 ---
 
 # Cosmos DB Service Implementation

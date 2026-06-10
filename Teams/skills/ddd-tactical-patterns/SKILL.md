@@ -5,6 +5,15 @@ risk: safe
 source: self
 tags: "[ddd, tactical, aggregates, value-objects, domain-events]"
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Apply DDD tactical patterns in code using entities, value objects, aggregates, repositories, and domain events with explicit invariants."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Example
+  - Limitations
 ---
 
 # DDD Tactical Patterns

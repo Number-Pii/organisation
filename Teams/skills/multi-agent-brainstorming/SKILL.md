@@ -4,6 +4,20 @@ description: "Simulate a structured peer-review process using multiple specializ
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Simulate a structured peer-review process using multiple specialized agents to validate designs, surface hidden assumptions, and identify failure…"
+detail_sections:
+  - Purpose
+  - Operating Model
+  - Agent Roles (Non-Negotiable)
+  - The Process
+  - Decision Log (Mandatory Artifact)
+  - Exit Criteria (Hard Stop)
+  - Failure Modes This Skill Prevents
+  - Key Principles
+  - Final Reminder
+  - When to Use
 ---
 
 # Multi-Agent Brainstorming (Structured Design Review)

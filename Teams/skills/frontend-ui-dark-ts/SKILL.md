@@ -4,6 +4,20 @@ description: "A modern dark-themed React UI system using Tailwind CSS and Framer
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: A modern dark-themed React UI system using Tailwind CSS and Framer Motion.
+detail_sections:
+  - Stack
+  - Quick Start
+  - Project Structure
+  - Configuration
+  - Animation Patterns
+  - Glass Effect Patterns
+  - Typography
+  - Color Usage
+  - Related Files
+  - When to Use
 ---
 
 # Frontend UI Dark Theme (TypeScript)

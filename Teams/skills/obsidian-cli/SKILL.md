@@ -4,6 +4,17 @@ description: "Use the Obsidian CLI to read, create, search, and manage vault con
 risk: unknown
 source: "https://github.com/kepano/obsidian-skills"
 date_added: "2026-03-21"
+domain: "Documentation & Office"
+size_class: s
+summary: "Use the Obsidian CLI to read, create, search, and manage vault content, or to develop and debug Obsidian plugins and themes from the command line."
+detail_sections:
+  - When to Use
+  - Command reference
+  - Syntax
+  - File targeting
+  - Vault targeting
+  - Common patterns
+  - Plugin development
 ---
 
 # Obsidian CLI

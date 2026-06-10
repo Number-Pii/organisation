@@ -4,6 +4,17 @@ description: "You are an SLO (Service Level Objective) expert specializing in im
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: xs
+summary: "SLO (Service Level Objective) expert specializing in implementing reliability standards and error budget-based engineering practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # SLO Implementation Guide

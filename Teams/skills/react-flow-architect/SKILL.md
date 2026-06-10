@@ -4,6 +4,18 @@ description: "Build production-ready ReactFlow applications with hierarchical na
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management."
+detail_sections:
+  - Quick Start
+  - Core Patterns
+  - Advanced Features
+  - Performance Tools
+  - Best Practices
+  - "Common Problems & Solutions"
+  - Complete Example
+  - When to Use
 ---
 
 # ReactFlow Architect

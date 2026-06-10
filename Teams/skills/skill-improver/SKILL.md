@@ -3,6 +3,20 @@ name: skill-improver
 description: "Iteratively improve a Claude Code skill using the skill-reviewer agent until it meets quality standards. Use when improving a skill with multiple quality issues, iterating on a new skill until it meets standards, or automated fix-review cycles instead of manual editing."
 risk: unknown
 source: community
+domain: Skills Tooling
+size_class: s
+summary: Iteratively improve a Claude Code skill using the skill-reviewer agent until it meets quality standards.
+detail_sections:
+  - Prerequisites
+  - Core Loop
+  - When to Use
+  - When NOT to Use
+  - Issue Categorization
+  - Minor Issue Evaluation
+  - Invoking skill-reviewer
+  - Example Fix Cycle
+  - Completion Criteria
+  - Rationalizations to Reject
 ---
 
 # Skill Improvement Methodology

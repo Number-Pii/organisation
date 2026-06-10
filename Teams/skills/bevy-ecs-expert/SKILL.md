@@ -4,6 +4,16 @@ description: "Master Bevy's Entity Component System (ECS) in Rust, covering Syst
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources, and parallel scheduling."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Bevy ECS Expert

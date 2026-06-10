@@ -4,6 +4,16 @@ description: "Write efficient C code with proper memory management, pointer"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "Write efficient C code with proper memory management, pointer"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Approach
+  - Output
 ---
 
 ## Use this skill when

@@ -4,6 +4,20 @@ description: "ClickHouse database patterns, query optimization, analytics, and d
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads."
+detail_sections:
+  - Overview
+  - Table Design Patterns
+  - Query Optimization Patterns
+  - Data Insertion Patterns
+  - Materialized Views
+  - Performance Monitoring
+  - Common Analytics Queries
+  - Data Pipeline Patterns
+  - Best Practices
+  - When to Use
 ---
 
 # ClickHouse Analytics Patterns

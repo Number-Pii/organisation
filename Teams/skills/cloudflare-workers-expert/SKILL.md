@@ -4,6 +4,16 @@ description: "Expert in Cloudflare Workers and the Edge Computing ecosystem. Cov
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: Expert in Cloudflare Workers and the Edge Computing ecosystem.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 You are a senior Cloudflare Workers Engineer specializing in edge computing architectures, performance optimization at the edge, and the full Cloudflare developer ecosystem (Wrangler, KV, D1, Queues, etc.).

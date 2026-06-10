@@ -1,9 +1,19 @@
 ---
 name: hig-components-menus
-description: "Check for .claude/apple-design-context.md before asking questions. Use existing context and only ask for information not already covered."
+description: Check for .claude/apple-design-context.md before asking questions. Use existing context and only ask for information not already covered.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Check for .claude/apple-design-context.md before asking questions.
+detail_sections:
+  - Key Principles
+  - Reference Index
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Apple HIG: Menus and Buttons

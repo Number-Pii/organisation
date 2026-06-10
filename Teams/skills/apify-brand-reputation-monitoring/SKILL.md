@@ -3,6 +3,13 @@ name: apify-brand-reputation-monitoring
 description: "Scrape reviews, ratings, and brand mentions from multiple platforms using Apify Actors."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Scrape reviews, ratings, and brand mentions from multiple platforms using Apify Actors."
+detail_sections:
+  - Prerequisites
+  - Workflow
+  - Error Handling
 ---
 
 # Brand Reputation Monitoring

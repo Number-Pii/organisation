@@ -1,9 +1,17 @@
---- 
+---
 name: magic-ui-generator
-description: Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready UI component variations.
+description: "Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready UI component variations."
 risk: safe
 source: community
 date_added: "2026-03-07"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready UI component variations."
+detail_sections:
+  - Context
+  - When to Use
+  - Execution Workflow
+  - Strict Rules
 ---
 
 # Magic UI Generator

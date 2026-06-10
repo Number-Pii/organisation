@@ -1,21 +1,75 @@
 ---
 name: telegram
-description: Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python.
+description: "Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- messaging
-- telegram
-- bots
-- webhooks
+  - messaging
+  - telegram
+  - bots
+  - webhooks
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Integracao completa com Telegram Bot API.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Decision Tree
+  - Ou
+  - Setup Com Botfather
+  - Variaveis De Ambiente
+  - Node.Js/Typescript
+  - Python
+  - "Instalar: Pip Install Python-Telegram-Bot Python-Dotenv"
+  - Sem Biblioteca (Http Puro)
+  - Verificar Bot
+  - Enviar Mensagem
+  - Tipos De Mensagem
+  - Html (Recomendado)
+  - "Markdownv2 (Escapar Caracteres Especiais: _ * [ ] ( ) ~ ` > # + - = | { } . !)"
+  - "Foto (Por Url, File_Id Ou Upload)"
+  - Documento
+  - Video
+  - Audio
+  - Voz (Ogg Com Opus)
+  - Localizacao
+  - Contato
+  - Enquete
+  - Grupo De Midias
+  - "Acao De Chat (Typing, Upload_Photo, Etc.)"
+  - Node.Js Equivalente
+  - Inline Keyboard (Botoes Dentro Da Mensagem)
+  - Handler De Callback
+  - Reply Keyboard (Teclado Customizado)
+  - Remover Teclado
+  - Receber Updates
+  - Long Polling (Desenvolvimento)
+  - Python-Telegram-Bot Ja Faz Isso Automaticamente
+  - Webhooks (Producao)
+  - Flask Webhook
+  - Registrar Webhook
+  - Comandos Do Bot
+  - Automacao Com Ia
+  - Editar Texto
+  - Editar Markup (Botoes)
+  - Deletar Mensagem
+  - Encaminhar Mensagem
+  - Tratamento De Erros
+  - Rate Limits
+  - Referencia De Arquivos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Telegram Bot API - Integracao Profissional

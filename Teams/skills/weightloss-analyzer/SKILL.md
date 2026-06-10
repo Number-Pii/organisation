@@ -3,6 +3,29 @@ name: weightloss-analyzer
 description: 分析减肥数据、计算代谢率、追踪能量缺口、管理减肥阶段
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: m
+summary: 分析减肥数据、计算代谢率、追踪能量缺口、管理减肥阶段
+detail_sections:
+  - 功能
+  - 数据源
+  - 输出格式
+  - 基本信息
+  - 身体指标
+  - 建议
+  - BMR计算
+  - TDEE计算
+  - 减肥热量目标
+  - 安全检查
+  - 本周汇总（2025-06-16 至 2025-06-22）
+  - 统计分析
+  - 趋势分析
+  - 下周目标
+  - 当前阶段：减重期
+  - 状态分析
+  - 下一步行动
+  - 使用方法
+  - 安全原则
 ---
 
 # 减肥分析技能

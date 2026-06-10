@@ -1,12 +1,19 @@
 ---
 name: makepad-basics
-description: |
-  CRITICAL: Use for Makepad getting started and app structure. Triggers on:
-  makepad, makepad getting started, makepad tutorial, live_design!, app_main!,
-  makepad project setup, makepad hello world, "how to create makepad app",
-  makepad 入门, 创建 makepad 应用, makepad 教程, makepad 项目结构
+description: "|"
 risk: unknown
 source: "https://github.com/makepad/makepad"
+domain: "Frontend & UI"
+size_class: s
+summary: "Makepad fundamentals: project setup, widgets, and the live design system."
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - Key Patterns
+  - API Reference Table
+  - Platform Setup
+  - When Writing Code
+  - When Answering Questions
 ---
 
 # Makepad Basics Skill

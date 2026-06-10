@@ -4,6 +4,18 @@ description: "You are a code refactoring expert specializing in clean code princ
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "Code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Output Format
+  - Resources
 ---
 
 # Refactor and Clean Code

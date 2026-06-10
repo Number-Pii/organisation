@@ -1,9 +1,22 @@
 ---
 name: saga-orchestration
-description: "Patterns for managing distributed transactions and long-running business processes."
+description: Patterns for managing distributed transactions and long-running business processes.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: l
+summary: Patterns for managing distributed transactions and long-running business processes.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Durable Execution Alternative
+  - Best Practices
+  - Related Skills
+  - Resources
 ---
 
 # Saga Orchestration

@@ -4,6 +4,15 @@ description: "Guide for building reliable, fault-tolerant Go applications with D
 risk: safe
 source: "https://docs.dbos.dev/"
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "Guide for building reliable, fault-tolerant Go applications with DBOS durable workflows."
+detail_sections:
+  - When to Use
+  - Rule Categories by Priority
+  - Critical Rules
+  - How to Use
+  - References
 ---
 
 # DBOS Go Best Practices

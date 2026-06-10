@@ -4,6 +4,14 @@ description: "Generate and maintain OpenAPI 3.1 specifications from code, design
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and validation patterns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # OpenAPI Spec Generation

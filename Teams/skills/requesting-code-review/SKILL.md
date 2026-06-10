@@ -4,6 +4,16 @@ description: "Use when completing tasks, implementing major features, or before 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
+detail_sections:
+  - When to Request Review
+  - How to Request
+  - Example
+  - Integration with Workflows
+  - Red Flags
+  - When to Use
 ---
 
 # Requesting Code Review

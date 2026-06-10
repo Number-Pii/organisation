@@ -4,6 +4,26 @@ description: "You are an expert in in-app paywalls and upgrade flows. Your goal 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Expert in in-app paywalls and upgrade flows."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Paywall Trigger Points
+  - Paywall Screen Components
+  - Specific Paywall Types
+  - Mobile Paywall Patterns
+  - Timing and Frequency
+  - Upgrade Flow Optimization
+  - A/B Testing Paywalls
+  - Output Format
+  - Common Patterns by Business Model
+  - Anti-Patterns to Avoid
+  - Experiment Ideas
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Paywall and Upgrade Screen CRO

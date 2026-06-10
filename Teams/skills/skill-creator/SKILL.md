@@ -6,6 +6,20 @@ risk: safe
 source: community
 tags: "[automation, scaffolding, skill-creation, meta-skill]"
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: l
+summary: "To create new CLI skills following Anthropic's official best practices with zero manual configuration."
+detail_sections:
+  - Purpose
+  - When to Use This Skill
+  - Core Capabilities
+  - "Step 0: Discovery"
+  - Main Workflow
+  - Error Handling
+  - Bundled Resources
+  - Technical Implementation Notes
+  - Quality Standards
+  - References
 ---
 
 # skill-creator

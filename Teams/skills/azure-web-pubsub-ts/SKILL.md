@@ -1,9 +1,21 @@
 ---
 name: azure-web-pubsub-ts
-description: "Real-time messaging with WebSocket connections and pub/sub patterns."
+description: Real-time messaging with WebSocket connections and pub/sub patterns.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Real-time messaging with WebSocket connections and pub/sub patterns.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - "Server-Side: WebPubSubServiceClient"
+  - "Client-Side: WebPubSubClient"
+  - Express Event Handler
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Web PubSub SDKs for TypeScript

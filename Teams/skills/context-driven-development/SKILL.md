@@ -3,7 +3,27 @@ name: context-driven-development
 description: "Guide for implementing and maintaining context as a managed artifact alongside code, enabling consistent AI interactions and team alignment through structured project documentation."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Guide for implementing and maintaining context as a managed artifact alongside code, enabling consistent AI interactions and team alignment through…"
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Philosophy
+  - The Workflow
+  - Artifact Relationships
+  - Context Maintenance Principles
+  - Greenfield vs Brownfield Handling
+  - Benefits
+  - Directory Structure
+  - Context Lifecycle
+  - Context Validation Checklist
+  - Common Anti-Patterns
+  - Integration with Development Tools
+  - Session Continuity
+  - Best Practices
 ---
 
 # Context-Driven Development

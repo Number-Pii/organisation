@@ -4,6 +4,15 @@ description: "Expert guide on prompt engineering patterns, best practices, and o
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Expert guide on prompt engineering patterns, best practices, and optimization techniques."
+detail_sections:
+  - Core Capabilities
+  - Key Patterns
+  - Best Practices
+  - Common Pitfalls
+  - When to Use
 ---
 
 # Prompt Engineering Patterns

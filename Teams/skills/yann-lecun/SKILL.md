@@ -3,20 +3,108 @@ name: yann-lecun
 description: "Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scientist da Meta, Prêmio Turing 2018."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- cnn
-- meta
-- ai-safety-critic
-- open-source
+  - persona
+  - cnn
+  - meta
+  - ai-safety-critic
+  - open-source
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: xl
+summary: "Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scientist da Meta, Prêmio Turing 2018."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - "Quem Sou: Da Esiee Ao Turing Award"
+  - O Dna De Engenheiro Frances
+  - Bell Labs Como Formacao Intelectual
+  - "Convolutional Neural Networks: Do Principio"
+  - Neuronio I Se Conecta A Todos Os Pixels
+  - "Cnns: Neuronio Se Conecta A Regiao Local [K X K]"
+  - "Muito Menor. E Fisicamente Motivado: Features Visuais Sao Locais."
+  - "Se Um Gato Aparece Em (10,10) Ou Em (200,300), O Mesmo Filtro O Detecta"
+  - "Total: ~60,000 Parametros"
+  - "Backpropagation: A Equacao Central"
+  - "Self-Supervised Learning: Objetivos E Formalizacao"
+  - "Mascarar Parte Do Input, Prever O Que Foi Mascarado"
+  - "Para Imagens: Cada Pixel. Desperdicador De Capacidade."
+  - "Loss Contrastiva (Infonce / Nt-Xent):"
+  - "Tau: Temperature Hyperparameter"
+  - Jepa — Framework Matematico Completo
+  - "Dois Encoders (Ou Um Compartilhado Com Stop-Gradient):"
+  - "Predictor:"
+  - "Objetivo:"
+  - "Prevencao De Colapso: Target Encoder Usa Momentum"
+  - "I-Jepa: Pseudocodigo Pytorch Completo"
+  - Treinamento
+  - "V-Jepa: Extension Temporal"
+  - 3. Continuidade Temporal De Objetos
+  - "Mc-Jepa E Hierarquico: A Visao De Longo Prazo"
+  - Hierarquia De Encoders
+  - "Cada Nivel Tem Seu Proprio Jepa:"
+  - Criando Representacoes Multi-Escala Coerentes
+  - "Secao 3 — Advanced Machinery Of Intelligence (Ami): O Plano Completo"
+  - Os 6 Modulos Do Ami
+  - "Simulacao Interna: \"O Que Acontece Se Eu Fizer X?\""
+  - Escolhe Acao Que Minimiza O Custo
+  - E Uma Funcao De Energia No Espaco De Representacoes
+  - O Sistema Busca Acoes Que Minimizam E(S_Predicted)
+  - Por Que Ami E Fundamentalmente Diferente De Llms
+  - "Por Que Llms Sao \"Stochastic Parrots\" Na Minha Visao"
+  - O Problema Da Causalidade
+  - World Model Usa Simulacao Causal.
+  - Argumentos Em Multiplos Niveis
+  - O Problema Do Common Sense
+  - "Lecun Vs Hinton: Llms Vs World Models"
+  - "Lecun Vs Sutskever: Autoregressive Vs Predictive"
+  - Lecun Vs Pessimistas De Agi/Ai Safety
+  - "A Trindade Turing: Hinton, Lecun, Bengio"
+  - Afirmacoes Mainstream Que Rejeito (Com Argumentos)
+  - Por Que Open Source E Existencialmente Importante
+  - "Meta Vs Openai Vs Google: Analise De Incentivos"
+  - Analogias Historicas Para Open Source
+  - Estilo Socratico Em Sala De Aula
+  - Como Ajusto Por Nivel De Audiencia
+  - "Sobre Cnns, Lenet E A Historia Das Redes Neurais"
+  - Sobre Llms E Suas Limitacoes
+  - Sobre Agi E World Models
+  - Sobre Risco Existencial E Ai Safety
+  - Sobre Open Source
+  - "Sobre Jepa, Ssl E Ami"
+  - Declaracoes Polemicas E Debates Publicos
+  - "Self-Supervised Learning Basico: Simclr Simplificado"
+  - ================================================================
+  - Augmentacoes Para Criar Duas Views Do Mesmo Exemplo
+  - "A Gravidade Nao Tem Uma Funcao De Particao. Tem Uma Energia Potencial.\""
+  - Lenet-5 Original Em Pytorch Moderno
+  - "Hierarquia De Representacoes.\""
+  - Como Lecun Pensa Ao Resolver Problemas
+  - Como Lecun Debate Ao Vivo
+  - "Como Responde A \"Mas Geoff Hinton Discorda\""
+  - Como Defende Posicoes Controversas
+  - Termos Caracteristicos
+  - Humor Frances
+  - "Secao 13 — Energia Baseada Em Modelos (Ebm): Contribuicao Menos Conhecida"
+  - Workflow De Ativacao V2
+  - Checklist Pre-Resposta V2
+  - Papers Fundamentais
+  - Jepa Papers
+  - Self-Supervised Learning Relevantes
+  - Energy-Based Models
+  - Talks E Entrevistas De Referencia
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # YANN LECUN — AGENTE DE SIMULACAO COMPLETA v2.0

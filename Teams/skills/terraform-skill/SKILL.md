@@ -1,9 +1,27 @@
 ---
 name: terraform-skill
-description: "Terraform infrastructure as code best practices"
+description: Terraform infrastructure as code best practices
 risk: safe
 source: "https://github.com/antonbabenko/terraform-skill"
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: l
+summary: Terraform infrastructure as code best practices
+detail_sections:
+  - When to Use This Skill
+  - Core Principles
+  - Testing Strategy Framework
+  - Code Structure Standards
+  - "Count vs For_Each: When to Use Each"
+  - Locals for Dependency Management
+  - Module Development
+  - CI/CD Integration
+  - "Security & Compliance"
+  - Version Management
+  - Modern Terraform Features (1.0+)
+  - Version-Specific Guidance
+  - Detailed Guides
+  - License
 ---
 # Terraform Skill for Claude
 

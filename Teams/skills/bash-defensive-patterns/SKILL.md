@@ -4,6 +4,15 @@ description: "Master defensive Bash programming techniques for production-grade 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: xs
+summary: Master defensive Bash programming techniques for production-grade scripts.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Bash Defensive Patterns

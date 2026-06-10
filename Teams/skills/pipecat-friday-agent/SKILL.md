@@ -5,8 +5,25 @@ category: voice-agents
 risk: safe
 source: community
 date_added: "2026-03-10"
-tags: [pipecat, voice, gemini, openai, python]
-tools: [pipecat]
+tags:
+  - pipecat
+  - voice
+  - gemini
+  - openai
+  - python
+tools:
+  - pipecat
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Core Concepts
+  - Best Practices
+  - Troubleshooting
+  - Related Skills
 ---
 
 # Pipecat Friday Agent

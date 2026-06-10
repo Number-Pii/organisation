@@ -1,9 +1,18 @@
 ---
 name: game-development
-description: "Game development orchestrator. Routes to platform-specific skills based on project needs."
+description: Game development orchestrator. Routes to platform-specific skills based on project needs.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Game development orchestrator.
+detail_sections:
+  - When to Use This Skill
+  - Sub-Skill Routing
+  - Core Principles (All Platforms)
+  - Anti-Patterns (Universal)
+  - Routing Examples
 ---
 
 # Game Development

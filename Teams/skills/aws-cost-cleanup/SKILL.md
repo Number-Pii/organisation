@@ -1,9 +1,27 @@
 ---
 name: aws-cost-cleanup
-description: "Automated cleanup of unused AWS resources to reduce costs"
+description: Automated cleanup of unused AWS resources to reduce costs
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Automated cleanup of unused AWS resources to reduce costs
+detail_sections:
+  - When to Use This Skill
+  - Automated Cleanup Targets
+  - Cleanup Scripts
+  - Cost Impact Calculator
+  - Automated Cleanup Lambda
+  - Cleanup Workflow
+  - Safety Checklist
+  - Example Prompts
+  - Integration with AWS Organizations
+  - Monitoring and Alerts
+  - Best Practices
+  - Risk Mitigation
+  - Kiro CLI Integration
+  - Additional Resources
 ---
 
 # AWS Cost Cleanup

@@ -4,6 +4,20 @@ description: "Security auditor for Laravel applications. Analyzes code for vulne
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Security auditor for Laravel applications.
+detail_sections:
+  - Skill Metadata
+  - Role
+  - Use This Skill When
+  - Do NOT Use When
+  - Threat Model Awareness
+  - Core Audit Areas
+  - Risk Classification Model
+  - Response Structure
+  - Behavioral Constraints
+  - Example Audit Output Format
 ---
 
 # Laravel Security Audit

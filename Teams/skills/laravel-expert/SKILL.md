@@ -4,6 +4,19 @@ description: "Senior Laravel Engineer role for production-grade, maintainable, a
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions."
+detail_sections:
+  - Skill Metadata
+  - Role
+  - Use This Skill When
+  - Do NOT Use When
+  - Engineering Principles
+  - Anti-Patterns to Avoid
+  - Response Standards
+  - Output Structure
+  - Behavioral Constraints
 ---
 
 # Laravel Expert

@@ -4,6 +4,25 @@ description: "Build real-time conversational AI voice engines using async worker
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, and TTS synthesis with interrupt…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Core Architecture Principles
+  - Component Implementation Guide
+  - The Interrupt System
+  - Multi-Provider Factory Pattern
+  - WebSocket Integration
+  - Common Pitfalls and Solutions
+  - Production Considerations
+  - Key Design Patterns
+  - Testing Strategies
+  - Implementation Workflow
+  - Related Skills
+  - Resources
+  - Summary
 ---
 
 # Voice AI Engine Development

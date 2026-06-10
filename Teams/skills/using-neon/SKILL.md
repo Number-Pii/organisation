@@ -4,6 +4,13 @@ description: "Neon is a serverless Postgres platform that separates compute and 
 risk: safe
 source: "https://github.com/neondatabase/agent-skills/tree/main/skills/neon-postgres"
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Neon is a serverless Postgres platform that separates compute and storage to offer autoscaling, branching, instant restore, and scale-to-zero."
+detail_sections:
+  - When to Use This Skill
+  - Neon Documentation
+  - Overview of Resources
 ---
 
 # Neon Serverless Postgres

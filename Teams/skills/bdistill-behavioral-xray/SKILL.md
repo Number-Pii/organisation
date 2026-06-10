@@ -6,8 +6,30 @@ risk: safe
 source: community
 date_added: "2026-03-20"
 author: FrancyJGLisboa
-tags: [ai, testing, behavioral-analysis, model-evaluation, red-team, compliance, mcp]
-tools: [claude, cursor, codex, copilot]
+tags:
+  - ai
+  - testing
+  - behavioral-analysis
+  - model-evaluation
+  - red-team
+  - compliance
+  - mcp
+tools:
+  - claude
+  - cursor
+  - codex
+  - copilot
+domain: "Backend & APIs"
+size_class: s
+summary: "X-ray any AI model's behavioral patterns — refusal boundaries, hallucination tendencies, reasoning style, formatting defaults."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Probe Dimensions
+  - Output
+  - Best Practices
+  - Related Skills
 ---
 
 # Behavioral X-Ray

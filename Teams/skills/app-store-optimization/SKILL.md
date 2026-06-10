@@ -4,6 +4,20 @@ description: "Complete App Store Optimization (ASO) toolkit for researching, opt
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on Apple App Store and Google Play…"
+detail_sections:
+  - Capabilities
+  - Input Requirements
+  - Output Formats
+  - How to Use
+  - Scripts
+  - Best Practices
+  - Limitations
+  - Integration with Other Skills
+  - "Version & Updates"
+  - When to Use
 ---
 
 # App Store Optimization (ASO) Skill

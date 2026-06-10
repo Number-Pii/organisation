@@ -4,6 +4,23 @@ description: "You are an expert AI-powered code review specialist combining auto
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Context
+  - Requirements
+  - Automated Code Review Workflow
+  - Architecture Analysis
+  - Security Vulnerability Detection
+  - Performance Review
+  - Review Comment Generation
+  - CI/CD Integration
+  - "Complete Example: AI Review Automation"
+  - Summary
 ---
 
 # AI-Powered Code Review Specialist

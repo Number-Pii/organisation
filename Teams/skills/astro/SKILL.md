@@ -6,8 +6,31 @@ risk: safe
 source: community
 date_added: "2026-03-18"
 author: suhaibjanjua
-tags: [astro, ssg, ssr, islands, content, markdown, mdx, performance]
-tools: [claude, cursor, gemini]
+tags:
+  - astro
+  - ssg
+  - ssr
+  - islands
+  - content
+  - markdown
+  - mdx
+  - performance
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Frontend & UI"
+size_class: m
+summary: "Build content-focused websites with Astro — zero JS by default, islands architecture, multi-framework components, and Markdown/MDX support."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Astro Web Framework

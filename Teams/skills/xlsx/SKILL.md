@@ -1,9 +1,26 @@
 ---
 name: xlsx-official
-description: "Unless otherwise stated by the user or existing template"
+description: Unless otherwise stated by the user or existing template
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: Unless otherwise stated by the user or existing template
+detail_sections:
+  - All Excel files
+  - Financial models
+  - Overview
+  - Important Requirements
+  - Reading and analyzing data
+  - Excel File Workflows
+  - "CRITICAL: Use Formulas, Not Hardcoded Values"
+  - Common Workflow
+  - Recalculating formulas
+  - Formula Verification Checklist
+  - Best Practices
+  - Code Style Guidelines
+  - When to Use
 ---
 
 # Requirements for Outputs

@@ -4,6 +4,21 @@ description: "Manage cryptographic keys using Azure Key Vault Keys SDK for JavaS
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-keys)."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Secrets Operations
+  - Keys Operations
+  - Cryptographic Operations
+  - Backup and Restore
+  - Key Types
+  - Error Handling
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Key Vault Keys SDK for TypeScript

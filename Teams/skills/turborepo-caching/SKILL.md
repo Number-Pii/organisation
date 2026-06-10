@@ -4,6 +4,18 @@ description: "Configure Turborepo for efficient monorepo builds with local and r
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Configure Turborepo for efficient monorepo builds with local and remote caching.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Debugging Cache
+  - Best Practices
+  - Resources
 ---
 
 # Turborepo Caching

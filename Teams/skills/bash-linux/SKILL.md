@@ -4,6 +4,21 @@ description: "Bash/Linux terminal patterns. Critical commands, piping, error han
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Bash/Linux terminal patterns.
+detail_sections:
+  - 1. Operator Syntax
+  - 2. File Operations
+  - 3. Process Management
+  - 4. Text Processing
+  - 5. Environment Variables
+  - 6. Network
+  - 7. Script Template
+  - 8. Common Patterns
+  - 9. Differences from PowerShell
+  - 10. Error Handling
+  - When to Use
 ---
 
 # Bash Linux Patterns

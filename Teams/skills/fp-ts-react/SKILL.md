@@ -4,6 +4,22 @@ description: "Practical patterns for using fp-ts with React - hooks, state, form
 risk: safe
 source: "https://github.com/whatiskadudoing/fp-ts-skills"
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching."
+detail_sections:
+  - When to Use This Skill
+  - Quick Reference
+  - "1. State with Option (Maybe It's There, Maybe Not)"
+  - 2. Form Validation with Either
+  - 3. Data Fetching with TaskEither
+  - 4. RemoteData Pattern (The Right Way to Handle Async State)
+  - 5. Referential Stability (Preventing Re-renders)
+  - 6. Dependency Injection with Context
+  - 7. React 19 Patterns
+  - 8. Common Patterns Cheat Sheet
+  - When to Use What
+  - Libraries
 ---
 
 # Functional Programming in React

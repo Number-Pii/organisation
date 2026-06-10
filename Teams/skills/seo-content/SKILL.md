@@ -14,7 +14,7 @@ allowed-tools:
   - WebFetch
 domain: "SEO & Content Marketing"
 size_class: s
-summary: ">"
+summary: "Audit content quality, readability, thin-content risk, and E-E-A-T signals."
 detail_sections:
   - When to Use
   - E-E-A-T Framework (updated Sept 2025 QRG)

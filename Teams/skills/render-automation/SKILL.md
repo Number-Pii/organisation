@@ -4,6 +4,17 @@ description: "Automate Render tasks via Rube MCP (Composio): services, deploymen
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Automate Render tasks via Rube MCP (Composio): services, deployments, projects."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Render Automation via Rube MCP

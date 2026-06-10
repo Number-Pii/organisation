@@ -1,6 +1,6 @@
 ---
 name: fp-async
-description: Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, with real API examples
+description: "Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, with real API examples"
 risk: unknown
 source: community
 version: 1.0.0
@@ -14,6 +14,19 @@ tags:
   - promises
   - api
   - fetch
+domain: Programming Languages
+size_class: l
+summary: "Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, with real API examples"
+detail_sections:
+  - 1. Wrapping Promises Safely
+  - 2. Chaining Async Operations
+  - 3. Parallel vs Sequential Execution
+  - 4. Error Recovery Patterns
+  - 5. Real API Examples
+  - 6. Handling Results
+  - 7. Common Patterns Reference
+  - Quick Reference Card
+  - Before/After Summary
 ---
 
 # Practical Async Patterns with fp-ts

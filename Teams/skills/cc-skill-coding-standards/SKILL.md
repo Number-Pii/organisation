@@ -4,6 +4,20 @@ description: "Universal coding standards, best practices, and patterns for TypeS
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development."
+detail_sections:
+  - Code Quality Principles
+  - TypeScript/JavaScript Standards
+  - React Best Practices
+  - API Design Standards
+  - File Organization
+  - "Comments & Documentation"
+  - Performance Best Practices
+  - Testing Standards
+  - Code Smell Detection
+  - When to Use
 ---
 
 # Coding Standards & Best Practices

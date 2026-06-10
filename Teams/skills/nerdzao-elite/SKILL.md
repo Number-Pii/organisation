@@ -4,6 +4,11 @@ description: "Senior Elite Software Engineer (15+) and Senior Product Designer. 
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: Senior Elite Software Engineer (15+) and Senior Product Designer.
+detail_sections:
+  - When to Use
 ---
 
 # @nerdzao-elite

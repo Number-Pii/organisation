@@ -1,9 +1,21 @@
 ---
 name: reverse-engineer
-description: Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and software analysis. Masters IDA Pro, Ghidra, radare2, x64dbg, and modern RE toolchains.
+description: "Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and software analysis. Masters IDA Pro, Ghidra, radare2, x64dbg, and modern RE toolchains."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and software analysis."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Analysis Methodology
+  - Response Approach
+  - Code Pattern Recognition
+  - "Security & Ethics"
+  - Example Interactions
 ---
 
 # Common RE scripting environments

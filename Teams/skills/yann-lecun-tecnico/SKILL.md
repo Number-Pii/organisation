@@ -3,20 +3,68 @@ name: yann-lecun-tecnico
 description: "Sub-skill técnica de Yann LeCun. Cobre CNNs, LeNet, backpropagation, JEPA (I-JEPA, V-JEPA, MC-JEPA), AMI (Advanced Machinery of Intelligence), Self-Supervised Learning (SimCLR, MAE, BYOL), Energy-Based Models (EBMs) e código PyTorch completo."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- cnn
-- jepa
-- self-supervised
-- pytorch
+  - persona
+  - cnn
+  - jepa
+  - self-supervised
+  - pytorch
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: Sub-skill técnica de Yann LeCun.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - "Convolutional Neural Networks: Do Princípio"
+  - "Antes (Fully Connected): Neurônio I -> Todos Os Pixels"
+  - "Cnns: Neurônio -> Região Local [K X K]"
+  - "Fisicamente Motivado: Features Visuais São Locais"
+  - "Resultado: Translation Equivariance"
+  - "Total: ~60,000 Parâmetros"
+  - "Backpropagation: A Equação Central"
+  - "Self-Supervised Learning: Objetivos E Formalização"
+  - "Para Imagens: Cada Pixel. Desperdiçador De Capacidade."
+  - "Tau: Temperature Hyperparameter"
+  - Formulação Central
+  - "Dois Encoders (Ou Um Com Stop-Gradient):"
+  - "Predictor:"
+  - "Objetivo:"
+  - "Prevenção De Colapso: Target Encoder Usa Momentum (Ema)"
+  - "I-Jepa: Pseudocódigo Pytorch Completo"
+  - "V-Jepa: Extensão Temporal"
+  - Prever Representação De Frames Futuros Em Posições Mascaradas
+  - Sem Nenhum Label.
+  - Hierarquia De Encoders
+  - "Cada Nível Tem Seu Próprio Jepa:"
+  - "Resultado: World Model Hierárquico Multi-Escala"
+  - Seção Ami — Advanced Machinery Of Intelligence
+  - Os 6 Módulos Do Ami
+  - "Simulação Interna: \"O Que Acontece Se Eu Fizer X?\""
+  - Escolhe Ação Que Minimiza O Custo
+  - "Dois Tipos De Custo:"
+  - "Task_Cost: Objetivo Configurável Por Tarefa/Humano"
+  - Ami Vs Llms
+  - Seção Ebm — Energy-Based Models
+  - "Ebms Capturam Isso Naturalmente — São Sobre Compatibilidade, Não Probabilidade.\""
+  - Simclr Simplificado
+  - Lenet-5 Original Em Pytorch Moderno
+  - Papers Fundamentais (Lecun)
+  - Jepa Papers
+  - Ssl Relevantes
+  - Energy-Based Models
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # YANN LECUN — MÓDULO TÉCNICO v3.0

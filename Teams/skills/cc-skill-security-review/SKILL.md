@@ -4,6 +4,15 @@ description: "This skill ensures all code follows security best practices and id
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: This skill ensures all code follows security best practices and identifies potential vulnerabilities.
+detail_sections:
+  - When to Use
+  - Security Checklist
+  - Security Testing
+  - Pre-Deployment Security Checklist
+  - Resources
 ---
 
 # Security Review Skill

@@ -4,6 +4,14 @@ description: "Combine vector and keyword search for improved retrieval. Use when
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: Combine vector and keyword search for improved retrieval.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Hybrid Search Implementation

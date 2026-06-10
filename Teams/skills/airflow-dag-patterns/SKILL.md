@@ -4,6 +4,15 @@ description: "Build production Apache Airflow DAGs with best practices for opera
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: xs
+summary: "Build production Apache Airflow DAGs with best practices for operators, sensors, testing, and deployment."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Apache Airflow DAG Patterns

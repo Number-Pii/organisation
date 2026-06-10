@@ -4,6 +4,17 @@ description: "Automate Notion tasks via Rube MCP (Composio): pages, databases, b
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Notion Automation via Rube MCP

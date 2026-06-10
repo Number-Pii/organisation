@@ -6,8 +6,31 @@ risk: safe
 source: community
 date_added: "2026-03-18"
 author: suhaibjanjua
-tags: [hono, edge, cloudflare-workers, bun, deno, api, typescript, web-standards]
-tools: [claude, cursor, gemini]
+tags:
+  - hono
+  - edge
+  - cloudflare-workers
+  - bun
+  - deno
+  - api
+  - typescript
+  - web-standards
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Backend & APIs"
+size_class: m
+summary: "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Hono Web Framework

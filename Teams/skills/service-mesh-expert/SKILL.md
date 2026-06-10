@@ -4,6 +4,16 @@ description: "Expert service mesh architect specializing in Istio, Linkerd, and 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Capabilities
+  - Use this skill when
+  - Workflow
+  - Best Practices
 ---
 
 # Service Mesh Expert

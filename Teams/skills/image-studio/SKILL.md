@@ -1,21 +1,54 @@
 ---
 name: image-studio
-description: "Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fotos humanizadas/influencer) e stability-ai (arte/ ilustracao/edicao). Detecta o tipo de imagem solicitada e escolhe o modelo ideal automaticamente."
+description: Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fotos humanizadas/influencer) e stability-ai (arte/ ilustracao/edicao). Detecta o tipo de imagem solicitada e escolhe o modelo ideal automaticamente.
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- image-generation
-- routing
-- ai-art
-- photography
+  - image-generation
+  - routing
+  - ai-art
+  - photography
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Creative & Design"
+size_class: m
+summary: Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fotos humanizadas/influencer) e stability-ai (arte/…
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Matriz De Decisao
+  - Ai-Studio-Image (Gemini 2.0 Flash — Free)
+  - Stability-Ai (Sd3.5 Large — Community)
+  - 3.1 Geracao Simples
+  - 3.2 Geracao Com Ai-Studio-Image
+  - Template Especifico
+  - Prompt Customizado
+  - Modo Humanizado Maximo (5 Camadas)
+  - 3.3 Geracao Com Stability-Ai
+  - Arte/Ilustracao
+  - Foto Alta Qualidade
+  - Editar Imagem Existente
+  - Remover Fundo
+  - Upscale
+  - Para Ai-Studio-Image (Fotos Realistas)
+  - Para Stability-Ai (Arte/Ilustracao)
+  - 5. Formato De Resposta
+  - Post Instagram
+  - Thumbnail Youtube
+  - Foto De Perfil
+  - 7. Fallback E Redundancia
+  - 8. Localizacao Das Skills
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # IMAGE-STUDIO: Gerador de Imagens Inteligente

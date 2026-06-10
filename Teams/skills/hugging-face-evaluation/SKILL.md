@@ -1,8 +1,22 @@
 ---
 name: hugging-face-evaluation
-description: Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format.
+description: "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: l
+summary: Add and manage evaluation results in Hugging Face model cards.
+detail_sections:
+  - Integration with HF Ecosystem
+  - Core Dependencies
+  - Inference Provider Evaluation
+  - vLLM Custom Model Evaluation (GPU required)
+  - "⚠️ CRITICAL: Check for Existing PRs Before Creating New Ones"
+  - 1. Inspect and Extract Evaluation Tables from README
+  - 2. Import from Artificial Analysis
+  - 3. Model-Index Management
+  - 4. Run Evaluations on HF Jobs (Inference Providers)
+  - 5. Run Custom Model Evaluations with vLLM (NEW)
 ---
 
 # Overview

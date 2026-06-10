@@ -4,6 +4,24 @@ description: "Display project status, active tracks, and next actions"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Display project status, active tracks, and next actions"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Pre-flight Checks
+  - Data Collection
+  - Output Format
+  - "Phase 1: {Phase Name} [COMPLETE]"
+  - "Phase 2: {Phase Name} [IN PROGRESS]"
+  - "Phase 3: {Phase Name} [PENDING]"
+  - Status Markers Legend
+  - Error States
+  - Calculation Logic
+  - Quick Mode
+  - JSON Output
 ---
 
 # Conductor Status

@@ -6,8 +6,32 @@ risk: none
 source: community
 date_added: "2026-03-17"
 author: suhaibjanjua
-tags: [typescript, trpc, api, fullstack, nextjs, react, type-safety]
-tools: [claude, cursor, gemini]
+tags:
+  - typescript
+  - trpc
+  - api
+  - fullstack
+  - nextjs
+  - react
+  - type-safety
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Backend & APIs"
+size_class: m
+summary: "Build end-to-end type-safe APIs with tRPC — routers, procedures, middleware, subscriptions, and Next.js/React integration patterns."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Core Concepts
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Common Pitfalls
+  - Related Skills
+  - Additional Resources
 ---
 
 # tRPC Full-Stack

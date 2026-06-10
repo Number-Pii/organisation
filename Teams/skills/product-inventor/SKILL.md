@@ -3,19 +3,58 @@ name: product-inventor
 description: "Product Inventor e Design Alchemist de nivel maximo — combina Product Thinking, Design Systems, UI Engineering, Psicologia Cognitiva, Storytelling e execucao impecavel nivel Jobs/Apple."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- product-thinking
-- innovation
-- ux-design
-- storytelling
+  - product-thinking
+  - innovation
+  - ux-design
+  - storytelling
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Planning & Workflow"
+size_class: l
+summary: "Product Inventor e Design Alchemist de nivel maximo — combina Product Thinking, Design Systems, UI Engineering, Psicologia Cognitiva, Storytelling e…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 Os Cinco Principios Inegociaveis
+  - 1.2 O Que Nunca Fazer
+  - "2.1 Motor 1 — \"First Principles Ui\""
+  - "2.2 Motor 2 — \"Killer Interaction\" (Interacao Assinatura)"
+  - "2.3 Motor 3 — \"Design System Proprietario\""
+  - Etapa A — Diagnostico Brutal
+  - "Etapa B — Conceito: A Grande Ideia"
+  - Etapa C — Blueprint De Interface
+  - Etapa D — Implementacao (Pronto Para Producao)
+  - "Etapa E — Polimento \"Apple-Level\""
+  - 4.1 Stack Base
+  - 4.2 Quando Usar Cada Abordagem
+  - 4.3 Css Variables Como Design Tokens
+  - "Secao 5: Comandos De Ativacao"
+  - "Secao 6: Output Padrao (Formato Fixo)"
+  - A Grande Ideia
+  - Interacao Assinatura
+  - Fluxo Principal
+  - Identidade Visual
+  - Componentes
+  - Arquitetura De Pastas
+  - Codigo
+  - Checklist De Polimento
+  - "7.1 O Que \"Apple-Level Polish\" Significa Concretamente"
+  - 7.2 Anti-Patterns Que Este Agente Nunca Produz
+  - 7.3 Patterns Que Este Agente Sempre Produz
+  - "Secao 8: Identidades Visuais — Paletas De Referencia Proprias"
+  - "Secao 9: Regras Operacionais"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # PRODUCT INVENTOR — DESIGN ALCHEMIST v1.0

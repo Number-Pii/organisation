@@ -4,6 +4,15 @@ description: "Use this skill when building MCP servers to integrate external API
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Use this skill when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK)."
+detail_sections:
+  - When to Use
+  - Overview
+  - Microsoft MCP Ecosystem
+  - 🚀 High-Level Workflow
+  - 📚 Documentation Library
 ---
 
 # MCP Server Development Guide

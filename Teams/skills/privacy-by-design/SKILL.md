@@ -4,6 +4,22 @@ description: "Use when building apps that collect user data. Ensures privacy pro
 risk: safe
 source: community
 date_added: "2026-02-23"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Use when building apps that collect user data.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Legal Frameworks
+  - Core Principles
+  - User Rights (GDPR)
+  - "Deep Dive: Why It Matters"
+  - Code Examples
+  - Common Pitfalls
+  - Third-Party Audit
+  - Implementation Checklist
+  - Best Practices
+  - When to Use
 ---
 
 # Privacy by Design

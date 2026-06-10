@@ -1,9 +1,29 @@
 ---
 name: azure-servicebus-py
-description: Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and enterprise messaging patterns.
+description: "Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and enterprise messaging patterns."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Service Bus SDK for Python messaging.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Types
+  - Send Messages (Async)
+  - Receive Messages (Async)
+  - Receive Modes
+  - Message Settlement
+  - Topics and Subscriptions
+  - Sessions (FIFO)
+  - Scheduled Messages
+  - Dead-Letter Queue
+  - Sync Client (for simple scripts)
+  - Best Practices
+  - Reference Files
+  - When to Use
 ---
 
 # Azure Service Bus SDK for Python

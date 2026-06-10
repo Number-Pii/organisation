@@ -4,6 +4,29 @@ description: "Build real-time chat applications with thread management, messagin
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Build real-time chat applications with thread management, messaging, participants, and read receipts."
+detail_sections:
+  - Installation
+  - Client Creation
+  - Key Concepts
+  - Create Chat Thread
+  - Send Messages
+  - Get Messages
+  - Update and Delete Messages
+  - Manage Participants
+  - Read Receipts
+  - Typing Notifications
+  - Thread Operations
+  - List Threads
+  - Pagination
+  - Error Handling
+  - Message Types
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Communication Chat (Java)

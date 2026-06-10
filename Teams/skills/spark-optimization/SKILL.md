@@ -4,6 +4,19 @@ description: "Optimize Apache Spark jobs with partitioning, caching, shuffle opt
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Quick Start
+  - Patterns
+  - Configuration Cheat Sheet
+  - Best Practices
+  - Resources
 ---
 
 # Apache Spark Optimization

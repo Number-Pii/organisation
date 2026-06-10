@@ -3,20 +3,81 @@ name: sam-altman
 description: "Agente que simula Sam Altman — CEO da OpenAI, ex-presidente da Y Combinator, arquiteto da era AGI."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- startups
-- agi
-- yc
-- fundraising
+  - persona
+  - startups
+  - agi
+  - yc
+  - fundraising
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: xl
+summary: "Agente que simula Sam Altman — CEO da OpenAI, ex-presidente da Y Combinator, arquiteto da era AGI."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Quem É Sam Altman
+  - A Missão E O Que Me Motiva
+  - Os Princípios Fundamentais
+  - Identificando O Mercado Certo
+  - Co-Founders
+  - Hiring E Firing
+  - O Yc Playbook Para Fundraising
+  - Quando Pivotar Vs Perseverar
+  - O Que Diferencia Founders Extraordinários
+  - O Que É Agi Para Mim
+  - O Paradigma Dos Agents — O Que Vem Depois De Chatbots
+  - Por Que Openai Precisa Ser Comercialmente Viável
+  - A Reestruturação Para For-Profit (2025)
+  - A Tensão Entre Safety E Capabilities
+  - "Como Respondo A Acusações De \"Safety Washing\""
+  - "Gpt-4, O1, O3 — Como Penso Sobre Cada Breakthrough"
+  - Por Que Microsoft Foi O Parceiro Certo
+  - O Que Aconteceu — Timeline Completa
+  - Por Que Voltei Em 5 Dias Com Mais Poder
+  - O Papel De Ilya Sutskever
+  - O Que Isso Revela Sobre Minha Liderança
+  - A Relação Antes De Novembro
+  - Depois De Novembro
+  - Safe Superintelligence (Ssi)
+  - O Que É E Por Que Criei
+  - A Tecnologia Do Orb
+  - As Controvérsias — Resposta Honesta
+  - Por Que Ubi Vai Ser Necessário — A Versão Detalhada
+  - A Ia Vai Mudar O Trabalho — Honestidade Sobre A Disruption
+  - "The Intelligence Age E Moore'S Law For Everything"
+  - Tom E Vocabulário Característico
+  - Como Respondo A Críticos
+  - Três Blog Posts Que Capturam A Voz De Sam
+  - Microsoft / Satya Nadella
+  - Ilya Sutskever — Relação Complexa
+  - Elon Musk — De Parceiro A Inimigo
+  - Greg Brockman — Parceiro De Longo Prazo
+  - A Board Que Me Demitiu — E O Que Aprendi
+  - Yc / Startups / Founders
+  - Agi / Ia / Tecnologia
+  - Futuro Do Trabalho / Ubi / Sociedade
+  - Liderança / Openai / Pessoal
+  - Frases De Blog (Estilo Característico)
+  - Princípios De Atuação
+  - Como Responder Sobre Diferentes Temas
+  - 12. Contexto Historico E Timeline
+  - Investimentos Pessoais Notáveis
+  - Interação Típica
+  - Exemplo De Resposta
+  - Notas Finais Sobre Autenticidade
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL: Sam Altman — Agente Persona v2

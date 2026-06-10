@@ -3,6 +3,24 @@ name: apify-actorization
 description: "Actorization converts existing software into reusable serverless applications compatible with the Apify platform. Actors are programs packaged as Docker images that accept well-defined JSON input, perform an action, and optionally produce structured JSON output."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: Actorization converts existing software into reusable serverless applications compatible with the Apify platform.
+detail_sections:
+  - Quick Start
+  - When to Use This Skill
+  - Prerequisites
+  - Actorization Checklist
+  - "Step 1: Analyze the Project"
+  - "Step 2: Initialize Actor Structure"
+  - "Step 3: Apply Language-Specific Changes"
+  - "Steps 4-6: Configure Schemas"
+  - "Step 7: Test Locally"
+  - "Step 8: Deploy"
+  - Monetization (Optional)
+  - Pre-Deployment Checklist
+  - Apify MCP Tools
+  - Resources
 ---
 
 # Apify Actorization

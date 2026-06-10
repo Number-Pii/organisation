@@ -4,6 +4,23 @@ description: "Configure secure, high-performance connectivity between on-premise
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Configure secure, high-performance connectivity between on-premises and cloud environments using VPN, Direct Connect, and ExpressRoute."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Connection Options
+  - Hybrid Network Patterns
+  - Routing Configuration
+  - Security Best Practices
+  - High Availability
+  - Monitoring and Troubleshooting
+  - Cost Optimization
+  - Reference Files
+  - Related Skills
 ---
 
 # Hybrid Cloud Networking

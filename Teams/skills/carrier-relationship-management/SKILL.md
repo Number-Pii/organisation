@@ -1,9 +1,22 @@
 ---
 name: carrier-relationship-management
-description: Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining strategic carrier relationships.
+description: "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining strategic carrier relationships."
 risk: safe
-source: https://github.com/ai-evos/agent-skills
-date_added: '2026-02-27'
+source: "https://github.com/ai-evos/agent-skills"
+date_added: "2026-02-27"
+domain: Mobile Development
+size_class: s
+summary: "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining…"
+detail_sections:
+  - When to Use
+  - Role and Context
+  - Core Knowledge
+  - Decision Frameworks
+  - Key Edge Cases
+  - Communication Patterns
+  - Escalation Protocols
+  - Performance Indicators
+  - Additional Resources
 ---
 
 ## When to Use

@@ -1,12 +1,20 @@
 ---
 name: robius-state-management
-description: |
-  CRITICAL: Use for Robius state management patterns. Triggers on:
-  AppState, persistence, theme switch, 状态管理,
-  Scope::with_data, save state, load state, serde,
-  状态持久化, 主题切换
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Best practices for state management and persistence in Makepad applications based on Robrix and Moly codebases."
+detail_sections:
+  - Triggers
+  - Production Patterns
+  - AppState Structure
+  - State Propagation via Scope
+  - Persistence Layer
+  - Thread-Local State (UI-Only)
+  - Best Practices
+  - Reference Files
 ---
 
 # Robius State Management Skill

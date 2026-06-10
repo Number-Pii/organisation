@@ -4,6 +4,16 @@ description: "You are a Rust project architecture expert specializing in scaffol
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: "Rust project architecture expert specializing in scaffolding production-ready Rust applications."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # Rust Project Scaffolding

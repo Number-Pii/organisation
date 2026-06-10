@@ -1,9 +1,22 @@
 ---
 name: seo-fundamentals
-description: Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages.
+description: "Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages."
+detail_sections:
+  - 1. E-E-A-T (Quality Evaluation Framework)
+  - 2. Core Web Vitals (Page Experience Signals)
+  - 3. Technical SEO Principles
+  - 4. Content SEO Principles
+  - 5. Structured Data (Schema)
+  - 6. AI-Assisted Content Principles
+  - 7. Relative Importance of SEO Factors
+  - "8. Measurement & Evaluation"
+  - When to Use
 ---
 
 ---

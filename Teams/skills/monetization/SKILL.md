@@ -3,20 +3,53 @@ name: monetization
 description: "Estrategia e implementacao de monetizacao para produtos digitais - Stripe, subscriptions, pricing experiments, freemium, upgrade flows, churn prevention, revenue optimization e modelos de negocio SaaS."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- monetization
-- stripe
-- saas
-- pricing
-- subscriptions
+  - monetization
+  - stripe
+  - saas
+  - pricing
+  - subscriptions
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Estrategia e implementacao de monetizacao para produtos digitais - Stripe, subscriptions, pricing experiments, freemium, upgrade flows, churn…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - A Regra De Ouro
+  - Erros Classicos
+  - Setup Inicial
+  - Ou
+  - Config.Py
+  - Criar Customer E Subscription
+  - Checkout Session (Recomendado Para Conversao)
+  - Customer Portal (Self-Service)
+  - Webhook - Processar Eventos
+  - Verificar Status Da Subscription
+  - Framework De Pricing Para Saas
+  - Psicologia De Pricing
+  - Estrutura De Planos (3 E O Numero Certo)
+  - Sinais De Churn Iminente
+  - Sequencia Anti-Churn
+  - Exit Survey (Obrigatorio)
+  - "Falta Feature -> Roadmap + Notificacao Quando Lancar"
+  - Calculos Essenciais
+  - Benchmarks Saas B2C Brasil
+  - Dashboard De Revenue (Metricas Diarias)
+  - Automacao De Revenue Com Stripe
+  - 7. Comandos Rapidos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # MONETIZATION - Do Produto ao Revenue

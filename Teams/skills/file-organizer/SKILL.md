@@ -6,7 +6,7 @@ source: community
 date_added: "2026-02-27"
 domain: "Documentation & Office"
 size_class: m
-summary: 6.
+summary: "Organise messy folders: dedupe, categorise, and restructure files into a tidy hierarchy."
 detail_sections:
   - When to Use This Skill
   - What This Skill Does

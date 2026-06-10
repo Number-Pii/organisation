@@ -6,6 +6,17 @@ risk: safe
 source: community
 tags: "[twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks]"
 date_added: "2026-02-28"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, monitoring, webhooks, 19…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Setup
+  - Capabilities
+  - Examples
+  - API Reference
+  - Repository
 ---
 
 # X (Twitter) Scraper — Xquik

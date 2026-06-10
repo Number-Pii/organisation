@@ -4,6 +4,15 @@ description: "Automate changelog generation from commits, PRs, and releases foll
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: xs
+summary: "Automate changelog generation from commits, PRs, and releases following Keep a Changelog format."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Changelog Automation

@@ -1,12 +1,24 @@
 ---
 name: makepad-animation
-description: |
-  CRITICAL: Use for Makepad animation system. Triggers on:
-  makepad animation, makepad animator, makepad hover, makepad state,
-  makepad transition, "from: { all: Forward", makepad pressed,
-  makepad 动画, makepad 状态, makepad 过渡, makepad 悬停效果
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Animator patterns and transitions in Makepad UI applications."
+detail_sections:
+  - Documentation
+  - Advanced Patterns
+  - "IMPORTANT: Documentation Completeness Check"
+  - Key Patterns
+  - Animator Structure
+  - Timeline Types (Play Enum)
+  - Easing Functions (Ease Enum)
+  - Common States
+  - Animatable Properties
+  - When Writing Code
+  - Rust API (AnimatorImpl Trait)
+  - When Answering Questions
 ---
 
 # Makepad Animation Skill

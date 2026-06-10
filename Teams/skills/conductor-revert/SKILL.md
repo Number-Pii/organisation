@@ -4,6 +4,24 @@ description: "Git-aware undo by logical work unit (track, phase, or task)"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Git-aware undo by logical work unit (track, phase, or task)"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Pre-flight Checks
+  - Target Selection
+  - Commit Discovery
+  - Execution Plan Display
+  - Revert Execution
+  - Plan.md Updates
+  - Track Status Updates
+  - Verification
+  - Safety Rules
+  - Edge Cases
+  - Undo the Revert
 ---
 
 # Revert Track

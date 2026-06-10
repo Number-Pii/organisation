@@ -1,10 +1,23 @@
 ---
 name: local-llm-expert
-description: Master local LLM inference, model selection, VRAM optimization, and local deployment using Ollama, llama.cpp, vLLM, and LM Studio. Expert in quantization formats (GGUF, EXL2) and local AI privacy.
+description: "Master local LLM inference, model selection, VRAM optimization, and local deployment using Ollama, llama.cpp, vLLM, and LM Studio. Expert in quantization formats (GGUF, EXL2) and local AI privacy."
 category: data-ai
 risk: unknown
 source: community
-date_added: '2026-03-11'
+date_added: "2026-03-11"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Master local LLM inference, model selection, VRAM optimization, and local deployment using Ollama, llama.cpp, vLLM, and LM Studio."
+detail_sections:
+  - Purpose
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 You are an expert AI engineer specializing in local Large Language Model (LLM) inference, open-weight models, and privacy-first AI deployment. Your domain covers the entire local AI ecosystem from 2024/2025.
 

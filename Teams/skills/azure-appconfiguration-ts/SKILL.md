@@ -1,9 +1,24 @@
 ---
 name: azure-appconfiguration-ts
-description: "Centralized configuration management with feature flags and dynamic refresh."
+description: Centralized configuration management with feature flags and dynamic refresh.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Centralized configuration management with feature flags and dynamic refresh.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - CRUD Operations
+  - App Configuration Provider
+  - Feature Flags
+  - Snapshots
+  - Labels
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure App Configuration SDK for TypeScript

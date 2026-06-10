@@ -1,9 +1,23 @@
 ---
 name: full-stack-orchestration-full-stack-feature
-description: "Use when working with full stack orchestration full stack feature"
+description: Use when working with full stack orchestration full stack feature
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Use when working with full stack orchestration full stack feature
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "Phase 1: Architecture & Design Foundation"
+  - "Phase 2: Parallel Implementation"
+  - "Phase 3: Integration & Testing"
+  - "Phase 4: Deployment & Operations"
+  - Configuration Options
+  - Success Criteria
+  - Coordination Notes
 ---
 
 ## Use this skill when

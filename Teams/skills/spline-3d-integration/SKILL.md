@@ -4,6 +4,17 @@ description: "Use when adding interactive 3D scenes from Spline.design to web pr
 risk: safe
 source: community
 date_added: "2026-03-07"
+domain: "Creative & Design"
+size_class: s
+summary: "Use when adding interactive 3D scenes from Spline.design to web projects, including React embedding and runtime control API."
+detail_sections:
+  - Quick Reference
+  - Working Examples
+  - "What Is Spline?"
+  - STEP 1 — Identify the Stack
+  - STEP 2 — Get the Scene URL
+  - STEP 3 — Read the Relevant Guide
+  - Strict Rules
 ---
 
 # Spline 3D Integration Skill

@@ -3,7 +3,23 @@ name: azure-eventhub-dotnet
 description: Azure Event Hubs SDK for .NET.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Event Hubs SDK for .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Types
+  - Core Workflow
+  - EventPosition Options
+  - ASP.NET Core Integration
+  - Best Practices
+  - Error Handling
+  - Checkpointing Strategies
+  - Related SDKs
+  - When to Use
 ---
 
 # Azure.Messaging.EventHubs (.NET)

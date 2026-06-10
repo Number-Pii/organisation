@@ -4,6 +4,14 @@ description: "MANDATORY: Run appropriate validation tools after EVERY code chang
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: xs
+summary: "MANDATORY: Run appropriate validation tools after EVERY code change."
+detail_sections:
+  - The Quality Loop
+  - Error Handling
+  - Scripts
+  - When to Use
 ---
 
 # Lint and Validate Skill

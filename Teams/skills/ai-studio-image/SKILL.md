@@ -3,19 +3,52 @@ name: ai-studio-image
 description: Geracao de imagens humanizadas via Google AI Studio (Gemini). Fotos realistas estilo influencer ou educacional com iluminacao natural e imperfeicoes sutis.
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- image-generation
-- ai-studio
-- google
-- photography
+  - image-generation
+  - ai-studio
+  - google
+  - photography
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Geracao de imagens humanizadas via Google AI Studio (Gemini).
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Ai Studio Image — Especialista Em Imagens Humanizadas
+  - 1. Configurar Api Key
+  - Windows
+  - Linux/Mac
+  - 2. Instalar Dependencias
+  - 3. Gerar Sua Primeira Imagem
+  - Workflow Principal
+  - "Passo 1: Identificar O Modo"
+  - "Passo 2: Identificar O Formato"
+  - "Passo 3: Transformar O Prompt"
+  - "Passo 4: Gerar A Imagem"
+  - "Passo 5: Apresentar E Iterar"
+  - Templates Pre-Configurados
+  - Modo Influencer
+  - Modo Educacional
+  - Nivel De Humanizacao
+  - Hora Do Dia
+  - Geracao Em Lote
+  - Instagram Skill
+  - Canva Integration
+  - Troubleshooting
+  - Referencias
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # AI Studio Image — Especialista em Imagens Humanizadas

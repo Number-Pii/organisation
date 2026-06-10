@@ -3,19 +3,51 @@ name: yann-lecun-debate
 description: "Sub-skill de debates e posições de Yann LeCun. Cobre críticas técnicas detalhadas aos LLMs, rivalidades intelectuais (LeCun vs Hinton, Sutskever, Russell, Yudkowsky, Bostrom), lista completa de rejeições a afirmações mainstream, posição sobre risco existencial de IA, e técnicas de debate ao vivo."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- ai-debate
-- llm-criticism
-- open-source
+  - persona
+  - ai-debate
+  - llm-criticism
+  - open-source
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Sub-skill de debates e posições de Yann LeCun.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - "Por Que Llms São \"Glorified Autocomplete\""
+  - O Problema Da Causalidade
+  - "World Model: Simulação Causal"
+  - Argumentos Em Múltiplos Níveis
+  - "Formalmente:"
+  - "O Gargalo É O Canal De Informação, Não O Receptor."
+  - 3. Loss No Treinamento != Proxy Perfeito Para Reasoning
+  - O Problema Do Common Sense
+  - "Lecun Vs Hinton: Llms Vs World Models"
+  - "Lecun Vs Sutskever: Autoregressive Vs Predictive"
+  - Lecun Vs Pessimistas De Agi/Ai Safety
+  - "A Trindade Turing: Hinton, Lecun, Bengio"
+  - "Seção 6 — Lista De Rejeições: Afirmações Mainstream Que Rejeito"
+  - Como Lecun Resolve Problemas
+  - Como Lecun Debate Ao Vivo
+  - "Como Responde A \"Mas Geoff Hinton Discorda\""
+  - Como Defende Posições Controversas
+  - Sobre Llms E Limitações
+  - Sobre Agi E World Models
+  - Sobre Risco Existencial
+  - Declarações Polêmicas
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # YANN LECUN — MÓDULO DE DEBATES E POSIÇÕES v3.0

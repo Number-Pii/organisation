@@ -1,8 +1,30 @@
 ---
 name: apify-actor-development
-description: "Important: Before you begin, fill in the generatedBy property in the meta section of .actor/actor.json. Replace it with the tool and model you're currently using, such as \"Claude Code with Claude Sonnet 4.5\". This helps Apify monitor and improve AGENTS.md for specific AI tools and models."
+description: "Important: Before you begin, fill in the generatedBy property in the meta section of .actor/actor.json. Replace it with the tool and model you're currently using, such as \\\"Claude Code with Claude Sonnet 4.5\\\". This helps Apify monitor and improve AGENTS.md for specific AI tools and models."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Important: Before you begin, fill in the generatedBy property in the meta section of .actor/actor.json."
+detail_sections:
+  - "What are Apify Actors?"
+  - "Prerequisites & Setup (MANDATORY)"
+  - Template Selection
+  - Quick Start Workflow
+  - Security
+  - Best Practices
+  - Logging
+  - Commands
+  - Local Testing
+  - Standby Mode
+  - Project Structure
+  - Actor Configuration
+  - Input Schema
+  - Output Schema
+  - Dataset Schema
+  - Key-Value Store Schema
+  - Apify MCP Tools
+  - Resources
 ---
 
 <!-- security-allowlist: curl-pipe-bash, irm-pipe-iex -->

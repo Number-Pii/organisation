@@ -1,9 +1,22 @@
 ---
 name: istio-traffic-management
-description: "Comprehensive guide to Istio traffic management for production service mesh deployments."
+description: Comprehensive guide to Istio traffic management for production service mesh deployments.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Comprehensive guide to Istio traffic management for production service mesh deployments.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Load Balancing Strategies
+  - Best Practices
+  - Debugging Commands
+  - Resources
 ---
 
 # Istio Traffic Management

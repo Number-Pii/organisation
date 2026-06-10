@@ -4,6 +4,20 @@ description: "Internationalization and localization patterns. Detecting hardcode
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Internationalization and localization patterns.
+detail_sections:
+  - 1. Core Concepts
+  - 2. When to Use i18n
+  - 3. Implementation Patterns
+  - 4. File Structure
+  - 5. Best Practices
+  - 6. Common Issues
+  - 7. RTL Support
+  - 8. Checklist
+  - Script
+  - When to Use
 ---
 
 # i18n & Localization

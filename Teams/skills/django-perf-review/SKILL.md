@@ -1,10 +1,25 @@
 ---
 name: django-perf-review
-description: Django performance code review. Use when asked to "review Django performance", "find N+1 queries", "optimize Django", "check queryset performance", "database performance", "Django ORM issues", or audit Django code for performance problems.
-allowed-tools: Read, Grep, Glob, Bash, Task
+description: "Django performance code review. Use when asked to \"review Django performance\", \"find N+1 queries\", \"optimize Django\", \"check queryset performance\", \"database performance\", \"Django ORM issues\", or audit Django code for performance problems."
+allowed-tools: "Read, Grep, Glob, Bash, Task"
 license: LICENSE
 risk: unknown
 source: community
+domain: "Backend & APIs"
+size_class: m
+summary: Django performance code review.
+detail_sections:
+  - Review Approach
+  - Impact Categories
+  - "Priority 1: N+1 Queries (CRITICAL)"
+  - "Priority 2: Unbounded Querysets (CRITICAL)"
+  - "Priority 3: Missing Indexes (HIGH)"
+  - "Priority 4: Write Loops (HIGH)"
+  - "Priority 5: Inefficient Patterns (LOW)"
+  - Validation Requirements
+  - Output Format
+  - "Django Performance Review: [File/Component Name]"
+  - What NOT to Report
 ---
 
 # Django Performance Review

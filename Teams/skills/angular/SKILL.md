@@ -1,9 +1,32 @@
 ---
 name: angular
-description: Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zoneless applications, SSR/Hydration, and reactive patterns.
+description: "Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zoneless applications, SSR/Hydration, and reactive patterns."
 risk: safe
 source: self
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zoneless applications, SSR/Hydration, and reactive patterns."
+detail_sections:
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - Instructions
+  - Safety
+  - Angular Version Timeline
+  - "1. Signals: The New Reactive Primitive"
+  - 2. Standalone Components
+  - 3. Zoneless Angular
+  - "4. Server-Side Rendering & Hydration"
+  - 5. Modern Routing Patterns
+  - 6. Dependency Injection Patterns
+  - "7. Component Composition & Reusability"
+  - 8. State Management Patterns
+  - 9. Forms with Signals (Coming in v22+)
+  - 10. Performance Optimization
+  - 11. Testing Modern Angular
+  - Best Practices Summary
+  - Resources
+  - Common Troubleshooting
 ---
 
 # Angular Expert

@@ -1,12 +1,20 @@
 ---
 name: robius-event-action
-description: |
-  CRITICAL: Use for Robius event and action patterns. Triggers on:
-  custom action, MatchEvent, post_action, cx.widget_action,
-  handle_actions, DefaultNone, widget action, event handling,
-  事件处理, 自定义动作
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Best practices for event handling and action patterns in Makepad applications based on Robrix and Moly codebases."
+detail_sections:
+  - Triggers
+  - Custom Action Pattern
+  - Centralized Action Handling in App
+  - Action Types
+  - Event Handling Patterns
+  - Action Chaining Pattern
+  - Best Practices
+  - Reference Files
 ---
 
 # Robius Event and Action Patterns Skill

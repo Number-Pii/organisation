@@ -4,6 +4,14 @@ description: "Master Godot 4 GDScript patterns including signals, scenes, state 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Godot GDScript Patterns

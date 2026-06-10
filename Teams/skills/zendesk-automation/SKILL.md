@@ -4,6 +4,17 @@ description: "Automate Zendesk tasks via Rube MCP (Composio): tickets, users, or
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Zendesk Automation via Rube MCP

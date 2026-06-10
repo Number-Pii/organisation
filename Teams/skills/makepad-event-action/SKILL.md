@@ -1,12 +1,22 @@
 ---
 name: makepad-event-action
-description: |
-  CRITICAL: Use for Makepad event and action handling. Triggers on:
-  makepad event, makepad action, Event enum, ActionTrait, handle_event,
-  MouseDown, KeyDown, TouchUpdate, Hit, FingerDown, post_action,
-  makepad 事件, makepad action, 事件处理
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Event handling and action dispatch patterns in Makepad."
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - Event Enum (Key Variants)
+  - Handling Events in Widgets
+  - Hit Enum
+  - Action System
+  - Widget Action Helpers
+  - Event Flow
+  - Timer and NextFrame
+  - When Answering Questions
 ---
 
 # Makepad Event/Action Skill

@@ -4,6 +4,23 @@ description: "High-level SDK for Azure AI Foundry projects with agents, connecti
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "High-level SDK for Azure AI Foundry projects with agents, connections, deployments, and evaluations."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Operation Groups
+  - Getting OpenAI Client
+  - Agents
+  - Connections
+  - Deployments
+  - Datasets
+  - Indexes
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure AI Projects SDK for TypeScript

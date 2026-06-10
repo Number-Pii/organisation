@@ -13,6 +13,27 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.3]: 2026-06-10
+
+### Changed
+- **Skills curation, final slice: frontmatter coverage complete.** Extended
+  frontmatter backfilled for the remaining 1,094 skills; coverage is now
+  1,290/1,294 (the four exceptions are container directories without a
+  SKILL.md: `docs/`, `libreoffice/`, `linear/`, `security/`, plus `SPDD`,
+  which ships staged files instead).
+- **Summary quality pass over the whole library:** 55 persona-opener summaries
+  rewritten mechanically; 33 degenerate summaries (YAML block-scalar markers
+  captured as text) rederived from their description blocks, 22 of those
+  finished by hand.
+- **57 misclassifications corrected** after a prefix-family consistency scan,
+  in both `CATEGORIES.md` and skill frontmatter: the Makepad family
+  consolidated under Frontend & UI, the n8n family under SaaS Integrations,
+  the fp-* references under Programming Languages, plus assorted single fixes
+  (judicial-auction skills out of Mobile, `create-branch` out of Creative &
+  Design, and similar).
+- Catalogue and frontmatter now agree on the domain of every skill in the
+  library: zero mismatches.
+
 ## [3.13.2]: 2026-06-10
 
 ### Changed

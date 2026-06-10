@@ -10,7 +10,7 @@ OVERVIEW
   Role files scanned                        : 53
   Unique @skill refs in Agent Skills        : 164
   Broken @skill refs (no matching folder)   : 0
-  Skills with extended frontmatter          : 196/1294 (15%)
+  Skills with extended frontmatter          : 1290/1294 (100%)
 
 CORE + TECHNICAL SKILL BULLET COVERAGE
   Total Core Skill bullets                  : 336
@@ -26,36 +26,204 @@ UNLINKED SKILLS (not referenced in any role)
   (Many are highly specialised: Azure SDKs, health tools, etc.)
 
 EXTENDED FRONTMATTER ISSUES
+  ~ 10-andruia-skill-smith
+      • size_class 'xs' doesn't match line count 53 (expected 's')
   ~ accessibility-compliance-accessibility-audit
       • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ advanced-evaluation
+      • summary is 156 chars (>150 limit)
+  ~ advogado-criminal
+      • size_class 'l' doesn't match line count 1038 (expected 'xl')
+  ~ agent-manager-skill
+      • size_class 'xs' doesn't match line count 50 (expected 's')
+  ~ agents-md
+      • summary is 156 chars (>150 limit)
+  ~ airflow-dag-patterns
+      • size_class 'xs' doesn't match line count 53 (expected 's')
+  ~ anti-reversing-techniques
+      • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ antigravity-design-expert
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ api-documentation-generator
+      • size_class 'm' doesn't match line count 504 (expected 'l')
+  ~ api-testing-observability-api-mock
+      • size_class 'xs' doesn't match line count 60 (expected 's')
+  ~ apify-actorization
+      • size_class 's' doesn't match line count 203 (expected 'm')
   ~ architecture-patterns
       • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ async-python-patterns
+      • size_class 'xs' doesn't match line count 50 (expected 's')
+  ~ attack-tree-construction
+      • size_class 'xs' doesn't match line count 50 (expected 's')
   ~ auth-implementation-patterns
       • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ avoid-ai-writing
+      • size_class 'xs' doesn't match line count 52 (expected 's')
   ~ aws-cost-optimizer
       • size_class 's' doesn't match line count 207 (expected 'm')
+  ~ azure-eventgrid-dotnet
+      • size_class 'm' doesn't match line count 513 (expected 'l')
+  ~ azure-functions
+      • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ azure-identity-py
+      • size_class 's' doesn't match line count 208 (expected 'm')
+  ~ azure-maps-search-dotnet
+      • size_class 'm' doesn't match line count 513 (expected 'l')
+  ~ azure-mgmt-applicationinsights-dotnet
+      • size_class 'm' doesn't match line count 508 (expected 'l')
+  ~ azure-storage-blob-ts
+      • size_class 'm' doesn't match line count 504 (expected 'l')
+  ~ azure-storage-file-share-ts
+      • size_class 'm' doesn't match line count 517 (expected 'l')
+  ~ backtesting-frameworks
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ bash-defensive-patterns
+      • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ bash-scripting
+      • size_class 's' doesn't match line count 206 (expected 'm')
+  ~ bdi-mental-states
+      • summary is 153 chars (>150 limit)
+  ~ beautiful-prose
+      • size_class 's' doesn't match line count 205 (expected 'm')
   ~ billing-automation
       • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ carrier-relationship-management
+      • size_class 's' doesn't match line count 202 (expected 'm')
+  ~ cc-skill-security-review
+      • size_class 'm' doesn't match line count 508 (expected 'l')
+  ~ changelog-automation
+      • size_class 'xs' doesn't match line count 50 (expected 's')
+  ~ code-documentation-code-explain
+      • size_class 'xs' doesn't match line count 60 (expected 's')
   ~ code-review-excellence
       • size_class 'xs' doesn't match line count 52 (expected 's')
+  ~ codex-review
+      • size_class 'xs' doesn't match line count 52 (expected 's')
+  ~ context-agent
+      • size_class 's' doesn't match line count 210 (expected 'm')
+  ~ context7-auto-research
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ convertkit-automation
+      • size_class 's' doesn't match line count 210 (expected 'm')
+  ~ data-engineering-data-driven-feature
+      • size_class 's' doesn't match line count 201 (expected 'm')
+  ~ data-quality-frameworks
+      • size_class 'xs' doesn't match line count 52 (expected 's')
+  ~ data-scientist
+      • size_class 's' doesn't match line count 209 (expected 'm')
   ~ data-storytelling
       • size_class 'm' doesn't match line count 506 (expected 'l')
+  ~ data-structure-protocol
+      • size_class 's' doesn't match line count 209 (expected 'm')
+  ~ database-cloud-optimization-cost-optimize
+      • size_class 'xs' doesn't match line count 58 (expected 's')
+  ~ database-migrations-sql-migrations
+      • size_class 'xs' doesn't match line count 60 (expected 's')
+  ~ dependency-management-deps-audit
+      • size_class 'xs' doesn't match line count 58 (expected 's')
   ~ deployment-validation-config-validate
       • size_class 'm' doesn't match line count 509 (expected 'l')
   ~ design-md
       • size_class 's' doesn't match line count 200 (expected 'm')
   ~ discord-automation
       • size_class 's' doesn't match line count 201 (expected 'm')
+  ~ distributed-debugging-debug-trace
+      • size_class 'xs' doesn't match line count 58 (expected 's')
+  ~ documentation-templates
+      • size_class 's' doesn't match line count 225 (expected 'm')
+  ~ dotnet-architect
+      • size_class 's' doesn't match line count 208 (expected 'm')
+  ~ e2e-testing-patterns
+      • size_class 'xs' doesn't match line count 53 (expected 's')
+  ~ earllm-build
+      • size_class 's' doesn't match line count 217 (expected 'm')
+  ~ embedding-strategies
+      • size_class 'm' doesn't match line count 505 (expected 'l')
   ~ employment-contract-templates
       • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ error-debugging-error-trace
+      • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ exa-search
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ expo-ui-jetpack-compose
+      • size_class 'xs' doesn't match line count 53 (expected 's')
+  ~ expo-ui-swift-ui
+      • size_class 'xs' doesn't match line count 52 (expected 's')
+  ~ fastapi-pro
+      • size_class 's' doesn't match line count 203 (expected 'm')
+  ~ file-path-traversal
+      • size_class 'm' doesn't match line count 502 (expected 'l')
+  ~ firecrawl-scraper
+      • size_class 'xs' doesn't match line count 52 (expected 's')
   ~ flutter-expert
       • size_class 's' doesn't match line count 210 (expected 'm')
+  ~ gha-security-review
+      • size_class 's' doesn't match line count 201 (expected 'm')
+  ~ health-trend-analyzer
+      • summary is 153 chars (>150 limit)
+  ~ hubspot-integration
+      • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ hugging-face-cli
+      • size_class 's' doesn't match line count 209 (expected 'm')
   ~ instagram-automation
       • size_class 's' doesn't match line count 207 (expected 'm')
+  ~ klaviyo-automation
+      • size_class 's' doesn't match line count 205 (expected 'm')
+  ~ leiloeiro-juridico
+      • size_class 'm' doesn't match line count 510 (expected 'l')
+  ~ leiloeiro-mercado
+      • size_class 'm' doesn't match line count 531 (expected 'l')
+  ~ leiloeiro-risco
+      • size_class 'm' doesn't match line count 527 (expected 'l')
+  ~ lint-and-validate
+      • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ llm-application-dev-prompt-optimize
+      • size_class 'xs' doesn't match line count 50 (expected 's')
+  ~ llm-evaluation
+      • size_class 'm' doesn't match line count 504 (expected 'l')
+  ~ m365-agents-ts
+      • size_class 's' doesn't match line count 202 (expected 'm')
+  ~ makepad-reference
+      • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ makepad-shaders
+      • size_class 's' doesn't match line count 202 (expected 'm')
+  ~ memory-forensics
+      • size_class 'm' doesn't match line count 509 (expected 'l')
+  ~ mental-health-analyzer
+      • size_class 'l' doesn't match line count 1030 (expected 'xl')
+  ~ multi-agent-patterns
+      • summary is 157 chars (>150 limit)
+  ~ multi-cloud-architecture
+      • size_class 's' doesn't match line count 208 (expected 'm')
+  ~ observability-monitoring-slo-implement
+      • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ outlook-automation
+      • size_class 's' doesn't match line count 205 (expected 'm')
+  ~ paypal-integration
+      • size_class 'm' doesn't match line count 500 (expected 'l')
   ~ pci-compliance
       • size_class 'm' doesn't match line count 501 (expected 'l')
+  ~ planning-with-files
+      • size_class 's' doesn't match line count 202 (expected 'm')
+  ~ postmark-automation
+      • size_class 's' doesn't match line count 202 (expected 'm')
+  ~ pptx
+      • size_class 'm' doesn't match line count 504 (expected 'l')
+  ~ pptx-official
+      • size_class 'm' doesn't match line count 504 (expected 'l')
   ~ product-manager
       • size_class 'xs' doesn't match line count 58 (expected 's')
+  ~ rag-implementation
+      • size_class 's' doesn't match line count 206 (expected 'm')
+  ~ reference-builder
+      • size_class 's' doesn't match line count 203 (expected 'm')
+  ~ remotion-best-practices
+      • size_class 'xs' doesn't match line count 50 (expected 's')
+  ~ salesforce-automation
+      • size_class 's' doesn't match line count 205 (expected 'm')
+  ~ security-bluebook-builder
+      • size_class 'xs' doesn't match line count 55 (expected 's')
   ~ security-scanning-security-dependencies
       • size_class 'xs' doesn't match line count 57 (expected 's')
   ~ security-scanning-security-sast
@@ -64,10 +232,42 @@ EXTENDED FRONTMATTER ISSUES
       • size_class 'm' doesn't match line count 504 (expected 'l')
   ~ seo-audit
       • size_class 'm' doesn't match line count 507 (expected 'l')
+  ~ seo-image-gen
+      • size_class 's' doesn't match line count 200 (expected 'm')
+  ~ shopify-apps
+      • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ skill-scanner
+      • size_class 's' doesn't match line count 206 (expected 'm')
+  ~ slack-automation
+      • size_class 's' doesn't match line count 203 (expected 'm')
+  ~ ssh-penetration-testing
+      • size_class 'm' doesn't match line count 504 (expected 'l')
   ~ startup-business-analyst-business-case
       • size_class 'm' doesn't match line count 502 (expected 'l')
+  ~ sympy
+      • size_class 'm' doesn't match line count 513 (expected 'l')
+  ~ tavily-web
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ tdd-workflows-tdd-refactor
+      • size_class 's' doesn't match line count 203 (expected 'm')
+  ~ team-collaboration-issue
+      • size_class 'xs' doesn't match line count 50 (expected 's')
   ~ team-collaboration-standup-notes
       • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ threejs-fundamentals
+      • size_class 'm' doesn't match line count 501 (expected 'l')
+  ~ threejs-lighting
+      • size_class 'm' doesn't match line count 503 (expected 'l')
+  ~ uniprot-database
+      • size_class 's' doesn't match line count 205 (expected 'm')
+  ~ vector-index-tuning
+      • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ wcag-audit-patterns
+      • size_class 'xs' doesn't match line count 53 (expected 's')
+  ~ whatsapp-cloud-api
+      • size_class 'm' doesn't match line count 528 (expected 'l')
+  ~ wordpress-penetration-testing
+      • size_class 'm' doesn't match line count 501 (expected 'l')
 
 PER-ROLE SUMMARY
   Role                                                    Agent   Core   Tech  Inline

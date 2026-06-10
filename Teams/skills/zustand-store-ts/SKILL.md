@@ -1,9 +1,20 @@
 ---
 name: zustand-store-ts
-description: "Create Zustand stores following established patterns with proper TypeScript types and middleware."
+description: Create Zustand stores following established patterns with proper TypeScript types and middleware.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: Create Zustand stores following established patterns with proper TypeScript types and middleware.
+detail_sections:
+  - Quick Start
+  - Always Use subscribeWithSelector
+  - Separate State and Actions
+  - Use Individual Selectors
+  - Subscribe Outside React
+  - Integration Steps
+  - When to Use
 ---
 
 # Zustand Store

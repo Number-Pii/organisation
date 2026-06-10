@@ -4,8 +4,31 @@ description: "Build Progressive Web Apps (PWAs) with offline support, installabi
 risk: safe
 source: community
 date_added: "2026-03-17"
-tags: [pwa, web-dev, service-worker, frontend, offline, caching]
-tools: [gemini, cursor, claude]
+tags:
+  - pwa
+  - web-dev
+  - service-worker
+  - frontend
+  - offline
+  - caching
+tools:
+  - gemini
+  - cursor
+  - claude
+domain: "Frontend & UI"
+size_class: m
+summary: "Build Progressive Web Apps (PWAs) with offline support, installability, and caching strategies."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Deliverables Checklist
+  - "Step 1: Web App Manifest (`manifest.json`)"
+  - "Step 2: HTML Shell (`index.html`)"
+  - "Step 3: Service Worker Registration & Install Prompt (`app.js`)"
+  - "Step 4: Service Worker (`sw.js`)"
+  - "Edge Cases & Platform Notes"
+  - "Workbox (Optional: Production Shortcut)"
+  - Checklist Before Shipping
 ---
 
 # Progressive Web Apps (PWAs)

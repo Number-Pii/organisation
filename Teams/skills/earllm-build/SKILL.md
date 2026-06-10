@@ -3,20 +3,46 @@ name: earllm-build
 description: "Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- android
-- kotlin
-- bluetooth
-- llm
-- voice
+  - android
+  - kotlin
+  - bluetooth
+  - llm
+  - voice
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Project Location
+  - Module Dependency Graph
+  - Modules And Key Files
+  - Build Configuration
+  - Target Hardware
+  - Critical Technical Facts
+  - Data Flow
+  - Adding A New Feature
+  - Modifying Audio Capture
+  - Changing Bluetooth Behavior
+  - Modifying The Llm Integration
+  - Generating A Build Artifact
+  - From Project Root
+  - Running Tests
+  - Phase 2 Roadmap
+  - Stt Engine Reference
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # EarLLM One — Build & Maintain

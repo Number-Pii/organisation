@@ -4,6 +4,17 @@ description: "Automate DocuSign tasks via Rube MCP (Composio): templates, envelo
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate DocuSign tasks via Rube MCP (Composio): templates, envelopes, signatures, document management."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # DocuSign Automation via Rube MCP

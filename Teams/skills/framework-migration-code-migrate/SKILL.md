@@ -4,6 +4,17 @@ description: "You are a code migration expert specializing in transitioning code
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Code migration expert specializing in transitioning codebases between frameworks, languages, versions, and platforms."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
+  - Resources
 ---
 
 # Code Migration Assistant

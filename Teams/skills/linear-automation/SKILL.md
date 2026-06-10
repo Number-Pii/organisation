@@ -4,6 +4,17 @@ description: "Automate Linear tasks via Rube MCP (Composio): issues, projects, c
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Linear tasks via Rube MCP (Composio): issues, projects, cycles, teams, labels."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Linear Automation via Rube MCP

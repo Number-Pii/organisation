@@ -1,9 +1,20 @@
 ---
 name: minecraft-bukkit-pro
-description: Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.
+description: "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Expertise
+  - Development Philosophy
+  - Technical Approach
+  - Output Excellence
 ---
 
 ## Use this skill when

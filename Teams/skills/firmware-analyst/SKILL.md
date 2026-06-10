@@ -1,9 +1,27 @@
 ---
 name: firmware-analyst
-description: Expert firmware analyst specializing in embedded systems, IoT security, and hardware reverse engineering.
+description: "Expert firmware analyst specializing in embedded systems, IoT security, and hardware reverse engineering."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Expert firmware analyst specializing in embedded systems, IoT security, and hardware reverse engineering."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Firmware Analysis Workflow
+  - Common Vulnerability Classes
+  - Tool Proficiency
+  - Emulation Setup
+  - Security Assessment
+  - Device Information
+  - Findings Summary
+  - Detailed Findings
+  - Recommendations
+  - Ethical Guidelines
+  - Response Approach
 ---
 
 # Download from vendor

@@ -1,9 +1,20 @@
 ---
 name: subagent-driven-development
-description: "Use when executing implementation plans with independent tasks in the current session"
+description: Use when executing implementation plans with independent tasks in the current session
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: Use when executing implementation plans with independent tasks in the current session
+detail_sections:
+  - When to Use
+  - The Process
+  - Prompt Templates
+  - Example Workflow
+  - Advantages
+  - Red Flags
+  - Integration
 ---
 
 # Subagent-Driven Development

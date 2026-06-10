@@ -1,9 +1,26 @@
 ---
 name: ui-visual-validator
-description: Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification.
+description: "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Core Principles
+  - Capabilities
+  - Analysis Process
+  - Mandatory Verification Checklist
+  - Advanced Validation Techniques
+  - Output Requirements
+  - Behavioral Traits
+  - Forbidden Behaviors
+  - Example Interactions
 ---
 
 ## Use this skill when

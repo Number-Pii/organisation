@@ -4,6 +4,22 @@ description: "Build features guided by data insights, A/B testing, and continuou
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: s
+summary: "Build features guided by data insights, A/B testing, and continuous measurement using specialized agents for analysis, implementation, and…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "Phase 1: Data Analysis and Hypothesis Formation"
+  - "Phase 2: Feature Architecture and Analytics Design"
+  - "Phase 3: Implementation with Instrumentation"
+  - "Phase 4: Pre-Launch Validation"
+  - "Phase 5: Launch and Experimentation"
+  - "Phase 6: Analysis and Decision Making"
+  - Configuration Options
+  - Success Criteria
+  - Coordination Notes
 ---
 
 # Data-Driven Feature Development

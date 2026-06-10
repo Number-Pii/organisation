@@ -3,20 +3,41 @@ name: llm-ops
 description: "LLM Operations -- RAG, embeddings, vector databases, fine-tuning, prompt engineering avancado, custos de LLM, evals de qualidade e arquiteturas de IA para producao."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- llm
-- rag
-- embeddings
-- vector-db
-- fine-tuning
+  - llm
+  - rag
+  - embeddings
+  - vector-db
+  - fine-tuning
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: "LLM Operations -- RAG, embeddings, vector databases, fine-tuning, prompt engineering avancado, custos de LLM, evals de qualidade e arquiteturas de IA…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Arquitetura Rag Completa
+  - Pipeline De Indexacao
+  - Pipeline De Query Com Rag
+  - Escolha Do Vector Db
+  - Pgvector
+  - Estrutura De Prompt De Elite
+  - Chain-Of-Thought
+  - Cache Semantico
+  - Estimativa De Custos Claude
+  - Framework De Avaliacao
+  - 6. Comandos
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # LLM-OPS -- IA de Producao

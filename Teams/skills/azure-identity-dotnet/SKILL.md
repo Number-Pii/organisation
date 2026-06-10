@@ -1,9 +1,28 @@
 ---
 name: azure-identity-dotnet
-description: Azure Identity SDK for .NET. Authentication library for Azure SDK clients using Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and developer credentials.
+description: "Azure Identity SDK for .NET. Authentication library for Azure SDK clients using Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and developer credentials."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Identity SDK for .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - DefaultAzureCredential
+  - Credential Types
+  - Environment-Based Configuration
+  - Sovereign Clouds
+  - Credential Types Reference
+  - Best Practices
+  - Error Handling
+  - Key Exceptions
+  - Managed Identity Support
+  - Thread Safety
+  - Related SDKs
+  - Reference Links
+  - When to Use
 ---
 
 # Azure.Identity (.NET)

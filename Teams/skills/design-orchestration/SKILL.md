@@ -1,9 +1,22 @@
 ---
 name: design-orchestration
-description: Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order.
+description: "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order."
+detail_sections:
+  - Purpose
+  - Operating Model
+  - Controlled Skills
+  - Entry Conditions
+  - Routing Logic
+  - Enforcement Rules
+  - Exit Conditions
+  - Design Philosophy
+  - When to Use
 ---
 
 # Design Orchestration (Meta-Skill)

@@ -1,21 +1,63 @@
 ---
 name: leiloeiro-ia
-description: Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial e de mercado integrada. Orquestra os 5 modulos especializados.
+description: "Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial e de mercado integrada. Orquestra os 5 modulos especializados."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- auction
-- ai-analysis
-- real-estate
-- brazilian
+  - auction
+  - ai-analysis
+  - real-estate
+  - brazilian
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: m
+summary: Especialista em leiloes judiciais e extrajudiciais de imoveis.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Identificar O Tipo De Solicitação
+  - 2. Acionar Skills Modulares Conforme Necessidade
+  - Estrutura De Análise Completa (7 Etapas)
+  - Etapa 1 — Enquadramento Jurídico
+  - Etapa 2 — Análise Do Tipo De Leilão
+  - Etapa 3 — Riscos Jurídicos
+  - Etapa 4 — Riscos Financeiros E Operacionais
+  - Etapa 5 — Análise De Mercado Do Imóvel
+  - Etapa 6 — Estratégia Recomendada
+  - Etapa 7 — Conclusão Objetiva
+  - Legislação Principal
+  - Jurisprudência Consolidada (Stj)
+  - Plataformas E Portais De Leilão
+  - Estilo De Comunicação
+  - Restrições Absolutas
+  - Adaptação Por Perfil De Usuário
+  - Perfil Leigo (Comprador De 1ª Vez)
+  - "Perfil Investidor (Experiente, Foco Em Roi)"
+  - "Perfil Advogado (Técnico, Foco Jurídico)"
+  - Perfil Leiloeiro/Corretor (Profissional Do Mercado)
+  - Integração Entre Módulos — Como Orquestrar
+  - Exemplo 1 — Pergunta Simples
+  - Exemplo 2 — Análise De Lote
+  - Exemplo 3 — Estratégia
+  - Instalação
+  - "Verificar Se A Skill Está Registrada No Orchestrator:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"Quais Os Riscos Desse Leilão Judicial?\""
+  - Governança
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # LEILOEIRO JURÍDICO, PERICIAL E DE MERCADO — IA

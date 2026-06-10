@@ -4,6 +4,20 @@ description: "Build image analysis applications with Azure AI Vision SDK for Jav
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build image analysis applications with Azure AI Vision SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Visual Features
+  - Core Patterns
+  - Error Handling
+  - Environment Variables
+  - Image Requirements
+  - Regional Availability
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure AI Vision Image Analysis SDK for Java
