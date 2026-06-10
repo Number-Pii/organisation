@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_skill_frontmatter.py — propose extended frontmatter for a SKILL.md.
+generate_skill_frontmatter.py: propose extended frontmatter for a SKILL.md.
 
 The toolkit opts skills into lazy-loading by appending four fields to the
 existing YAML frontmatter:
@@ -180,7 +180,7 @@ def rewrite_in_place(skill_md: Path, new_block: str) -> None:
     lines = text.splitlines(keepends=False)
     fm_end = find_frontmatter_end(lines)
     if fm_end == 0:
-        # no existing frontmatter — prepend
+        # no existing frontmatter: prepend
         body = text
         new_content = new_block + "\n\n" + body
     else:
@@ -219,7 +219,7 @@ def main() -> int:
         print(f"  detail_sections: {len(proposed['detail_sections'])} section(s)")
         if proposed["domain"] == "uncategorised":
             print(
-                "  warning: skill is not listed in CATEGORIES.md — domain set to "
+                "  warning: skill is not listed in CATEGORIES.md; domain set to "
                 "'uncategorised'. Edit manually if this is wrong.",
                 file=sys.stderr,
             )

@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Handles outreach, lead qualification, and meeting booking. The entry point of the sales pipeline — ensures high-quality leads reach the Senior BDM.
+Handles outreach, lead qualification, and meeting booking. The entry point of the sales pipeline, ensuring high-quality leads reach the Senior BDM.
 
 ## Core Skills
 - Outbound outreach (email, LinkedIn, calls) (@cold-email, @linkedin-automation)
@@ -28,8 +28,8 @@ Handles outreach, lead qualification, and meeting booking. The entry point of th
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @cold-email — prospecting email sequences
-- @linkedin-automation — LinkedIn outreach
-- @pipedrive-automation — CRM data entry and tracking
-- @copywriting — outreach messaging
-- @email-sequence — automated nurture sequences
+- @cold-email: prospecting email sequences
+- @linkedin-automation: LinkedIn outreach
+- @pipedrive-automation: CRM data entry and tracking
+- @copywriting: outreach messaging
+- @email-sequence: automated nurture sequences

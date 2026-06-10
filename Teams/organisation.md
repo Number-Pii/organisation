@@ -1,4 +1,4 @@
-# Number Pii — Organisational Structure
+# Number Pii: Organisational Structure
 
 > [!IMPORTANT]
 > Number Pii operates at an uncompromising standard: **we only hire the top 1% of professionals in their field**. This document reflects the company as an established, fully-staffed operation with elite personnel across every department.
@@ -13,7 +13,7 @@ This document is the entry point for AI-assisted project work at Number Pii.
 |---------|---------|
 | **Employees / Team Members / Virtual Employees / AI Agents** | All refer to the same thing: the role files in `Teams/`. Each role is a virtual expert you can invoke in any project. |
 | **Skills** | Each role file has `## Core Skills`, `## Technical Skills`, and `## Agent Skills` sections with `@skill-name` references pointing to `Teams/skills/`. |
-| **Invocation** | Activate any skill with `@skill-name [your task]` — e.g. `@postgresql design a multi-tenant schema` |
+| **Invocation** | Activate any skill with `@skill-name [your task]`, e.g. `@postgresql design a multi-tenant schema` |
 | **Skills Directory** | Browse all 1,294 skill modules in `Teams/skills/` |
 | **Project Initialization** | Tell your AI assistant: `initialize CLAUDE.md` (or `initialize GEMINI.md`) to trigger the full team assignment + project scaffolding workflow |
 
@@ -36,7 +36,7 @@ Executive titles in the virtual organisation (CEO, CTO, CPO, and so on) describe
 
 ## Organisational Philosophy
 
-Full philosophy, structural principles, and hiring standards live in **[philosophy.md](philosophy.md)** — loaded on demand at team-assignment time. In short: top-1% hiring, products ring-fenced, elite services, expert-led consultancy, security by design.
+Full philosophy, structural principles, and hiring standards live in **[philosophy.md](philosophy.md)**, loaded on demand at team-assignment time. In short: top-1% hiring, products ring-fenced, elite services, expert-led consultancy, security by design.
 
 ---
 
@@ -97,7 +97,7 @@ graph TD
     VPC --> LMD["Lead Mobile Developer"]
     VPC --> SWD["Senior Web Developer(s)"]
     VPC --> SMD["Senior Mobile Developer(s)"]
-    VPC --> SSE["Senior Software Engineer(s) — Custom"]
+    VPC --> SSE["Senior Software Engineer(s) (Custom)"]
 
     HDOI --> SDOE["Senior DevOps Engineer(s)"]
     HDOI --> SCE["Senior Cloud Engineer"]
@@ -110,7 +110,7 @@ graph TD
 
     %% === PRODUCT & DESIGN ===
     CPO --> SPM["📋 Senior Product Manager"]
-    CPO --> PM["📋 Product Manager — Future Products"]
+    CPO --> PM["📋 Product Manager (Future Products)"]
     CPO --> LPD["🎨 Lead Product Designer"]
     CPO --> PA["📊 Product Analyst"]
 
@@ -122,8 +122,8 @@ graph TD
     VPSC --> HBD["🌐 Head of Business Development"]
     VPSC --> AM["📇 Account Manager(s)"]
 
-    HC --> PCDT["Principal Consultant — Digital Transformation"]
-    HC --> PCTS["Principal Consultant — Technology Strategy"]
+    HC --> PCDT["Principal Consultant (Digital Transformation)"]
+    HC --> PCTS["Principal Consultant (Technology Strategy)"]
 
     HBD --> SBDM["Senior Business Development Manager"]
     HBD --> BDR["Business Development Representative(s)"]
@@ -171,13 +171,13 @@ graph TD
 | **DevOps & Infrastructure** | Head of DevOps | Senior DevOps Engineer(s), Senior Cloud Engineer | CI/CD, AWS, deployment, monitoring |
 | **QA & Reliability** | Head of QA | Senior QA Engineer(s), QA Automation Engineer | Testing, quality gates, automation |
 | **Information Security** | Head of InfoSec | Senior Security Engineer, Security Analyst | AppSec, infra security, compliance, pentesting |
-| **Engineering Operations** | Engineering Manager | — | Hiring, processes, sprint coordination |
+| **Engineering Operations** | Engineering Manager | none | Hiring, processes, sprint coordination |
 
 ### 3. Product & Design (~6 people)
 | Role | Focus |
 |------|-------|
 | **Senior Product Manager** | Feature roadmap, user stories, stakeholder management for any assigned product |
-| **Product Manager — Future Products** | New product discovery and development |
+| **Product Manager (Future Products)** | New product discovery and development |
 | **Lead Product Designer** | Design system ownership, brand consistency |
 | **Senior Product Designer(s)** | UI/UX for products and client projects |
 | **UX Researcher** | User interviews, usability testing, data-informed design |
@@ -187,8 +187,8 @@ graph TD
 | Role | Focus |
 |------|-------|
 | **Head of Consultancy** | Consultancy practice leadership |
-| **Principal Consultant — Digital Transformation** | Legacy modernisation, cloud migration, process digitisation |
-| **Principal Consultant — Technology Strategy** | CTO-level advisory, architecture reviews, scaling roadmaps |
+| **Principal Consultant (Digital Transformation)** | Legacy modernisation, cloud migration, process digitisation |
+| **Principal Consultant (Technology Strategy)** | CTO-level advisory, architecture reviews, scaling roadmaps |
 | **Head of Business Development** | Pipeline generation, partnerships |
 | **Senior BDM** | High-value contract acquisition |
 | **BDR(s)** | Outreach, qualification, meeting booking |

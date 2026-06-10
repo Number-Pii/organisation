@@ -37,9 +37,9 @@ Exceptional writer with B2B tech background. Understands product positioning, co
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @content-strategy — content planning and strategy
-- @copywriting — long-form content writing
-- @seo-content — SEO-optimised content
-- @content-creator — content production
-- @data-storytelling — insight-led content
-- @blog-writing-guide — blog content standards
+- @content-strategy: content planning and strategy
+- @copywriting: long-form content writing
+- @seo-content: SEO-optimised content
+- @content-creator: content production
+- @data-storytelling: insight-led content
+- @blog-writing-guide: blog content standards

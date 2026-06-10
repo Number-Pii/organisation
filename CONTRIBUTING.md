@@ -12,7 +12,7 @@ Create a branch from `main` using the correct prefix:
 |--------|------------|
 | `feature/` | New roles, skills, protocol steps, scripts |
 | `fix/` | Corrections to existing content |
-| `chore/` | Maintenance — version bumps, dependency updates, CI changes |
+| `chore/` | Maintenance: version bumps, dependency updates, CI changes |
 | `hotfix/` | Critical fixes that need immediate attention |
 
 Example: `chore/update-skill-count`
@@ -72,14 +72,14 @@ Examples:
 ## Adding a New Skill
 
 1. Create a folder in `Teams/skills/` with a kebab-case name (e.g. `my-new-skill/`)
-2. Add a `SKILL.md` file (required) with the full frontmatter block — see the schema below
+2. Add a `SKILL.md` file (required) with the full frontmatter block; see the schema below
 3. Optionally add `scripts/`, `examples/`, or `resources/` subdirectories
 4. Reference the skill in the relevant role file(s) if appropriate
 5. Run `python3 scripts/audit_skills.py` to confirm the skill is detected and the frontmatter validates
 
 ### SKILL.md frontmatter schema
 
-Every new skill MUST ship with all nine fields — the five base fields (present on every legacy skill) plus the four extension fields used by the scoped-discovery tooling (`scripts/find_skill.py`) and the coverage auditor.
+Every new skill MUST ship with all nine fields; the five base fields (present on every legacy skill) plus the four extension fields used by the scoped-discovery tooling (`scripts/find_skill.py`) and the coverage auditor.
 
 ```yaml
 ---
@@ -92,8 +92,8 @@ date_added: "2026-04-18"          # ISO date, quoted
 
 # Extension fields (required on all new skills)
 domain: "Backend & APIs"          # MUST match one of the 17 headings in Teams/skills/CATEGORIES.md exactly
-size_class: m                     # xs <50 · s 50–199 · m 200–499 · l 500–999 · xl 1000+ lines
-summary: "One-line answer to 'what's this skill for' — ≤150 chars, surfaced by find_skill.py."
+size_class: m                     # xs <50 · s 50-199 · m 200-499 · l 500-999 · xl 1000+ lines
+summary: "One-line answer to 'what's this skill for'; ≤150 chars, surfaced by find_skill.py."
 detail_sections:
   - When to Use
   - Core Concepts
@@ -102,9 +102,9 @@ detail_sections:
 ```
 
 #### Rules
-- `domain` is validated against `Teams/skills/CATEGORIES.md`. If your skill doesn't fit an existing domain, open the discussion in your PR — do not invent a new value.
+- `domain` is validated against `Teams/skills/CATEGORIES.md`. If your skill doesn't fit an existing domain, open the discussion in your PR; do not invent a new value.
 - `size_class` must match the actual line count band; the auditor warns on mismatches.
-- `summary` is what `find_skill.py` surfaces in result rows — make it informative, not a persona opener.
+- `summary` is what `find_skill.py` surfaces in result rows; make it informative, not a persona opener.
 - `detail_sections` lists your top-level `## ` headers, so a loader can expand sections on demand.
 
 #### Bootstrap with the generator
@@ -119,11 +119,11 @@ python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md
 python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md --write
 ```
 
-Always human-review the proposal: domain lookup falls back to `uncategorised` for skills not yet in CATEGORIES.md, and the summary is taken from the first sentence of `description` — tighten or rewrite it if the first sentence is a persona opener or too terse.
+Always human-review the proposal: domain lookup falls back to `uncategorised` for skills not yet in CATEGORIES.md, and the summary is taken from the first sentence of `description`; tighten or rewrite it if the first sentence is a persona opener or too terse.
 
 #### Legacy skills
 
-Existing skills without the four extension fields still validate (the auditor treats extensions as opt-in during backfill). Coverage is reported in `scripts/audit_skills.py` output and is being expanded domain-by-domain — no single-PR mandate.
+Existing skills without the four extension fields still validate (the auditor treats extensions as opt-in during backfill). Coverage is reported in `scripts/audit_skills.py` output and is being expanded domain-by-domain; no single-PR mandate.
 
 ---
 
@@ -138,7 +138,7 @@ Existing skills without the four extension fields still validate (the auditor tr
 
 | Bump | When |
 |------|------|
-| PATCH (`x.x.1`) | Wording fixes, role/skill updates — no protocol changes |
+| PATCH (`x.x.1`) | Wording fixes, role/skill updates; no protocol changes |
 | MINOR (`x.1.0`) | New protocol steps, new features, significant additions |
 | MAJOR (`1.0.0`) | Breaking changes to Initialize Protocol or doc/ template structure |
 
@@ -146,7 +146,7 @@ Existing skills without the four extension fields still validate (the auditor tr
 
 ## Keeping CLAUDE.md, GEMINI.md, and AGENTS.md in Sync
 
-`CLAUDE.md` is the **source of truth**. `GEMINI.md` and `AGENTS.md` are generated from it by `scripts/sync_ai_context.py` — do not edit either generated file by hand.
+`CLAUDE.md` is the **source of truth**. `GEMINI.md` and `AGENTS.md` are generated from it by `scripts/sync_ai_context.py`; do not edit either generated file by hand.
 
 ### Why all three files exist
 Claude Code auto-loads `CLAUDE.md`; Gemini CLI auto-loads `GEMINI.md`; OpenAI Codex auto-loads `AGENTS.md`. The toolkit must work in all three, so all three files must be present.
@@ -173,35 +173,35 @@ CI and the pre-commit hook run the same script and fail the build if drift is de
 
 Some parts of the toolkit change often; others barely change at all. Marking the stable blocks with a `<!-- CACHE_BOUNDARY -->` HTML comment gives contributors a clear "don't churn this without good reason" signal and gives future tooling a hook to place prompt-cache breakpoints.
 
-**This is a contributor convention, not a live Claude Code directive.** Claude Code does not parse these sentinels today — Anthropic's prompt cache operates at the SDK level via explicit `cache_control` breakpoints on API requests, not by scanning markdown. The sentinels exist so that (a) contributors treat the marked blocks as stable by default, and (b) any future wrapper that reads them can translate them into real cache breakpoints without a schema change.
+**This is a contributor convention, not a live Claude Code directive.** Claude Code does not parse these sentinels today; Anthropic's prompt cache operates at the SDK level via explicit `cache_control` breakpoints on API requests, not by scanning markdown. The sentinels exist so that (a) contributors treat the marked blocks as stable by default, and (b) any future wrapper that reads them can translate them into real cache breakpoints without a schema change.
 
 ### Where the sentinels sit today
 
 **Cache-safe** (end with `<!-- CACHE_BOUNDARY -->`):
 
-- `CLAUDE.md` — end of the Non-Negotiable Standards section
-- `GEMINI.md` and `AGENTS.md` — same placement (propagates automatically via `sync_ai_context.py`)
-- `INITIALIZE.md` — end of file
-- `WRITING.md` — end of file
-- `Teams/organisation.md` — end of file
-- `Teams/philosophy.md` — end of file
+- `CLAUDE.md`: end of the Non-Negotiable Standards section
+- `GEMINI.md` and `AGENTS.md`: same placement (propagates automatically via `sync_ai_context.py`)
+- `INITIALIZE.md`: end of file
+- `WRITING.md`: end of file
+- `Teams/organisation.md`: end of file
+- `Teams/philosophy.md`: end of file
 
-**Volatile** (no sentinel — expect churn):
+**Volatile** (no sentinel, expect churn):
 
-- `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`, `doc/handover/**` — per-project, rewritten every engagement
-- `Agent Skills` sections inside role files — curated list changes as new skills land
-- `CHANGELOG.md`, `VERSION` — bumped every release
-- Individual `Teams/skills/**/SKILL.md` — edited as skills evolve
+- `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`, `doc/handover/**`: per-project, rewritten every engagement
+- `Agent Skills` sections inside role files: curated list changes as new skills land
+- `CHANGELOG.md`, `VERSION`: bumped every release
+- Individual `Teams/skills/**/SKILL.md`: edited as skills evolve
 
 ### When editing a cache-safe block
 
 Churning a cache-safe block invalidates downstream cache for every context that loads it. Before editing one:
 
 1. Prefer a smaller, additive change over a rewrite
-2. Confirm the change is genuinely terminal — not "nice to have" wording
+2. Confirm the change is genuinely terminal, not "nice to have" wording
 3. Expect that the next session's warm cache is lost; this is fine for binding rules, wasteful for cosmetics
 
-`sync_ai_context.py` preserves HTML comments, so sentinels in `CLAUDE.md` appear in `GEMINI.md` automatically — never hand-edit `GEMINI.md` to add or remove one.
+`sync_ai_context.py` preserves HTML comments, so sentinels in `CLAUDE.md` appear in `GEMINI.md` automatically; never hand-edit `GEMINI.md` to add or remove one.
 
 ---
 
@@ -209,4 +209,4 @@ Churning a cache-safe block invalidates downstream cache for every context that 
 
 Past sessions have skipped project context files, expanded scope without permission, pushed directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those failures traced back to an AI assistant treating the protocol as optional reading.
 
-The Mandatory Reading Protocol in `CLAUDE.md` / `GEMINI.md` — and every Non-Negotiable Standard under it — is written as a hard rule precisely because soft guidance produced repeated regressions. When tempted to compress further, remember: the rules are short because they are terminal, not because they are flexible.
+The Mandatory Reading Protocol in `CLAUDE.md` / `GEMINI.md`, and every Non-Negotiable Standard under it, is written as a hard rule precisely because soft guidance produced repeated regressions. When tempted to compress further, remember: the rules are short because they are terminal, not because they are flexible.

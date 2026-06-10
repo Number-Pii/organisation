@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-audit_skills.py — Number Pii Skill Coverage Auditor
+audit_skills.py: Number Pii Skill Coverage Auditor
 
 Reports:
   1. Total skill folders in Teams/skills/
@@ -302,7 +302,7 @@ def run_audit(write_report=False):
         lines_out.append(re.sub(r"\033\[\d+m", "", line))   # strip ANSI for file
 
     p(bold("═" * 65))
-    p(bold("  Number Pii — Skill Coverage Audit"))
+    p(bold("  Number Pii Skill Coverage Audit"))
     p(bold("═" * 65))
     p()
 
@@ -333,7 +333,7 @@ def run_audit(write_report=False):
     p(bold("UNLINKED SKILLS (not referenced in any role)"))
     p(f"  Skills in Teams/skills/ referenced        : {len(skill_folders) - len(unlinked_skills)}")
     p(f"  Skills in Teams/skills/ NOT referenced    : {yellow(str(len(unlinked_skills)))}")
-    p(f"  (Many are highly specialised — Azure SDKs, health tools, etc.)")
+    p(f"  (Many are highly specialised: Azure SDKs, health tools, etc.)")
     p()
 
     if frontmatter_issues:

@@ -43,12 +43,12 @@ Owns all infrastructure, deployment pipelines, and platform reliability. Has des
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @kubernetes-architect — Kubernetes strategy and architecture
-- @docker-expert — container management
-- @terraform-specialist — Infrastructure as Code
-- @cloud-devops — cloud DevOps practices
-- @github-actions-templates — CI/CD pipeline design
-- @aws-skills — AWS services and architecture
-- @cloudformation-best-practices — CloudFormation templates
-- @grafana-dashboards — monitoring and alerting dashboards
-- @pagerduty-automation — incident alerting and on-call
+- @kubernetes-architect: Kubernetes strategy and architecture
+- @docker-expert: container management
+- @terraform-specialist: Infrastructure as Code
+- @cloud-devops: cloud DevOps practices
+- @github-actions-templates: CI/CD pipeline design
+- @aws-skills: AWS services and architecture
+- @cloudformation-best-practices: CloudFormation templates
+- @grafana-dashboards: monitoring and alerting dashboards
+- @pagerduty-automation: incident alerting and on-call

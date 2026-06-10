@@ -34,10 +34,10 @@ A virtual role that coordinates vision, culture, and strategic direction across 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @startup-business-analyst-market-opportunity — market opportunity analysis
-- @business-analyst — business case development
-- @pricing-strategy — commercial pricing decisions
-- @competitive-landscape — competitor intelligence
-- @brand-guidelines — brand standards and representation
-- @launch-strategy — product and campaign launches
-- @startup-metrics-framework — company KPI tracking
+- @startup-business-analyst-market-opportunity: market opportunity analysis
+- @business-analyst: business case development
+- @pricing-strategy: commercial pricing decisions
+- @competitive-landscape: competitor intelligence
+- @brand-guidelines: brand standards and representation
+- @launch-strategy: product and campaign launches
+- @startup-metrics-framework: company KPI tracking

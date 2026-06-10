@@ -1,7 +1,7 @@
 # Senior QA Engineer
 
 ## Position Details
-- **Department:** Engineering — QA & Reliability
+- **Department:** Engineering (QA & Reliability)
 - **Reports To:** Head of QA & Reliability
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -37,9 +37,9 @@ Designs and executes test strategies for products and client deliveries. Writes 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @playwright-skill — Playwright E2E testing
-- @e2e-testing — end-to-end test coverage
-- @javascript-testing-patterns — unit/component testing
-- @testing-qa — QA processes and standards
-- @webapp-testing — web application testing
-- @testing-patterns — test architecture patterns
+- @playwright-skill: Playwright E2E testing
+- @e2e-testing: end-to-end test coverage
+- @javascript-testing-patterns: unit/component testing
+- @testing-qa: QA processes and standards
+- @webapp-testing: web application testing
+- @testing-patterns: test architecture patterns

@@ -1,7 +1,7 @@
 # Lead Mobile Developer
 
 ## Position Details
-- **Department:** Engineering — Client Engineering
+- **Department:** Engineering (Client Engineering)
 - **Reports To:** VP of Client Engineering
 - **Direct Reports:** Senior Mobile Developer(s)
 - **Employment Type:** Full-time
@@ -43,11 +43,11 @@ Leads client-facing mobile development projects. Expert in native and cross-plat
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-native-architecture — React Native app architecture
-- @expo-dev-client — Expo development workflows
-- @flutter-expert — Flutter cross-platform development
-- @android-jetpack-compose-expert — Android native UI
-- @swiftui-expert-skill — iOS native UI
-- @firebase — mobile backend services
-- @expo-deployment — app store deployment
-- @expo-cicd-workflows — mobile CI/CD pipelines
+- @react-native-architecture: React Native app architecture
+- @expo-dev-client: Expo development workflows
+- @flutter-expert: Flutter cross-platform development
+- @android-jetpack-compose-expert: Android native UI
+- @swiftui-expert-skill: iOS native UI
+- @firebase: mobile backend services
+- @expo-deployment: app store deployment
+- @expo-cicd-workflows: mobile CI/CD pipelines

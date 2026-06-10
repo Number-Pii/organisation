@@ -30,9 +30,9 @@ Owns pipeline generation, partnerships, and new business acquisition. Builds and
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @sales-enablement — sales strategy and enablement
-- @cold-email — outbound prospecting sequences
-- @pipedrive-automation — CRM pipeline management
-- @hubspot-automation — HubSpot CRM workflows
-- @revops — revenue operations and reporting
-- @competitive-landscape — market and competitor analysis
+- @sales-enablement: sales strategy and enablement
+- @cold-email: outbound prospecting sequences
+- @pipedrive-automation: CRM pipeline management
+- @hubspot-automation: HubSpot CRM workflows
+- @revops: revenue operations and reporting
+- @competitive-landscape: market and competitor analysis

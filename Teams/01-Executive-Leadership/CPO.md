@@ -42,9 +42,9 @@ The CPO owns the product strategy, roadmap, and design direction for all Number 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @product-manager — product management methodology
-- @product-manager-toolkit — PM frameworks and tools
-- @analytics-product — product metrics and analytics
-- @launch-strategy — product launch planning
-- @startup-metrics-framework — OKRs and product KPIs
-- @product-design — product design principles
+- @product-manager: product management methodology
+- @product-manager-toolkit: PM frameworks and tools
+- @analytics-product: product metrics and analytics
+- @launch-strategy: product launch planning
+- @startup-metrics-framework: OKRs and product KPIs
+- @product-design: product design principles

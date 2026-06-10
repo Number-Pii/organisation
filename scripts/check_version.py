@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-check_version.py — Number Pii Version Sync Validator
+check_version.py: Number Pii Version Sync Validator
 
 Checks that the version number is consistent across:
   - VERSION
@@ -27,7 +27,7 @@ def get_version_file():
 
 
 def get_changelog_version():
-    """Extract latest version heading from CHANGELOG.md (e.g. '## [3.4.0] — ...')."""
+    """Extract latest version heading from CHANGELOG.md (e.g. '## [3.4.0]: ...')."""
     path = REPO_ROOT / "CHANGELOG.md"
     for line in path.read_text(encoding="utf-8").splitlines():
         m = re.match(r"^## \[(\d+\.\d+\.\d+)\]", line)
@@ -37,7 +37,7 @@ def get_changelog_version():
 
 
 def get_md_protocol_version(filename):
-    """Extract toolkit version from CLAUDE.md or GEMINI.md (_Version: X.Y — ...)."""
+    """Extract toolkit version from CLAUDE.md or GEMINI.md (_Version: X.Y | ...)."""
     path = REPO_ROOT / filename
     for line in path.read_text(encoding="utf-8").splitlines():
         m = re.search(r"_Version:\s*([\d.]+)", line)

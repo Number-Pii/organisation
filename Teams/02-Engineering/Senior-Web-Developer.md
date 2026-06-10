@@ -1,7 +1,7 @@
 # Senior Web Developer
 
 ## Position Details
-- **Department:** Engineering — Client Engineering
+- **Department:** Engineering (Client Engineering)
 - **Reports To:** Lead Web Developer
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -36,9 +36,9 @@ Delivers web application features for client projects to an exceptional standard
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-best-practices — React development
-- @nextjs-best-practices — Next.js projects
-- @typescript-expert — TypeScript usage
-- @nodejs-best-practices — Node.js backend work
-- @e2e-testing — E2E testing
-- @playwright-skill — Playwright automation
+- @react-best-practices: React development
+- @nextjs-best-practices: Next.js projects
+- @typescript-expert: TypeScript usage
+- @nodejs-best-practices: Node.js backend work
+- @e2e-testing: E2E testing
+- @playwright-skill: Playwright automation

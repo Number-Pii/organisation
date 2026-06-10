@@ -38,9 +38,9 @@ Owns the brand voice and community building. Manages Number Pii's presence acros
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @brand-guidelines — brand voice and visual identity
-- @social-content — community-driven social content
-- @content-creator — brand content creation
-- @internal-comms-community — community communications
-- @copywriting — brand copywriting
-- @discord-automation — Discord community management
+- @brand-guidelines: brand voice and visual identity
+- @social-content: community-driven social content
+- @content-creator: brand content creation
+- @internal-comms-community: community communications
+- @copywriting: brand copywriting
+- @discord-automation: Discord community management

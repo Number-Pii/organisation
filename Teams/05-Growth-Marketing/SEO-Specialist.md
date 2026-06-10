@@ -38,11 +38,11 @@ Owns technical SEO, keyword strategy, and search performance tracking. Ensures t
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @seo — SEO fundamentals and execution
-- @seo-technical — technical SEO
-- @seo-audit — SEO site audits
-- @seo-keyword-strategist — keyword research
-- @seo-content — content SEO
-- @seo-page — on-page optimisation
-- @seo-sitemap — XML sitemaps
-- @seo-schema — structured data markup
+- @seo: SEO fundamentals and execution
+- @seo-technical: technical SEO
+- @seo-audit: SEO site audits
+- @seo-keyword-strategist: keyword research
+- @seo-content: content SEO
+- @seo-page: on-page optimisation
+- @seo-sitemap: XML sitemaps
+- @seo-schema: structured data markup

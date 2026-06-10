@@ -31,8 +31,8 @@ Manages ongoing client relationships, ensuring satisfaction, retention, and upse
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @customer-support — client relationship management
-- @hubspot-automation — account management in HubSpot
-- @pipedrive-automation — deal tracking and upsell tracking
-- @internal-comms — client reporting and updates
-- @revops — account revenue tracking
+- @customer-support: client relationship management
+- @hubspot-automation: account management in HubSpot
+- @pipedrive-automation: deal tracking and upsell tracking
+- @internal-comms: client reporting and updates
+- @revops: account revenue tracking

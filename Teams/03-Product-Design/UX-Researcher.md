@@ -38,8 +38,8 @@ Conducts user research, usability testing, and data analysis to inform design an
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @analytics-product — quantitative research and analytics
-- @data-storytelling — communicating research insights
-- @brainstorming — research planning and synthesis
-- @writing-plans — research plans and reports
-- @product-design — design thinking application
+- @analytics-product: quantitative research and analytics
+- @data-storytelling: communicating research insights
+- @brainstorming: research planning and synthesis
+- @writing-plans: research plans and reports
+- @product-design: design thinking application

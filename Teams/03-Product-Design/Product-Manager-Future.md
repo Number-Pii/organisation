@@ -1,4 +1,4 @@
-# Product Manager — Future Products
+# Product Manager (Future Products)
 
 ## Position Details
 - **Department:** Product & Design
@@ -37,8 +37,8 @@ Leads product discovery and development for Number Pii's future SaaS products. C
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @product-manager — product management methodology
-- @product-manager-toolkit — PM frameworks
-- @brainstorming — product discovery and ideation
-- @writing-plans — specs and roadmap documentation
-- @analytics-product — product data analysis
+- @product-manager: product management methodology
+- @product-manager-toolkit: PM frameworks
+- @brainstorming: product discovery and ideation
+- @writing-plans: specs and roadmap documentation
+- @analytics-product: product data analysis

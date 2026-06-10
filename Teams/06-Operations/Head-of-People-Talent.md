@@ -38,9 +38,9 @@ Owns HR, culture, performance management, and the employee experience. Designs t
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @hr-pro — HR policy and people operations
-- @interview-coach — job description writing and hiring
-- @internal-comms — people communications
-- @bamboohr-automation — HRIS management
-- @employment-contract-templates — employment documentation
-- @interview-coach — interview process design
+- @hr-pro: HR policy and people operations
+- @interview-coach: job description writing and hiring
+- @internal-comms: people communications
+- @bamboohr-automation: HRIS management
+- @employment-contract-templates: employment documentation
+- @interview-coach: interview process design

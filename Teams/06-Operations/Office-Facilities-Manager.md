@@ -37,8 +37,8 @@ Manages workspace, equipment, remote infrastructure, and physical/virtual facili
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @workflow-automation — facilities workflow automation
-- @internal-comms — facilities announcements and updates
-- @make-automation — process automation
-- @file-organizer — document and asset organisation
-- @cost-optimization — vendor cost management
+- @workflow-automation: facilities workflow automation
+- @internal-comms: facilities announcements and updates
+- @make-automation: process automation
+- @file-organizer: document and asset organisation
+- @cost-optimization: vendor cost management

@@ -1,7 +1,7 @@
 # Senior Frontend Engineer
 
 ## Position Details
-- **Department:** Engineering — Product Engineering
+- **Department:** Engineering (Product Engineering)
 - **Reports To:** Lead Frontend Engineer
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -41,9 +41,9 @@ Implements features, components, and pages for Number Pii products. Works within
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-best-practices — React component development
-- @typescript-expert — TypeScript patterns
-- @nextjs-app-router-patterns — Next.js App Router
-- @tailwind-patterns — Tailwind CSS patterns
-- @zod-validation-expert — form validation with Zod
-- @javascript-testing-patterns — Jest/Vitest testing
+- @react-best-practices: React component development
+- @typescript-expert: TypeScript patterns
+- @nextjs-app-router-patterns: Next.js App Router
+- @tailwind-patterns: Tailwind CSS patterns
+- @zod-validation-expert: form validation with Zod
+- @javascript-testing-patterns: Jest/Vitest testing

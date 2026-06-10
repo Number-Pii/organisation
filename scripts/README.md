@@ -1,10 +1,10 @@
-# Number Pii — Scripts
+# Number Pii: Scripts
 
 Python 3 scripts that automate deterministic work, saving tokens and time.
 
 ---
 
-## `check_writing.py` — Writing Standard Validator
+## `check_writing.py`: Writing Standard Validator
 
 Checks prose deliverables (markdown or plain text) against `WRITING.md`. The banned-phrases
 list is read live from `WRITING.md`, so the standard has a single source of truth.
@@ -36,7 +36,7 @@ and HTML comments are excluded from scanning.
 
 ---
 
-## `audit_skills.py` — Skill Coverage Auditor
+## `audit_skills.py`: Skill Coverage Auditor
 
 Reports how well each role file's Core Skills and Technical Skills are linked to `@skill-name`
 references from `Teams/skills/`.
@@ -46,7 +46,7 @@ references from `Teams/skills/`.
 # Run from repo root
 python3 scripts/audit_skills.py
 
-# Plain output (no ANSI colour — good for Gemini CLI or CI)
+# Plain output (no ANSI colour, good for Gemini CLI or CI)
 python3 scripts/audit_skills.py --no-color
 
 # Also write an audit_report.md file to scripts/
@@ -65,14 +65,14 @@ python3 scripts/audit_skills.py --report
 
 ---
 
-## `init_project.py` — Project Scaffolder
+## `init_project.py`: Project Scaffolder
 
 Creates the standard `doc/` folder structure in any project directory. Run after your AI
 coding assistant has determined the project brief and team assignment.
 
 ### Usage
 ```bash
-# Basic — creates doc/ in the current directory
+# Basic: creates doc/ in the current directory
 python3 /path/to/org/scripts/init_project.py --project-name "My Project"
 
 # With specific departments (creates dept handover sub-folders)
@@ -123,16 +123,16 @@ The `doc/handover/` system saves tokens and time when switching AI sessions:
 1. **During work**: Each team member updates their dept `handover-notes.md`
 2. **At milestones**: Team lead pulls from dept notes → updates `consolidated_handover.md`
 3. **New session**: Tell the AI: *"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"*
-4. The new session has full context immediately — no re-explanation needed
+4. The new session has full context immediately, no re-explanation needed
 
 ---
 
 ---
 
-## `update.py` — Toolkit Updater
+## `update.py`: Toolkit Updater
 
 Checks for updates to this toolkit and pulls the latest version safely.
-**Your project `doc/` files are never affected** — they live in your own project repo, not here.
+**Your project `doc/` files are never affected**; they live in your own project repo, not here.
 
 ### Usage
 ```bash
@@ -160,7 +160,7 @@ python3 scripts/update.py --changelog
 | Bump | Meaning | Safe to update? |
 |------|---------|----------------|
 | PATCH (3.1.x) | Wording fixes, skill additions | Always safe |
-| MINOR (3.x.0) | New steps or features in the protocol | Safe — read changelog |
+| MINOR (3.x.0) | New steps or features in the protocol | Safe; read changelog |
 | MAJOR (x.0.0) | Initialize Protocol restructured | Read migration notes first |
 
 ---

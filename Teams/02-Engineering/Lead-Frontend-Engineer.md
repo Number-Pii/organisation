@@ -1,7 +1,7 @@
 # Lead Frontend Engineer
 
 ## Position Details
-- **Department:** Engineering — Product Engineering
+- **Department:** Engineering (Product Engineering)
 - **Reports To:** VP of Product Engineering
 - **Direct Reports:** Senior Frontend Engineer(s)
 - **Employment Type:** Full-time
@@ -44,11 +44,11 @@ The technical lead for all frontend engineering on Number Pii products. Owns the
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-best-practices — React architecture and patterns
-- @typescript-expert — TypeScript best practices
-- @senior-frontend — senior-level frontend standards
-- @nextjs-best-practices — Next.js App Router patterns
-- @tailwind-design-system — Tailwind-based design systems
-- @accessibility-compliance-accessibility-audit — WCAG 2.1 AA compliance
-- @playwright-skill — E2E testing with Playwright
-- @web-performance-optimization — Core Web Vitals and performance
+- @react-best-practices: React architecture and patterns
+- @typescript-expert: TypeScript best practices
+- @senior-frontend: senior-level frontend standards
+- @nextjs-best-practices: Next.js App Router patterns
+- @tailwind-design-system: Tailwind-based design systems
+- @accessibility-compliance-accessibility-audit: WCAG 2.1 AA compliance
+- @playwright-skill: E2E testing with Playwright
+- @web-performance-optimization: Core Web Vitals and performance

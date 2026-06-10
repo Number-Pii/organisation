@@ -1,7 +1,7 @@
 # Lead Backend Engineer
 
 ## Position Details
-- **Department:** Engineering — Product Engineering
+- **Department:** Engineering (Product Engineering)
 - **Reports To:** VP of Product Engineering
 - **Direct Reports:** Senior Backend Engineer(s)
 - **Employment Type:** Full-time
@@ -45,11 +45,11 @@ The technical lead for all backend engineering on Number Pii products. Owns API 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @backend-dev-guidelines — backend architecture and coding standards
-- @nestjs-expert — NestJS framework patterns
-- @postgresql — database design and query optimisation
-- @api-design-principles — REST/GraphQL API standards
-- @database-design — schema design and data modelling
-- @drizzle-orm-expert — Drizzle ORM patterns
-- @bullmq-specialist — job queue management with BullMQ
-- @auth-implementation-patterns — OAuth 2.0, JWT, OIDC implementation
+- @backend-dev-guidelines: backend architecture and coding standards
+- @nestjs-expert: NestJS framework patterns
+- @postgresql: database design and query optimisation
+- @api-design-principles: REST/GraphQL API standards
+- @database-design: schema design and data modelling
+- @drizzle-orm-expert: Drizzle ORM patterns
+- @bullmq-specialist: job queue management with BullMQ
+- @auth-implementation-patterns: OAuth 2.0, JWT, OIDC implementation

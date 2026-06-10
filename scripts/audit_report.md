@@ -2,7 +2,7 @@
 
 ```
 ═════════════════════════════════════════════════════════════════
-  Number Pii — Skill Coverage Audit
+  Number Pii Skill Coverage Audit
 ═════════════════════════════════════════════════════════════════
 
 OVERVIEW
@@ -23,7 +23,7 @@ CORE + TECHNICAL SKILL BULLET COVERAGE
 UNLINKED SKILLS (not referenced in any role)
   Skills in Teams/skills/ referenced        : 195
   Skills in Teams/skills/ NOT referenced    : 1099
-  (Many are highly specialised — Azure SDKs, health tools, etc.)
+  (Many are highly specialised: Azure SDKs, health tools, etc.)
 
 PER-ROLE SUMMARY
   Role                                                    Agent   Core   Tech  Inline

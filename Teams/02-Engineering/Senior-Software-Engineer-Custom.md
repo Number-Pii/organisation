@@ -1,7 +1,7 @@
-# Senior Software Engineer — Custom Solutions
+# Senior Software Engineer: Custom Solutions
 
 ## Position Details
-- **Department:** Engineering — Client Engineering
+- **Department:** Engineering (Client Engineering)
 - **Reports To:** VP of Client Engineering
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -40,11 +40,11 @@ Delivers bespoke software solutions tailored to unique client business processes
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @backend-dev-guidelines — custom software standards
-- @api-design-principles — API and integration design
-- @postgresql — database design
-- @aws-serverless — Lambda and Step Functions
-- @bullmq-specialist — message queue implementation
-- @data-engineering-data-pipeline — ETL and data pipelines
-- @workflow-automation — business process automation
-- @microservices-patterns — microservices architecture
+- @backend-dev-guidelines: custom software standards
+- @api-design-principles: API and integration design
+- @postgresql: database design
+- @aws-serverless: Lambda and Step Functions
+- @bullmq-specialist: message queue implementation
+- @data-engineering-data-pipeline: ETL and data pipelines
+- @workflow-automation: business process automation
+- @microservices-patterns: microservices architecture

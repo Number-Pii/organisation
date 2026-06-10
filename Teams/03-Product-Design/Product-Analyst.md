@@ -40,10 +40,10 @@ Tracks product metrics, analyses feature performance, and provides data-driven i
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @analytics-product — product analytics and metrics
-- @data-storytelling — data visualisation and storytelling
-- @sql-pro — SQL queries for product data
-- @plotly — data visualisation charts
-- @startup-metrics-framework — KPI frameworks
-- @ab-test-setup — A/B test design and analysis
-- @posthog-automation — PostHog product analytics
+- @analytics-product: product analytics and metrics
+- @data-storytelling: data visualisation and storytelling
+- @sql-pro: SQL queries for product data
+- @plotly: data visualisation charts
+- @startup-metrics-framework: KPI frameworks
+- @ab-test-setup: A/B test design and analysis
+- @posthog-automation: PostHog product analytics
