@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns HR, culture, performance management, and the employee experience. Designs the people operations that attract, retain, and empower top-1% talent.
+Owns HR, culture, performance management, and the employee experience. Designs the people operations that attract, retain, and develop top-1% talent.
 
 ## Core Skills
 - HR strategy and people operations (@hr-pro, @bamboohr-automation)

@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-World-class UI/UX and visual design: portfolio at Dribbble/Awwwards/Behance level. Owns the full design process: research → systems → implementation handoff. Defines and maintains the design language for all Number Pii products and surfaces.
+Elite UI/UX and visual design: portfolio at Dribbble/Awwwards/Behance level. Owns the full design process: research → systems → implementation handoff. Defines and maintains the design language for all Number Pii products and surfaces.
 
 ## Core Skills
 - Design system creation and maintenance (@tailwind-design-system, @ui-ux-pro-max)

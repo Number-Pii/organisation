@@ -79,6 +79,13 @@ Propose a classification level with a one-line rationale and confirm it with the
 
 The level sets the depth of documentation, architecture, testing, security, and review for the whole project. It is passed to the scaffolder in Step 4 (`--level N`), which writes the matching quality gates into `doc/workflow.md` and, at Level 3+, adds `doc/architecture.md`. Changing the level later is a scope change and follows the Step 6 process.
 
+#### Level 1 fast path
+Once the user confirms Level 1, you may compress Steps 3 to 5 as follows. This is the only permitted shortcut, and Steps 6 to 8 still apply in full:
+
+- **Step 3:** assign 1-3 roles from what you already know of the departments; skip the full `organisation.md` and `philosophy.md` read unless the choice is unclear.
+- **Step 4:** scaffold with `--level 1` and a single department.
+- **Step 5:** populate `project-brief.md`, `version_control.md`, and `consolidated_handover.md` properly; the remaining files may keep their scaffolded placeholders until the work needs them.
+
 ### Step 3: Assign Team
 Read `Teams/organisation.md` (structural facts: org chart, delegation, approval matrix) and `Teams/philosophy.md` (hiring standards, structural principles, read at this step, not earlier) plus the relevant role files in `Teams/` to determine which employees/team members/AI agents are appropriate for this project.
 - Match the project type to department expertise

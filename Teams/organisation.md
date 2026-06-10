@@ -215,6 +215,23 @@ graph TD
 
 ---
 
+## Choosing Between Adjacent Roles
+
+Some roles sit close together. Use these boundaries when assigning a team; when a task genuinely spans both sides, pick the role that owns the approval, and have it pull in the other as support.
+
+| If the work is... | Pick | Not | Boundary |
+|---|---|---|---|
+| UI work on a Number Pii product | Frontend Engineer (Product Eng) | Web Developer | Product Engineering owns internal products; Client Engineering owns client deliveries |
+| A client website or web app | Lead/Senior Web Developer | Frontend Engineer | Same boundary, client side |
+| Architecture, standards, or sign-off | The Lead of the discipline | The Senior | Leads own technical direction and approvals; Seniors own execution within them |
+| Heads-down implementation | The Senior of the discipline | The Lead | Seniors deliver; pulling a Lead in for execution wastes the approval seat |
+| A small feature spanning UI, API, and schema | Senior Full-Stack Engineer | Frontend plus Backend pair | Full-Stack exists for end-to-end slices; split the work only when depth demands it |
+| Roadmap for an existing product | Senior Product Manager | Product Manager (Future Products) | The Future Products PM owns discovery and MVPs, not live roadmaps |
+| Quality strategy and release gates | Head of QA & Reliability | QA Automation Engineer | The Head sets the bar; the Automation Engineer builds the test infrastructure that enforces it |
+| Advice on architecture without building it | Principal Consultant (Technology Strategy) | CTO or engineers | Consultants advise clients; engineers build; the CTO arbitrates internal decisions |
+
+---
+
 ## Project Delegation Model
 
 > [!TIP]
@@ -262,6 +279,6 @@ Moved to **[philosophy.md](philosophy.md)** to keep this file lean for quick-loo
 
 ---
 
-*Document Version: 3.3 · Revised: 10 June 2026 · Author: Number Pii Leadership*
+*Document Version: 3.4 · Revised: 10 June 2026 · Author: Number Pii Leadership*
 
 <!-- CACHE_BOUNDARY -->

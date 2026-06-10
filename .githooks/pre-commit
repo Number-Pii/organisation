@@ -1,0 +1,26 @@
+#!/bin/sh
+# Number Pii toolkit pre-commit hook.
+# Install once per clone:  git config core.hooksPath .githooks
+# Runs the same checks as CI so drift is caught before push.
+
+set -e
+cd "$(git rev-parse --show-toplevel)"
+
+echo "pre-commit: version sync"
+python3 scripts/check_version.py
+
+echo "pre-commit: CLAUDE.md adapter sync"
+python3 scripts/sync_ai_context.py --check
+
+# Writing standard on staged markdown (vendored skills and the generated
+# audit report are out of scope, matching CI).
+staged_md=$(git diff --cached --name-only --diff-filter=ACM -- '*.md' \
+  | grep -v '^Teams/skills/' \
+  | grep -v '^scripts/audit_report.md$' || true)
+
+if [ -n "$staged_md" ]; then
+  echo "pre-commit: writing standard on staged markdown"
+  echo "$staged_md" | tr '\n' '\0' | xargs -0 python3 scripts/check_writing.py
+fi
+
+echo "pre-commit: all checks passed"

@@ -13,6 +13,50 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.0]: 2026-06-10
+
+### Added
+- **Audit remediation release.** Implements the High, Medium, and tag-related Low
+  priority recommendations from the formal toolkit audit:
+  - **CI writing enforcement:** the Toolkit CI workflow now compiles
+    `check_writing.py` and `check_handover.py` and validates every maintained
+    markdown file against the Writing Standard on each PR.
+  - **Pre-commit hook shipped:** `.githooks/pre-commit` runs the version check,
+    adapter sync check, and writing validator on staged markdown. Install with
+    `git config core.hooksPath .githooks` (documented in CONTRIBUTING).
+  - **`scripts/check_handover.py`:** staleness checker for consuming projects;
+    fails when the consolidated handover is more than N commits behind the work.
+  - **Adjacent-role boundaries:** new "Choosing Between Adjacent Roles" table in
+    `Teams/organisation.md` covering the eight closest role pairs.
+  - **Product context packs:** new `products/` registry (README plus template).
+    One pack per product, loaded only when working on that product; Product
+    Neutrality applies inside packs. `CLAUDE.md` gains a compact Products section.
+  - **Level 1 fast path** in `INITIALIZE.md`: confirmed Level 1 projects may
+    compress Steps 3 to 5; Steps 6 to 8 still apply in full.
+  - **Concurrent-sessions convention** in the scaffolded `version_control.md`:
+    one session per branch, append-only handover notes, single consolidator.
+  - **Release tagging** documented in CONTRIBUTING; releases are tagged from
+    this version onward (current main retro-tagged `v3.12.2`).
+
+### Changed
+- Protocol version bumped to 2.13 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md`
+  regenerated.
+
+## [3.12.2]: 2026-06-10
+
+### Changed
+- **Banned-phrase sweep.** Toolkit prose now passes its own validator end to end:
+  all 65 maintained markdown files clear `check_writing.py` with zero failures.
+  Five banned phrases rewritten in role files and `philosophy.md` (`robust`,
+  `empower`, and three `world-class` uses, now "reliable", "develop", "elite",
+  "exceptional", and "top 1% of their field").
+- Two repeated-opener runs broken up: the README audience guide no longer starts
+  four consecutive paragraphs with "For", and CHANGELOG PR citations are varied
+  so reference lists do not trip the consecutive-opener check.
+- `check_writing.py` now exempts rule statements that name the dash characters,
+  e.g. "no em dashes (—)", so the standard's own text does not flag itself.
+  Regression-tested: real dashes on the same line still fail.
+
 ## [3.12.1]: 2026-06-10
 
 ### Changed
@@ -183,16 +227,16 @@ Version format: `MAJOR.MINOR.PATCH`
   new skills. `find_skill.py` surfaces `summary` in result rows and prefers
   frontmatter `domain` over the CATEGORIES.md lookup. (PR #6)
 - **`scripts/generate_skill_frontmatter.py`**: helper that proposes the four
-  extension fields from an existing SKILL.md and supports in-place `--write`. (PR #6)
+  extension fields from an existing SKILL.md and supports in-place `--write`. (also in PR #6)
 - **`scripts/audit_skills.py`** extended with a zero-dep YAML subset parser, an
   opt-in validator for the four extension fields, and a new coverage stat
-  (`Skills with extended frontmatter: N/1294`). (PR #6)
+  (`Skills with extended frontmatter: N/1294`). (same PR)
 - **16 pilot skills** extended with the new frontmatter: `project-development`,
   `internal-comms`, `analytics-product`, `api-design-principles`,
   `writing-plans`, `security-audit`, `aws-skills`,
   `javascript-testing-patterns`, `react-best-practices`, `workflow-automation`,
   `postgresql`, `cloud-architect`, `backend-dev-guidelines`,
-  `software-architecture`, `e2e-testing`, `fp-refactor`. (PR #6)
+  `software-architecture`, `e2e-testing`, `fp-refactor`. (completed in PR #6)
 - **`<!-- CACHE_BOUNDARY -->` sentinel convention** on stable blocks: end of
   Non-Negotiable Standards in `CLAUDE.md` / `GEMINI.md`, end of
   `Teams/organisation.md`, end of `Teams/philosophy.md`. Framed as a contributor

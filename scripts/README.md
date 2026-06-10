@@ -4,6 +4,24 @@ Python 3 scripts that automate deterministic work, saving tokens and time.
 
 ---
 
+## `check_handover.py`: Handover Staleness Checker
+
+Flags a consolidated handover that has fallen behind the work it describes, by
+counting commits since the handover file was last touched.
+
+### Usage
+```bash
+# From a consuming project root (default limit: 20 commits)
+python3 organisation/scripts/check_handover.py
+
+# Stricter limit
+python3 organisation/scripts/check_handover.py --max-commits 10
+```
+
+Exit code 0 when fresh; 1 when the handover is stale, missing, or never committed.
+
+---
+
 ## `check_writing.py`: Writing Standard Validator
 
 Checks prose deliverables (markdown or plain text) against `WRITING.md`. The banned-phrases

@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns all infrastructure, deployment pipelines, and platform reliability. Has designed multi-region, high-availability infrastructure at scale. Ensures every product and client project ships on robust, secure, and scalable infrastructure.
+Owns all infrastructure, deployment pipelines, and platform reliability. Has designed multi-region, high-availability infrastructure at scale. Ensures every product and client project ships on reliable, secure, and scalable infrastructure.
 
 ## Core Skills
 - Infrastructure architecture and design (@cloud-architect, @software-architecture)
