@@ -4,7 +4,7 @@
 
 # Number Pii: Organisation Reference
 
-_Version: 2.12 | Last updated: 2026-06-10_
+_Version: 2.13 | Last updated: 2026-06-10_
 
 ---
 
@@ -43,6 +43,9 @@ invoked in any project to perform its specialised function.
 
 ## Departments
 Full department structure lives in [Teams/organisation.md](Teams/organisation.md). Six departments: Executive Leadership, Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, Operations.
+
+## Products
+Durable product facts live in `products/<product-name>.md`, one pack per product. Load a pack only when working on that product, never wholesale; see `products/README.md` for the rules. Product Neutrality applies to every pack.
 
 ## Skills
 All skills live in `Teams/skills/`; each is a specialised AI expert module. Role files reference them in three layers: **Core Skills** and **Technical Skills** with inline `(@skill-name)` refs, and **Agent Skills** as a curated `@skill-name` list for direct invocation.

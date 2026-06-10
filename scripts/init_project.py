@@ -299,6 +299,13 @@ types: feat | fix | docs | style | refactor | test | chore
 - [ ] PR description must reference ticket/issue
 - [ ] No direct pushes to `main` (branch protection enabled)
 
+## Concurrent Sessions
+Rules for running more than one AI session (or contributor) on this project at once:
+- **One active session per branch.** A second session starts its own branch; two sessions never share a working branch.
+- **Handover notes are append-only.** Add a new dated entry under Work Completed; never rewrite or delete another session's entries.
+- **`consolidated_handover.md` has one writer at a time:** the team lead consolidates after parallel work merges, not during it.
+- Check handover freshness before starting: `python3 organisation/scripts/check_handover.py`
+
 ## Release Process
 <!-- How are releases tagged and deployed? -->
 [FILL IN]

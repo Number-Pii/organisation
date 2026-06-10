@@ -13,13 +13,42 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.0]: 2026-06-10
+
+### Added
+- **Audit remediation release.** Implements the High, Medium, and tag-related Low
+  priority recommendations from the formal toolkit audit:
+  - **CI writing enforcement:** the Toolkit CI workflow now compiles
+    `check_writing.py` and `check_handover.py` and validates every maintained
+    markdown file against the Writing Standard on each PR.
+  - **Pre-commit hook shipped:** `.githooks/pre-commit` runs the version check,
+    adapter sync check, and writing validator on staged markdown. Install with
+    `git config core.hooksPath .githooks` (documented in CONTRIBUTING).
+  - **`scripts/check_handover.py`:** staleness checker for consuming projects;
+    fails when the consolidated handover is more than N commits behind the work.
+  - **Adjacent-role boundaries:** new "Choosing Between Adjacent Roles" table in
+    `Teams/organisation.md` covering the eight closest role pairs.
+  - **Product context packs:** new `products/` registry (README plus template).
+    One pack per product, loaded only when working on that product; Product
+    Neutrality applies inside packs. `CLAUDE.md` gains a compact Products section.
+  - **Level 1 fast path** in `INITIALIZE.md`: confirmed Level 1 projects may
+    compress Steps 3 to 5; Steps 6 to 8 still apply in full.
+  - **Concurrent-sessions convention** in the scaffolded `version_control.md`:
+    one session per branch, append-only handover notes, single consolidator.
+  - **Release tagging** documented in CONTRIBUTING; releases are tagged from
+    this version onward (current main retro-tagged `v3.12.2`).
+
+### Changed
+- Protocol version bumped to 2.13 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md`
+  regenerated.
+
 ## [3.12.2]: 2026-06-10
 
 ### Changed
 - **Banned-phrase sweep.** Toolkit prose now passes its own validator end to end:
   all 65 maintained markdown files clear `check_writing.py` with zero failures.
-  Five banned phrases rewritten in role files and `philosophy.md` ("robust",
-  "empower", and three "world-class" uses, now "reliable", "develop", "elite",
+  Five banned phrases rewritten in role files and `philosophy.md` (`robust`,
+  `empower`, and three `world-class` uses, now "reliable", "develop", "elite",
   "exceptional", and "top 1% of their field").
 - Two repeated-opener runs broken up: the README audience guide no longer starts
   four consecutive paragraphs with "For", and CHANGELOG PR citations are varied

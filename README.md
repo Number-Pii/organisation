@@ -53,11 +53,14 @@ organisation/
 │   ├── 05-Growth-Marketing/                   # Content, SEO, social, performance marketing
 │   ├── 06-Operations/                         # Finance, people & talent, operations, facilities
 │   └── skills/                                # 1,294 AI skill modules
+├── products/                                  # Product context packs (one per product, loaded on demand)
 ├── scripts/
 │   ├── audit_skills.py                        # Skill coverage auditor
+│   ├── check_handover.py                      # Handover staleness checker
 │   ├── check_writing.py                       # Writing Standard validator
 │   ├── init_project.py                        # Project doc/ scaffolder
 │   └── README.md                              # Script usage docs
+├── .githooks/pre-commit                       # Local checks; install: git config core.hooksPath .githooks
 ├── CLAUDE.md                                  # Claude Code context (source of truth)
 ├── GEMINI.md                                  # Gemini CLI context (generated from CLAUDE.md)
 ├── AGENTS.md                                  # OpenAI Codex context (generated from CLAUDE.md)

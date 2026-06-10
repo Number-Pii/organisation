@@ -167,6 +167,25 @@ context files directly; it needs no sync and is edited in place.
 
 CI and the pre-commit hook run the same script and fail the build if drift is detected (`python3 scripts/sync_ai_context.py --check`).
 
+### Pre-commit hook
+
+The hook lives in `.githooks/pre-commit` and runs the version check, the adapter
+sync check, and the writing validator on staged markdown. Install it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+### Release tagging
+
+After a version bump merges to `main`, tag it so `update.py` and consumers have a
+stable anchor:
+
+```bash
+git tag -a v3.13.0 -m "Release 3.13.0"
+git push origin v3.13.0
+```
+
 ---
 
 ## Cache-safe vs Volatile Blocks
