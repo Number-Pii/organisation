@@ -40,6 +40,11 @@ PASSIVE_RE = re.compile(
     r"\b(am|is|are|was|were|be|been|being)\s+(\w+ed|\w+en)\b", re.IGNORECASE
 )
 
+# Rule statements that name the dash characters, e.g. "no em dashes (—)", are
+# mentions rather than uses; strip them before scanning so the standard's own
+# text (WRITING.md, CLAUDE.md, scripts/README.md) does not flag itself.
+DASH_MENTION_RE = re.compile(r"[Ee][mn] dash(es)?\s*\((?:—|–)\)")
+
 
 def load_banned_phrases() -> list[str]:
     if not WRITING_MD.exists():
@@ -141,9 +146,10 @@ def check_file(path: Path, banned: list[str], target: tuple[float, float]) -> tu
 
     # Dashes (hard rule from the Writing Style standard).
     for lineno, line in lines:
-        if EM_DASH in line:
+        clean = DASH_MENTION_RE.sub("dash", line)
+        if EM_DASH in clean:
             fails.append(f"Em dash (—) at line {lineno}")
-        if EN_DASH in line:
+        if EN_DASH in clean:
             fails.append(f"En dash (–) at line {lineno}")
 
     # Banned phrases.

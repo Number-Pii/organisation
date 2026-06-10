@@ -13,6 +13,21 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.12.2]: 2026-06-10
+
+### Changed
+- **Banned-phrase sweep.** Toolkit prose now passes its own validator end to end:
+  all 65 maintained markdown files clear `check_writing.py` with zero failures.
+  Five banned phrases rewritten in role files and `philosophy.md` ("robust",
+  "empower", and three "world-class" uses, now "reliable", "develop", "elite",
+  "exceptional", and "top 1% of their field").
+- Two repeated-opener runs broken up: the README audience guide no longer starts
+  four consecutive paragraphs with "For", and CHANGELOG PR citations are varied
+  so reference lists do not trip the consecutive-opener check.
+- `check_writing.py` now exempts rule statements that name the dash characters,
+  e.g. "no em dashes (—)", so the standard's own text does not flag itself.
+  Regression-tested: real dashes on the same line still fail.
+
 ## [3.12.1]: 2026-06-10
 
 ### Changed
@@ -183,16 +198,16 @@ Version format: `MAJOR.MINOR.PATCH`
   new skills. `find_skill.py` surfaces `summary` in result rows and prefers
   frontmatter `domain` over the CATEGORIES.md lookup. (PR #6)
 - **`scripts/generate_skill_frontmatter.py`**: helper that proposes the four
-  extension fields from an existing SKILL.md and supports in-place `--write`. (PR #6)
+  extension fields from an existing SKILL.md and supports in-place `--write`. (also in PR #6)
 - **`scripts/audit_skills.py`** extended with a zero-dep YAML subset parser, an
   opt-in validator for the four extension fields, and a new coverage stat
-  (`Skills with extended frontmatter: N/1294`). (PR #6)
+  (`Skills with extended frontmatter: N/1294`). (same PR)
 - **16 pilot skills** extended with the new frontmatter: `project-development`,
   `internal-comms`, `analytics-product`, `api-design-principles`,
   `writing-plans`, `security-audit`, `aws-skills`,
   `javascript-testing-patterns`, `react-best-practices`, `workflow-automation`,
   `postgresql`, `cloud-architect`, `backend-dev-guidelines`,
-  `software-architecture`, `e2e-testing`, `fp-refactor`. (PR #6)
+  `software-architecture`, `e2e-testing`, `fp-refactor`. (completed in PR #6)
 - **`<!-- CACHE_BOUNDARY -->` sentinel convention** on stable blocks: end of
   Non-Negotiable Standards in `CLAUDE.md` / `GEMINI.md`, end of
   `Teams/organisation.md`, end of `Teams/philosophy.md`. Framed as a contributor

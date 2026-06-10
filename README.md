@@ -167,13 +167,13 @@ For the full philosophy, org chart, delegation model, and approval authority mat
 
 ## How to Use This Repository
 
-**For hiring managers:** Each role file contains the full job brief: responsibilities, required skills, reporting line, and project involvement. Use it as the source of truth when opening a role.
+**Hiring managers:** each role file contains the full job brief: responsibilities, required skills, reporting line, and project involvement. Use it as the source of truth when opening a role.
 
-**For new hires:** Read your role file, then `organisation.md` to understand where you sit in the structure, who you report to, and what you can approve independently.
+**New hires:** read your role file, then `organisation.md` to understand where you sit in the structure, who you report to, and what you can approve independently.
 
-**For project leads:** Consult the *Project Delegation Model* in `organisation.md` to determine who leads, who executes, and who signs off for any given project type.
+**Project leads:** consult the *Project Delegation Model* in `organisation.md` to determine who leads, who executes, and who signs off for any given project type.
 
-**For leadership:** The *Approval Authority Matrix* in `organisation.md` defines decision-making boundaries for every level of the organisation.
+**Leadership:** the *Approval Authority Matrix* in `organisation.md` defines decision-making boundaries for every level of the organisation.
 
 ---
 

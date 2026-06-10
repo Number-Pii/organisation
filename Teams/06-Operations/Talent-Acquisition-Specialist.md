@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Sources, screens, and recruits top-1% candidates. Manages the hiring pipeline, coordinates interviews, and ensures every candidate has a world-class hiring experience.
+Sources, screens, and recruits top-1% candidates. Manages the hiring pipeline, coordinates interviews, and ensures every candidate has an exceptional hiring experience.
 
 ## Core Skills
 - Technical and non-technical recruiting (@hr-pro, @interview-coach)
