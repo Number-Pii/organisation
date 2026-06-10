@@ -182,6 +182,7 @@ Some parts of the toolkit change often; others barely change at all. Marking the
 - `CLAUDE.md` — end of the Non-Negotiable Standards section
 - `GEMINI.md` and `AGENTS.md` — same placement (propagates automatically via `sync_ai_context.py`)
 - `INITIALIZE.md` — end of file
+- `WRITING.md` — end of file
 - `Teams/organisation.md` — end of file
 - `Teams/philosophy.md` — end of file
 

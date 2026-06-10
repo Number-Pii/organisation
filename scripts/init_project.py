@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-init_project.py — Number Pii Project Scaffolder
+init_project.py: Number Pii Project Scaffolder
 
 Creates the standard doc/ folder structure in any project directory.
 Run this after the AI coding assistant has determined the project brief and team.
@@ -43,6 +43,7 @@ LEVELS = {
         "testing": "Manual verification plus smoke tests on critical paths",
         "security": "Secure defaults: secrets management, input validation, dependency hygiene",
         "review": "Self-review checklist plus one PR review",
+        "writing": "Prose deliverables pass scripts/check_writing.py (self-check)",
         "vc_strategy": "GitHub Flow (single main, short-lived branches, PR per change)",
     },
     2: {
@@ -54,6 +55,7 @@ LEVELS = {
         "testing": "Unit and integration tests on critical paths; CI required",
         "security": "Level 1 baseline plus dependency scanning and an authentication/authorisation review",
         "review": "One approving PR review; lead sign-off on releases",
+        "writing": "Validator pass plus a lead read of client-facing prose",
         "vc_strategy": "GitHub Flow with required PR review and CI checks",
     },
     3: {
@@ -65,6 +67,7 @@ LEVELS = {
         "testing": "Unit, integration, and end-to-end suites; agreed coverage target; CI gates block merge",
         "security": "Level 2 baseline plus a threat model and a security review before each release",
         "review": "Lead engineer review on every PR; security sign-off on sensitive changes",
+        "writing": "Validator pass plus Senior Content Strategist editorial review on client-facing deliverables",
         "vc_strategy": "GitHub Flow or Git Flow with protected main, required reviews, and CI gates",
     },
     4: {
@@ -76,6 +79,7 @@ LEVELS = {
         "testing": "Full test pyramid plus performance, load, and security testing",
         "security": "Level 3 baseline plus penetration testing, compliance review, and audit logging",
         "review": "Two reviewers per PR; CTO-level architecture sign-off; mandatory security sign-off",
+        "writing": "Validator pass plus mandatory editorial review of all external documents, sign-off recorded in handover notes",
         "vc_strategy": "Git Flow with protected main and develop, multi-reviewer approval, and signed releases",
     },
 }
@@ -84,7 +88,7 @@ LEVELS = {
 
 def project_brief_template(name, level):
     lv = LEVELS[level]
-    return f"""# Project Brief — {name}
+    return f"""# Project Brief: {name}
 
 > Created: {TODAY} | Maintained by: Project Manager / Team Lead
 
@@ -144,7 +148,7 @@ Quality gates activated by this level are listed in `workflow.md`.
 
 
 def team_assignment_template(name):
-    return f"""# Team Assignment — {name}
+    return f"""# Team Assignment: {name}
 
 > Created: {TODAY} | Maintained by: Project Manager / Team Lead
 
@@ -176,7 +180,7 @@ def team_assignment_template(name):
 
 def workflow_template(name, level):
     lv = LEVELS[level]
-    return f"""# Project Workflow — {name}
+    return f"""# Project Workflow: {name}
 
 > Created: {TODAY} | Maintained by: Project Manager / Team Lead
 
@@ -188,6 +192,7 @@ def workflow_template(name, level):
 - [ ] **Testing:** {lv['testing']}
 - [ ] **Security:** {lv['security']}
 - [ ] **Review:** {lv['review']}
+- [ ] **Writing:** {lv['writing']}
 
 ## Execution Model
 Tasks marked `[SEQUENTIAL]` must wait for the previous step to complete.
@@ -196,17 +201,17 @@ Tasks marked `[PARALLEL]` can run simultaneously.
 ## Workflow Steps
 
 <!-- Fill in the ordered task chain across team members.
-     Example structure below — replace with your actual project tasks. -->
+     Example structure below; replace with your actual project tasks. -->
 
 ```
-1. [SEQUENTIAL] PM — Define goals, KPIs, and acceptance criteria
-2. [SEQUENTIAL] UX Researcher — User research and journey mapping
-3. [PARALLEL]   Lead Designer — Wireframes and layout strategy
-3. [PARALLEL]   Content Strategist — Copy and messaging
-4. [SEQUENTIAL] Lead Designer — Final UI and design handoff
-5. [SEQUENTIAL] Lead Engineer — Implementation
-6. [SEQUENTIAL] QA Engineer — Testing and verification
-7. [SEQUENTIAL] PM — Final review and deployment sign-off
+1. [SEQUENTIAL] PM: Define goals, KPIs, and acceptance criteria
+2. [SEQUENTIAL] UX Researcher: User research and journey mapping
+3. [PARALLEL]   Lead Designer: Wireframes and layout strategy
+3. [PARALLEL]   Content Strategist: Copy and messaging
+4. [SEQUENTIAL] Lead Designer: Final UI and design handoff
+5. [SEQUENTIAL] Lead Engineer: Implementation
+6. [SEQUENTIAL] QA Engineer: Testing and verification
+7. [SEQUENTIAL] PM: Final review and deployment sign-off
 ```
 
 ## Task Breakdown (by lifecycle stage)
@@ -214,28 +219,28 @@ Tasks marked `[PARALLEL]` can run simultaneously.
      Stages 1 and 2 (Discovery, Planning) are largely completed at initialization;
      record any remaining planning tasks under Stage 2. -->
 
-### Stage 2 — Planning (remaining tasks)
+### Stage 2: Planning (remaining tasks)
 | # | Task | Owner | Type | Depends On | Status |
 |---|------|-------|------|------------|--------|
-| 1 | [FILL IN] | [FILL IN] | SEQUENTIAL | — | Not Started |
+| 1 | [FILL IN] | [FILL IN] | SEQUENTIAL | none | Not Started |
 
-### Stage 3 — Implementation
+### Stage 3: Implementation
 | # | Task | Owner | Type | Depends On | Status |
 |---|------|-------|------|------------|--------|
 | 2 | [FILL IN] | [FILL IN] | SEQUENTIAL | #1 | Not Started |
 
-### Stage 4 — Verification
+### Stage 4: Verification
 <!-- The Quality Gates above are the exit criteria for this stage. -->
 | # | Task | Owner | Type | Depends On | Status |
 |---|------|-------|------|------------|--------|
 | 3 | [FILL IN] | [FILL IN] | SEQUENTIAL | #2 | Not Started |
 
-### Stage 5 — Deployment
+### Stage 5: Deployment
 | # | Task | Owner | Type | Depends On | Status |
 |---|------|-------|------|------------|--------|
 | 4 | [FILL IN] | [FILL IN] | SEQUENTIAL | #3 | Not Started |
 
-### Stage 6 — Operations
+### Stage 6: Operations
 <!-- Monitoring, support, and maintenance. Record the long-term owner in
      doc/handover/consolidated_handover.md before closure. -->
 | # | Task | Owner | Type | Depends On | Status |
@@ -251,7 +256,7 @@ Tasks marked `[PARALLEL]` can run simultaneously.
 
 def version_control_template(name, level):
     lv = LEVELS[level]
-    return f"""# Version Control — {name}
+    return f"""# Version Control: {name}
 
 > Created: {TODAY} | Owner: Lead / Senior Engineer on this project
 
@@ -301,13 +306,13 @@ types: feat | fix | docs | style | refactor | test | chore
 ## Repository
 - **Repo URL:** [FILL IN]
 - **Primary branch:** main
-- **CI/CD:** [FILL IN — e.g. GitHub Actions]
+- **CI/CD:** [FILL IN, e.g. GitHub Actions]
 - **Deployment:** [FILL IN]
 """
 
 
 def codebase_assessment_template(name):
-    return f"""# Codebase Assessment — {name}
+    return f"""# Codebase Assessment: {name}
 
 > Created: {TODAY} | Maintained by: Lead Engineer / Technical Lead
 > Complete this from the output of an initial audit (@production-code-audit or equivalent).
@@ -325,7 +330,7 @@ def codebase_assessment_template(name):
 
 ## Architecture Overview
 <!-- Brief description of how the system is structured. -->
-[FILL IN — e.g. monolith / microservices / serverless, key boundaries, data flow]
+[FILL IN, e.g. monolith / microservices / serverless, key boundaries, data flow]
 
 ### Services / Components
 | Name | Purpose | Language / Tech |
@@ -377,7 +382,7 @@ def architecture_template(name, level):
 > **Level 4:** the Failure Modes and Decision Records sections below are mandatory,
 > not optional. Architecture sign-off comes from the CTO role before implementation.
 """
-    return f"""# Architecture — {name}
+    return f"""# Architecture: {name}
 
 > Created: {TODAY} | Owner: Lead / Senior Engineer on this project
 > Required at Level {level} ({lv['name']}): complete and approve this document before implementation begins.
@@ -431,14 +436,14 @@ def consolidated_handover_template(name, existing=False):
 > Fill from `doc/codebase-assessment.md`.
 
 - **Tech Stack:** [FILL IN]
-- **Architecture:** [FILL IN — one line]
-- **Key Tech Debt:** [top 2–3 — see codebase-assessment.md]
+- **Architecture:** [FILL IN, one line]
+- **Key Tech Debt:** [top 2-3, see codebase-assessment.md]
 - **Prior Decisions to Honour:** [FILL IN]
 
 ---
 """
 
-    return f"""# Consolidated Handover — {name}
+    return f"""# Consolidated Handover: {name}
 
 > Last updated: {TODAY} | Maintained by: Team Lead / Project Manager
 > **Keep this file ≤150 lines.** When it grows, roll prior state into `handover/archive/YYYY-MM.md`.
@@ -450,7 +455,7 @@ Single source of truth for **current** project state. When starting a new AI ses
 ---
 {existing_context_section}
 ## Project Summary
-[FILL IN — one paragraph; copy from project-brief.md]
+[FILL IN, one paragraph; copy from project-brief.md]
 
 ## Current Status
 - **Phase:** [Discovery / Design / Development / Testing / Deployment / Maintenance]
@@ -458,7 +463,7 @@ Single source of truth for **current** project state. When starting a new AI ses
 
 ## What Has Been Done (current phase only)
 <!-- Prior-phase work goes to handover/archive/. Keep this to the active phase. -->
-- [Nothing completed yet — project is at kickoff stage]
+- [Nothing completed yet; project is at kickoff stage]
 
 ## What Is In Progress
 - [FILL IN]
@@ -470,7 +475,7 @@ Single source of truth for **current** project state. When starting a new AI ses
 ## Blockers & Issues
 | Blocker | Owner | Status |
 |---------|-------|--------|
-| None currently | — | — |
+| None currently | none | none |
 
 ## Key Decisions (still load-bearing)
 <!-- Decisions that still shape today's work. Archive superseded decisions. -->
@@ -498,17 +503,17 @@ See `doc/handover/archive/README.md` for the roll process.
 
 
 def handover_archive_readme_template(name):
-    return f"""# Handover Archive — {name}
+    return f"""# Handover Archive: {name}
 
 > Purpose: keep `consolidated_handover.md` lean (≤150 lines, ~4K tokens) regardless of project age.
 
 ## Why this exists
-Without rolling, `consolidated_handover.md` grows unbounded — by month three of a real project,
+Without rolling, `consolidated_handover.md` grows unbounded; by month three of a real project,
 it commonly exceeds 1,000 lines and becomes the single largest file loaded every session.
 Rolling prior phases into dated archive files keeps session startup cost constant.
 
 ## When to roll
-At every milestone, or at month-boundaries — whichever comes first. The team lead:
+At every milestone, or at month-boundaries, whichever comes first. The team lead:
 
 1. Creates `archive/{{YYYY-MM}}.md` (e.g. `2026-04.md`) for the just-completed phase
 2. Moves the completed items from `consolidated_handover.md`'s "What Has Been Done" and
@@ -519,7 +524,7 @@ At every milestone, or at month-boundaries — whichever comes first. The team l
 ## Archive Index
 | File | Covers | Phase |
 |------|--------|-------|
-| *(none yet)* | — | — |
+| *(none yet)* | none | none |
 
 ## What to include in an archive file
 - Timeline of completed work (dated bullets)
@@ -528,14 +533,14 @@ At every milestone, or at month-boundaries — whichever comes first. The team l
 - Anything future sessions may want to consult for *why*, not *what*
 
 ## What NOT to archive
-- In-progress work, active blockers, live stakeholders — those belong in `consolidated_handover.md`
+- In-progress work, active blockers, live stakeholders; those belong in `consolidated_handover.md`
 - Anything the current phase still depends on
 """
 
 
 def project_context_pointer_template(name, assistant_file, level):
     lv = LEVELS[level]
-    return f"""# {name} — AI Assistant Context Contract
+    return f"""# {name}: AI Assistant Context Contract
 
 _Generated: {TODAY} by Number Pii toolkit_
 
@@ -544,27 +549,27 @@ activates are listed in `doc/workflow.md` and are binding for every deliverable.
 
 ---
 
-## ⛔ MANDATORY READING PROTOCOL — READ BEFORE ANY ACTION
+## ⛔ MANDATORY READING PROTOCOL: READ BEFORE ANY ACTION
 
 This project was scaffolded with the Number Pii toolkit. The files in `doc/` are a
 **binding contract**, not reference material. If you are an AI assistant operating in
-this project, you MUST comply with the following before taking any action — including
+this project, you MUST comply with the following before taking any action, including
 answering questions, writing code, running commands, or making suggestions.
 
 ### Hard rule
 - **You MUST read the following files in full before doing anything else:**
-  1. `doc/project-brief.md` — scope, constraints, success criteria
-  2. `doc/team-assignment.md` — who owns what
-  3. `doc/workflow.md` — execution order and dependencies
-  4. `doc/version_control.md` — branching rules (binding before any git command)
-  5. `doc/handover/consolidated_handover.md` — current project state
-  6. `doc/codebase-assessment.md` — brownfield projects only (if present)
+  1. `doc/project-brief.md`: scope, constraints, success criteria
+  2. `doc/team-assignment.md`: who owns what
+  3. `doc/workflow.md`: execution order and dependencies
+  4. `doc/version_control.md`: branching rules (binding before any git command)
+  5. `doc/handover/consolidated_handover.md`: current project state
+  6. `doc/codebase-assessment.md`: brownfield projects only (if present)
 - **These files override your defaults.** Instructions in them take precedence over your
   own judgement, habits, or training priors.
 - **If a required file is missing, STOP and tell the user.** Do not guess, reconstruct,
   or proceed without it.
 - **You may not silently skip, summarise away, or deprioritise these rules.** Treat each
-  as a blocker — violating one is a task failure, not a style preference.
+  as a blocker; violating one is a task failure, not a style preference.
 
 ### Session start acknowledgement
 At the start of every session, your first action MUST be to confirm (briefly, in plain
@@ -581,19 +586,22 @@ If any of those files do not exist, state which are missing and wait for instruc
 
 ## Non-Negotiable Standards (inherited from Number Pii toolkit)
 
-These apply to every session, every task, every team member — including AI assistants:
+These apply to every session, every task, every team member, including AI assistants:
 
-1. **Security First** — raise security concerns immediately; never defer.
-2. **Consistent Quality** — same rigour regardless of client or timeline.
-3. **Documentation Discipline** — only project-required docs in `doc/`; no ad-hoc
+1. **Security First**: raise security concerns immediately; never defer.
+2. **Consistent Quality**: same rigour regardless of client or timeline.
+3. **Documentation Discipline**: only project-required docs in `doc/`; no ad-hoc
    troubleshooting files committed to the repository.
-4. **Mandatory Context Files** — the files listed above must be read before any work.
-5. **Version Control Discipline** — never push directly to `main`; follow
+4. **Mandatory Context Files**: the files listed above must be read before any work.
+5. **Version Control Discipline**: never push directly to `main`; follow
    `doc/version_control.md` for every change, no exceptions.
-6. **Scope Discipline** — `doc/project-brief.md` defines the boundary of all work.
+6. **Scope Discipline**: `doc/project-brief.md` defines the boundary of all work.
    Out-of-scope items must be flagged and approved before any work on them.
-7. **Handover Discipline** — update `doc/handover/[department]/handover-notes.md`
+7. **Handover Discipline**: update `doc/handover/[department]/handover-notes.md`
    before any task is considered complete.
+8. **Writing Standards**: all prose deliverables follow the toolkit's `WRITING.md`
+   (no em or en dashes, no banned phrases, human-quality prose); validate with
+   `python3 organisation/scripts/check_writing.py <file>` before handover.
 
 ---
 
@@ -610,7 +618,7 @@ the entire session. There are no exceptions for urgency, convenience, or confide
 
 
 def dept_handover_template(name, dept):
-    return f"""# {dept.title()} Handover Notes — {name}
+    return f"""# {dept.title()} Handover Notes: {name}
 
 > Last updated: {TODAY} | Maintained by: {dept.title()} team lead on this project
 
@@ -621,10 +629,10 @@ to update `doc/handover/consolidated_handover.md`.
 ---
 
 ## Work Completed
-<!-- Add entries as work is done. Be specific — future agents rely on this. -->
+<!-- Add entries as work is done. Be specific; future agents rely on this. -->
 
 ### {TODAY}
-- [Project kickoff — no work completed yet]
+- [Project kickoff, no work completed yet]
 
 ## Decisions & Context
 <!-- Technical or design decisions made by this department. -->

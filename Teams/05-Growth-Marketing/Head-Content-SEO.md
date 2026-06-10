@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns the content strategy and organic growth engine. Top-1% SEO strategist who can write — a rare combination. Proven organic traffic results driving leads for products and services.
+Owns the content strategy and organic growth engine. Top-1% SEO strategist who can write — a rare combination. Proven organic traffic results driving leads for products and services. Owns the organisation-wide Writing Standard (`WRITING.md`): maintains the banned-phrases list, arbitrates style questions, and evolves the standard as new AI-signalling patterns emerge.
 
 ## Core Skills
 - Content strategy and editorial planning (@content-strategy, @seo-content-planner)
@@ -31,6 +31,7 @@ Owns the content strategy and organic growth engine. Top-1% SEO strategist who c
 | SEO Initiatives | Lead | Approve |
 | Blog / Thought Leadership | Editorial lead | Approve |
 | Product Launch Content | Contributor | Execute |
+| Writing Standard (WRITING.md) | Owner | Approve |
 
 ## Approval Authority
 - **Can approve:** Content calendar, SEO strategy, content team hires

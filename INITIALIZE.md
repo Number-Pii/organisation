@@ -90,9 +90,9 @@ Use the classification level from Step 2c as the guide for team size:
 
 | Level | Recommended team |
 |---|---|
-| Level 1 | 1–3 roles (PM + 1–2 specialists) |
-| Level 2 | 4–7 roles across 2–3 departments |
-| Level 3 | 8–12 roles across 3–4 departments |
+| Level 1 | 1-3 roles (PM + 1-2 specialists) |
+| Level 2 | 4-7 roles across 2-3 departments |
+| Level 3 | 8-12 roles across 3-4 departments |
 | Level 4 | Full team assignment from `Teams/organisation.md` |
 
 ### Step 4 — Scaffold the Project
