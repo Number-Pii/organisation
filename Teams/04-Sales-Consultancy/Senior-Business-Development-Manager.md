@@ -28,9 +28,9 @@ Acquires high-value development and consultancy contracts. Network and craft to 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @cold-email — outbound email campaigns
-- @sales-enablement — sales collateral and process
-- @pipedrive-automation — CRM deal management
-- @hubspot-automation — HubSpot workflows
-- @copywriting — proposal and pitch writing
-- @linkedin-automation — LinkedIn outreach
+- @cold-email: outbound email campaigns
+- @sales-enablement: sales collateral and process
+- @pipedrive-automation: CRM deal management
+- @hubspot-automation: HubSpot workflows
+- @copywriting: proposal and pitch writing
+- @linkedin-automation: LinkedIn outreach

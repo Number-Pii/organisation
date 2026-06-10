@@ -36,8 +36,8 @@ Sources, screens, and recruits top-1% candidates. Manages the hiring pipeline, c
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @interview-coach — job description writing and candidate scoring
-- @hr-pro — HR and recruitment processes
-- @linkedin-automation — LinkedIn sourcing
-- @interview-coach — interview design and coaching
-- @bamboohr-automation — applicant tracking in BambooHR
+- @interview-coach: job description writing and candidate scoring
+- @hr-pro: HR and recruitment processes
+- @linkedin-automation: LinkedIn sourcing
+- @interview-coach: interview design and coaching
+- @bamboohr-automation: applicant tracking in BambooHR

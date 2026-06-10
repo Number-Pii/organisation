@@ -2,21 +2,21 @@
      This file is generated from CLAUDE.md by scripts/sync_ai_context.py.
      To change its contents, edit CLAUDE.md and re-run the sync script. -->
 
-# Number Pii — Organisation Reference
+# Number Pii: Organisation Reference
 
-_Version: 2.12 — Last updated: 2026-06-10_
+_Version: 2.12 | Last updated: 2026-06-10_
 
 ---
 
-## ⛔ MANDATORY READING PROTOCOL — READ BEFORE ANY ACTION
+## ⛔ MANDATORY READING PROTOCOL: READ BEFORE ANY ACTION
 
 This file, `INITIALIZE.md`, `WRITING.md`, and the project's `doc/` folder are a binding contract. Before answering, coding, or running any command you MUST:
 
 1. **Read this file in full.**
 2. **Read every relevant `doc/` file**: `project-brief.md`, `team-assignment.md`, `workflow.md`, `version_control.md`, `handover/consolidated_handover.md` (and `codebase-assessment.md` on brownfield projects).
 3. **Acknowledge in plain text** at session start that you have read `GEMINI.md`, `doc/project-brief.md`, `doc/version_control.md`, and `doc/handover/consolidated_handover.md`.
-4. **Stop and escalate** if any required file is missing — do not infer or reconstruct.
-5. **Treat every Non-Negotiable Standard below as a hard blocker** — violating one is task failure, not a style choice.
+4. **Stop and escalate** if any required file is missing; do not infer or reconstruct.
+5. **Treat every Non-Negotiable Standard below as a hard blocker**: violating one is task failure, not a style choice.
 6. **When the Initialize Protocol is triggered, read `INITIALIZE.md` in full first** and follow its steps exactly; it carries the same binding force as this file.
 
 > Rationale and past-incident history for this protocol live in [CONTRIBUTING.md](CONTRIBUTING.md#why-the-mandatory-reading-protocol-exists).
@@ -63,7 +63,7 @@ Every standard below is **non-negotiable**. Each applies to every project, team 
 ### Security First
 Security is a fundamental part of the development process, not an afterthought. Every team member must:
 - Consider security implications at every stage: design, development, testing, and deployment
-- Raise security concerns immediately — never defer or suppress them
+- Raise security concerns immediately; never defer or suppress them
 - Apply secure coding practices by default (input validation, least privilege, secrets management, dependency hygiene)
 - Treat a security gap as a blocker, not a backlog item
 
@@ -76,18 +76,18 @@ Every project must be delivered to the highest possible standard. There is no ti
 ### Documentation Discipline
 The `doc/` folder must contain only documentation that is directly required for building and maintaining the project. Every team member must:
 - Include only documents tied to active project deliverables, team coordination, or ongoing maintenance
-- Exclude any document created solely for troubleshooting, ad-hoc debugging, or investigation — these must not be committed to the project repository
+- Exclude any document created solely for troubleshooting, ad-hoc debugging, or investigation; these must not be committed to the project repository
 - Treat unnecessary documentation as a security surface: the less extraneous content in `doc/`, the smaller the exposure
 
 ### Mandatory Context Files
-Before any work begins on a project — code, design, docs, planning, or advice — every team member (including AI agents) MUST read the project's context files. These files are not optional reference material; they are the project's operating contract:
+Before any work begins on a project (code, design, docs, planning, or advice), every team member (including AI agents) MUST read the project's context files. These files are not optional reference material; they are the project's operating contract:
 
-- `doc/project-brief.md` — defines scope, constraints, and success criteria
-- `doc/team-assignment.md` — defines who owns what
-- `doc/workflow.md` — defines execution order and dependencies
-- `doc/version_control.md` — defines branching rules (binding before any git command)
-- `doc/handover/consolidated_handover.md` — defines current state
-- `doc/codebase-assessment.md` — brownfield projects only
+- `doc/project-brief.md`: defines scope, constraints, and success criteria
+- `doc/team-assignment.md`: defines who owns what
+- `doc/workflow.md`: defines execution order and dependencies
+- `doc/version_control.md`: defines branching rules (binding before any git command)
+- `doc/handover/consolidated_handover.md`: defines current state
+- `doc/codebase-assessment.md`: brownfield projects only
 
 Rules:
 - **Never act without reading the relevant context files first.** Answering a question, writing code, or running a command without having read them is a standards violation.
@@ -96,8 +96,8 @@ Rules:
 - **Do not silently skip, summarise away, or deprioritise the rules in these files.** Treat every directive as binding.
 
 ### Version Control Discipline
-All code changes — regardless of size, urgency, or who is making them — must follow the branching strategy defined in `doc/version_control.md`. Every team member (including AI agents) must:
-- **Never push directly to `main`** — no exceptions, including hotfixes, typo fixes, or deployment retries
+All code changes, regardless of size, urgency, or who is making them, must follow the branching strategy defined in `doc/version_control.md`. Every team member (including AI agents) must:
+- **Never push directly to `main`**: no exceptions, including hotfixes, typo fixes, or deployment retries
 - Create a branch using the correct prefix (`feature/`, `fix/`, `chore/`, `hotfix/`) before making any code change
 - Open a pull request and wait for the required approval before merging
 - If `doc/version_control.md` does not exist for the project, stop and ask the PM to define the branching strategy before writing any code

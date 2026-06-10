@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-update.py — Number Pii Toolkit Updater
+update.py: Number Pii Toolkit Updater
 
 Checks for updates to the organisation toolkit and pulls the latest version safely.
 Your project files (doc/) are not in this repo and will never be touched.
@@ -103,7 +103,7 @@ def main():
         return
 
     current_version = read_version(VERSION_FILE) if VERSION_FILE.exists() else "unknown"
-    print(f"Number Pii Organisation Toolkit — Update Check")
+    print(f"Number Pii Organisation Toolkit: Update Check")
     print(f"Current version: {current_version}")
     print()
 

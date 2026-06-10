@@ -1,4 +1,4 @@
-# Principal Consultant — Digital Transformation
+# Principal Consultant (Digital Transformation)
 
 ## Position Details
 - **Department:** Sales & Consultancy
@@ -19,7 +19,7 @@ A recognised expert in helping businesses modernise operations, migrate legacy s
 - Workshop facilitation (@brainstorming, @team-collaboration-standup-notes)
 
 ## Technical Skills
-- Cloud platforms (AWS, Azure, GCP — strategic level) (@cloud-architect, @aws-skills)
+- Cloud platforms (AWS, Azure, GCP, strategic level) (@cloud-architect, @aws-skills)
 - Enterprise architecture frameworks (TOGAF awareness) (@software-architecture, @architecture-patterns)
 - Integration patterns (APIs, ETL, event-driven) (@api-design-principles, @data-engineering-data-pipeline)
 - SaaS and low-code platform evaluation (@make-automation, @workflow-automation)
@@ -38,9 +38,9 @@ A recognised expert in helping businesses modernise operations, migrate legacy s
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @workflow-automation — process automation strategy
-- @legacy-modernizer — legacy system modernisation
-- @cloud-architect — cloud migration guidance
-- @software-architecture — digital architecture design
-- @make-automation — no-code/low-code automation
-- @startup-analyst — business transformation analysis
+- @workflow-automation: process automation strategy
+- @legacy-modernizer: legacy system modernisation
+- @cloud-architect: cloud migration guidance
+- @software-architecture: digital architecture design
+- @make-automation: no-code/low-code automation
+- @startup-analyst: business transformation analysis

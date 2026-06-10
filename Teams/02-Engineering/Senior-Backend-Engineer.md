@@ -1,7 +1,7 @@
 # Senior Backend Engineer
 
 ## Position Details
-- **Department:** Engineering — Product Engineering
+- **Department:** Engineering (Product Engineering)
 - **Reports To:** Lead Backend Engineer
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -42,10 +42,10 @@ Builds and maintains backend services, APIs, and database systems for Number Pii
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @backend-dev-guidelines — backend coding standards
-- @nestjs-expert — NestJS patterns
-- @postgresql — PostgreSQL queries and migrations
-- @api-design-principles — API design standards
-- @nodejs-best-practices — Node.js best practices
-- @drizzle-orm-expert — ORM usage and migrations
-- @auth-implementation-patterns — authentication implementation
+- @backend-dev-guidelines: backend coding standards
+- @nestjs-expert: NestJS patterns
+- @postgresql: PostgreSQL queries and migrations
+- @api-design-principles: API design standards
+- @nodejs-best-practices: Node.js best practices
+- @drizzle-orm-expert: ORM usage and migrations
+- @auth-implementation-patterns: authentication implementation

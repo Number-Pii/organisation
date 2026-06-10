@@ -27,7 +27,7 @@ Owns the security posture of all Number Pii products, infrastructure, and client
 - Authentication & authorisation (OAuth 2.0, OIDC, SAML, JWT) (@auth-implementation-patterns)
 - Container security (Docker, Kubernetes security policies) (@k8s-security-policies, @docker-expert)
 - SIEM and log analysis (@grafana-dashboards, @security-audit)
-- Encryption (TLS, at-rest, key management — KMS) (@secrets-management)
+- Encryption (TLS, at-rest, key management, KMS) (@secrets-management)
 - Content Security Policy, CORS, HSTS (@web-security-testing, @security-scanning-security-hardening)
 - Incident response playbooks (@pagerduty-automation, @security-audit)
 
@@ -48,13 +48,13 @@ Owns the security posture of all Number Pii products, infrastructure, and client
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @security-audit — security architecture review
-- @threat-modeling-expert — threat modelling and risk assessment
-- @web-security-testing — application security testing
-- @security-compliance-compliance-check — GDPR, SOC 2, ISO 27001
-- @pentest-checklist — penetration testing programme
-- @security-scanning-security-sast — SAST tooling (Snyk, SonarQube)
-- @security-scanning-security-hardening — infrastructure hardening
-- @k8s-security-policies — container security policies
-- @gdpr-data-handling — data protection compliance
-- @burp-suite-testing — web application security testing
+- @security-audit: security architecture review
+- @threat-modeling-expert: threat modelling and risk assessment
+- @web-security-testing: application security testing
+- @security-compliance-compliance-check: GDPR, SOC 2, ISO 27001
+- @pentest-checklist: penetration testing programme
+- @security-scanning-security-sast: SAST tooling (Snyk, SonarQube)
+- @security-scanning-security-hardening: infrastructure hardening
+- @k8s-security-policies: container security policies
+- @gdpr-data-handling: data protection compliance
+- @burp-suite-testing: web application security testing

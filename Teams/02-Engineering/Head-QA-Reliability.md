@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Builds bulletproof test infrastructure and owns the quality bar across all products and client deliveries. Not just a test runner — this role designs the quality strategy, automated testing frameworks, and release gates that ensure nothing ships broken.
+Builds bulletproof test infrastructure and owns the quality bar across all products and client deliveries. Not just a test runner; this role designs the quality strategy, automated testing frameworks, and release gates that ensure nothing ships broken.
 
 ## Core Skills
 - Test strategy and planning (@testing-qa, @test-driven-development)
@@ -43,10 +43,10 @@ Builds bulletproof test infrastructure and owns the quality bar across all produ
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @test-driven-development — TDD strategy and culture
-- @e2e-testing — E2E test framework design
-- @playwright-skill — Playwright test automation
-- @javascript-testing-patterns — unit and integration testing
-- @testing-qa — QA methodology and strategy
-- @k6-load-testing — performance and load testing
-- @performance-testing-review-ai-review — performance test review
+- @test-driven-development: TDD strategy and culture
+- @e2e-testing: E2E test framework design
+- @playwright-skill: Playwright test automation
+- @javascript-testing-patterns: unit and integration testing
+- @testing-qa: QA methodology and strategy
+- @k6-load-testing: performance and load testing
+- @performance-testing-review-ai-review: performance test review

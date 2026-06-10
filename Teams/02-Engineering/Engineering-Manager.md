@@ -39,9 +39,9 @@ The Engineering Manager owns the processes, hiring pipeline, and coordination th
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @project-development — sprint planning and delivery management
-- @git-pr-workflows-git-workflow — Git workflow standards
-- @cicd-automation-workflow-automate — CI/CD pipeline management
-- @writing-plans — engineering planning and specs
-- @internal-comms — team communication and reporting
-- @team-collaboration-standup-notes — stand-up and retro facilitation
+- @project-development: sprint planning and delivery management
+- @git-pr-workflows-git-workflow: Git workflow standards
+- @cicd-automation-workflow-automate: CI/CD pipeline management
+- @writing-plans: engineering planning and specs
+- @internal-comms: team communication and reporting
+- @team-collaboration-standup-notes: stand-up and retro facilitation

@@ -20,7 +20,7 @@ ACA/ACCA qualified chartered accountant with experience in tech company finance.
 
 ## Technical Skills
 - Accounting software (Xero, QuickBooks, Sage) (@billing-automation)
-- Financial modelling (Excel/Google Sheets — advanced) (@startup-financial-modeling, @data-storytelling)
+- Financial modelling (Excel/Google Sheets, advanced) (@startup-financial-modeling, @data-storytelling)
 - Payroll systems (@bamboohr-automation)
 - Banking and payment platforms (Stripe, GoCardless) (@stripe-automation, @billing-automation)
 - Expense management (Pleo, Expensify) (@cost-optimization)
@@ -39,9 +39,9 @@ ACA/ACCA qualified chartered accountant with experience in tech company finance.
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @startup-financial-modeling — financial projections and modelling
-- @risk-metrics-calculation — financial risk metrics
-- @billing-automation — billing and invoicing automation
-- @cost-optimization — cost control and efficiency
-- @startup-metrics-framework — financial KPI tracking
-- @stripe-automation — Stripe payment management
+- @startup-financial-modeling: financial projections and modelling
+- @risk-metrics-calculation: financial risk metrics
+- @billing-automation: billing and invoicing automation
+- @cost-optimization: cost control and efficiency
+- @startup-metrics-framework: financial KPI tracking
+- @stripe-automation: Stripe payment management

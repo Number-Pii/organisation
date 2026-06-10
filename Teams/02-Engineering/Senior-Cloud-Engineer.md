@@ -1,7 +1,7 @@
 # Senior Cloud Engineer
 
 ## Position Details
-- **Department:** Engineering — DevOps & Infrastructure
+- **Department:** Engineering (DevOps & Infrastructure)
 - **Reports To:** Head of DevOps & Infrastructure
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -37,10 +37,10 @@ Specialises in cloud architecture, cost optimisation, and multi-environment infr
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @cloud-architect — cloud architecture design
-- @aws-skills — AWS services expertise
-- @terraform-infrastructure — Terraform infrastructure management
-- @kubernetes-deployment — Kubernetes on cloud
-- @aws-serverless — serverless architecture
-- @aws-cost-optimizer — cloud cost optimisation
-- @secrets-management — KMS and secrets handling
+- @cloud-architect: cloud architecture design
+- @aws-skills: AWS services expertise
+- @terraform-infrastructure: Terraform infrastructure management
+- @kubernetes-deployment: Kubernetes on cloud
+- @aws-serverless: serverless architecture
+- @aws-cost-optimizer: cloud cost optimisation
+- @secrets-management: KMS and secrets handling

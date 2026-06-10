@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-The CTO owns the entire technology stack — product architecture, infrastructure, security, and client delivery quality. They make irreversible technology decisions (stack, architecture, security model) and serve as a force multiplier, elevating the craft of every engineer. The CTO is the technical authority for both internal products and client-facing services.
+The CTO owns the entire technology stack: product architecture, infrastructure, security, and client delivery quality. They make irreversible technology decisions (stack, architecture, security model) and serve as a force multiplier, elevating the craft of every engineer. The CTO is the technical authority for both internal products and client-facing services.
 
 ## Core Skills
 - System architecture and distributed systems design (@software-architecture, @architecture-patterns)
@@ -43,10 +43,10 @@ The CTO owns the entire technology stack — product architecture, infrastructur
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @software-architecture — system design and technical strategy
-- @architecture-decision-records — documenting key technical decisions
-- @senior-architect — high-level architectural review
-- @cloud-architect — cloud infrastructure strategy
-- @threat-modeling-expert — security threat analysis
-- @architecture-patterns — proven architectural patterns
-- @security-audit — security posture review
+- @software-architecture: system design and technical strategy
+- @architecture-decision-records: documenting key technical decisions
+- @senior-architect: high-level architectural review
+- @cloud-architect: cloud infrastructure strategy
+- @threat-modeling-expert: security threat analysis
+- @architecture-patterns: proven architectural patterns
+- @security-audit: security posture review

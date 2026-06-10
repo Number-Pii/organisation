@@ -3,7 +3,7 @@
 ## Position Details
 - **Department:** Engineering
 - **Reports To:** CTO
-- **Direct Reports:** Lead Web Developer, Lead Mobile Developer, Senior Web Developer(s), Senior Mobile Developer(s), Senior Software Engineer(s) — Custom Solutions
+- **Direct Reports:** Lead Web Developer, Lead Mobile Developer, Senior Web Developer(s), Senior Mobile Developer(s), Senior Software Engineer(s) (Custom) Solutions
 - **Employment Type:** Full-time
 
 ## Role Summary
@@ -41,9 +41,9 @@ Leads the engineering team that delivers all client-facing services: web app dev
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @senior-architect — client project architecture oversight
-- @cloud-architect — deployment and infrastructure decisions
-- @react-best-practices — frontend quality standards
-- @backend-dev-guidelines — backend quality standards
-- @mobile-developer — mobile project oversight
-- @project-development — multi-project delivery management
+- @senior-architect: client project architecture oversight
+- @cloud-architect: deployment and infrastructure decisions
+- @react-best-practices: frontend quality standards
+- @backend-dev-guidelines: backend quality standards
+- @mobile-developer: mobile project oversight
+- @project-development: multi-project delivery management

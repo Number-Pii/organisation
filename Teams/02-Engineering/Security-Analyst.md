@@ -1,7 +1,7 @@
 # Security Analyst
 
 ## Position Details
-- **Department:** Engineering — Information Security
+- **Department:** Engineering (Information Security)
 - **Reports To:** Head of Information Security
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -39,9 +39,9 @@ Monitors security threats, analyses security events, manages compliance document
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @security-compliance-compliance-check — GDPR, SOC 2, ISO 27001 compliance
-- @gdpr-data-handling — data protection and privacy
-- @vulnerability-scanner — vulnerability scanning tools
-- @security-audit — security monitoring and analysis
-- @scanning-tools — security scanning toolset
-- @pci-compliance — payment card security standards
+- @security-compliance-compliance-check: GDPR, SOC 2, ISO 27001 compliance
+- @gdpr-data-handling: data protection and privacy
+- @vulnerability-scanner: vulnerability scanning tools
+- @security-audit: security monitoring and analysis
+- @scanning-tools: security scanning toolset
+- @pci-compliance: payment card security standards

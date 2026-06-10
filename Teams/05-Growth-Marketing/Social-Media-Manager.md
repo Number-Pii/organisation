@@ -38,9 +38,9 @@ Manages Number Pii's social media presence across all platforms. Creates engagin
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @social-content — social media content creation
-- @instagram-automation — Instagram management
-- @twitter-automation — X/Twitter management
-- @linkedin-automation — LinkedIn content and outreach
-- @content-creator — content production
-- @youtube-automation — YouTube channel management
+- @social-content: social media content creation
+- @instagram-automation: Instagram management
+- @twitter-automation: X/Twitter management
+- @linkedin-automation: LinkedIn content and outreach
+- @content-creator: content production
+- @youtube-automation: YouTube channel management

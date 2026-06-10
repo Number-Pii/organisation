@@ -1,6 +1,6 @@
-# Number Pii — Organisation
+# Number Pii: Organisation
 
-> The virtual organisational structure for Number Pii — a fully-staffed, elite team built to help sole traders, startups, and SMEs grow through digital solutions. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
+> The virtual organisational structure for Number Pii, a fully-staffed, elite team built to help sole traders, startups, and SMEs grow through digital solutions. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
 
 Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company is owned and operated by its co-founders, **Olatunbosun Iyare** and **Destiny Ihejirika**, who hold final decision-making authority; the virtual organisation documented here exists to execute on their behalf (see [Governance](Teams/organisation.md#governance-two-layers)). The company operates across three pillars:
 
@@ -10,7 +10,7 @@ Number Pii is a **software company and technology consultancy** focused on helpi
 | **Services** | Web app, mobile app, and custom software development |
 | **Consultancy** | Digital transformation & technology strategy advisory |
 
-This document set covers every department — from Executive Leadership through Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, and Operations — reflecting the company as a complete, fully-staffed virtual operation.
+This document set covers every department, from Executive Leadership through Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, and Operations, reflecting the company as a complete, fully-staffed virtual operation.
 
 ---
 
@@ -27,7 +27,7 @@ This document set covers every department — from Executive Leadership through 
 
 ## Overview
 
-This repository contains the complete organisational blueprint for Number Pii — role-by-role documentation, reporting structures, delegation models, and approval authority matrices.
+This repository contains the complete organisational blueprint for Number Pii: role-by-role documentation, reporting structures, delegation models, and approval authority matrices.
 
 **What it covers:**
 
@@ -47,7 +47,7 @@ organisation/
 ├── Teams/
 │   ├── organisation.md                        # Master org chart, philosophy, delegation model
 │   ├── 01-Executive-Leadership/               # CEO, CTO, CPO, CMO, COO, Chief of Staff, VP Sales
-│   ├── 02-Engineering/                        # All engineering roles (~18–22 people)
+│   ├── 02-Engineering/                        # All engineering roles (~18-22 people)
 │   ├── 03-Product-Design/                     # Product managers, designers, UX researcher, analyst
 │   ├── 04-Sales-Consultancy/                  # Consultants, BDMs, account managers
 │   ├── 05-Growth-Marketing/                   # Content, SEO, social, performance marketing
@@ -70,7 +70,7 @@ organisation/
 
 ## Departments
 
-### 01 — Executive Leadership
+### 01: Executive Leadership
 
 | Role | File |
 |------|------|
@@ -82,7 +82,7 @@ organisation/
 | Chief of Staff | [Chief-of-Staff.md](Teams/01-Executive-Leadership/Chief-of-Staff.md) |
 | VP Sales & Consultancy | [VP-Sales-Consultancy.md](Teams/01-Executive-Leadership/VP-Sales-Consultancy.md) |
 
-### 02 — Engineering (~18–22 people)
+### 02: Engineering (~18-22 people)
 
 Split into two verticals to protect product development from client work:
 
@@ -111,30 +111,30 @@ Split into two verticals to protect product development from client work:
 | Senior Security Engineer | [Senior-Security-Engineer.md](Teams/02-Engineering/Senior-Security-Engineer.md) |
 | Security Analyst | [Security-Analyst.md](Teams/02-Engineering/Security-Analyst.md) |
 
-### 03 — Product & Design (~6 people)
+### 03: Product & Design (~6 people)
 
 | Role | File |
 |------|------|
 | Senior Product Manager | [Senior-Product-Manager.md](Teams/03-Product-Design/Senior-Product-Manager.md) |
-| Product Manager — Future Products | [Product-Manager-Future.md](Teams/03-Product-Design/Product-Manager-Future.md) |
+| Product Manager (Future Products) | [Product-Manager-Future.md](Teams/03-Product-Design/Product-Manager-Future.md) |
 | Lead Product Designer | [Lead-Product-Designer.md](Teams/03-Product-Design/Lead-Product-Designer.md) |
 | Senior Product Designer | [Senior-Product-Designer.md](Teams/03-Product-Design/Senior-Product-Designer.md) |
 | UX Researcher | [UX-Researcher.md](Teams/03-Product-Design/UX-Researcher.md) |
 | Product Analyst | [Product-Analyst.md](Teams/03-Product-Design/Product-Analyst.md) |
 
-### 04 — Sales & Consultancy (~7 people)
+### 04: Sales & Consultancy (~7 people)
 
 | Role | File |
 |------|------|
 | Head of Consultancy | [Head-of-Consultancy.md](Teams/04-Sales-Consultancy/Head-of-Consultancy.md) |
-| Principal Consultant — Digital Transformation | [Principal-Consultant-Digital-Transformation.md](Teams/04-Sales-Consultancy/Principal-Consultant-Digital-Transformation.md) |
-| Principal Consultant — Technology Strategy | [Principal-Consultant-Technology-Strategy.md](Teams/04-Sales-Consultancy/Principal-Consultant-Technology-Strategy.md) |
+| Principal Consultant (Digital Transformation) | [Principal-Consultant-Digital-Transformation.md](Teams/04-Sales-Consultancy/Principal-Consultant-Digital-Transformation.md) |
+| Principal Consultant (Technology Strategy) | [Principal-Consultant-Technology-Strategy.md](Teams/04-Sales-Consultancy/Principal-Consultant-Technology-Strategy.md) |
 | Head of Business Development | [Head-of-Business-Development.md](Teams/04-Sales-Consultancy/Head-of-Business-Development.md) |
 | Senior Business Development Manager | [Senior-Business-Development-Manager.md](Teams/04-Sales-Consultancy/Senior-Business-Development-Manager.md) |
 | Business Development Representative | [Business-Development-Representative.md](Teams/04-Sales-Consultancy/Business-Development-Representative.md) |
 | Account Manager | [Account-Manager.md](Teams/04-Sales-Consultancy/Account-Manager.md) |
 
-### 05 — Growth & Marketing (~5–6 people)
+### 05: Growth & Marketing (~5-6 people)
 
 | Role | File |
 |------|------|
@@ -145,7 +145,7 @@ Split into two verticals to protect product development from client work:
 | Performance Marketing Manager | [Performance-Marketing-Manager.md](Teams/05-Growth-Marketing/Performance-Marketing-Manager.md) |
 | Social Media Manager | [Social-Media-Manager.md](Teams/05-Growth-Marketing/Social-Media-Manager.md) |
 
-### 06 — Operations (~5 people)
+### 06: Operations (~5 people)
 
 | Role | File |
 |------|------|
@@ -167,13 +167,13 @@ For the full philosophy, org chart, delegation model, and approval authority mat
 
 ## How to Use This Repository
 
-**For hiring managers** — Each role file contains the full job brief: responsibilities, required skills, reporting line, and project involvement. Use it as the source of truth when opening a role.
+**For hiring managers:** Each role file contains the full job brief: responsibilities, required skills, reporting line, and project involvement. Use it as the source of truth when opening a role.
 
-**For new hires** — Read your role file, then `organisation.md` to understand where you sit in the structure, who you report to, and what you can approve independently.
+**For new hires:** Read your role file, then `organisation.md` to understand where you sit in the structure, who you report to, and what you can approve independently.
 
-**For project leads** — Consult the *Project Delegation Model* in `organisation.md` to determine who leads, who executes, and who signs off for any given project type.
+**For project leads:** Consult the *Project Delegation Model* in `organisation.md` to determine who leads, who executes, and who signs off for any given project type.
 
-**For leadership** — The *Approval Authority Matrix* in `organisation.md` defines decision-making boundaries for every level of the organisation.
+**For leadership:** The *Approval Authority Matrix* in `organisation.md` defines decision-making boundaries for every level of the organisation.
 
 ---
 
@@ -202,9 +202,9 @@ The assistant will:
 
 ### Skill Linking Convention
 Every role file now has three layers:
-- **Core Skills** — listed with inline `(@skill-name)` references
-- **Technical Skills** — listed with inline `(@skill-name)` references
-- **Agent Skills** — curated `@skill-name` list for direct invocation
+- **Core Skills**: listed with inline `(@skill-name)` references
+- **Technical Skills**: listed with inline `(@skill-name)` references
+- **Agent Skills**: curated `@skill-name` list for direct invocation
 
 Invoke any skill: `@skill-name [your task]`
 Example: `@security-audit review this authentication implementation`
@@ -226,10 +226,10 @@ Generates a full report of which role bullets are linked and which skills are un
 
 ## Using This Toolkit in Your Projects
 
-The organisation toolkit is a **local development tool** — it is not a dependency of your project.
+The organisation toolkit is a **local development tool**; it is not a dependency of your project.
 It lives alongside your project files, the AI reads it, and your project's git never needs to know about it.
 
-### Recommended — Gitignored Local Clone
+### Recommended: Gitignored Local Clone
 
 Clone the toolkit into your project root, then add it to `.gitignore`.
 It stays local and updatable, but is completely invisible to your project's git history.
@@ -266,7 +266,7 @@ python3 /path/to/organisation/scripts/init_project.py \
   --output-dir /path/to/my-project
 ```
 
-> **`--output-dir` is required.** Never run without it — the default is the current directory, which will create `doc/` inside the toolkit if you are in that directory.
+> **`--output-dir` is required.** Never run without it; the default is the current directory, which will create `doc/` inside the toolkit if you are in that directory.
 
 ### For Team Repos (Git Submodule)
 
@@ -284,7 +284,7 @@ If `organisation/` is already inside a project and Git is treating it as an unin
 ```bash
 git rm --cached organisation
 rm -rf organisation/.git
-git add organisation/   # only if you want to track it as files — skip if gitignoring it
+git add organisation/   # only if you want to track it as files; skip if gitignoring it
 ```
 
 ---
@@ -293,7 +293,7 @@ git add organisation/   # only if you want to track it as files — skip if giti
 
 When this toolkit is updated, you can pull the latest version without affecting any of your existing projects.
 
-**Your project files (`doc/`) live in your own project repo — they are never touched by a toolkit update.**
+**Your project files (`doc/`) live in your own project repo; they are never touched by a toolkit update.**
 
 ### Check for updates
 ```bash
@@ -314,7 +314,7 @@ python3 scripts/update.py --changelog
 ### Version types
 | Version bump | What it means | Action needed |
 |---|---|---|
-| PATCH `3.1.x` | Wording fixes, role/skill updates | None — update freely |
+| PATCH `3.1.x` | Wording fixes, role/skill updates | None; update freely |
 | MINOR `3.x.0` | New protocol steps or features | Read changelog before new sessions |
 | MAJOR `x.0.0` | Initialize Protocol restructured | Read migration notes before re-initializing |
 

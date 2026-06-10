@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns the content strategy and organic growth engine. Top-1% SEO strategist who can write — a rare combination. Proven organic traffic results driving leads for products and services. Owns the organisation-wide Writing Standard (`WRITING.md`): maintains the banned-phrases list, arbitrates style questions, and evolves the standard as new AI-signalling patterns emerge.
+Owns the content strategy and organic growth engine. Top-1% SEO strategist who can write, a rare combination. Proven organic traffic results driving leads for products and services. Owns the organisation-wide Writing Standard (`WRITING.md`): maintains the banned-phrases list, arbitrates style questions, and evolves the standard as new AI-signalling patterns emerge.
 
 ## Core Skills
 - Content strategy and editorial planning (@content-strategy, @seo-content-planner)
@@ -39,10 +39,10 @@ Owns the content strategy and organic growth engine. Top-1% SEO strategist who c
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @seo — SEO strategy and execution
-- @seo-content — SEO content creation
-- @content-strategy — editorial and content planning
-- @copywriting — high-quality content writing
-- @seo-audit — site-wide SEO auditing
-- @seo-technical — technical SEO implementation
-- @seo-keyword-strategist — keyword research and strategy
+- @seo: SEO strategy and execution
+- @seo-content: SEO content creation
+- @content-strategy: editorial and content planning
+- @copywriting: high-quality content writing
+- @seo-audit: site-wide SEO auditing
+- @seo-technical: technical SEO implementation
+- @seo-keyword-strategist: keyword research and strategy

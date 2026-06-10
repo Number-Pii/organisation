@@ -1,7 +1,7 @@
 # QA Automation Engineer
 
 ## Position Details
-- **Department:** Engineering — QA & Reliability
+- **Department:** Engineering (QA & Reliability)
 - **Reports To:** Head of QA & Reliability
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -39,10 +39,10 @@ Builds and maintains automated test suites, CI/CD test pipelines, and quality in
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @playwright-skill — Playwright automation
-- @e2e-testing — E2E automation framework
-- @javascript-testing-patterns — Jest/Vitest automation
-- @k6-load-testing — k6/Artillery load testing
-- @github-actions-templates — CI test pipeline integration
-- @tdd-workflows-tdd-cycle — TDD workflow
-- @test-automator — test automation best practices
+- @playwright-skill: Playwright automation
+- @e2e-testing: E2E automation framework
+- @javascript-testing-patterns: Jest/Vitest automation
+- @k6-load-testing: k6/Artillery load testing
+- @github-actions-templates: CI test pipeline integration
+- @tdd-workflows-tdd-cycle: TDD workflow
+- @test-automator: test automation best practices

@@ -1,13 +1,13 @@
 # Senior Full-Stack Engineer
 
 ## Position Details
-- **Department:** Engineering — Product Engineering
+- **Department:** Engineering (Product Engineering)
 - **Reports To:** VP of Product Engineering
 - **Direct Reports:** None
 - **Employment Type:** Full-time
 
 ## Role Summary
-A versatile engineer who context-switches between frontend and backend without losing quality. Works on product features end-to-end — from database schema to UI component. Makes architectural decisions independently.
+A versatile engineer who context-switches between frontend and backend without losing quality. Works on product features end-to-end, from database schema to UI component. Makes architectural decisions independently.
 
 ## Core Skills
 - Full-stack feature development (UI to database) (@senior-fullstack, @backend-dev-guidelines)
@@ -41,10 +41,10 @@ A versatile engineer who context-switches between frontend and backend without l
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @senior-fullstack — full-stack architecture and development
-- @react-best-practices — React frontend development
-- @backend-dev-guidelines — backend development standards
-- @typescript-expert — TypeScript across the stack
-- @postgresql — database design and queries
-- @api-design-principles — API design
-- @docker-expert — containerisation
+- @senior-fullstack: full-stack architecture and development
+- @react-best-practices: React frontend development
+- @backend-dev-guidelines: backend development standards
+- @typescript-expert: TypeScript across the stack
+- @postgresql: database design and queries
+- @api-design-principles: API design
+- @docker-expert: containerisation

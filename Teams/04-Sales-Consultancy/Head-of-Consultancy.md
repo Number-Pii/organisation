@@ -3,11 +3,11 @@
 ## Position Details
 - **Department:** Sales & Consultancy
 - **Reports To:** VP of Sales & Consultancy
-- **Direct Reports:** Principal Consultant — Digital Transformation, Principal Consultant — Technology Strategy
+- **Direct Reports:** Principal Consultant (Digital Transformation), Principal Consultant (Technology Strategy)
 - **Employment Type:** Full-time
 
 ## Role Summary
-Leads the consultancy practice. Ensures engagements are scoped correctly, delivered to a high standard, and positioned as premium expert advisory — not generic consulting.
+Leads the consultancy practice. Ensures engagements are scoped correctly, delivered to a high standard, and positioned as premium expert advisory, not generic consulting.
 
 ## Core Skills
 - Consultancy practice management (@project-development, @customer-support)
@@ -30,8 +30,8 @@ Leads the consultancy practice. Ensures engagements are scoped correctly, delive
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @software-architecture — technical architecture for client engagements
-- @senior-architect — architecture review and governance
-- @project-development — consultancy project delivery
-- @architecture-decision-records — documenting client decisions
-- @customer-support — client relationship management
+- @software-architecture: technical architecture for client engagements
+- @senior-architect: architecture review and governance
+- @project-development: consultancy project delivery
+- @architecture-decision-records: documenting client decisions
+- @customer-support: client relationship management

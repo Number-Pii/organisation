@@ -39,9 +39,9 @@ Runs paid acquisition channels. Manages Google Ads, LinkedIn Ads, and Meta Ads w
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @paid-ads — paid media strategy and execution
-- @analytics-tracking — conversion and attribution tracking
-- @ab-test-setup — A/B and multivariate testing
-- @google-analytics-automation — GA4 reporting
-- @seo-keyword-strategist — keyword and audience targeting
-- @page-cro — landing page conversion optimisation
+- @paid-ads: paid media strategy and execution
+- @analytics-tracking: conversion and attribution tracking
+- @ab-test-setup: A/B and multivariate testing
+- @google-analytics-automation: GA4 reporting
+- @seo-keyword-strategist: keyword and audience targeting
+- @page-cro: landing page conversion optimisation

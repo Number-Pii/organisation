@@ -41,9 +41,9 @@ Leads the engineering team dedicated to Number Pii's own products. Ensures produ
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @software-architecture — product engineering architecture
-- @senior-architect — architectural governance
-- @architecture-decision-records — engineering decision documentation
-- @kubernetes-architect — container orchestration strategy
-- @cloud-architect — cloud infrastructure design
-- @architecture-patterns — engineering patterns and standards
+- @software-architecture: product engineering architecture
+- @senior-architect: architectural governance
+- @architecture-decision-records: engineering decision documentation
+- @kubernetes-architect: container orchestration strategy
+- @cloud-architect: cloud infrastructure design
+- @architecture-patterns: engineering patterns and standards

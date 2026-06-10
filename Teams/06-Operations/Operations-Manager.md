@@ -35,9 +35,9 @@ Manages contracts, vendor relationships, process efficiency, and day-to-day oper
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @workflow-automation — operational process automation
-- @risk-manager — operational risk management
-- @cost-optimization — cost reduction initiatives
-- @make-automation — no-code automation
-- @zapier-make-patterns — Zapier/Make integration patterns
-- @analytics-product — operational metrics and reporting
+- @workflow-automation: operational process automation
+- @risk-manager: operational risk management
+- @cost-optimization: cost reduction initiatives
+- @make-automation: no-code automation
+- @zapier-make-patterns: Zapier/Make integration patterns
+- @analytics-product: operational metrics and reporting

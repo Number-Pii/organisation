@@ -3,17 +3,34 @@
 All notable changes to the Number Pii Organisation Toolkit are documented here.
 
 Version format: `MAJOR.MINOR.PATCH`
-- **MAJOR** — breaking changes to the Initialize Protocol or doc/ template structure
-- **MINOR** — new features, new steps, significant additions to CLAUDE.md / GEMINI.md
-- **PATCH** — wording fixes, role file updates, skill additions
+- **MAJOR**: breaking changes to the Initialize Protocol or doc/ template structure
+- **MINOR**: new features, new steps, significant additions to CLAUDE.md / GEMINI.md
+- **PATCH**: wording fixes, role file updates, skill additions
 
 > **Safe to update?** Any version bump that is MINOR or PATCH will not break existing projects.
-> A MAJOR bump means the Initialize Protocol changed in a way that may affect new sessions —
+> A MAJOR bump means the Initialize Protocol changed in a way that may affect new sessions;
 > your existing `doc/` files are always safe, but read the migration notes before re-initializing.
 
 ---
 
-## [3.12.0] — 2026-06-10
+## [3.12.1]: 2026-06-10
+
+### Changed
+- **Legacy dash sweep.** All em dashes and en dashes removed from maintained toolkit
+  prose, bringing the whole repository in line with the Writing Style standard:
+  role files (Agent Skills separators now use colons), `organisation.md`,
+  `philosophy.md`, `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `INITIALIZE.md`,
+  `CLAUDE.md`, the role template, script docstrings, and script output strings.
+- Role display names with em dash separators now use parentheses: "Product Manager
+  (Future Products)", "Principal Consultant (Digital Transformation)", "Principal
+  Consultant (Technology Strategy)", "Senior Software Engineer(s) (Custom)".
+- The only remaining dash characters are the rule statements that name them (in
+  `CLAUDE.md`, `WRITING.md`, `scripts/README.md`), HTML comments (exempt from prose
+  scanning), and the vendored `Teams/skills/` modules, which stay out of scope.
+- `GEMINI.md`, `AGENTS.md`, and `scripts/audit_report.md` regenerated. No rule or
+  protocol content changed; this is a wording-only PATCH release.
+
+## [3.12.0]: 2026-06-10
 
 ### Added
 - **Writing Standards Framework.** Writing quality is now a first-class, enforceable
@@ -44,7 +61,7 @@ Version format: `MAJOR.MINOR.PATCH`
 - Remaining en dashes in `CLAUDE.md` and `INITIALIZE.md` replaced with hyphens.
 - Protocol version bumped to 2.12 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
 
-## [3.11.0] — 2026-06-10
+## [3.11.0]: 2026-06-10
 
 ### Added
 - **Software Delivery Lifecycle.** `INITIALIZE.md` now defines six stages (Discovery,
@@ -62,7 +79,7 @@ Version format: `MAJOR.MINOR.PATCH`
   criteria for Verification, and "all quality gates pass" added to Completion Criteria.
 - Protocol version bumped to 2.11 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
 
-## [3.10.0] — 2026-06-10
+## [3.10.0]: 2026-06-10
 
 ### Added
 - **`INITIALIZE.md`** at the toolkit root: the full Initialize Protocol (Steps 1 through 8)
@@ -87,7 +104,7 @@ Version format: `MAJOR.MINOR.PATCH`
   updated. The user-facing init flow is unchanged, so this is a MINOR bump.
 - Protocol version bumped to 2.10 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
 
-## [3.9.0] — 2026-06-10
+## [3.9.0]: 2026-06-10
 
 ### Added
 - **Project Classification Framework.** New Step 2c in the Initialize Protocol: every
@@ -110,7 +127,7 @@ Version format: `MAJOR.MINOR.PATCH`
 - `scripts/README.md` documents `--level` and `--existing`.
 - Protocol version bumped to 2.9 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
 
-## [3.8.0] — 2026-06-10
+## [3.8.0]: 2026-06-10
 
 ### Added
 - **Governance: Two Layers.** `CLAUDE.md` and `Teams/organisation.md` now state explicitly that
@@ -132,10 +149,10 @@ Version format: `MAJOR.MINOR.PATCH`
 - `Chief-of-Staff.md` Board references replaced with founder support duties.
 - Protocol version bumped to 2.8 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
 
-## [3.7.0] — 2026-05-03
+## [3.7.0]: 2026-05-03
 
 ### Added
-- **OpenAI Codex support** — `AGENTS.md` is now generated alongside `GEMINI.md` from
+- **OpenAI Codex support**: `AGENTS.md` is now generated alongside `GEMINI.md` from
   `CLAUDE.md` via `scripts/sync_ai_context.py`. OpenAI Codex auto-loads `AGENTS.md`,
   giving all three major AI coding assistants (Claude Code, Gemini CLI, Codex) full
   access to the toolkit context without any manual setup.
@@ -154,18 +171,18 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.6.0] — 2026-04-19
+## [3.6.0]: 2026-04-19
 
 ### Added
-- **Scoped skill discovery** — new `scripts/find_skill.py` returns matching skill
+- **Scoped skill discovery**: new `scripts/find_skill.py` returns matching skill
   names only (no SKILL.md content loaded). Step 3 of the Initialize Protocol and
   the Skills Directory section in `CLAUDE.md` / `GEMINI.md` now point to it as
   the preferred scan before loading any full skill definition. (PR #4, PR #5)
-- **Extended SKILL.md frontmatter schema** for lazy-loading. Four new fields —
-  `domain`, `size_class`, `summary`, `detail_sections` — are now required on all
+- **Extended SKILL.md frontmatter schema** for lazy-loading. Four new fields
+  (`domain`, `size_class`, `summary`, `detail_sections`) are now required on all
   new skills. `find_skill.py` surfaces `summary` in result rows and prefers
   frontmatter `domain` over the CATEGORIES.md lookup. (PR #6)
-- **`scripts/generate_skill_frontmatter.py`** — helper that proposes the four
+- **`scripts/generate_skill_frontmatter.py`**: helper that proposes the four
   extension fields from an existing SKILL.md and supports in-place `--write`. (PR #6)
 - **`scripts/audit_skills.py`** extended with a zero-dep YAML subset parser, an
   opt-in validator for the four extension fields, and a new coverage stat
@@ -180,9 +197,9 @@ Version format: `MAJOR.MINOR.PATCH`
   Non-Negotiable Standards in `CLAUDE.md` / `GEMINI.md`, end of
   `Teams/organisation.md`, end of `Teams/philosophy.md`. Framed as a contributor
   "don't churn this without good reason" signal and a hook for future
-  prompt-cache tooling — not a live Claude Code directive. New "Cache-safe vs
+  prompt-cache tooling, not a live Claude Code directive. New "Cache-safe vs
   Volatile Blocks" section in `CONTRIBUTING.md`. (PR #7)
-- **Token-efficiency optimisations** across the toolkit (items 1–5, 8, 10 of the
+- **Token-efficiency optimisations** across the toolkit (items 1-5, 8, 10 of the
   Token Efficiency & Context Window Optimization close-out plan). (PR #3)
 
 ### Changed
@@ -204,7 +221,7 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.5.0] — 2026-04-12
+## [3.5.0]: 2026-04-12
 
 ### Added
 - **Mandatory Reading Protocol** at the top of `CLAUDE.md` and `GEMINI.md`. Declares both
@@ -216,19 +233,19 @@ Version format: `MAJOR.MINOR.PATCH`
   override AI defaults and training priors.
 - `init_project.py` now scaffolds a `CLAUDE.md` and `GEMINI.md` in the consuming project
   root that carry the same Mandatory Reading Protocol and the inherited Non-Negotiable
-  Standards — so every new AI session in a scaffolded project is bound by the rules
+  Standards, so every new AI session in a scaffolded project is bound by the rules
   immediately, without depending on the toolkit being present.
 - Protocol version bumped to 2.5.
 
 ### Migration Notes
 - No action required for existing projects. Your `doc/` folder is unchanged.
 - To get the new project-level `CLAUDE.md` / `GEMINI.md` in an existing project, re-run
-  `init_project.py` against that project — existing `doc/` files are preserved (the
+  `init_project.py` against that project; existing `doc/` files are preserved (the
   scaffolder skips files that already exist).
 
 ---
 
-## [3.4.0] — 2026-03-30
+## [3.4.0]: 2026-03-30
 
 ### Added
 - **Version Control Discipline** added to Non-Negotiable Standards in `CLAUDE.md` and `GEMINI.md`.
@@ -242,7 +259,7 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.3.0] — 2026-03-27
+## [3.3.0]: 2026-03-27
 
 ### Changed
 - Recommended consumption pattern is now **gitignored local clone**: clone the toolkit into
@@ -252,7 +269,7 @@ Version format: `MAJOR.MINOR.PATCH`
   (works when toolkit is gitignored inside the project root). Protocol version bumped to 2.2.
 
 ### Removed
-- Static copy pattern (Pattern B) removed from documentation — strictly inferior to gitignored clone.
+- Static copy pattern (Pattern B) removed from documentation, strictly inferior to gitignored clone.
 
 ### Migration Notes
 - No action required for existing projects. Your `doc/` folder is unchanged.
@@ -262,7 +279,7 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.2.0] — 2026-03-27
+## [3.2.0]: 2026-03-27
 
 ### Changed
 - Step 4 of the Initialize Protocol now requires `--output-dir` pointing to the consuming
@@ -281,14 +298,14 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.1.0] — 2026-03-26
+## [3.1.0]: 2026-03-26
 
 ### Added
-- **Step 6 — Scope Discipline** added to the Initialize Protocol in CLAUDE.md and GEMINI.md.
+- **Step 6 (Scope Discipline)** added to the Initialize Protocol in CLAUDE.md and GEMINI.md.
   Enforces `doc/project-brief.md` as the hard boundary for all project work. Existing projects
-  are unaffected — this only applies when starting new tasks or new AI sessions.
+  are unaffected; this only applies when starting new tasks or new AI sessions.
 - **Mandatory Handover Rule** added to Step 7. Clarifies that no task is complete until handover
-  notes are updated. No changes to the `doc/` file structure — existing handover files are compatible.
+  notes are updated. No changes to the `doc/` file structure; existing handover files are compatible.
 
 ### Changed
 - Welcome message corrected: "Welcome to Number Pii" (was "Welcome, Number Pii").
@@ -299,14 +316,14 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [3.0.0] — 2026-03-25
+## [3.0.0]: 2026-03-25
 
 ### Added
 - Full skill linking across all 53 role files: Core Skills, Technical Skills, and Agent Skills layers.
 - `Teams/skills/` directory with 1,294 AI skill modules.
-- `scripts/audit_skills.py` — skill coverage auditor.
-- `GEMINI.md` — Gemini CLI counterpart to CLAUDE.md (identical content).
-- `scripts/README.md` — script usage documentation.
+- `scripts/audit_skills.py`: skill coverage auditor.
+- `GEMINI.md`: Gemini CLI counterpart to CLAUDE.md (identical content).
+- `scripts/README.md`: script usage documentation.
 
 ### Changed
 - Initialize Protocol expanded from 5 steps to 7 steps (added Step 6 and Step 7).
@@ -315,12 +332,12 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ### Migration Notes
 - **MAJOR version**: If upgrading from 2.x, the Initialize Protocol has new steps.
-- Existing `doc/` files created with 2.x templates remain valid — no reformatting needed.
+- Existing `doc/` files created with 2.x templates remain valid; no reformatting needed.
 - New projects will get the richer 3.x templates automatically.
 
 ---
 
-## [2.0.0] — 2026-02-01
+## [2.0.0]: 2026-02-01
 
 ### Added
 - Initial `scripts/init_project.py` scaffolder.
@@ -329,9 +346,9 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
-## [1.0.0] — 2025-12-01
+## [1.0.0]: 2025-12-01
 
 ### Added
 - Initial organisation structure: 53 roles across 6 departments.
-- `Teams/organisation.md` — master org chart, delegation model, approval authority matrix.
-- `CLAUDE.md` with Initialize Protocol (Steps 1–5).
+- `Teams/organisation.md`: master org chart, delegation model, approval authority matrix.
+- `CLAUDE.md` with Initialize Protocol (Steps 1-5).

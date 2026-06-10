@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Owns the roadmap, feature prioritisation, user stories, and stakeholder management for any assigned Number Pii product. Ships features users love — not just manages tickets. Acts as the bridge between customers, design, and engineering.
+Owns the roadmap, feature prioritisation, user stories, and stakeholder management for any assigned Number Pii product. Ships features users love, not just manages tickets. Acts as the bridge between customers, design, and engineering.
 
 ## Core Skills
 - Product roadmap and feature prioritisation (@product-manager, @product-manager-toolkit)
@@ -40,9 +40,9 @@ Owns the roadmap, feature prioritisation, user stories, and stakeholder manageme
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @product-manager — product management frameworks
-- @product-manager-toolkit — PM tools and templates
-- @analytics-product — product metrics and data analysis
-- @startup-metrics-framework — OKRs and KPI tracking
-- @writing-plans — feature specs and planning docs
-- @launch-strategy — feature and product launches
+- @product-manager: product management frameworks
+- @product-manager-toolkit: PM tools and templates
+- @analytics-product: product metrics and data analysis
+- @startup-metrics-framework: OKRs and KPI tracking
+- @writing-plans: feature specs and planning docs
+- @launch-strategy: feature and product launches

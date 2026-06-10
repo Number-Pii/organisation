@@ -1,7 +1,7 @@
 # Senior Mobile Developer
 
 ## Position Details
-- **Department:** Engineering — Client Engineering
+- **Department:** Engineering (Client Engineering)
 - **Reports To:** Lead Mobile Developer
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -38,9 +38,9 @@ Builds mobile applications for client projects across iOS and Android. Expert in
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-native-architecture — React Native development
-- @expo-dev-client — Expo workflows
-- @flutter-expert — Flutter development
-- @firebase — Firebase integration
-- @mobile-design — mobile UI/UX patterns
-- @expo-deployment — app store submission
+- @react-native-architecture: React Native development
+- @expo-dev-client: Expo workflows
+- @flutter-expert: Flutter development
+- @firebase: Firebase integration
+- @mobile-design: mobile UI/UX patterns
+- @expo-deployment: app store submission

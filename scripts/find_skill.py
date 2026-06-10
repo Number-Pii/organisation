@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-find_skill.py — scoped skill search for the Number Pii toolkit.
+find_skill.py: scoped skill search for the Number Pii toolkit.
 
 Searches `Teams/skills/CATEGORIES.md` (with a filesystem fallback) and prints
-matching skill names only — without loading any full `SKILL.md`. The AI
+matching skill names only, without loading any full `SKILL.md`. The AI
 assistant picks the right skill from the short result list before spending
 tokens to load its full definition.
 
@@ -100,7 +100,7 @@ def match_domains(query: str, available: list[str]) -> list[str]:
 def enrich_from_frontmatter(skill: str) -> tuple[str | None, str | None]:
     """Return (domain, summary) from a skill's frontmatter, or (None, None).
 
-    Only fields that are non-empty strings are returned — callers use CATEGORIES.md
+    Only fields that are non-empty strings are returned; callers use CATEGORIES.md
     and name-only formatting as the respective fallbacks.
     """
     skill_md = SKILLS_DIR / skill / "SKILL.md"
@@ -171,7 +171,7 @@ def main() -> int:
         fm_domain, fm_summary = enrich_from_frontmatter(skill)
         domain = fm_domain or candidates[skill]
         if fm_summary:
-            print(f"{skill}  [{domain}]  — {fm_summary}")
+            print(f"{skill}  [{domain}]  : {fm_summary}")
         else:
             print(f"{skill}  [{domain}]")
     return 0

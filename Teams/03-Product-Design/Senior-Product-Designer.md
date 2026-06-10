@@ -35,9 +35,9 @@ Designs features, flows, and interfaces for Number Pii products and client proje
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @ui-ux-pro-max — UI/UX design execution
-- @ui-ux-designer — product design methodology
-- @frontend-design — interface design implementation
-- @hig-components-controls — UI component design patterns
-- @hig-patterns — HIG design patterns
-- @web-design-guidelines — web design standards
+- @ui-ux-pro-max: UI/UX design execution
+- @ui-ux-designer: product design methodology
+- @frontend-design: interface design implementation
+- @hig-components-controls: UI component design patterns
+- @hig-patterns: HIG design patterns
+- @web-design-guidelines: web design standards

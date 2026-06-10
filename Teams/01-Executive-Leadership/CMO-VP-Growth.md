@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-The CMO owns all demand generation — SEO, content, paid, social, email, and partnerships. They have a demonstrable track record of growing a SaaS or tech product's audience from zero. Data-driven and creative in equal measure, they shape the narrative AND read the numbers.
+The CMO owns all demand generation: SEO, content, paid, social, email, and partnerships. They have a demonstrable track record of growing a SaaS or tech product's audience from zero. Data-driven and creative in equal measure, they shape the narrative AND read the numbers.
 
 ## Core Skills
 - Growth strategy and demand generation (@growth-engine, @startup-metrics-framework)
@@ -43,10 +43,10 @@ The CMO owns all demand generation — SEO, content, paid, social, email, and pa
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @content-strategy — content planning and strategy
-- @seo — SEO strategy and execution
-- @brand-guidelines — brand voice and visual standards
-- @social-content — social media content
-- @paid-ads — paid media strategy
-- @growth-engine — growth frameworks
-- @marketing-psychology — behaviour-driven marketing
+- @content-strategy: content planning and strategy
+- @seo: SEO strategy and execution
+- @brand-guidelines: brand voice and visual standards
+- @social-content: social media content
+- @paid-ads: paid media strategy
+- @growth-engine: growth frameworks
+- @marketing-psychology: behaviour-driven marketing

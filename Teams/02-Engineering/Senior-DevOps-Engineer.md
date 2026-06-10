@@ -1,7 +1,7 @@
 # Senior DevOps Engineer
 
 ## Position Details
-- **Department:** Engineering — DevOps & Infrastructure
+- **Department:** Engineering (DevOps & Infrastructure)
 - **Reports To:** Head of DevOps & Infrastructure
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -39,11 +39,11 @@ Builds and maintains CI/CD pipelines, manages cloud infrastructure, and ensures 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @kubernetes-deployment — Kubernetes deployment management
-- @docker-expert — container operations
-- @terraform-specialist — IaC implementation
-- @cloud-devops — cloud operations
-- @github-actions-templates — CI/CD pipelines
-- @aws-skills — AWS services
-- @linux-troubleshooting — server administration
-- @linux-shell-scripting — shell scripting and automation
+- @kubernetes-deployment: Kubernetes deployment management
+- @docker-expert: container operations
+- @terraform-specialist: IaC implementation
+- @cloud-devops: cloud operations
+- @github-actions-templates: CI/CD pipelines
+- @aws-skills: AWS services
+- @linux-troubleshooting: server administration
+- @linux-shell-scripting: shell scripting and automation

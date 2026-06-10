@@ -1,4 +1,4 @@
-# Principal Consultant — Technology Strategy
+# Principal Consultant (Technology Strategy)
 
 ## Position Details
 - **Department:** Sales & Consultancy
@@ -7,7 +7,7 @@
 - **Employment Type:** Full-time
 
 ## Role Summary
-Provides CTO-level guidance for startups and SMEs. Conducts architecture reviews, tech stack selection, and scaling roadmaps. A recognised expert in technology strategy — not a generalist.
+Provides CTO-level guidance for startups and SMEs. Conducts architecture reviews, tech stack selection, and scaling roadmaps. A recognised expert in technology strategy, not a generalist.
 
 ## Core Skills
 - Technology strategy and advisory (@software-architecture, @senior-architect)
@@ -40,9 +40,9 @@ Provides CTO-level guidance for startups and SMEs. Conducts architecture reviews
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @software-architecture — technology strategy and architecture
-- @cloud-architect — cloud strategy and migration
-- @architecture-decision-records — ADR documentation
-- @senior-architect — architectural advisory
-- @startup-analyst — technology investment analysis
-- @architecture-patterns — applying proven patterns
+- @software-architecture: technology strategy and architecture
+- @cloud-architect: cloud strategy and migration
+- @architecture-decision-records: ADR documentation
+- @senior-architect: architectural advisory
+- @startup-analyst: technology investment analysis
+- @architecture-patterns: applying proven patterns

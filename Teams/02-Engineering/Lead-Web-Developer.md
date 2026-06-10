@@ -1,13 +1,13 @@
 # Lead Web Developer
 
 ## Position Details
-- **Department:** Engineering — Client Engineering
+- **Department:** Engineering (Client Engineering)
 - **Reports To:** VP of Client Engineering
 - **Direct Reports:** Senior Web Developer(s)
 - **Employment Type:** Full-time
 
 ## Role Summary
-Leads client-facing web development projects from scoping to delivery. Capable of independently architecting and delivering a full web application engagement. Client-facing confidence — presents technical decisions to non-technical stakeholders.
+Leads client-facing web development projects from scoping to delivery. Capable of independently architecting and delivering a full web application engagement. Client-facing confidence: presents technical decisions to non-technical stakeholders.
 
 ## Core Skills
 - Web application architecture for client projects (@software-architecture, @senior-architect)
@@ -41,11 +41,11 @@ Leads client-facing web development projects from scoping to delivery. Capable o
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-best-practices — React web development
-- @nextjs-best-practices — Next.js projects
-- @typescript-expert — TypeScript standards
-- @nodejs-best-practices — Node.js backend
-- @playwright-skill — E2E testing
-- @wordpress-plugin-development — WordPress client projects
-- @shopify-development — Shopify client projects
-- @e2e-testing — end-to-end test coverage
+- @react-best-practices: React web development
+- @nextjs-best-practices: Next.js projects
+- @typescript-expert: TypeScript standards
+- @nodejs-best-practices: Node.js backend
+- @playwright-skill: E2E testing
+- @wordpress-plugin-development: WordPress client projects
+- @shopify-development: Shopify client projects
+- @e2e-testing: end-to-end test coverage

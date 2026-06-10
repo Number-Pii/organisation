@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-sync_ai_context.py — Generate GEMINI.md and AGENTS.md from CLAUDE.md.
+sync_ai_context.py: Generate GEMINI.md and AGENTS.md from CLAUDE.md.
 
 CLAUDE.md is the source of truth. Both files are mechanically derived by
 substituting the known divergences for each target.
@@ -10,8 +10,8 @@ Usage:
     python3 scripts/sync_ai_context.py --check  # exit 1 if either file is out of sync (CI use)
 
 Exit codes:
-    0 — success (wrote, or --check confirmed already in sync)
-    1 — --check detected drift, or input errors
+    0: success (wrote, or --check confirmed already in sync)
+    1: --check detected drift, or input errors
 """
 
 from __future__ import annotations

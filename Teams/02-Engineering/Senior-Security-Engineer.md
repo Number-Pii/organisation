@@ -1,7 +1,7 @@
 # Senior Security Engineer
 
 ## Position Details
-- **Department:** Engineering — Information Security
+- **Department:** Engineering (Information Security)
 - **Reports To:** Head of Information Security
 - **Direct Reports:** None
 - **Employment Type:** Full-time
@@ -42,12 +42,12 @@ Implements security controls, conducts code security reviews, performs penetrati
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @security-audit — application security review
-- @web-security-testing — OWASP-based testing
-- @burp-suite-testing — Burp Suite web app testing
-- @security-scanning-security-sast — SAST with Snyk/SonarQube
-- @security-scanning-security-hardening — infrastructure hardening
-- @security-scanning-security-dependencies — dependency vulnerability scanning
-- @ethical-hacking-methodology — penetration testing methodology
-- @pentest-commands — security testing commands
-- @k8s-security-policies — Kubernetes security
+- @security-audit: application security review
+- @web-security-testing: OWASP-based testing
+- @burp-suite-testing: Burp Suite web app testing
+- @security-scanning-security-sast: SAST with Snyk/SonarQube
+- @security-scanning-security-hardening: infrastructure hardening
+- @security-scanning-security-dependencies: dependency vulnerability scanning
+- @ethical-hacking-methodology: penetration testing methodology
+- @pentest-commands: security testing commands
+- @k8s-security-policies: Kubernetes security
