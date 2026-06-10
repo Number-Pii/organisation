@@ -4,6 +4,25 @@ description: "Code review requires technical evaluation, not emotional performan
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Code review requires technical evaluation, not emotional performance."
+detail_sections:
+  - Overview
+  - The Response Pattern
+  - Forbidden Responses
+  - Handling Unclear Feedback
+  - Source-Specific Handling
+  - "YAGNI Check for \"Professional\" Features"
+  - Implementation Order
+  - When To Push Back
+  - Acknowledging Correct Feedback
+  - Gracefully Correcting Your Pushback
+  - Common Mistakes
+  - Real Examples
+  - GitHub Thread Replies
+  - The Bottom Line
+  - When to Use
 ---
 
 # Code Review Reception

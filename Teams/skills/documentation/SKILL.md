@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: "Documentation generation workflow covering API docs, architecture docs, README files, code comments, and technical writing."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Documentation Types
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Documentation Workflow Bundle

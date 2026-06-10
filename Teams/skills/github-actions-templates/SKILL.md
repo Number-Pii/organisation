@@ -4,6 +4,21 @@ description: "Production-ready GitHub Actions workflow patterns for testing, bui
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Production-ready GitHub Actions workflow patterns for testing, building, and deploying applications."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Common Workflow Patterns
+  - Workflow Best Practices
+  - Reusable Workflows
+  - Security Scanning
+  - Deployment with Approvals
+  - Reference Files
+  - Related Skills
 ---
 
 # GitHub Actions Templates

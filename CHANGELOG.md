@@ -13,6 +13,25 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.1]: 2026-06-10
+
+### Changed
+- **Skills curation, slice one (audit recommendation 1).** The role-linked portion
+  of the library is now fully curated:
+  - 51 role-linked skills added to `CATEGORIES.md`: 35 placed across ten existing
+    domains, 16 in the new **Business & Strategy** domain (business analysis,
+    startup strategy, finance, sales, HR, people operations).
+  - Extended frontmatter backfilled for 180 role-linked skills via
+    `generate_skill_frontmatter.py --write`; coverage rises from 16/1294 (1%)
+    to 196/1294 (15%). Every role-linked skill now resolves a real domain;
+    zero `uncategorised` among them.
+  - 20 generated summaries that started as persona openers ("You are an
+    expert...") rewritten as one-line "what's this skill for" statements per
+    the CONTRIBUTING guidance.
+- Remaining uncategorised refs are the four placeholders in `_role_template.md`,
+  which are intentional. The unlinked 1,099 skills stay discoverable through
+  `find_skill.py` and are the next curation slice.
+
 ## [3.13.0]: 2026-06-10
 
 ### Added

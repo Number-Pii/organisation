@@ -4,6 +4,21 @@ description: "You are a technical debt expert specializing in identifying, quant
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Identify, quantify, and prioritise technical debt into a remediation backlog."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Executive Summary
+  - Key Risks
+  - Proposed Actions
+  - Refactoring Guide
+  - Code Standards
+  - Output Format
 ---
 
 # Technical Debt Analysis and Remediation

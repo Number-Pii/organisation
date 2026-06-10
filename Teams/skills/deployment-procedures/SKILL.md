@@ -4,6 +4,22 @@ description: "Production deployment principles and decision-making. Safe deploym
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Production deployment principles and decision-making.
+detail_sections:
+  - ⚠️ How to Use This Skill
+  - 1. Platform Selection
+  - 2. Pre-Deployment Principles
+  - 3. Deployment Workflow Principles
+  - 4. Post-Deployment Verification
+  - 5. Rollback Principles
+  - 6. Zero-Downtime Deployment
+  - 7. Emergency Procedures
+  - 8. Anti-Patterns
+  - 9. Decision Checklist
+  - 10. Best Practices
+  - When to Use
 ---
 
 # Deployment Procedures

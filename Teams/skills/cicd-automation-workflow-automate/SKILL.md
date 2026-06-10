@@ -4,6 +4,18 @@ description: "You are a workflow automation expert specializing in creating effi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "CI/CD pipeline and GitHub Actions workflow design and automation."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Safety
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
+  - Resources
 ---
 
 # Workflow Automation

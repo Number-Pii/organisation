@@ -4,6 +4,15 @@ description: "Templates and patterns for creating legally sound employment docum
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: xs
+summary: "Templates and patterns for creating legally sound employment documentation including contracts, offer letters, and HR policies."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Employment Contract Templates

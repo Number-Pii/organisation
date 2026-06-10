@@ -4,6 +4,16 @@ description: "CloudFormation template optimization, nested stacks, drift detecti
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "CloudFormation template optimization, nested stacks, drift detection, and production-ready patterns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 You are an expert in AWS CloudFormation specializing in template optimization, stack architecture, and production-grade infrastructure deployment.
 

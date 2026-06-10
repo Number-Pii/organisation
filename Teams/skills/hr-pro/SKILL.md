@@ -1,9 +1,26 @@
 ---
 name: hr-pro
-description: Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations.
+description: "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: s
+summary: "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - IMPORTANT LEGAL DISCLAIMER
+  - "Scope & Mission"
+  - Operating Principles
+  - Information to Collect (ask up to 3 targeted questions max before proceeding)
+  - Deliverable Format (always follow)
+  - Core Playbooks
+  - Inter-Agent Collaboration (Claude Code)
+  - "Style & Output Conventions"
+  - Examples of Explicit Invocation
+  - Guardrails
 ---
 
 ## Use this skill when

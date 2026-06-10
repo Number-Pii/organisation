@@ -1,9 +1,26 @@
 ---
 name: copywriting
-description: Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
+description: "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules."
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Write rigorous, conversion-focused marketing copy for landing pages and emails."
+detail_sections:
+  - Purpose
+  - Operating Mode
+  - Phase 1 — Context Gathering (Mandatory)
+  - Phase 2 — Copy Brief Lock (Hard Gate)
+  - Phase 3 — Copywriting Principles
+  - Writing Style Rules
+  - Phase 4 — Page Structure Framework
+  - Phase 5 — Writing the Copy
+  - Testability Guidance
+  - Completion Criteria (Hard Stop)
+  - Key Principles (Summary)
+  - Final Reminder
+  - When to Use
 ---
 
 # Copywriting

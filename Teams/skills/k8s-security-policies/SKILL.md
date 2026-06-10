@@ -4,6 +4,25 @@ description: "Comprehensive guide for implementing NetworkPolicy, PodSecurityPol
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Comprehensive guide for implementing NetworkPolicy, PodSecurityPolicy, RBAC, and Pod Security Standards in Kubernetes."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Pod Security Standards
+  - Network Policies
+  - RBAC Configuration
+  - Pod Security Context
+  - Policy Enforcement with OPA Gatekeeper
+  - Service Mesh Security (Istio)
+  - Best Practices
+  - Compliance Frameworks
+  - Troubleshooting
+  - Reference Files
+  - Related Skills
 ---
 
 # Kubernetes Security Policies

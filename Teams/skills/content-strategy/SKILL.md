@@ -4,8 +4,23 @@ description: "Plan a content strategy, topic clusters, editorial roadmap, and co
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation."
+detail_sections:
+  - When to Use
+  - Before Planning
+  - Searchable vs Shareable
+  - Content Types
+  - Content Pillars and Topic Clusters
+  - Keyword Research by Buyer Stage
+  - Content Ideation Sources
+  - Prioritizing Content Ideas
+  - Output Format
+  - Task-Specific Questions
+  - References
+  - Related Skills
 ---
 
 # Content Strategy

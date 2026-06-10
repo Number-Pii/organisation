@@ -4,6 +4,14 @@ description: "Comprehensive patterns for Next.js 14+ App Router architecture, Se
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Comprehensive patterns for Next.js 14+ App Router architecture, Server Components, and modern full-stack React development."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Next.js App Router Patterns

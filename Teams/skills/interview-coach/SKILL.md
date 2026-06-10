@@ -6,8 +6,25 @@ risk: safe
 source: community
 date_added: "2026-03-11"
 author: dbhat93
-tags: [interview, job-search, coaching, career, storybank, negotiation]
-tools: [claude]
+tags:
+  - interview
+  - job-search
+  - coaching
+  - career
+  - storybank
+  - negotiation
+tools:
+  - claude
+domain: "Business & Strategy"
+size_class: s
+summary: "Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation."
+detail_sections:
+  - Overview
+  - Install
+  - When to Use This Skill
+  - What It Covers
+  - Examples
+  - Source
 ---
 
 # Interview Coach

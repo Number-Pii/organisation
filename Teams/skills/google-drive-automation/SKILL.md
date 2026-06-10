@@ -1,12 +1,21 @@
 ---
 name: google-drive-automation
-description: "Lightweight Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access."
+description: Lightweight Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.
 license: Apache-2.0
 risk: unknown
 source: community
-metadata:
-  author: sanjay3290
-  version: "1.0"
+metadata: []
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: Lightweight Google Drive integration with standalone OAuth authentication.
+detail_sections:
+  - First-Time Setup
+  - Read Commands
+  - Write Commands
+  - Search Query Formats
+  - File ID Format
+  - Download Limitations
+  - Token Management
 ---
 
 # Google Drive

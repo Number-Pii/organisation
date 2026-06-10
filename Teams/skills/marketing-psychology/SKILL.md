@@ -4,6 +4,21 @@ description: "Apply behavioral science and mental models to marketing decisions,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Apply behavioral science and mental models to marketing decisions, prioritized using a psychological leverage and feasibility scoring system."
+detail_sections:
+  - 1. How This Skill Should Be Used
+  - "2. Psychological Leverage & Feasibility Score (PLFS)"
+  - 3. Mandatory Selection Rules
+  - 4. Mental Model Library (Canonical)
+  - 5. Required Output Format (Updated)
+  - 6. Journey-Based Model Bias (Guidance)
+  - 7. Ethical Guardrails (Non-Negotiable)
+  - 8. Integration with Other Skills
+  - 9. Operator Checklist
+  - 10. Questions to Ask (If Needed)
+  - When to Use
 ---
 # Marketing Psychology & Mental Models
 

@@ -1,9 +1,25 @@
 ---
 name: mobile-design
-description: "(Mobile-First · Touch-First · Platform-Respectful)"
+description: (Mobile-First · Touch-First · Platform-Respectful)
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: m
+summary: (Mobile-First · Touch-First · Platform-Respectful)
+detail_sections:
+  - "1. Mobile Feasibility & Risk Index (MFRI)"
+  - 2. Mandatory Thinking Before Any Work
+  - 3. Mandatory Reference Reading (Enforced)
+  - 4. AI Mobile Anti-Patterns (Hard Bans)
+  - 5. Platform Unification vs Divergence Matrix
+  - 6. Mobile UX Psychology (Non-Optional)
+  - 7. Performance Doctrine
+  - 8. Mandatory Mobile Checkpoint
+  - 9. Framework Decision Tree (Canonical)
+  - 10. Release Readiness Checklist
+  - 11. Related Skills
+  - When to Use
 ---
 # Mobile Design System
 

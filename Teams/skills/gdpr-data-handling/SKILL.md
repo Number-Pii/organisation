@@ -4,6 +4,14 @@ description: "Practical implementation guide for GDPR-compliant data processing,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Practical implementation guide for GDPR-compliant data processing, consent management, and privacy controls."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # GDPR Data Handling

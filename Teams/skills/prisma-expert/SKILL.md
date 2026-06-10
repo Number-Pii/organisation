@@ -4,6 +4,15 @@ description: "You are an expert in Prisma ORM with deep knowledge of schema desi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Prisma ORM schema design, migrations, relations, and query optimisation."
+detail_sections:
+  - When Invoked
+  - Problem Playbooks
+  - Code Review Checklist
+  - Anti-Patterns to Avoid
+  - When to Use
 ---
 
 # Prisma Expert

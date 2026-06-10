@@ -5,6 +5,19 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+domain: Mobile Development
+size_class: s
+summary: Build and distribute Expo development clients locally or via TestFlight
+detail_sections:
+  - "Important: When Development Clients Are Needed"
+  - EAS Configuration
+  - Building for TestFlight
+  - Building Locally
+  - Installing Local Builds
+  - Building for Specific Platform
+  - Checking Build Status
+  - Using the Dev Client
+  - Troubleshooting
 ---
 
 Use EAS Build to create development clients for testing native code changes on physical devices. Use this for creating custom Expo Go clients for testing branches of your app.

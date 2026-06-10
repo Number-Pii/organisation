@@ -5,6 +5,18 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Master the complete penetration testing lifecycle from reconnaissance through reporting.
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Troubleshooting
+  - When to Use
 ---
 
 # Ethical Hacking Methodology

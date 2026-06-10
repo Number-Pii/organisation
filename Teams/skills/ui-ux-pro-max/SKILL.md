@@ -4,6 +4,22 @@ description: "Comprehensive design guide for web and mobile applications. Use wh
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: Comprehensive design guide for web and mobile applications.
+detail_sections:
+  - When to Use
+  - Rule Categories by Priority
+  - Quick Reference
+  - How to Use
+  - Prerequisites
+  - How to Use This Skill
+  - Search Reference
+  - Example Workflow
+  - Output Formats
+  - Tips for Better Results
+  - Common Rules for Professional UI
+  - Pre-Delivery Checklist
 ---
 
 # UI/UX Pro Max - Design Intelligence

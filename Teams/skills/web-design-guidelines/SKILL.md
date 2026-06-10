@@ -1,9 +1,17 @@
 ---
 name: web-design-guidelines
-description: "Review files for compliance with Web Interface Guidelines."
+description: Review files for compliance with Web Interface Guidelines.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: Review files for compliance with Web Interface Guidelines.
+detail_sections:
+  - How It Works
+  - Guidelines Source
+  - Usage
+  - When to Use
 ---
 
 # Web Interface Guidelines

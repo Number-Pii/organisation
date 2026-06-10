@@ -4,6 +4,22 @@ description: "Node.js development principles and decision-making. Framework sele
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: Node.js development principles and decision-making.
+detail_sections:
+  - When to Use
+  - ⚠️ How to Use This Skill
+  - 1. Framework Selection (2025)
+  - 2. Runtime Considerations (2025)
+  - 3. Architecture Principles
+  - 4. Error Handling Principles
+  - 5. Async Patterns Principles
+  - 6. Validation Principles
+  - 7. Security Principles
+  - 8. Testing Principles
+  - 10. Anti-Patterns to Avoid
+  - 11. Decision Checklist
 ---
 
 # Node.js Best Practices

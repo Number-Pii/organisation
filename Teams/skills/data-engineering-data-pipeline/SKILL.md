@@ -4,6 +4,18 @@ description: "You are a data pipeline architecture expert specializing in scalab
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Design scalable, cost-effective batch and streaming data pipelines."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Requirements
+  - Core Capabilities
+  - Instructions
+  - "Example: Minimal Batch Pipeline"
+  - Output Deliverables
+  - Success Criteria
 ---
 
 # Data Pipeline Architecture

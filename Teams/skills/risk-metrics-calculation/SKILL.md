@@ -4,6 +4,14 @@ description: "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sort
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: xs
+summary: "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Risk Metrics Calculation

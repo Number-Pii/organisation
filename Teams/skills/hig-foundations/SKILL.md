@@ -3,7 +3,18 @@ name: hig-foundations
 description: Apple Human Interface Guidelines design foundations.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Apple Human Interface Guidelines design foundations.
+detail_sections:
+  - Key Principles
+  - Reference Index
+  - Applying Foundations Together
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Apple HIG: Design Foundations

@@ -1,13 +1,10 @@
 ---
 name: seo-page
-description: >
-  Deep single-page SEO analysis covering on-page elements, content quality,
-  technical meta tags, schema, images, and performance. Use when user says
-  "analyze this page", "check page SEO", or provides a single URL for review.
+description: ">"
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url]"
 allowed-tools:
   - Read
@@ -15,6 +12,15 @@ allowed-tools:
   - Glob
   - Bash
   - WebFetch
+domain: "SEO & Content Marketing"
+size_class: s
+summary: ">"
+detail_sections:
+  - When to Use
+  - What to Analyze
+  - Output
+  - DataForSEO Integration (Optional)
+  - Error Handling
 ---
 
 # Single Page Analysis

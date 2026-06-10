@@ -4,8 +4,22 @@ description: "Run a broad SEO audit across technical SEO, on-page SEO, schema, s
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[command] [url]"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Run a broad SEO audit across technical SEO, on-page SEO, schema, sitemaps, content quality, AI search readiness, and GEO."
+detail_sections:
+  - When to Use
+  - Quick Reference
+  - Orchestration Logic
+  - Industry Detection
+  - Quality Gates
+  - Reference Files
+  - Scoring Methodology
+  - Sub-Skills
+  - Subagents
+  - Error Handling
 ---
 
 # SEO: Universal SEO Analysis Skill

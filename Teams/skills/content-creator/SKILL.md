@@ -5,6 +5,20 @@ category: marketing
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Professional-grade brand voice analysis, SEO optimization, and platform-specific content frameworks."
+detail_sections:
+  - When to Use
+  - Keywords
+  - Quick Start
+  - Core Workflows
+  - Key Scripts
+  - Reference Guides
+  - Best Practices
+  - Performance Metrics
+  - Integration Points
+  - Quick Commands
 ---
 
 # Content Creator

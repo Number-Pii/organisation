@@ -1,10 +1,20 @@
 ---
 name: domain-driven-design
-description: "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns."
+description: Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.
 risk: safe
 source: self
 tags: "[ddd, domain, bounded-context, architecture]"
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Output requirements
+  - Examples
+  - Limitations
 ---
 
 # Domain-Driven Design

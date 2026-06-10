@@ -4,6 +4,23 @@ description: "Tailwind CSS v4 principles. CSS-first configuration, container que
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: Tailwind CSS v4 principles.
+detail_sections:
+  - When to Use
+  - 1. Tailwind v4 Architecture
+  - 2. CSS-Based Configuration
+  - 3. Container Queries (v4 Native)
+  - 4. Responsive Design
+  - 5. Dark Mode
+  - 6. Modern Layout Patterns
+  - 7. Modern Color System
+  - 8. Typography System
+  - "9. Animation & Transitions"
+  - 10. Component Extraction
+  - 11. Anti-Patterns
+  - 12. Performance Principles
 ---
 
 # Tailwind CSS Patterns (v4 - 2025)

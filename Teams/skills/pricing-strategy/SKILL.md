@@ -4,6 +4,25 @@ description: "Design pricing, packaging, and monetization strategies based on va
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Design pricing, packaging, and monetization strategies based on value, customer willingness to pay, and growth objectives."
+detail_sections:
+  - 1. Required Context (Ask If Missing)
+  - 2. Pricing Fundamentals
+  - 3. Value-Based Pricing Framework
+  - 4. Pricing Research Methods
+  - 5. Value Metrics
+  - 6. Tier Design
+  - 7. Persona-Based Packaging
+  - 8. Freemium vs. Free Trial
+  - 9. Price Increases
+  - 10. Pricing Page Alignment (Strategy Only)
+  - 11. Price Testing (Safe Methods)
+  - 12. Enterprise Pricing
+  - 13. Output Expectations
+  - 14. Validation Checklist
+  - When to Use
 ---
 
 # Pricing Strategy

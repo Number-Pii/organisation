@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Linux system troubleshooting workflow for diagnosing and resolving system issues, performance problems, and service failures."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Troubleshooting Checklist
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Linux Troubleshooting Workflow

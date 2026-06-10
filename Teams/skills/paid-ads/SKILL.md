@@ -4,6 +4,24 @@ description: "You are an expert performance marketer with direct access to ad pl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Plan, run, and optimise paid ad campaigns across platforms."
+detail_sections:
+  - Before Starting
+  - Platform Selection Guide
+  - Campaign Structure Best Practices
+  - Ad Copy Frameworks
+  - Audience Targeting Strategies
+  - Creative Best Practices
+  - Campaign Optimization
+  - Retargeting Strategies
+  - "Reporting & Analysis"
+  - Platform-Specific Setup Guides
+  - Common Mistakes to Avoid
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Paid Ads

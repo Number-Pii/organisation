@@ -4,6 +4,13 @@ description: "To write internal communications, use this skill for:"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: xs
+summary: "To write internal communications, use this skill for:"
+detail_sections:
+  - When to use this skill
+  - How to use this skill
+  - Keywords
 ---
 
 ## When to use this skill

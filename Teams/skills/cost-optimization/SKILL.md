@@ -4,6 +4,25 @@ description: "Strategies and patterns for optimizing cloud costs across AWS, Azu
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Strategies and patterns for optimizing cloud costs across AWS, Azure, and GCP."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Cost Optimization Framework
+  - AWS Cost Optimization
+  - Azure Cost Optimization
+  - GCP Cost Optimization
+  - Tagging Strategy
+  - Cost Monitoring
+  - Architecture Patterns
+  - Cost Optimization Checklist
+  - Tools
+  - Reference Files
+  - Related Skills
 ---
 
 # Cloud Cost Optimization

@@ -4,6 +4,23 @@ description: "Optimize website and web application performance including loading
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Optimize website and web application performance including loading speed, Core Web Vitals, bundle size, caching strategies, and runtime performance"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Performance Audit Results
+  - Bundle Size Optimization
+  - Image Optimization
+  - Best Practices
+  - Common Pitfalls
+  - Performance Checklist
+  - Performance Tools
+  - Related Skills
+  - Additional Resources
 ---
 
 # Web Performance Optimization

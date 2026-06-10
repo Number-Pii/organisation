@@ -4,6 +4,22 @@ description: "Orchestrate a comprehensive git workflow from code review through 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Orchestrate a comprehensive git workflow from code review through PR creation, leveraging specialized agents for quality assurance, testing, and…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Configuration
+  - "Phase 1: Pre-Commit Review and Analysis"
+  - "Phase 2: Testing and Validation"
+  - "Phase 3: Commit Message Generation"
+  - "Phase 4: Branch Strategy and Push Preparation"
+  - "Phase 5: Pull Request Creation"
+  - Success Criteria
+  - Rollback Procedures
+  - Best Practices Reference
 ---
 
 # Complete Git Workflow with Multi-Agent Orchestration

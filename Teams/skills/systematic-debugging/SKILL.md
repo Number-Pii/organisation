@@ -4,6 +4,21 @@ description: "Use when encountering any bug, test failure, or unexpected behavio
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+detail_sections:
+  - Overview
+  - The Iron Law
+  - When to Use
+  - The Four Phases
+  - Red Flags - STOP and Follow Process
+  - "your human partner's Signals You're Doing It Wrong"
+  - Common Rationalizations
+  - Quick Reference
+  - "When Process Reveals \"No Root Cause\""
+  - Supporting Techniques
+  - Real-World Impact
 ---
 
 # Systematic Debugging

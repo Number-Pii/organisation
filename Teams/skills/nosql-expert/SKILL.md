@@ -4,6 +4,17 @@ description: "Expert guidance for distributed NoSQL databases (Cassandra, Dynamo
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB)."
+detail_sections:
+  - Overview
+  - When to Use
+  - "The Mental Shift: SQL vs. Distributed NoSQL"
+  - Core Design Patterns
+  - Specific Guidance
+  - Expert Checklist
+  - Common Anti-Patterns
 ---
 
 # NoSQL Expert Patterns (Cassandra & DynamoDB)

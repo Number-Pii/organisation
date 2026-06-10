@@ -4,6 +4,21 @@ description: "Next.js App Router principles. Server Components, data fetching, r
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: Next.js App Router principles.
+detail_sections:
+  - 1. Server vs Client Components
+  - 2. Data Fetching Patterns
+  - 3. Routing Principles
+  - 4. API Routes
+  - 5. Performance Principles
+  - 6. Metadata
+  - 7. Caching Strategy
+  - 8. Server Actions
+  - 9. Anti-Patterns
+  - 10. Project Structure
+  - When to Use
 ---
 
 # Next.js Best Practices

@@ -3,20 +3,50 @@ name: product-design
 description: "Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visual proprietaria, design tokens, prototipagem e handoff. Cobre Figma, design systems, tipografia, cor, espacamento, motion design e principios de design cognitivo."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- design
-- ux
-- design-systems
-- accessibility
-- figma
+  - design
+  - ux
+  - design-systems
+  - accessibility
+  - figma
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Creative & Design"
+size_class: m
+summary: "Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visual proprietaria, design tokens, prototipagem e handoff."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Os 10 Principios De Jony Ive / Apple
+  - Design Cognitivo
+  - Estrutura De Um Design System De Elite
+  - Design Tokens — Exemplo Auri
+  - Estrutura De Um Ux Flow
+  - Onboarding De Elite (Primeiros 5 Minutos)
+  - Empty States Que Encantam
+  - Principios Unicos Para Voice Ui
+  - Estrutura De Resposta De Voz
+  - Scripts De Interacao Auri
+  - Framework De Critica Construtiva
+  - Checklist De Critica De Ui
+  - Conceito Visual
+  - Paleta Principal
+  - Tipografia
+  - Logo Conceito
+  - Stack De Design
+  - Processo De Design Sprint (5 Dias)
+  - 8. Comandos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # PRODUCT DESIGN — Nivel Apple

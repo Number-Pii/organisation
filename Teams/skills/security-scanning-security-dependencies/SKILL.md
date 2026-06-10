@@ -4,6 +4,17 @@ description: "You are a security expert specializing in dependency vulnerability
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Dependency vulnerability analysis, SBOM generation, and supply chain security."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Dependency Vulnerability Scanning

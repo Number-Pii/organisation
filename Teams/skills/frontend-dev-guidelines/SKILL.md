@@ -4,6 +4,28 @@ description: "You are a senior frontend engineer operating under strict architec
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Frontend implementation under strict architectural and performance standards."
+detail_sections:
+  - "1. Frontend Feasibility & Complexity Index (FFCI)"
+  - 2. Core Architectural Doctrine (Non-Negotiable)
+  - When to Use
+  - 4. Quick Start Checklists
+  - 5. Import Aliases (Required)
+  - 6. Component Standards
+  - 7. Data Fetching Doctrine
+  - 8. Routing Standards (TanStack Router)
+  - 9. Styling Standards (MUI v7)
+  - "10. Loading & Error Handling"
+  - 11. Performance Defaults
+  - 12. TypeScript Standards
+  - 13. Canonical File Structure
+  - 14. Canonical Component Template
+  - 15. Anti-Patterns (Immediate Rejection)
+  - 16. Integration With Other Skills
+  - 17. Operator Validation Checklist
+  - 18. Skill Status
 ---
 
 

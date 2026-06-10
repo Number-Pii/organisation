@@ -4,6 +4,18 @@ description: "Expert in Zod — TypeScript-first schema validation. Covers parsi
 risk: safe
 source: community
 date_added: "2026-03-05"
+domain: "Backend & APIs"
+size_class: m
+summary: Expert in Zod — TypeScript-first schema validation.
+detail_sections:
+  - When to Use This Skill
+  - Core Concepts
+  - "Schema Definition & Inference"
+  - "Parsing & Validation"
+  - Customizing Validation
+  - Integration Patterns
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Zod Validation Expert

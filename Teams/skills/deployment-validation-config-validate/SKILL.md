@@ -4,6 +4,16 @@ description: "You are a configuration management expert specializing in validati
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Validate and test application configuration for correctness before deployment."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # Configuration Validation

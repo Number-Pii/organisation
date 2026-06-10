@@ -3,6 +3,22 @@ name: blog-writing-guide
 description: "This skill enforces Sentry's blog writing standards across every post — whether you're helping an engineer write their first blog post or a marketer draft a product announcement."
 risk: unknown
 source: community
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "This skill enforces Sentry's blog writing standards across every post — whether you're helping an engineer write their first blog post or a marketer…"
+detail_sections:
+  - The Sentry Voice
+  - Banned Language
+  - The Opening (First 2-3 Sentences)
+  - "Structure: Follow the Reader's Questions"
+  - Section Headings Must Convey Information
+  - Technical Quality Standards
+  - Title Guidelines
+  - The Closing
+  - Post Types
+  - "The \"Would I Share This?\" Test"
+  - Non-Negotiables (Quick Reference)
+  - When Reviewing or Editing a Draft
 ---
 
 # Sentry Blog Writing Skill

@@ -3,20 +3,40 @@ name: growth-engine
 description: "Motor de crescimento para produtos digitais -- growth hacking, SEO, ASO, viral loops, email marketing, CRM, referral programs e aquisicao organica."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- growth
-- seo
-- marketing
-- viral
-- acquisition
+  - growth
+  - seo
+  - marketing
+  - viral
+  - acquisition
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Motor de crescimento para produtos digitais -- growth hacking, SEO, ASO, viral loops, email marketing, CRM, referral programs e aquisicao organica."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Pirate Metrics (Aarrr) Para Auri
+  - Checklist Seo Para Landing Page Auri
+  - Keywords Estrategicas Auri
+  - Amazon Skill Store Optimization
+  - Tipos De Viral Loops Para Auri
+  - Calculadora De Viral Coefficient
+  - Sequencia De Onboarding (7 Dias)
+  - Estrategia De Lancamento
+  - 7. Comandos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # GROWTH-ENGINE -- Crescimento Exponencial

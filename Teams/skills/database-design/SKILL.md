@@ -4,6 +4,15 @@ description: "Database design principles and decision-making. Schema design, ind
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Database design principles and decision-making.
+detail_sections:
+  - 🎯 Selective Reading Rule
+  - ⚠️ Core Principle
+  - Decision Checklist
+  - Anti-Patterns
+  - When to Use
 ---
 
 # Database Design

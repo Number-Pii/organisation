@@ -4,6 +4,26 @@ description: "You are an expert social media strategist with direct access to a 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Schedule and publish social content across all major networks."
+detail_sections:
+  - Before Creating Content
+  - Platform Strategy Guide
+  - Content Pillars Framework
+  - "Post Formats & Templates"
+  - Hook Formulas
+  - Content Repurposing System
+  - Content Calendar Structure
+  - Engagement Strategy
+  - "Analytics & Optimization"
+  - Platform-Specific Tips
+  - Content Ideas by Situation
+  - Scheduling Best Practices
+  - Reverse Engineering Viral Content
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Social Content

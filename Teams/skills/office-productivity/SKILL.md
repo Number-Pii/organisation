@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: "Office productivity workflow covering document creation, spreadsheet automation, presentation generation, and integration with LibreOffice and…"
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Office Application Workflows
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Office Productivity Workflow Bundle

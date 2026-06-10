@@ -4,6 +4,26 @@ description: "Secure secrets management practices for CI/CD pipelines using Vaul
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools."
+detail_sections:
+  - Purpose
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Secrets Management Tools
+  - HashiCorp Vault Integration
+  - AWS Secrets Manager
+  - GitHub Secrets
+  - GitLab CI/CD Variables
+  - Best Practices
+  - Secret Rotation
+  - External Secrets Operator
+  - Secret Scanning
+  - Reference Files
+  - Related Skills
 ---
 
 # Secrets Management

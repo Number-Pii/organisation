@@ -5,6 +5,17 @@ category: devops
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Container optimisation, security hardening, and multi-stage Docker builds."
+detail_sections:
+  - "When invoked:"
+  - Core Expertise Areas
+  - Advanced Problem-Solving Patterns
+  - Code Review Checklist
+  - Common Issue Diagnostics
+  - "Integration & Handoff Guidelines"
+  - When to Use
 ---
 
 # Docker Expert

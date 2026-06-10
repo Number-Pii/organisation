@@ -1,9 +1,25 @@
 ---
 name: schema-markup
-description: Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
+description: "Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact."
+detail_sections:
+  - "Phase 0: Schema Eligibility & Impact Index (Required)"
+  - "🔢 Schema Eligibility & Impact Index"
+  - "Phase 1: Page & Goal Assessment"
+  - Core Principles (Non-Negotiable)
+  - "Supported & Common Schema Types"
+  - Multiple Schema Types per Page
+  - "Validation & Testing"
+  - Implementation Guidance
+  - Output Format (Required)
+  - Questions to Ask (If Needed)
+  - Related Skills
+  - When to Use
 ---
 
 ---

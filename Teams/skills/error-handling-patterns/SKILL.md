@@ -1,9 +1,17 @@
 ---
 name: error-handling-patterns
-description: "Build resilient applications with robust error handling strategies that gracefully handle failures and provide excellent debugging experiences."
+description: Build resilient applications with robust error handling strategies that gracefully handle failures and provide excellent debugging experiences.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: Build resilient applications with robust error handling strategies that gracefully handle failures and provide excellent debugging experiences.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Error Handling Patterns

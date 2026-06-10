@@ -4,6 +4,21 @@ description: "Coordinate multi-layer security scanning and hardening across appl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "Coordinate multi-layer security scanning and hardening across application, infrastructure, and compliance controls."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - "Phase 1: Comprehensive Security Assessment"
+  - "Phase 2: Vulnerability Remediation"
+  - "Phase 3: Security Controls Implementation"
+  - "Phase 4: Validation and Compliance"
+  - Configuration Options
+  - Success Criteria
+  - Coordination Notes
 ---
 
 Implement comprehensive security hardening with defense-in-depth strategy through coordinated multi-agent orchestration:
