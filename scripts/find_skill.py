@@ -45,7 +45,7 @@ from audit_skills import parse_frontmatter  # noqa: E402
 ROOT = HERE.parent
 SKILLS_DIR = ROOT / "Teams" / "skills"
 CATEGORIES_FILE = SKILLS_DIR / "CATEGORIES.md"
-SKILL_TOKEN = re.compile(r"`([a-z0-9][a-z0-9\-]*)`")
+SKILL_TOKEN = re.compile(r"`([A-Za-z0-9][A-Za-z0-9_\-]*)`")
 
 UNCATEGORISED = "uncategorised"
 

@@ -13,6 +13,24 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.2]: 2026-06-10
+
+### Changed
+- **Skills curation, slice two: the catalogue is complete.** All 571 remaining
+  uncategorised skills are now placed in `CATEGORIES.md`, so every one of the
+  1,294 skills resolves a domain through `find_skill.py --domain`:
+  - 508 classified by an ordered keyword ruleset over names and frontmatter
+    descriptions; 63 stragglers assigned by hand after reading their descriptions.
+  - The Azure SDKs section previously described its ~116 skills by prefix only,
+    which tooling could not read (azure skills returned `uncategorised`); it now
+    carries an explicit list like every other section.
+  - Skill-token regexes in `find_skill.py` and `generate_skill_frontmatter.py`
+    widened to accept uppercase and underscores (`SPDD`,
+    `android_ui_verification`), the only two names the old pattern missed.
+- No new domains were needed; the 18 existing domains absorbed everything.
+  Frontmatter backfill for unlinked skills remains deliberately deferred; domain
+  resolution works from the catalogue without it.
+
 ## [3.13.1]: 2026-06-10
 
 ### Changed
