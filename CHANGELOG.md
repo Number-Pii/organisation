@@ -13,6 +13,17 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.13.4]: 2026-06-10
+
+### Changed
+- **Founders' pronouns recorded.** Both co-founders use he/him: Olatunbosun
+  Iyare (he/him) and Destiny Ihejirika (he/him). Stated in the Governance
+  sections of `CLAUDE.md` and `Teams/organisation.md` and in `README.md`, with
+  a binding instruction to use these pronouns in every document that refers to
+  either founder. Prevents misgendering in official project documents and
+  client-facing material.
+- `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.13.3]: 2026-06-10
 
 ### Changed
