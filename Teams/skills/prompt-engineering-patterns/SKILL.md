@@ -4,6 +4,23 @@ description: "Master advanced prompt engineering techniques to maximize LLM perf
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Capabilities
+  - Quick Start
+  - Key Patterns
+  - Best Practices
+  - Common Pitfalls
+  - Integration Patterns
+  - Performance Optimization
+  - Resources
+  - Success Metrics
+  - Next Steps
 ---
 
 # Prompt Engineering Patterns

@@ -4,6 +4,17 @@ description: "Automate Salesforce tasks via Rube MCP (Composio): leads, contacts
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Salesforce tasks via Rube MCP (Composio): leads, contacts, accounts, opportunities, SOQL queries."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Salesforce Automation via Rube MCP

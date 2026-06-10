@@ -1,12 +1,24 @@
 ---
 name: makepad-font
-description: |
-  CRITICAL: Use for Makepad font and text rendering. Triggers on:
-  makepad font, makepad text, makepad glyph, makepad typography,
-  font atlas, text layout, font family, font size, text shaping,
-  makepad 字体, makepad 文字, makepad 排版, makepad 字形
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Font loading, text styling, and typography in Makepad."
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - Text Module Structure
+  - Using Fonts in DSL
+  - Font Definition in DSL
+  - Layouter API
+  - Layout Parameters
+  - Rasterizer Settings
+  - DrawText Widget
+  - Text Properties
+  - When Answering Questions
+  - When to Use
 ---
 
 # Makepad Font Skill

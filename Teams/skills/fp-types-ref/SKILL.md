@@ -1,10 +1,24 @@
 ---
 name: fp-types-ref
-description: Quick reference for fp-ts types. Use when user asks which type to use, needs Option/Either/Task decision help, or wants fp-ts imports.
+description: "Quick reference for fp-ts types. Use when user asks which type to use, needs Option/Either/Task decision help, or wants fp-ts imports."
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, typescript, quick-reference, option, either, task]
+tags:
+  - fp-ts
+  - typescript
+  - quick-reference
+  - option
+  - either
+  - task
+domain: Programming Languages
+size_class: s
+summary: Quick reference for fp-ts types.
+detail_sections:
+  - "Which Type Should I Use?"
+  - Common Imports
+  - One-Line Patterns
+  - Pattern Match
 ---
 
 # fp-ts Quick Reference

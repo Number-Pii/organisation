@@ -4,6 +4,20 @@ description: "Build production-ready gRPC services in Go with mTLS, streaming, a
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Build production-ready gRPC services in Go with mTLS, streaming, and observability."
+detail_sections:
+  - Overview
+  - Use this skill when
+  - Do not use this skill when
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Limitations
+  - Resources
+  - Related Skills
 ---
 
 # gRPC Golang (gRPC-Go)

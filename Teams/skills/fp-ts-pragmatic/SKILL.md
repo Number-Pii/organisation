@@ -4,6 +4,20 @@ description: "A practical, jargon-free guide to fp-ts functional programming - t
 risk: safe
 source: "https://github.com/whatiskadudoing/fp-ts-skills"
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: l
+summary: "A practical, jargon-free guide to fp-ts functional programming - the 80/20 approach that gets results without the academic overhead."
+detail_sections:
+  - When to Use This Skill
+  - The Golden Rule
+  - The 80/20 of FP
+  - When NOT to Use FP
+  - "Quick Wins: Easy Changes That Improve Code Today"
+  - "Common Refactors: Before and After"
+  - The Readability Rule
+  - Cheat Sheet
+  - When to Level Up
+  - Summary
 ---
 
 # Pragmatic Functional Programming

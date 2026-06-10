@@ -1,11 +1,22 @@
 ---
 name: pubmed-database
-description: Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.
+description: "Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations."
 license: Unknown
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Backend & APIs"
+size_class: m
+summary: Direct REST API access to PubMed.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Core Capabilities
+  - Working with Reference Files
+  - Common Workflows
+  - Tips and Best Practices
+  - Limitations and Considerations
+  - Support Resources
 ---
 
 # PubMed Database
@@ -457,4 +468,3 @@ Load reference files into context as needed based on the specific task. For brie
 - **NLM Help Desk**: 1-888-FIND-NLM (1-888-346-3656)
 - **Technical Support**: vog.hin.mln.ibcn@seitilitue
 - **Mailing List**: utilities-announce@ncbi.nlm.nih.gov
-

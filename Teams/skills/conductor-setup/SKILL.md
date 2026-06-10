@@ -1,13 +1,19 @@
 ---
 name: conductor-setup
 description: Configure a Rails project to work with Conductor (parallel coding agents)
-allowed-tools: Bash(chmod *), Bash(bundle *), Bash(npm *), Bash(script/server)
+allowed-tools: "Bash(chmod *), Bash(bundle *), Bash(npm *), Bash(script/server)"
 context: fork
 risk: unknown
 source: community
-metadata:
-  author: Shpigford
-  version: "1.0"
+metadata: []
+domain: "Planning & Workflow"
+size_class: s
+summary: Configure a Rails project to work with Conductor (parallel coding agents)
+detail_sections:
+  - 1. conductor.json (project root)
+  - 2. bin/conductor-setup (executable)
+  - 3. script/server (executable)
+  - 4. Update Rails Config Files
 ---
 
 Set up this Rails project for Conductor, the Mac app for parallel coding agents.

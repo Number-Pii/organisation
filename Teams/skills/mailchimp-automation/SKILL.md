@@ -4,6 +4,17 @@ description: "Automate Mailchimp email marketing including campaigns, audiences,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, and analytics via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Mailchimp Automation via Rube MCP

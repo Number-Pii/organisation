@@ -1,9 +1,24 @@
 ---
 name: tdd-workflow
-description: "Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle."
+description: Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: Test-Driven Development workflow principles.
+detail_sections:
+  - 1. The TDD Cycle
+  - 2. The Three Laws of TDD
+  - 3. RED Phase Principles
+  - 4. GREEN Phase Principles
+  - 5. REFACTOR Phase Principles
+  - 6. AAA Pattern
+  - 7. When to Use TDD
+  - 8. Test Prioritization
+  - 9. Anti-Patterns
+  - 10. AI-Augmented TDD
+  - When to Use
 ---
 
 # TDD Workflow

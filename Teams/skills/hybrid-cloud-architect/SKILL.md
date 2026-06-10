@@ -3,7 +3,20 @@ name: hybrid-cloud-architect
 description: Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware).
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware).
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 
 ## Use this skill when

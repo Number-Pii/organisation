@@ -1,8 +1,28 @@
 ---
 name: evolution
-description: "This skill enables makepad-skills to self-improve continuously during development."
+description: This skill enables makepad-skills to self-improve continuously during development.
 risk: unknown
 source: community
+domain: "SEO & Content Marketing"
+size_class: m
+summary: This skill enables makepad-skills to self-improve continuously during development.
+detail_sections:
+  - Quick Navigation
+  - Hooks-Based Auto-Triggering
+  - Skill Routing and Bundling
+  - When to Evolve
+  - Evolution Process
+  - "Pattern N: [Pattern Name]"
+  - Self-Correction
+  - Self-Validation
+  - Validation Report
+  - Version Adaptation
+  - Personalization
+  - Quality Guidelines
+  - Skill File Locations
+  - Auto-Evolution Prompts
+  - Continuous Improvement Checklist
+  - References
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

@@ -1,21 +1,54 @@
 ---
 name: stability-ai
-description: Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainting, upscale, remove-bg, search-replace. 15 estilos artisticos.
+description: "Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainting, upscale, remove-bg, search-replace. 15 estilos artisticos."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- image-generation
-- stable-diffusion
-- ai-art
-- api
+  - image-generation
+  - stable-diffusion
+  - ai-art
+  - api
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Creative & Design"
+size_class: m
+summary: "Geracao de imagens via Stability AI (SD3.5, Ultra, Core)."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Quando Usar Esta Skill Vs Ai-Studio-Image
+  - Setup Rapido
+  - 1. Modos De Operacao
+  - 2. Exemplos De Uso
+  - Geracao Basica (Sd 3.5 Large)
+  - Qualidade Maxima (Ultra)
+  - Rapido Para Iteracao (Core)
+  - Image-To-Image
+  - Upscale Conservativo
+  - Remover Fundo
+  - Inpainting Com Mascara
+  - "Search & Replace"
+  - Apagar Objeto
+  - Listar Modelos
+  - Listar Estilos
+  - Analisar Prompt (Sugestoes Automaticas)
+  - 3. Aspect Ratios
+  - 4. Estilos (15 Presets)
+  - 5. Output
+  - Integracao Com Outras Skills
+  - "Rate Limits & Seguranca"
+  - Referencia De Arquivos
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Stability AI — Gerador de Imagens Profissional

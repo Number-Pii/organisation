@@ -4,6 +4,17 @@ description: "Use when starting any conversation - establishes how to find and u
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying…"
+detail_sections:
+  - How to Access Skills
+  - The Rule
+  - Red Flags
+  - Skill Priority
+  - Skill Types
+  - User Instructions
+  - When to Use
 ---
 
 <EXTREMELY-IMPORTANT>

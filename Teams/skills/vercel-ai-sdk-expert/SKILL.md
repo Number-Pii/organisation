@@ -4,6 +4,17 @@ description: "Expert in the Vercel AI SDK. Covers Core API (generateText, stream
 risk: safe
 source: community
 date_added: "2026-03-06"
+domain: "AI & Machine Learning"
+size_class: m
+summary: Expert in the Vercel AI SDK.
+detail_sections:
+  - When to Use This Skill
+  - Core Concepts
+  - Server-Side Generation (Core API)
+  - Frontend UI Hooks
+  - Tool Calling (Function Calling)
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Vercel AI SDK Expert

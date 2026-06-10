@@ -1,9 +1,17 @@
 ---
 name: shopify-apps
-description: "Modern Shopify app template with React Router"
+description: Modern Shopify app template with React Router
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: xs
+summary: Modern Shopify app template with React Router
+detail_sections:
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # Shopify Apps

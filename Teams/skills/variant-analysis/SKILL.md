@@ -1,8 +1,19 @@
 ---
 name: variant-analysis
-description: Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use when hunting bug variants, building CodeQL/Semgrep queries, analyzing security vulnerabilities, or performing systematic code audits after finding an initial issue.
+description: "Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use when hunting bug variants, building CodeQL/Semgrep queries, analyzing security vulnerabilities, or performing systematic code audits after finding an initial issue."
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: s
+summary: Find similar vulnerabilities and bugs across codebases using pattern-based analysis.
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - The Five-Step Process
+  - Tool Selection
+  - Key Principles
+  - Critical Pitfalls to Avoid
+  - Resources
 ---
 
 # Variant Analysis

@@ -3,6 +3,26 @@ name: context-compression
 description: "When agent sessions generate millions of tokens of conversation history, compression becomes mandatory. The naive approach is aggressive compression to minimize tokens per request."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: m
+summary: "When agent sessions generate millions of tokens of conversation history, compression becomes mandatory."
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - Detailed Topics
+  - Session Intent
+  - Files Modified
+  - Decisions Made
+  - Current State
+  - Next Steps
+  - Practical Guidance
+  - Examples
+  - Root Cause
+  - Test Status
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 # Context Compression Strategies
@@ -263,4 +283,3 @@ External resources:
 **Last Updated**: 2025-12-26
 **Author**: Agent Skills for Context Engineering Contributors
 **Version**: 1.1.0
-

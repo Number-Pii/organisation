@@ -4,6 +4,20 @@ description: "Comprehensive testing approaches for Temporal workflows using pyte
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "Comprehensive testing approaches for Temporal workflows using pytest, progressive disclosure resources for specific testing scenarios."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Testing Philosophy
+  - Available Resources
+  - Quick Start Guide
+  - Coverage Targets
+  - Key Testing Principles
+  - How to Use Resources
+  - Additional References
 ---
 
 # Temporal Python Testing Strategies

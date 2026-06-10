@@ -3,7 +3,25 @@ name: c4-container
 description: Expert C4 Container-level documentation specialist.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Expert C4 Container-level documentation specialist.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Containers
+  - Purpose
+  - Components
+  - Interfaces
+  - Dependencies
+  - Infrastructure
+  - Container Diagram
+  - API Specification Template
+  - Example Interactions
+  - Key Distinctions
+  - Output Examples
 ---
 
 # C4 Container Level: System Deployment

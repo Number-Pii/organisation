@@ -4,6 +4,17 @@ description: "Expert in TanStack Query (React Query) — asynchronous state mana
 risk: safe
 source: community
 date_added: "2026-03-07"
+domain: "Frontend & UI"
+size_class: m
+summary: Expert in TanStack Query (React Query) — asynchronous state management.
+detail_sections:
+  - When to Use This Skill
+  - Core Concepts
+  - Query Definition Patterns
+  - "Mutations & Cache Invalidation"
+  - Next.js App Router Integration
+  - Best Practices
+  - Troubleshooting
 ---
 
 # TanStack Query Expert

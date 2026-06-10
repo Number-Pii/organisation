@@ -1,9 +1,21 @@
 ---
 name: azure-messaging-webpubsubservice-py
-description: Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connections, and pub/sub patterns.
+description: "Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connections, and pub/sub patterns."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Web PubSub Service SDK for Python.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Service Client (Server-Side)
+  - Client SDK (Python WebSocket Client)
+  - Async Service Client
+  - Client Operations
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Web PubSub Service SDK for Python

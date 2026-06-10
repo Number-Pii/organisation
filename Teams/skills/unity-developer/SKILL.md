@@ -1,9 +1,22 @@
 ---
 name: unity-developer
-description: Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment.
+description: "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 
 ## Use this skill when

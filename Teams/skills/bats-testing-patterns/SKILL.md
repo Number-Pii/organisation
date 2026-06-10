@@ -4,6 +4,14 @@ description: "Master Bash Automated Testing System (Bats) for comprehensive shel
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: Master Bash Automated Testing System (Bats) for comprehensive shell script testing.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Bats Testing Patterns

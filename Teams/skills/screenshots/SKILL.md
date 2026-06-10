@@ -4,6 +4,23 @@ description: "Generate marketing screenshots of your app using Playwright. Use w
 risk: safe
 source: "https://github.com/Shpigford/skills/tree/main/screenshots"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: m
+summary: Generate marketing screenshots of your app using Playwright.
+detail_sections:
+  - When to Use This Skill
+  - Prerequisites
+  - "Step 1: Determine App URL"
+  - "Step 2: Gather Requirements"
+  - "Step 3: Analyze Codebase for Features"
+  - "Step 4: Plan Screenshots with User"
+  - "Step 5: Create Screenshots Directory"
+  - "Step 6: Generate and Run Playwright Script"
+  - "Step 7: Advanced Screenshot Options"
+  - "Step 8: File Naming Convention"
+  - "Step 9: Verify and Summarize"
+  - Error Handling
+  - Tips for Best Results
 ---
 
 # Screenshots

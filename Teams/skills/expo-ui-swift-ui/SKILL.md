@@ -3,6 +3,12 @@ name: expo-ui-swift-ui
 description: expo-ui-swift-ui
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: xs
+summary: expo-ui-swift-ui
+detail_sections:
+  - Installation
+  - Instructions
 ---
 
 ---

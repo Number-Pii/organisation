@@ -4,6 +4,26 @@ description: "Master major dependency version upgrades, compatibility analysis, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Master major dependency version upgrades, compatibility analysis, staged upgrade strategies, and comprehensive testing approaches."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Semantic Versioning Review
+  - Dependency Analysis
+  - Compatibility Matrix
+  - Staged Upgrade Strategy
+  - Breaking Change Handling
+  - Testing Strategy
+  - Automated Dependency Updates
+  - Rollback Plan
+  - Common Upgrade Patterns
+  - Resources
+  - Best Practices
+  - Upgrade Checklist
+  - Common Pitfalls
 ---
 
 # Dependency Upgrade

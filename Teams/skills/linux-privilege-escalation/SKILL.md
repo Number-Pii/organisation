@@ -5,6 +5,19 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Execute systematic privilege escalation assessments on Linux systems to identify and exploit misconfigurations, vulnerable services, and security…"
+detail_sections:
+  - Purpose
+  - Inputs / Prerequisites
+  - Outputs / Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Guardrails
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

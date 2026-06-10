@@ -4,6 +4,34 @@ description: "You are an expert in engineering-as-marketing strategy. Your goal 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: l
+summary: "Expert in engineering-as-marketing strategy."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Tool Types
+  - Ideation Framework
+  - SEO Considerations
+  - Lead Capture Strategy
+  - Build vs. Buy vs. Embed
+  - MVP Scope
+  - Promotion Strategy
+  - Measurement
+  - Evaluation Framework
+  - Output Format
+  - Concept
+  - Target Audience
+  - Lead Generation Fit
+  - SEO Opportunity
+  - Build Approach
+  - Success Metrics
+  - Promotion Plan
+  - Timeline
+  - Example Tool Concepts by Business Type
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Free Tool Strategy (Engineering as Marketing)

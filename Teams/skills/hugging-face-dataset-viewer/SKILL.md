@@ -1,8 +1,18 @@
 ---
 name: hugging-face-dataset-viewer
-description: Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics.
+description: "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download…"
+detail_sections:
+  - Core workflow
+  - Defaults
+  - Dataset Viewer
+  - Querying Datasets
+  - Creating and Uploading Datasets
+  - When to Use
 ---
 
 # Hugging Face Dataset Viewer

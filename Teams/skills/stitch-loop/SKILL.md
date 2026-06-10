@@ -4,11 +4,24 @@ description: Teaches agents to iteratively build websites using Stitch with an a
 allowed-tools:
   - "stitch*:*"
   - "chrome*:*"
-  - "Read"
-  - "Write"
-  - "Bash"
+  - Read
+  - Write
+  - Bash
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: m
+summary: Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern
+detail_sections:
+  - Overview
+  - Prerequisites
+  - The Baton System
+  - Execution Protocol
+  - File Structure Reference
+  - Orchestration Options
+  - Design System Integration
+  - Common Pitfalls
+  - Troubleshooting
 ---
 
 # Stitch Build Loop

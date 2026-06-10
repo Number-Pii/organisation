@@ -4,6 +4,18 @@ description: "Scoped CLAUDE.md memory system that reduces context token spend. C
 risk: safe
 source: "https://github.com/kromahlusenii-ops/ham"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Scoped CLAUDE.md memory system that reduces context token spend.
+detail_sections:
+  - When to Use This Skill
+  - How It Works
+  - Context Routing
+  - Commands
+  - Examples
+  - Best Practices
+  - Limitations
+  - Related Skills
 ---
 
 # Hierarchical Agent Memory (HAM)

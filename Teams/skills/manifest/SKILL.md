@@ -4,6 +4,17 @@ description: "Install and configure the Manifest observability plugin for your a
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Install and configure the Manifest observability plugin for your agents.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Troubleshooting
+  - Examples
+  - Best Practices
 ---
 
 # Manifest Setup

@@ -4,6 +4,17 @@ description: "Automate Confluence page creation, content search, space managemen
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Confluence page creation, content search, space management, labels, and hierarchy navigation via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Confluence Automation via Rube MCP

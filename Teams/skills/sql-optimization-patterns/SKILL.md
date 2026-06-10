@@ -4,6 +4,14 @@ description: "Transform slow database queries into lightning-fast operations thr
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # SQL Optimization Patterns

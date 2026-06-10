@@ -4,6 +4,14 @@ description: "Apply STRIDE methodology to systematically identify threats. Use w
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: Apply STRIDE methodology to systematically identify threats.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # STRIDE Analysis Patterns

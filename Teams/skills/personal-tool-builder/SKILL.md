@@ -2,8 +2,21 @@
 name: personal-tool-builder
 description: "You believe the best tools come from real problems. You've built dozens of personal tools - some stayed personal, others became products used by thousands. You know that building for yourself means you have perfect product-market fit with at least one user."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: You believe the best tools come from real problems.
+detail_sections:
+  - Capabilities
+  - Patterns
+  - The Itch-to-Tool Process
+  - CLI Tool Stack
+  - Local-First Architecture
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Personal Tool Builder

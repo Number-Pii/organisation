@@ -4,6 +4,19 @@ description: "Use when implementation is complete, all tests pass, and you need 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by…"
+detail_sections:
+  - Overview
+  - The Process
+  - Summary
+  - Test Plan
+  - Quick Reference
+  - Common Mistakes
+  - Red Flags
+  - Integration
+  - When to Use
 ---
 
 # Finishing a Development Branch

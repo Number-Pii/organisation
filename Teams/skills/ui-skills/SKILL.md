@@ -4,6 +4,13 @@ description: "Opinionated, evolving constraints to guide agents when building in
 risk: safe
 source: "https://github.com/ibelick/ui-skills"
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Opinionated, evolving constraints to guide agents when building interfaces"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Ui Skills

@@ -1,21 +1,91 @@
 ---
 name: web-scraper
-description: Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabelas, listas, precos). Paginacao, monitoramento e export CSV/JSON.
+description: "Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabelas, listas, precos). Paginacao, monitoramento e export CSV/JSON."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- scraping
-- data-extraction
-- automation
-- csv
+  - scraping
+  - data-extraction
+  - automation
+  - csv
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Web scraping inteligente multi-estrategia.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Capabilities
+  - Web Scraper
+  - "Phase 1: Clarify"
+  - Required Parameters
+  - Optional Parameters
+  - Clarification Rules
+  - Discovery Mode
+  - "Phase 2: Reconnaissance"
+  - "Step 2.1: Initial Fetch"
+  - "Step 2.2: Evaluate Fetch Quality"
+  - "Step 2.3: Content Classification"
+  - "Phase 3: Strategy Selection"
+  - Decision Tree
+  - "Strategy A: Webfetch With Ai Extraction"
+  - "Strategy B: Browser Automation"
+  - "Strategy C: Bash (Curl + Jq)"
+  - Json Api
+  - Csv Download
+  - Xml Parsing
+  - ... Parse And Output Json
+  - "Strategy D: Hybrid"
+  - "Strategy E: Structured Data Extraction"
+  - Pagination Handling
+  - "Phase 4: Extract"
+  - Table Mode
+  - List Mode
+  - Article Mode
+  - Product Mode
+  - Contact Mode
+  - Faq Mode
+  - Pricing Mode
+  - Events Mode
+  - Jobs Mode
+  - Custom Mode
+  - Multi-Url Extraction
+  - "Phase 5: Transform"
+  - Automatic Transforms (Always Apply)
+  - Conditional Transforms (Apply When Relevant)
+  - Data Enrichment (Only When Useful)
+  - Deduplication Strategy
+  - "Phase 6: Validate"
+  - Validation Checks
+  - Confidence Rating
+  - Auto-Recovery (Try Before Reporting Issues)
+  - "Phase 7: Format And Deliver"
+  - Delivery Envelope
+  - Extraction Results
+  - Markdown Table Rules
+  - Json Rules
+  - Csv Rules
+  - File Output
+  - Multi-Url Comparison Format
+  - Differential Output
+  - Rate Limiting
+  - Access Respect
+  - Copyright
+  - Data Scope
+  - Failure Protocol
+  - "Quick Reference: Mode Cheat Sheet"
+  - References
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # Web Scraper

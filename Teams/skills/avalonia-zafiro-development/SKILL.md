@@ -4,6 +4,14 @@ description: "Mandatory skills, conventions, and behavioral rules for Avalonia U
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Mandatory skills, conventions, and behavioral rules for Avalonia UI development using the Zafiro toolkit."
+detail_sections:
+  - Core Pillars
+  - Guides
+  - Procedure Before Writing Code
+  - When to Use
 ---
 
 # Avalonia Zafiro Development

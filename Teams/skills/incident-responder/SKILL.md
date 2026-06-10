@@ -1,9 +1,27 @@
 ---
 name: incident-responder
-description: Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.
+description: "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Immediate Actions (First 5 minutes)
+  - Modern Investigation Protocol
+  - Communication Strategy
+  - "Resolution & Recovery"
+  - Post-Incident Process
+  - Modern Severity Classification
+  - SRE Best Practices
+  - "Modern Tools & Integration"
+  - Behavioral Traits
+  - Response Principles
 ---
 
 ## Use this skill when

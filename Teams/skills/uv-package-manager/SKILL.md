@@ -4,6 +4,14 @@ description: "Comprehensive guide to using uv, an extremely fast Python package 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Comprehensive guide to using uv, an extremely fast Python package installer and resolver written in Rust, for modern Python project management and…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # UV Package Manager

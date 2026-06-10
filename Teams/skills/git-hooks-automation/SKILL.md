@@ -4,6 +4,20 @@ description: "Master Git hooks setup with Husky, lint-staged, pre-commit framewo
 risk: safe
 source: community
 date_added: "2026-03-07"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint."
+detail_sections:
+  - When to Use This Skill
+  - Git Hooks Fundamentals
+  - Husky + lint-staged (Node.js Projects)
+  - pre-commit Framework (Python / Polyglot)
+  - Custom Hook Scripts (Any Language)
+  - CI Integration
+  - "Common Pitfalls & Fixes"
+  - Migration Guide
+  - Key Principles
+  - Related Skills
 ---
 
 # Git Hooks Automation

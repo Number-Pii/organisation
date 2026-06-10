@@ -4,6 +4,17 @@ description: "You are a monitoring and observability expert specializing in impl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Monitoring and observability expert specializing in implementing comprehensive monitoring solutions."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
+  - Resources
 ---
 
 # Monitoring and Observability Setup

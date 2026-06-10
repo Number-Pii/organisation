@@ -4,6 +4,20 @@ description: "This skill provides guidance for creating sophisticated, interacti
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "This skill provides guidance for creating sophisticated, interactive data visualisations using d3.js."
+detail_sections:
+  - Overview
+  - When to use d3.js
+  - Core workflow
+  - Common visualisation patterns
+  - Adding interactivity
+  - Transitions and animations
+  - Scales reference
+  - Best practices
+  - Common issues and solutions
+  - Resources
 ---
 
 # D3.js Visualisation

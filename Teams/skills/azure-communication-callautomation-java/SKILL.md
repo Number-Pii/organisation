@@ -4,6 +4,27 @@ description: "Build server-side call automation workflows including IVR systems,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Build server-side call automation workflows including IVR systems, call routing, recording, and AI-powered interactions."
+detail_sections:
+  - Installation
+  - Client Creation
+  - Key Concepts
+  - Create Outbound Call
+  - Answer Incoming Call
+  - Play Audio (Text-to-Speech)
+  - Recognize DTMF Input
+  - Recognize Speech
+  - Call Recording
+  - Add Participant to Call
+  - Transfer Call
+  - Handle Events (Webhook)
+  - Hang Up Call
+  - Error Handling
+  - Environment Variables
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Communication Call Automation (Java)

@@ -4,6 +4,17 @@ description: "SQL database migrations with zero-downtime strategies for PostgreS
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Server."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - Context
+  - Instructions
+  - Output Format
+  - Resources
 ---
 
 # SQL Database Migration Strategy and Implementation

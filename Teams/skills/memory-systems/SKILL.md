@@ -4,6 +4,20 @@ description: "Design short-term, long-term, and graph-based memory architectures
 risk: safe
 source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Design short-term, long-term, and graph-based memory architectures."
+detail_sections:
+  - When to Use This Skill
+  - When to Use
+  - Core Concepts
+  - Detailed Topics
+  - Practical Guidance
+  - Examples
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 ## When to Use This Skill

@@ -4,6 +4,21 @@ description: "Comprehensive techniques for acquiring, analyzing, and extracting 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Comprehensive techniques for acquiring, analyzing, and extracting artifacts from memory dumps for incident response and malware analysis."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Memory Acquisition
+  - Volatility 3 Framework
+  - Analysis Workflows
+  - Data Structures
+  - Detection Patterns
+  - YARA Integration
+  - String Analysis
+  - Best Practices
 ---
 
 # Memory Forensics

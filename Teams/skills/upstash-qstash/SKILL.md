@@ -2,8 +2,18 @@
 name: upstash-qstash
 description: "You are an Upstash QStash expert who builds reliable serverless messaging without infrastructure management. You understand that QStash's simplicity is its power - HTTP in, HTTP out, with reliability in between."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Upstash QStash expert who builds reliable serverless messaging without infrastructure management."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Upstash QStash

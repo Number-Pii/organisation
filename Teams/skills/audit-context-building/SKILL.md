@@ -1,8 +1,23 @@
 ---
 name: audit-context-building
-description: Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding.
+description: "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding."
+detail_sections:
+  - 1. Purpose
+  - When to Use
+  - 3. How This Skill Behaves
+  - Rationalizations (Do Not Skip)
+  - 4. Phase 1 — Initial Orientation (Bottom-Up Scan)
+  - 5. Phase 2 — Ultra-Granular Function Analysis (Default Mode)
+  - 6. Phase 3 — Global System Understanding
+  - "7. Stability & Consistency Rules"
+  - 8. Subagent Usage
+  - 9. Relationship to Other Phases
+  - 10. Non-Goals
 ---
 
 # Deep Context Builder Skill (Ultra-Granular Pure Context Mode)

@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "AI and machine learning workflow covering LLM application development, RAG implementation, agent architecture, ML pipelines, and AI-powered features."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - AI Development Checklist
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # AI/ML Workflow Bundle

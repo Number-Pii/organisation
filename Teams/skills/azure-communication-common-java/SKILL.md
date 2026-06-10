@@ -4,6 +4,25 @@ description: "Azure Communication Services common utilities for Java. Use when w
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Communication Services common utilities for Java.
+detail_sections:
+  - Installation
+  - Key Concepts
+  - CommunicationTokenCredential
+  - Entra ID (Azure AD) Authentication
+  - Communication Identifiers
+  - Identifier Parsing
+  - Type Checking Identifiers
+  - Token Access
+  - Dispose Credential
+  - Cloud Environments
+  - Environment Variables
+  - Best Practices
+  - Common Usage Patterns
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Communication Common (Java)

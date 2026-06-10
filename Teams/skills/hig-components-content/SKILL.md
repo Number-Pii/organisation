@@ -3,7 +3,18 @@ name: hig-components-content
 description: Apple Human Interface Guidelines for content display components.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Apple Human Interface Guidelines for content display components.
+detail_sections:
+  - Key Principles
+  - Reference Index
+  - Component Selection Guide
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Apple HIG: Content Components

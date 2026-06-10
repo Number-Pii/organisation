@@ -4,6 +4,19 @@ description: "Frontend development patterns for React, Next.js, state management
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices."
+detail_sections:
+  - Component Patterns
+  - Custom Hooks Patterns
+  - State Management Patterns
+  - Performance Optimization
+  - Form Handling Patterns
+  - Error Boundary Pattern
+  - Animation Patterns
+  - Accessibility Patterns
+  - When to Use
 ---
 
 # Frontend Development Patterns

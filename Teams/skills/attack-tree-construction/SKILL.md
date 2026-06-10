@@ -4,6 +4,15 @@ description: "Build comprehensive attack trees to visualize threat paths. Use wh
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: Build comprehensive attack trees to visualize threat paths.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Attack Tree Construction

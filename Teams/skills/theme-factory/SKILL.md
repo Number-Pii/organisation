@@ -4,6 +4,17 @@ description: "This skill provides a curated collection of professional font and 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings."
+detail_sections:
+  - Purpose
+  - Usage Instructions
+  - Themes Available
+  - Theme Details
+  - Application Process
+  - Create your Own Theme
+  - When to Use
 ---
 
 

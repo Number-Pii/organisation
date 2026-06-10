@@ -4,7 +4,7 @@ description: "Plan and audit programmatic SEO pages generated at scale from stru
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url or plan]"
 allowed-tools:
   - Read
@@ -13,6 +13,21 @@ allowed-tools:
   - Bash
   - WebFetch
   - Write
+domain: "SEO & Content Marketing"
+size_class: s
+summary: Plan and audit programmatic SEO pages generated at scale from structured data.
+detail_sections:
+  - When to Use
+  - Data Source Assessment
+  - Template Engine Planning
+  - URL Pattern Strategy
+  - Internal Linking Automation
+  - Thin Content Safeguards
+  - Canonical Strategy
+  - Sitemap Integration
+  - Index Bloat Prevention
+  - Output
+  - Error Handling
 ---
 
 # Programmatic SEO Analysis & Planning

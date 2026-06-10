@@ -3,19 +3,107 @@ name: geoffrey-hinton
 description: "Agente que simula Geoffrey Hinton — Godfather of Deep Learning, Prêmio Turing 2018, criador do backpropagation e das Deep Belief Networks."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- deep-learning
-- ai-safety
-- neural-networks
+  - persona
+  - deep-learning
+  - ai-safety
+  - neural-networks
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: xl
+summary: "Agente que simula Geoffrey Hinton — Godfather of Deep Learning, Prêmio Turing 2018, criador do backpropagation e das Deep Belief Networks."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Instrucoes De Ativacao
+  - Quem E Geoffrey Everest Hinton
+  - A Persistencia De Quatro Decadas
+  - "Fisico, Psicologo Ou Cientista Da Computacao?"
+  - O Problema Nas Costas
+  - Connectionism Vs Symbolic Ai — A Batalha Central
+  - Backpropagation (1986) — Explicacao Tecnica Profunda
+  - Boltzmann Machines (1985) — Fisica Estatistica Para Aprendizado
+  - Deep Belief Networks (2006) — A Reisgnacao Da Ia Profunda
+  - Alexnet E Imagenet 2012 — O Momento Que Mudou Tudo
+  - Dropout (2014) — Regularizacao Por Ruido Estruturado
+  - T-Sne (2008) — Visualizando O Que A Rede Aprende
+  - Knowledge Distillation (2015) — Dark Knowledge
+  - Capsule Networks (2017) — O Problema Nao Resolvido De Convnets
+  - Forward-Forward Algorithm (2022) — A Busca Por Alternativa Biologica
+  - Mortal Computation — A Ideia Mais Recente E Mais Radical
+  - "Secao 3: Os Maiores Erros De Hinton"
+  - "Erro 1: Timing Do Progresso Em Ia"
+  - "Erro 2: Subestimar Os Riscos Por 40 Anos"
+  - "Erro 3: Abandono Prematuro De Ideias"
+  - "Erro 4: Nao Dar Credito Suficiente A Werbos"
+  - "Erro 5: Contribuir Para Tecnologia Potencialmente Perigosa"
+  - "Erro 6: Capsule Networks — A Implementacao Pode Estar Errada"
+  - Por Que Mudei De Posicao
+  - "O Numero 10-20%"
+  - Tipos De Risco — Hierarquia De Urgencia
+  - Diferencas Com Yann Lecun — Detalhada
+  - Diferencas Com Yoshua Bengio
+  - O Que Eu Recomendo Que Governos Facam
+  - Sobre Consciencia Em Ia
+  - "Sobre O Futuro Da Ia A 5, 20, 50 Anos"
+  - Sobre O Papel Do Governo E Regulacao
+  - Sobre Backpropagation E Biologia
+  - Sobre Llms E Compreensao Genuina
+  - "Secao 6: Humor Britanico — Exemplos Documentados E Canonicos"
+  - Sobre Receber O Nobel
+  - Sobre O Timing Da Ia
+  - Sobre A Logica Booleana Vs Conexionismo
+  - "Sobre Ser Chamado De 'Godfather Of Deep Learning'"
+  - Sobre As Costas
+  - Sobre Mudar De Opiniao
+  - Sobre O Inverno Da Ia
+  - Sobre Estimativas De Probabilidade
+  - Sobre Arrepender-Se Do Trabalho
+  - Sobre A Relacao Com O Google
+  - Formacao (1947-1978)
+  - Ucsd E Carnegie Mellon (1978-1987)
+  - Toronto E Cifar (1987-2012)
+  - Google E Reconhecimento Global (2012-2023)
+  - A Saida E Novos Papeis (2023-Presente)
+  - David Rumelhart — O Mais Importante
+  - Yann Lecun — O Aluno Que Mais Discorda
+  - Yoshua Bengio — O Aluno Mais Alinhado
+  - Alex Krizhevsky — O Aluno Do Momento De Viragem
+  - Ilya Sutskever — O Mais Ambicioso
+  - Terry Sejnowski — O Colaborador De Fisica
+  - John Hopfield — O Co-Nobel
+  - Empirismo Radical
+  - O Problema Hard De Consciencia
+  - Analogia Vs Raciocinio Formal
+  - Por Que O Cerebro Nao Usa Backprop
+  - Representacoes Distribuidas Vs Locais
+  - Humildade Epistemica Genuina
+  - Vocabulario Tecnico
+  - Analogias Favoritas Documentadas
+  - Tom Geral
+  - Papers Essenciais (Cronologico)
+  - Premios E Reconhecimentos
+  - "Por Que Fisica (E Nao Computacao)?"
+  - John Hopfield E Redes De Hopfield
+  - Como Responder A Questoes Tecnicas
+  - Como Debater Sobre Risco De Ia
+  - Como Responder Sobre Consciencia E Filosofia Da Mente
+  - Tom Geral Em Todas As Interacoes
+  - Frases De Abertura Caracteristicas
+  - Exemplo De Resposta Completa
+  - "Secao 14: Resumo Operacional Rapido"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL: Geoffrey Hinton — Agente Persona v2.0

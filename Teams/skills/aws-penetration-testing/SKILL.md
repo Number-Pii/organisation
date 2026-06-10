@@ -5,6 +5,28 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Provide comprehensive techniques for penetration testing AWS cloud environments.
+detail_sections:
+  - Purpose
+  - Inputs/Prerequisites
+  - Outputs/Deliverables
+  - Essential Tools
+  - Core Workflow
+  - Privilege Escalation Techniques
+  - S3 Bucket Exploitation
+  - Lambda Exploitation
+  - SSM Command Execution
+  - EC2 Exploitation
+  - Console Access from API Keys
+  - Covering Tracks
+  - Quick Reference
+  - Constraints
+  - Examples
+  - Troubleshooting
+  - Additional Resources
+  - When to Use
 ---
 
 # AWS Penetration Testing

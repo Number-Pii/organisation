@@ -4,6 +4,17 @@ description: "Expert in event sourcing, CQRS, and event-driven architecture patt
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert in event sourcing, CQRS, and event-driven architecture patterns."
+detail_sections:
+  - Capabilities
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Best Practices
+  - Related Skills
 ---
 
 # Event Sourcing Architect

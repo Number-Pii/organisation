@@ -1,8 +1,19 @@
 ---
 name: skill-router
-description: "Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal."
+description: Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal.
 risk: safe
 source: self
+domain: Skills Tooling
+size_class: m
+summary: Use when the user is unsure which skill to use or where to start.
+detail_sections:
+  - When to Use
+  - Goal
+  - Instructions
+  - Example Interaction
+  - Skill Routing Reference
+  - Constraints
+  - Limitations
 ---
 
 # Skill Router

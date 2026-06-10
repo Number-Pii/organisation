@@ -2,8 +2,16 @@
 name: segment-cdp
 description: "Client-side tracking with Analytics.js. Include track, identify, page, and group calls. Anonymous ID persists until identify merges with user."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: s
+summary: Client-side tracking with Analytics.js.
+detail_sections:
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # Segment CDP

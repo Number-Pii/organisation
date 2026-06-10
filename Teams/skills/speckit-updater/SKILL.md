@@ -3,6 +3,15 @@ name: speckit-updater
 description: SpecKit Safe Update
 risk: unknown
 source: community
+domain: "Planning & Workflow"
+size_class: s
+summary: SpecKit Safe Update
+detail_sections:
+  - What to do when this skill is invoked
+  - Commands
+  - Features
+  - Architecture
+  - Exit Codes
 ---
 
 # SpecKit Safe Update

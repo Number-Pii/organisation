@@ -4,6 +4,23 @@ description: "Python development principles and decision-making. Framework selec
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: Python development principles and decision-making.
+detail_sections:
+  - When to Use
+  - ⚠️ How to Use This Skill
+  - 1. Framework Selection (2025)
+  - 2. Async vs Sync Decision
+  - 3. Type Hints Strategy
+  - 4. Project Structure Principles
+  - 5. Django Principles (2025)
+  - 6. FastAPI Principles
+  - 7. Background Tasks
+  - 8. Error Handling Principles
+  - 9. Testing Principles
+  - 10. Decision Checklist
+  - 11. Anti-Patterns to Avoid
 ---
 
 # Python Patterns

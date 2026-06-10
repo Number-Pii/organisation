@@ -4,6 +4,14 @@ description: "Map identified threats to appropriate security controls and mitiga
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: Map identified threats to appropriate security controls and mitigations.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Threat Mitigation Mapping

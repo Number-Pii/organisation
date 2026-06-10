@@ -4,6 +4,17 @@ description: "Automate Coda tasks via Rube MCP (Composio): manage docs, pages, t
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Coda tasks via Rube MCP (Composio): manage docs, pages, tables, rows, formulas, permissions, and publishing."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Coda Automation via Rube MCP

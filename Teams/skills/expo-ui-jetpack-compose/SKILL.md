@@ -3,6 +3,13 @@ name: expo-ui-jetpack-compose
 description: expo-ui-jetpack-compose
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: xs
+summary: expo-ui-jetpack-compose
+detail_sections:
+  - Installation
+  - Instructions
+  - Key Components
 ---
 
 ---

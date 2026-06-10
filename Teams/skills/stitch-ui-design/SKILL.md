@@ -4,6 +4,21 @@ description: "Expert guidance for crafting effective prompts in Google Stitch, t
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: m
+summary: "Expert guidance for crafting effective prompts in Google Stitch, the AI-powered UI design tool by Google Labs."
+detail_sections:
+  - "What is Google Stitch?"
+  - Core Prompting Principles
+  - Prompt Structure Template
+  - Iteration Strategies
+  - Common Use Cases
+  - Design-to-Code Workflow
+  - Anti-Patterns to Avoid
+  - Tips for Better Results
+  - Integration with Development Workflow
+  - Conclusion
+  - When to Use
 ---
 
 # Stitch UI Design Prompting

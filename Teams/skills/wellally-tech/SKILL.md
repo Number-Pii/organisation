@@ -3,6 +3,23 @@ name: wellally-tech
 description: "Integrate multiple digital health data sources, connect to [WellAlly.tech](https://www.wellally.tech/) knowledge base, providing data import and knowledge reference for personal health management systems."
 risk: unknown
 source: community
+domain: "Data Science & Visualisation"
+size_class: l
+summary: "Integrate multiple digital health data sources, connect to [WellAlly.tech](https://www.wellally.tech/) knowledge base, providing data import and…"
+detail_sections:
+  - Core Features
+  - Usage Instructions
+  - Output Format
+  - Data Sources
+  - WellAlly.tech Knowledge Base
+  - Integration Guides
+  - "Security & Privacy"
+  - Related Commands
+  - Technical Implementation
+  - Usage Examples
+  - Extensibility
+  - Reference Resources
+  - FAQ
 ---
 
 # WellAlly Digital Health Integration

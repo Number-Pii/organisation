@@ -4,6 +4,17 @@ description: "Automate Zoom meeting creation, management, recordings, webinars, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Zoom Automation via Rube MCP

@@ -4,6 +4,14 @@ description: "Production-ready patterns for dbt (data build tool) including mode
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Production-ready patterns for dbt (data build tool) including model organization, testing strategies, documentation, and incremental processing."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # dbt Transformation Patterns

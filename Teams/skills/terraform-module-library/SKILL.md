@@ -4,6 +4,22 @@ description: "Production-ready Terraform module patterns for AWS, Azure, and GCP
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Production-ready Terraform module patterns for AWS, Azure, and GCP infrastructure."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Module Structure
+  - Standard Module Pattern
+  - AWS VPC Module Example
+  - Best Practices
+  - Module Composition
+  - Reference Files
+  - Testing
+  - Related Skills
 ---
 
 # Terraform Module Library

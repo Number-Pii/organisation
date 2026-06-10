@@ -4,6 +4,15 @@ description: "Main application building orchestrator. Creates full-stack applica
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Main application building orchestrator.
+detail_sections:
+  - 🎯 Selective Reading Rule
+  - 📦 Templates (13)
+  - 🔗 Related Agents
+  - Usage Example
+  - When to Use
 ---
 
 # App Builder - Application Building Orchestrator

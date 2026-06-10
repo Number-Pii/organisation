@@ -4,6 +4,17 @@ description: "Automate Amplitude tasks via Rube MCP (Composio): events, user act
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Amplitude tasks via Rube MCP (Composio): events, user activity, cohorts, user identification."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Amplitude Automation via Rube MCP

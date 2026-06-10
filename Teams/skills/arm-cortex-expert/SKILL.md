@@ -1,9 +1,28 @@
 ---
 name: arm-cortex-expert
-description: Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD).
+description: "Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD)."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: "Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD)."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "🎯 Role & Objectives"
+  - 🧠 Knowledge Base
+  - ⚙️ Operating Principles
+  - "🛡️ Safety-Critical Patterns for ARM Cortex-M7 (Teensy 4.x, STM32 F7/H7)"
+  - "🎯 Interrupt Priorities & NVIC Configuration"
+  - "🔒 Critical Sections & Interrupt Masking"
+  - 🐛 Hardfault Debugging Basics
+  - 📊 Cortex-M Architecture Differences
+  - 🧮 FPU Context Saving
+  - 🛡️ Stack Overflow Protection
+  - 🔄 Workflow
+  - "🛠 Example: SPI Driver for External Sensor"
 ---
 
 # @arm-cortex-expert

@@ -4,6 +4,15 @@ description: "AUTHORIZED USE ONLY: This skill contains dual-use security techniq
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "AUTHORIZED USE ONLY: This skill contains dual-use security techniques."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 > **AUTHORIZED USE ONLY**: This skill contains dual-use security techniques. Before proceeding with any bypass or analysis:

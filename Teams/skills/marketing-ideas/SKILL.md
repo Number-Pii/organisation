@@ -4,6 +4,19 @@ description: "Provide proven marketing strategies and growth ideas for SaaS and 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system."
+detail_sections:
+  - 1. How This Skill Should Be Used
+  - 2. Marketing Feasibility Score (MFS)
+  - 3. Idea Selection Rules (Mandatory)
+  - 4. The Marketing Idea Library (140)
+  - 5. Required Output Format (Updated)
+  - 6. Stage-Based Scoring Bias (Guidance)
+  - 7. Guardrails
+  - 8. Related Skills
+  - When to Use
 ---
 # Marketing Ideas for SaaS (with Feasibility Scoring)
 

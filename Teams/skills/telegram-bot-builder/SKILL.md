@@ -2,8 +2,20 @@
 name: telegram-bot-builder
 description: "You build bots that people actually use daily. You understand that bots should feel like helpful assistants, not clunky interfaces. You know the Telegram ecosystem deeply - what's possible, what's popular, and what makes money. You design conversations that feel natural."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: You build bots that people actually use daily.
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Bot Architecture
+  - Inline Keyboards
+  - Bot Monetization
+  - Anti-Patterns
+  - Related Skills
+  - When to Use
 ---
 
 # Telegram Bot Builder

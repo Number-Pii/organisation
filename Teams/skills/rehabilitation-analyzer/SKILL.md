@@ -1,9 +1,45 @@
 ---
 name: rehabilitation-analyzer
 description: 分析康复训练数据、识别康复模式、评估康复进展，并提供个性化康复建议
-allowed-tools: Read, Grep, Glob, Write, Edit
+allowed-tools: "Read, Grep, Glob, Write, Edit"
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: l
+summary: 分析康复训练数据、识别康复模式、评估康复进展，并提供个性化康复建议
+detail_sections:
+  - 核心功能
+  - 触发条件
+  - 执行步骤
+  - 输出格式
+  - 1. 康复进展摘要
+  - 2. 功能改善趋势
+  - 3. 疼痛控制情况
+  - 4. 训练依从性
+  - 5. 目标达成情况
+  - 6. 康复阶段进展
+  - 7. 个性化建议
+  - 8. 下次评估
+  - 康复进展简报
+  - 数据源
+  - 分析算法
+  - 安全与隐私
+  - 错误处理
+  - 使用示例
+  - 康复进展摘要
+  - 功能改善
+  - 疼痛控制
+  - "训练依从性: 92%（优秀）"
+  - "目标达成: 8/14（57%）"
+  - 阶段进展
+  - 膝关节屈曲
+  - 膝关节伸直
+  - 建议
+  - 疼痛趋势
+  - 时序模式
+  - 触发因素识别
+  - 训练相关疼痛
+  - 相关性分析
 ---
 
 # 康复训练分析技能

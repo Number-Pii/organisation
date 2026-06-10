@@ -2,10 +2,27 @@
 name: seaborn
 description: "Seaborn is a Python visualization library for creating publication-quality statistical graphics. Use this skill for dataset-oriented plotting, multivariate analysis, automatic statistical estimation, and complex multi-panel figures with minimal code."
 license: BSD-3-Clause license
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Data Science & Visualisation"
+size_class: l
+summary: Seaborn is a Python visualization library for creating publication-quality statistical graphics.
+detail_sections:
+  - Overview
+  - Design Philosophy
+  - Quick Start
+  - Core Plotting Interfaces
+  - Plotting Functions by Category
+  - Multi-Plot Grids
+  - Figure-Level vs Axes-Level Functions
+  - Data Structure Requirements
+  - Color Palettes
+  - Theming and Aesthetics
+  - Best Practices
+  - Common Patterns
+  - Troubleshooting
+  - Resources
 ---
 
 # Seaborn Statistical Visualization

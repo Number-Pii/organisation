@@ -1,8 +1,21 @@
 ---
 name: claude-settings-audit
-description: Analyze a repository to generate recommended Claude Code settings.json permissions. Use when setting up a new project, auditing existing settings, or determining which read-only bash commands to allow. Detects tech stack, build tools, and monorepo structure.
+description: "Analyze a repository to generate recommended Claude Code settings.json permissions. Use when setting up a new project, auditing existing settings, or determining which read-only bash commands to allow. Detects tech stack, build tools, and monorepo structure."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: m
+summary: Analyze a repository to generate recommended Claude Code settings.json permissions.
+detail_sections:
+  - "Phase 1: Detect Tech Stack"
+  - "Phase 2: Detect Services"
+  - "Phase 3: Check Existing Settings"
+  - "Phase 4: Generate Recommendations"
+  - Output Format
+  - Detected Tech Stack
+  - Recommended .claude/settings.json
+  - Recommended .mcp.json (if applicable)
+  - Important Rules
 ---
 
 # Claude Settings Audit

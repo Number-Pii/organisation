@@ -4,6 +4,21 @@ description: "Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets)."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Secrets Operations
+  - Keys Operations
+  - Cryptographic Operations
+  - Backup and Restore
+  - Key Types
+  - Error Handling
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Key Vault Secrets SDK for TypeScript

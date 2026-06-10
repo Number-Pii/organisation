@@ -4,6 +4,18 @@ description: "Automatically fetch latest library/framework documentation for Cla
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: Automatically fetch latest library/framework documentation for Claude Code via Context7 API.
+detail_sections:
+  - Overview
+  - When to Use
+  - Installation
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Related Skills
 ---
 
 # context7-auto-research

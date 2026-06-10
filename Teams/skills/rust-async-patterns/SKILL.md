@@ -4,6 +4,14 @@ description: "Master Rust async programming with Tokio, async traits, error hand
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Rust Async Patterns

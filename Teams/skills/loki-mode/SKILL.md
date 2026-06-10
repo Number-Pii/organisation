@@ -4,6 +4,36 @@ description: "Version 2.35.0 | PRD to Production | Zero Human Intervention > Res
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Version 2.35.0 | PRD to Production | Zero Human Intervention > Research-enhanced: OpenAI SDK, DeepMind, Anthropic, AWS Bedrock, Agent SDK, HN…"
+detail_sections:
+  - Quick Reference
+  - Prerequisites
+  - Core Autonomy Rules
+  - RARV Cycle (Every Iteration)
+  - Model Selection Strategy
+  - "Tool Orchestration & Efficiency"
+  - Structured Prompting for Subagents
+  - GOAL (What success looks like)
+  - CONSTRAINTS (What you cannot do)
+  - CONTEXT (What you need to know)
+  - OUTPUT FORMAT (What to deliver)
+  - WHEN COMPLETE
+  - Quality Gates
+  - Agent Types Overview
+  - "Common Issues & Solutions"
+  - Red Flags - Never Do These
+  - Multi-Tiered Fallback System
+  - AGENTS.md Integration
+  - Constitutional AI Principles (Anthropic)
+  - Debate-Based Verification (DeepMind)
+  - Production Patterns (HN 2025)
+  - Exit Conditions
+  - Directory Structure Overview
+  - Invocation
+  - References
+  - When to Use
 ---
 
 # Loki Mode - Multi-Agent Autonomous Startup System

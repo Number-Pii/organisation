@@ -4,6 +4,19 @@ description: "Backend architecture patterns, API design, database optimization, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: l
+summary: "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes."
+detail_sections:
+  - API Design Patterns
+  - Database Patterns
+  - Caching Strategies
+  - Error Handling Patterns
+  - "Authentication & Authorization"
+  - Rate Limiting
+  - "Background Jobs & Queues"
+  - "Logging & Monitoring"
+  - When to Use
 ---
 
 # Backend Development Patterns

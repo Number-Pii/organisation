@@ -4,6 +4,14 @@ description: "Derive security requirements from threat models and business conte
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: Derive security requirements from threat models and business context.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Security Requirement Extraction

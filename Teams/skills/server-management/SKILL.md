@@ -4,6 +4,19 @@ description: "Server management principles and decision-making. Process manageme
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: Server management principles and decision-making.
+detail_sections:
+  - 1. Process Management Principles
+  - 2. Monitoring Principles
+  - 3. Log Management Principles
+  - 4. Scaling Decisions
+  - 5. Health Check Principles
+  - 6. Security Principles
+  - 7. Troubleshooting Priority
+  - 8. Anti-Patterns
+  - When to Use
 ---
 
 # Server Management

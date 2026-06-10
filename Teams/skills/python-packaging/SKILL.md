@@ -4,6 +4,14 @@ description: "Comprehensive guide to creating, structuring, and distributing Pyt
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Comprehensive guide to creating, structuring, and distributing Python packages using modern packaging tools, pyproject.toml, and publishing to PyPI."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Python Packaging

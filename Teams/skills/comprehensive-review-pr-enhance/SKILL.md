@@ -1,12 +1,22 @@
 ---
 name: comprehensive-review-pr-enhance
-description: >
-  Generate structured PR descriptions from diffs, add review checklists,
-  risk assessments, and test coverage summaries. Use when the user says
-  "write a PR description", "improve this PR", "summarize my changes",
-  "PR review", "pull request", or asks to document a diff for reviewers.
+description: ">"
 risk: unknown
 source: community
+domain: "Testing & QA"
+size_class: s
+summary: "Review a pull request's full diff and apply scoped, high-confidence improvements."
+detail_sections:
+  - Workflow
+  - PR Description Template
+  - Summary
+  - Changes
+  - Why
+  - Testing
+  - "Risks & Rollback"
+  - Review Checklist Rules
+  - Splitting Large PRs
+  - Resources
 ---
 
 # Pull Request Enhancement

@@ -4,6 +4,17 @@ description: "SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: SOTA Computer Vision Expert (2026).
+detail_sections:
+  - Purpose
+  - When to Use
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - Sharp Edges (2026)
+  - Related Skills
 ---
 
 # Computer Vision Expert (SOTA 2026)

@@ -5,6 +5,19 @@ category: development
 risk: safe
 source: community
 date_added: "2026-03-05"
+domain: "Backend & APIs"
+size_class: m
+summary: "Builds production-ready REST API endpoints with validation, error handling, authentication, and documentation."
+detail_sections:
+  - When to Use This Skill
+  - "What You'll Build"
+  - Endpoint Structure
+  - Best Practices
+  - Common Patterns
+  - Documentation Template
+  - Testing Example
+  - Key Principles
+  - Related Skills
 ---
 
 # API Endpoint Builder

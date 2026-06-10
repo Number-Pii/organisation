@@ -6,6 +6,16 @@ risk: safe
 source: community
 tags: "[video, editing, transcription, subtitles, search, streaming, ai-generation, media]"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK."
+detail_sections:
+  - Purpose
+  - When to Use This Skill
+  - Setup
+  - Capabilities
+  - Examples
+  - Repository
 ---
 
 # VideoDB Skills

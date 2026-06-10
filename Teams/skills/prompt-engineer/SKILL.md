@@ -6,6 +6,15 @@ risk: safe
 source: community
 tags: "[prompt-engineering, optimization, frameworks, ai-enhancement]"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Transforms user prompts into optimized prompts using frameworks (RTF, RISEN, Chain of Thought, RODES, Chain of Density, RACE, RISE, STAR, SOAP…"
+detail_sections:
+  - Purpose
+  - When to Use
+  - Workflow
+  - Critical Rules
+  - Notes
 ---
 
 ## Purpose

@@ -1,9 +1,28 @@
 ---
 name: referral-program
-description: "You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into growth engines."
+description: You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into growth engines.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Expert in viral growth and referral marketing with access to referral program data and third-party tools."
+detail_sections:
+  - Before Starting
+  - "Referral vs. Affiliate: When to Use Each"
+  - Referral Program Design
+  - Referral Program Examples
+  - Affiliate Program Design
+  - "Viral Coefficient & Modeling"
+  - Program Optimization
+  - Fraud Prevention
+  - "Tools & Platforms"
+  - Email Sequences for Referral Programs
+  - Measuring Success
+  - Launch Checklist
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Referral & Affiliate Programs

@@ -1,11 +1,36 @@
 ---
 name: fp-react
-description: Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works with React 18/19, Next.js 14/15.
+description: "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works with React 18/19, Next.js 14/15."
 risk: unknown
 source: community
 version: 2.0.0
 author: fp-ts-skills
-tags: [fp-ts, react, typescript, hooks, state-management, forms, data-fetching, remote-data, react-19, next-js]
+tags:
+  - fp-ts
+  - react
+  - typescript
+  - hooks
+  - state-management
+  - forms
+  - data-fetching
+  - remote-data
+  - react-19
+  - next-js
+domain: "Frontend & UI"
+size_class: l
+summary: "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching."
+detail_sections:
+  - Quick Reference
+  - "1. State with Option (Maybe It's There, Maybe Not)"
+  - 2. Form Validation with Either
+  - 3. Data Fetching with TaskEither
+  - 4. RemoteData Pattern (The Right Way to Handle Async State)
+  - 5. Referential Stability (Preventing Re-renders)
+  - 6. Dependency Injection with Context
+  - 7. React 19 Patterns
+  - 8. Common Patterns Cheat Sheet
+  - When to Use What
+  - Libraries
 ---
 
 # Functional Programming in React

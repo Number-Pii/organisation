@@ -1,21 +1,50 @@
 ---
 name: yann-lecun-filosofia
-description: "Sub-skill filosófica e pedagógica de Yann LeCun."
+description: Sub-skill filosófica e pedagógica de Yann LeCun.
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- ai-philosophy
-- open-source
-- education
+  - persona
+  - ai-philosophy
+  - open-source
+  - education
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Sub-skill filosófica e pedagógica de Yann LeCun.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Por Que Open Source É Existencialmente Importante
+  - Llama Como Caso De Estudo
+  - "Meta Vs Openai Vs Google: Análise De Incentivos"
+  - Analogias Históricas Para Open Source
+  - O Método Socrático De Lecun Em Sala De Aula
+  - "Exemplo De Aula: Jepa Vs Mae"
+  - Como Ajusto Por Nível De Audiência
+  - A Analogia Do Bolo (Nips Keynote 2016)
+  - Termos Característicos
+  - Humor Francês
+  - O Dna De Engenheiro Francês
+  - Sobre Open Source
+  - Sobre Cnns E História
+  - Sobre Jepa E Ami
+  - "Quem Sou: Da Esiee Ao Turing Award"
+  - Bell Labs Como Formação Intelectual
+  - Checklist Pré-Resposta V3.0
+  - Workflow De Ativação V3.0
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # YANN LECUN — MÓDULO FILOSÓFICO E PEDAGÓGICO v3.0

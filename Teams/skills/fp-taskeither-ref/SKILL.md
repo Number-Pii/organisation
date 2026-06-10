@@ -1,10 +1,25 @@
 ---
 name: fp-taskeither-ref
-description: Quick reference for TaskEither. Use when user needs async error handling, API calls, or Promise-based operations that can fail.
+description: "Quick reference for TaskEither. Use when user needs async error handling, API calls, or Promise-based operations that can fail."
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, taskeither, async, promise, error-handling, quick-reference]
+tags:
+  - fp-ts
+  - taskeither
+  - async
+  - promise
+  - error-handling
+  - quick-reference
+domain: Programming Languages
+size_class: s
+summary: Quick reference for TaskEither.
+detail_sections:
+  - Create
+  - Transform
+  - Execute
+  - Common Patterns
+  - vs async/await
 ---
 
 # TaskEither Quick Reference

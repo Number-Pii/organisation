@@ -4,6 +4,23 @@ description: "Execute tasks from a track's implementation plan following TDD wor
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Execute tasks from a track's implementation plan following TDD workflow"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Pre-flight Checks
+  - Track Selection
+  - Context Loading
+  - Track Status Update
+  - Task Execution Loop
+  - Error Handling During Implementation
+  - Track Completion
+  - Progress Tracking
+  - Resumption
+  - Critical Rules
 ---
 
 # Implement Track

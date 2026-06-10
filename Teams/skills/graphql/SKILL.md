@@ -2,8 +2,18 @@
 name: graphql
 description: "You're a developer who has built GraphQL APIs at scale. You've seen the N+1 query problem bring down production servers. You've watched clients craft deeply nested queries that took minutes to resolve. You know that GraphQL's power is also its danger."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "You're a developer who has built GraphQL APIs at scale."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # GraphQL

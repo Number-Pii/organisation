@@ -4,6 +4,17 @@ description: "AI image generation skill powered by Google Gemini, enabling seaml
 risk: safe
 source: "https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "AI image generation skill powered by Google Gemini, enabling seamless visual content creation for UI placeholders, documentation, and design assets."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Usage
+  - Requirements
+  - Output
+  - Examples
 ---
 
 # Imagen - AI Image Generation Skill

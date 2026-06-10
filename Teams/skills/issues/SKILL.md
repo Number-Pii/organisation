@@ -1,12 +1,25 @@
 ---
 name: issues
-description: Interact with GitHub issues - create, list, and view issues.
-allowed-tools: Bash(gh *)
+description: "Interact with GitHub issues - create, list, and view issues."
+allowed-tools: "Bash(gh *)"
 risk: unknown
 source: community
-metadata:
-  author: Shpigford
-  version: "1.0"
+metadata: []
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Interact with GitHub issues - create, list, and view issues."
+detail_sections:
+  - Instructions
+  - "If \"Create new issue\" selected:"
+  - Description
+  - Steps to Reproduce
+  - Expected Behavior
+  - Actual Behavior
+  - Use Case
+  - "If \"List issues\" selected:"
+  - "If \"View issue\" selected:"
+  - Error Handling
+  - Important Notes
 ---
 
 Interact with GitHub issues - create, list, and view issues.

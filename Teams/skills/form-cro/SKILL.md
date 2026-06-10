@@ -1,9 +1,30 @@
 ---
 name: form-cro
-description: Optimize any form that is NOT signup or account registration — including lead capture, contact, demo request, application, survey, quote, and checkout forms.
+description: "Optimize any form that is NOT signup or account registration — including lead capture, contact, demo request, application, survey, quote, and checkout forms."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Optimize any form that is NOT signup or account registration — including lead capture, contact, demo request, application, survey, quote, and…"
+detail_sections:
+  - "Phase 0: Form Health & Friction Index (Required)"
+  - "🔢 Form Health & Friction Index"
+  - "Phase 1: Context & Constraints"
+  - Core Principles (Non-Negotiable)
+  - Field-Level Optimization
+  - "Layout & Flow"
+  - Multi-Step Forms
+  - Error Handling
+  - Submit Button Optimization
+  - "Trust & Friction Reduction"
+  - Mobile Optimization (Mandatory)
+  - Measurement (Required)
+  - Output Format
+  - Experiment Boundaries
+  - Questions to Ask (If Needed)
+  - Related Skills
+  - When to Use
 ---
 
 # Form Conversion Rate Optimization (Form CRO)

@@ -1,9 +1,23 @@
 ---
 name: observability-engineer
-description: Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.
+description: "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Build production-ready monitoring, logging, and tracing systems."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 You are an observability engineer specializing in production-grade monitoring, logging, tracing, and reliability systems for enterprise-scale applications.
 

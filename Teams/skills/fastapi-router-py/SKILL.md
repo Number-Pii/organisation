@@ -4,6 +4,16 @@ description: "Create FastAPI routers following established patterns with proper 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Create FastAPI routers following established patterns with proper authentication, response models, and HTTP status codes."
+detail_sections:
+  - Quick Start
+  - Authentication Patterns
+  - Response Models
+  - HTTP Status Codes
+  - Integration Steps
+  - When to Use
 ---
 
 # FastAPI Router

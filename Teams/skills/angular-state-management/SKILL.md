@@ -4,6 +4,20 @@ description: "Master modern Angular state management with Signals, NgRx, and RxJ
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Master modern Angular state management with Signals, NgRx, and RxJS."
+detail_sections:
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - Core Concepts
+  - "Quick Start: Signal-Based State"
+  - NgRx Store (Global State)
+  - RxJS-Based Patterns
+  - Server State with Signals
+  - Best Practices
+  - Migration Path
+  - Resources
 ---
 
 # Angular State Management

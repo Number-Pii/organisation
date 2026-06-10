@@ -1,9 +1,22 @@
 ---
 name: ml-engineer
-description: Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring.
+description: "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 
 ## Use this skill when

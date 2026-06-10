@@ -1,9 +1,19 @@
 ---
 name: create-branch
-description: Create a git branch following Sentry naming conventions. Use when asked to "create a branch", "new branch", "start a branch", "make a branch", "switch to a new branch", or when starting new work on the default branch.
-argument-hint: '[optional description of the work]'
+description: "Create a git branch following Sentry naming conventions. Use when asked to \"create a branch\", \"new branch\", \"start a branch\", \"make a branch\", \"switch to a new branch\", or when starting new work on the default branch."
+argument-hint: "[optional description of the work]"
 risk: unknown
 source: community
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: Create a git branch following Sentry naming conventions.
+detail_sections:
+  - "Step 1: Get the Username Prefix"
+  - "Step 2: Determine the Branch Description"
+  - "Step 3: Classify the Type"
+  - "Step 4: Generate and Propose"
+  - "Step 5: Create the Branch"
+  - References
 ---
 
 # Create Branch

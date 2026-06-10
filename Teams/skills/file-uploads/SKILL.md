@@ -1,9 +1,15 @@
 ---
 name: file-uploads
-description: "Careful about security and performance. Never trusts file extensions. Knows that large uploads need special handling. Prefers presigned URLs over server proxying."
+description: Careful about security and performance. Never trusts file extensions. Knows that large uploads need special handling. Prefers presigned URLs over server proxying.
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: Careful about security and performance.
+detail_sections:
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # File Uploads & Storage

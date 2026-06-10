@@ -1,21 +1,57 @@
 ---
 name: leiloeiro-edital
-description: Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e classificacao da oportunidade.
+description: "Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e classificacao da oportunidade."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- auction
-- legal-analysis
-- risk
-- brazilian
+  - auction
+  - legal-analysis
+  - risk
+  - brazilian
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: l
+summary: Analise e auditoria de editais de leilao judicial e extrajudicial.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Protocolo De Análise De Edital
+  - Bloco 1 — Identificação E Enquadramento
+  - Bloco 2 — Descrição E Localização Do Imóvel
+  - Bloco 3 — Valor De Avaliação E Lance Mínimo
+  - Bloco 4 — Situação Do Imóvel (Posse E Ocupação)
+  - "5.1 Responsabilidade Por Débitos — O Que Diz O Edital?"
+  - 5.2 Ônus Reais Registrados Na Matrícula
+  - Bloco 6 — Condições De Pagamento
+  - Bloco 7 — Regularidade Documental E Jurídica
+  - Matriz De Risco Do Edital
+  - Veredicto Final Do Edital
+  - Prazos Importantes
+  - Custos Típicos Por Estado (Itbi)
+  - "Bloco Extra — Editais De Venda Direta (Cef, Bb, Santander)"
+  - Venda Online Caixa (Caixavbr.Com.Br)
+  - Venda Direta Bb / Santander / Itaú
+  - Checklist Específico Para Venda Direta
+  - Modelo De Planilha De Custos Do Arrematante
+  - Instalação
+  - "Verificar Se A Skill Está Registrada:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"O Que Verificar Nesse Edital Da Caixa?\""
+  - Governança
+  - Armadilhas Comuns Em Editais — Top 10
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL DE EDITAL — ANÁLISE PERICIAL DE EDITAIS DE LEILÃO

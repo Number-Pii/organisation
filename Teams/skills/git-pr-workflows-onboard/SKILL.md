@@ -4,6 +4,26 @@ description: "You are an **expert onboarding specialist and knowledge transfer a
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Onboarding and knowledge-transfer design for engineering teams in remote-first organisations."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Context
+  - Requirements
+  - Pre-Onboarding Preparation
+  - Day 1 Orientation and Setup
+  - Week 1 Codebase Immersion
+  - Development Environment Setup
+  - Team Integration and Culture
+  - Learning Resources and Documentation
+  - Milestone Tracking and Check-ins
+  - Feedback Loops and Continuous Improvement
+  - Example Plans
+  - Reference Examples
+  - Execution Guidelines
 ---
 
 # Onboard

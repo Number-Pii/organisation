@@ -1,8 +1,15 @@
 ---
 name: apify-competitor-intelligence
-description: Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and TikTok.
+description: "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and TikTok."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and…"
+detail_sections:
+  - Prerequisites
+  - Workflow
+  - Error Handling
 ---
 
 # Competitor Intelligence

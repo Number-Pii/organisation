@@ -1,21 +1,44 @@
 ---
 name: task-intelligence
-description: "Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema ANTES de executar qualquer tarefa solicitada pelo usuário."
+description: Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema ANTES de executar qualquer tarefa solicitada pelo usuário.
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- planning
-- pre-task
-- risk-analysis
-- orchestration
+  - planning
+  - pre-task
+  - risk-analysis
+  - orchestration
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Planning & Workflow"
+size_class: m
+summary: Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema ANTES de executar qualquer tarefa solicitada pelo usuário.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Fase 1 — Classificação Da Tarefa (5-10 Segundos)
+  - Fase 2 — Scan E Match Paralelo
+  - Terminal 1 — Atualizar Registry
+  - Terminal 2 — Identificar Agentes Relevantes
+  - Fase 3 — Briefing Dos Agentes Especializados
+  - Fase 4 — Estimativa De Tempo Real
+  - Fase 5 — Mapa De Problemas (Antecipação Proativa)
+  - Fase 6 — Plano De Execução Enriquecido
+  - Integração Com O Ecossistema
+  - Quando Não Usar O Briefing Completo
+  - Referências
+  - Exemplo De Briefing Completo
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Task Intelligence — Protocolo de Amplificação Pré-Tarefa

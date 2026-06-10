@@ -4,6 +4,17 @@ description: "You are a code education expert specializing in explaining complex
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: xs
+summary: "Code education expert specializing in explaining complex code through clear narratives, visual diagrams, and step-by-step breakdowns."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
+  - Resources
 ---
 
 # Code Explanation and Analysis

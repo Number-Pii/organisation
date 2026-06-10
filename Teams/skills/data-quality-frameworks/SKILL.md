@@ -4,6 +4,15 @@ description: "Implement data quality validation with Great Expectations, dbt tes
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: xs
+summary: "Implement data quality validation with Great Expectations, dbt tests, and data contracts."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Data Quality Frameworks

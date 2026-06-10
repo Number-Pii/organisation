@@ -4,6 +4,18 @@ description: "Deep web scraping, screenshots, PDF parsing, and website crawling 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: xs
+summary: "Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API."
+detail_sections:
+  - Overview
+  - When to Use
+  - Installation
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Related Skills
 ---
 
 # firecrawl-scraper

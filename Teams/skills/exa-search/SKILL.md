@@ -4,6 +4,18 @@ description: "Semantic search, similar content discovery, and structured researc
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: "Semantic search, similar content discovery, and structured research using Exa API."
+detail_sections:
+  - Overview
+  - When to Use
+  - Installation
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
+  - Related Skills
 ---
 
 # exa-search

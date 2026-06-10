@@ -1,21 +1,61 @@
 ---
 name: comfyui-gateway
-description: REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching, auth, rate limiting, and image delivery (URL + base64).
+description: "REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching, auth, rate limiting, and image delivery (URL + base64)."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- comfyui
-- api-gateway
-- image-generation
-- typescript
+  - comfyui
+  - api-gateway
+  - image-generation
+  - typescript
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Frontend & UI"
+size_class: m
+summary: REST API gateway for ComfyUI servers.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Architecture Overview
+  - Components
+  - Quick Start
+  - 1. Install
+  - 2. Configure
+  - 3. Initialize
+  - 4. Add A Workflow
+  - 5. Start (Api + Worker In One Process)
+  - "Or Separately:"
+  - Environment Variables
+  - "Health & Capabilities"
+  - Workflows (Crud)
+  - Jobs
+  - Outputs
+  - Job Lifecycle
+  - Workflow Templates
+  - Security Model
+  - Comfyui Integration
+  - Cache Strategy
+  - Error Classification
+  - Bundled Workflows
+  - "1. `Sdxl_Realism_V1` — Photorealistic Generation"
+  - "2. `Sprite_Transparent_Bg` — Game Sprites With Alpha"
+  - "3. `Icon_512` — App Icons With Optional Upscale"
+  - Observability
+  - Cli Reference
+  - Troubleshooting
+  - Integration Examples
+  - File Structure
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # ComfyUI Gateway

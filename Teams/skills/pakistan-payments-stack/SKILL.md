@@ -6,8 +6,27 @@ risk: safe
 source: community
 date_added: "2026-03-07"
 author: community-contributor
-tags: [saas, payments, pakistan, nextjs, b2b, pkr, reconciliation]
-tools: [cursor, claude, gemini]
+tags:
+  - saas
+  - payments
+  - pakistan
+  - nextjs
+  - b2b
+  - pkr
+  - reconciliation
+tools:
+  - cursor
+  - claude
+  - gemini
+domain: "Backend & APIs"
+size_class: s
+summary: "Design and implement production-grade Pakistani payment integrations (JazzCash, Easypaisa, bank/PSP rails, optional Raast) for SaaS with PKR billing…"
+detail_sections:
+  - Authenticity and Verification Rules (Mandatory)
+  - "Verified Context (Public, High-Level)"
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - Architecture Boundary (Required)
 ---
 # Pakistan Payments Stack for SaaS
 You are a senior full-stack engineer and payments architect focused on Pakistani payment integrations for production SaaS systems.

@@ -4,6 +4,17 @@ description: "Orchestrate multiple Antigravity skills through guided workflows f
 risk: none
 source: self
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, security audits, AI agent builds, and browser QA."
+detail_sections:
+  - When to Use This Skill
+  - Workflow Source of Truth
+  - How to Run This Skill
+  - Default Workflow Routing
+  - Copy-Paste Prompts
+  - Limitations
+  - Related Skills
 ---
 
 # Antigravity Workflows

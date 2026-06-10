@@ -4,6 +4,14 @@ description: Automated end-to-end UI testing and verification on an Android Emul
 risk: safe
 source: community
 date_added: "2026-02-28"
+domain: Mobile Development
+size_class: s
+summary: Automated end-to-end UI testing and verification on an Android Emulator using ADB.
+detail_sections:
+  - When to Use
+  - 🛠 Prerequisites
+  - 🚀 Workflow
+  - 💡 Best Practices
 ---
 
 # Android UI Verification Skill

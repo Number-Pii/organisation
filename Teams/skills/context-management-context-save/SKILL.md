@@ -1,9 +1,25 @@
 ---
 name: context-management-context-save
-description: "Use when working with context management context save"
+description: Use when working with context management context save
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Use when working with context management context save
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Role and Purpose
+  - Context Management Overview
+  - Requirements and Argument Handling
+  - Context Extraction Strategies
+  - Code Examples
+  - Reference Workflows
+  - Advanced Integration Capabilities
+  - Limitations and Considerations
+  - Future Roadmap
 ---
 
 # Context Save Tool: Intelligent Context Management Specialist

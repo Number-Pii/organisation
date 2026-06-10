@@ -1,9 +1,25 @@
 ---
 name: clean-code
-description: "This skill embodies the principles of \"Clean Code\" by Robert C. Martin (Uncle Bob). Use it to transform \"code that works\" into \"code that is clean.\""
+description: "This skill embodies the principles of \\\"Clean Code\\\" by Robert C. Martin (Uncle Bob). Use it to transform \\\"code that works\\\" into \\\"code that is clean.\\\""
 risk: safe
 source: "ClawForge (https://github.com/jackjin1997/ClawForge)"
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "This skill embodies the principles of \\\"Clean Code\\\" by Robert C."
+detail_sections:
+  - 🧠 Core Philosophy
+  - When to Use
+  - 1. Meaningful Names
+  - 2. Functions
+  - 3. Comments
+  - 4. Formatting
+  - 5. Objects and Data Structures
+  - 6. Error Handling
+  - 7. Unit Tests
+  - 8. Classes
+  - 9. Smells and Heuristics
+  - 🛠️ Implementation Checklist
 ---
 
 # Clean Code Skill

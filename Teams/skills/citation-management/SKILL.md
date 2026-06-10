@@ -1,11 +1,27 @@
 ---
 name: citation-management
-description: "Manage citations systematically throughout the research and writing process."
+description: Manage citations systematically throughout the research and writing process.
 license: MIT License
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Documentation & Office"
+size_class: xl
+summary: Manage citations systematically throughout the research and writing process.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Visual Enhancement with Scientific Schematics
+  - Core Workflow
+  - Search Strategies
+  - Tools and Scripts
+  - Best Practices
+  - Common Pitfalls to Avoid
+  - Example Workflows
+  - Integration with Other Skills
+  - Resources
+  - Dependencies
+  - Summary
 ---
 
 # Citation Management
@@ -1110,4 +1126,3 @@ The citation-management skill provides:
 7. **Reproducibility** through documented search and extraction methods
 
 Use this skill to maintain accurate, complete citations throughout your research and ensure publication-ready bibliographies.
-

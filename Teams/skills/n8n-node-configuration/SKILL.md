@@ -1,8 +1,24 @@
 ---
 name: n8n-node-configuration
-description: Operation-aware node configuration guidance. Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type.
+description: "Operation-aware node configuration guidance. Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type."
 risk: unknown
 source: community
+domain: "SaaS Integrations & Automation"
+size_class: l
+summary: Operation-aware node configuration guidance.
+detail_sections:
+  - Configuration Philosophy
+  - Core Concepts
+  - Configuration Workflow
+  - get_node Detail Levels
+  - Property Dependencies Deep Dive
+  - Common Node Patterns
+  - Operation-Specific Configuration
+  - Handling Conditional Requirements
+  - Configuration Anti-Patterns
+  - Best Practices
+  - Detailed References
+  - Summary
 ---
 
 # n8n Node Configuration

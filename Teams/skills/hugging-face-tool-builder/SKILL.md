@@ -3,6 +3,15 @@ name: hugging-face-tool-builder
 description: "Your purpose is now is to create reusable command line scripts and utilities for using the Hugging Face API, allowing chaining, piping and intermediate processing where helpful. You can access the API directly, as well as use the hf command line tool."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: s
+summary: "Your purpose is now is to create reusable command line scripts and utilities for using the Hugging Face API, allowing chaining, piping and…"
+detail_sections:
+  - Script Rules
+  - Sample Scripts
+  - High Level Endpoints
+  - Accessing the API
+  - Using the HF command line tool
 ---
 
 # Hugging Face API Tool Builder

@@ -3,6 +3,14 @@ name: makepad-reference
 description: "This category provides reference materials for debugging, code quality, and advanced layout patterns."
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: xs
+summary: "This category provides reference materials for debugging, code quality, and advanced layout patterns."
+detail_sections:
+  - Quick Navigation
+  - Common Issues Quick Reference
+  - Debug Tips
+  - Resources
 ---
 
 # Makepad Reference

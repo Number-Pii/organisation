@@ -5,6 +5,22 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+domain: "Frontend & UI"
+size_class: m
+summary: Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling
+detail_sections:
+  - Overview
+  - Installation
+  - Configuration Files
+  - "IMPORTANT: No Babel Config Needed"
+  - CSS Component Wrappers
+  - Usage
+  - Custom Theme Variables
+  - Platform-Specific Styles
+  - Apple System Colors with CSS Variables
+  - Using CSS Variables in JavaScript
+  - Key Differences from NativeWind v4 / Tailwind v3
+  - Troubleshooting
 ---
 
 # Tailwind CSS Setup for Expo with react-native-css

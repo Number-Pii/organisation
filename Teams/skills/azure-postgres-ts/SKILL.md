@@ -3,7 +3,25 @@ name: azure-postgres-ts
 description: Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Workflows
+  - Pool with Entra ID Token Refresh
+  - Error Handling
+  - Connection String Format
+  - Pool Events
+  - Azure-Specific Configuration
+  - Pool Sizing Guidelines
+  - Best Practices
+  - Key Types
+  - Reference Links
+  - When to Use
 ---
 
 # Azure PostgreSQL for TypeScript (node-postgres)

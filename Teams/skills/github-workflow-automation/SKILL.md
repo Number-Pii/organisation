@@ -4,6 +4,25 @@ description: "Patterns for automating GitHub workflows with AI assistance, inspi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: l
+summary: "Patterns for automating GitHub workflows with AI assistance, inspired by [Gemini CLI](https://github.com/google-gemini/gemini-cli) and modern DevOps…"
+detail_sections:
+  - When to Use This Skill
+  - 1. Automated PR Review
+  - 📋 Summary
+  - ✅ What looks good
+  - ⚠️ Potential Issues
+  - 💡 Suggestions
+  - 🔒 Security Notes
+  - 2. Issue Triage Automation
+  - 3. CI/CD Integration
+  - 4. Git Operations
+  - 5. On-Demand Assistance
+  - Available Commands
+  - 6. Repository Configuration
+  - Best Practices
+  - Resources
 ---
 
 # 🔧 GitHub Workflow Automation

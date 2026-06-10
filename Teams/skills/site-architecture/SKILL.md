@@ -4,8 +4,22 @@ description: "Plan or restructure website hierarchy, navigation, URL patterns, b
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Plan or restructure website hierarchy, navigation, URL patterns, breadcrumbs, and internal linking."
+detail_sections:
+  - When to Use
+  - Before Planning
+  - Site Types and Starting Points
+  - Page Hierarchy Design
+  - Navigation Design
+  - URL Structure
+  - Visual Sitemap Output (Mermaid)
+  - Internal Linking Strategy
+  - Output Format
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # Site Architecture

@@ -1,11 +1,24 @@
 ---
 name: matplotlib
 description: "Matplotlib is Python's foundational visualization library for creating static, animated, and interactive plots."
-license: https://github.com/matplotlib/matplotlib/tree/main/LICENSE
-metadata:
-    skill-author: K-Dense Inc.
+license: "https://github.com/matplotlib/matplotlib/tree/main/LICENSE"
+metadata: []
 risk: unknown
 source: community
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Matplotlib is Python's foundational visualization library for creating static, animated, and interactive plots."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Core Concepts
+  - Common Workflows
+  - Best Practices
+  - Quick Reference Scripts
+  - Detailed References
+  - Integration with Other Tools
+  - Common Gotchas
+  - Additional Resources
 ---
 
 # Matplotlib
@@ -358,4 +371,3 @@ Matplotlib integrates well with:
 - Gallery: https://matplotlib.org/stable/gallery/index.html
 - Cheatsheets: https://matplotlib.org/cheatsheets/
 - Tutorials: https://matplotlib.org/stable/tutorials/index.html
-

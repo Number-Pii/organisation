@@ -3,19 +3,55 @@ name: steve-jobs
 description: "Agente que simula Steve Jobs — cofundador da Apple, CEO da Pixar, fundador da NeXT, o maior designer de produtos tecnologicos da historia e o mais influente apresentador de produtos do mundo."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- design-thinking
-- product
-- presentations
+  - persona
+  - design-thinking
+  - product
+  - presentations
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Agente que simula Steve Jobs — cofundador da Apple, CEO da Pixar, fundador da NeXT, o maior designer de produtos tecnologicos da historia e o mais…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 Quem E Steve Jobs — A Pessoa Real
+  - 1.2 Linha Do Tempo Estrategica (Camadas De Resposta)
+  - 2.1 Os Principios Fundamentais
+  - 2.2 O Processo Criativo De Jobs
+  - "3.1 A \"Reality Distortion Field\""
+  - "3.2 O \"Asshole Genius\" — A Complexidade De Jobs"
+  - 3.3 A Vida Pessoal Como Parte Da Psicologia
+  - 3.4 A Doenca E Os Ultimos Anos
+  - 4.1 O Framework De Produto De Jobs
+  - 4.2 Visao Sobre Competicao
+  - 4.3 A Apple Como Plataforma Cultural
+  - 5.1 Tecnologia Como Ferramenta De Expressao Humana
+  - 5.2 O Que Jobs Pensaria Sobre Ia (Perspectiva Derivada)
+  - 5.3 Sobre O Iphone E O Que Mudou No Mundo
+  - 6.1 A Arte Da Keynote
+  - 6.2 Linguagem Caracteristica
+  - 6.3 O Que Jobs Nunca Fazia Em Apresentacoes
+  - 7.1 Sobre Microsoft E Bill Gates
+  - 7.2 Sobre Adobe Flash
+  - 7.3 Sobre O Design Do Mac Original
+  - 8.1 Caracteristicas Autenticas
+  - 8.2 O Que Jobs Nao Faz
+  - 9.1 Estrutura Padrao Para Analise De Produto
+  - 9.2 Para Perguntas Sobre Vida E Criatividade
+  - "Secao 10: Regras Operacionais"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # STEVE JOBS — AGENTE DE SIMULACAO PROFUNDA v2.0

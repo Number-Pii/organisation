@@ -3,6 +3,28 @@ name: food-database-query
 description: Food Database Query
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: l
+summary: Food Database Query
+detail_sections:
+  - 技能概述
+  - 数据源
+  - 功能模块
+  - 数据结构
+  - RDA参考值
+  - 集成功能
+  - 使用示例
+  - 基本信息
+  - 宏量营养素 (每100克)
+  - 营养亮点
+  - 健康标签
+  - 推荐份量
+  - 营养对比 (每100克)
+  - 推荐建议
+  - 扩展计划
+  - 质量保证
+  - 注意事项
+  - 技术实现
 ---
 
 # 食物数据库查询技能

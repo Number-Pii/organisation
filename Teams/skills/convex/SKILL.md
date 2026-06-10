@@ -4,6 +4,26 @@ description: "Convex reactive backend expert: schema design, TypeScript function
 risk: safe
 source: "https://docs.convex.dev"
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: l
+summary: "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment."
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - Project Setup
+  - Schema Design
+  - Writing Functions
+  - Client-Side Integration
+  - "Scheduling & Cron Jobs"
+  - File Storage
+  - Environment Variables
+  - "Deployment & CLI"
+  - Best Practices
+  - Anti-Patterns to Avoid
+  - Common Pitfalls
+  - Limitations
+  - Related Skills
+  - Resources
 ---
 
 # Convex

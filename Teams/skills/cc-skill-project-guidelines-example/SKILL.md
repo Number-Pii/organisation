@@ -1,9 +1,21 @@
 ---
 name: cc-skill-project-guidelines-example
-description: "Project Guidelines Skill (Example)"
+description: Project Guidelines Skill (Example)
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: m
+summary: Project Guidelines Skill (Example)
+detail_sections:
+  - When to Use
+  - Architecture Overview
+  - File Structure
+  - Code Patterns
+  - Testing Requirements
+  - Deployment Workflow
+  - Critical Rules
+  - Related Skills
 ---
 
 # Project Guidelines Skill (Example)

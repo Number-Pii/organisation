@@ -4,6 +4,15 @@ description: "Architectural decision-making framework. Requirements analysis, tr
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Architectural decision-making framework.
+detail_sections:
+  - 🎯 Selective Reading Rule
+  - 🔗 Related Skills
+  - Core Principle
+  - Validation Checklist
+  - When to Use
 ---
 
 # Architecture Decision Framework

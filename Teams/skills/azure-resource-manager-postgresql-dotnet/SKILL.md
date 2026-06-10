@@ -3,7 +3,26 @@ name: azure-resource-manager-postgresql-dotnet
 description: Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure PostgreSQL Flexible Server SDK for .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Resource Hierarchy
+  - Core Workflows
+  - Key Types Reference
+  - SKU Tiers
+  - PostgreSQL Versions
+  - High Availability Modes
+  - Best Practices
+  - Error Handling
+  - Connection String
+  - Related SDKs
+  - Reference Links
+  - When to Use
 ---
 
 # Azure.ResourceManager.PostgreSql (.NET)

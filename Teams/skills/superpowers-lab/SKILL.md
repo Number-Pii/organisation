@@ -1,9 +1,16 @@
 ---
 name: superpowers-lab
-description: "Lab environment for Claude superpowers"
+description: Lab environment for Claude superpowers
 risk: safe
 source: "https://github.com/obra/superpowers-lab"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xs
+summary: Lab environment for Claude superpowers
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Superpowers Lab

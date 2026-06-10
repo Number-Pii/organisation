@@ -1,13 +1,21 @@
 ---
 name: makepad-platform
-description: |
-  CRITICAL: Use for Makepad cross-platform support. Triggers on:
-  makepad platform, makepad os, makepad macos, makepad windows, makepad linux,
-  makepad android, makepad ios, makepad web, makepad wasm, makepad metal,
-  makepad d3d11, makepad opengl, makepad webgl, OsType, CxOs,
-  makepad 跨平台, makepad 平台支持
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: s
+summary: "Platform integration and windowing for Makepad applications."
+detail_sections:
+  - Documentation
+  - "IMPORTANT: Documentation Completeness Check"
+  - Supported Platforms
+  - OsType Enum
+  - Platform Detection
+  - Conditional Compilation
+  - Platform-Specific Features
+  - Entry Point
+  - When Answering Questions
 ---
 
 # Makepad Platform Skill

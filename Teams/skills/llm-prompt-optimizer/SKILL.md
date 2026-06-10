@@ -4,6 +4,16 @@ description: "Use when improving prompts for any LLM. Applies proven prompt engi
 risk: safe
 source: community
 date_added: "2026-03-04"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Use when improving prompts for any LLM.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Best Practices
+  - Prompt Audit Checklist
+  - Troubleshooting
 ---
 
 # LLM Prompt Optimizer

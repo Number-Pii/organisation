@@ -4,6 +4,40 @@ description: "Comprehensive guide to writing effective, blameless postmortems th
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Comprehensive guide to writing effective, blameless postmortems that drive organizational learning and prevent incident recurrence."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Quick Start
+  - Templates
+  - Executive Summary
+  - Timeline (All times UTC)
+  - Root Cause Analysis
+  - Detection
+  - Response
+  - Impact
+  - Lessons Learned
+  - Action Items
+  - Appendix
+  - Problem Statement
+  - Analysis
+  - Root Causes Identified
+  - Systemic Improvements
+  - What Happened
+  - Timeline
+  - Root Cause
+  - Fix
+  - Lessons
+  - Facilitation Guide
+  - Meeting Structure (60 minutes)
+  - Facilitation Tips
+  - Anti-Patterns to Avoid
+  - Best Practices
+  - Resources
 ---
 
 # Postmortem Writing

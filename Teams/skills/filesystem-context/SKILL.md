@@ -1,8 +1,21 @@
 ---
 name: filesystem-context
-description: Use for file-based context management, dynamic context discovery, and reducing context window bloat. Offload context to files for just-in-time loading.
+description: "Use for file-based context management, dynamic context discovery, and reducing context window bloat. Offload context to files for just-in-time loading."
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Use for file-based context management, dynamic context discovery, and reducing context window bloat."
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - Detailed Topics
+  - Practical Guidance
+  - Examples
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 # Filesystem-Based Context Engineering
@@ -319,4 +332,3 @@ External resources:
 **Last Updated**: 2026-01-07
 **Author**: Agent Skills for Context Engineering Contributors
 **Version**: 1.0.0
-

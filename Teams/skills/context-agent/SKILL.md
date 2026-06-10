@@ -1,21 +1,43 @@
 ---
 name: context-agent
-description: Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pendentes e carrega briefing automatico na sessao seguinte.
+description: "Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pendentes e carrega briefing automatico na sessao seguinte."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- context
-- session-management
-- continuity
-- memory
+  - context
+  - session-management
+  - continuity
+  - memory
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: s
+summary: Agente de contexto para continuidade entre sessoes.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Localização
+  - Inicialização (Primeira Vez)
+  - Salvar Contexto Da Sessão Atual
+  - Carregar Contexto (Briefing)
+  - Status Rápido
+  - Buscar No Histórico
+  - Manutenção
+  - Fluxo De Trabalho
+  - O Que É Capturado Em Cada Sessão
+  - Integração Com Memory.Md
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Context Agent

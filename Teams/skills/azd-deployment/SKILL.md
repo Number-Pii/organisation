@@ -4,6 +4,21 @@ description: "Deploy containerized frontend + backend applications to Azure Cont
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Deploy containerized frontend + backend applications to Azure Container Apps with remote builds, managed identity, and idempotent infrastructure."
+detail_sections:
+  - Quick Start
+  - Core File Structure
+  - azure.yaml Configuration
+  - Environment Variables Flow
+  - Idempotent Deployments
+  - Container App Service Discovery
+  - "Managed Identity & RBAC"
+  - Common Commands
+  - Reference Files
+  - Critical Reminders
+  - When to Use
 ---
 
 # Azure Developer CLI (azd) Container Apps Deployment

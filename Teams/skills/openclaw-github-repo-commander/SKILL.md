@@ -6,8 +6,31 @@ risk: safe
 source: community
 date_added: "2026-03-18"
 author: wd041216-bit
-tags: [github, git, repository, audit, cleanup, workflow, devtools, automation, code-review, security]
-tools: [claude, cursor]
+tags:
+  - github
+  - git
+  - repository
+  - audit
+  - cleanup
+  - workflow
+  - devtools
+  - automation
+  - code-review
+  - security
+tools:
+  - claude
+  - cursor
+domain: "Planning & Workflow"
+size_class: s
+summary: "7-stage super workflow for GitHub repo audit, cleanup, PR review, and competitor analysis"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Source Repository
 ---
 # OpenClaw GitHub Repo Commander
 

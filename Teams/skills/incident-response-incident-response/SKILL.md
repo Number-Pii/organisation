@@ -1,9 +1,24 @@
 ---
 name: incident-response-incident-response
-description: "Use when working with incident response incident response"
+description: Use when working with incident response incident response
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: Use when working with incident response incident response
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Configuration
+  - "Phase 1: Detection & Triage"
+  - "Phase 2: Investigation & Root Cause Analysis"
+  - "Phase 3: Resolution & Recovery"
+  - "Phase 4: Communication & Coordination"
+  - "Phase 5: Postmortem & Prevention"
+  - Success Criteria
+  - Coordination Protocols
 ---
 
 ## Use this skill when

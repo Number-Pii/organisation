@@ -1,10 +1,22 @@
 ---
 name: blueprint
-description: "Turn a one-line objective into a step-by-step construction plan any coding agent can execute cold. Each step has a self-contained context brief — a fresh agent in a new session can pick up any step without reading prior steps."
+description: Turn a one-line objective into a step-by-step construction plan any coding agent can execute cold. Each step has a self-contained context brief — a fresh agent in a new session can pick up any step without reading prior steps.
 category: planning
 risk: safe
 source: community
 date_added: "2026-03-10"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Turn a one-line objective into a step-by-step construction plan any coding agent can execute cold.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Key Differentiators
+  - Installation
+  - Additional Resources
 ---
 
 # Blueprint — Construction Plan Generator

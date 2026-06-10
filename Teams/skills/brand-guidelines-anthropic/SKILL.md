@@ -4,6 +4,15 @@ description: "To access Anthropic's official brand identity and style resources,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "To access Anthropic's official brand identity and style resources, use this skill."
+detail_sections:
+  - Overview
+  - Brand Guidelines
+  - Features
+  - Technical Details
+  - When to Use
 ---
 
 # Anthropic Brand Styling

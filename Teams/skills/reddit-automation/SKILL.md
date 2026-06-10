@@ -4,6 +4,17 @@ description: "Automate Reddit tasks via Rube MCP (Composio): search subreddits, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage comments, and browse top content."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Reddit Automation via Rube MCP

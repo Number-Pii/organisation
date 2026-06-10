@@ -1,11 +1,22 @@
 ---
 name: scientific-writing
-description: "This is the core skill for the deep research and writing tool—combining AI-driven deep research with well-formatted written outputs. Every document produced is backed by comprehensive literature search and verified citations through the research-lookup skill."
+description: This is the core skill for the deep research and writing tool—combining AI-driven deep research with well-formatted written outputs. Every document produced is backed by comprehensive literature search and verified citations through the research-lookup skill.
 license: MIT license
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Documentation & Office"
+size_class: l
+summary: This is the core skill for the deep research and writing tool—combining AI-driven deep research with well-formatted written outputs.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Visual Enhancement with Scientific Schematics
+  - Core Capabilities
+  - Workflow for Manuscript Development
+  - Integration with Other Scientific Skills
+  - References
+  - Assets
 ---
 
 # Scientific Writing
@@ -716,4 +727,3 @@ This skill includes LaTeX style packages and templates for professional report f
 **For venue-specific writing styles** (tone, voice, abstract format, reviewer expectations), see the **venue-templates** skill which provides comprehensive style guides for Nature/Science, Cell Press, medical journals, ML conferences, and CS conferences.
 
 Load these references as needed when working on specific aspects of scientific writing.
-

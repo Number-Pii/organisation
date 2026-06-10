@@ -4,6 +4,13 @@ description: "-Automatically convert documentation websites, GitHub repositories
 risk: safe
 source: "https://github.com/yusufkaraaslan/Skill_Seekers"
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: xs
+summary: "-Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills in minutes."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Instructions
 ---
 
 # Skill Seekers

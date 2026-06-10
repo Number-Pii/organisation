@@ -1,8 +1,21 @@
 ---
 name: skill-writer
-description: Create and improve agent skills following the Agent Skills specification. Use when asked to create, write, or update skills.
+description: "Create and improve agent skills following the Agent Skills specification. Use when asked to create, write, or update skills."
 risk: unknown
 source: community
+domain: Skills Tooling
+size_class: s
+summary: Create and improve agent skills following the Agent Skills specification.
+detail_sections:
+  - "Step 1: Resolve target and path"
+  - "Step 2: Run synthesis when needed"
+  - "Step 3: Run iteration first when improving from outcomes/examples"
+  - "Step 4: Author or update skill artifacts"
+  - "Step 5: Optimize description quality"
+  - "Step 6: Evaluate outcomes"
+  - "Step 7: Register and validate"
+  - Output format
+  - When to Use
 ---
 
 # Skill Writer

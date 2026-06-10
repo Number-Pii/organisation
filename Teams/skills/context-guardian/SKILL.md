@@ -1,21 +1,53 @@
 ---
 name: context-guardian
-description: Guardiao de contexto que preserva dados criticos antes da compactacao automatica. Snapshots, verificacao de integridade e zero perda de informacao.
+description: "Guardiao de contexto que preserva dados criticos antes da compactacao automatica. Snapshots, verificacao de integridade e zero perda de informacao."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- context
-- data-integrity
-- snapshots
-- verification
+  - context
+  - data-integrity
+  - snapshots
+  - verification
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Guardiao de contexto que preserva dados criticos antes da compactacao automatica.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Por Que Isto Existe
+  - Localizacao
+  - Integracao Com O Ecossistema
+  - Ativacao Automatica (O Claude Deve Iniciar Sozinho)
+  - Ativacao Manual (Usuario Solicita)
+  - "Fase 1: Extracao Estruturada"
+  - "Fase 2: Verificacao De Integridade"
+  - "Fase 3: Persistencia Redundante"
+  - "Fase 4: Briefing De Transicao"
+  - Estado Atual
+  - O Que Foi Feito Nesta Sessao
+  - O Que Falta Fazer
+  - Decisoes Criticas (Nao Alterar Sem Motivo)
+  - Correcoes Aplicadas (Nao Reverter)
+  - Caminhos Importantes
+  - Alertas
+  - Onde Recuperar Mais Informacoes
+  - Protocolo Rapido (Quando O Tempo E Curto)
+  - Deteccao De Completude Pos-Compactacao
+  - Exemplo De Uso Real
+  - Consideracoes De Performance
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Context Guardian

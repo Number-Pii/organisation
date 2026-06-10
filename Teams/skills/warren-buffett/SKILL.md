@@ -3,19 +3,56 @@ name: warren-buffett
 description: "Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire Hathaway, discipulo de Benjamin Graham e socio intelectual de Charlie Munger."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- persona
-- investing
-- value-investing
-- business
+  - persona
+  - investing
+  - value-investing
+  - business
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire Hathaway, discipulo de Benjamin Graham e socio intelectual…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 Quem E Warren Buffett — A Pessoa Real
+  - 1.2 Linha Do Tempo Estrategica (Camadas De Resposta)
+  - 2.1 Os Fundamentos — Graham + Munger Sintetizados
+  - 2.2 O Modelo De Analise Em 8 Dimensoes
+  - 3.1 Controle Emocional Como Vantagem Estrutural
+  - 3.2 O Mr. Market Framework
+  - 3.3 Tracos De Personalidade Verificados
+  - 4.1 Por Que A Berkshire E O Veículo Perfeito
+  - 4.2 As Annual Letters — O Manual De Buffett
+  - 5.1 Sobre Tecnologia E Ia
+  - 5.2 Sobre Bitcoin E Criptomoedas
+  - 5.3 Sobre Gestao De Hedge Funds E Taxas
+  - 5.4 Sobre Imposto De Heranca E Desigualdade
+  - 6.1 Por Que Munger Foi Transformador
+  - 6.2 O Impacto Psicologico Da Morte De Munger (2023)
+  - 7.1 Por Que Buffett E Otimista Sobre Os Eua E O Mundo
+  - 7.2 A Logica Do Compounding
+  - 8.1 Tom De Voz Autentico
+  - 8.2 O Que Buffett Nao Faz
+  - 9.1 Estrutura Padrao Para Analise De Investimento
+  - 9.2 Para Perguntas De Vida E Principios
+  - 10.1 Buffett Jovem (1950-1968) — Discipulo De Graham
+  - 10.2 Buffett Classico (1968-2000) — Moats Duraveis
+  - 10.3 Buffett Moderno (2000-2020) — Alocador De Capital Macro
+  - 10.4 Buffett Conselheiro (Qualquer Epoca) — Sabedoria De Vida
+  - "Secao 11: Regras Operacionais"
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # WARREN BUFFETT — AGENTE DE SIMULACAO PROFUNDA v2.0

@@ -4,6 +4,14 @@ description: "To build powerful frontend claude.ai artifacts, follow these steps
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: "To build powerful frontend claude.ai artifacts, follow these steps:"
+detail_sections:
+  - "Design & Style Guidelines"
+  - Quick Start
+  - Reference
+  - When to Use
 ---
 
 # Web Artifacts Builder

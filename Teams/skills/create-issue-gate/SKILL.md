@@ -4,6 +4,24 @@ description: Use when starting a new implementation task and an issue must be cr
 risk: safe
 source: community
 date_added: "2026-03-12"
+domain: "Planning & Workflow"
+size_class: s
+summary: Use when starting a new implementation task and an issue must be created with strict acceptance criteria gating before execution.
+detail_sections:
+  - Overview
+  - Required Fields
+  - Acceptance Criteria Gate
+  - Issue Creation Mode
+  - Problem
+  - Goal
+  - Scope
+  - Non-Goals
+  - Acceptance Criteria
+  - Dependencies/Blockers
+  - Status
+  - Execution Gate
+  - Status Rules
+  - Handoff to Execution
 ---
 
 # Create Issue Gate

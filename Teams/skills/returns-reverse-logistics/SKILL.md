@@ -1,9 +1,22 @@
 ---
 name: returns-reverse-logistics
-description: Codified expertise for returns authorisation, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management.
+description: "Codified expertise for returns authorisation, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management."
 risk: safe
-source: https://github.com/ai-evos/agent-skills
-date_added: '2026-02-27'
+source: "https://github.com/ai-evos/agent-skills"
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Codified expertise for returns authorisation, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims…"
+detail_sections:
+  - When to Use
+  - Role and Context
+  - Core Knowledge
+  - Decision Frameworks
+  - Key Edge Cases
+  - Communication Patterns
+  - Escalation Protocols
+  - Performance Indicators
+  - Additional Resources
 ---
 
 ## When to Use

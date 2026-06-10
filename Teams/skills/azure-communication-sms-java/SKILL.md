@@ -4,6 +4,24 @@ description: "Send SMS messages with Azure Communication Services SMS Java SDK. 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Send SMS messages with Azure Communication Services SMS Java SDK.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Send SMS to Single Recipient
+  - Send SMS to Multiple Recipients
+  - Send Options
+  - Response Handling
+  - Async Operations
+  - Error Handling
+  - Delivery Reports
+  - SmsSendResult Properties
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Communication SMS (Java)

@@ -1,9 +1,22 @@
 ---
 name: docs-architect
-description: Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks.
+description: "Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Creates comprehensive technical documentation from existing codebases.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Competencies
+  - Documentation Process
+  - Output Characteristics
+  - Key Sections to Include
+  - Best Practices
+  - Output Format
 ---
 
 ## Use this skill when

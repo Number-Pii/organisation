@@ -1,11 +1,21 @@
 ---
 name: enhance-prompt
-description: Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.
+description: "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results."
 allowed-tools:
-  - "Read"
-  - "Write"
+  - Read
+  - Write
 risk: unknown
 source: community
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Transforms vague UI ideas into polished, Stitch-optimized prompts."
+detail_sections:
+  - Prerequisites
+  - When to Use This Skill
+  - Enhancement Pipeline
+  - Output Options
+  - Examples
+  - Tips for Best Results
 ---
 
 # Enhance Prompt for Stitch

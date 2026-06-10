@@ -5,6 +5,19 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Provide a comprehensive, structured reference for the 100 most critical web application vulnerabilities organized by category."
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Troubleshooting
+  - References
+  - When to Use
 ---
 
 # Top 100 Web Vulnerabilities Reference

@@ -4,6 +4,24 @@ description: "Comprehensive GitLab CI/CD pipeline patterns for automated testing
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Basic Pipeline Structure
+  - Docker Build and Push
+  - Multi-Environment Deployment
+  - Terraform Pipeline
+  - Security Scanning
+  - Caching Strategies
+  - Dynamic Child Pipelines
+  - Reference Files
+  - Best Practices
+  - Related Skills
 ---
 
 # GitLab CI Patterns

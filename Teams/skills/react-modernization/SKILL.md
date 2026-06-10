@@ -4,6 +4,14 @@ description: "Master React version upgrades, class to hooks migration, concurren
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: xs
+summary: "Master React version upgrades, class to hooks migration, concurrent features adoption, and codemods for automated transformation."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # React Modernization

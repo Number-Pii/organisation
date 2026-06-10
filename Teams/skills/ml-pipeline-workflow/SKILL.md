@@ -1,9 +1,26 @@
 ---
 name: ml-pipeline-workflow
-description: "Complete end-to-end MLOps pipeline orchestration from data preparation through model deployment."
+description: Complete end-to-end MLOps pipeline orchestration from data preparation through model deployment.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: Complete end-to-end MLOps pipeline orchestration from data preparation through model deployment.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - Use this skill when
+  - What This Skill Provides
+  - Usage Patterns
+  - Best Practices
+  - Integration Points
+  - Progressive Disclosure
+  - Common Patterns
+  - Troubleshooting
+  - Next Steps
+  - Related Skills
 ---
 
 # ML Pipeline Workflow

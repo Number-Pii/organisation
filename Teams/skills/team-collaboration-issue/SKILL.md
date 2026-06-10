@@ -4,6 +4,16 @@ description: "You are a GitHub issue resolution expert specializing in systemati
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: xs
+summary: "GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Resources
 ---
 
 # GitHub Issue Resolution Expert

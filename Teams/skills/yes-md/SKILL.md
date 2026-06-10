@@ -1,9 +1,24 @@
 ---
-name: "yes-md"
+name: yes-md
 description: "6-layer AI governance: safety gates, evidence-based debugging, anti-slack detection, and machine-enforced hooks. Makes AI safe, thorough, and honest."
 risk: safe
 source: community
 date_added: "2026-03-11"
+domain: "Testing & QA"
+size_class: m
+summary: "6-layer AI governance: safety gates, evidence-based debugging, anti-slack detection, and machine-enforced hooks."
+detail_sections:
+  - When to Use This Skill
+  - "The Problem: AI's Seven Deadly Shortcuts"
+  - Three Iron Rules
+  - Safety Gates
+  - Anti-Slack Detection
+  - Debugging Escalation
+  - Ripple Check (Post-Fix)
+  - Bug Closure Protocol
+  - The Evidence Table
+  - When to Stop (With Dignity)
+  - Compatibility
 ---
 
 # YES.md — AI Governance Engine

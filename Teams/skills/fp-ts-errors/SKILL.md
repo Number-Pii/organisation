@@ -4,6 +4,20 @@ description: "Handle errors as values using fp-ts Either and TaskEither for clea
 risk: safe
 source: "https://github.com/whatiskadudoing/fp-ts-skills"
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: l
+summary: "Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable TypeScript code."
+detail_sections:
+  - When to Use This Skill
+  - 1. Stop Throwing Everywhere
+  - 2. The Result Pattern (Either)
+  - 3. Chaining Operations That Might Fail
+  - 4. Collecting Multiple Errors
+  - 5. Async Operations (TaskEither)
+  - 6. Converting Between Patterns
+  - Real Scenarios
+  - Quick Reference
+  - Summary
 ---
 
 # Practical Error Handling with fp-ts

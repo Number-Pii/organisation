@@ -4,6 +4,14 @@ description: "Postgres performance optimization and best practices from Supabase
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Postgres performance optimization and best practices from Supabase.
+detail_sections:
+  - When to Use
+  - Rule Categories by Priority
+  - How to Use
+  - Full Compiled Document
 ---
 
 # Supabase Postgres Best Practices

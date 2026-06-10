@@ -4,6 +4,17 @@ description: "Automate Shopify tasks via Rube MCP (Composio): products, orders, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, collections."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Shopify Automation via Rube MCP

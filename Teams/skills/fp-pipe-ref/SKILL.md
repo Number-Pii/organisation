@@ -1,10 +1,24 @@
 ---
 name: fp-pipe-ref
-description: Quick reference for pipe and flow. Use when user needs to chain functions, compose operations, or build data pipelines in fp-ts.
+description: "Quick reference for pipe and flow. Use when user needs to chain functions, compose operations, or build data pipelines in fp-ts."
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, pipe, flow, composition, quick-reference]
+tags:
+  - fp-ts
+  - pipe
+  - flow
+  - composition
+  - quick-reference
+domain: Programming Languages
+size_class: s
+summary: Quick reference for pipe and flow.
+detail_sections:
+  - pipe - Transform a Value
+  - flow - Create Reusable Pipeline
+  - When to Use
+  - With fp-ts Types
+  - Common Pattern
 ---
 
 # pipe & flow Quick Reference

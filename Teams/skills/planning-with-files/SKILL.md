@@ -1,9 +1,27 @@
 ---
 name: planning-with-files
-description: "Work like Manus: Use persistent markdown files as your \"working memory on disk.\""
+description: "Work like Manus: Use persistent markdown files as your \\\"working memory on disk.\\\""
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Work like Manus: Use persistent markdown files as your \\\"working memory on disk.\\\""
+detail_sections:
+  - "Important: Where Files Go"
+  - Quick Start
+  - The Core Pattern
+  - File Purposes
+  - Critical Rules
+  - Errors Encountered
+  - The 3-Strike Error Protocol
+  - Read vs Write Decision Matrix
+  - The 5-Question Reboot Test
+  - When to Use This Pattern
+  - Templates
+  - Scripts
+  - Advanced Topics
+  - Anti-Patterns
 ---
 
 # Planning with Files

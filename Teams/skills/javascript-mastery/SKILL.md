@@ -4,6 +4,20 @@ description: "33+ essential JavaScript concepts every developer should know, ins
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: l
+summary: "33+ essential JavaScript concepts every developer should know, inspired by [33-js-concepts](https://github.com/leonardomso/33-js-concepts)."
+detail_sections:
+  - When to Use This Skill
+  - 1. Fundamentals
+  - "2. Scope & Closures"
+  - "3. Functions & Execution"
+  - "4. Event Loop & Async"
+  - 5. Functional Programming
+  - "6. Objects & Prototypes"
+  - 7. Modern JavaScript (ES6+)
+  - Quick Reference Card
+  - Resources
 ---
 
 # 🧠 JavaScript Mastery

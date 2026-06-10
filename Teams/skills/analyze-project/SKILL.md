@@ -1,10 +1,47 @@
 ---
 name: analyze-project
-description: Forensic root cause analyzer for Antigravity sessions. Classifies scope deltas, rework patterns, root causes, hotspots, and auto-improves prompts/health.
+description: "Forensic root cause analyzer for Antigravity sessions. Classifies scope deltas, rework patterns, root causes, hotspots, and auto-improves prompts/health."
 risk: unknown
 source: community
 version: "1.0"
-tags: [analysis, diagnostics, meta, root-cause, project-health, session-review]
+tags:
+  - analysis
+  - diagnostics
+  - meta
+  - root-cause
+  - project-health
+  - session-review
+domain: "AI & Machine Learning"
+size_class: m
+summary: Forensic root cause analyzer for Antigravity sessions.
+detail_sections:
+  - Goal
+  - Global Rules
+  - "Step 0.5: Session Intent Classification"
+  - "Step 1: Discover Conversations"
+  - "Step 2: Extract Session Evidence"
+  - "Step 3: Prompt Sufficiency"
+  - "Step 4: Scope Change Classification"
+  - "Step 5: Rework Shape"
+  - "Step 6: Root Cause Analysis"
+  - "Step 6.5: Session Severity Scoring (0–100)"
+  - "Step 7: Subsystem / File Clustering"
+  - "Step 8: Comparative Cohorts"
+  - "Step 9: Non-Obvious Findings"
+  - "Step 10: Report Generation"
+  - Executive Summary
+  - Root Cause Breakdown
+  - Prompt Sufficiency Analysis
+  - Scope Change Analysis
+  - Rework Shape Analysis
+  - Friction Hotspots
+  - First-Shot Successes
+  - Non-Obvious Findings
+  - Severity Triage
+  - Recommendations
+  - Per-Conversation Breakdown
+  - "Step 11: Optional Post-Analysis Improvements"
+  - Final Output Standard
 ---
 
 # /analyze-project — Root Cause Analyst Workflow

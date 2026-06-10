@@ -4,6 +4,20 @@ description: "Build real-time web applications with Azure Web PubSub SDK for Jav
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build real-time web applications with Azure Web PubSub SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Key Concepts
+  - Core Patterns
+  - Error Handling
+  - Environment Variables
+  - Client Roles
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Web PubSub SDK for Java

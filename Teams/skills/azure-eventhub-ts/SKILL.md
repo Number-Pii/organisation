@@ -1,9 +1,24 @@
 ---
 name: azure-eventhub-ts
-description: "High-throughput event streaming and real-time data ingestion."
+description: High-throughput event streaming and real-time data ingestion.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: High-throughput event streaming and real-time data ingestion.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Core Workflow
+  - Event Hub Properties
+  - Batch Processing Options
+  - Key Types
+  - Event Properties
+  - Error Handling
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Event Hubs SDK for TypeScript

@@ -4,6 +4,14 @@ description: "Comprehensive guide for mastering modern JavaScript (ES6+) feature
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Comprehensive guide for mastering modern JavaScript (ES6+) features, functional programming patterns, and best practices for writing clean…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Modern JavaScript Patterns

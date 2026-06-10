@@ -4,6 +4,21 @@ description: "Systematic improvement of existing agents through performance anal
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Systematic improvement of existing agents through performance analysis, prompt engineering, and continuous iteration."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - "Phase 1: Performance Analysis and Baseline Metrics"
+  - "Phase 2: Prompt Engineering Improvements"
+  - "Phase 3: Testing and Validation"
+  - "Phase 4: Version Control and Deployment"
+  - Success Criteria
+  - Post-Deployment Review
+  - Continuous Improvement Cycle
 ---
 
 # Agent Performance Optimization Workflow

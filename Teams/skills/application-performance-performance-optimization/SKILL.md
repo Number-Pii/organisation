@@ -4,6 +4,21 @@ description: "Optimize end-to-end application performance with profiling, observ
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Optimize end-to-end application performance with profiling, observability, and backend/frontend tuning."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - "Phase 1: Performance Profiling & Baseline"
+  - "Phase 2: Database & Backend Optimization"
+  - "Phase 3: Frontend & CDN Optimization"
+  - "Phase 4: Load Testing & Validation"
+  - "Phase 5: Monitoring & Continuous Optimization"
+  - Configuration Options
+  - Success Criteria
 ---
 
 Optimize application performance end-to-end using specialized performance and optimization agents:

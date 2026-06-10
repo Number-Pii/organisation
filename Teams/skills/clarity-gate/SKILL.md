@@ -1,16 +1,12 @@
 ---
-# agentskills.io compliant frontmatter
 name: clarity-gate
 risk: unknown
 source: community
 version: 2.1.3
-description: >
-  Pre-ingestion verification for epistemic quality in RAG systems.
-  Ensures documents are properly qualified before entering knowledge bases.
-  Produces CGD (Clarity-Gated Documents) and validates SOT (Source of Truth) files.
+description: ">"
 author: Francesco Marinoni Moretto
 license: CC-BY-4.0
-repository: https://github.com/frmoretto/clarity-gate
+repository: "https://github.com/frmoretto/clarity-gate"
 triggers:
   - clarity gate
   - check for hallucination risks
@@ -27,10 +23,34 @@ capabilities:
   - cgd-generation
   - sot-validation
 outputs:
-  - type: cgd
-    extension: .cgd.md
-    spec: docs/CLARITY_GATE_FORMAT_SPEC.md
+  - "type: cgd"
 spec_version: "2.1"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Pre-ingestion verification that enforces epistemic quality before documents enter RAG knowledge bases."
+detail_sections:
+  - "What's New in v2.1"
+  - Specifications
+  - Validation Codes
+  - Bundled Scripts
+  - The Key Distinction
+  - Critical Limitation
+  - When to Use
+  - The 9 Verification Points
+  - The Verification Hierarchy
+  - CGD Output Format
+  - HITL Verification Record
+  - Exclusion Blocks
+  - SOT Validation
+  - Output Format
+  - Clarity Gate Results
+  - "Round A: Derived Data Confirmation"
+  - "Round B: HITL Verification Required"
+  - Severity Levels
+  - Quick Scan Checklist
+  - What This Skill Does NOT Do
+  - Related Projects
+  - Changelog
 ---
 
 # Clarity Gate v2.1

@@ -4,6 +4,20 @@ description: "Implement DeFi protocols with production-ready templates for staki
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Staking Contract
+  - AMM (Automated Market Maker)
+  - Governance Token
+  - Flash Loan
+  - Resources
+  - Best Practices
+  - Common DeFi Patterns
 ---
 
 # DeFi Protocol Templates

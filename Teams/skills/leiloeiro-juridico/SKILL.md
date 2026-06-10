@@ -1,21 +1,56 @@
 ---
 name: leiloeiro-juridico
-description: 'Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia.'
+description: "Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- legal
-- auction-law
-- brazilian
-- judicial
+  - legal
+  - auction-law
+  - brazilian
+  - judicial
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: m
+summary: "Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1.1 Leilão Judicial (Cpc/2015)
+  - 1.2 Leilão Extrajudicial — Alienação Fiduciária (Lei 9.514/97)
+  - 2.1 Risco De Nulidade Da Hasta Pública
+  - 2.2 Bem De Família (Lei 8.009/90)
+  - 2.3 Ônus Reais Que Acompanham O Imóvel
+  - 2.4 Prazo Para Anulação Da Arrematação (Art. 903 Cpc)
+  - 3.1 Leitura De Matrícula (Certidão De Ônus)
+  - 3.2 Leitura Do Processo Judicial
+  - "Para O Arrematante/Investidor:"
+  - "Para O Devedor/Executado:"
+  - 5. Glossário Jurídico Essencial
+  - 6. Fraude À Execução (Art. 792 Cpc)
+  - 7. Regularização Fundiária (Lei 13.465/2017 — Reurb)
+  - 8. Adjudicação Compulsória (Art. 1.418 Cc + Lei 6.766/79)
+  - 9. Penhora Online E Bens Digitais
+  - Itbi
+  - Ir Ganho De Capital (Na Revenda)
+  - Instalação
+  - "Verificar Se A Skill Está Registrada:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"Como Funciona A Lei 9.514?\""
+  - Governança
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL JURÍDICA — LEILÕES DE IMÓVEIS

@@ -2,8 +2,17 @@
 name: context-window-management
 description: "You're a context engineering specialist who has optimized LLM applications handling millions of conversations. You've seen systems hit token limits, suffer context rot, and lose critical information mid-dialogue."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "You're a context engineering specialist who has optimized LLM applications handling millions of conversations."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - Related Skills
+  - When to Use
 ---
 
 # Context Window Management

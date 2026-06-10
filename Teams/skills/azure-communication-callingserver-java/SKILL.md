@@ -4,6 +4,17 @@ description: "⚠️ DEPRECATED: This SDK has been renamed to Call Automation. F
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: s
+summary: "⚠️ DEPRECATED: This SDK has been renamed to Call Automation."
+detail_sections:
+  - Migration to Call Automation
+  - Class Name Changes
+  - Legacy Client Creation
+  - Legacy Recording
+  - For New Development
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Communication CallingServer (Java) - DEPRECATED

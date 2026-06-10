@@ -1,21 +1,56 @@
 ---
 name: leiloeiro-mercado
-description: Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 2025 e benchmark CDI/FII.
+description: "Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 2025 e benchmark CDI/FII."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- market-analysis
-- real-estate
-- roi
-- brazilian
+  - market-analysis
+  - real-estate
+  - roi
+  - brazilian
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: m
+summary: Analise de mercado imobiliario para leiloes.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Mapa De Liquidez (Tempo Médio De Revenda Pós-Arrematação)
+  - Por Modalidade
+  - Mapa De Deságio Por Situação Do Imóvel
+  - Estratégia A — Flip Rápido (Curto Prazo)
+  - Estratégia B — Reforma E Valorização (Médio Prazo)
+  - Estratégia C — Renda (Longo Prazo)
+  - Estratégia D — Regularização E Revenda (Especialista)
+  - Simulação Rápida De Roi
+  - Melhor Momento Para Comprar Em Leilão
+  - Análise Por Banco
+  - 6. Análise Do Perfil De Comprador Final
+  - Riscos Que Afetam A Estratégia De Saída
+  - Rotina De Monitoramento Semanal
+  - Indicadores Chave (Atualizar Periodicamente)
+  - Análise De Financiamento Pós-Arrematação
+  - "Benchmark: Quanto O Leilão Precisa Render Para Superar O Cdi?"
+  - Quadro Comparativo De Investimento
+  - Instalação
+  - "Verificar Se A Skill Está Registrada:"
+  - Comandos E Uso
+  - "Uso Via Orchestrator (Automático):"
+  - "\"Compare Leilão Vs Cdi\""
+  - Governança
+  - Referências
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # SKILL DE MERCADO — ANALISTA DE ATIVOS IMOBILIÁRIOS EM LEILÃO

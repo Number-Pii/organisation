@@ -4,6 +4,17 @@ description: "Automate Basecamp project management, to-dos, messages, people, an
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Basecamp project management, to-dos, messages, people, and to-do list organization via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Basecamp Automation via Rube MCP

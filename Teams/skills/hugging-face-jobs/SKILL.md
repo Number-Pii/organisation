@@ -4,6 +4,29 @@ description: "Run any workload on fully managed Hugging Face infrastructure. No 
 risk: safe
 source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-jobs"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: xl
+summary: Run any workload on fully managed Hugging Face infrastructure.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Key Directives
+  - Prerequisites Checklist
+  - Token Usage Guide
+  - "Quick Start: Two Approaches"
+  - Hardware Selection
+  - "Critical: Saving Results"
+  - Timeout Management
+  - Cost Estimation
+  - Monitoring and Tracking
+  - Scheduled Jobs
+  - "Webhooks: Trigger Jobs on Events"
+  - Common Workload Patterns
+  - Common Failure Modes
+  - Troubleshooting
+  - Resources
+  - Key Takeaways
+  - "Quick Reference: MCP Tool vs CLI vs Python API"
 ---
 
 # Running Workloads on Hugging Face Jobs
@@ -1035,4 +1058,3 @@ Add to PEP 723 header:
 | Cancel job | `hf_jobs("cancel", {...})` | `hf jobs cancel <id>` | `cancel_job(job_id)` |
 | Schedule UV | `hf_jobs("scheduled uv", {...})` | - | `create_scheduled_uv_job()` |
 | Schedule Docker | `hf_jobs("scheduled run", {...})` | - | `create_scheduled_job()` |
-

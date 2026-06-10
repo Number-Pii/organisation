@@ -5,6 +5,21 @@ risk: unknown
 source: "https://github.com/anthropics/skills"
 date_added: "2026-03-21"
 license: Complete terms in LICENSE.txt
+domain: "AI & Machine Learning"
+size_class: m
+summary: Build apps with the Claude API or Anthropic SDK.
+detail_sections:
+  - When to Use
+  - Defaults
+  - Language Detection
+  - "Which Surface Should I Use?"
+  - Architecture
+  - "Current Models (cached: 2026-02-17)"
+  - "Thinking & Effort (Quick Reference)"
+  - Compaction (Quick Reference)
+  - Reading Guide
+  - When to Use WebFetch
+  - Common Pitfalls
 ---
 
 # Building LLM-Powered Applications with Claude

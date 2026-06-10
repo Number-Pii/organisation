@@ -1,9 +1,22 @@
 ---
 name: tdd-workflows-tdd-refactor
-description: "Use when working with tdd workflows tdd refactor"
+description: Use when working with tdd workflows tdd refactor
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: Use when working with tdd workflows tdd refactor
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Usage
+  - Core Process
+  - Output Requirements
+  - Safety Checklist
+  - Recovery Protocol
+  - "Example: Extract Method Pattern"
 ---
 
 ## Use this skill when

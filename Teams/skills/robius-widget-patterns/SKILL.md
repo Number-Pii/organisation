@@ -1,12 +1,23 @@
 ---
 name: robius-widget-patterns
-description: |
-  CRITICAL: Use for Robius widget patterns. Triggers on:
-  apply_over, TextOrImage, modal, 可复用, 模态,
-  collapsible, drag drop, reusable widget, widget design,
-  pageflip, 组件设计, 组件模式
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Best practices for designing reusable Makepad widgets based on Robrix and Moly codebase patterns."
+detail_sections:
+  - Triggers
+  - Production Patterns
+  - Standard Widget Structure
+  - Text/Image Toggle Pattern
+  - Dynamic Styling with apply_over
+  - Widget Reference Pattern
+  - Collapsible/Expandable Pattern
+  - Loading State Pattern
+  - PortalList Item Pattern
+  - Best Practices
+  - Reference Files
 ---
 
 # Robius Widget Patterns Skill

@@ -6,8 +6,32 @@ risk: safe
 source: community
 date_added: "2026-03-18"
 author: suhaibjanjua
-tags: [pydantic-ai, ai-agents, llm, openai, anthropic, gemini, tool-use, structured-output, python]
-tools: [claude, cursor, gemini]
+tags:
+  - pydantic-ai
+  - ai-agents
+  - llm
+  - openai
+  - anthropic
+  - gemini
+  - tool-use
+  - structured-output
+  - python
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-model support."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - "Security & Safety Notes"
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # PydanticAI — Typed AI Agents in Python

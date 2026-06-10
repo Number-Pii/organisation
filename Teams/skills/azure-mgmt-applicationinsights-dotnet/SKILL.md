@@ -3,7 +3,25 @@ name: azure-mgmt-applicationinsights-dotnet
 description: Azure Application Insights SDK for .NET. Application performance monitoring and observability resource management.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Application Insights SDK for .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Resource Hierarchy
+  - Core Workflows
+  - Key Types Reference
+  - Application Types
+  - Web Test Locations
+  - Best Practices
+  - Error Handling
+  - SDK Integration
+  - Related SDKs
+  - Reference Links
+  - When to Use
 ---
 
 # Azure.ResourceManager.ApplicationInsights (.NET)

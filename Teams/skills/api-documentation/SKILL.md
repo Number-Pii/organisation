@@ -5,6 +5,15 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "API documentation workflow for generating OpenAPI specs, creating developer guides, and maintaining comprehensive API documentation."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # API Documentation Workflow

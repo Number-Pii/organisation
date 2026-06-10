@@ -1,8 +1,12 @@
 ---
 name: create-pr
-description: Alias for sentry-skills:pr-writer. Use when users explicitly ask for "create-pr" or reference the legacy skill name. Redirects to the canonical PR writing workflow.
+description: "Alias for sentry-skills:pr-writer. Use when users explicitly ask for \"create-pr\" or reference the legacy skill name. Redirects to the canonical PR writing workflow."
 risk: unknown
 source: community
+domain: "Planning & Workflow"
+size_class: xs
+summary: "Alias for sentry-skills:pr-writer."
+detail_sections: []
 ---
 
 # Alias: create-pr

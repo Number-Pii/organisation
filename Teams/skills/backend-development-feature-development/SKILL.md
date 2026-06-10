@@ -1,9 +1,25 @@
 ---
 name: backend-development-feature-development
-description: "Orchestrate end-to-end backend feature development from requirements to deployment. Use when coordinating multi-phase feature delivery across teams and services."
+description: Orchestrate end-to-end backend feature development from requirements to deployment. Use when coordinating multi-phase feature delivery across teams and services.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Orchestrate end-to-end backend feature development from requirements to deployment.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Configuration Options
+  - "Phase 1: Discovery & Requirements Planning"
+  - "Phase 2: Implementation & Development"
+  - "Phase 3: Testing & Quality Assurance"
+  - "Phase 4: Deployment & Monitoring"
+  - Execution Parameters
+  - Success Criteria
+  - Rollback Strategy
 ---
 
 Orchestrate end-to-end feature development from requirements to production deployment:

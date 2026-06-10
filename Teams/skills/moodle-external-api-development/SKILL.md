@@ -4,6 +4,22 @@ description: "This skill guides you through creating custom external web service
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: l
+summary: "This skill guides you through creating custom external web service APIs for Moodle LMS, following Moodle's external API framework and coding…"
+detail_sections:
+  - When to Use This Skill
+  - Core Architecture Pattern
+  - Step-by-Step Implementation
+  - Advanced Patterns
+  - Testing Your API
+  - "Common Pitfalls & Solutions"
+  - Debugging Checklist
+  - Plugin Structure Checklist
+  - Examples from Real Implementation
+  - "Quick Reference: Common Moodle Tables"
+  - Additional Resources
+  - Guidelines
 ---
 
 # Moodle External API Development

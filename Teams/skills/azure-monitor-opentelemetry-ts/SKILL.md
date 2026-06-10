@@ -4,6 +4,25 @@ description: "Auto-instrument Node.js applications with distributed tracing, met
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Auto-instrument Node.js applications with distributed tracing, metrics, and logs."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Quick Start (Auto-Instrumentation)
+  - ESM Support (Node.js 18.19+)
+  - Full Configuration
+  - Custom Traces
+  - Custom Metrics
+  - Manual Exporter Setup
+  - Custom Logs Ingestion
+  - Custom Span Processor
+  - Sampling
+  - Shutdown
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Monitor OpenTelemetry SDK for TypeScript

@@ -4,6 +4,18 @@ description: "Production-ready patterns for building LLM applications, inspired 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Production-ready patterns for building LLM applications, inspired by [Dify](https://github.com/langgenius/dify) and industry best practices."
+detail_sections:
+  - When to Use This Skill
+  - 1. RAG Pipeline Architecture
+  - 2. Agent Architectures
+  - 3. Prompt IDE Patterns
+  - "4. LLMOps & Observability"
+  - 5. Production Patterns
+  - Architecture Decision Matrix
+  - Resources
 ---
 
 # 🤖 LLM Application Patterns

@@ -4,6 +4,18 @@ description: "Core component library and design system patterns. Use when buildi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: Core component library and design system patterns.
+detail_sections:
+  - Design System Overview
+  - Design Tokens
+  - Core Components
+  - Layout Patterns
+  - Anti-Patterns
+  - Component Props Pattern
+  - Integration with Other Skills
+  - When to Use
 ---
 
 # Core Components

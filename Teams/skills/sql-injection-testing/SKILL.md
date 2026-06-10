@@ -5,6 +5,19 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Execute comprehensive SQL injection vulnerability assessments on web applications to identify database security flaws, demonstrate exploitation…"
+detail_sections:
+  - Purpose
+  - Inputs / Prerequisites
+  - Outputs / Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Guardrails
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 # SQL Injection Testing

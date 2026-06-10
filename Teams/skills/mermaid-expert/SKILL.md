@@ -1,9 +1,20 @@
 ---
 name: mermaid-expert
-description: Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling.
+description: "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: s
+summary: "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Diagram Types Expertise
+  - Approach
+  - Output
 ---
 
 ## Use this skill when

@@ -1,9 +1,26 @@
 ---
 name: deployment-pipeline-design
-description: "Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies."
+description: Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Pipeline Stages
+  - Approval Gate Patterns
+  - Deployment Strategies
+  - Pipeline Orchestration
+  - Pipeline Best Practices
+  - Rollback Strategies
+  - Monitoring and Metrics
+  - Reference Files
+  - Related Skills
 ---
 
 # Deployment Pipeline Design

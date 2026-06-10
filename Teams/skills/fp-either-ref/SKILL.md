@@ -1,10 +1,24 @@
 ---
 name: fp-either-ref
-description: Quick reference for Either type. Use when user needs error handling, validation, or operations that can fail with typed errors.
+description: "Quick reference for Either type. Use when user needs error handling, validation, or operations that can fail with typed errors."
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, either, error-handling, validation, quick-reference]
+tags:
+  - fp-ts
+  - either
+  - error-handling
+  - validation
+  - quick-reference
+domain: Programming Languages
+size_class: s
+summary: Quick reference for Either type.
+detail_sections:
+  - Create
+  - Transform
+  - Extract
+  - Common Patterns
+  - vs try/catch
 ---
 
 # Either Quick Reference

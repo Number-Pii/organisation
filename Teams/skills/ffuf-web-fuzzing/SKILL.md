@@ -1,8 +1,28 @@
 ---
 name: ffuf-web-fuzzing
-description: Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing with raw requests, auto-calibration, and result analysis
+description: "Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing with raw requests, auto-calibration, and result analysis"
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing with raw requests, auto-calibration, and result…"
+detail_sections:
+  - Overview
+  - Installation
+  - Core Concepts
+  - Common Use Cases
+  - Filtering and Matching
+  - Rate Limiting and Timing
+  - Output Options
+  - Advanced Techniques
+  - Best Practices
+  - Common Patterns and One-Liners
+  - Configuration File
+  - Troubleshooting
+  - Resources
+  - Quick Reference Card
+  - Additional Resources
+  - Notes for Claude
 ---
 
 # FFUF (Fuzz Faster U Fool) Skill

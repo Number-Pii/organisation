@@ -1,9 +1,23 @@
 ---
 name: dispatching-parallel-agents
-description: "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
+description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
+detail_sections:
+  - Overview
+  - When to Use
+  - The Pattern
+  - Agent Prompt Structure
+  - Common Mistakes
+  - When NOT to Use
+  - Real Example from Session
+  - Key Benefits
+  - Verification
+  - Real-World Impact
 ---
 
 # Dispatching Parallel Agents

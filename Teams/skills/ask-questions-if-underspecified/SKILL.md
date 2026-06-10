@@ -3,6 +3,16 @@ name: ask-questions-if-underspecified
 description: Clarify requirements before implementing. Use when serious doubts arise.
 risk: unknown
 source: community
+domain: "Planning & Workflow"
+size_class: s
+summary: Clarify requirements before implementing.
+detail_sections:
+  - When to Use
+  - When NOT to Use
+  - Goal
+  - Workflow
+  - Question templates
+  - Anti-patterns
 ---
 
 # Ask Questions If Underspecified

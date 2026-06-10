@@ -1,13 +1,37 @@
 ---
 name: seek-and-analyze-video
-description: "Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence"
+description: Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence
 category: data-ai
 risk: safe
 source: "https://github.com/kennyzheng-builds/seek-and-analyze-video"
 date_added: "2026-03-09"
 author: kennyzheng-builds
-tags: [video, ai, memories, social-media, youtube, tiktok, analysis]
-tools: [claude, cursor, gemini]
+tags:
+  - video
+  - ai
+  - memories
+  - social-media
+  - youtube
+  - tiktok
+  - analysis
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Creative & Design"
+size_class: s
+summary: Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence
+detail_sections:
+  - When to Use
+  - Description
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Limitations
+  - Related Skills
 ---
 
 ## When to Use

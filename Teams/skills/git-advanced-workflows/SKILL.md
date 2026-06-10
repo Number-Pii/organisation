@@ -4,6 +4,20 @@ description: "Master advanced Git techniques to maintain clean history, collabor
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Master advanced Git techniques to maintain clean history, collaborate effectively, and recover from any situation with confidence."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Practical Workflows
+  - Advanced Techniques
+  - Best Practices
+  - Common Pitfalls
+  - Recovery Commands
+  - Resources
 ---
 
 # Git Advanced Workflows

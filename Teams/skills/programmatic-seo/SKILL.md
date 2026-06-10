@@ -3,7 +3,22 @@ name: programmatic-seo
 description: Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
+detail_sections:
+  - "Phase 0: Programmatic SEO Feasibility Index (Required)"
+  - 🔢 Programmatic SEO Feasibility Index
+  - "Phase 1: Context & Opportunity Assessment"
+  - Core Principles (Non-Negotiable)
+  - The 12 Programmatic SEO Playbooks
+  - "Phase 2: Page System Design"
+  - "Phase 3: Indexation & Scale Control"
+  - Quality Gates (Mandatory)
+  - Output Format (Required)
+  - Related Skills
+  - When to Use
 ---
 
 ---

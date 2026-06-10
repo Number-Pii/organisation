@@ -4,6 +4,17 @@ description: "Automate Miro tasks via Rube MCP (Composio): boards, items, sticky
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Miro tasks via Rube MCP (Composio): boards, items, sticky notes, frames, sharing, connectors."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Miro Automation via Rube MCP

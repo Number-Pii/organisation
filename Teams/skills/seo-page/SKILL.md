@@ -14,7 +14,7 @@ allowed-tools:
   - WebFetch
 domain: "SEO & Content Marketing"
 size_class: s
-summary: ">"
+summary: "Detailed on-page SEO review of a single URL."
 detail_sections:
   - When to Use
   - What to Analyze

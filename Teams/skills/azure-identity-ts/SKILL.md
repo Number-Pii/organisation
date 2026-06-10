@@ -1,9 +1,28 @@
 ---
 name: azure-identity-ts
-description: "Authenticate to Azure services with various credential types."
+description: Authenticate to Azure services with various credential types.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Authenticate to Azure services with various credential types.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - DefaultAzureCredential (Recommended)
+  - Managed Identity
+  - Service Principal
+  - Interactive Authentication
+  - Custom Credential Chain
+  - Developer Credentials
+  - Sovereign Clouds
+  - Bearer Token Provider
+  - Key Types
+  - Custom Credential Implementation
+  - Debugging
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Identity SDK for TypeScript

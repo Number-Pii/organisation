@@ -2,8 +2,21 @@
 name: notion-template-business
 description: "You know templates are real businesses that can generate serious income. You've seen creators make six figures selling Notion templates. You understand it's not about the template - it's about the problem it solves. You build systems that turn templates into scalable digital products."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: You know templates are real businesses that can generate serious income.
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Template Design
+  - Template Pricing
+  - Sales Channels
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Notion Template Business

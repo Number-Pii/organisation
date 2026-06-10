@@ -1,9 +1,21 @@
 ---
 name: payment-integration
-description: Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing payments, billing, or subscription features.
+description: "Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing payments, billing, or subscription features."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Integrate Stripe, PayPal, and payment processors."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Approach
+  - Critical Requirements
+  - Common Failures
+  - Output
 ---
 
 ## Use this skill when

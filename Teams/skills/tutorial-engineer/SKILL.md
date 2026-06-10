@@ -3,9 +3,27 @@ name: tutorial-engineer
 description: Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples.
 risk: safe
 source: community
-date_added: '2026-03-02'
-metadata:
-  version: '2.0.0'
+date_added: "2026-03-02"
+metadata: []
+domain: "Backend & APIs"
+size_class: m
+summary: Creates step-by-step tutorials and educational content from code.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Expertise
+  - Tutorial Development Process
+  - Tutorial Structure
+  - Writing Principles
+  - Content Elements
+  - Exercise Types
+  - Common Tutorial Formats
+  - Quality Checklist
+  - Output Format
+  - Behavior Rules
+  - Task-Specific Inputs
+  - Related Skills
 ---
 
 ## Use this skill when

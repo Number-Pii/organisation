@@ -4,8 +4,23 @@ description: "Plan and optimize lead magnets for email capture and lead generati
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.0.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: Plan and optimize lead magnets for email capture and lead generation.
+detail_sections:
+  - When to Use
+  - Before Planning
+  - Lead Magnet Principles
+  - Lead Magnet Types
+  - Matching Lead Magnets to Buyer Stage
+  - Gating Strategy
+  - "Landing Page & Delivery"
+  - "Promotion & Distribution"
+  - Measuring Success
+  - Output Format
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # Lead Magnets

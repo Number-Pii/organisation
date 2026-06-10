@@ -1,12 +1,22 @@
 ---
 name: robius-app-architecture
-description: |
-  CRITICAL: Use for Robius app architecture patterns. Triggers on:
-  Tokio, async, submit_async_request, 异步, 架构,
-  SignalToUI, Cx::post_action, worker task,
-  app structure, MatchEvent, handle_startup
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "Best practices for structuring Makepad applications based on the Robrix and Moly codebases - production applications built with Makepad and Robius fr…"
+detail_sections:
+  - Triggers
+  - Production Patterns
+  - Core Architecture Pattern
+  - App Structure
+  - Tokio Runtime Integration
+  - Lock-Free Update Queue Pattern
+  - Startup Sequence
+  - Shutdown Sequence
+  - Best Practices
+  - Reference Files
 ---
 
 # Robius App Architecture Skill

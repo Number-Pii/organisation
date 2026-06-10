@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: m
+summary: "Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end…"
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Technology-Specific Workflows
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Development Workflow Bundle

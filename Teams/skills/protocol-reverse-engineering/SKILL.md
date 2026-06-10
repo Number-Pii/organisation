@@ -4,6 +4,14 @@ description: "Comprehensive techniques for capturing, analyzing, and documenting
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Comprehensive techniques for capturing, analyzing, and documenting network protocols for security research, interoperability, and debugging."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Protocol Reverse Engineering

@@ -1,13 +1,22 @@
 ---
 name: makepad-deployment
-description: |
-  CRITICAL: Use for Makepad packaging and deployment. Triggers on:
-  deploy, package, APK, IPA, 打包, 部署,
-  cargo-packager, cargo-makepad, WASM, Android, iOS,
-  distribution, installer, .deb, .dmg, .nsis,
-  GitHub Actions, CI, action, marketplace
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: m
+summary: "This skill covers packaging Makepad applications for all supported platforms."
+detail_sections:
+  - Quick Navigation
+  - GitHub Actions Packaging
+  - Desktop Packaging
+  - Mobile Packaging
+  - Wasm Packaging
+  - Complete Example Cargo.toml
+  - Quick Reference
+  - Troubleshooting
+  - Reference Files
+  - External References
 ---
 
 # Makepad Packaging & Deployment

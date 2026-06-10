@@ -1,12 +1,22 @@
 ---
 name: makepad-shaders
-description: |
-  CRITICAL: Use for Makepad shader system. Triggers on:
-  makepad shader, makepad draw_bg, Sdf2d, makepad pixel,
-  makepad glsl, makepad sdf, draw_quad, makepad gpu,
-  makepad 着色器, makepad shader 语法, makepad 绘制
+description: "|"
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: s
+summary: "Custom MPSL shaders and GPU rendering in Makepad."
+detail_sections:
+  - Documentation
+  - Advanced Patterns
+  - "IMPORTANT: Documentation Completeness Check"
+  - Key Patterns
+  - Shader Structure
+  - Built-in Variables
+  - Sdf2d Quick Reference
+  - Built-in Functions (GLSL)
+  - When Writing Code
+  - When Answering Questions
 ---
 
 # Makepad Shaders Skill

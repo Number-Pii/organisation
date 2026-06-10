@@ -4,6 +4,23 @@ description: "Master ERC-721 and ERC-1155 NFT standards, metadata best practices
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Master ERC-721 and ERC-1155 NFT standards, metadata best practices, and advanced NFT features."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - ERC-721 (Non-Fungible Token Standard)
+  - ERC-1155 (Multi-Token Standard)
+  - Metadata Standards
+  - Royalties (EIP-2981)
+  - Soulbound Tokens (Non-Transferable)
+  - Dynamic NFTs
+  - Gas-Optimized Minting (ERC721A)
+  - Resources
+  - Best Practices
+  - Marketplace Integration
 ---
 
 # NFT Standards

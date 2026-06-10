@@ -6,6 +6,17 @@ risk: safe
 source: community
 tags: "[orchestration, meta-skill, agent-memory, task-evaluation]"
 date_added: "2026-03-13"
+domain: Skills Tooling
+size_class: s
+summary: "A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Core Concepts
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Related Skills
 ---
 
 # antigravity-skill-orchestrator

@@ -4,6 +4,26 @@ description: "Optimize multi-agent systems with coordinated profiling, workload 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-aware orchestration."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - "Role: AI-Powered Multi-Agent Performance Engineering Specialist"
+  - Arguments Handling
+  - 1. Multi-Agent Performance Profiling
+  - 2. Context Window Optimization
+  - 3. Agent Coordination Efficiency
+  - 4. Parallel Execution Optimization
+  - 5. Cost Optimization Strategies
+  - 6. Latency Reduction Techniques
+  - 7. Quality vs Speed Tradeoffs
+  - 8. Monitoring and Continuous Improvement
+  - Reference Workflows
+  - Key Considerations
 ---
 
 # Multi-Agent Optimization Toolkit

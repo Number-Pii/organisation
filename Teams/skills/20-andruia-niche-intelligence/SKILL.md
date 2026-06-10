@@ -6,6 +6,16 @@ category: andruia
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: s
+summary: Estratega de Inteligencia de Dominio de Andru.ia.
+detail_sections:
+  - When to Use
+  - 📝 Descripción
+  - 📋 Instrucciones Generales
+  - 🛠️ Flujo de Trabajo (Protocolo de Inyección)
+  - ⚠️ Reglas de Oro
+  - 🔗 Relaciones Nucleares
 ---
 
 ## When to Use

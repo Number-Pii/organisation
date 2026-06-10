@@ -1,14 +1,10 @@
 ---
 name: seo-competitor-pages
-description: >
-  Generate SEO-optimized competitor comparison and alternatives pages. Covers
-  "X vs Y" layouts, "alternatives to X" pages, feature matrices, schema markup,
-  and conversion optimization. Use when user says "comparison page", "vs page",
-  "alternatives page", "competitor comparison", or "X vs Y".
+description: ">"
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url or generate] [competitor]"
 allowed-tools:
   - Read
@@ -16,6 +12,20 @@ allowed-tools:
   - Glob
   - Bash
   - WebFetch
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Create high-converting comparison and alternatives pages that target competitive intent keywords with accurate, structured content."
+detail_sections:
+  - When to Use
+  - Page Types
+  - Comparison Table Generation
+  - Schema Markup Recommendations
+  - Keyword Targeting
+  - Conversion-Optimized Layouts
+  - Fairness Guidelines
+  - Internal Linking
+  - Output
+  - Error Handling
 ---
 
 # Competitor Comparison & Alternatives Pages

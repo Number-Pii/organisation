@@ -1,21 +1,58 @@
 ---
 name: skill-sentinel
-description: Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gaps, duplicacoes, dependencias e relatorios de saude.
+description: "Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gaps, duplicacoes, dependencias e relatorios de saude."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- governance
-- audit
-- quality
-- skill-health
+  - governance
+  - audit
+  - quality
+  - skill-health
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: Skills Tooling
+size_class: m
+summary: Auditoria e evolucao do ecossistema de skills.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Resumo Rapido
+  - Localizacao
+  - Instalacao
+  - Comandos Principais
+  - Auditoria Completa De Todas As Skills
+  - Auditar Apenas Uma Skill
+  - Apenas Recomendacoes De Novas Skills
+  - Comparar Com Auditoria Anterior (Tendencias)
+  - Output Em Json (Para Processamento)
+  - Ver Historico De Auditorias
+  - Descobrir Skills Disponiveis
+  - Ver Audit Log Do Sentinel
+  - Verificar Banco De Dados
+  - "1. Qualidade De Codigo (Peso: 20%)"
+  - "2. Seguranca (Peso: 20%)"
+  - "3. Performance (Peso: 15%)"
+  - "4. Governanca (Peso: 15%)"
+  - "5. Documentacao (Peso: 15%)"
+  - "6. Dependencias (Peso: 15%)"
+  - 7. Cross-Skill (Analise Global)
+  - Otimizacao De Custos
+  - Gap Analysis E Recomendacoes
+  - Governanca Do Sentinel
+  - Workflows Comuns
+  - Formato Do Relatorio
+  - Referencias
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # Skill Sentinel

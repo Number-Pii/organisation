@@ -1,9 +1,24 @@
 ---
 name: azure-storage-blob-py
-description: Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing containers, and blob lifecycle.
+description: "Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing containers, and blob lifecycle."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Blob Storage SDK for Python.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Client Hierarchy
+  - Core Workflow
+  - Performance Tuning
+  - SAS Tokens
+  - Blob Properties and Metadata
+  - Async Client
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Blob Storage SDK for Python

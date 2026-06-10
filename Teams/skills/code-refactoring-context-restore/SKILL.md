@@ -1,9 +1,24 @@
 ---
 name: code-refactoring-context-restore
-description: "Use when working with code refactoring context restore"
+description: Use when working with code refactoring context restore
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: Use when working with code refactoring context restore
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Role Statement
+  - Context Overview
+  - Core Requirements and Arguments
+  - Advanced Context Retrieval Strategies
+  - Reference Workflows
+  - Usage Examples
+  - Integration Patterns
+  - Future Roadmap
 ---
 
 # Context Restoration: Advanced Semantic Memory Rehydration

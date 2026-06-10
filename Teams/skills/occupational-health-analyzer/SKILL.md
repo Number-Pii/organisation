@@ -1,9 +1,26 @@
 ---
 name: occupational-health-analyzer
 description: 分析职业健康数据、识别工作相关健康风险、评估职业健康状况、提供个性化职业健康建议。支持与睡眠、运动、心理健康等其他健康数据的关联分析。
-allowed-tools: Read, Grep, Glob, Write, Edit
+allowed-tools: "Read, Grep, Glob, Write, Edit"
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: m
+summary: 分析职业健康数据、识别工作相关健康风险、评估职业健康状况、提供个性化职业健康建议。支持与睡眠、运动、心理健康等其他健康数据的关联分析。
+detail_sections:
+  - 核心功能
+  - 触发条件
+  - 医学安全边界
+  - 执行步骤
+  - 输出格式
+  - 1. 职业健康状况摘要
+  - 2. 风险评估结果
+  - 3. 工作相关问题分析
+  - 4. 人机工程评估
+  - 5. 职业病筛查
+  - 6. 综合建议
+  - 错误处理
+  - 数据源说明
 ---
 
 # 职业健康分析技能

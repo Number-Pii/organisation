@@ -3,8 +3,23 @@ name: crypto-bd-agent
 description: "Production-tested patterns for building AI agents that autonomously discover, > evaluate, and acquire token listings for cryptocurrency exchanges."
 risk: safe
 source: community
-tags: null
-date_added: '2026-02-27'
+tags: "null"
+date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Production-tested patterns for building AI agents that autonomously discover, > evaluate, and acquire token listings for cryptocurrency exchanges."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use When
+  - Architecture
+  - 1. Intelligence Gathering
+  - 2. Token Scoring (100 Points)
+  - 3. Wallet Forensics
+  - 4. ERC-8004 On-Chain Identity
+  - 5. Pipeline Management
+  - 6. Security Rules
+  - Reference Implementation
 ---
 
 # Crypto BD Agent — Autonomous Business Development for Exchanges

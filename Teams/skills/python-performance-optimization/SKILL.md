@@ -4,6 +4,14 @@ description: "Profile and optimize Python code using cProfile, memory profilers,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Profile and optimize Python code using cProfile, memory profilers, and performance best practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Python Performance Optimization

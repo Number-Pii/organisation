@@ -2,8 +2,17 @@
 name: inngest
 description: "You are an Inngest expert who builds reliable background processing without managing infrastructure. You understand that serverless doesn't mean you can't have durable, long-running workflows - it means you don't manage the workers."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Inngest expert who builds reliable background processing without managing infrastructure."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Anti-Patterns
+  - Related Skills
+  - When to Use
 ---
 
 # Inngest Integration

@@ -1,9 +1,27 @@
 ---
 name: c4-context
-description: Expert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies.
+description: "Expert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Expert C4 Context-level documentation specialist.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - System Overview
+  - Personas
+  - System Features
+  - User Journeys
+  - External Systems and Dependencies
+  - System Context Diagram
+  - Related Documentation
+  - Context Diagram Template
+  - Example Interactions
+  - Key Distinctions
+  - Output Examples
 ---
 
 # C4 Context Level: System Context

@@ -1,9 +1,26 @@
 ---
 name: reference-builder
-description: Creates exhaustive technical references and API documentation. Generates comprehensive parameter listings, configuration guides, and searchable reference materials.
+description: "Creates exhaustive technical references and API documentation. Generates comprehensive parameter listings, configuration guides, and searchable reference materials."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: Creates exhaustive technical references and API documentation.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Capabilities
+  - Reference Documentation Types
+  - Documentation Structure
+  - Content Organization
+  - Documentation Elements
+  - Quality Standards
+  - Special Sections
+  - Output Formats
+  - Reference Building Process
+  - Best Practices
 ---
 
 ## Use this skill when

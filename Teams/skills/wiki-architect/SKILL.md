@@ -1,9 +1,19 @@
 ---
 name: wiki-architect
-description: "You are a documentation architect that produces structured wiki catalogues and onboarding guides from codebases."
+description: You are a documentation architect that produces structured wiki catalogues and onboarding guides from codebases.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: "Documentation architect that produces structured wiki catalogues and onboarding guides from codebases."
+detail_sections:
+  - When to Use
+  - Procedure
+  - Onboarding Guide Architecture
+  - Language Detection
+  - Constraints
+  - Output
 ---
 
 # Wiki Architect

@@ -1,21 +1,118 @@
 ---
 name: advogado-especialista
-description: 'Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial, civil e constitucional.'
+description: "Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial, civil e constitucional."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- legal
-- brazilian-law
-- multi-domain
-- portuguese
+  - legal
+  - brazilian-law
+  - multi-domain
+  - portuguese
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "Business & Strategy"
+size_class: xl
+summary: "Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Identificar A Area Do Direito
+  - 2. Identificar O Perfil Do Cliente
+  - 1.1 Divorcio
+  - 1.2 Alimentos
+  - 1.3 Uniao Estavel (Art. 1.723-1.727 Cc)
+  - 1.4 Investigacao De Paternidade
+  - Modulo 2 — Direito Criminal E Penal (Resumo Executivo)
+  - 2.1 Estrutura Analitica Rapida
+  - 2.2 Crimes Mais Comuns — Referencia Rapida
+  - Modulo 3 — Maria Da Penha (Resumo Executivo)
+  - 3.1 Fluxo De Urgencia Para Vitima
+  - 3.2 Medidas Protetivas Mais Usadas
+  - 3.3 Legislacao Atualizada
+  - 4.1 Partilha De Bens No Divorcio
+  - 4.2 Inventario E Partilha Por Morte
+  - 4.3 Testamento
+  - 4.4 Itcmd — Imposto De Transmissao Causa Mortis E Doacao
+  - 4.5 Sobrepartilha (Art. 669 Cpc)
+  - 5.1 Tipos De Guarda (Art. 1.583-1.590 Cc + Lei 13.058/2014)
+  - 5.2 Guarda Compartilhada (Lei 13.058/2014)
+  - 5.3 Regulamentacao De Visitas (Art. 1.589 Cc)
+  - 5.4 Alienacao Parental (Lei 12.318/2010)
+  - 5.5 Busca E Apreensao De Menor
+  - 5.6 Modificacao De Guarda (Art. 1.586 Cc)
+  - 6.1 Fundamentos (Art. 186-188 + Art. 927-954 Cc)
+  - 6.2 Tipos De Dano
+  - 6.3 Parametros De Indenizacao (Jurisprudencia)
+  - 6.4 Dano Moral In Re Ipsa (Presumido)
+  - 6.5 Acoes De Danos Morais — Aspectos Processuais
+  - 7.1 Principios Fundamentais (Cdc — Lei 8.078/1990)
+  - 7.2 Vicios E Defeitos
+  - 7.3 Praticas Abusivas (Art. 39 Cdc)
+  - 7.4 Direito De Arrependimento (Art. 49 Cdc)
+  - 8.1 Compra E Venda De Imoveis
+  - 8.2 Usucapiao
+  - 8.3 Locacao (Lei 8.245/1991 — Lei Do Inquilinato)
+  - 8.4 Condominio (Art. 1.331-1.358 Cc + Lei 4.591/1964)
+  - 9.1 Rescisao Do Contrato De Trabalho
+  - 9.2 Verbas Trabalhistas
+  - 9.3 Assedio Moral E Sexual No Trabalho
+  - 9.4 Prazos Trabalhistas
+  - 10.1 Beneficios Do Inss
+  - 10.2 Revisao De Beneficios
+  - 11.1 Impostos Mais Comuns
+  - 11.2 Execucao Fiscal (Lei 6.830/1980)
+  - 12.1 Mandado De Seguranca (Lei 12.016/2009)
+  - 12.2 Improbidade Administrativa (Lei 8.429/1992 — Alterada Pela Lei 14.230/2021)
+  - 13.1 Lgpd (Lei 13.709/2018)
+  - 13.2 Crimes Digitais
+  - 13.3 Marco Civil Da Internet (Lei 12.965/2014)
+  - 14.1 Tipos Societarios
+  - 14.2 Recuperacao Judicial (Lei 11.101/2005)
+  - 14.3 Falencia
+  - Workflow Completo De Analise De Caso (12 Etapas)
+  - Etapa 1 — Enquadramento Juridico
+  - Etapa 2 — Partes Envolvidas
+  - Etapa 3 — Fatos Relevantes
+  - Etapa 4 — Fundamentacao Legal
+  - Etapa 5 — Analise De Merito
+  - Etapa 6 — Riscos Processuais
+  - Etapa 7 — Estimativa De Resultado
+  - Etapa 8 — Custos Estimados
+  - Etapa 9 — Estrategia Processual
+  - Etapa 10 — Prazos Relevantes
+  - Etapa 11 — Medidas De Urgencia
+  - Etapa 12 — Parecer Final
+  - Cpc (Processo Civil)
+  - Juizados Especiais (Lei 9.099/1995)
+  - Trabalhista (Clt)
+  - Stj — Familia
+  - Stj — Responsabilidade Civil
+  - Stj — Consumidor
+  - Stf — Constitucional
+  - Restricoes Absolutas
+  - Leigo (Pessoa Comum)
+  - Advogado
+  - Vitima De Violencia
+  - Empresario
+  - Orquestracao Com Outros Skills
+  - Instalacao
+  - "Verificar Se A Skill Esta Registrada:"
+  - Comandos E Uso
+  - "Via Orchestrator (Automatico):"
+  - "\"Quero Fazer Partilha De Bens\""
+  - Governanca
+  - Legislacao Principal
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # ADVOGADO ESPECIALISTA ELITE — JURISTA COMPLETO

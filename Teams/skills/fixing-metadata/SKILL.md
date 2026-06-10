@@ -5,6 +5,15 @@ risk: unknown
 source: community
 version: 1.0.1
 license: MIT
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, Open Graph tags, Twitter cards, favicons, JSON-LD structured…"
+detail_sections:
+  - Workflow
+  - When to Use
+  - rule categories by priority
+  - quick reference
+  - review guidance
 ---
 
 ## Workflow

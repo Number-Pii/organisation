@@ -4,6 +4,14 @@ description: "Comprehensive guidance for implementing asynchronous Python applic
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Comprehensive guidance for implementing asynchronous Python applications using asyncio, concurrent programming patterns, and async/await for building…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Async Python Patterns

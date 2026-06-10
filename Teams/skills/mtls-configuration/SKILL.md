@@ -4,6 +4,19 @@ description: "Configure mutual TLS (mTLS) for zero-trust service-to-service comm
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Configure mutual TLS (mTLS) for zero-trust service-to-service communication.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Certificate Rotation
+  - Debugging mTLS Issues
+  - Best Practices
+  - Resources
 ---
 
 # mTLS Configuration

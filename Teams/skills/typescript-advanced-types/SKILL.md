@@ -4,6 +4,14 @@ description: "Comprehensive guidance for mastering TypeScript's advanced type sy
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: xs
+summary: "Comprehensive guidance for mastering TypeScript's advanced type system including generics, conditional types, mapped types, template literal types…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # TypeScript Advanced Types

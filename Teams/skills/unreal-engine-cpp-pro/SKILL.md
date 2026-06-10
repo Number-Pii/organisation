@@ -4,6 +4,16 @@ description: "Expert guide for Unreal Engine 5.x C++ development, covering UObje
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices."
+detail_sections:
+  - When to Use
+  - Core Principles
+  - Naming Conventions (Strict)
+  - Common Patterns
+  - Debugging
+  - Checklist before PR
 ---
 
 # Unreal Engine C++ Pro

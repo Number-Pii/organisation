@@ -3,21 +3,45 @@ name: devops-deploy
 description: "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento."
 risk: critical
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- devops
-- docker
-- ci-cd
-- aws
-- terraform
-- github-actions
+  - devops
+  - docker
+  - ci-cd
+  - aws
+  - terraform
+  - github-actions
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - Dockerfile Otimizado (Python)
+  - Docker Compose (Dev Local)
+  - Sam Template (Serverless)
+  - Template.Yaml
+  - Deploy Commands
+  - Build E Deploy
+  - Deploy Rapido (Sem Confirmacao)
+  - Ver Logs Em Tempo Real
+  - Deletar Stack
+  - .Github/Workflows/Deploy.Yml
+  - Health Check Endpoint
+  - Alertas Cloudwatch
+  - 5. Checklist De Producao
+  - 6. Comandos
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # DEVOPS-DEPLOY — Da Ideia para Producao

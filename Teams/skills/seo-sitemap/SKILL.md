@@ -15,7 +15,7 @@ allowed-tools:
   - Write
 domain: "SEO & Content Marketing"
 size_class: s
-summary: ">"
+summary: "Analyse an existing XML sitemap or generate a new one."
 detail_sections:
   - When to Use
   - "Mode 1: Analyze Existing Sitemap"

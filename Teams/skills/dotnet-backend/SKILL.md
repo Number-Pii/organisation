@@ -4,6 +4,16 @@ description: "Build ASP.NET Core 8+ backend services with EF Core, auth, backgro
 risk: safe
 source: self
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Build ASP.NET Core 8+ backend services with EF Core, auth, background jobs, and production API patterns."
+detail_sections:
+  - When to Use
+  - Your Expertise
+  - Your Responsibilities
+  - Code Patterns You Follow
+  - Best Practices You Follow
+  - Limitations
 ---
 
 # .NET Backend Agent - ASP.NET Core & Enterprise API Expert

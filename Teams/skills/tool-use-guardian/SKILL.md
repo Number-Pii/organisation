@@ -6,8 +6,32 @@ risk: safe
 source: community
 date_added: "2026-03-13"
 author: christopherlhammer11-ai
-tags: [reliability, tool-use, error-handling, retries, recovery, agent-infrastructure]
-tools: [claude, cursor, codex, gemini, copilot, windsurf, antigravity]
+tags:
+  - reliability
+  - tool-use
+  - error-handling
+  - retries
+  - recovery
+  - agent-infrastructure
+tools:
+  - claude
+  - cursor
+  - codex
+  - gemini
+  - copilot
+  - windsurf
+  - antigravity
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: FREE — Intelligent tool-call reliability wrapper.
+detail_sections:
+  - Overview
+  - Install
+  - When to Use This Skill
+  - How It Works
+  - Best Practices
+  - Related Skills
+  - Links
 ---
 
 # Tool Use Guardian

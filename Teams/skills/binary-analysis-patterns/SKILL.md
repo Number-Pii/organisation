@@ -4,6 +4,21 @@ description: "Comprehensive patterns and techniques for analyzing compiled binar
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Comprehensive patterns and techniques for analyzing compiled binaries, understanding assembly code, and reconstructing program logic."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Disassembly Fundamentals
+  - Control Flow Patterns
+  - Data Structure Patterns
+  - Common Code Patterns
+  - Decompilation Patterns
+  - Ghidra Analysis Tips
+  - IDA Pro Patterns
+  - Best Practices
 ---
 
 # Binary Analysis Patterns

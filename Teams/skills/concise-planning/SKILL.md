@@ -4,6 +4,18 @@ description: "Use when a user asks for a plan for a coding task, to generate a c
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist."
+detail_sections:
+  - Goal
+  - Workflow
+  - Plan Template
+  - Scope
+  - Action Items
+  - Open Questions
+  - Checklist Guidelines
+  - When to Use
 ---
 
 # Concise Planning

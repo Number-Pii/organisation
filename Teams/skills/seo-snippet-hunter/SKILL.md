@@ -3,7 +3,20 @@ name: seo-snippet-hunter
 description: Formats content to be eligible for featured snippets and SERP features. Creates snippet-optimized content blocks based on best practices. Use PROACTIVELY for question-based content.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: Formats content to be eligible for featured snippets and SERP features.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - "Snippet Types & Formats"
+  - Snippet Optimization Strategy
+  - Approach
+  - Output
+  - "[Exact Question from SERP]"
 ---
 
 ## Use this skill when

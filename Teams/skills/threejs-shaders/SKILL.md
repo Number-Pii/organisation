@@ -1,8 +1,25 @@
 ---
 name: threejs-shaders
-description: Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials.
+description: "Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials."
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: l
+summary: "Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects."
+detail_sections:
+  - Quick Start
+  - ShaderMaterial vs RawShaderMaterial
+  - Uniforms
+  - Varyings
+  - Common Shader Patterns
+  - Extending Built-in Materials
+  - GLSL Built-in Functions
+  - Common Material Properties
+  - Shader Includes
+  - Instanced Shaders
+  - Debugging Shaders
+  - Performance Tips
+  - See Also
 ---
 
 # Three.js Shaders

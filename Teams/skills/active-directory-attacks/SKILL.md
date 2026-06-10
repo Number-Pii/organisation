@@ -5,6 +5,26 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Provide comprehensive techniques for attacking Microsoft Active Directory environments.
+detail_sections:
+  - Purpose
+  - Inputs/Prerequisites
+  - Outputs/Deliverables
+  - Essential Tools
+  - Core Workflow
+  - Credential Attacks
+  - Kerberos Ticket Attacks
+  - NTLM Relay Attacks
+  - Certificate Services Attacks (AD CS)
+  - Critical CVEs
+  - Quick Reference
+  - Constraints
+  - Examples
+  - Troubleshooting
+  - Additional Resources
+  - When to Use
 ---
 
 # Active Directory Attacks

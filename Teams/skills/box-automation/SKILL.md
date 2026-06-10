@@ -4,6 +4,17 @@ description: "Automate Box operations including file upload/download, content se
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Box operations including file upload/download, content search, folder management, collaboration, metadata queries, and sign requests through…"
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Box Automation via Rube MCP

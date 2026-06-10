@@ -4,6 +4,29 @@ description: "Azure Key Vault Secrets Java SDK for secret management. Use when s
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Key Vault Secrets Java SDK for secret management.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Create/Set Secret
+  - Get Secret
+  - Update Secret Properties
+  - List Secrets
+  - Delete Secret
+  - Recover Deleted Secret
+  - Purge Deleted Secret
+  - Backup and Restore
+  - Async Operations
+  - Configuration Patterns
+  - Error Handling
+  - Secret Properties
+  - Environment Variables
+  - Best Practices
+  - Common Secret Types
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Key Vault Secrets (Java)

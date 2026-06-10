@@ -4,6 +4,17 @@ description: "Automate Slack workspace operations including messaging, search, c
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Slack workspace operations including messaging, search, channel management, and reaction workflows through Composio's Slack toolkit."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Slack Automation via Rube MCP

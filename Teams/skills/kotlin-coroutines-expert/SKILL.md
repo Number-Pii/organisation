@@ -4,6 +4,16 @@ description: "Expert patterns for Kotlin Coroutines and Flow, covering structure
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: s
+summary: "Expert patterns for Kotlin Coroutines and Flow, covering structured concurrency, error handling, and testing."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Kotlin Coroutines Expert

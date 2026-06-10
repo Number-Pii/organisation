@@ -4,6 +4,15 @@ description: "A comprehensive collection of battle-tested prompts inspired by [a
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "A comprehensive collection of battle-tested prompts inspired by [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) and community…"
+detail_sections:
+  - When to Use This Skill
+  - Prompt Categories
+  - Prompt Engineering Techniques
+  - Prompt Improvement Checklist
+  - Resources
 ---
 
 # 📝 Prompt Library

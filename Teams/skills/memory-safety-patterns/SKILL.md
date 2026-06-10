@@ -4,6 +4,14 @@ description: "Cross-language patterns for memory-safe programming including RAII
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Cross-language patterns for memory-safe programming including RAII, ownership, smart pointers, and resource management."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Memory Safety Patterns

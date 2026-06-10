@@ -3,6 +3,19 @@ name: sexual-health-analyzer
 description: Sexual Health Analyzer
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: xl
+summary: Sexual Health Analyzer
+detail_sections:
+  - 技能概述
+  - 医学免责声明
+  - 核心功能
+  - 使用场景
+  - 数据分析方法
+  - 质量保证
+  - 参考资源
+  - 局限性
+  - 未来扩展
 ---
 
 # 性健康分析技能

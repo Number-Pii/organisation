@@ -4,6 +4,24 @@ description: "Manage Linear issues, projects, and teams"
 risk: safe
 source: "https://github.com/wrsmith108/linear-claude-skill"
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Manage Linear issues, projects, and teams"
+detail_sections:
+  - When to Use This Skill
+  - ⚠️ Tool Availability (READ FIRST)
+  - "🔐 Security: Varlock Integration"
+  - Quick Start (First-Time Users)
+  - Project Planning Workflow
+  - Project Management Commands
+  - Tool Selection
+  - Critical Requirements
+  - Conventions
+  - SDK Automation Scripts
+  - GraphQL API
+  - "Projects & Initiatives"
+  - Sync Patterns (Bulk Operations)
+  - Reference
 ---
 
 ## When to Use This Skill

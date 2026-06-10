@@ -4,6 +4,20 @@ description: "Claiming work is complete without verification is dishonesty, not 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "Claiming work is complete without verification is dishonesty, not efficiency."
+detail_sections:
+  - Overview
+  - The Iron Law
+  - The Gate Function
+  - Common Failures
+  - Red Flags - STOP
+  - Rationalization Prevention
+  - Key Patterns
+  - Why This Matters
+  - When to Use
+  - The Bottom Line
 ---
 
 # Verification Before Completion

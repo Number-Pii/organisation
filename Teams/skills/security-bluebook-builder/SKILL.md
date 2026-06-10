@@ -3,6 +3,13 @@ name: security-bluebook-builder
 description: "Build a minimal but real security policy for sensitive apps. The output is a single, coherent Blue Book document using MUST/SHOULD/CAN language, with explicit assumptions, scope, and security gates."
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: Build a minimal but real security policy for sensitive apps.
+detail_sections:
+  - Overview
+  - Workflow
+  - Resources
 ---
 
 # Security Bluebook Builder

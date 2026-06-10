@@ -1,6 +1,6 @@
 ---
 name: progressive-estimation
-description: "Estimate AI-assisted and hybrid human+agent development work with research-backed PERT statistics and calibration feedback loops"
+description: Estimate AI-assisted and hybrid human+agent development work with research-backed PERT statistics and calibration feedback loops
 category: project-management
 risk: safe
 source: community
@@ -14,6 +14,18 @@ tags:
   - ai-agents
 tools:
   - claude
+domain: "Planning & Workflow"
+size_class: s
+summary: Estimate AI-assisted and hybrid human+agent development work with research-backed PERT statistics and calibration feedback loops
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
+  - Additional Resources
 ---
 
 # Progressive Estimation

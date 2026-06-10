@@ -1,15 +1,17 @@
 ---
 name: conductor-validator
-description: 'Validates Conductor project artifacts for completeness,
-
-  consistency, and correctness. Use after setup, when diagnosing issues, or
-
-  before implementation to verify project context.
-
-  '
+description: "'Validates Conductor project artifacts for completeness,"
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: s
+summary: "'Validates Conductor project artifacts for completeness,"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Pattern Matching
 ---
 
 # Check if conductor directory exists

@@ -4,6 +4,16 @@ description: "You are a Python project architecture expert specializing in scaff
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Programming Languages
+size_class: m
+summary: "Python project architecture expert specializing in scaffolding production-ready Python applications."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # Python Project Scaffolding

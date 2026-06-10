@@ -4,6 +4,20 @@ description: "Build tools that agents can use effectively, including architectur
 risk: safe
 source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/tool-design"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: m
+summary: "Build tools that agents can use effectively, including architectural reduction patterns."
+detail_sections:
+  - When to Use This Skill
+  - When to Use
+  - Core Concepts
+  - Detailed Topics
+  - Practical Guidance
+  - Examples
+  - Guidelines
+  - Integration
+  - References
+  - Skill Metadata
 ---
 
 ## When to Use This Skill

@@ -4,6 +4,23 @@ description: "Master comprehensive testing strategies for smart contracts using 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Master comprehensive testing strategies for smart contracts using Hardhat, Foundry, and advanced testing patterns."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Hardhat Testing Setup
+  - Unit Testing Patterns
+  - Foundry Testing (Forge)
+  - Advanced Testing Patterns
+  - Gas Optimization Testing
+  - Coverage Reporting
+  - Contract Verification
+  - CI/CD Integration
+  - Resources
+  - Best Practices
 ---
 
 # Web3 Smart Contract Testing

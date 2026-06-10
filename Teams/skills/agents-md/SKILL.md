@@ -1,8 +1,24 @@
 ---
 name: agents-md
-description: This skill should be used when the user asks to "create AGENTS.md", "update AGENTS.md", "maintain agent docs", "set up CLAUDE.md", or needs to keep agent instructions concise. Enforces research-backed best practices for minimal, high-signal agent documentation.
+description: "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep agent instructions concise. Enforces research-backed best practices for minimal, high-signal agent documentation."
 risk: unknown
 source: community
+domain: Skills Tooling
+size_class: s
+summary: "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep…"
+detail_sections:
+  - File Setup
+  - Before Writing
+  - Writing Rules
+  - Required Sections
+  - Package Manager
+  - File-Scoped Commands
+  - Commit Attribution
+  - Optional Sections
+  - Anti-Patterns
+  - Example Structure
+  - API Routes
+  - CLI
 ---
 
 # Maintaining AGENTS.md

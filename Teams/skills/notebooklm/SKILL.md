@@ -4,6 +4,24 @@ description: "Interact with Google NotebookLM to query documentation with Gemini
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers."
+detail_sections:
+  - When to Use This Skill
+  - "⚠️ CRITICAL: Add Command - Smart Discovery"
+  - "Critical: Always Use run.py Wrapper"
+  - Core Workflow
+  - Follow-Up Mechanism (CRITICAL)
+  - Script Reference
+  - Environment Management
+  - Data Storage
+  - Configuration
+  - Decision Flow
+  - Troubleshooting
+  - Best Practices
+  - Limitations
+  - Resources (Skill Structure)
 ---
 
 # NotebookLM Research Assistant Skill

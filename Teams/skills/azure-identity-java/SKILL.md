@@ -1,9 +1,34 @@
 ---
 name: azure-identity-java
-description: "Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD)."
+description: Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).
+detail_sections:
+  - Installation
+  - Key Concepts
+  - DefaultAzureCredential (Recommended)
+  - Managed Identity
+  - Service Principal with Secret
+  - Service Principal with Certificate
+  - Environment Credential
+  - Azure CLI Credential
+  - Interactive Browser
+  - Device Code
+  - Chained Credential
+  - Workload Identity (AKS)
+  - Token Caching
+  - Sovereign Clouds
+  - Error Handling
+  - Logging
+  - Environment Variables
+  - Best Practices
+  - Credential Selection Matrix
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Identity (Java)

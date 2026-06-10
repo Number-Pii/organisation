@@ -1,8 +1,23 @@
 ---
 name: threejs-postprocessing
-description: Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders.
+description: "Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders."
 risk: unknown
 source: community
+domain: "Frontend & UI"
+size_class: l
+summary: "Three.js post-processing - EffectComposer, bloom, DOF, screen effects."
+detail_sections:
+  - Quick Start
+  - EffectComposer Setup
+  - Common Effects
+  - Custom ShaderPass
+  - Combining Multiple Effects
+  - Render to Texture
+  - Multi-Pass Rendering
+  - WebGPU Post-Processing (Three.js r150+)
+  - Performance Tips
+  - Handle Resize
+  - See Also
 ---
 
 # Three.js Post-Processing

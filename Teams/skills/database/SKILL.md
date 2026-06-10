@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Database development and operations workflow covering SQL, NoSQL, database design, migrations, optimization, and data engineering."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Database Technology Workflows
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Database Workflow Bundle

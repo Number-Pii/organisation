@@ -4,6 +4,34 @@ description: "You are an expert in creating competitor comparison and alternativ
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Expert in creating competitor comparison and alternative pages."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Page Formats
+  - Index Pages
+  - "Explore [Your Product] as an Alternative"
+  - Find the Right Tool
+  - "Compare [Your Product]"
+  - Content Architecture
+  - Section Templates
+  - Features
+  - Feature Comparison
+  - Pricing
+  - "Service & Support"
+  - "Who Should Choose [Competitor]"
+  - "Who Should Choose [Your Product]"
+  - "Switching from [Competitor]"
+  - What Customers Say
+  - Comparison Table Best Practices
+  - Research Process
+  - SEO Considerations
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Competitor & Alternative Pages

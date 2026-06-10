@@ -4,6 +4,25 @@ description: "Autonomously deep-scan entire codebase line-by-line, understand ar
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: l
+summary: "Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns, then systematically transform it to production-grade…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Autonomous Scanning Instructions
+  - Common Pitfalls
+  - Production Audit Checklist
+  - Audit Report Template
+  - Executive Summary
+  - Findings by Category
+  - Priority Actions
+  - Timeline
+  - Related Skills
+  - Additional Resources
 ---
 
 # Production Code Audit

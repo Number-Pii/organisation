@@ -4,6 +4,23 @@ description: "Master ShellCheck static analysis configuration and usage for shel
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Master ShellCheck static analysis configuration and usage for shell script quality.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - ShellCheck Fundamentals
+  - Configuration Files
+  - Common ShellCheck Error Codes
+  - Practical Configuration Examples
+  - Integration Patterns
+  - Handling ShellCheck Violations
+  - Performance Optimization
+  - Output Formats
+  - Best Practices
+  - Resources
 ---
 
 # ShellCheck Configuration and Static Analysis

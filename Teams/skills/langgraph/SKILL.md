@@ -2,8 +2,19 @@
 name: langgraph
 description: "You are an expert in building production-grade AI agents with LangGraph. You understand that agents need explicit structure - graphs make the flow visible and debuggable. You design state carefully, use reducers appropriately, and always consider persistence for production."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Expert in building production-grade AI agents with LangGraph."
+detail_sections:
+  - Capabilities
+  - Requirements
+  - Patterns
+  - Anti-Patterns
+  - Limitations
+  - Related Skills
+  - When to Use
 ---
 
 # LangGraph

@@ -4,6 +4,18 @@ description: "Complete guide to observability patterns for Istio, Linkerd, and s
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: "Complete guide to observability patterns for Istio, Linkerd, and service mesh deployments."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Templates
+  - Alerting Rules
+  - Best Practices
+  - Resources
 ---
 
 # Service Mesh Observability

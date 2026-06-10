@@ -4,6 +4,20 @@ description: "Master workflow orchestration architecture with Temporal, covering
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Master workflow orchestration architecture with Temporal, covering fundamental design decisions, resilience patterns, and best practices for building…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - When to Use Workflow Orchestration
+  - "Critical Design Decision: Workflows vs Activities"
+  - Core Workflow Patterns
+  - State Management and Determinism
+  - Resilience and Error Handling
+  - Best Practices
+  - Additional Resources
 ---
 
 # Workflow Orchestration Patterns

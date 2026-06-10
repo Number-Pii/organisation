@@ -4,6 +4,17 @@ description: "API design principles and decision-making. REST vs GraphQL vs tRPC
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: API design principles and decision-making.
+detail_sections:
+  - 🎯 Selective Reading Rule
+  - 📑 Content Map
+  - 🔗 Related Skills
+  - ✅ Decision Checklist
+  - ❌ Anti-Patterns
+  - Script
+  - When to Use
 ---
 
 # API Patterns

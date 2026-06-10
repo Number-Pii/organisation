@@ -5,6 +5,16 @@ category: workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Operating system and shell scripting troubleshooting workflow for Linux, macOS, and Windows."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Common Troubleshooting Scenarios
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # OS/Shell Scripting Troubleshooting Workflow Bundle

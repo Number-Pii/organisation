@@ -4,6 +4,16 @@ description: "Generate comprehensive, maintainable unit tests across languages w
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Output Format
 ---
 
 # Automated Unit Test Generation

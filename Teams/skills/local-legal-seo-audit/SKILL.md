@@ -4,6 +4,23 @@ description: "Audit and improve local SEO for law firms, attorneys, forensic exp
 risk: safe
 source: original
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Audit and improve local SEO for law firms, attorneys, forensic experts and legal/professional services sites with local presence, focusing on GBP…"
+detail_sections:
+  - When to Use
+  - Initial Assessment
+  - Audit Framework
+  - Google Business Profile (GBP) Audit
+  - E-E-A-T Audit for Legal Sites
+  - On-Page SEO Audit
+  - Technical SEO Audit
+  - "Directory & Citation Audit (NAP Consistency)"
+  - Content Strategy for Legal Sites
+  - "Reviews & Reputation Audit"
+  - Output Format
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # Local Legal SEO Audit

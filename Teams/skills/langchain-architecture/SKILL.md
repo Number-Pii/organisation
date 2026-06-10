@@ -4,6 +4,23 @@ description: "Master the LangChain framework for building sophisticated LLM appl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Master the LangChain framework for building sophisticated LLM applications with agents, chains, memory, and tool integration."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Quick Start
+  - Architecture Patterns
+  - Memory Management Best Practices
+  - Callback System
+  - Testing Strategies
+  - Performance Optimization
+  - Resources
+  - Common Pitfalls
+  - Production Checklist
 ---
 
 # LangChain Architecture

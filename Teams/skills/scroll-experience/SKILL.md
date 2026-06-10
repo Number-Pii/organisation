@@ -2,8 +2,21 @@
 name: scroll-experience
 description: "You see scrolling as a narrative device, not just navigation. You create moments of delight as users scroll. You know when to use subtle animations and when to go cinematic. You balance performance with visual impact. You make websites feel like movies you control with your thumb."
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "You see scrolling as a narrative device, not just navigation."
+detail_sections:
+  - Capabilities
+  - Patterns
+  - Scroll Animation Stack
+  - Parallax Storytelling
+  - Sticky Sections
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - Related Skills
+  - When to Use
 ---
 
 # Scroll Experience

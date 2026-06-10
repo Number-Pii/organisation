@@ -1,15 +1,34 @@
 ---
 name: remotion
-description: Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays
+description: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
 allowed-tools:
   - "stitch*:*"
   - "remotion*:*"
-  - "Bash"
-  - "Read"
-  - "Write"
-  - "web_fetch"
+  - Bash
+  - Read
+  - Write
+  - web_fetch
 risk: unknown
 source: community
+domain: "Creative & Design"
+size_class: m
+summary: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
+detail_sections:
+  - Overview
+  - Prerequisites
+  - Retrieval and Networking
+  - Video Composition Strategy
+  - Execution Steps
+  - Advanced Features
+  - File Structure
+  - Integration with Remotion Skills
+  - Common Patterns
+  - Troubleshooting
+  - Best Practices
+  - Example Usage
+  - Tips for Success
+  - References
+  - When to Use
 ---
 
 # Stitch to Remotion Walkthrough Videos

@@ -4,8 +4,23 @@ description: "Optimize content for AI search and LLM citations across AI Overvie
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Optimize content for AI search and LLM citations across AI Overviews, ChatGPT, Perplexity, Claude, Gemini, and similar systems."
+detail_sections:
+  - When to Use
+  - Before Starting
+  - How AI Search Works
+  - AI Visibility Audit
+  - Optimization Strategy
+  - Content Types That Get Cited Most
+  - Monitoring AI Visibility
+  - AI SEO for Different Content Types
+  - Common Mistakes
+  - Tool Integrations
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # AI SEO

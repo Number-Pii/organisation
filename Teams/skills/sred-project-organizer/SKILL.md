@@ -1,8 +1,22 @@
 ---
 name: sred-project-organizer
-description: Take a list of projects and their related documentation, and organize them into the SRED format for submission.
+description: "Take a list of projects and their related documentation, and organize them into the SRED format for submission."
 risk: unknown
 source: community
+domain: "Backend & APIs"
+size_class: s
+summary: "Take a list of projects and their related documentation, and organize them into the SRED format for submission."
+detail_sections:
+  - Step 1
+  - "[Project Name]"
+  - Step 2
+  - Step 3
+  - Step 4
+  - Step 5
+  - Step 6
+  - Examples
+  - References
+  - Resources
 ---
 
 # SRED Project Organization

@@ -4,6 +4,15 @@ description: "A hybrid memory system that provides persistent, searchable knowle
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: s
+summary: "A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Capabilities (MCP Tools)
+  - Dashboard
+  - When to Use
 ---
 
 # Agent Memory Skill

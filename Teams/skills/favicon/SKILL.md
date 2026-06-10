@@ -1,14 +1,27 @@
 ---
 name: favicon
-argument-hint: [path to source image]
+argument-hint:
+  - path to source image
 description: Generate favicons from a source image
-allowed-tools: Bash(magick *), Bash(which *), Bash(cp *), Bash(mkdir *)
+allowed-tools: "Bash(magick *), Bash(which *), Bash(cp *), Bash(mkdir *)"
 context: fork
 risk: unknown
 source: community
-metadata:
-  author: Shpigford
-  version: "1.0"
+metadata: []
+domain: "Creative & Design"
+size_class: m
+summary: Generate favicons from a source image
+detail_sections:
+  - Prerequisites
+  - "Step 1: Validate Source Image"
+  - "Step 2: Detect Project Type and Static Assets Directory"
+  - "Step 3: Determine App Name"
+  - "Step 4: Ensure Static Assets Directory Exists"
+  - "Step 5: Generate Favicon Files"
+  - "Step 6: Create/Update site.webmanifest"
+  - "Step 7: Update HTML/Layout Files"
+  - "Step 8: Summary"
+  - Error Handling
 ---
 
 Generate a complete set of favicons from the source image at `$1` and update the project's HTML with the appropriate link tags.

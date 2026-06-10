@@ -1,9 +1,20 @@
 ---
 name: legal-advisor
-description: Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements.
+description: "Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: s
+summary: "Draft privacy policies, terms of service, disclaimers, and legal notices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Approach
+  - Key Regulations
+  - Output
 ---
 
 ## Use this skill when

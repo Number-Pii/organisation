@@ -4,6 +4,18 @@ description: "You are a documentation expert specializing in creating comprehens
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: "Documentation expert specializing in creating comprehensive, maintainable documentation from code."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Output Format
+  - Resources
 ---
 
 # Automated Documentation Generation

@@ -4,6 +4,23 @@ description: "Implement secure API design patterns including authentication, aut
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Implement secure API design patterns including authentication, authorization, input validation, rate limiting, and protection against common API…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Secure JWT Authentication Implementation
+  - Preventing SQL Injection and Input Validation
+  - Implementing Rate Limiting
+  - Best Practices
+  - Common Pitfalls
+  - Security Checklist
+  - OWASP API Security Top 10
+  - Related Skills
+  - Additional Resources
 ---
 
 # API Security Best Practices

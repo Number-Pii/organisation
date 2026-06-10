@@ -1,9 +1,24 @@
 ---
 name: c4-code
-description: Expert C4 Code-level documentation specialist. Analyzes code directories to create comprehensive C4 code-level documentation including function signatures, arguments, dependencies, and code structure.
+description: "Expert C4 Code-level documentation specialist. Analyzes code directories to create comprehensive C4 code-level documentation including function signatures, arguments, dependencies, and code structure."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: Expert C4 Code-level documentation specialist.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - Code Elements
+  - Dependencies
+  - Relationships
+  - Notes
+  - Example Interactions
+  - Key Distinctions
+  - Output Examples
 ---
 
 # C4 Code Level: [Directory Name]

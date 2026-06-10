@@ -1,10 +1,20 @@
 ---
 name: llm-structured-output
-description: >
-  Get reliable JSON, enums, and typed objects from LLMs using response_format, tool_use, and schema-constrained decoding across OpenAI, Anthropic, and Google APIs.
+description: ">"
 risk: safe
 source: community
 date_added: "2026-03-12"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Extract typed, validated data from LLM API responses instead of parsing free-text."
+detail_sections:
+  - What This Skill Does
+  - When to Use This Skill
+  - Core Workflow
+  - Examples
+  - Never Do This
+  - Edge Cases
+  - Best Practices
 ---
 
 # LLM Structured Output

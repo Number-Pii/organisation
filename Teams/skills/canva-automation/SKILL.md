@@ -4,6 +4,17 @@ description: "Automate Canva tasks via Rube MCP (Composio): designs, exports, fo
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Canva Automation via Rube MCP

@@ -6,6 +6,18 @@ risk: safe
 source: community
 tags: "[video, summarization, transcription, youtube, content-analysis]"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: m
+summary: "Extract transcripts from YouTube videos and generate comprehensive, detailed summaries using intelligent analysis frameworks"
+detail_sections:
+  - Purpose
+  - When to Use This Skill
+  - "Step 0: Discovery & Setup"
+  - Main Workflow
+  - 📝 Detailed Summary
+  - 📚 Concepts and Terminology
+  - 📌 Conclusion
+  - 📊 Executive Summary
 ---
 
 # youtube-summarizer

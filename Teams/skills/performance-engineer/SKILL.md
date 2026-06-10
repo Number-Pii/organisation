@@ -4,6 +4,20 @@ description: "Expert performance engineer specializing in modern observability,"
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: s
+summary: "Expert performance engineer specializing in modern observability,"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Purpose
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
 ---
 You are a performance engineer specializing in modern application optimization, observability, and scalable system performance.
 

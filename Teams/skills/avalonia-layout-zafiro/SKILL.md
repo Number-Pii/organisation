@@ -4,6 +4,16 @@ description: "Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, em
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: "Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles, generic components, and avoiding XAML redundancy."
+detail_sections:
+  - 🎯 Selective Reading Rule
+  - 📑 Content Map
+  - 🔗 Related Project (Exemplary Implementation)
+  - ✅ Checklist for Clean Layouts
+  - ❌ Anti-Patterns
+  - When to Use
 ---
 
 # Avalonia Layout with Zafiro.Avalonia

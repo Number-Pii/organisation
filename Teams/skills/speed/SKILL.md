@@ -4,7 +4,13 @@ description: Launch RSVP speed reader for text
 trigger: command
 risk: unknown
 source: community
-tools: Write, Bash, Read
+tools: "Write, Bash, Read"
+domain: "Documentation & Office"
+size_class: xs
+summary: Launch RSVP speed reader for text
+detail_sections:
+  - Instructions
+  - Arguments
 ---
 
 # Speed Reader

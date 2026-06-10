@@ -4,6 +4,27 @@ description: "Extract text, tables, and structured data from documents using pre
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: "Extract text, tables, and structured data from documents using prebuilt and custom models."
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Analyze Document (URL)
+  - Analyze Document (Local File)
+  - Prebuilt Models
+  - Extract Invoice Fields
+  - Extract Receipt Fields
+  - List Document Models
+  - Build Custom Model
+  - Build Document Classifier
+  - Classify Document
+  - Get Service Info
+  - Polling Pattern
+  - Key Types
+  - Best Practices
+  - When to Use
 ---
 
 # Azure Document Intelligence REST SDK for TypeScript

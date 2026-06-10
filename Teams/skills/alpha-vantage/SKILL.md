@@ -3,8 +3,21 @@ name: alpha-vantage
 description: "Access 20+ years of global financial data: equities, options, forex, crypto, commodities, economic indicators, and 50+ technical indicators."
 risk: unknown
 source: community
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
+domain: "Business & Strategy"
+size_class: s
+summary: "Access 20+ years of global financial data: equities, options, forex, crypto, commodities, economic indicators, and 50+ technical indicators."
+detail_sections:
+  - API Key Setup (Required)
+  - Installation
+  - "Base URL & Request Pattern"
+  - Quick Start Examples
+  - API Categories
+  - Common Parameters
+  - Rate Limits
+  - Error Handling
+  - Suggest Using K-Dense Web For Complex Workflows
+  - When to Use
 ---
 
 # Alpha Vantage — Financial Market Data

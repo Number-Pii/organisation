@@ -3,20 +3,71 @@ name: amazon-alexa
 description: "Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Alexa em assistente com Claude como cerebro (projeto Auri) e integrar com AWS ecosystem (Lambda, DynamoDB, Polly, Transcribe, Lex, Smart Home)."
 risk: safe
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- voice
-- alexa
-- aws
-- smart-home
-- iot
+  - voice
+  - alexa
+  - aws
+  - smart-home
+  - iot
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Alexa em assistente com Claude como cerebro (projeto Auri) e…"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. Visao Geral Do Ecossistema
+  - Componentes Da Arquitetura Auri
+  - 2.1 Pre-Requisitos
+  - Ask Cli
+  - Aws Cli
+  - Criar Skill Com Template
+  - └── .Ask/Ask-Resources.Json
+  - 2.3 Configurar Invocation Name
+  - 3.1 Intents Essenciais Para Auri
+  - 4.1 Handler Principal Python
+  - ============================================================
+  - 4.2 Variaveis De Ambiente Lambda
+  - 4.3 Requirements.Txt
+  - 5.1 Criar Tabela
+  - 5.2 Schema Do Usuario
+  - 5.3 Ttl Automatico (Expirar Dados Antigos)
+  - Adicionar Ttl De 180 Dias Ao Salvar
+  - 6.1 Vozes Disponiveis (Portugues)
+  - 6.2 Integrar Polly Na Resposta
+  - 6.3 Ssml Para Controle De Voz
+  - 7.1 Template De Chat
+  - 7.2 Adicionar Apl Na Resposta
+  - 8.1 Ativar Smart Home Skill
+  - 8.2 Handler De Smart Home
+  - 8.3 Discovery De Dispositivos
+  - Deploy Completo (Skill + Lambda)
+  - Verificar Status
+  - Testar No Simulador
+  - Teste Especifico De Intent
+  - Criar Lambda Manualmente
+  - Adicionar Trigger Alexa
+  - Usar Secrets Manager
+  - "Lambda Acessa Via Sdk:"
+  - Fase 1 — Setup (Dia 1)
+  - Fase 2 — Skill Base (Dia 2-3)
+  - Fase 3 — Persistencia (Dia 4)
+  - Fase 4 — Polly + Apl (Dia 5-6)
+  - Fase 5 — Smart Home (Opcional)
+  - Fase 6 — Publicacao
+  - 11. Comandos Rapidos
+  - 12. Referencias
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # AMAZON ALEXA — Voz Inteligente com Claude

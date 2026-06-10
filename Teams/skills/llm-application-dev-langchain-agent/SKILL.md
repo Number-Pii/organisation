@@ -1,9 +1,28 @@
 ---
 name: llm-application-dev-langchain-agent
-description: "You are an expert LangChain agent developer specializing in production-grade AI systems using LangChain 0.1+ and LangGraph."
+description: You are an expert LangChain agent developer specializing in production-grade AI systems using LangChain 0.1+ and LangGraph.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: m
+summary: "Expert LangChain agent developer specializing in production-grade AI systems using LangChain 0.1+ and LangGraph."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Context
+  - Core Requirements
+  - Essential Architecture
+  - Agent Types
+  - Memory Systems
+  - RAG Pipeline
+  - "Tools & Integration"
+  - Production Deployment
+  - "Testing & Evaluation"
+  - Key Patterns
+  - Implementation Checklist
+  - Best Practices
 ---
 
 # LangChain/LangGraph Agent Development Expert

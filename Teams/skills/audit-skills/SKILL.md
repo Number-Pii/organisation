@@ -6,8 +6,30 @@ risk: safe
 source: community
 date_added: "2026-03-07"
 author: MAIOStudio
-tags: [security, audit, skills, bundles, cross-platform]
-tools: [claude, gemini, gpt, llama, mistral, etc]
+tags:
+  - security
+  - audit
+  - skills
+  - bundles
+  - cross-platform
+tools:
+  - claude
+  - gemini
+  - gpt
+  - llama
+  - mistral
+  - etc
+domain: Skills Tooling
+size_class: s
+summary: Expert security auditor for AI Skills and Bundles.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 <!-- security-allowlist: curl-pipe-bash -->

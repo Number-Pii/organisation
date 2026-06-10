@@ -4,6 +4,19 @@ description: "Build and deploy the same feature consistently across web, mobile,
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: m
+summary: "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - "Phase 1: Architecture and API Design (Sequential)"
+  - "Phase 2: Parallel Platform Implementation"
+  - "Phase 3: Integration and Validation"
+  - Configuration Options
+  - Success Criteria
+  - Platform-Specific Considerations
 ---
 
 # Multi-Platform Feature Development Workflow

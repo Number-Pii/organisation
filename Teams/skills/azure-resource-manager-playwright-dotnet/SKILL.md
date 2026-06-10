@@ -3,7 +3,25 @@ name: azure-resource-manager-playwright-dotnet
 description: Azure Resource Manager SDK for Microsoft Playwright Testing in .NET.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Azure Resource Manager SDK for Microsoft Playwright Testing in .NET.
+detail_sections:
+  - Installation
+  - Environment Variables
+  - Authentication
+  - Resource Hierarchy
+  - Core Workflow
+  - Key Types Reference
+  - Workspace Properties
+  - Best Practices
+  - Error Handling
+  - Integration with Test Execution
+  - Related SDKs
+  - API Information
+  - Documentation Links
+  - When to Use
 ---
 
 # Azure.ResourceManager.Playwright (.NET)

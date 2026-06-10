@@ -4,6 +4,25 @@ description: "Master AngularJS to Angular migration, including hybrid apps, comp
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Master AngularJS to Angular migration, including hybrid apps, component conversion, dependency injection changes, and routing migration."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Migration Strategies
+  - Hybrid App Setup
+  - Component Migration
+  - Service Migration
+  - Dependency Injection Changes
+  - Routing Migration
+  - Forms Migration
+  - Migration Timeline
+  - Resources
+  - Best Practices
+  - Common Pitfalls
 ---
 
 # Angular Migration

@@ -4,6 +4,30 @@ description: "Build applications that programmatically interact with GitHub Copi
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: Build applications that programmatically interact with GitHub Copilot.
+detail_sections:
+  - Prerequisites
+  - Installation
+  - "Core Pattern: Client → Session → Message"
+  - Streaming Responses
+  - Custom Tools
+  - Hooks
+  - MCP Server Integration
+  - Authentication
+  - Session Persistence
+  - Custom Agents
+  - System Message
+  - Skills Integration
+  - "Permission & Input Handlers"
+  - External CLI Server
+  - Client Configuration
+  - Session Configuration
+  - Debugging
+  - Key API Summary
+  - References
+  - When to Use
 ---
 
 # GitHub Copilot SDK

@@ -4,6 +4,19 @@ description: "Convert human-written CLAUDE.md into AI-native structured-label fo
 risk: safe
 source: community
 date_added: "2026-03-11"
+domain: "AI & Machine Learning"
+size_class: l
+summary: Convert human-written CLAUDE.md into AI-native structured-label format.
+detail_sections:
+  - When to Use This Skill
+  - "What Is AI.MD?"
+  - "Why It Works: How LLMs Actually Process Instructions"
+  - "The Conversion Process: What Happens When You Give Me a CLAUDE.md"
+  - Special Techniques Discovered During Battle-Testing
+  - Two-Stage Workflow
+  - AI-Native Template
+  - Anti-Patterns
+  - Real-World Results
 ---
 
 # AI.MD v4 — The Complete AI-Native Conversion System

@@ -4,6 +4,19 @@ description: "Master Electron desktop app development with secure IPC, contextIs
 risk: safe
 source: community
 date_added: "2026-03-12"
+domain: "Frontend & UI"
+size_class: l
+summary: "Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Expertise Areas
+  - Application Lifecycle Management
+  - Common Issue Diagnostics
+  - Best Practices
+  - Limitations
+  - Related Skills
 ---
 
 # Electron Development

@@ -5,6 +5,19 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Identify and exploit authentication and session management vulnerabilities in web applications.
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Examples
+  - Troubleshooting
+  - When to Use
 ---
 
 # Broken Authentication Testing

@@ -4,6 +4,21 @@ description: "Build event-driven applications with Azure Event Grid SDK for Java
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Azure SDKs
+size_class: m
+summary: Build event-driven applications with Azure Event Grid SDK for Java.
+detail_sections:
+  - Installation
+  - Client Creation
+  - Event Types
+  - Core Patterns
+  - Receiving Events
+  - Event Grid Namespaces (MQTT/Pull)
+  - Error Handling
+  - Environment Variables
+  - Best Practices
+  - Trigger Phrases
+  - When to Use
 ---
 
 # Azure Event Grid SDK for Java

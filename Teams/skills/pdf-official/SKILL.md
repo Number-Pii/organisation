@@ -4,6 +4,18 @@ description: "This guide covers essential PDF processing operations using Python
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: This guide covers essential PDF processing operations using Python libraries and command-line tools.
+detail_sections:
+  - Overview
+  - Quick Start
+  - Python Libraries
+  - Command-Line Tools
+  - Common Tasks
+  - Quick Reference
+  - Next Steps
+  - When to Use
 ---
 
 # PDF Processing Guide

@@ -4,6 +4,14 @@ description: "Generate two complementary onboarding documents that together give
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: s
+summary: Generate two complementary onboarding documents that together give any engineer — from newcomer to principal — a complete understanding of a codebase.
+detail_sections:
+  - When to Use
+  - Language Detection
+  - "Guide 1: Principal-Level Onboarding"
+  - "Guide 2: Zero-to-Hero Contributor Guide"
 ---
 
 # Wiki Onboarding Guide Generator

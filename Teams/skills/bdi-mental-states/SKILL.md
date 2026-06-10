@@ -1,8 +1,25 @@
 ---
 name: bdi-mental-states
-description: This skill should be used when the user asks to "model agent mental states", "implement BDI architecture", "create belief-desire-intention models", "transform RDF to beliefs", "build cognitive agent", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration.
+description: "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\", \"transform RDF to beliefs\", \"build cognitive agent\", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration."
 risk: unknown
 source: community
+domain: "Health & Wellness"
+size_class: m
+summary: "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\"…"
+detail_sections:
+  - When to Use
+  - Core Concepts
+  - T2B2T Paradigm
+  - Notation Selection by Level
+  - Justification and Explainability
+  - Temporal Dimensions
+  - Compositional Mental Entities
+  - Integration Patterns
+  - Guidelines
+  - Competency Questions
+  - Anti-Patterns
+  - Integration
+  - References
 ---
 
 # BDI Mental State Modeling
@@ -293,4 +310,3 @@ Primary sources:
 - Zuppiroli et al. "The Belief-Desire-Intention Ontology" (2025)
 - Rao & Georgeff "BDI agents: From theory to practice" (1995)
 - Bratman "Intention, plans, and practical reason" (1987)
-

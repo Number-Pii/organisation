@@ -4,6 +4,26 @@ description: "Static Application Security Testing (SAST) tool setup, configurati
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "Static Application Security Testing (SAST) tool setup, configuration, and custom rule creation for comprehensive security scanning across multiple…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Overview
+  - Core Capabilities
+  - Quick Start
+  - Reference Documentation
+  - "Templates & Assets"
+  - Integration Patterns
+  - Best Practices
+  - Common Use Cases
+  - Troubleshooting
+  - Related Skills
+  - Tool Comparison
+  - Next Steps
 ---
 
 # SAST Configuration

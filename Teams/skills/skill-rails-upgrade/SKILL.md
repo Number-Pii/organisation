@@ -1,9 +1,27 @@
 ---
 name: skill-rails-upgrade
-description: "Analyze Rails apps and provide upgrade assessments"
+description: Analyze Rails apps and provide upgrade assessments
 risk: safe
 source: "https://github.com/robzolkos/skill-rails-upgrade"
 date_added: "2026-02-27"
+domain: Skills Tooling
+size_class: m
+summary: Analyze Rails apps and provide upgrade assessments
+detail_sections:
+  - When to Use This Skill
+  - "Step 1: Verify Rails Application"
+  - "Step 2: Get Current Rails Version"
+  - "Step 3: Find Latest Rails Version"
+  - "Step 4: Determine Upgrade Type"
+  - "Step 5: Fetch Upgrade Guide"
+  - "Step 6: Fetch Rails Diff"
+  - "Step 7: Check JavaScript Dependencies"
+  - "Step 8: Generate Upgrade Summary"
+  - "Step 9: Selective File Update (replaces `rails app:update`)"
+  - "Upgrade Plan: Rails X.Y.Z → A.B.C"
+  - "Step 10: Finalize Framework Defaults"
+  - Error Handling
+  - Key Principles
 ---
 
 ## When to Use This Skill

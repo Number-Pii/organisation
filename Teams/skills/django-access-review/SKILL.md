@@ -3,6 +3,19 @@ name: django-access-review
 description: django-access-review
 risk: unknown
 source: community
+domain: "Security & Penetration Testing"
+size_class: m
+summary: django-access-review
+detail_sections:
+  - "Philosophy: Investigation Over Pattern Matching"
+  - "Phase 1: Understand the Authorization Model"
+  - "Phase 2: Map the Attack Surface"
+  - "Phase 3: Ask Questions and Investigate"
+  - "Phase 4: Trace Specific Flows"
+  - "Phase 5: Report Findings"
+  - "Access Control Review: [Component]"
+  - Common Django Authorization Patterns
+  - Investigation Checklist
 ---
 
 ---

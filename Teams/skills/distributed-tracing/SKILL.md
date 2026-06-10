@@ -1,9 +1,29 @@
 ---
 name: distributed-tracing
-description: "Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices."
+description: Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Distributed Tracing Concepts
+  - Jaeger Setup
+  - Application Instrumentation
+  - Context Propagation
+  - Tempo Setup (Grafana)
+  - Sampling Strategies
+  - Trace Analysis
+  - Best Practices
+  - Integration with Logging
+  - Troubleshooting
+  - Reference Files
+  - Related Skills
 ---
 
 # Distributed Tracing

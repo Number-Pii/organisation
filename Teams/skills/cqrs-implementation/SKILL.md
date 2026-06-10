@@ -4,6 +4,14 @@ description: "Implement Command Query Responsibility Segregation for scalable ar
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: Implement Command Query Responsibility Segregation for scalable architectures.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # CQRS Implementation

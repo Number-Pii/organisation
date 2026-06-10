@@ -4,6 +4,15 @@ description: "Build robust, production-grade backtesting systems that avoid comm
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: xs
+summary: "Build robust, production-grade backtesting systems that avoid common pitfalls and produce reliable strategy performance estimates."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Backtesting Frameworks

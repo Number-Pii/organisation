@@ -4,6 +4,19 @@ description: "Design patterns for building autonomous coding agents, inspired by
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "AI & Machine Learning"
+size_class: l
+summary: "Design patterns for building autonomous coding agents, inspired by [Cline](https://github.com/cline/cline) and [OpenAI…"
+detail_sections:
+  - When to Use This Skill
+  - 1. Core Agent Architecture
+  - 2. Tool Design Patterns
+  - "3. Permission & Safety Patterns"
+  - 4. Browser Automation
+  - 5. Context Management
+  - 6. MCP (Model Context Protocol) Integration
+  - Best Practices Checklist
+  - Resources
 ---
 
 # 🕹️ Autonomous Agent Patterns

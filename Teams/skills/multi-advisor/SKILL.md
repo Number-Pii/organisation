@@ -3,19 +3,46 @@ name: multi-advisor
 description: "Conselho de especialistas — consulta multiplos agentes do ecossistema em paralelo para analise multi-perspectiva de qualquer topico. Ativa personas, especialistas e agentes tecnicos simultaneamente, cada um pela sua otica unica, e consolida em sintese decisoria final."
 risk: none
 source: community
-date_added: '2026-03-06'
+date_added: "2026-03-06"
 author: renat
 tags:
-- multi-agent
-- advisory
-- parallel-analysis
-- synthesis
+  - multi-agent
+  - advisory
+  - parallel-analysis
+  - synthesis
 tools:
-- claude-code
-- antigravity
-- cursor
-- gemini-cli
-- codex-cli
+  - claude-code
+  - antigravity
+  - cursor
+  - gemini-cli
+  - codex-cli
+domain: "AI & Machine Learning"
+size_class: m
+summary: Conselho de especialistas — consulta multiplos agentes do ecossistema em paralelo para analise multi-perspectiva de qualquer topico.
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Do Not Use This Skill When
+  - How It Works
+  - 1. O Principio
+  - 2.1 Personas Disponiveis
+  - 2.2 Boards Pre-Configurados
+  - 3.1 Fluxo Standard
+  - 3.2 Como Invocar Cada Persona
+  - 4.1 Estrutura Do Conselho
+  - "Multi-Advisor: [Topico]"
+  - "[Persona 1] — [Angulo Principal]"
+  - "[Persona 2] — [Angulo Principal]"
+  - Sintese Do Board
+  - "Exemplo 1: Decisao De Produto"
+  - "Exemplo 2: Investimento"
+  - "Exemplo 3: Estrategia De Ia"
+  - 6. Regras Do Board
+  - 7. Consulta Customizada
+  - 8. Integracao Com Ecossistema
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
 ---
 
 # MULTI-ADVISOR: Board de Especialistas em Paralelo

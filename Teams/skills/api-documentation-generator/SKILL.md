@@ -4,6 +4,23 @@ description: "Generate comprehensive, developer-friendly API documentation from 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, and best practices"
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - How It Works
+  - Examples
+  - Create User
+  - User Query
+  - Authentication
+  - Best Practices
+  - Documentation Structure
+  - Common Pitfalls
+  - Tools and Formats
+  - Related Skills
+  - Additional Resources
 ---
 
 # API Documentation Generator

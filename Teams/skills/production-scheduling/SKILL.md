@@ -1,9 +1,22 @@
 ---
 name: production-scheduling
-description: Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and batch manufacturing.
+description: "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and batch manufacturing."
 risk: safe
-source: https://github.com/ai-evos/agent-skills
-date_added: '2026-02-27'
+source: "https://github.com/ai-evos/agent-skills"
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and…"
+detail_sections:
+  - When to Use
+  - Role and Context
+  - Core Knowledge
+  - Decision Frameworks
+  - Key Edge Cases
+  - Communication Patterns
+  - Escalation Protocols
+  - Performance Indicators
+  - Additional Resources
 ---
 
 ## When to Use

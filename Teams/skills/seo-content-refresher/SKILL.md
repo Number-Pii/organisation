@@ -1,9 +1,21 @@
 ---
 name: seo-content-refresher
-description: Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content.
+description: "Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: Identifies outdated elements in provided content and suggests updates to maintain freshness.
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Content Freshness Guidelines
+  - Refresh Priority Matrix
+  - Approach
+  - Output
 ---
 
 ## Use this skill when

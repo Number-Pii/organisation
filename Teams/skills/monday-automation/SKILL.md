@@ -4,6 +4,17 @@ description: "Automate Monday.com work management including boards, items, colum
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Monday.com work management including boards, items, columns, groups, subitems, and updates via Rube MCP (Composio)."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Monday.com Automation via Rube MCP

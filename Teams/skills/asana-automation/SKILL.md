@@ -4,6 +4,17 @@ description: "Automate Asana tasks via Rube MCP (Composio): tasks, projects, sec
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: s
+summary: "Automate Asana tasks via Rube MCP (Composio): tasks, projects, sections, teams, workspaces."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Asana Automation via Rube MCP
