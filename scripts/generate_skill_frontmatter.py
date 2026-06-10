@@ -37,7 +37,7 @@ from audit_skills import parse_frontmatter, size_class_for  # noqa: E402
 
 REPO_ROOT = HERE.parent
 CATEGORIES_MD = REPO_ROOT / "Teams" / "skills" / "CATEGORIES.md"
-SKILL_TOKEN = re.compile(r"`([a-z0-9][a-z0-9\-]*)`")
+SKILL_TOKEN = re.compile(r"`([A-Za-z0-9][A-Za-z0-9_\-]*)`")
 SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
 SUMMARY_MAX = 150
 
