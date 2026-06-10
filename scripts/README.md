@@ -1,6 +1,38 @@
 # Number Pii — Scripts
 
-Three Python 3 scripts that automate deterministic work, saving tokens and time.
+Python 3 scripts that automate deterministic work, saving tokens and time.
+
+---
+
+## `check_writing.py` — Writing Standard Validator
+
+Checks prose deliverables (markdown or plain text) against `WRITING.md`. The banned-phrases
+list is read live from `WRITING.md`, so the standard has a single source of truth.
+
+### Usage
+```bash
+# Professional/technical prose (default Flesch target 30-40)
+python3 scripts/check_writing.py doc/project-brief.md
+
+# Marketing copy (higher readability target)
+python3 scripts/check_writing.py landing-copy.md --target-min 50 --target-max 65
+
+# Treat warnings as failures (editorial gate / CI use)
+python3 scripts/check_writing.py report.md --strict
+```
+
+### What It Checks
+| Severity | Check |
+|----------|-------|
+| FAIL | Em dashes (—) and en dashes (–), with line numbers |
+| FAIL | Banned phrases from `WRITING.md`, with line numbers |
+| FAIL | Three or more consecutive sentences with the same opener |
+| WARN | Flesch Reading Ease outside the target band |
+| WARN | Low sentence-length variety; dominant sentence opener |
+| WARN | Passive voice above ~30% of sentences (approximate) |
+
+Exit code 0 on pass, 1 on any FAIL (or WARN with `--strict`). Code blocks, inline code,
+and HTML comments are excluded from scanning.
 
 ---
 

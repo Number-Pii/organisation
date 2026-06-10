@@ -13,6 +13,37 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.12.0] — 2026-06-10
+
+### Added
+- **Writing Standards Framework.** Writing quality is now a first-class, enforceable
+  system component rather than a single style rule:
+  - **`WRITING.md`** at the toolkit root (on-demand, model-neutral, binding): core
+    directive (prose indistinguishable from a skilled human writer), readability
+    targets (Flesch 30 to 40 professional, 50 to 65 marketing), vocabulary and
+    structural rules, a machine-readable banned-phrases list, banned AI patterns,
+    document-type calibration for technical / product / consultancy / marketing /
+    internal writing, the governance model, and the compliance loop.
+  - **`scripts/check_writing.py`**: automated validator. FAILs on em/en dashes,
+    banned phrases (read live from `WRITING.md`), and repeated sentence openers;
+    WARNs on readability outside target, low sentence variety, and high passive
+    voice. Exit codes suit editorial gates and CI.
+  - **Governance:** Head of Content & SEO owns the standard; Senior Content
+    Strategist is the editorial reviewer for client-facing deliverables. Both role
+    files updated.
+  - **Enforcement embeds:** a Writing quality gate added to all four classification
+    levels (self-check at Level 1 up to mandatory recorded editorial sign-off at
+    Level 4); scaffolded context contracts gain standard #8 (Writing Standards).
+
+### Changed
+- The Writing Style standard in `CLAUDE.md` now bans en dashes as well as em dashes,
+  requires `WRITING.md` to be read before substantial prose work, and names the
+  validator and the owners. `WRITING.md` joins the binding-contract list.
+- All scaffolder templates in `init_project.py` swept clean of em and en dashes so
+  newly scaffolded docs pass the validator from day one.
+- Remaining en dashes in `CLAUDE.md` and `INITIALIZE.md` replaced with hyphens.
+- Protocol version bumped to 2.12 in `CLAUDE.md`; `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.11.0] — 2026-06-10
 
 ### Added

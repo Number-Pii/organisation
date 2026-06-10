@@ -4,13 +4,13 @@
 
 # Number Pii — Organisation Reference
 
-_Version: 2.11 — Last updated: 2026-06-10_
+_Version: 2.12 — Last updated: 2026-06-10_
 
 ---
 
 ## ⛔ MANDATORY READING PROTOCOL — READ BEFORE ANY ACTION
 
-This file, `INITIALIZE.md`, and the project's `doc/` folder are a binding contract. Before answering, coding, or running any command you MUST:
+This file, `INITIALIZE.md`, `WRITING.md`, and the project's `doc/` folder are a binding contract. Before answering, coding, or running any command you MUST:
 
 1. **Read this file in full.**
 2. **Read every relevant `doc/` file**: `project-brief.md`, `team-assignment.md`, `workflow.md`, `version_control.md`, `handover/consolidated_handover.md` (and `codebase-assessment.md` on brownfield projects).
@@ -105,11 +105,11 @@ All code changes — regardless of size, urgency, or who is making them — must
 **Before writing any code or running any git command, read `doc/version_control.md`.** If it specifies branch protection, PR reviews, or a specific branching model, those rules are binding and must be followed for every single change.
 
 ### Writing Style
-All prose, proposals, copy, and documentation produced by any team member (including AI agents) must follow this style rule:
+All prose produced by any team member (including AI agents) must read like the work of a highly skilled human writer: natural, audience-appropriate, and free of AI signalling patterns. This applies to every written output: docs, handover notes, client-facing copy, and in-code comments alike.
 
-- **No em dashes (—).** Use commas for light pauses, semicolons for related clauses, and periods for full stops instead.
-
-This applies to every written output: docs, handover notes, client-facing copy, and in-code comments alike.
+- **No em dashes (—) and no en dashes (–).** Use commas, semicolons, colons, or periods; write ranges with "to" or a plain hyphen.
+- **Before producing any substantial prose deliverable** (documentation, specs, reports, proposals, marketing or client copy), read `WRITING.md` at the toolkit root in full. It defines readability targets, vocabulary and structural rules, the banned-phrases list, and the editorial review process, and it carries the same binding force as this file.
+- **Validate before handover:** run `python3 scripts/check_writing.py <file>` and fix every FAIL finding. The Head of Content & SEO owns the standard; the Senior Content Strategist reviews client-facing deliverables.
 
 <!-- CACHE_BOUNDARY -->
 
@@ -119,5 +119,5 @@ This applies to every written output: docs, handover notes, client-facing copy, 
 
 The full protocol lives in [INITIALIZE.md](INITIALIZE.md) at the toolkit root; it is loaded on demand to keep the always-loaded context small, and it carries the same binding force as this file.
 
-When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1–4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure, mapped onto the six-stage Software Delivery Lifecycle (Discovery, Planning, Implementation, Verification, Deployment, Operations). Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
+When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1-4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure, mapped onto the six-stage Software Delivery Lifecycle (Discovery, Planning, Implementation, Verification, Deployment, Operations). Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
 
