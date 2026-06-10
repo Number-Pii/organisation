@@ -2,7 +2,7 @@
 
 > The virtual organisational structure for Number Pii, a fully-staffed, elite team built to help sole traders, startups, and SMEs grow through digital solutions. This repository is the single source of truth for team composition, role definitions, reporting lines, and operational governance.
 
-Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company is owned and operated by its co-founders, **Olatunbosun Iyare** and **Destiny Ihejirika**, who hold final decision-making authority; the virtual organisation documented here exists to execute on their behalf (see [Governance](Teams/organisation.md#governance-two-layers)). The company operates across three pillars:
+Number Pii is a **software company and technology consultancy** focused on helping sole traders, startups, and SMEs grow through digital solutions. The company is owned and operated by its co-founders, **Olatunbosun Iyare** and **Destiny Ihejirika** (both he/him), who hold final decision-making authority; the virtual organisation documented here exists to execute on their behalf (see [Governance](Teams/organisation.md#governance-two-layers)). The company operates across three pillars:
 
 | Pillar | What They Do |
 |--------|-------------|

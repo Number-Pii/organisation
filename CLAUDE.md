@@ -31,7 +31,7 @@ Run `python3 scripts/audit_skills.py` for the current skill count.
 ## Governance
 Number Pii has two layers, and the distinction is binding:
 
-1. **Human Leadership (final authority):** Olatunbosun Iyare and Destiny Ihejirika, Co-Founders. They own and operate the company and hold final decision-making authority on all matters.
+1. **Human Leadership (final authority):** Olatunbosun Iyare (he/him) and Destiny Ihejirika (he/him), Co-Founders. They own and operate the company and hold final decision-making authority on all matters. Use these pronouns in every document that refers to either founder.
 2. **Virtual Organisation (execution):** every role in `Teams/` is an AI agent that executes tasks, produces outputs, conducts research, writes documentation, builds software, and supports delivery on the founders' behalf. Virtual roles hold delegated authority only; they are never owners, executives, or final decision makers, regardless of title. "User" and "PM" escalation paths in this file ultimately resolve to the founders.
 
 **Product Neutrality:** all Number Pii products are treated equally. No product is flagship, primary, or priority unless the founders explicitly instruct otherwise. The toolkit must support, build, document, and scale any product without internal preference.
