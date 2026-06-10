@@ -4,6 +4,20 @@ description: "Modern React UI patterns for loading states, error handling, and d
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Modern React UI patterns for loading states, error handling, and data fetching."
+detail_sections:
+  - Core Principles
+  - Loading State Patterns
+  - Error Handling Patterns
+  - Button State Patterns
+  - Empty States
+  - Form Submission Pattern
+  - Anti-Patterns
+  - Checklist
+  - Integration with Other Skills
+  - When to Use
 ---
 
 # React UI Patterns

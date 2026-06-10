@@ -4,6 +4,17 @@ description: "Use before creative or constructive work (features, architecture, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Use before creative or constructive work (features, architecture, behavior)."
+detail_sections:
+  - Purpose
+  - Operating Mode
+  - The Process
+  - After the Design
+  - Exit Criteria (Hard Stop Conditions)
+  - Key Principles (Non-Negotiable)
+  - When to Use
 ---
 
 # Brainstorming Ideas Into Designs

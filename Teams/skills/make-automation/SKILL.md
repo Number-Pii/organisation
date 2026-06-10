@@ -4,6 +4,18 @@ description: "Automate Make (Integromat) tasks via Rube MCP (Composio): operatio
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and timezone lookups."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - Additional Notes
+  - When to Use
 ---
 
 # Make Automation via Rube MCP

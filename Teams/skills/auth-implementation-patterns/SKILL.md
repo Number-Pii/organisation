@@ -4,6 +4,15 @@ description: "Build secure, scalable authentication and authorization systems us
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: xs
+summary: "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Resources
 ---
 
 # Authentication & Authorization Implementation Patterns

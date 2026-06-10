@@ -1,9 +1,47 @@
 ---
 name: data-storytelling
-description: "Transform raw data into compelling narratives that drive decisions and inspire action."
+description: Transform raw data into compelling narratives that drive decisions and inspire action.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: m
+summary: Transform raw data into compelling narratives that drive decisions and inspire action.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Story Frameworks
+  - The Hook
+  - The Context
+  - The Problem
+  - The Insight
+  - The Solution
+  - Expected Impact
+  - Call to Action
+  - Where We Started
+  - What Changed
+  - The Transformation
+  - Key Insight
+  - Going Forward
+  - The Question
+  - The Comparison
+  - The Analysis
+  - The Recommendation
+  - Risk Mitigation
+  - Visualization Techniques
+  - Presentation Templates
+  - THE HEADLINE
+  - KEY METRICS AT A GLANCE
+  - "WHAT'S WORKING"
+  - WHAT NEEDS ATTENTION
+  - ROOT CAUSE
+  - RECOMMENDATION
+  - "NEXT MONTH'S FOCUS"
+  - Writing Techniques
+  - Best Practices
+  - Resources
 ---
 
 # Data Storytelling

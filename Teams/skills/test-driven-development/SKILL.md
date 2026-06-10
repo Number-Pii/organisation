@@ -4,6 +4,24 @@ description: "Use when implementing any feature or bugfix, before writing implem
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Use when implementing any feature or bugfix, before writing implementation code"
+detail_sections:
+  - Overview
+  - When to Use
+  - The Iron Law
+  - Red-Green-Refactor
+  - Good Tests
+  - Why Order Matters
+  - Common Rationalizations
+  - Red Flags - STOP and Start Over
+  - "Example: Bug Fix"
+  - Verification Checklist
+  - When Stuck
+  - Debugging Integration
+  - Testing Anti-Patterns
+  - Final Rule
 ---
 
 # Test-Driven Development (TDD)

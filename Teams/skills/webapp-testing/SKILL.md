@@ -4,6 +4,17 @@ description: "To test local web applications, write native Python Playwright scr
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: "To test local web applications, write native Python Playwright scripts."
+detail_sections:
+  - "Decision Tree: Choosing Your Approach"
+  - "Example: Using with_server.py"
+  - Reconnaissance-Then-Action Pattern
+  - Common Pitfall
+  - Best Practices
+  - Reference Files
+  - When to Use
 ---
 
 # Web Application Testing

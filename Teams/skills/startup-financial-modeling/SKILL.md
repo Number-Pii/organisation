@@ -3,7 +3,24 @@ name: startup-financial-modeling
 description: "Build comprehensive 3-5 year financial models with revenue projections, cost structures, cash flow analysis, and scenario planning for early-stage startups."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Build comprehensive 3-5 year financial models with revenue projections, cost structures, cash flow analysis, and scenario planning for early-stage…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Overview
+  - Core Components
+  - Financial Model Structure
+  - Step-by-Step Process
+  - Business Model Templates
+  - Fundraising Integration
+  - Common Pitfalls
+  - Model Validation
+  - Additional Resources
+  - Quick Start
 ---
 
 # Startup Financial Modeling

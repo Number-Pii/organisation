@@ -4,6 +4,16 @@ description: "Expert in threat modeling methodologies, security architecture rev
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "Expert in threat modeling methodologies, security architecture review, and risk assessment."
+detail_sections:
+  - Capabilities
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - Best Practices
 ---
 
 # Threat Modeling Expert

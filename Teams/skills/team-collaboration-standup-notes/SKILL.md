@@ -4,6 +4,16 @@ description: "You are an expert team communication specialist focused on async-f
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: xs
+summary: "Async standup notes generated from commit history and team activity."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Resources
 ---
 
 # Standup Notes Generator

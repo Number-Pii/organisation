@@ -3,7 +3,18 @@ name: hig-patterns
 description: Apple Human Interface Guidelines interaction and UX patterns.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: s
+summary: Apple Human Interface Guidelines interaction and UX patterns.
+detail_sections:
+  - Key Principles
+  - Reference Index
+  - Pattern Selection Guide
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Apple HIG: Interaction Patterns

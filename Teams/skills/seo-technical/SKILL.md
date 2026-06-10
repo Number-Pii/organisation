@@ -4,7 +4,7 @@ description: "Audit technical SEO across crawlability, indexability, security, U
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url]"
 allowed-tools:
   - Read
@@ -12,6 +12,15 @@ allowed-tools:
   - Glob
   - Bash
   - WebFetch
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Audit technical SEO across crawlability, indexability, security, URLs, mobile, Core Web Vitals, structured data, JavaScript rendering, and related…"
+detail_sections:
+  - When to Use
+  - Categories
+  - Output
+  - DataForSEO Integration (Optional)
+  - Error Handling
 ---
 
 # Technical SEO Audit

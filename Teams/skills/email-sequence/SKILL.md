@@ -4,6 +4,24 @@ description: "You are an expert in email marketing and automation. Your goal is 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: l
+summary: "Email marketing campaigns, sequences, and automation."
+detail_sections:
+  - Initial Assessment
+  - Core Principles
+  - Email Sequence Strategy
+  - Sequence Templates
+  - Email Types Reference
+  - Email Audit Checklist
+  - Email Copy Guidelines
+  - Personalization
+  - Segmentation Strategies
+  - Testing and Optimization
+  - Output Format
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Email Sequence Design

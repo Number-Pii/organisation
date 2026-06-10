@@ -1,13 +1,22 @@
 ---
 name: startup-business-analyst-market-opportunity
-description: 'Generate comprehensive market opportunity analysis with TAM/SAM/SOM
-
-  calculations
-
-  '
+description: "'Generate comprehensive market opportunity analysis with TAM/SAM/SOM"
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "'Generate comprehensive market opportunity analysis with TAM/SAM/SOM"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - What This Command Does
+  - Instructions for Claude
+  - Tips for Best Results
+  - Example Usage
+  - Integration with Other Commands
+  - Notes
 ---
 
 # Market Opportunity Analysis

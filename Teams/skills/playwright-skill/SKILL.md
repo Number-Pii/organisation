@@ -4,6 +4,23 @@ description: "IMPORTANT - Path Resolution: This skill can be installed in differ
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "IMPORTANT - Path Resolution: This skill can be installed in different locations (plugin system, manual installation, global, or project-specific)."
+detail_sections:
+  - How It Works
+  - Setup (First Time)
+  - Execution Pattern
+  - Common Patterns
+  - Inline Execution (Simple Tasks)
+  - Available Helpers
+  - Custom HTTP Headers
+  - Advanced Usage
+  - Tips
+  - Troubleshooting
+  - Example Usage
+  - Notes
+  - When to Use
 ---
 
 **IMPORTANT - Path Resolution:**

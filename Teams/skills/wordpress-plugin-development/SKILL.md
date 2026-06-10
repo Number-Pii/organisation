@@ -5,6 +5,16 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, and security best practices."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Plugin Structure
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # WordPress Plugin Development Workflow

@@ -1,13 +1,25 @@
 ---
 name: security-scanning-security-sast
-description: 'Static Application Security Testing (SAST) for code vulnerability
-
-  analysis across multiple languages and frameworks
-
-  '
+description: "'Static Application Security Testing (SAST) for code vulnerability"
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: "'Static Application Security Testing (SAST) for code vulnerability"
+detail_sections:
+  - Capabilities
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Safety
+  - SAST Tool Selection
+  - Vulnerability Patterns
+  - Framework Security
+  - Multi-Language Scanner Implementation
+  - CI/CD Integration
+  - Best Practices
+  - Related Tools
 ---
 # SAST Security Plugin
 

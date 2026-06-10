@@ -1,9 +1,17 @@
 ---
 name: aws-serverless
-description: "Proper Lambda function structure with error handling"
+description: Proper Lambda function structure with error handling
 risk: unknown
-source: "vibeship-spawner-skills (Apache 2.0)"
+source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Proper Lambda function structure with error handling
+detail_sections:
+  - Patterns
+  - Anti-Patterns
+  - ⚠️ Sharp Edges
+  - When to Use
 ---
 
 # AWS Serverless

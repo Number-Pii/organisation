@@ -1,9 +1,28 @@
 ---
 name: grafana-dashboards
-description: "Create and manage production-ready Grafana dashboards for comprehensive system observability."
+description: Create and manage production-ready Grafana dashboards for comprehensive system observability.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: m
+summary: Create and manage production-ready Grafana dashboards for comprehensive system observability.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Use this skill when
+  - Dashboard Design Principles
+  - Dashboard Structure
+  - Panel Types
+  - Variables
+  - Alerts in Dashboards
+  - Dashboard Provisioning
+  - Common Dashboard Patterns
+  - Best Practices
+  - Dashboard as Code
+  - Reference Files
+  - Related Skills
 ---
 
 # Grafana Dashboards

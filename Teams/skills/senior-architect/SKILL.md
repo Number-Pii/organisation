@@ -1,9 +1,23 @@
 ---
 name: senior-architect
-description: "Complete toolkit for senior architect with modern tools and best practices."
+description: Complete toolkit for senior architect with modern tools and best practices.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: Complete toolkit for senior architect with modern tools and best practices.
+detail_sections:
+  - Quick Start
+  - Core Capabilities
+  - Reference Documentation
+  - Tech Stack
+  - Development Workflow
+  - Best Practices Summary
+  - Common Commands
+  - Troubleshooting
+  - Resources
+  - When to Use
 ---
 
 # Senior Architect

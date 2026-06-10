@@ -4,6 +4,22 @@ description: "Jest testing patterns, factory functions, mocking strategies, and 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Jest testing patterns, factory functions, mocking strategies, and TDD workflow."
+detail_sections:
+  - Testing Philosophy
+  - Test Utilities
+  - Factory Pattern
+  - Mocking Patterns
+  - Test Structure
+  - Query Patterns
+  - User Interaction Patterns
+  - Anti-Patterns to Avoid
+  - Best Practices
+  - Running Tests
+  - Integration with Other Skills
+  - When to Use
 ---
 
 # Testing Patterns and Utilities

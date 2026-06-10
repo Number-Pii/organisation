@@ -4,6 +4,42 @@ description: "Comprehensive patterns for creating, maintaining, and managing Arc
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: m
+summary: "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture the context and rationale behind…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Core Concepts
+  - Templates
+  - Status
+  - Context
+  - Decision Drivers
+  - Considered Options
+  - Decision
+  - Rationale
+  - Consequences
+  - Implementation Notes
+  - Related Decisions
+  - References
+  - Migration Plan
+  - Lessons Learned
+  - Summary
+  - Motivation
+  - Detailed Design
+  - Drawbacks
+  - Alternatives
+  - Unresolved Questions
+  - Implementation Plan
+  - ADR Management
+  - Index
+  - Creating a New ADR
+  - ADR Status
+  - Review Process
+  - ADR Review Checklist
+  - Best Practices
+  - Resources
 ---
 
 # Architecture Decision Records

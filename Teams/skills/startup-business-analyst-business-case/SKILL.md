@@ -1,13 +1,23 @@
 ---
 name: startup-business-analyst-business-case
-description: 'Generate comprehensive investor-ready business case document with
-
-  market, solution, financials, and strategy
-
-  '
+description: "'Generate comprehensive investor-ready business case document with"
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "'Generate comprehensive investor-ready business case document with"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - What This Command Does
+  - Instructions for Claude
+  - Business Case Document Structure
+  - Best Practices
+  - Integration with Other Commands
+  - Example Usage
+  - Notes
 ---
 
 # Business Case Generator

@@ -5,6 +5,23 @@ category: framework
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: l
+summary: "Enterprise Node.js architecture with Nest.js: dependency injection, decorators, modules."
+detail_sections:
+  - "When invoked:"
+  - Domain Coverage
+  - Environmental Adaptation
+  - Tool Integration
+  - "Problem-Specific Approaches (Real Issues from GitHub & Stack Overflow)"
+  - "Common Patterns & Solutions"
+  - Code Review Checklist
+  - Decision Trees for Architecture
+  - Performance Optimization
+  - External Resources
+  - Quick Reference Patterns
+  - Success Metrics
+  - When to Use
 ---
 
 # Nest.js Expert

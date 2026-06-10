@@ -4,6 +4,22 @@ description: "6. Reduces Clutter: Identifies old files you probably don't need a
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: 6.
+detail_sections:
+  - When to Use This Skill
+  - What This Skill Does
+  - Instructions
+  - Current State
+  - Proposed Structure
+  - "Changes I'll Make"
+  - Files Needing Your Decision
+  - What Changed
+  - New Structure
+  - Maintenance Tips
+  - Quick Commands for You
+  - Best Practices
 ---
 
 # File Organizer

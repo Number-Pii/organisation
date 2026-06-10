@@ -10,7 +10,7 @@ OVERVIEW
   Role files scanned                        : 53
   Unique @skill refs in Agent Skills        : 164
   Broken @skill refs (no matching folder)   : 0
-  Skills with extended frontmatter          : 16/1294 (1%)
+  Skills with extended frontmatter          : 196/1294 (15%)
 
 CORE + TECHNICAL SKILL BULLET COVERAGE
   Total Core Skill bullets                  : 336
@@ -24,6 +24,50 @@ UNLINKED SKILLS (not referenced in any role)
   Skills in Teams/skills/ referenced        : 195
   Skills in Teams/skills/ NOT referenced    : 1099
   (Many are highly specialised: Azure SDKs, health tools, etc.)
+
+EXTENDED FRONTMATTER ISSUES
+  ~ accessibility-compliance-accessibility-audit
+      • size_class 'xs' doesn't match line count 55 (expected 's')
+  ~ architecture-patterns
+      • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ auth-implementation-patterns
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ aws-cost-optimizer
+      • size_class 's' doesn't match line count 207 (expected 'm')
+  ~ billing-automation
+      • size_class 'xs' doesn't match line count 54 (expected 's')
+  ~ code-review-excellence
+      • size_class 'xs' doesn't match line count 52 (expected 's')
+  ~ data-storytelling
+      • size_class 'm' doesn't match line count 506 (expected 'l')
+  ~ deployment-validation-config-validate
+      • size_class 'm' doesn't match line count 509 (expected 'l')
+  ~ design-md
+      • size_class 's' doesn't match line count 200 (expected 'm')
+  ~ discord-automation
+      • size_class 's' doesn't match line count 201 (expected 'm')
+  ~ employment-contract-templates
+      • size_class 'xs' doesn't match line count 51 (expected 's')
+  ~ flutter-expert
+      • size_class 's' doesn't match line count 210 (expected 'm')
+  ~ instagram-automation
+      • size_class 's' doesn't match line count 207 (expected 'm')
+  ~ pci-compliance
+      • size_class 'm' doesn't match line count 501 (expected 'l')
+  ~ product-manager
+      • size_class 'xs' doesn't match line count 58 (expected 's')
+  ~ security-scanning-security-dependencies
+      • size_class 'xs' doesn't match line count 57 (expected 's')
+  ~ security-scanning-security-sast
+      • size_class 'm' doesn't match line count 508 (expected 'l')
+  ~ senior-frontend
+      • size_class 'm' doesn't match line count 504 (expected 'l')
+  ~ seo-audit
+      • size_class 'm' doesn't match line count 507 (expected 'l')
+  ~ startup-business-analyst-business-case
+      • size_class 'm' doesn't match line count 502 (expected 'l')
+  ~ team-collaboration-standup-notes
+      • size_class 'xs' doesn't match line count 57 (expected 's')
 
 PER-ROLE SUMMARY
   Role                                                    Agent   Core   Tech  Inline

@@ -4,6 +4,22 @@ description: "Essential tools and frameworks for modern product management, from
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Planning & Workflow"
+size_class: m
+summary: "Essential tools and frameworks for modern product management, from discovery to delivery."
+detail_sections:
+  - Quick Start
+  - Core Workflows
+  - Key Scripts
+  - Reference Documents
+  - Prioritization Frameworks
+  - Discovery Frameworks
+  - "Metrics & Analytics"
+  - Best Practices
+  - Common Pitfalls to Avoid
+  - Integration Points
+  - Quick Commands Cheat Sheet
+  - When to Use
 ---
 
 # Product Manager Toolkit

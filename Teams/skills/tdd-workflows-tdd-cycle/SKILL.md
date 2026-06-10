@@ -1,9 +1,32 @@
 ---
 name: tdd-workflows-tdd-cycle
-description: "Use when working with tdd workflows tdd cycle"
+description: Use when working with tdd workflows tdd cycle
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: Use when working with tdd workflows tdd cycle
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Configuration
+  - "Phase 1: Test Specification and Design"
+  - "Phase 2: RED - Write Failing Tests"
+  - "Phase 3: GREEN - Make Tests Pass"
+  - "Phase 4: REFACTOR - Improve Code Quality"
+  - "Phase 5: Integration and System Tests"
+  - "Phase 6: Continuous Improvement Cycle"
+  - Incremental Development Mode
+  - Test Suite Mode
+  - Validation Checkpoints
+  - Coverage Reports
+  - Failure Recovery
+  - TDD Metrics Tracking
+  - Anti-Patterns to Avoid
+  - Success Criteria
+  - Notes
 ---
 
 ## Use this skill when

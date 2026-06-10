@@ -1,9 +1,30 @@
 ---
 name: design-md
-description: "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files"
+description: Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
 risk: safe
 source: "https://github.com/google-labs-code/stitch-skills/tree/main/skills/design-md"
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
+detail_sections:
+  - When to Use This Skill
+  - Overview
+  - Prerequisites
+  - The Goal
+  - Retrieval and Networking
+  - "Analysis & Synthesis Instructions"
+  - Output Guidelines
+  - Output Format (DESIGN.md Structure)
+  - "1. Visual Theme & Atmosphere"
+  - "2. Color Palette & Roles"
+  - 3. Typography Rules
+  - 4. Component Stylings
+  - 5. Layout Principles
+  - Usage Example
+  - Best Practices
+  - Tips for Success
+  - Common Pitfalls to Avoid
 ---
 
 # Stitch DESIGN.md Skill

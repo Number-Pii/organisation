@@ -4,8 +4,26 @@ description: "Create sales collateral such as decks, one-pagers, objection docs,
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "Business & Strategy"
+size_class: m
+summary: "Create sales collateral such as decks, one-pagers, objection docs, demo scripts, playbooks, and proposal templates."
+detail_sections:
+  - When to Use
+  - Before Starting
+  - Core Principles
+  - Sales Deck / Pitch Deck
+  - One-Pagers / Leave-Behinds
+  - Objection Handling Docs
+  - "ROI Calculators & Value Props"
+  - "Demo Scripts & Talk Tracks"
+  - Case Study Briefs (Sales Format)
+  - Proposal Templates
+  - Sales Playbooks
+  - Buyer Persona Cards
+  - Output Format
+  - Task-Specific Questions
+  - Related Skills
 ---
 
 # Sales Enablement

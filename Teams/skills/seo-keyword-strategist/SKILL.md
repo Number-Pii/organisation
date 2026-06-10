@@ -1,9 +1,21 @@
 ---
 name: seo-keyword-strategist
-description: Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization.
+description: "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: s
+summary: "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Focus Areas
+  - Keyword Density Guidelines
+  - Entity Analysis Framework
+  - Approach
+  - Output
 ---
 
 ## Use this skill when

@@ -5,6 +5,18 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: l
+summary: "Master essential security scanning tools for network discovery, vulnerability assessment, web application testing, wireless security, and compliance…"
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - Troubleshooting
+  - When to Use
 ---
 
 # Security Scanning Tools

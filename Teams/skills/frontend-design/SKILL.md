@@ -4,6 +4,21 @@ description: "You are a frontend designer-engineer, not a layout generator."
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Design-led frontend engineering for distinctive, production-ready interfaces."
+detail_sections:
+  - 1. Core Design Mandate
+  - "2. Design Feasibility & Impact Index (DFII)"
+  - 3. Mandatory Design Thinking Phase
+  - 4. Aesthetic Execution Rules (Non-Negotiable)
+  - 5. Implementation Standards
+  - 6. Required Output Structure
+  - 7. Anti-Patterns (Immediate Failure)
+  - 8. Integration With Other Skills
+  - 9. Operator Checklist
+  - 10. Questions to Ask (If Needed)
+  - When to Use
 ---
 
 # Frontend Design (Distinctive, Production-Grade)

@@ -4,6 +4,19 @@ description: "Structured guide for setting up A/B tests with mandatory gates for
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: m
+summary: "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness."
+detail_sections:
+  - "1️⃣ Purpose & Scope"
+  - 2️⃣ Pre-Requisites
+  - Running the Test
+  - Analyzing Results
+  - "Documentation & Learning"
+  - Refusal Conditions (Safety)
+  - Key Principles (Non-Negotiable)
+  - Final Reminder
+  - When to Use
 ---
 
 # A/B Test Setup

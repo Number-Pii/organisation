@@ -4,6 +4,19 @@ description: "Performance profiling principles. Measurement, analysis, and optim
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Testing & QA"
+size_class: s
+summary: Performance profiling principles.
+detail_sections:
+  - 🔧 Runtime Scripts
+  - 1. Core Web Vitals
+  - 2. Profiling Workflow
+  - 3. Bundle Analysis
+  - 4. Runtime Profiling
+  - 5. Common Bottlenecks
+  - 6. Quick Win Priorities
+  - 7. Anti-Patterns
+  - When to Use
 ---
 
 # Performance Profiling

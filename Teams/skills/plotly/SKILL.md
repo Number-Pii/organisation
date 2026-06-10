@@ -1,11 +1,21 @@
 ---
 name: plotly
-description: Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualization.
+description: "Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualization."
 license: MIT license
-metadata:
-    skill-author: K-Dense Inc.
+metadata: []
 risk: unknown
 source: community
+domain: "Data Science & Visualisation"
+size_class: m
+summary: Interactive visualization library.
+detail_sections:
+  - Quick Start
+  - Choosing Between APIs
+  - Core Capabilities
+  - Common Workflows
+  - Integration with Dash
+  - Reference Files
+  - Additional Resources
 ---
 
 # Plotly

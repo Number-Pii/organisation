@@ -1,9 +1,26 @@
 ---
 name: shopify-development
-description: Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid.
+description: "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid."
+detail_sections:
+  - "ROUTING: What to Build"
+  - Shopify CLI Commands
+  - Access Scopes
+  - GraphQL Patterns (Validated against API 2026-01)
+  - Checkout Extension Example
+  - Liquid Template Example
+  - Webhook Configuration
+  - Best Practices
+  - Troubleshooting
+  - Reference Files
+  - Scripts
+  - Official Documentation Links
+  - When to Use
 ---
 
 # Shopify Development Skill

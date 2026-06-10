@@ -1,13 +1,10 @@
 ---
 name: seo-content
-description: >
-  Content quality and E-E-A-T analysis with AI citation readiness assessment.
-  Use when user says "content quality", "E-E-A-T", "content analysis",
-  "readability check", "thin content", or "content audit".
+description: ">"
 risk: unknown
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
-user-invokable: true
+user-invokable: "true"
 argument-hint: "[url]"
 allowed-tools:
   - Read
@@ -15,6 +12,19 @@ allowed-tools:
   - Glob
   - Bash
   - WebFetch
+domain: "SEO & Content Marketing"
+size_class: s
+summary: ">"
+detail_sections:
+  - When to Use
+  - E-E-A-T Framework (updated Sept 2025 QRG)
+  - Content Metrics
+  - AI Content Assessment (Sept 2025 QRG addition)
+  - AI Citation Readiness (GEO signals)
+  - Content Freshness
+  - Output
+  - DataForSEO Integration (Optional)
+  - Error Handling
 ---
 
 # Content Quality & E-E-A-T Analysis

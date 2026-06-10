@@ -4,6 +4,18 @@ description: "You are a compliance expert specializing in regulatory requirement
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: s
+summary: "Regulatory compliance for software: GDPR, HIPAA, SOC2, PCI-DSS."
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Context
+  - Requirements
+  - Instructions
+  - Safety
+  - Output Format
+  - Resources
 ---
 
 # Regulatory Compliance Check

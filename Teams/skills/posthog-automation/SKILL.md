@@ -4,6 +4,17 @@ description: "Automate PostHog tasks via Rube MCP (Composio): events, feature fl
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate PostHog tasks via Rube MCP (Composio): events, feature flags, projects, user profiles, annotations."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # PostHog Automation via Rube MCP

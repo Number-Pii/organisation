@@ -3,7 +3,22 @@ name: page-cro
 description: Analyze and optimize individual pages for conversion performance.
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: Analyze and optimize individual pages for conversion performance.
+detail_sections:
+  - "Phase 0: Page Conversion Readiness & Impact Index (Required)"
+  - "🔢 Page Conversion Readiness & Impact Index"
+  - "Phase 1: Context & Goal Alignment"
+  - "Phase 2: CRO Diagnostic Framework"
+  - "Phase 3: Recommendations & Prioritization"
+  - Output Format (Required)
+  - Page-Type Specific Guidance
+  - Experiment Guardrails
+  - Questions to Ask (If Needed)
+  - Related Skills
+  - When to Use
 ---
 # Page Conversion Rate Optimization (CRO)
 You are an expert in **page-level conversion optimization**.

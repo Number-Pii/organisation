@@ -1,9 +1,27 @@
 ---
 name: analytics-tracking
-description: Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data.
+description: "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Data Science & Visualisation"
+size_class: m
+summary: "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data."
+detail_sections:
+  - "Phase 0: Measurement Readiness & Signal Quality Index (Required)"
+  - "🔢 Measurement Readiness & Signal Quality Index"
+  - "Phase 1: Context & Decision Definition"
+  - Core Principles (Non-Negotiable)
+  - Event Model Design
+  - Conversion Strategy
+  - "GA4 & GTM (Implementation Guidance)"
+  - "UTM & Attribution Discipline"
+  - "Validation & Debugging"
+  - "Privacy & Compliance"
+  - Output Format (Required)
+  - Questions to Ask (If Needed)
+  - Related Skills
+  - When to Use
 ---
 
 # Analytics Tracking & Measurement Strategy

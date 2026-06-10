@@ -5,6 +5,15 @@ category: granular-workflow-bundle
 risk: safe
 source: personal
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: s
+summary: "Terraform infrastructure as code workflow for provisioning cloud resources, creating reusable modules, and managing infrastructure at scale."
+detail_sections:
+  - Overview
+  - When to Use This Workflow
+  - Workflow Phases
+  - Quality Gates
+  - Related Workflow Bundles
 ---
 
 # Terraform Infrastructure Workflow

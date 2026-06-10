@@ -4,6 +4,19 @@ description: "Master modern React state management with Redux Toolkit, Zustand, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Frontend & UI"
+size_class: m
+summary: "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query."
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - Core Concepts
+  - Quick Start
+  - Patterns
+  - Best Practices
+  - Migration Guides
+  - Resources
 ---
 
 # React State Management

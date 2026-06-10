@@ -4,6 +4,16 @@ description: "Expert guidance for building modern Android UIs with Jetpack Compo
 risk: safe
 source: community
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: s
+summary: "Expert guidance for building modern Android UIs with Jetpack Compose, covering state management, navigation, performance, and Material Design 3."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - Step-by-Step Guide
+  - Examples
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Android Jetpack Compose Expert

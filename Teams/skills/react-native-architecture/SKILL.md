@@ -4,6 +4,14 @@ description: "Production-ready patterns for React Native development with Expo, 
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: Mobile Development
+size_class: xs
+summary: "Production-ready patterns for React Native development with Expo, including navigation, state management, native modules, and offline-first…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # React Native Architecture

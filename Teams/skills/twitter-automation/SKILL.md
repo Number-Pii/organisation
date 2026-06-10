@@ -4,6 +4,17 @@ description: "Automate Twitter/X tasks via Rube MCP (Composio): posts, search, u
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SaaS Integrations & Automation"
+size_class: m
+summary: "Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, media."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Twitter/X Automation via Rube MCP

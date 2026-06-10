@@ -1,10 +1,16 @@
 ---
 name: professional-proofreader
-description: >
-    Use when a user asks to "proofread", "review and correct", "fix grammar", "improve readability while keeping my voice", and to proofread a document file and save an updated version.
+description: ">"
 risk: safe
 source: original
 date_added: "2026-03-04"
+domain: "Documentation & Office"
+size_class: s
+summary: ">"
+detail_sections:
+  - Overview
+  - When to Use
+  - Best Practices
 ---
 
 # Professional Proofreader

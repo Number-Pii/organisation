@@ -4,6 +4,20 @@ description: "Expert in Drizzle ORM for TypeScript — schema design, relational
 risk: safe
 source: community
 date_added: "2026-03-04"
+domain: "Backend & APIs"
+size_class: m
+summary: "Expert in Drizzle ORM for TypeScript — schema design, relational queries, migrations, and serverless database integration."
+detail_sections:
+  - When to Use This Skill
+  - Core Concepts
+  - Schema Design Patterns
+  - Query Patterns
+  - Migration Workflow (Drizzle Kit)
+  - Database Client Setup
+  - Performance Optimization
+  - Next.js Integration
+  - Best Practices
+  - Troubleshooting
 ---
 
 # Drizzle ORM Expert

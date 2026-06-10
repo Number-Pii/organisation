@@ -4,6 +4,17 @@ description: "This skill provides a structured workflow for guiding users throug
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Documentation & Office"
+size_class: m
+summary: This skill provides a structured workflow for guiding users through collaborative document creation.
+detail_sections:
+  - When to Offer This Workflow
+  - "Stage 1: Context Gathering"
+  - "Stage 2: Refinement & Structure"
+  - "Stage 3: Reader Testing"
+  - Final Review
+  - Tips for Effective Guidance
+  - When to Use
 ---
 
 # Doc Co-Authoring Workflow

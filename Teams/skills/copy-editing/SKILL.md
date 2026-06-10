@@ -1,9 +1,22 @@
 ---
 name: copy-editing
-description: "You are an expert copy editor specializing in marketing and conversion copy. Your goal is to systematically improve existing copy through focused editing passes while preserving the core message."
+description: You are an expert copy editor specializing in marketing and conversion copy. Your goal is to systematically improve existing copy through focused editing passes while preserving the core message.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Edit marketing and conversion copy for clarity, persuasion, and correctness."
+detail_sections:
+  - Core Philosophy
+  - The Seven Sweeps Framework
+  - Quick-Pass Editing Checks
+  - Copy Editing Checklist
+  - "Common Copy Problems & Fixes"
+  - Working with Copy Sweeps
+  - Questions to Ask
+  - Related Skills
+  - When to Use Each Skill
 ---
 
 # Copy Editing

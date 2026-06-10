@@ -1,9 +1,23 @@
 ---
 name: senior-frontend
-description: Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding frontend projects, implementing accessibility, or reviewing frontend code quality.
+description: "Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications. Use when building React components, optimizing Next.js performance, analyzing bundle sizes, scaffolding frontend projects, implementing accessibility, or reviewing frontend code quality."
 risk: safe
-source: https://github.com/alirezarezvani/claude-skills
+source: "https://github.com/alirezarezvani/claude-skills"
 date_added: "2026-03-07"
+domain: "Frontend & UI"
+size_class: m
+summary: "Frontend development skill for React, Next.js, TypeScript, and Tailwind CSS applications."
+detail_sections:
+  - When to Use
+  - Table of Contents
+  - Project Scaffolding
+  - Component Generation
+  - Bundle Analysis
+  - React Patterns
+  - Next.js Optimization
+  - Accessibility and Testing
+  - Quick Reference
+  - Resources
 ---
 
 # Senior Frontend

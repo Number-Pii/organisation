@@ -4,6 +4,14 @@ description: "Master microservices architecture patterns including service bound
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Backend & APIs"
+size_class: xs
+summary: "Master microservices architecture patterns including service boundaries, inter-service communication, data management, and resilience patterns for…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Resources
 ---
 
 # Microservices Patterns

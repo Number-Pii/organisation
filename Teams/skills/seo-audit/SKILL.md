@@ -1,9 +1,29 @@
 ---
 name: seo-audit
-description: Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
+description: "Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "SEO & Content Marketing"
+size_class: m
+summary: "Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance."
+detail_sections:
+  - Scope Gate (Ask First if Missing)
+  - Audit Framework (Priority Order)
+  - Technical SEO Audit
+  - On-Page SEO Audit
+  - "Content Quality & E-E-A-T"
+  - "🔢 SEO Health Index & Scoring Layer (Additive)"
+  - Scoring Model Overview
+  - Category Scoring Rules
+  - Example (Category)
+  - Overall SEO Health Index
+  - Health Bands (Required)
+  - Output Requirements (Scoring Section)
+  - Interpretation Rules (Mandatory)
+  - Change Tracking (Optional but Recommended)
+  - Explicit Limitations (Always State)
+  - When to Use
 ---
 
 # SEO Audit

@@ -4,8 +4,26 @@ description: "Design and improve revenue operations, lead lifecycle rules, scori
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "Business & Strategy"
+size_class: m
+summary: "Design and improve revenue operations, lead lifecycle rules, scoring, routing, handoffs, and CRM process automation."
+detail_sections:
+  - When to Use
+  - Before Starting
+  - Core Principles
+  - Lead Lifecycle Framework
+  - Lead Scoring
+  - Lead Routing
+  - Pipeline Stage Management
+  - CRM Automation Workflows
+  - Deal Desk Processes
+  - "Data Hygiene & Enrichment"
+  - RevOps Metrics Dashboard
+  - Output Format
+  - Task-Specific Questions
+  - Tool Integrations
+  - Related Skills
 ---
 
 # RevOps

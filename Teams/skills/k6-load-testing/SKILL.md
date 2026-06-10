@@ -6,8 +6,37 @@ risk: safe
 source: community
 date_added: "2026-03-13"
 author: Kairo Official
-tags: [k6, load-testing, performance, api-testing, ci-cd]
-tools: [claude, cursor, gemini]
+tags:
+  - k6
+  - load-testing
+  - performance
+  - api-testing
+  - ci-cd
+tools:
+  - claude
+  - cursor
+  - gemini
+domain: "Testing & QA"
+size_class: l
+summary: "Comprehensive k6 load testing skill for API, browser, and scalability testing."
+detail_sections:
+  - Overview
+  - When to Use This Skill
+  - k6 Basics
+  - Test Configuration
+  - HTTP Testing
+  - Browser Testing (k6 Browser)
+  - WebSocket Testing
+  - Data Handling
+  - "Thresholds & SLA"
+  - Custom Metrics
+  - CI/CD Integration
+  - Results Analysis
+  - Examples
+  - Best Practices
+  - Common Pitfalls
+  - Related Skills
+  - Additional Resources
 ---
 
 # k6 Load Testing

@@ -4,6 +4,17 @@ description: "Automate Figma tasks via Rube MCP (Composio): files, components, d
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Creative & Design"
+size_class: s
+summary: "Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports."
+detail_sections:
+  - Prerequisites
+  - Setup
+  - Core Workflows
+  - Common Patterns
+  - Known Pitfalls
+  - Quick Reference
+  - When to Use
 ---
 
 # Figma Automation via Rube MCP

@@ -5,6 +5,17 @@ risk: unknown
 source: community
 author: zebbern
 date_added: "2026-02-27"
+domain: "DevOps & Infrastructure"
+size_class: l
+summary: "Provide production-ready shell script templates for common Linux system administration tasks including backups, monitoring, user management, log…"
+detail_sections:
+  - Purpose
+  - Prerequisites
+  - Outputs and Deliverables
+  - Core Workflow
+  - Quick Reference
+  - Constraints and Limitations
+  - When to Use
 ---
 
 # Linux Production Shell Scripts

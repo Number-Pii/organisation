@@ -4,8 +4,22 @@ description: "Write B2B cold emails and follow-up sequences that earn replies. U
 risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
-metadata:
-  version: 1.1.0
+metadata: []
+domain: "SEO & Content Marketing"
+size_class: s
+summary: Write B2B cold emails and follow-up sequences that earn replies.
+detail_sections:
+  - When to Use
+  - Before Writing
+  - Writing Principles
+  - "Voice & Tone"
+  - Structure
+  - Subject Lines
+  - Follow-Up Sequences
+  - Quality Check
+  - What to Avoid
+  - "Data & Benchmarks"
+  - Related Skills
 ---
 
 # Cold Email Writing

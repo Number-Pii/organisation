@@ -1,9 +1,29 @@
 ---
 name: pci-compliance
-description: "Master PCI DSS (Payment Card Industry Data Security Standard) compliance for secure payment processing and handling of cardholder data."
+description: Master PCI DSS (Payment Card Industry Data Security Standard) compliance for secure payment processing and handling of cardholder data.
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Security & Penetration Testing"
+size_class: m
+summary: Master PCI DSS (Payment Card Industry Data Security Standard) compliance for secure payment processing and handling of cardholder data.
+detail_sections:
+  - Do not use this skill when
+  - Instructions
+  - Use this skill when
+  - PCI DSS Requirements (12 Core Requirements)
+  - Compliance Levels
+  - Data Minimization (Never Store)
+  - Tokenization
+  - Encryption
+  - Access Control
+  - Audit Logging
+  - Security Best Practices
+  - PCI DSS SAQ (Self-Assessment Questionnaire)
+  - Compliance Checklist
+  - Resources
+  - Common Violations
+  - Reducing PCI Scope
 ---
 
 # PCI Compliance

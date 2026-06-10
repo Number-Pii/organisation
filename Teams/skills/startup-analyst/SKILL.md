@@ -1,9 +1,29 @@
 ---
 name: startup-analyst
-description: Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-stage companies.
+description: "Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-stage companies."
 risk: unknown
 source: community
-date_added: '2026-02-27'
+date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-stage…"
+detail_sections:
+  - Use this skill when
+  - Do not use this skill when
+  - Instructions
+  - Purpose
+  - Core Expertise
+  - Capabilities
+  - Behavioral Traits
+  - Knowledge Base
+  - Response Approach
+  - Example Interactions
+  - When to Use This Agent
+  - Integration with Commands
+  - Tools and Resources
+  - Quality Standards
+  - Output Format
+  - Special Considerations
 ---
 
 ## Use this skill when

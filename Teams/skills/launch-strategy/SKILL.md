@@ -4,6 +4,20 @@ description: "You are an expert in SaaS product launches and feature announcemen
 risk: unknown
 source: community
 date_added: "2026-02-27"
+domain: "Business & Strategy"
+size_class: m
+summary: "Plan and execute SaaS product launches and feature announcements."
+detail_sections:
+  - Core Philosophy
+  - The ORB Framework
+  - Five-Phase Launch Approach
+  - Product Hunt Launch Strategy
+  - Post-Launch Product Marketing
+  - Ongoing Launch Strategy
+  - Launch Checklist
+  - Questions to Ask
+  - Related Skills
+  - When to Use
 ---
 
 # Launch Strategy
