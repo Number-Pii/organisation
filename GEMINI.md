@@ -4,7 +4,7 @@
 
 # Number Pii: Organisation Reference
 
-_Version: 2.13 | Last updated: 2026-06-10_
+_Version: 2.14 | Last updated: 2026-06-23_
 
 ---
 
@@ -123,4 +123,8 @@ All prose produced by any team member (including AI agents) must read like the w
 The full protocol lives in [INITIALIZE.md](INITIALIZE.md) at the toolkit root; it is loaded on demand to keep the always-loaded context small, and it carries the same binding force as this file.
 
 When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1-4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure, mapped onto the six-stage Software Delivery Lifecycle (Discovery, Planning, Implementation, Verification, Deployment, Operations). Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
+
+## GitHub Project Orchestration
+
+When a project has more than one contributor (human or AI), the toolkit plans the work and a GitHub Project board runs it. The rules for turning a plan into owned, tracked issues, the six standard workflow states, and the ownership-locking convention live in [GITHUB_ORCHESTRATION.md](GITHUB_ORCHESTRATION.md) at the toolkit root. It is loaded on demand and carries the same binding force as this file. The mechanics are the `@github-project-orchestrator` skill and `scripts/gh_project_sync.py`; the board is scaffolded into each project as `doc/task-board.md` (Step 5b of the Initialize Protocol). Before starting any task on a shared board, query it first and claim the task; never start work another contributor has already claimed.
 

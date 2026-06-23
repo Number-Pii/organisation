@@ -28,6 +28,7 @@ jobs:
           python -m py_compile scripts/generate_skill_frontmatter.py
           python -m py_compile scripts/check_writing.py
           python -m py_compile scripts/check_handover.py
+          python -m py_compile scripts/gh_project_sync.py
 
       # Run the skill audit — fails if any @skill refs are broken
       - name: Audit skill coverage
