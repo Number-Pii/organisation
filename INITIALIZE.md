@@ -16,7 +16,7 @@ Every engagement moves through six stages, whether it is a Number Pii product, a
 | Stage | Covered by | Primary outputs |
 |---|---|---|
 | **1. Discovery** | Steps 2, 2b, 2c | Vision, requirements, scope, classification level (`doc/project-brief.md`) |
-| **2. Planning** | Steps 3, 4, 5 | Team, technical design, backlog (`team-assignment.md`, `workflow.md`, `version_control.md`, `architecture.md` at Level 3+) |
+| **2. Planning** | Steps 3, 4, 5, 5b | Team, technical design, backlog (`team-assignment.md`, `workflow.md`, `version_control.md`, `task-board.md`, `architecture.md` at Level 3+) |
 | **3. Implementation** | `workflow.md` phases | Code, tests, documentation |
 | **4. Verification** | Quality gates in `workflow.md` | QA results, security review, performance review |
 | **5. Deployment** | Release process in `version_control.md`; Step 8 | Release package, deployment guide |
@@ -140,6 +140,7 @@ With the project brief and confirmed team, fill in the scaffolded files:
 | `doc/team-assignment.md` | Each assigned role, their specific responsibilities on this project |
 | `doc/workflow.md` | Step-by-step responsibility chain; mark each task as sequential or parallel |
 | `doc/version_control.md` | Git branching strategy appropriate for project complexity |
+| `doc/task-board.md` | Execution board config and the backlog decomposed from `workflow.md` (see Step 5b) |
 | `doc/handover/consolidated_handover.md` | Current state: project brief summary + what's done (nothing yet) + next steps |
 | `doc/architecture.md` | System design, components, NFRs, failure modes; **Level 3+ only** (created by `--level 3` or `--level 4`) |
 | `doc/codebase-assessment.md` | Existing architecture, stack, tech debt, quality baseline, risks; **brownfield only** (created by `--existing`) |
@@ -162,6 +163,38 @@ Example for a landing page redesign:
 7. [SEQUENTIAL] QA Automation Engineer: Verify functionality and performance
 8. [SEQUENTIAL] PM: Oversee final deployment and sign-off
 ```
+
+### Step 5b: Set Up the Execution Board (GitHub Project Orchestration)
+> Apply this step whenever a project has more than one contributor, human or AI. A
+> single-contributor Level 1 task may skip it. The binding rules live in
+> `GITHUB_ORCHESTRATION.md` at the toolkit root; read it before the first sync.
+
+The toolkit plans the work; GitHub Projects runs it. Once `doc/workflow.md` holds the task
+chain, decompose that chain into a backlog and put it on a shared board so ownership is clear
+and no two contributors work the same task.
+
+1. Open `doc/task-board.md` (scaffolded in Step 4). Fill the Board Configuration table with the
+   GitHub Project number, the project owner, and the repository.
+2. Break the workflow tasks into small, assignable rows in the Backlog table. Give each an owner
+   (a human role from `team-assignment.md`, or an `@agent-skill`), an area, and a priority. Use
+   `@github-project-orchestrator` for the decomposition and `@create-issue-gate` for acceptance
+   criteria.
+3. Preview, then push the backlog to the board:
+   ```bash
+   python3 organisation/scripts/gh_project_sync.py push --dry-run
+   python3 organisation/scripts/gh_project_sync.py push
+   ```
+
+From this point the board is the single source of truth for what is claimed. Before any team
+member (human or AI) starts an implementation task, they MUST query the board and confirm the
+task is free:
+
+```bash
+python3 organisation/scripts/gh_project_sync.py query
+```
+
+Starting work on a claimed task, or duplicating one already in progress, is a collaboration
+failure. Claim first, then work.
 
 ### Step 6: Scope Discipline (Non-Negotiable)
 Once `doc/project-brief.md` is finalised, it defines the **boundary of all work** on this project.

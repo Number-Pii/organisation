@@ -13,6 +13,35 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.14.0]: 2026-06-23
+
+### Added
+- **GitHub Project Orchestration Layer (foundational v1).** The toolkit now plans
+  the work and a GitHub Project board runs it. New binding spec
+  `GITHUB_ORCHESTRATION.md` at the root defines six standard workflow states
+  (Backlog, Ready, In Progress, Review, Blocked, Completed), a label taxonomy, the
+  owner registry (human roles and virtual agents), and a GitHub-native
+  ownership-locking convention: a task is claimed once it has an assignee and sits
+  in In Progress, so the board is the single source of truth and no separate ledger
+  drifts.
+- **`scripts/gh_project_sync.py`:** a deterministic `gh` CLI wrapper with `push`,
+  `assign`, `query`, and `link` subcommands, each supporting `--dry-run`. It reads a
+  project's backlog from `doc/task-board.md`, creates labelled issues, adds them to
+  the project, and reports board ownership so contributors query before claiming.
+- **`@github-project-orchestrator` skill** (Planning & Workflow): the agentic loop
+  for decomposing epics, matching owners, and claiming work without collision. It
+  cross-links `@create-issue-gate`, `@github-issue-creator`, and
+  `@acceptance-orchestrator`.
+- **`doc/task-board.md` scaffold:** `init_project.py` now creates a task board in
+  every project, holding the board configuration and the backlog decomposed from
+  `workflow.md`.
+
+### Changed
+- `INITIALIZE.md` gains Step 5b (set up the execution board) under the Planning
+  stage, with an awareness-first rule before any implementation task.
+- `CLAUDE.md` adds a GitHub Project Orchestration pointer; protocol version bumped
+  to 2.14. `GEMINI.md` and `AGENTS.md` regenerated.
+
 ## [3.13.4]: 2026-06-10
 
 ### Changed

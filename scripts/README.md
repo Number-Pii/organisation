@@ -128,6 +128,7 @@ doc/
 ├── team-assignment.md        # Assigned team members and their responsibilities
 ├── workflow.md               # Step-by-step task chain + level quality gates
 ├── version_control.md        # Git strategy, branching, PR rules
+├── task-board.md             # Execution board config + backlog for gh_project_sync.py
 ├── architecture.md           # System design (created at --level 3 and 4 only)
 └── handover/
     ├── consolidated_handover.md   # Current project state (always up to date)
@@ -144,6 +145,52 @@ The `doc/handover/` system saves tokens and time when switching AI sessions:
 4. The new session has full context immediately, no re-explanation needed
 
 ---
+
+---
+
+## `gh_project_sync.py`: GitHub Project Orchestration Bridge
+
+Connects a project's planned backlog to a live GitHub Project board. The toolkit plans the
+work; GitHub Projects runs it. Rules for that handoff, the six workflow states, and the
+ownership-locking convention live in `GITHUB_ORCHESTRATION.md` at the toolkit root.
+
+The script reads `doc/task-board.md` (scaffolded by `init_project.py`), creates issues, applies
+the standard labels, adds items to the project, and queries the board so any contributor reads
+current ownership before claiming work.
+
+### Prerequisites
+- GitHub CLI installed and authenticated: `gh auth login` (confirm with `gh auth status`)
+- `doc/task-board.md` present, with the Board Configuration table filled in (project number,
+  project owner, repository)
+
+### Usage
+```bash
+# See who owns what before claiming anything (the awareness step)
+python3 organisation/scripts/gh_project_sync.py query
+
+# Preview the gh calls, then push the backlog to the board
+python3 organisation/scripts/gh_project_sync.py push --dry-run
+python3 organisation/scripts/gh_project_sync.py push
+
+# Claim a task: assign an owner and move its workflow state
+python3 organisation/scripts/gh_project_sync.py assign --issue 42 \
+  --assignee your-handle --state "In Progress"
+
+# Record a blocked-by dependency between two issues
+python3 organisation/scripts/gh_project_sync.py link --issue 42 --blocked-by 40
+```
+
+### Subcommands
+| Command | What it does |
+|---------|--------------|
+| `push` | Create issues from `doc/task-board.md`, label them, and add them to the project (idempotent: skips titles already on the board) |
+| `assign` | Set or clear an issue's owner and move its workflow state (the claim/lock operation) |
+| `query` | List open board items with owner, state, and labels; add `--json` for raw output |
+| `link` | Record a blocked-by dependency between two issues |
+
+Every subcommand accepts `--dry-run`, which prints the `gh` calls without running them. When a
+precondition is missing (no `gh`, not authenticated, or unset configuration), the script stops
+with a clear message rather than guessing.
 
 ---
 
