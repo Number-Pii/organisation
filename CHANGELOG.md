@@ -13,6 +13,20 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.14.1]: 2026-06-24
+
+### Fixed
+- **`gh_project_sync.py` accepts `--dry-run` in either position.** The flag was a
+  global option only, so placing it after the subcommand (`push --dry-run`) failed
+  with an "unrecognized arguments" error, which is the order the docs themselves
+  showed. Each subcommand now also accepts `--dry-run`, so `--dry-run push` and
+  `push --dry-run` are equivalent.
+- **Docs match the working behaviour.** `scripts/README.md` and the
+  `github-project-orchestrator` skill now state that `--dry-run` works before or
+  after the subcommand.
+
+---
+
 ## [3.14.0]: 2026-06-23
 
 ### Added

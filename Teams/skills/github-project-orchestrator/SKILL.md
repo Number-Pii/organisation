@@ -93,7 +93,7 @@ the assignee so the next contributor sees it is free.
 ## Running the Sync
 
 The deterministic mechanics live in `scripts/gh_project_sync.py`. Preview any command with
-`--dry-run` before applying it:
+`--dry-run` before applying it; the flag works before or after the subcommand:
 
 ```bash
 # See current ownership before claiming anything

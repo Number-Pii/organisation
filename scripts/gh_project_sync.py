@@ -450,7 +450,7 @@ def build_parser() -> argparse.ArgumentParser:
                         help="Print the gh commands without running them")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    sub.add_parser("push", help="Create issues from the board file and add them to the project")
+    p_push = sub.add_parser("push", help="Create issues from the board file and add them to the project")
 
     p_assign = sub.add_parser("assign", help="Set/clear an owner and move workflow state")
     p_assign.add_argument("--issue", required=True, type=int, help="Issue number")
@@ -465,6 +465,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_link.add_argument("--issue", required=True, type=int, help="The dependent issue")
     p_link.add_argument("--blocked-by", required=True, type=int, dest="blocked_by",
                         help="The issue that must finish first")
+
+    # Accept --dry-run after the subcommand too, not only before it. SUPPRESS keeps an
+    # absent post-subcommand flag from overwriting a value already set before it.
+    for sp in (p_push, p_assign, p_query, p_link):
+        sp.add_argument("--dry-run", action="store_true", default=argparse.SUPPRESS,
+                        help="Print the gh commands without running them")
 
     return parser
 

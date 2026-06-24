@@ -188,9 +188,10 @@ python3 organisation/scripts/gh_project_sync.py link --issue 42 --blocked-by 40
 | `query` | List open board items with owner, state, and labels; add `--json` for raw output |
 | `link` | Record a blocked-by dependency between two issues |
 
-Every subcommand accepts `--dry-run`, which prints the `gh` calls without running them. When a
-precondition is missing (no `gh`, not authenticated, or unset configuration), the script stops
-with a clear message rather than guessing.
+Every subcommand accepts `--dry-run`, which prints the `gh` calls without running them. The flag
+works in either position, before or after the subcommand (`--dry-run push` and `push --dry-run`
+are equivalent). When a precondition is missing (no `gh`, not authenticated, or unset
+configuration), the script stops with a clear message rather than guessing.
 
 ---
 
