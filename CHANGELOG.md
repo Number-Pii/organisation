@@ -13,6 +13,33 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.14.2]: 2026-07-06
+
+### Added
+- **CI tags releases automatically.** A new `tag-release` job runs on every push
+  to `main` after validation passes; it creates and pushes the annotated
+  `v$(cat VERSION)` tag when it is missing. Releases v3.14.0 and v3.14.1 shipped
+  untagged, and this closes that gap for good. The manual tagging command in
+  `CONTRIBUTING.md` remains as a fallback.
+
+### Fixed
+- **`check_version.py` now covers `AGENTS.md`.** The protocol-version check
+  compared `CLAUDE.md` against `GEMINI.md` only, so a stale `_Version` line in
+  `AGENTS.md` would have passed CI unnoticed. All generated context files are now
+  checked against `CLAUDE.md`.
+- **`scripts/audit_report.md` is no longer tracked.** The file is generated output
+  from `audit_skills.py --report`; it is removed from version control and
+  gitignored, with a note in `scripts/README.md`.
+
+### Changed
+- **`Teams/_role_template.md` matches audit behaviour on Technical Skills.** The
+  template claimed all three skill sections were mandatory, yet nine sales and
+  executive roles omit Technical Skills and the audit accepts them. The template
+  now states that Technical Skills is required for technical roles and optional
+  where a role has no tool-specific competencies.
+
+---
+
 ## [3.14.1]: 2026-06-24
 
 ### Fixed

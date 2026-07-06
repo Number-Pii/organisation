@@ -53,3 +53,31 @@ jobs:
             | grep -v '^scripts/audit_report.md$' \
             | tr '\n' '\0' \
             | xargs -0 python3 scripts/check_writing.py
+
+  # Tag each release automatically: when a version bump lands on main, create
+  # the annotated v$(cat VERSION) tag if it does not exist yet. Consumers and
+  # update.py rely on tags as stable anchors; this closes the gap where merges
+  # shipped untagged.
+  tag-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create release tag if missing
+        run: |
+          VERSION="v$(cat VERSION)"
+          if git rev-parse -q --verify "refs/tags/$VERSION" >/dev/null; then
+            echo "Tag $VERSION already exists; nothing to do."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git tag -a "$VERSION" -m "Release ${VERSION#v}"
+            git push origin "$VERSION"
+            echo "Created and pushed $VERSION."
+          fi

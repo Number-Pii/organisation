@@ -13,3 +13,6 @@ __pycache__/
 *.swp
 *.swo
 *~
+
+# Generated output
+scripts/audit_report.md
