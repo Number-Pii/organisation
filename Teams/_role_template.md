@@ -2,7 +2,8 @@
 
 > **Reference template for all role files in `Teams/[department]/`.**
 > When creating a new role, copy the sections below and fill in the blanks.
-> Every role file **must** contain these seven sections in this order.
+> Every role file **must** contain these sections in this order; only Technical
+> Skills is conditional (see the Style Notes).
 
 ---
 
@@ -42,7 +43,7 @@ Invoke these skills when working as this role:
 
 ## Style Notes (do not include these in the final role file)
 
-- **All three skill sections** (Core, Technical, Agent) must be present even if one is short; `scripts/audit_skills.py` parses section headings.
+- **Core Skills and Agent Skills** must be present in every role file; `scripts/audit_skills.py` parses section headings. **Technical Skills** is required for technical roles (engineering, design tooling, data) and may be omitted where the role has no tool-specific competencies, as in most sales and executive roles. The audit accepts either shape.
 - **Skill naming:** `@skill-name` must match a folder in `Teams/skills/`. Run `python3 scripts/audit_skills.py` to verify.
 - **Kebab-case filenames:** role files use `Role-Title.md` (hyphens, PascalCase words) matching the role's canonical title.
 - **No boilerplate prose:** keep everything tight. The audit script treats `-` bullets as the semantic unit; narrative paragraphs between bullets will not be parsed.

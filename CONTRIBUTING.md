@@ -178,8 +178,12 @@ git config core.hooksPath .githooks
 
 ### Release tagging
 
-After a version bump merges to `main`, tag it so `update.py` and consumers have a
-stable anchor:
+CI tags releases automatically: when a version bump merges to `main`, the
+`tag-release` job creates and pushes an annotated `v$(cat VERSION)` tag if one
+does not exist yet. No manual step is needed on the normal path.
+
+If CI is unavailable, or a historical release needs a retroactive tag, the
+manual fallback is:
 
 ```bash
 git tag -a v3.13.0 -m "Release 3.13.0"

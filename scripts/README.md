@@ -71,6 +71,9 @@ python3 scripts/audit_skills.py --no-color
 python3 scripts/audit_skills.py --report
 ```
 
+> `scripts/audit_report.md` is generated output. It is gitignored and must not be
+> committed; regenerate it locally with `--report` whenever you need a fresh copy.
+
 ### What It Reports
 | Metric | Description |
 |--------|-------------|

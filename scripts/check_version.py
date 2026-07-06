@@ -7,6 +7,7 @@ Checks that the version number is consistent across:
   - CHANGELOG.md (latest heading)
   - CLAUDE.md (protocol version line)
   - GEMINI.md (protocol version line)
+  - AGENTS.md (protocol version line)
 
 Exit code 0 = all in sync, 1 = mismatch found.
 
@@ -37,7 +38,7 @@ def get_changelog_version():
 
 
 def get_md_protocol_version(filename):
-    """Extract toolkit version from CLAUDE.md or GEMINI.md (_Version: X.Y | ...)."""
+    """Extract protocol version from a context file (_Version: X.Y | ...)."""
     path = REPO_ROOT / filename
     for line in path.read_text(encoding="utf-8").splitlines():
         m = re.search(r"_Version:\s*([\d.]+)", line)
@@ -50,18 +51,12 @@ def main():
     version_file = get_version_file()
     changelog    = get_changelog_version()
     claude_ver   = get_md_protocol_version("CLAUDE.md")
-    gemini_ver   = get_md_protocol_version("GEMINI.md")
 
-    sources = {
-        "VERSION":      version_file,
-        "CHANGELOG.md": changelog,
-    }
-
-    # Protocol version (in CLAUDE.md/GEMINI.md) is a separate number from the toolkit version.
-    # But CLAUDE.md and GEMINI.md must match each other.
+    # Protocol version (in the context files) is a separate number from the toolkit
+    # version, but every generated context file must match CLAUDE.md.
     protocol_sources = {
-        "CLAUDE.md": claude_ver,
-        "GEMINI.md": gemini_ver,
+        "GEMINI.md": get_md_protocol_version("GEMINI.md"),
+        "AGENTS.md": get_md_protocol_version("AGENTS.md"),
     }
 
     errors = []
@@ -72,11 +67,12 @@ def main():
             f"  VERSION says {version_file}, CHANGELOG.md says {changelog}"
         )
 
-    # Check protocol version sync: CLAUDE.md vs GEMINI.md
-    if claude_ver != gemini_ver:
-        errors.append(
-            f"  CLAUDE.md protocol version {claude_ver} != GEMINI.md protocol version {gemini_ver}"
-        )
+    # Check protocol version sync: each generated file vs CLAUDE.md
+    for name, ver in protocol_sources.items():
+        if ver != claude_ver:
+            errors.append(
+                f"  CLAUDE.md protocol version {claude_ver} != {name} protocol version {ver}"
+            )
 
     if errors:
         print("VERSION SYNC FAILED:")
@@ -86,7 +82,8 @@ def main():
         print(f"  VERSION file:             {version_file}")
         print(f"  CHANGELOG.md latest:      {changelog}")
         print(f"  CLAUDE.md protocol:       {claude_ver}")
-        print(f"  GEMINI.md protocol:       {gemini_ver}")
+        for name, ver in protocol_sources.items():
+            print(f"  {name} protocol:       {ver}")
         sys.exit(1)
     else:
         print(f"All versions in sync.")

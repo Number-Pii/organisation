@@ -314,6 +314,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes, or run:
 python3 scripts/update.py --changelog
 ```
 
+Every release on `main` is tagged automatically by CI as `vX.Y.Z` (matching the
+`VERSION` file), so a specific release can always be checked out by tag.
+
 ### Version types
 | Version bump | What it means | Action needed |
 |---|---|---|
