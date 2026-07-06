@@ -33,7 +33,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from audit_skills import parse_frontmatter, size_class_for  # noqa: E402
+from lib.frontmatter import parse_frontmatter, size_class_for  # noqa: E402
 
 REPO_ROOT = HERE.parent
 CATEGORIES_MD = REPO_ROOT / "Teams" / "skills" / "CATEGORIES.md"

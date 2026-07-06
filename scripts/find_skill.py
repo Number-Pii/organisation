@@ -40,7 +40,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from audit_skills import parse_frontmatter  # noqa: E402
+from lib.frontmatter import parse_frontmatter  # noqa: E402
 
 ROOT = HERE.parent
 SKILLS_DIR = ROOT / "Teams" / "skills"

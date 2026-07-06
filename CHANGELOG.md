@@ -13,6 +13,39 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.15.0]: 2026-07-06
+
+### Added
+- **Pytest suite for the load-bearing scripts** (`tests/`, run in CI). Golden-file
+  tests pin scaffold output byte for byte at every classification level and in
+  brownfield mode; fixture tests cover the frontmatter and task-board parsers,
+  including malformed input; unit tests cover `check_writing.py` and
+  `check_version.py`. `tests/generate_goldens.py` regenerates the goldens after
+  an intentional template change, and the diff is reviewed in the PR.
+- **CI validates rendered scaffolds against the Writing Standard.** A new step
+  renders a full Level 4 brownfield scaffold and runs `check_writing.py` over
+  every generated file, closing the gap where scaffolded docs landed in
+  consuming repos unchecked.
+
+### Changed
+- **Scaffold templates extracted from code to `templates/*.md`.** All eleven doc
+  templates that lived as inline f-strings in `init_project.py` are now markdown
+  files rendered with stdlib `string.Template`. Wording changes are markdown
+  edits; the script keeps only structure and the `LEVELS` table. The script
+  shrinks from 808 lines to roughly 280.
+- **`version_control.md` scaffolds are level-enforcing, not level-aware.** The
+  Pull Request Rules and Release Process sections now render from the `LEVELS`
+  table: Level 4 writes two approving reviews, CTO-level sign-off, and signed
+  releases into the contract, where every level previously got the same
+  "at least 1 peer review" line.
+- **Shared parser moved to `scripts/lib/`.** The frontmatter parser that
+  `find_skill.py` and `generate_skill_frontmatter.py` imported from
+  `audit_skills.py` via `sys.path` insertion now lives in
+  `scripts/lib/frontmatter.py`; `audit_skills.py` re-exports it so existing
+  import paths keep working.
+
+---
+
 ## [3.14.2]: 2026-07-06
 
 ### Added

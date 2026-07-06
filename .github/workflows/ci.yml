@@ -16,19 +16,17 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Validate Python scripts compile without syntax errors
+      # Validate Python scripts (and scripts/lib/) compile without syntax errors
       - name: Check script syntax
         run: |
-          python -m py_compile scripts/audit_skills.py
-          python -m py_compile scripts/init_project.py
-          python -m py_compile scripts/update.py
-          python -m py_compile scripts/check_version.py
-          python -m py_compile scripts/sync_ai_context.py
-          python -m py_compile scripts/find_skill.py
-          python -m py_compile scripts/generate_skill_frontmatter.py
-          python -m py_compile scripts/check_writing.py
-          python -m py_compile scripts/check_handover.py
-          python -m py_compile scripts/gh_project_sync.py
+          find scripts tests -name '*.py' -print0 | xargs -0 -n1 python -m py_compile
+
+      # Run the pytest suite: golden-file scaffold tests, parser fixtures, and
+      # unit tests for the validators (tests/README.md documents the layout).
+      - name: Run test suite
+        run: |
+          python -m pip install --quiet pytest
+          python -m pytest tests/ -q
 
       # Run the skill audit — fails if any @skill refs are broken
       - name: Audit skill coverage
@@ -52,6 +50,16 @@ jobs:
             | grep -v '^Teams/skills/' \
             | grep -v '^scripts/audit_report.md$' \
             | tr '\n' '\0' \
+            | xargs -0 python3 scripts/check_writing.py
+
+      # Scaffolded docs land in consuming repos, outside this repo's normal
+      # writing check; render a full scaffold and hold it to the same standard.
+      - name: Validate writing standard on rendered scaffold
+        run: |
+          python3 scripts/init_project.py --project-name "CI Render Check" \
+            --departments "engineering,design" --level 4 --existing \
+            --output-dir "$RUNNER_TEMP/scaffold"
+          find "$RUNNER_TEMP/scaffold" -name '*.md' -print0 \
             | xargs -0 python3 scripts/check_writing.py
 
   # Tag each release automatically: when a version bump lands on main, create

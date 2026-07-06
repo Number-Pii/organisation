@@ -127,6 +127,17 @@ Existing skills without the four extension fields still validate (the auditor tr
 
 ---
 
+## Tests and Templates
+
+CI runs the pytest suite in `tests/` on every push and PR (`python3 -m pytest tests/ -q`; see `tests/README.md`). Two conventions matter when contributing:
+
+- **Scaffold wording lives in `templates/*.md`, not in Python.** `scripts/init_project.py` renders those files with `string.Template`; edit the markdown, never inline strings in the script. Level-dependent content (quality gates, PR rules, release process) comes from the `LEVELS` table in the script.
+- **Template changes must regenerate the goldens.** The suite compares scaffold output byte for byte against `tests/golden/`. After an intentional template edit, run `python3 tests/generate_goldens.py`, review `git diff tests/golden` as part of your PR, and commit the result.
+
+Shared script logic (currently the frontmatter parser) lives in `scripts/lib/`; import it from there rather than from another script.
+
+---
+
 ## Bumping the Version
 
 1. Update `VERSION` with the new version number
