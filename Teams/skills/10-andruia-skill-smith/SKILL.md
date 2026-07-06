@@ -7,7 +7,7 @@ risk: safe
 source: personal
 date_added: "2026-02-25"
 domain: Skills Tooling
-size_class: xs
+size_class: s
 summary: Ingeniero de Sistemas de Andru.ia.
 detail_sections:
   - When to Use

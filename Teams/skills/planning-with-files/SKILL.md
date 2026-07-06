@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Planning & Workflow"
-size_class: s
+size_class: m
 summary: "Work like Manus: Use persistent markdown files as your \\\"working memory on disk.\\\""
 detail_sections:
   - "Important: Where Files Go"

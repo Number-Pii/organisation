@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: xs
+size_class: s
 summary: Automatically fetch latest library/framework documentation for Claude Code via Context7 API.
 detail_sections:
   - Overview

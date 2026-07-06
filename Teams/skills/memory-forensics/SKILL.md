@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: m
+size_class: l
 summary: "Comprehensive techniques for acquiring, analyzing, and extracting artifacts from memory dumps for incident response and malware analysis."
 detail_sections:
   - Use this skill when

@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"
-size_class: xs
+size_class: s
 summary: "Build reliable, fast, and maintainable end-to-end test suites that provide confidence to ship code quickly and catch regressions before users do."
 detail_sections:
   - Use this skill when

@@ -13,6 +13,47 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.16.0]: 2026-07-06
+
+### Added
+- **Skill tiers.** Every skill now carries a tier in frontmatter: `curated`
+  (reviewed and role-referenced, 195 skills), `standard` (unreviewed community
+  content, the default), or `archive` (off-charter, 30 skills: celebrity
+  personas, Portuguese legal skills, health analyzers, and two demo-payload
+  skills). The tier is the supply-chain review gate; `CONTRIBUTING.md` gains a
+  promotion checklist and demotion rule.
+- **Canonical markers.** `canonical: true` marks the preferred skill in five
+  duplicate clusters (postgresql, software-architecture, domain-driven-design,
+  test-driven-development, systematic-debugging); canonicals sort first in
+  search and in CATEGORIES.md.
+- **`scripts/build_skills_index.py`.** Generates `Teams/skills/skills-index.json`
+  and regenerates `CATEGORIES.md` from skill frontmatter; CI fails when either
+  drifts. CATEGORIES.md is now generated output with its domain descriptions
+  carried over between generations.
+- **`audit_skills.py --fix`** rewrites stale `size_class` values (117 fixed in
+  this release). The audit also reports tier counts and curated skills whose
+  `risk` is unreviewed.
+
+### Changed
+- **`find_skill.py` searches summaries and gates by tier.** Matching covers
+  names and frontmatter summaries; only curated skills surface by default, with
+  a hidden-match count pointing at `--all` and `--tier`. Canonicals rank first.
+  Results read from `skills-index.json` with a live-scan fallback.
+- **The skill audit now fails CI on drift.** It previously always exited zero,
+  so the "fails on broken refs" gate was inert; broken refs and frontmatter
+  issues now exit non-zero. Five over-length summaries this exposed were
+  trimmed.
+- **Protocol version 2.15.** The Skills section of `CLAUDE.md` documents tiers,
+  canonical preference, and the risk check; `GEMINI.md` and `AGENTS.md`
+  regenerated.
+
+### Removed
+- **22MB of non-functional binary payloads**: `last30days/assets` (14MB of demo
+  media) and `loki-mode` benchmarks and demo gif (8.8MB). Both skills are now
+  archive-tier; the library drops from 63MB to 41MB.
+
+---
+
 ## [3.15.0]: 2026-07-06
 
 ### Added

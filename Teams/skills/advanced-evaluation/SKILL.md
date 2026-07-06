@@ -6,7 +6,7 @@ source: community
 date_added: "2026-03-18"
 domain: "AI & Machine Learning"
 size_class: m
-summary: "This skill should be used when the user asks to \"implement LLM-as-judge\", \"compare model outputs\", \"create evaluation rubrics\", \"mitigate evaluation…"
+summary: "Implement LLM-as-judge pipelines, compare model outputs, and build evaluation rubrics with bias mitigation."
 detail_sections:
   - When to Use
   - Core Concepts

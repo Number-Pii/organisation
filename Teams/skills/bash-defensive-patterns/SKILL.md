@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"
-size_class: xs
+size_class: s
 summary: Master defensive Bash programming techniques for production-grade scripts.
 detail_sections:
   - Use this skill when

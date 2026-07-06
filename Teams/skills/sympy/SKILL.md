@@ -6,7 +6,7 @@ metadata: []
 risk: unknown
 source: "https://github.com/sympy/sympy"
 domain: "Data Science & Visualisation"
-size_class: m
+size_class: l
 summary: SymPy is a Python library for symbolic mathematics that enables exact computation using mathematical symbols rather than numerical approximations.
 detail_sections:
   - Overview

@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
-size_class: s
+size_class: m
 summary: Creates exhaustive technical references and API documentation.
 detail_sections:
   - Use this skill when

@@ -2,6 +2,7 @@
 name: prisma-expert
 description: "You are an expert in Prisma ORM with deep knowledge of schema design, migrations, query optimization, relations modeling, and database operations across PostgreSQL, MySQL, and SQLite."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"

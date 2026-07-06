@@ -5,7 +5,7 @@ risk: none
 source: "https://github.com/conorbronsdon/avoid-ai-writing"
 date_added: "2026-03-06"
 domain: "SEO & Content Marketing"
-size_class: xs
+size_class: s
 summary: Audit and rewrite content to remove 21 categories of AI writing patterns with a 43-entry replacement table
 detail_sections:
   - When to Use This Skill

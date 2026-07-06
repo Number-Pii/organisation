@@ -2,6 +2,7 @@
 name: last30days
 description: "Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool."
 risk: unknown
+tier: archive
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"

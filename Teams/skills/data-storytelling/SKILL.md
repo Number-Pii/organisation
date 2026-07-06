@@ -2,10 +2,11 @@
 name: data-storytelling
 description: Transform raw data into compelling narratives that drive decisions and inspire action.
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Data Science & Visualisation"
-size_class: m
+size_class: l
 summary: Transform raw data into compelling narratives that drive decisions and inspire action.
 detail_sections:
   - Do not use this skill when

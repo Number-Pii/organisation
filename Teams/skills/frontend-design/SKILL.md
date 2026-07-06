@@ -2,6 +2,7 @@
 name: frontend-design
 description: "You are a frontend designer-engineer, not a layout generator."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"

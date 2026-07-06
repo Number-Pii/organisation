@@ -5,7 +5,7 @@ risk: unknown
 source: community
 domain: "Health & Wellness"
 size_class: m
-summary: "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\"…"
+summary: "Model agent mental states with belief-desire-intention (BDI) architectures."
 detail_sections:
   - When to Use
   - Core Concepts

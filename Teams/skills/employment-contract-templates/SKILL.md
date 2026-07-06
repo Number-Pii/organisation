@@ -2,10 +2,11 @@
 name: employment-contract-templates
 description: "Templates and patterns for creating legally sound employment documentation including contracts, offer letters, and HR policies."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Business & Strategy"
-size_class: xs
+size_class: s
 summary: "Templates and patterns for creating legally sound employment documentation including contracts, offer letters, and HR policies."
 detail_sections:
   - Use this skill when

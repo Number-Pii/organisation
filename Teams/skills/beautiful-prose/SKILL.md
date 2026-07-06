@@ -4,7 +4,7 @@ description: "A hard-edged writing style contract for timeless, forceful English
 risk: unknown
 source: community
 domain: "Business & Strategy"
-size_class: s
+size_class: m
 summary: "A hard-edged writing style contract for timeless, forceful English prose without modern AI tics."
 detail_sections:
   - What this skill does

@@ -4,7 +4,7 @@ description: "Three.js scene setup, cameras, renderer, Object3D hierarchy, coord
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: m
+size_class: l
 summary: "Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems."
 detail_sections:
   - Quick Start

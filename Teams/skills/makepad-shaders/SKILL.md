@@ -4,7 +4,7 @@ description: "|"
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: s
+size_class: m
 summary: "Custom MPSL shaders and GPU rendering in Makepad."
 detail_sections:
   - Documentation

@@ -5,7 +5,7 @@ risk: unknown
 source: community
 domain: Skills Tooling
 size_class: s
-summary: "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep…"
+summary: "Create and maintain AGENTS.md / CLAUDE.md agent context docs and keep them in sync."
 detail_sections:
   - File Setup
   - Before Writing

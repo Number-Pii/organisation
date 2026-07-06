@@ -14,7 +14,7 @@ allowed-tools:
   - WebFetch
   - Write
 domain: "SEO & Content Marketing"
-size_class: s
+size_class: m
 summary: "Generate SEO-focused images such as OG cards, hero images, schema assets, product visuals, and infographics."
 detail_sections:
   - When to Use

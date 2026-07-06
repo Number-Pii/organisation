@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: xs
+size_class: s
 summary: "Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API."
 detail_sections:
   - Overview

@@ -2,6 +2,7 @@
 name: advogado-criminal
 description: "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal."
 risk: safe
+tier: archive
 source: community
 date_added: "2026-03-06"
 author: renat
@@ -17,7 +18,7 @@ tools:
   - gemini-cli
   - codex-cli
 domain: "Business & Strategy"
-size_class: l
+size_class: xl
 summary: "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito…"
 detail_sections:
   - Overview

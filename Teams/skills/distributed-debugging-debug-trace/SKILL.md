@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"
-size_class: xs
+size_class: s
 summary: "Debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools."
 detail_sections:
   - Use this skill when

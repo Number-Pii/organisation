@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: s
+size_class: m
 summary: Microsoft 365 Agents SDK for TypeScript/Node.js.
 detail_sections:
   - Before implementation

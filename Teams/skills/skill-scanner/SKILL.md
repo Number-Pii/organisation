@@ -4,7 +4,7 @@ description: "Scan agent skills for security issues before adoption. Detects pro
 risk: unknown
 source: community
 domain: Skills Tooling
-size_class: s
+size_class: m
 summary: Scan agent skills for security issues before adoption.
 detail_sections:
   - Bundled Script

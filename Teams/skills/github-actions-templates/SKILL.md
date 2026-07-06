@@ -2,6 +2,7 @@
 name: github-actions-templates
 description: "Production-ready GitHub Actions workflow patterns for testing, building, and deploying applications."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"

@@ -2,6 +2,7 @@
 name: nodejs-best-practices
 description: "Node.js development principles and decision-making. Framework selection, async patterns, security, and architecture. Teaches thinking, not copying."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"

@@ -4,7 +4,7 @@ description: "Three.js lighting - light types, shadows, environment lighting. Us
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: m
+size_class: l
 summary: "Three.js lighting - light types, shadows, environment lighting."
 detail_sections:
   - Quick Start

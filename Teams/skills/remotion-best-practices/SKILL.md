@@ -6,7 +6,7 @@ source: community
 tags: "remotion, video, react, animation, composition"
 date_added: "2026-02-27"
 domain: "Creative & Design"
-size_class: xs
+size_class: s
 summary: Best practices for Remotion - Video creation in React
 detail_sections:
   - When to Use

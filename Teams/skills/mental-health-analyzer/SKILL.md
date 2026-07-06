@@ -3,9 +3,10 @@ name: mental-health-analyzer
 description: 分析心理健康数据、识别心理模式、评估心理健康状况、提供个性化心理健康建议。支持与睡眠、运动、营养等其他健康数据的关联分析。
 allowed-tools: "Read, Grep, Glob, Write, Edit"
 risk: unknown
+tier: archive
 source: community
 domain: "Health & Wellness"
-size_class: l
+size_class: xl
 summary: 分析心理健康数据、识别心理模式、评估心理健康状况、提供个性化心理健康建议。支持与睡眠、运动、营养等其他健康数据的关联分析。
 detail_sections:
   - 核心功能

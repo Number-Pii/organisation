@@ -2,6 +2,7 @@
 name: hig-components-layout
 description: Apple Human Interface Guidelines for layout and navigation components.
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"

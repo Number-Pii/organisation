@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: xs
+size_class: s
 summary: "Semantic search, similar content discovery, and structured research using Exa API."
 detail_sections:
   - Overview

@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: m
+size_class: l
 summary: "Master comprehensive evaluation strategies for LLM applications, from automated metrics to human evaluation and A/B testing."
 detail_sections:
   - Do not use this skill when

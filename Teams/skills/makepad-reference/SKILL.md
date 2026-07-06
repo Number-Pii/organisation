@@ -4,7 +4,7 @@ description: "This category provides reference materials for debugging, code qua
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: xs
+size_class: s
 summary: "This category provides reference materials for debugging, code quality, and advanced layout patterns."
 detail_sections:
   - Quick Navigation

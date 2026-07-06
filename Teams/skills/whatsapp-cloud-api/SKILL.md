@@ -17,7 +17,7 @@ tools:
   - gemini-cli
   - codex-cli
 domain: "DevOps & Infrastructure"
-size_class: m
+size_class: l
 summary: Integracao com WhatsApp Business Cloud API (Meta).
 detail_sections:
   - Overview

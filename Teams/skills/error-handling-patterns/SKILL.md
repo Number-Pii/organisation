@@ -2,6 +2,7 @@
 name: error-handling-patterns
 description: Build resilient applications with robust error handling strategies that gracefully handle failures and provide excellent debugging experiences.
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"

@@ -2,10 +2,11 @@
 name: startup-business-analyst-business-case
 description: "'Generate comprehensive investor-ready business case document with"
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Business & Strategy"
-size_class: m
+size_class: l
 summary: "'Generate comprehensive investor-ready business case document with"
 detail_sections:
   - Use this skill when

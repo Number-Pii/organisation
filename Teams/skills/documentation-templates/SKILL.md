@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Documentation & Office"
-size_class: s
+size_class: m
 summary: Documentation templates and structure guidelines.
 detail_sections:
   - 1. README Structure

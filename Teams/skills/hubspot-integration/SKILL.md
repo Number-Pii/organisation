@@ -5,7 +5,7 @@ risk: unknown
 source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: xs
+size_class: s
 summary: Authentication for single-account integrations
 detail_sections:
   - Patterns

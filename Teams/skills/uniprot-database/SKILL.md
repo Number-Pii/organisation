@@ -6,7 +6,7 @@ metadata: []
 risk: unknown
 source: community
 domain: "Backend & APIs"
-size_class: s
+size_class: m
 summary: Direct REST API access to UniProt.
 detail_sections:
   - Overview

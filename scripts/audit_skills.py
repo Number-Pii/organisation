@@ -123,6 +123,22 @@ from lib.frontmatter import (  # noqa: E402, F401
 )
 
 EXTENSION_FIELDS = ("domain", "size_class", "summary", "detail_sections")
+VALID_TIERS = {"curated", "standard", "archive"}
+
+
+def fix_size_class(skill_md: Path, expected: str) -> bool:
+    """Rewrite the size_class line in a SKILL.md to the expected band."""
+    lines = skill_md.read_text(encoding="utf-8").splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return False
+    for i in range(1, min(len(lines), 200)):
+        if lines[i].strip() == "---":
+            return False
+        if lines[i].split(":")[0].strip() == "size_class":
+            lines[i] = f"size_class: {expected}\n"
+            skill_md.write_text("".join(lines), encoding="utf-8")
+            return True
+    return False
 
 
 def parse_domains_from_categories(path: Path) -> set:
@@ -162,22 +178,39 @@ def validate_extension(fm: dict, line_count: int, valid_domains: set) -> list:
 
 # ── Main audit ────────────────────────────────────────────────────────────────
 
-def run_audit(write_report=False):
+def run_audit(write_report=False, fix=False):
     skill_folders  = get_skill_folders()
     role_files     = get_role_files()
     valid_domains  = parse_domains_from_categories(CATEGORIES_MD)
 
-    # Scan every SKILL.md for extended frontmatter opt-in
+    # Scan every SKILL.md for extended frontmatter opt-in, tier, and risk
     extended_count = 0
+    fixed_count = 0
     frontmatter_issues = []   # list of (skill_name, [issue strings])
+    tier_counts = {"curated": 0, "standard": 0, "archive": 0}
+    curated_risk_gaps = []    # curated skills whose risk is missing or unreviewed
     for folder in sorted(skill_folders):
         skill_md = SKILLS_DIR / folder / "SKILL.md"
         if not skill_md.exists():
             continue
         fm, line_count = parse_frontmatter(skill_md)
+
+        tier = fm.get("tier") if fm.get("tier") in VALID_TIERS else "standard"
+        tier_counts[tier] += 1
+        risk = fm.get("risk") if isinstance(fm.get("risk"), str) else ""
+        if tier == "curated" and risk in ("", "unknown"):
+            curated_risk_gaps.append(folder)
+
         if all(k in fm for k in EXTENSION_FIELDS):
             extended_count += 1
             issues = validate_extension(fm, line_count, valid_domains)
+            if fix and issues:
+                sc = fm.get("size_class")
+                expected = size_class_for(line_count)
+                if sc in VALID_SIZE_CLASSES and sc != expected and fix_size_class(skill_md, expected):
+                    fixed_count += 1
+                    fm, line_count = parse_frontmatter(skill_md)
+                    issues = validate_extension(fm, line_count, valid_domains)
             if issues:
                 frontmatter_issues.append((folder, issues))
 
@@ -246,7 +279,19 @@ def run_audit(write_report=False):
     p(f"  Unique @skill refs in Agent Skills        : {bold(str(len(all_agent_refs)))}")
     p(f"  Broken @skill refs (no matching folder)   : {red(str(len(broken_agent_refs))) if broken_agent_refs else green('0')}")
     p(f"  Skills with extended frontmatter          : {ext_colour(str(extended_count))}/{len(skill_folders)} ({ext_pct}%)")
+    p(f"  Tiers (curated / standard / archive)      : "
+      f"{green(str(tier_counts['curated']))} / {tier_counts['standard']} / {yellow(str(tier_counts['archive']))}")
+    if fixed_count:
+        p(f"  size_class values fixed by --fix          : {green(str(fixed_count))}")
     p()
+
+    if curated_risk_gaps:
+        p(yellow(bold("CURATED SKILLS WITH UNREVIEWED RISK (review and set risk:)")))
+        for name in curated_risk_gaps[:20]:
+            p(f"  {yellow('~')} {name}")
+        if len(curated_risk_gaps) > 20:
+            p(f"  ... and {len(curated_risk_gaps) - 20} more")
+        p()
 
     total_bullets = total_core_bullets + total_tech_bullets
     total_linked  = linked_core + linked_tech
@@ -324,6 +369,9 @@ def run_audit(write_report=False):
         "unlinked_skills":       len(unlinked_skills),
         "extended_frontmatter":  extended_count,
         "frontmatter_issues":    frontmatter_issues,
+        "tier_counts":           tier_counts,
+        "curated_risk_gaps":     curated_risk_gaps,
+        "fixed_count":           fixed_count,
     }
 
 
@@ -331,9 +379,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Audit skill coverage in Number Pii role files")
     parser.add_argument("--report",   action="store_true", help="Write audit_report.md to scripts/")
     parser.add_argument("--no-color", action="store_true", help="Disable ANSI colour output")
+    parser.add_argument("--fix",      action="store_true",
+                        help="Rewrite stale size_class values to match actual line counts")
     args = parser.parse_args()
 
     if args.no_color:
         USE_COLOR = False
 
-    run_audit(write_report=args.report)
+    result = run_audit(write_report=args.report, fix=args.fix)
+
+    # Broken refs and unfixed frontmatter drift fail the audit so CI can gate
+    # on it; curated risk gaps are reported but do not fail (yet).
+    if result["broken_refs"] or result["frontmatter_issues"]:
+        raise SystemExit(1)

@@ -4,7 +4,7 @@ description: "Actorization converts existing software into reusable serverless a
 risk: unknown
 source: community
 domain: "SaaS Integrations & Automation"
-size_class: s
+size_class: m
 summary: Actorization converts existing software into reusable serverless applications compatible with the Apify platform.
 detail_sections:
   - Quick Start

@@ -2,6 +2,7 @@
 name: competitive-landscape
 description: "Comprehensive frameworks for analyzing competition, identifying differentiation opportunities, and developing winning market positioning strategies."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"

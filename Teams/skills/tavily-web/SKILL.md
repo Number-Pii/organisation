@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
-size_class: xs
+size_class: s
 summary: "Web search, content extraction, crawling, and research capabilities using Tavily API."
 detail_sections:
   - Overview

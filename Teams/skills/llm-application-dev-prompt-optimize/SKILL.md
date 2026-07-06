@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: xs
+size_class: s
 summary: "Expert prompt engineer specializing in crafting effective prompts for LLMs through advanced techniques including constitutional AI…"
 detail_sections:
   - Use this skill when

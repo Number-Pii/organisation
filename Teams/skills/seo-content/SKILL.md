@@ -2,6 +2,7 @@
 name: seo-content
 description: ">"
 risk: unknown
+tier: curated
 source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
 user-invokable: "true"

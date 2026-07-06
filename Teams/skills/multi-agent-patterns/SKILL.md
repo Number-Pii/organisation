@@ -5,7 +5,7 @@ risk: unknown
 source: community
 domain: "AI & Machine Learning"
 size_class: m
-summary: "This skill should be used when the user asks to \"design multi-agent system\", \"implement supervisor pattern\", \"create swarm architecture\", \"coordinate…"
+summary: "Design multi-agent systems: supervisor patterns, swarm architectures, and agent coordination."
 detail_sections:
   - When to Use
   - Core Concepts

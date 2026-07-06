@@ -2,6 +2,7 @@
 name: email-sequence
 description: "You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive action, and move people toward conversion."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"

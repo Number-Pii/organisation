@@ -2,6 +2,7 @@
 name: project-development
 description: "This skill covers the principles for identifying tasks suited to LLM processing, designing effective project architectures, and iterating rapidly using agent-assisted development."
 risk: unknown
+tier: curated
 source: community
 domain: "Planning & Workflow"
 size_class: m

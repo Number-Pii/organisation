@@ -3,6 +3,7 @@ name: documentation
 description: "Documentation generation workflow covering API docs, architecture docs, README files, code comments, and technical writing."
 category: workflow-bundle
 risk: safe
+tier: curated
 source: personal
 date_added: "2026-02-27"
 domain: "Documentation & Office"
