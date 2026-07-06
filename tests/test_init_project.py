@@ -23,7 +23,8 @@ def test_scaffold_matches_golden(case):
     case_dir = GOLDEN_DIR / case
     golden_files = {
         str(p.relative_to(case_dir)): p.read_text(encoding="utf-8")
-        for p in case_dir.rglob("*.md")
+        for p in case_dir.rglob("*")
+        if p.is_file() and "__pycache__" not in p.parts
     }
 
     assert set(built_by_rel) == set(golden_files), (
@@ -43,7 +44,10 @@ def test_no_unrendered_placeholders(level):
         output_dir=Path("."), level=level, existing=True, today="2026-01-01",
     )
     for path, content in built.items():
-        assert "$" not in content, f"unrendered placeholder in {path}"
+        # $CLAUDE_PROJECT_DIR is an intentional literal in the hook settings;
+        # everything else with a dollar sign is an unrendered placeholder.
+        residue = content.replace("$CLAUDE_PROJECT_DIR", "")
+        assert "$" not in residue, f"unrendered placeholder in {path}"
 
 
 def test_architecture_only_at_level_3_plus():
@@ -130,8 +134,10 @@ def test_missing_template_fails_loudly(monkeypatch, tmp_path):
         build_files("X", ["engineering"], Path("."), level=1, today="2026-01-01")
 
 
-def test_golden_project_name_renders_into_every_file():
+def test_golden_project_name_renders_into_every_doc():
     built = build_case(GOLDEN_CASES["level2"], Path("."))
     for path, content in built.items():
+        if ".claude" in str(path) and path.suffix != ".md":
+            continue  # hook code and settings carry no project header
         assert GOLDEN_PROJECT_NAME in content, f"{path} missing project name"
-        assert GOLDEN_TODAY in content or "archive" in str(path), path
+        assert GOLDEN_TODAY in content or "archive" in str(path) or ".claude" in str(path), path

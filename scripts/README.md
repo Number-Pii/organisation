@@ -250,11 +250,18 @@ python3 scripts/update.py --changelog
 ```
 
 ### What It Does
-1. Runs `git fetch` to check the remote for new commits
+1. Runs `git fetch --tags` to check the remote for new commits
 2. Shows the current and latest version numbers
 3. Lists what changed (commit summaries)
 4. Warns if a **MAJOR** version bump requires reading migration notes
 5. Runs `git pull --ff-only` if confirmed
+
+### Pinning a version
+A `.toolkit-pin` file containing a git ref (usually a release tag such as
+`v3.15.0`) pins the clone to that ref. Put it in the consuming project root,
+next to the `organisation/` clone; a pin inside the clone works as a fallback.
+While pinned, `update.py` checks out the pinned ref instead of following
+`main`; delete the file and run `update.py` again to resume normal updates.
 
 ### Version Types
 | Bump | Meaning | Safe to update? |
@@ -262,6 +269,26 @@ python3 scripts/update.py --changelog
 | PATCH (3.1.x) | Wording fixes, skill additions | Always safe |
 | MINOR (3.x.0) | New steps or features in the protocol | Safe; read changelog |
 | MAJOR (x.0.0) | Initialize Protocol restructured | Read migration notes first |
+
+---
+
+## `update_all.py`: Fan-Out Updater
+
+Updates every consuming project's clone listed in `consumers.json` (toolkit
+root) and prints a version matrix. Each clone updates through its own
+`update.py`, so per-consumer pins are respected and no `doc/` file is touched.
+
+### Usage
+```bash
+# Version matrix only, change nothing
+python3 scripts/update_all.py --check
+
+# Update every registered clone
+python3 scripts/update_all.py
+```
+
+Register or remove a consumer by editing `consumers.json`; entries are a name
+plus a path relative to the registry's `base`.
 
 ---
 

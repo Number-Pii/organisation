@@ -5,6 +5,11 @@ update.py: Number Pii Toolkit Updater
 Checks for updates to the organisation toolkit and pulls the latest version safely.
 Your project files (doc/) are not in this repo and will never be touched.
 
+Pinning: a `.toolkit-pin` file containing a git ref (e.g. `v3.15.0`) in the
+consuming project root (next to the clone) or in the clone itself pins the
+toolkit to that ref. With a pin, update.py checks out the pinned ref instead
+of following main; remove the file to resume normal updates.
+
 Usage:
     python3 scripts/update.py             # Check for updates and prompt to install
     python3 scripts/update.py --check     # Check only, do not update
@@ -36,8 +41,43 @@ def is_git_repo() -> bool:
 
 
 def fetch_remote() -> bool:
-    result = run(["git", "fetch", "--quiet"])
+    result = run(["git", "fetch", "--quiet", "--tags"])
     return result.returncode == 0
+
+
+def read_pin() -> tuple[str, Path | None]:
+    """Return (pinned ref, pin file path). The pin lives in the consuming
+    project root (next to the clone) or, second choice, in the clone itself."""
+    for candidate in (REPO_ROOT.parent / ".toolkit-pin", REPO_ROOT / ".toolkit-pin"):
+        try:
+            if candidate.exists():
+                ref = candidate.read_text(encoding="utf-8").strip()
+                if ref:
+                    return ref, candidate
+        except OSError:
+            continue
+    return "", None
+
+
+def resolve_ref(ref: str) -> str:
+    """Resolve a ref (tag, branch, or commit) to a commit hash; '' if unknown."""
+    for attempt in (f"{ref}^{{commit}}", f"origin/{ref}^{{commit}}"):
+        result = run(["git", "rev-parse", "--verify", "--quiet", attempt])
+        if result.returncode == 0 and result.stdout.strip():
+            return result.stdout.strip()
+    return ""
+
+
+def checkout_detached(commit: str) -> bool:
+    return run(["git", "checkout", "--quiet", "--detach", commit], capture=False).returncode == 0
+
+
+def on_detached_head() -> bool:
+    return run(["git", "branch", "--show-current"]).stdout.strip() == ""
+
+
+def checkout_main() -> bool:
+    return run(["git", "checkout", "--quiet", "main"], capture=False).returncode == 0
 
 
 def get_current_commit() -> str:
@@ -119,6 +159,40 @@ def main():
         print("Could not reach remote. Check your internet connection.")
         sys.exit(1)
     print("done.")
+
+    pin_ref, pin_file = read_pin()
+    if pin_ref:
+        print(f"Pinned to {pin_ref} by {pin_file}")
+        target = resolve_ref(pin_ref)
+        if not target:
+            print(f"ERROR: pinned ref '{pin_ref}' does not resolve; fix or remove {pin_file}.")
+            sys.exit(1)
+        if get_current_commit() == target:
+            print("Already on the pinned ref. Remove the pin file to follow main again.")
+            return
+        if args.check:
+            print(f"(Run without --check to move the clone to {pin_ref}.)")
+            return
+        if not args.yes:
+            answer = input(f"Check out pinned ref {pin_ref} now? [y/N] ").strip().lower()
+            if answer not in ("y", "yes"):
+                print("Update cancelled.")
+                return
+        if checkout_detached(target):
+            print(f"Toolkit now at pinned ref {pin_ref} "
+                  f"(version {read_version(VERSION_FILE) if VERSION_FILE.exists() else 'unknown'}).")
+        else:
+            print("Checkout failed. Run `git status` in the clone to inspect.")
+            sys.exit(1)
+        return
+
+    # No pin: follow main. A previously pinned clone sits on a detached HEAD,
+    # so move back to main before the fast-forward pull.
+    if on_detached_head():
+        print("Clone is on a detached HEAD (previously pinned); returning to main.")
+        if not checkout_main():
+            print("Could not check out main. Run `git status` in the clone to inspect.")
+            sys.exit(1)
 
     remote_version = get_remote_version()
     commits_behind = get_commits_behind()

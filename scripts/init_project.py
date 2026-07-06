@@ -198,6 +198,15 @@ def build_files(project_name: str, departments: list[str], output_dir: Path,
         files[output_dir / assistant_file] = render(
             "context-pointer.md", assistant_file=assistant_file, **ctx)
 
+    # Enforcement-as-code for Claude Code sessions: hooks block direct
+    # commits/pushes to main and inject the context checklist at session
+    # start. The markdown contract above remains the fallback for
+    # assistants that do not execute hooks (Gemini CLI, Codex).
+    claude_dir = output_dir / ".claude"
+    files[claude_dir / "settings.json"] = render("claude-settings.json", **ctx)
+    files[claude_dir / "hooks" / "protect_main.py"] = render("claude-protect-main.py", **ctx)
+    files[claude_dir / "hooks" / "context-checklist.md"] = render("claude-context-checklist.md", **ctx)
+
     if level >= 3:
         files[doc_dir / "architecture.md"] = render(
             "architecture.md", level4_note=level4_note, **ctx)

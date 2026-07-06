@@ -320,6 +320,13 @@ python3 scripts/update.py --changelog
 Every release on `main` is tagged automatically by CI as `vX.Y.Z` (matching the
 `VERSION` file), so a specific release can always be checked out by tag.
 
+### Pin to a release
+Create a `.toolkit-pin` file in your project root (next to the `organisation/`
+clone) containing a tag such as `v3.15.0`; `update.py` then holds the clone at
+that release until you delete the file. To update many projects at once, the
+toolkit maintainer runs `python3 scripts/update_all.py` against the registry in
+`consumers.json`.
+
 ### Version types
 | Version bump | What it means | Action needed |
 |---|---|---|

@@ -13,6 +13,35 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.17.0]: 2026-07-06
+
+### Added
+- **Enforcement as code in every scaffold.** `init_project.py` now writes a
+  `.claude/` folder into consuming projects: a PreToolUse hook that blocks git
+  commits and pushes on `main` or `master` (exit 2 with the version-control
+  rule quoted back), and a SessionStart hook that injects the context-file
+  checklist. The standards stop being prose-only for Claude Code sessions; the
+  markdown contract remains the rule for Gemini CLI and Codex. Existing
+  `.claude/settings.json` files are never overwritten.
+- **Version pinning via `.toolkit-pin`.** A file containing a git ref (usually
+  a release tag) in the consuming project root, or in the clone, holds the
+  toolkit at that ref; `update.py` checks out the pin instead of following
+  `main`, and returns cleanly to `main` when the pin is removed.
+- **Consumer registry and fan-out updater.** `consumers.json` at the toolkit
+  root records the eleven consuming projects; `scripts/update_all.py` updates
+  every registered clone through its own `update.py` (pins respected) and
+  prints a before/after version matrix. `--check` reports the matrix without
+  changing anything.
+
+### Changed
+- `update.py` fetches tags and recovers from a detached HEAD left by an
+  earlier pin before fast-forwarding.
+- `INITIALIZE.md` Step 4 documents the scaffolded `.claude/` enforcement
+  layer; `README.md` and `scripts/README.md` document pinning and the fan-out
+  updater.
+
+---
+
 ## [3.16.0]: 2026-07-06
 
 ### Added
