@@ -2,6 +2,7 @@
 name: tailwind-design-system
 description: "Build production-ready design systems with Tailwind CSS, including design tokens, component variants, responsive patterns, and accessibility."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"

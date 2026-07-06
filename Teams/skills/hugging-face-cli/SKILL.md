@@ -5,7 +5,7 @@ risk: safe
 source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-cli"
 date_added: "2026-02-27"
 domain: "AI & Machine Learning"
-size_class: s
+size_class: m
 summary: "The hf CLI provides direct terminal access to the Hugging Face Hub for downloading, uploading, and managing repositories, cache, and compute…"
 detail_sections:
   - When to Use This Skill

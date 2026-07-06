@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: xs
+size_class: s
 summary: Build comprehensive attack trees to visualize threat paths.
 detail_sections:
   - Use this skill when

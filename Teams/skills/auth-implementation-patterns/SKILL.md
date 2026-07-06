@@ -2,10 +2,11 @@
 name: auth-implementation-patterns
 description: "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: xs
+size_class: s
 summary: "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices."
 detail_sections:
   - Use this skill when

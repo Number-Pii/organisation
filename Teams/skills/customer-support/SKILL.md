@@ -2,6 +2,7 @@
 name: customer-support
 description: "Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichannel support experiences."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Business & Strategy"

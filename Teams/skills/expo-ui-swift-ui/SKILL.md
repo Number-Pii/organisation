@@ -4,7 +4,7 @@ description: expo-ui-swift-ui
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: xs
+size_class: s
 summary: expo-ui-swift-ui
 detail_sections:
   - Installation

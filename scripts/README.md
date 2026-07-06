@@ -69,10 +69,34 @@ python3 scripts/audit_skills.py --no-color
 
 # Also write an audit_report.md file to scripts/
 python3 scripts/audit_skills.py --report
+
+# Rewrite stale size_class values to match actual line counts
+python3 scripts/audit_skills.py --fix
 ```
 
 > `scripts/audit_report.md` is generated output. It is gitignored and must not be
 > committed; regenerate it locally with `--report` whenever you need a fresh copy.
+
+The audit exits non-zero on broken `@skill` refs or frontmatter drift, so CI
+gates on it. It also reports skill tier counts and lists curated skills whose
+`risk` field is still `unknown` (reported, not failing).
+
+---
+
+## `build_skills_index.py`: Skills Index Generator
+
+Generates `Teams/skills/skills-index.json` (consumed by `find_skill.py`) and
+`Teams/skills/CATEGORIES.md` from each skill's frontmatter. Both outputs are
+generated files: edit frontmatter, regenerate, commit all three together.
+
+### Usage
+```bash
+# Rewrite both generated files
+python3 scripts/build_skills_index.py
+
+# CI mode: exit 1 if either file is stale
+python3 scripts/build_skills_index.py --check
+```
 
 ### What It Reports
 | Metric | Description |

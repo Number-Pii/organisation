@@ -17,7 +17,7 @@ tools:
   - gemini-cli
   - codex-cli
 domain: "Business & Strategy"
-size_class: m
+size_class: l
 summary: Analise de mercado imobiliario para leiloes.
 detail_sections:
   - Overview

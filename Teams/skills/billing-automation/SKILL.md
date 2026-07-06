@@ -2,10 +2,11 @@
 name: billing-automation
 description: "Master automated billing systems including recurring billing, invoice generation, dunning management, proration, and tax calculation."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: xs
+size_class: s
 summary: "Master automated billing systems including recurring billing, invoice generation, dunning management, proration, and tax calculation."
 detail_sections:
   - Use this skill when

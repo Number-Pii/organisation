@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: s
+size_class: m
 summary: "Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, manage templates, monitor delivery stats and bounces."
 detail_sections:
   - Prerequisites

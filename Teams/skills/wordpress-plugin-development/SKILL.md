@@ -3,6 +3,7 @@ name: wordpress-plugin-development
 description: "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, and security best practices."
 category: granular-workflow-bundle
 risk: safe
+tier: curated
 source: personal
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"

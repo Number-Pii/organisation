@@ -3,6 +3,7 @@ name: content-creator
 description: "Professional-grade brand voice analysis, SEO optimization, and platform-specific content frameworks."
 category: marketing
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"

@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Planning & Workflow"
-size_class: xs
+size_class: s
 summary: "GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development…"
 detail_sections:
   - Use this skill when

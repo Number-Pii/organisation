@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: Programming Languages
-size_class: xs
+size_class: s
 summary: "Professional code review with auto CHANGELOG generation, integrated with Codex AI."
 detail_sections:
   - Overview

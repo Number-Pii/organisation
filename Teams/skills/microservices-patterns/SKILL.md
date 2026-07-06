@@ -2,6 +2,7 @@
 name: microservices-patterns
 description: "Master microservices architecture patterns including service boundaries, inter-service communication, data management, and resilience patterns for building distributed systems."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"

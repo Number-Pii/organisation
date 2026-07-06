@@ -2,10 +2,11 @@
 name: deployment-validation-config-validate
 description: "You are a configuration management expert specializing in validating, testing, and ensuring the correctness of application configurations. Create comprehensive validation schemas, implement configurat"
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"
-size_class: m
+size_class: l
 summary: "Validate and test application configuration for correctness before deployment."
 detail_sections:
   - Use this skill when

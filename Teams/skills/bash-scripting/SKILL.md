@@ -6,7 +6,7 @@ risk: safe
 source: personal
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"
-size_class: s
+size_class: m
 summary: "Bash scripting workflow for creating production-ready shell scripts with defensive patterns, error handling, and testing."
 detail_sections:
   - Overview

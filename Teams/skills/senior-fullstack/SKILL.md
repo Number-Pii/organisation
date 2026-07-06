@@ -2,6 +2,7 @@
 name: senior-fullstack
 description: Complete toolkit for senior fullstack with modern tools and best practices.
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"

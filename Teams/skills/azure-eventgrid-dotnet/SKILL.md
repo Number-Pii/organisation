@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: Azure SDKs
-size_class: m
+size_class: l
 summary: Azure Event Grid SDK for .NET.
 detail_sections:
   - Installation

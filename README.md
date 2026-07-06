@@ -52,7 +52,7 @@ organisation/
 │   ├── 04-Sales-Consultancy/                  # Consultants, BDMs, account managers
 │   ├── 05-Growth-Marketing/                   # Content, SEO, social, performance marketing
 │   ├── 06-Operations/                         # Finance, people & talent, operations, facilities
-│   └── skills/                                # 1,294 AI skill modules
+│   └── skills/                                # AI skill modules + generated skills-index.json
 ├── products/                                  # Product context packs (one per product, loaded on demand)
 ├── scripts/
 │   ├── audit_skills.py                        # Skill coverage auditor

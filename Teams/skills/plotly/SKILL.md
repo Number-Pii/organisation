@@ -4,6 +4,7 @@ description: "Interactive visualization library. Use when you need hover info, z
 license: MIT license
 metadata: []
 risk: unknown
+tier: curated
 source: community
 domain: "Data Science & Visualisation"
 size_class: m

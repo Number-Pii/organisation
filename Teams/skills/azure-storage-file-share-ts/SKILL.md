@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: Azure SDKs
-size_class: m
+size_class: l
 summary: "Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations."
 detail_sections:
   - Installation

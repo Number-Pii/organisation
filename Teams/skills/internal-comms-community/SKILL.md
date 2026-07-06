@@ -2,6 +2,7 @@
 name: internal-comms-community
 description: "To write internal communications, use this skill for:"
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Documentation & Office"

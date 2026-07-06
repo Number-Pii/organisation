@@ -2,6 +2,7 @@
 name: sexual-health-analyzer
 description: Sexual Health Analyzer
 risk: unknown
+tier: archive
 source: community
 domain: "Health & Wellness"
 size_class: xl

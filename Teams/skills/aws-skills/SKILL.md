@@ -2,6 +2,7 @@
 name: aws-skills
 description: AWS development with infrastructure automation and cloud architecture patterns
 risk: safe
+tier: curated
 source: "https://github.com/zxkane/aws-skills"
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"

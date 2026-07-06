@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
-size_class: xs
+size_class: s
 summary: "Cloud cost optimization expert specializing in reducing infrastructure expenses while maintaining performance and reliability."
 detail_sections:
   - Use this skill when

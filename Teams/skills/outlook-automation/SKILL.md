@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: s
+size_class: m
 summary: "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attachments."
 detail_sections:
   - Prerequisites

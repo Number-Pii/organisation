@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
-size_class: m
+size_class: l
 summary: "Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, and best practices"
 detail_sections:
   - Overview

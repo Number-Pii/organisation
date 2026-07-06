@@ -5,7 +5,7 @@ risk: unknown
 source: vibeship-spawner-skills (Apache 2.0)
 date_added: "2026-02-27"
 domain: Azure SDKs
-size_class: xs
+size_class: s
 summary: Modern .NET execution model with process isolation
 detail_sections:
   - Patterns

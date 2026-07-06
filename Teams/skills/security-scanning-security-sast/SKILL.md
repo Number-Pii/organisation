@@ -2,10 +2,11 @@
 name: security-scanning-security-sast
 description: "'Static Application Security Testing (SAST) for code vulnerability"
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: m
+size_class: l
 summary: "'Static Application Security Testing (SAST) for code vulnerability"
 detail_sections:
   - Capabilities

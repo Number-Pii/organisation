@@ -2,6 +2,7 @@
 name: marketing-psychology
 description: "Apply behavioral science and mental models to marketing decisions, prioritized using a psychological leverage and feasibility scoring system."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"

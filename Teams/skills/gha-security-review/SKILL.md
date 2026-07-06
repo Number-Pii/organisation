@@ -5,7 +5,7 @@ risk: safe
 source: community
 date_added: "2026-03-16"
 domain: "Security & Penetration Testing"
-size_class: s
+size_class: m
 summary: Find exploitable vulnerabilities in GitHub Actions workflows.
 detail_sections:
   - Scope

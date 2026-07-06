@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"
-size_class: s
+size_class: m
 summary: "Decision framework and patterns for architecting applications across AWS, Azure, and GCP."
 detail_sections:
   - Do not use this skill when

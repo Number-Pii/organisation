@@ -6,7 +6,7 @@ source: community
 author: zebbern
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: m
+size_class: l
 summary: "Conduct comprehensive security assessments of WordPress installations including enumeration of users, themes, and plugins, vulnerability scanning…"
 detail_sections:
   - Purpose

@@ -2,6 +2,7 @@
 name: webapp-testing
 description: "To test local web applications, write native Python Playwright scripts."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"

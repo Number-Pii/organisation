@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"
-size_class: xs
+size_class: s
 summary: Comprehensive guide to auditing web content against WCAG 2.2 guidelines with actionable remediation strategies.
 detail_sections:
   - Use this skill when

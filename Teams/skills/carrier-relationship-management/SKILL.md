@@ -5,7 +5,7 @@ risk: safe
 source: "https://github.com/ai-evos/agent-skills"
 date_added: "2026-02-27"
 domain: Mobile Development
-size_class: s
+size_class: m
 summary: "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining…"
 detail_sections:
   - When to Use

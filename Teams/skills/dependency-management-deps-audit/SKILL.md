@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: xs
+size_class: s
 summary: "Dependency security expert specializing in vulnerability scanning, license compliance, and supply chain security."
 detail_sections:
   - Use this skill when

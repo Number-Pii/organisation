@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Data Science & Visualisation"
-size_class: s
+size_class: m
 summary: "Build features guided by data insights, A/B testing, and continuous measurement using specialized agents for analysis, implementation, and…"
 detail_sections:
   - Use this skill when

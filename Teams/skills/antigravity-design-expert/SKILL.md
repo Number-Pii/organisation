@@ -5,7 +5,7 @@ risk: safe
 source: community
 date_added: "2026-03-07"
 domain: "Frontend & UI"
-size_class: xs
+size_class: s
 summary: "Core UI/UX engineering skill for building highly interactive, spatial, weightless, and glassmorphism-based web interfaces using GSAP and 3D CSS."
 detail_sections:
   - 🎯 Role Overview

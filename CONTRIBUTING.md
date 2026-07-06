@@ -125,6 +125,32 @@ Always human-review the proposal: domain lookup falls back to `uncategorised` fo
 
 Existing skills without the four extension fields still validate (the auditor treats extensions as opt-in during backfill). Coverage is reported in `scripts/audit_skills.py` output and is being expanded domain-by-domain; no single-PR mandate.
 
+### Skill tiers and promotion
+
+Skills are third-party instructions injected into agent context, so the library is a supply chain and the tier field is its review gate:
+
+| Tier | Meaning | Search visibility |
+|------|---------|-------------------|
+| `curated` | Reviewed and referenced by at least one role file | Default (`find_skill.py`) |
+| `standard` | Unreviewed community content (the default when `tier` is absent) | `--all` or `--tier standard` |
+| `archive` | Off-charter or superseded; kept for reference | `--tier archive` only |
+
+`canonical: true` marks the preferred skill when several cover the same topic (one per cluster); it sorts first in search and in CATEGORIES.md.
+
+**Promotion checklist (standard to curated).** All five in one PR:
+
+1. Read the full SKILL.md and any bundled files; confirm the content does what the summary claims and nothing else.
+2. Set `risk:` to a reviewed value (`low`, `medium`, or `high` with a note); `unknown` blocks promotion, and the audit flags curated skills left at `unknown`.
+3. Confirm `source:` records where the content came from.
+4. Reference the skill from at least one role file section, or record in the PR why it is curated without a role.
+5. Set `tier: curated`, run `python3 scripts/build_skills_index.py`, and commit the regenerated index files.
+
+Demotion to `archive` needs only a PR stating the reason (off-charter, superseded by a canonical, licence concern).
+
+### Generated skill indexes
+
+`Teams/skills/skills-index.json` and `Teams/skills/CATEGORIES.md` are generated from skill frontmatter by `scripts/build_skills_index.py`; CI fails if they drift. Never edit them by hand: change the frontmatter, regenerate, and commit both. Domain description lines in CATEGORIES.md carry over from the previous generation, so a brand-new domain gets its one-line description edited once, then the generator preserves it.
+
 ---
 
 ## Tests and Templates

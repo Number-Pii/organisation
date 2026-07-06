@@ -17,7 +17,7 @@ tools:
   - gemini-cli
   - codex-cli
 domain: "AI & Machine Learning"
-size_class: s
+size_class: m
 summary: Agente de contexto para continuidade entre sessoes.
 detail_sections:
   - Overview

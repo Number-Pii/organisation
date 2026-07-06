@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
-size_class: xs
+size_class: s
 summary: "SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Server."
 detail_sections:
   - Overview

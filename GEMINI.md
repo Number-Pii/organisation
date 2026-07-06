@@ -4,7 +4,7 @@
 
 # Number Pii: Organisation Reference
 
-_Version: 2.14 | Last updated: 2026-06-23_
+_Version: 2.15 | Last updated: 2026-07-06_
 
 ---
 
@@ -50,7 +50,9 @@ Durable product facts live in `products/<product-name>.md`, one pack per product
 ## Skills
 All skills live in `Teams/skills/`; each is a specialised AI expert module. Role files reference them in three layers: **Core Skills** and **Technical Skills** with inline `(@skill-name)` refs, and **Agent Skills** as a curated `@skill-name` list for direct invocation.
 
-- **Find a skill (preferred before loading any SKILL.md):** `python3 scripts/find_skill.py <keyword>` or `python3 scripts/find_skill.py --domain <name> <keyword>`; returns matching names only, no file loads
+Every skill carries a tier. The `curated` tier is reviewed and role-referenced; it surfaces by default. A `standard` skill is unreviewed community content: search it with `--all` and check its `risk` field before loading. Anything tiered `archive` is off-charter and hidden from search. When several skills cover one topic, prefer the one marked `(canonical)`.
+
+- **Find a skill (preferred before loading any SKILL.md):** `python3 scripts/find_skill.py <keyword>` searches curated names and summaries without loading files; add `--all` for the standard tier or `--domain <name>` to narrow
 - **Invoke:** `@skill-name [your task]`, e.g. `@postgresql design a multi-tenant schema for a SaaS product`
 - **Coverage and count:** `python3 scripts/audit_skills.py`
 - **Find the right role:** browse `Teams/[department]/` for the role file, then use its skill sections

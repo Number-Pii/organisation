@@ -2,6 +2,7 @@
 name: tdd-workflows-tdd-cycle
 description: Use when working with tdd workflows tdd cycle
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"

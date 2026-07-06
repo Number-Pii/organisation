@@ -2,6 +2,8 @@
 name: systematic-debugging
 description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
 risk: unknown
+tier: curated
+canonical: true
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"

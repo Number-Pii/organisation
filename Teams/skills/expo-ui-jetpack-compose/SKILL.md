@@ -4,7 +4,7 @@ description: expo-ui-jetpack-compose
 risk: unknown
 source: community
 domain: "Frontend & UI"
-size_class: xs
+size_class: s
 summary: expo-ui-jetpack-compose
 detail_sections:
   - Installation

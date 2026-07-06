@@ -2,10 +2,11 @@
 name: code-review-excellence
 description: "Transform code reviews from gatekeeping to knowledge sharing through constructive feedback, systematic analysis, and collaborative improvement."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"
-size_class: xs
+size_class: s
 summary: "Transform code reviews from gatekeeping to knowledge sharing through constructive feedback, systematic analysis, and collaborative improvement."
 detail_sections:
   - Use this skill when

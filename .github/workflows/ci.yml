@@ -28,9 +28,15 @@ jobs:
           python -m pip install --quiet pytest
           python -m pytest tests/ -q
 
-      # Run the skill audit — fails if any @skill refs are broken
+      # Run the skill audit — exits non-zero on broken @skill refs or
+      # frontmatter drift (fix drift locally with: audit_skills.py --fix)
       - name: Audit skill coverage
         run: python3 scripts/audit_skills.py --no-color
+
+      # skills-index.json and CATEGORIES.md are generated from skill
+      # frontmatter; fail if they drift (regenerate with build_skills_index.py)
+      - name: Check skills index is current
+        run: python3 scripts/build_skills_index.py --check
 
       # Check VERSION, CHANGELOG, CLAUDE.md, and GEMINI.md are in sync
       - name: Validate version sync

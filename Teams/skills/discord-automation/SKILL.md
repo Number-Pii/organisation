@@ -2,10 +2,11 @@
 name: discord-automation
 description: "Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, reactions. Always search tools first for current schemas."
 risk: unknown
+tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: s
+size_class: m
 summary: "Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, reactions."
 detail_sections:
   - Prerequisites

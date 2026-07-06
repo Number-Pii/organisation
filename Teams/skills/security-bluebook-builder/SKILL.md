@@ -4,7 +4,7 @@ description: "Build a minimal but real security policy for sensitive apps. The o
 risk: unknown
 source: community
 domain: "Security & Penetration Testing"
-size_class: xs
+size_class: s
 summary: Build a minimal but real security policy for sensitive apps.
 detail_sections:
   - Overview

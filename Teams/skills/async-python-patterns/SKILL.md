@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: Programming Languages
-size_class: xs
+size_class: s
 summary: "Comprehensive guidance for implementing asynchronous Python applications using asyncio, concurrent programming patterns, and async/await for building…"
 detail_sections:
   - Use this skill when

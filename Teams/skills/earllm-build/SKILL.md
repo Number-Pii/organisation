@@ -18,7 +18,7 @@ tools:
   - gemini-cli
   - codex-cli
 domain: "AI & Machine Learning"
-size_class: s
+size_class: m
 summary: "Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline."
 detail_sections:
   - Overview

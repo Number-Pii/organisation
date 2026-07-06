@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
-size_class: m
+size_class: l
 summary: "Master PayPal payment integration including Express Checkout, IPN handling, recurring billing, and refund workflows."
 detail_sections:
   - Do not use this skill when

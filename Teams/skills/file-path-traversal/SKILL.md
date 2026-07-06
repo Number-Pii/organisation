@@ -6,7 +6,7 @@ source: community
 author: zebbern
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: m
+size_class: l
 summary: Identify and exploit file path traversal (directory traversal) vulnerabilities that allow attackers to read arbitrary files on the server…
 detail_sections:
   - Purpose

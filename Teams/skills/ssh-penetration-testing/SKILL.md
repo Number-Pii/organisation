@@ -6,7 +6,7 @@ source: community
 author: zebbern
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: m
+size_class: l
 summary: "Conduct comprehensive SSH security assessments including enumeration, credential attacks, vulnerability exploitation, tunneling techniques, and…"
 detail_sections:
   - Purpose

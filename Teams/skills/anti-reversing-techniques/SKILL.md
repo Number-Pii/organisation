@@ -5,7 +5,7 @@ risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
-size_class: xs
+size_class: s
 summary: "AUTHORIZED USE ONLY: This skill contains dual-use security techniques."
 detail_sections:
   - Use this skill when
