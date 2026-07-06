@@ -91,6 +91,13 @@ python3 scripts/audit_skills.py --report
 Creates the standard `doc/` folder structure in any project directory. Run after your AI
 coding assistant has determined the project brief and team assignment.
 
+Content comes from `templates/*.md` at the toolkit root, rendered with Python's
+`string.Template`; wording changes are markdown edits, not code edits. The
+classification level sets the quality gates, and it also writes level-matched
+Pull Request Rules and Release Process sections into `version_control.md`
+(Level 4 scaffolds two reviewers and CTO sign-off, not a generic one-review rule).
+Template changes must regenerate the golden files; see `tests/README.md`.
+
 ### Usage
 ```bash
 # Basic: creates doc/ in the current directory

@@ -59,7 +59,10 @@ organisation/
 │   ├── check_handover.py                      # Handover staleness checker
 │   ├── check_writing.py                       # Writing Standard validator
 │   ├── init_project.py                        # Project doc/ scaffolder
+│   ├── lib/                                   # Shared script helpers (frontmatter parser)
 │   └── README.md                              # Script usage docs
+├── templates/                                 # Scaffold templates rendered by init_project.py
+├── tests/                                     # Pytest suite (run in CI; see tests/README.md)
 ├── .githooks/pre-commit                       # Local checks; install: git config core.hooksPath .githooks
 ├── CLAUDE.md                                  # Claude Code context (source of truth)
 ├── GEMINI.md                                  # Gemini CLI context (generated from CLAUDE.md)
