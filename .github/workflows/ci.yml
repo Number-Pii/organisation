@@ -16,10 +16,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Validate Python scripts (and scripts/lib/) compile without syntax errors
+      # Validate Python scripts (and scripts/lib/) compile without syntax errors.
+      # Golden trees hold rendered scaffold output, not code under test here.
       - name: Check script syntax
         run: |
-          find scripts tests -name '*.py' -print0 | xargs -0 -n1 python -m py_compile
+          find scripts tests templates -name '*.py' -not -path 'tests/golden/*' -print0 \
+            | xargs -0 -n1 python -m py_compile
 
       # Run the pytest suite: golden-file scaffold tests, parser fixtures, and
       # unit tests for the validators (tests/README.md documents the layout).

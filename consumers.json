@@ -1,0 +1,17 @@
+{
+  "comment": "Registry of projects consuming this toolkit via a gitignored organisation/ clone. Used by scripts/update_all.py. Paths are relative to base.",
+  "base": "/Users/olatunbosun/Important Files/Software Development",
+  "consumers": [
+    {"name": "thirty-x", "path": "number_pii_projects/internal_projects/thirty-x"},
+    {"name": "number_pii", "path": "number_pii_projects/internal_projects/number_pii"},
+    {"name": "calypad", "path": "number_pii_projects/internal_projects/calypad"},
+    {"name": "Social_Media", "path": "number_pii_projects/internal_projects/Social_Media"},
+    {"name": "Sentra", "path": "number_pii_projects/client_projects/Sentra"},
+    {"name": "ceevee_tech", "path": "number_pii_projects/client_projects/ceevee_tech"},
+    {"name": "Isinmi London", "path": "number_pii_projects/client_projects/Isinmi London"},
+    {"name": "deska", "path": "projects/deska"},
+    {"name": "deska_docs", "path": "projects/deska_docs"},
+    {"name": "virtual-office", "path": "projects/virtual-office"},
+    {"name": "Test", "path": "projects/Test"}
+  ]
+}

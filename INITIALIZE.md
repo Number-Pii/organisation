@@ -131,6 +131,8 @@ python3 /path/to/organisation/scripts/init_project.py \
 
 This creates the `doc/` folder structure in the consuming project. Adjust `--departments` to match the assigned team.
 
+The scaffold also writes a `.claude/` folder: a `settings.json` whose hooks block git commits and pushes on `main` and inject the context-file checklist at session start. This enforces Version Control Discipline in code for Claude Code sessions; the markdown contract in the root context files remains the rule for assistants that do not execute hooks. Existing files are never overwritten, so a project with its own `.claude/settings.json` keeps it (merge the hook blocks by hand if wanted).
+
 ### Step 5: Populate Doc Files (AI Task)
 With the project brief and confirmed team, fill in the scaffolded files:
 
