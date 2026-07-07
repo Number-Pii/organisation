@@ -210,6 +210,10 @@ python3 organisation/scripts/gh_project_sync.py push
 python3 organisation/scripts/gh_project_sync.py assign --issue 42 \
   --assignee your-handle --state "In Progress"
 
+# Set the board Status field directly, or pull live state back into the doc file
+python3 organisation/scripts/gh_project_sync.py status --issue 42 --state Review
+python3 organisation/scripts/gh_project_sync.py sync
+
 # Record a blocked-by dependency between two issues
 python3 organisation/scripts/gh_project_sync.py link --issue 42 --blocked-by 40
 ```
@@ -218,7 +222,9 @@ python3 organisation/scripts/gh_project_sync.py link --issue 42 --blocked-by 40
 | Command | What it does |
 |---------|--------------|
 | `push` | Create issues from `doc/task-board.md`, label them, and add them to the project (idempotent: skips titles already on the board) |
-| `assign` | Set or clear an issue's owner and move its workflow state (the claim/lock operation) |
+| `assign` | Set or clear an issue's owner and move its workflow state; sets the board Status field automatically. Refuses to take over a claimed item (assigned + In Progress) without `--force` |
+| `status` | Set the project board Status field for one issue (discovers the field and option IDs itself) |
+| `sync` | Write live board Status values back into the State column of `doc/task-board.md` |
 | `query` | List open board items with owner, state, and labels; add `--json` for raw output |
 | `link` | Record a blocked-by dependency between two issues |
 

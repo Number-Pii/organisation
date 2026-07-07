@@ -85,6 +85,9 @@ The rule that follows from this:
 - Two paths reopen a claimed task to someone else: reassignment by the project lead, or an
   explicit collaboration request agreed with the current owner. Either way, the change is
   recorded on the board, not assumed.
+- The lock is enforced in code: `gh_project_sync.py assign` refuses to reassign an item that
+  is assigned and In Progress unless `--force` is passed, which records that the takeover was
+  deliberate rather than accidental.
 - Releasing a claim means moving the task back to Ready and clearing the assignee, so the next
   contributor can see it is free.
 
@@ -124,17 +127,20 @@ Three components carry this layer, each with a single job:
    the board configuration and the initial backlog, decomposed from `doc/workflow.md`. It is
    the structured source the sync script reads.
 2. **`scripts/gh_project_sync.py`** is the deterministic bridge to GitHub. It pushes the
-   backlog to issues, assigns owners, applies labels, and queries the board for awareness.
-   Run any subcommand with `--dry-run` first to see the `gh` calls it would make.
+   backlog to issues, assigns owners, applies labels, sets the board Status field
+   (`assign --state` and `status`), writes live board state back into the doc file
+   (`sync`), and queries the board for awareness. Run any subcommand with `--dry-run`
+   first to see the `gh` calls it would make.
 3. **`@github-project-orchestrator`** is the skill that carries the judgement: how to break an
    epic into assignable tasks, match each to an owner, and run the claim-before-work loop. It
    leans on the script for mechanics and on existing skills such as `@github-issue-creator`,
    `@create-issue-gate`, and `@acceptance-orchestrator` for issue quality.
 
-In this version the flow runs one way. A plan in `doc/workflow.md` becomes the backlog in
-`doc/task-board.md`, which the script pushes to GitHub, where contributors then track execution.
-Reading the board back happens through `query`; the toolkit does not yet write project state into
-the doc files automatically.
+The flow runs both ways. A plan in `doc/workflow.md` becomes the backlog in
+`doc/task-board.md`, which the script pushes to GitHub, where contributors track execution;
+`sync` then writes the live board Status values back into the State column of
+`doc/task-board.md`, so the doc file never drifts from reality for long. Run `sync` before
+consolidating handovers or re-planning.
 
 ## Prerequisites
 

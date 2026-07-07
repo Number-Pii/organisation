@@ -103,9 +103,14 @@ python3 organisation/scripts/gh_project_sync.py query
 python3 organisation/scripts/gh_project_sync.py push --dry-run
 python3 organisation/scripts/gh_project_sync.py push
 
-# Claim a task: assign yourself and move it to In Progress
+# Claim a task: assign yourself and move it to In Progress (the board Status
+# field updates automatically; a claimed task refuses reassignment without --force)
 python3 organisation/scripts/gh_project_sync.py assign --issue 42 \
   --assignee your-handle --state "In Progress"
+
+# Move a task's board Status directly, and pull live state back into the doc file
+python3 organisation/scripts/gh_project_sync.py status --issue 42 --state Review
+python3 organisation/scripts/gh_project_sync.py sync
 ```
 
 The script needs `gh` authenticated (`gh auth login`) and a filled Board Configuration table in
