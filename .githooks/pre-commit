@@ -9,6 +9,9 @@ cd "$(git rev-parse --show-toplevel)"
 echo "pre-commit: version sync"
 python3 scripts/check_version.py
 
+echo "pre-commit: plugin packaging"
+python3 scripts/check_plugin.py
+
 echo "pre-commit: CLAUDE.md adapter sync"
 python3 scripts/sync_ai_context.py --check
 

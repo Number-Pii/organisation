@@ -1,7 +1,7 @@
 {
   "name": "np",
   "description": "Number Pii organisation toolkit: the Initialize Protocol as a slash command, main-branch protection hooks, and core role agents.",
-  "version": "3.19.0",
+  "version": "3.19.1",
   "author": {
     "name": "Number Pii"
   }
