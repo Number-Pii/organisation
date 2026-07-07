@@ -5,6 +5,7 @@ check_version.py: Number Pii Version Sync Validator
 Checks that the version number is consistent across:
   - VERSION
   - CHANGELOG.md (latest heading)
+  - .claude-plugin/plugin.json (plugin manifest, when present)
   - CLAUDE.md (protocol version line)
   - GEMINI.md (protocol version line)
   - AGENTS.md (protocol version line)
@@ -37,6 +38,18 @@ def get_changelog_version():
     return None
 
 
+def get_plugin_version():
+    """Read version from the plugin manifest; None when absent or unreadable."""
+    import json
+    path = REPO_ROOT / ".claude-plugin" / "plugin.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("version")
+    except (ValueError, OSError):
+        return "unparseable"
+
+
 def get_md_protocol_version(filename):
     """Extract protocol version from a context file (_Version: X.Y | ...)."""
     path = REPO_ROOT / filename
@@ -65,6 +78,13 @@ def main():
     if changelog and changelog != version_file:
         errors.append(
             f"  VERSION says {version_file}, CHANGELOG.md says {changelog}"
+        )
+
+    # Check plugin manifest sync: VERSION vs .claude-plugin/plugin.json
+    plugin_version = get_plugin_version()
+    if plugin_version is not None and plugin_version != version_file:
+        errors.append(
+            f"  VERSION says {version_file}, .claude-plugin/plugin.json says {plugin_version}"
         )
 
     # Check protocol version sync: each generated file vs CLAUDE.md
