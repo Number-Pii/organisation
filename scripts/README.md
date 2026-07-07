@@ -235,6 +235,39 @@ configuration), the script stops with a clear message rather than guessing.
 
 ---
 
+## `build_org.py` and `build_agents.py`: Org Structure as Data
+
+`build_org.py` generates `Teams/org.json` from the role files: departments,
+reporting lines, approval authority, and agent skills as machine-readable data.
+`build_agents.py` generates Claude Code subagent definitions in `agents/` for
+the core delivery roles listed in its `CORE_ROLES` table. Role markdown stays
+the source of truth; both outputs are generated, CI fails on drift, and both
+scripts take `--check`.
+
+```bash
+python3 scripts/build_org.py && python3 scripts/build_agents.py
+```
+
+---
+
+## `run_evals.py`: Skill Eval Runner
+
+Runs the golden tasks in `evals/tasks/` twice each (bare, and with the skill
+under test loaded) and writes side-by-side results for rubric judging. Needs
+the `claude` CLI for live runs; `--list` works without it. Method and task
+format: `evals/README.md`.
+
+---
+
+## `draft_handover.py`: Handover Drafter
+
+Drafts a dated Work Completed entry for a department handover file from the
+consuming project's git history (grouped by conventional-commit type). Run it
+from the project root; add `--write` to append the draft to
+`doc/handover/<dept>/handover-notes.md`, then review and add the why.
+
+---
+
 ## `update.py`: Toolkit Updater
 
 Checks for updates to this toolkit and pulls the latest version safely.

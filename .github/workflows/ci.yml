@@ -40,6 +40,13 @@ jobs:
       - name: Check skills index is current
         run: python3 scripts/build_skills_index.py --check
 
+      # Teams/org.json and agents/*.md are generated from role files;
+      # fail if either drifts (build_org.py / build_agents.py)
+      - name: Check org data and agents are current
+        run: |
+          python3 scripts/build_org.py --check
+          python3 scripts/build_agents.py --check
+
       # Check VERSION, CHANGELOG, CLAUDE.md, and GEMINI.md are in sync
       - name: Validate version sync
         run: python3 scripts/check_version.py

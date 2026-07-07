@@ -13,6 +13,40 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.19.0]: 2026-07-07
+
+### Added
+- **Claude Code plugin packaging.** The repo doubles as an installable plugin
+  (`.claude-plugin/plugin.json`): the Initialize Protocol becomes `/np:init`
+  (it cannot be run from memory), the main-branch protection hook applies
+  wherever the plugin is enabled, and the core role agents install natively.
+  The manifest version is pinned to `VERSION` by `check_version.py`, and a
+  test pins the plugin hook byte-identical to the scaffold template.
+- **Roles as agents.** `scripts/build_agents.py` generates Claude Code
+  subagent definitions in `agents/` for five core delivery roles (backend
+  lead, frontend lead, senior PM, QA automation, information security), each
+  carrying the delegated-authority governance note and its approval
+  boundaries. Generated from role markdown; CI fails on drift.
+- **Org structure as data.** `scripts/build_org.py` generates `Teams/org.json`
+  (6 departments, 53 roles, reporting lines, approval authority, agent
+  skills); `audit_skills.py` now reads its department list from it instead of
+  a hardcoded constant. CI fails on drift.
+- **Skill evals v1.** `evals/` defines nine golden tasks across
+  backend, frontend, and writing, each with a scoring rubric;
+  `scripts/run_evals.py` runs every task bare and with the skill under test
+  and stores side-by-side results for rubric judging. Curation becomes
+  evidence-driven; tier changes still need a human sign-off.
+- **Knowledge loop.** `scripts/draft_handover.py` drafts dated handover
+  entries from git history (grouped by commit type, `--write` to append);
+  `templates/learnings.md` plus a new closure checklist item make a one-page
+  learnings file part of every project's exit.
+
+### Pending
+- The first `products/` pack still needs durable product facts from the
+  founders; the spec and template are ready.
+
+---
+
 ## [3.18.0]: 2026-07-07
 
 ### Added

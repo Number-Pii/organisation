@@ -1,0 +1,1063 @@
+{
+  "departments": [
+    {
+      "dir": "01-Executive-Leadership",
+      "name": "Executive Leadership"
+    },
+    {
+      "dir": "02-Engineering",
+      "name": "Engineering"
+    },
+    {
+      "dir": "03-Product-Design",
+      "name": "Product & Design"
+    },
+    {
+      "dir": "04-Sales-Consultancy",
+      "name": "Sales & Consultancy"
+    },
+    {
+      "dir": "05-Growth-Marketing",
+      "name": "Growth & Marketing"
+    },
+    {
+      "dir": "06-Operations",
+      "name": "Operations"
+    }
+  ],
+  "roles": [
+    {
+      "title": "CEO",
+      "file": "Teams/01-Executive-Leadership/CEO.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "The Founders (Olatunbosun Iyare, Destiny Ihejirika)",
+      "direct_reports": "CTO, CPO, CMO, VP Sales & Consultancy, COO, Chief of Staff",
+      "employment_type": "Full-time",
+      "can_approve": "Strategic recommendations, executive coordination, contract preparation, founder briefing materials",
+      "needs_approval_from": "The Founders (company direction changes, large contracts >£50k, fundraising, M&A, major pivots)",
+      "agent_skills": [
+        "brand-guidelines",
+        "business-analyst",
+        "competitive-landscape",
+        "launch-strategy",
+        "pricing-strategy",
+        "startup-business-analyst-market-opportunity",
+        "startup-metrics-framework"
+      ]
+    },
+    {
+      "title": "CMO / VP of Growth",
+      "file": "Teams/01-Executive-Leadership/CMO-VP-Growth.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "Head of Content & SEO, Community & Brand Manager, Performance Marketing Manager, Social Media Manager",
+      "employment_type": "Full-time",
+      "can_approve": "Campaign strategy, content calendar, brand guidelines, marketing hires, tool selection",
+      "needs_approval_from": "CEO (budget allocation, major brand changes)",
+      "agent_skills": [
+        "brand-guidelines",
+        "content-strategy",
+        "growth-engine",
+        "marketing-psychology",
+        "paid-ads",
+        "seo",
+        "social-content"
+      ]
+    },
+    {
+      "title": "COO (Chief Operating Officer)",
+      "file": "Teams/01-Executive-Leadership/COO.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "Head of Finance, Head of People & Talent, Operations Manager, Office/Facilities Manager",
+      "employment_type": "Full-time",
+      "can_approve": "Operational budgets, vendor contracts, HR policies, operational hires, process changes",
+      "needs_approval_from": "CEO (executive hires, major budget decisions, legal matters)",
+      "agent_skills": [
+        "cost-optimization",
+        "hr-pro",
+        "internal-comms",
+        "make-automation",
+        "risk-manager",
+        "workflow-automation"
+      ]
+    },
+    {
+      "title": "CPO (Chief Product Officer)",
+      "file": "Teams/01-Executive-Leadership/CPO.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "Senior Product Manager, Product Manager (Future Products), Lead Product Designer, Product Analyst",
+      "employment_type": "Full-time",
+      "can_approve": "Product roadmap, feature scope, design direction, product hires, product experiments",
+      "needs_approval_from": "CEO (new product initiatives, major pivots), CTO (architectural implications)",
+      "agent_skills": [
+        "analytics-product",
+        "launch-strategy",
+        "product-design",
+        "product-manager",
+        "product-manager-toolkit",
+        "startup-metrics-framework"
+      ]
+    },
+    {
+      "title": "CTO (Chief Technology Officer)",
+      "file": "Teams/01-Executive-Leadership/CTO.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "VP Product Engineering, VP Client Engineering, Head of DevOps & Infrastructure, Head of QA & Reliability, Head of Information Security, Engineering Manager",
+      "employment_type": "Full-time",
+      "can_approve": "Architecture decisions, tech stack, security policies, engineering hires, technical design documents, infrastructure spend",
+      "needs_approval_from": "CEO (executive hires, budget beyond tech scope, strategic partnerships)",
+      "agent_skills": [
+        "architecture-decision-records",
+        "architecture-patterns",
+        "cloud-architect",
+        "security-audit",
+        "senior-architect",
+        "software-architecture",
+        "threat-modeling-expert"
+      ]
+    },
+    {
+      "title": "Chief of Staff",
+      "file": "Teams/01-Executive-Leadership/Chief-of-Staff.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "None (coordinates across all departments)",
+      "employment_type": "Full-time",
+      "can_approve": "Meeting agendas, internal communications (on CEO's behalf), process documentation",
+      "needs_approval_from": "CEO (all decisions; this role executes, not decides at executive level)",
+      "agent_skills": [
+        "brainstorming",
+        "doc-coauthoring",
+        "documentation",
+        "internal-comms",
+        "project-development",
+        "writing-plans"
+      ]
+    },
+    {
+      "title": "VP of Sales & Consultancy",
+      "file": "Teams/01-Executive-Leadership/VP-Sales-Consultancy.md",
+      "department_dir": "01-Executive-Leadership",
+      "department": "Executive Leadership",
+      "reports_to": "CEO",
+      "direct_reports": "Head of Consultancy, Head of Business Development, Account Manager(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Consultancy engagements, service proposals, pricing (within policy), sales hires, partnership agreements",
+      "needs_approval_from": "CEO (large deals >£100k, strategic partnerships)",
+      "agent_skills": [
+        "cold-email",
+        "competitive-landscape",
+        "hubspot-automation",
+        "pipedrive-automation",
+        "revops",
+        "sales-enablement"
+      ]
+    },
+    {
+      "title": "Engineering Manager",
+      "file": "Teams/02-Engineering/Engineering-Manager.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "None (coordinates across all engineering sub-teams)",
+      "employment_type": "Full-time",
+      "can_approve": "Sprint assignments, process changes, PTO requests, onboarding plans",
+      "needs_approval_from": "CTO (headcount changes, role definitions, budget)",
+      "agent_skills": [
+        "cicd-automation-workflow-automate",
+        "git-pr-workflows-git-workflow",
+        "internal-comms",
+        "project-development",
+        "team-collaboration-standup-notes",
+        "writing-plans"
+      ]
+    },
+    {
+      "title": "Head of DevOps & Infrastructure",
+      "file": "Teams/02-Engineering/Head-DevOps-Infrastructure.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "Senior DevOps Engineer(s), Senior Cloud Engineer",
+      "employment_type": "Full-time",
+      "can_approve": "Infrastructure changes, deployment pipeline modifications, cloud resource provisioning, DevOps hires",
+      "needs_approval_from": "CTO (major architecture changes, large cost commitments)",
+      "agent_skills": [
+        "aws-skills",
+        "cloud-devops",
+        "cloudformation-best-practices",
+        "docker-expert",
+        "github-actions-templates",
+        "grafana-dashboards",
+        "kubernetes-architect",
+        "pagerduty-automation",
+        "terraform-specialist"
+      ]
+    },
+    {
+      "title": "Head of Information Security",
+      "file": "Teams/02-Engineering/Head-Information-Security.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "Senior Security Engineer, Security Analyst",
+      "employment_type": "Full-time",
+      "can_approve": "Security policies, vulnerability response actions, compliance standards, security tool selection, security hires",
+      "needs_approval_from": "CTO (security budget, major architectural security changes), CEO (compliance programme commitments)",
+      "agent_skills": [
+        "burp-suite-testing",
+        "gdpr-data-handling",
+        "k8s-security-policies",
+        "pentest-checklist",
+        "security-audit",
+        "security-compliance-compliance-check",
+        "security-scanning-security-hardening",
+        "security-scanning-security-sast",
+        "threat-modeling-expert",
+        "web-security-testing"
+      ]
+    },
+    {
+      "title": "Head of QA & Reliability",
+      "file": "Teams/02-Engineering/Head-QA-Reliability.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "Senior QA Engineer(s), QA Automation Engineer",
+      "employment_type": "Full-time",
+      "can_approve": "Release readiness, test strategy, QA hires, quality standards",
+      "needs_approval_from": "CTO (release decisions with known issues), VP Product/Client Eng (scope changes based on quality findings)",
+      "agent_skills": [
+        "e2e-testing",
+        "javascript-testing-patterns",
+        "k6-load-testing",
+        "performance-testing-review-ai-review",
+        "playwright-skill",
+        "test-driven-development",
+        "testing-qa"
+      ]
+    },
+    {
+      "title": "Lead Backend Engineer",
+      "file": "Teams/02-Engineering/Lead-Backend-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Product Engineering",
+      "direct_reports": "Senior Backend Engineer(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Backend architectural decisions, API contracts, database migrations, PR merges",
+      "needs_approval_from": "VP Product Engineering (major schema changes), Head of InfoSec (security-sensitive changes)",
+      "agent_skills": [
+        "api-design-principles",
+        "auth-implementation-patterns",
+        "backend-dev-guidelines",
+        "bullmq-specialist",
+        "database-design",
+        "drizzle-orm-expert",
+        "nestjs-expert",
+        "postgresql"
+      ]
+    },
+    {
+      "title": "Lead Frontend Engineer",
+      "file": "Teams/02-Engineering/Lead-Frontend-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Product Engineering",
+      "direct_reports": "Senior Frontend Engineer(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Frontend architectural decisions, component patterns, PR merges",
+      "needs_approval_from": "VP Product Engineering (major refactors), Lead Product Designer (design deviations)",
+      "agent_skills": [
+        "accessibility-compliance-accessibility-audit",
+        "nextjs-best-practices",
+        "playwright-skill",
+        "react-best-practices",
+        "senior-frontend",
+        "tailwind-design-system",
+        "typescript-expert",
+        "web-performance-optimization"
+      ]
+    },
+    {
+      "title": "Lead Mobile Developer",
+      "file": "Teams/02-Engineering/Lead-Mobile-Developer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Client Engineering",
+      "direct_reports": "Senior Mobile Developer(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Mobile project technical decisions, platform choice, team assignments, PR merges",
+      "needs_approval_from": "VP Client Engineering (scope/budget changes)",
+      "agent_skills": [
+        "android-jetpack-compose-expert",
+        "expo-cicd-workflows",
+        "expo-deployment",
+        "expo-dev-client",
+        "firebase",
+        "flutter-expert",
+        "react-native-architecture",
+        "swiftui-expert-skill"
+      ]
+    },
+    {
+      "title": "Lead Web Developer",
+      "file": "Teams/02-Engineering/Lead-Web-Developer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Client Engineering",
+      "direct_reports": "Senior Web Developer(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Client web project technical decisions, team assignments within project, PR merges",
+      "needs_approval_from": "VP Client Engineering (scope/budget changes), Account Manager (client-facing changes)",
+      "agent_skills": [
+        "e2e-testing",
+        "nextjs-best-practices",
+        "nodejs-best-practices",
+        "playwright-skill",
+        "react-best-practices",
+        "shopify-development",
+        "typescript-expert",
+        "wordpress-plugin-development"
+      ]
+    },
+    {
+      "title": "QA Automation Engineer",
+      "file": "Teams/02-Engineering/QA-Automation-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of QA & Reliability",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Test automation configuration, pipeline test stages",
+      "needs_approval_from": "Head of QA (test strategy changes)",
+      "agent_skills": [
+        "e2e-testing",
+        "github-actions-templates",
+        "javascript-testing-patterns",
+        "k6-load-testing",
+        "playwright-skill",
+        "tdd-workflows-tdd-cycle",
+        "test-automator"
+      ]
+    },
+    {
+      "title": "Security Analyst",
+      "file": "Teams/02-Engineering/Security-Analyst.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of Information Security",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Security awareness content, compliance documentation drafts",
+      "needs_approval_from": "Head of InfoSec (policy decisions, vendor approvals)",
+      "agent_skills": [
+        "gdpr-data-handling",
+        "pci-compliance",
+        "scanning-tools",
+        "security-audit",
+        "security-compliance-compliance-check",
+        "vulnerability-scanner"
+      ]
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "file": "Teams/02-Engineering/Senior-Backend-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Lead Backend Engineer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "Lead Backend Engineer (schema changes, new API patterns)",
+      "agent_skills": [
+        "api-design-principles",
+        "auth-implementation-patterns",
+        "backend-dev-guidelines",
+        "drizzle-orm-expert",
+        "nestjs-expert",
+        "nodejs-best-practices",
+        "postgresql"
+      ]
+    },
+    {
+      "title": "Senior Cloud Engineer",
+      "file": "Teams/02-Engineering/Senior-Cloud-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of DevOps & Infrastructure",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Environment configurations",
+      "needs_approval_from": "Head of DevOps (provisioning), Head of InfoSec (security policies)",
+      "agent_skills": [
+        "aws-cost-optimizer",
+        "aws-serverless",
+        "aws-skills",
+        "cloud-architect",
+        "kubernetes-deployment",
+        "secrets-management",
+        "terraform-infrastructure"
+      ]
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "file": "Teams/02-Engineering/Senior-DevOps-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of DevOps & Infrastructure",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Pipeline configuration changes",
+      "needs_approval_from": "Head of DevOps (infrastructure provisioning, cost changes)",
+      "agent_skills": [
+        "aws-skills",
+        "cloud-devops",
+        "docker-expert",
+        "github-actions-templates",
+        "kubernetes-deployment",
+        "linux-shell-scripting",
+        "linux-troubleshooting",
+        "terraform-specialist"
+      ]
+    },
+    {
+      "title": "Senior Frontend Engineer",
+      "file": "Teams/02-Engineering/Senior-Frontend-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Lead Frontend Engineer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "Lead Frontend Engineer (architectural changes, new patterns)",
+      "agent_skills": [
+        "javascript-testing-patterns",
+        "nextjs-app-router-patterns",
+        "react-best-practices",
+        "tailwind-patterns",
+        "typescript-expert",
+        "zod-validation-expert"
+      ]
+    },
+    {
+      "title": "Senior Full-Stack Engineer",
+      "file": "Teams/02-Engineering/Senior-Full-Stack-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Product Engineering",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "VP Product Engineering (architecture), Lead Frontend/Backend (domain-specific decisions)",
+      "agent_skills": [
+        "api-design-principles",
+        "backend-dev-guidelines",
+        "docker-expert",
+        "postgresql",
+        "react-best-practices",
+        "senior-fullstack",
+        "typescript-expert"
+      ]
+    },
+    {
+      "title": "Senior Mobile Developer",
+      "file": "Teams/02-Engineering/Senior-Mobile-Developer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Lead Mobile Developer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "Lead Mobile Developer (platform choice, architectural decisions)",
+      "agent_skills": [
+        "expo-deployment",
+        "expo-dev-client",
+        "firebase",
+        "flutter-expert",
+        "mobile-design",
+        "react-native-architecture"
+      ]
+    },
+    {
+      "title": "Senior QA Engineer",
+      "file": "Teams/02-Engineering/Senior-QA-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of QA & Reliability",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Test case sign-off, bug severity classification",
+      "needs_approval_from": "Head of QA (release decisions)",
+      "agent_skills": [
+        "e2e-testing",
+        "javascript-testing-patterns",
+        "playwright-skill",
+        "testing-patterns",
+        "testing-qa",
+        "webapp-testing"
+      ]
+    },
+    {
+      "title": "Senior Security Engineer",
+      "file": "Teams/02-Engineering/Senior-Security-Engineer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Head of Information Security",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Vulnerability severity ratings, remediation priorities",
+      "needs_approval_from": "Head of InfoSec (policy changes, major findings disclosure)",
+      "agent_skills": [
+        "burp-suite-testing",
+        "ethical-hacking-methodology",
+        "k8s-security-policies",
+        "pentest-commands",
+        "security-audit",
+        "security-scanning-security-dependencies",
+        "security-scanning-security-hardening",
+        "security-scanning-security-sast",
+        "web-security-testing"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer: Custom Solutions",
+      "file": "Teams/02-Engineering/Senior-Software-Engineer-Custom.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "VP of Client Engineering",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "VP Client Engineering (architecture), Head of InfoSec (data handling)",
+      "agent_skills": [
+        "api-design-principles",
+        "aws-serverless",
+        "backend-dev-guidelines",
+        "bullmq-specialist",
+        "data-engineering-data-pipeline",
+        "microservices-patterns",
+        "postgresql",
+        "workflow-automation"
+      ]
+    },
+    {
+      "title": "Senior Web Developer",
+      "file": "Teams/02-Engineering/Senior-Web-Developer.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "Lead Web Developer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own PR merges (with peer review)",
+      "needs_approval_from": "Lead Web Developer (architectural changes)",
+      "agent_skills": [
+        "e2e-testing",
+        "nextjs-best-practices",
+        "nodejs-best-practices",
+        "playwright-skill",
+        "react-best-practices",
+        "typescript-expert"
+      ]
+    },
+    {
+      "title": "VP of Client Engineering",
+      "file": "Teams/02-Engineering/VP-Client-Engineering.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "Lead Web Developer, Lead Mobile Developer, Senior Web Developer(s), Senior Mobile Developer(s), Senior Software Engineer(s) (Custom) Solutions",
+      "employment_type": "Full-time",
+      "can_approve": "Client project technical designs, team assignments, delivery timelines",
+      "needs_approval_from": "CTO (architecture decisions), VP Sales (budget/scope changes)",
+      "agent_skills": [
+        "backend-dev-guidelines",
+        "cloud-architect",
+        "mobile-developer",
+        "project-development",
+        "react-best-practices",
+        "senior-architect"
+      ]
+    },
+    {
+      "title": "VP of Product Engineering",
+      "file": "Teams/02-Engineering/VP-Product-Engineering.md",
+      "department_dir": "02-Engineering",
+      "department": "Engineering",
+      "reports_to": "CTO",
+      "direct_reports": "Lead Frontend Engineer, Senior Frontend Engineer(s), Lead Backend Engineer, Senior Backend Engineer(s), Senior Full-Stack Engineer(s)",
+      "employment_type": "Full-time",
+      "can_approve": "Sprint scope, technical designs, code merges, product engineering hires (with CTO)",
+      "needs_approval_from": "CTO (architecture changes, stack changes, major refactors)",
+      "agent_skills": [
+        "architecture-decision-records",
+        "architecture-patterns",
+        "cloud-architect",
+        "kubernetes-architect",
+        "senior-architect",
+        "software-architecture"
+      ]
+    },
+    {
+      "title": "Lead Product Designer (UI/UX)",
+      "file": "Teams/03-Product-Design/Lead-Product-Designer.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "CPO",
+      "direct_reports": "Senior Product Designer(s), UX Researcher",
+      "employment_type": "Full-time",
+      "can_approve": "Design system updates, UI patterns, design handoffs, design hires (with CPO)",
+      "needs_approval_from": "CPO (brand direction), CEO (major visual identity changes)",
+      "agent_skills": [
+        "accessibility-compliance-accessibility-audit",
+        "design-md",
+        "figma-automation",
+        "frontend-design",
+        "hig-foundations",
+        "mobile-design",
+        "ui-ux-pro-max"
+      ]
+    },
+    {
+      "title": "Product Analyst",
+      "file": "Teams/03-Product-Design/Product-Analyst.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "CPO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Dashboard configurations, experiment designs",
+      "needs_approval_from": "CPO (metric definitions), Senior PM (experiment scope)",
+      "agent_skills": [
+        "ab-test-setup",
+        "analytics-product",
+        "data-storytelling",
+        "plotly",
+        "posthog-automation",
+        "sql-pro",
+        "startup-metrics-framework"
+      ]
+    },
+    {
+      "title": "Product Manager (Future Products)",
+      "file": "Teams/03-Product-Design/Product-Manager-Future.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "CPO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Discovery scope, MVP feature list, user research plans",
+      "needs_approval_from": "CPO (product launch decisions, budget), CEO (new product initiatives)",
+      "agent_skills": [
+        "analytics-product",
+        "brainstorming",
+        "product-manager",
+        "product-manager-toolkit",
+        "writing-plans"
+      ]
+    },
+    {
+      "title": "Senior Product Designer",
+      "file": "Teams/03-Product-Design/Senior-Product-Designer.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "Lead Product Designer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Own design deliverables (with Lead review)",
+      "needs_approval_from": "Lead Product Designer (new patterns, system changes)",
+      "agent_skills": [
+        "frontend-design",
+        "hig-components-controls",
+        "hig-patterns",
+        "ui-ux-designer",
+        "ui-ux-pro-max",
+        "web-design-guidelines"
+      ]
+    },
+    {
+      "title": "Senior Product Manager",
+      "file": "Teams/03-Product-Design/Senior-Product-Manager.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "CPO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Feature specs, user stories, sprint priorities, acceptance criteria",
+      "needs_approval_from": "CPO (roadmap changes, major scope shifts)",
+      "agent_skills": [
+        "analytics-product",
+        "launch-strategy",
+        "product-manager",
+        "product-manager-toolkit",
+        "startup-metrics-framework",
+        "writing-plans"
+      ]
+    },
+    {
+      "title": "UX Researcher",
+      "file": "Teams/03-Product-Design/UX-Researcher.md",
+      "department_dir": "03-Product-Design",
+      "department": "Product & Design",
+      "reports_to": "Lead Product Designer",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Research plans, study methodologies",
+      "needs_approval_from": "Lead Product Designer (research scope), CPO (research budget)",
+      "agent_skills": [
+        "analytics-product",
+        "brainstorming",
+        "data-storytelling",
+        "product-design",
+        "writing-plans"
+      ]
+    },
+    {
+      "title": "Account Manager",
+      "file": "Teams/04-Sales-Consultancy/Account-Manager.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "VP of Sales & Consultancy",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Status reports, meeting schedules, minor scope clarifications",
+      "needs_approval_from": "VP Sales (contract changes, pricing), VP Client Eng (technical scope changes)",
+      "agent_skills": [
+        "customer-support",
+        "hubspot-automation",
+        "internal-comms",
+        "pipedrive-automation",
+        "revops"
+      ]
+    },
+    {
+      "title": "Business Development Representative",
+      "file": "Teams/04-Sales-Consultancy/Business-Development-Representative.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "Head of Business Development",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Outreach messaging (with review)",
+      "needs_approval_from": "Head of BD (target lists, outreach strategy)",
+      "agent_skills": [
+        "cold-email",
+        "copywriting",
+        "email-sequence",
+        "linkedin-automation",
+        "pipedrive-automation"
+      ]
+    },
+    {
+      "title": "Head of Business Development",
+      "file": "Teams/04-Sales-Consultancy/Head-of-Business-Development.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "VP of Sales & Consultancy",
+      "direct_reports": "Senior Business Development Manager, Business Development Representative(s)",
+      "employment_type": "Full-time",
+      "can_approve": "BDR targets, outreach strategy, partnership proposals",
+      "needs_approval_from": "VP Sales (pricing, large deal terms)",
+      "agent_skills": [
+        "cold-email",
+        "competitive-landscape",
+        "hubspot-automation",
+        "pipedrive-automation",
+        "revops",
+        "sales-enablement"
+      ]
+    },
+    {
+      "title": "Head of Consultancy",
+      "file": "Teams/04-Sales-Consultancy/Head-of-Consultancy.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "VP of Sales & Consultancy",
+      "direct_reports": "Principal Consultant (Digital Transformation), Principal Consultant (Technology Strategy)",
+      "employment_type": "Full-time",
+      "can_approve": "Engagement scope, consultant assignments, deliverable standards",
+      "needs_approval_from": "VP Sales & Consultancy (pricing, large engagements)",
+      "agent_skills": [
+        "architecture-decision-records",
+        "customer-support",
+        "project-development",
+        "senior-architect",
+        "software-architecture"
+      ]
+    },
+    {
+      "title": "Principal Consultant (Digital Transformation)",
+      "file": "Teams/04-Sales-Consultancy/Principal-Consultant-Digital-Transformation.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "Head of Consultancy",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Assessment findings, strategy recommendations",
+      "needs_approval_from": "Head of Consultancy (engagement deliverables), VP Sales (pricing)",
+      "agent_skills": [
+        "cloud-architect",
+        "legacy-modernizer",
+        "make-automation",
+        "software-architecture",
+        "startup-analyst",
+        "workflow-automation"
+      ]
+    },
+    {
+      "title": "Principal Consultant (Technology Strategy)",
+      "file": "Teams/04-Sales-Consultancy/Principal-Consultant-Technology-Strategy.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "Head of Consultancy",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Technology recommendations, architecture review findings",
+      "needs_approval_from": "Head of Consultancy (deliverables), CTO (when recommending Number Pii's own technologies)",
+      "agent_skills": [
+        "architecture-decision-records",
+        "architecture-patterns",
+        "cloud-architect",
+        "senior-architect",
+        "software-architecture",
+        "startup-analyst"
+      ]
+    },
+    {
+      "title": "Senior Business Development Manager",
+      "file": "Teams/04-Sales-Consultancy/Senior-Business-Development-Manager.md",
+      "department_dir": "04-Sales-Consultancy",
+      "department": "Sales & Consultancy",
+      "reports_to": "Head of Business Development",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Meeting scheduling, proposal drafts",
+      "needs_approval_from": "Head of BD (pricing, contract terms)",
+      "agent_skills": [
+        "cold-email",
+        "copywriting",
+        "hubspot-automation",
+        "linkedin-automation",
+        "pipedrive-automation",
+        "sales-enablement"
+      ]
+    },
+    {
+      "title": "Community & Brand Manager",
+      "file": "Teams/05-Growth-Marketing/Community-Brand-Manager.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "CMO / VP of Growth",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Community content, event participation, brand asset usage",
+      "needs_approval_from": "CMO (budget, major brand decisions)",
+      "agent_skills": [
+        "brand-guidelines",
+        "content-creator",
+        "copywriting",
+        "discord-automation",
+        "internal-comms-community",
+        "social-content"
+      ]
+    },
+    {
+      "title": "Head of Content & SEO",
+      "file": "Teams/05-Growth-Marketing/Head-Content-SEO.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "CMO / VP of Growth",
+      "direct_reports": "Senior Content Strategist, SEO Specialist",
+      "employment_type": "Full-time",
+      "can_approve": "Content calendar, SEO strategy, content team hires",
+      "needs_approval_from": "CMO (budget, major campaigns)",
+      "agent_skills": [
+        "content-strategy",
+        "copywriting",
+        "seo",
+        "seo-audit",
+        "seo-content",
+        "seo-keyword-strategist",
+        "seo-technical"
+      ]
+    },
+    {
+      "title": "Performance Marketing Manager",
+      "file": "Teams/05-Growth-Marketing/Performance-Marketing-Manager.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "CMO / VP of Growth",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Ad spend (within budget), campaign creative, targeting changes",
+      "needs_approval_from": "CMO (budget increases, new channels)",
+      "agent_skills": [
+        "ab-test-setup",
+        "analytics-tracking",
+        "google-analytics-automation",
+        "page-cro",
+        "paid-ads",
+        "seo-keyword-strategist"
+      ]
+    },
+    {
+      "title": "SEO Specialist",
+      "file": "Teams/05-Growth-Marketing/SEO-Specialist.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "Head of Content & SEO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "SEO recommendations, keyword targets",
+      "needs_approval_from": "Head of Content (major strategy changes), CTO (technical SEO that requires code changes)",
+      "agent_skills": [
+        "seo",
+        "seo-audit",
+        "seo-content",
+        "seo-keyword-strategist",
+        "seo-page",
+        "seo-schema",
+        "seo-sitemap",
+        "seo-technical"
+      ]
+    },
+    {
+      "title": "Senior Content Strategist",
+      "file": "Teams/05-Growth-Marketing/Senior-Content-Strategist.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "Head of Content & SEO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Article drafts (with editorial review)",
+      "needs_approval_from": "Head of Content (publish sign-off)",
+      "agent_skills": [
+        "blog-writing-guide",
+        "content-creator",
+        "content-strategy",
+        "copywriting",
+        "data-storytelling",
+        "seo-content"
+      ]
+    },
+    {
+      "title": "Social Media Manager",
+      "file": "Teams/05-Growth-Marketing/Social-Media-Manager.md",
+      "department_dir": "05-Growth-Marketing",
+      "department": "Growth & Marketing",
+      "reports_to": "CMO / VP of Growth",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Social content calendar, post scheduling",
+      "needs_approval_from": "CMO (major announcements), Community & Brand Manager (brand compliance)",
+      "agent_skills": [
+        "content-creator",
+        "instagram-automation",
+        "linkedin-automation",
+        "social-content",
+        "twitter-automation",
+        "youtube-automation"
+      ]
+    },
+    {
+      "title": "Head of Finance",
+      "file": "Teams/06-Operations/Head-of-Finance.md",
+      "department_dir": "06-Operations",
+      "department": "Operations",
+      "reports_to": "COO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Expense claims, routine payments, financial reports",
+      "needs_approval_from": "COO (budget changes), CEO (major financial commitments)",
+      "agent_skills": [
+        "billing-automation",
+        "cost-optimization",
+        "risk-metrics-calculation",
+        "startup-financial-modeling",
+        "startup-metrics-framework",
+        "stripe-automation"
+      ]
+    },
+    {
+      "title": "Head of People & Talent",
+      "file": "Teams/06-Operations/Head-of-People-Talent.md",
+      "department_dir": "06-Operations",
+      "department": "Operations",
+      "reports_to": "COO",
+      "direct_reports": "Talent Acquisition Specialist",
+      "employment_type": "Full-time",
+      "can_approve": "HR policies, performance review cycles, onboarding programmes, talent hires",
+      "needs_approval_from": "COO (headcount changes, compensation changes), CEO (exec hiring)",
+      "agent_skills": [
+        "bamboohr-automation",
+        "employment-contract-templates",
+        "hr-pro",
+        "internal-comms",
+        "interview-coach"
+      ]
+    },
+    {
+      "title": "Office / Facilities Manager",
+      "file": "Teams/06-Operations/Office-Facilities-Manager.md",
+      "department_dir": "06-Operations",
+      "department": "Operations",
+      "reports_to": "COO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Equipment purchases (within budget), facility bookings, vendor selection (facilities)",
+      "needs_approval_from": "COO (large capital expenses, lease decisions)",
+      "agent_skills": [
+        "cost-optimization",
+        "file-organizer",
+        "internal-comms",
+        "make-automation",
+        "workflow-automation"
+      ]
+    },
+    {
+      "title": "Operations Manager",
+      "file": "Teams/06-Operations/Operations-Manager.md",
+      "department_dir": "06-Operations",
+      "department": "Operations",
+      "reports_to": "COO",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Vendor selection (within budget), process documentation, operational logistics",
+      "needs_approval_from": "COO (new vendors, budget changes)",
+      "agent_skills": [
+        "analytics-product",
+        "cost-optimization",
+        "make-automation",
+        "risk-manager",
+        "workflow-automation",
+        "zapier-make-patterns"
+      ]
+    },
+    {
+      "title": "Talent Acquisition Specialist",
+      "file": "Teams/06-Operations/Talent-Acquisition-Specialist.md",
+      "department_dir": "06-Operations",
+      "department": "Operations",
+      "reports_to": "Head of People & Talent",
+      "direct_reports": "None",
+      "employment_type": "Full-time",
+      "can_approve": "Candidate screening decisions, interview schedules",
+      "needs_approval_from": "Head of People (offer decisions), hiring manager (candidate progression)",
+      "agent_skills": [
+        "bamboohr-automation",
+        "hr-pro",
+        "interview-coach",
+        "linkedin-automation"
+      ]
+    }
+  ]
+}

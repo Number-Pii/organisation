@@ -17,3 +17,6 @@ __pycache__/
 
 # Generated output
 scripts/audit_report.md
+
+# Eval outputs
+evals/results/

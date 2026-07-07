@@ -36,8 +36,24 @@ REPO_ROOT   = Path(__file__).resolve().parent.parent
 TEAMS_DIR   = REPO_ROOT / "Teams"
 SKILLS_DIR  = TEAMS_DIR / "skills"
 CATEGORIES_MD = SKILLS_DIR / "CATEGORIES.md"
-DEPT_DIRS   = ["01-Executive-Leadership", "02-Engineering", "03-Product-Design",
-               "04-Sales-Consultancy", "05-Growth-Marketing", "06-Operations"]
+def _dept_dirs() -> list:
+    """Department directories from generated Teams/org.json, with a static
+    fallback so the audit still runs before the first generation."""
+    org_path = TEAMS_DIR / "org.json"
+    if org_path.exists():
+        try:
+            import json
+            data = json.loads(org_path.read_text(encoding="utf-8"))
+            dirs = [d["dir"] for d in data.get("departments", [])]
+            if dirs:
+                return dirs
+        except (ValueError, KeyError, TypeError):
+            pass
+    return ["01-Executive-Leadership", "02-Engineering", "03-Product-Design",
+            "04-Sales-Consultancy", "05-Growth-Marketing", "06-Operations"]
+
+
+DEPT_DIRS = _dept_dirs()
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 

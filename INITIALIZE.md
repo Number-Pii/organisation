@@ -239,12 +239,13 @@ The workflow does **not** advance until this is done. No exceptions.
 ### Step 8: Project Closure
 Before a project is marked complete, confirm all of the following:
 - [ ] All quality gates for the project's classification level pass (see `doc/workflow.md`)
-- [ ] All handover notes are up to date
+- [ ] All handover notes are up to date (draft the final entry with `python3 organisation/scripts/draft_handover.py`, then review it)
 - [ ] `doc/handover/consolidated_handover.md` reflects final state
 - [ ] No open blockers remain undocumented
 - [ ] Client/stakeholder sign-off received (if applicable)
 - [ ] "Developed by Number Pii" credit is present in the deliverable
 - [ ] Repository is tagged or branched for release
 - [ ] Operations ownership (monitoring, support, maintenance) is recorded in `doc/handover/consolidated_handover.md`
+- [ ] `doc/learnings.md` is written (copy `organisation/templates/learnings.md` and fill it in): what to reuse, what to avoid, skill verdicts, estimates vs reality
 
 <!-- CACHE_BOUNDARY -->

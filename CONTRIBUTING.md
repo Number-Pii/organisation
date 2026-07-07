@@ -151,6 +151,8 @@ Demotion to `archive` needs only a PR stating the reason (off-charter, supersede
 
 `Teams/skills/skills-index.json` and `Teams/skills/CATEGORIES.md` are generated from skill frontmatter by `scripts/build_skills_index.py`; CI fails if they drift. Never edit them by hand: change the frontmatter, regenerate, and commit both. Domain description lines in CATEGORIES.md carry over from the previous generation, so a brand-new domain gets its one-line description edited once, then the generator preserves it.
 
+The same rule covers the org data: `Teams/org.json` (from `scripts/build_org.py`) and `agents/np-*.md` (from `scripts/build_agents.py`) are generated from the role files under `Teams/`. Edit the role markdown, regenerate, commit together. The plugin manifest version in `.claude-plugin/plugin.json` must match `VERSION`; `check_version.py` enforces it.
+
 ---
 
 ## Tests and Templates
