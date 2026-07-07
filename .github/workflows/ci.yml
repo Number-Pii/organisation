@@ -47,6 +47,13 @@ jobs:
           python3 scripts/build_org.py --check
           python3 scripts/build_agents.py --check
 
+      # The plugin packaging (.claude-plugin/, hooks/, commands/, agents/) is
+      # not executed by any other check; validate the manifests parse, the
+      # referenced hook scripts exist, and the two protect-main copies
+      # (plugin runtime vs scaffold template) have not drifted.
+      - name: Validate plugin packaging
+        run: python3 scripts/check_plugin.py
+
       # Check VERSION, CHANGELOG, CLAUDE.md, and GEMINI.md are in sync
       - name: Validate version sync
         run: python3 scripts/check_version.py

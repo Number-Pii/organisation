@@ -13,6 +13,18 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.19.1]: 2026-07-07
+
+### Added
+- **Plugin packaging validator.** `scripts/check_plugin.py` checks the plugin
+  surface in one pass: `plugin.json` and `hooks.json` parse, every
+  `${CLAUDE_PLUGIN_ROOT}` script reference resolves to a real file,
+  `commands/init.md` is present and non-empty, `agents/` holds generated
+  subagents, and the plugin and scaffold copies of the main-branch protection
+  hook stay byte-identical. Runs as its own CI step and in the pre-commit
+  hook, so packaging drift is caught locally before push, not only by the
+  pytest suite in CI.
+
 ## [3.19.0]: 2026-07-07
 
 ### Added
