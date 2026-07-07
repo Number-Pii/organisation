@@ -13,6 +13,29 @@ Version format: `MAJOR.MINOR.PATCH`
 
 ---
 
+## [3.18.0]: 2026-07-07
+
+### Added
+- **`gh_project_sync.py` sets the board Status field itself.** `assign --state`
+  now updates the GitHub Project Status column via the Projects v2 API
+  (field and option IDs discovered per project), replacing the v1 instruction
+  to set it by hand. A new `status` subcommand moves one issue's Status
+  directly. Verified read-side against the live CalyPad board.
+- **The ownership lock is enforced.** `assign` refuses to reassign an item
+  that is assigned and In Progress unless `--force` is passed, closing the gap
+  where a second contributor could silently take over claimed work.
+- **`sync` writes the board back into the doc file.** Live Status values
+  rewrite the State column of `doc/task-board.md` (template comment rows and
+  other sections untouched), closing the acknowledged one-directional gap in
+  the orchestration layer.
+
+### Changed
+- `GITHUB_ORCHESTRATION.md` now describes the two-way flow and the enforced
+  claim rule; `scripts/README.md` and the `@github-project-orchestrator` skill
+  document the new subcommands.
+
+---
+
 ## [3.17.0]: 2026-07-06
 
 ### Added
