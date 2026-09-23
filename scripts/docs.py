@@ -52,13 +52,25 @@ def summary(path: Path) -> str:
         return str(fm["summary"])
     text = path.read_text(encoding="utf-8", errors="replace")
     text = re.sub(r"\A---\n.*?\n---\n", "", text, flags=re.DOTALL)
+    text = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
+    candidates = []
     for block in re.split(r"\n\s*\n", text):
         block = block.strip()
-        if not block or block.startswith(("#", "<!--", "|", ">", "```", "---")):
+        if not block or block.startswith(("#", "<!--", "|", ">", "---")):
             continue
-        line = " ".join(block.split())
-        return line[:117] + "..." if len(line) > 120 else line
-    return ""
+        prose = not re.match(r"^([-*+]|\d+\.)\s|^_.*_$", block)
+        candidates.append((prose, block))
+    # Prefer the first prose paragraph; fall back to a list or metadata line.
+    candidates.sort(key=lambda c: not c[0])
+    if not candidates:
+        return ""
+    line = " ".join(candidates[0][1].split())
+    line = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)       # links: keep text
+    line = re.sub(r"\s*[\u2014\u2013]\s*", ": ", line, count=1)  # table text avoids dashes
+    line = re.sub(r"\s*[\u2014\u2013]\s*", ", ", line)
+    first = re.match(r"(.+?[.!?])(\s|$)", line)
+    line = first.group(1) if first and len(first.group(1)) >= 40 else line
+    return line[:117] + "..." if len(line) > 120 else line
 
 
 def markdown_files(root: Path) -> list[Path]:

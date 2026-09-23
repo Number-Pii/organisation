@@ -63,3 +63,13 @@ def test_toolkit_mode_flags_missing_files_named_in_code(tmp_path, capsys):
     subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
     assert docs.main(["--root", str(tmp_path), "check"]) == 1
     assert "`STANDARDS.md`" in capsys.readouterr().out
+
+
+def test_summary_prefers_prose_over_lists_and_drops_dashes(tmp_path):
+    doc = tmp_path / "d.md"
+    doc.write_text("# Design\n\n_Generated: 2026-04-27 by a tool_\n\n1. Fonts — load them first.\n\n"
+                   "The design system defines type, colour, and spacing tokens for every page. More.\n")
+    assert docs.summary(doc) == "The design system defines type, colour, and spacing tokens for every page."
+    listy = tmp_path / "l.md"
+    listy.write_text("# Runbook\n\n1. Deploy — then verify the health check passes.\n")
+    assert "—" not in docs.summary(listy)
