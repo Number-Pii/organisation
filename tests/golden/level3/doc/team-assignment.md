@@ -15,7 +15,7 @@
 
 ## Role File References
 <!-- Link to each team member's role file for full skill context. -->
-- [Role Name](../Teams/[department]/[role-file].md)
+- Role name: `organisation/Teams/<department>/<role-file>.md`
 
 ## Decision Authority Matrix
 <!-- Who approves what on this project. -->

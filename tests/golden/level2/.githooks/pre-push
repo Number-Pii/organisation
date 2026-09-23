@@ -1,0 +1,13 @@
+#!/bin/sh
+# Number Pii toolkit: refuse pushes to main or master from any client or agent.
+# Enable once per clone:  git config core.hooksPath .githooks
+# Branch protection on the hosting service is the real guarantee; this hook
+# catches the mistake locally, whichever tool or agent runs git.
+while read local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/main|refs/heads/master)
+      echo "pre-push: pushing to ${remote_ref#refs/heads/} is blocked. Push a feature/, fix/, chore/ or hotfix/ branch and open a pull request." >&2
+      exit 1 ;;
+  esac
+done
+exit 0

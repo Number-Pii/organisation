@@ -1,11 +1,10 @@
-"""Tests for Phase 5: org.json, generated agents, plugin packaging, evals, handover drafts."""
+"""Tests for org.json, generated agents, plugin packaging, and evals."""
 
 import json
 from pathlib import Path
 
 import build_agents
 import build_org
-from draft_handover import draft_entry, last_entry_date
 from run_evals import parse_tasks
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -126,29 +125,3 @@ def test_shipped_task_files_parse_and_reference_real_skills():
         assert (skills_dir / task["skill"]).is_dir(), \
             f"{domain}/{task['slug']} references missing skill @{task['skill']}"
         assert len(task["rubric"]) >= 3
-
-
-# ── handover drafting ────────────────────────────────────────────────────────
-
-def test_draft_entry_groups_by_commit_type():
-    commits = [
-        ("abc1234", "feat(api): add webhook endpoint"),
-        ("def5678", "fix: correct retry backoff"),
-        ("aaa1111", "update readme"),
-    ]
-    entry = draft_entry(commits, "2026-07-07")
-    assert entry.startswith("### 2026-07-07")
-    lines = entry.splitlines()
-    assert "- feat: add webhook endpoint (abc1234)" in lines
-    assert "- fix: correct retry backoff (def5678)" in lines
-    assert "- other: update readme (aaa1111)" in lines
-    assert lines.index("- feat: add webhook endpoint (abc1234)") < \
-        lines.index("- other: update readme (aaa1111)")
-
-
-def test_last_entry_date_finds_most_recent(tmp_path):
-    f = tmp_path / "handover-notes.md"
-    f.write_text("## Work Completed\n\n### 2026-05-01\n- x\n\n### 2026-06-15\n- y\n",
-                 encoding="utf-8")
-    assert last_entry_date(f) == "2026-06-15"
-    assert last_entry_date(tmp_path / "absent.md") is None

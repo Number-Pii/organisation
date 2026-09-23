@@ -44,8 +44,11 @@ def test_no_unrendered_placeholders(level):
         output_dir=Path("."), level=level, existing=True, today="2026-01-01",
     )
     for path, content in built.items():
-        # $CLAUDE_PROJECT_DIR is an intentional literal in the hook settings;
-        # everything else with a dollar sign is an unrendered placeholder.
+        # $CLAUDE_PROJECT_DIR is an intentional literal in the hook settings, and
+        # the verbatim shell and Python hooks use $ legitimately; everything else
+        # with a dollar sign is an unrendered placeholder.
+        if path.name in {"pre-push", "protect_main.py"}:
+            continue
         residue = content.replace("$CLAUDE_PROJECT_DIR", "")
         assert "$" not in residue, f"unrendered placeholder in {path}"
 
@@ -94,13 +97,55 @@ def test_level4_pr_rules_demand_two_reviews_and_cto_signoff():
     assert "At least 1 peer review" not in vc
 
 
-def test_department_folders_slugified():
+def test_handover_is_per_branch_not_per_department():
     built = build_files(
-        project_name="X", departments=["Growth Marketing"],
+        project_name="X", departments=["Growth Marketing", "engineering"],
         output_dir=Path("."), level=1, today="2026-01-01",
     )
     rels = {str(p) for p in built}
-    assert "doc/handover/growth-marketing/handover-notes.md" in rels
+    assert {"doc/handover/STATE.md", "doc/handover/entries/README.md"} <= rels
+    assert not any("handover-notes" in r or "consolidated_handover" in r for r in rels)
+
+
+def test_agents_md_is_canonical_and_stubs_import_it():
+    built = build_files(project_name="X", departments=["engineering"],
+                        output_dir=Path("."), level=2, today="2026-01-01")
+    agents = built[Path("AGENTS.md")]
+    assert agents.count("<!-- np:begin -->") == 1 and agents.count("<!-- np:end -->") == 1
+    assert "Level 2" in agents
+    for stub in ("CLAUDE.md", "GEMINI.md"):
+        assert "@AGENTS.md" in built[Path(stub)]
+    assert len(agents.splitlines()) <= 130, "the always-loaded file must stay small"
+
+
+def test_managed_block_has_no_version_or_date():
+    """A version or date in the block would rewrite every consumer on every release."""
+    import re
+    built = build_files(project_name="X", departments=["engineering"],
+                        output_dir=Path("."), level=2, today="2026-01-01")
+    agents = built[Path("AGENTS.md")]
+    block = agents[agents.index("<!-- np:begin -->"):agents.index("<!-- np:end -->")]
+    assert not re.search(r"\d{4}-\d{2}-\d{2}|\bv?\d+\.\d+\.\d+\b", block)
+
+
+def test_claude_hooks_are_optional(tmp_path):
+    with_hooks = build_files("X", ["engineering"], Path("."), level=2, today="2026-01-01")
+    without = build_files("X", ["engineering"], Path("."), level=2, today="2026-01-01",
+                          claude_hooks=False)
+    assert Path(".claude/settings.json") in with_hooks
+    assert not any(".claude" in str(p) for p in without)
+    assert Path(".githooks/pre-push") in without
+
+
+def test_pre_push_hook_blocks_main(tmp_path):
+    scaffold("X", ["engineering"], tmp_path, dry_run=False, level=1)
+    hook = tmp_path / ".githooks" / "pre-push"
+    assert hook.stat().st_mode & 0o111, "hook must be executable"
+    blocked = subprocess.run([str(hook)], input="refs/heads/fix/x abc refs/heads/main def\n",
+                             capture_output=True, text=True)
+    allowed = subprocess.run([str(hook)], input="refs/heads/fix/x abc refs/heads/fix/x def\n",
+                             capture_output=True, text=True)
+    assert blocked.returncode == 1 and allowed.returncode == 0
 
 
 def test_scaffold_never_overwrites(tmp_path, capsys):
@@ -137,10 +182,11 @@ def test_missing_template_fails_loudly(monkeypatch, tmp_path):
 def test_golden_project_name_renders_into_every_doc():
     built = build_case(GOLDEN_CASES["level2"], Path("."))
     for path, content in built.items():
-        if ".claude" in str(path) and path.suffix != ".md":
-            continue  # hook code and settings carry no project header
+        verbatim = (".claude" in str(path) or ".githooks" in str(path)
+                    or path.name in {"CLAUDE.md", "GEMINI.md"} or "entries" in path.parts)
+        if verbatim:
+            continue  # copied as-is: hooks, stubs, and the entries README
         assert GOLDEN_PROJECT_NAME in content, f"{path} missing project name"
-        # Root context files are re-rendered on refresh, so they carry no date.
-        dated = not ("archive" in str(path) or ".claude" in str(path)
-                     or path.name in {"CLAUDE.md", "AGENTS.md", "GEMINI.md"})
+        # Files re-rendered on refresh carry no date.
+        dated = path.name not in {"AGENTS.md", "README.md", "STATE.md"}
         assert (GOLDEN_TODAY in content) is dated, path
