@@ -20,7 +20,6 @@ GENERATORS = {
     "build_org.py": [REPO_ROOT / "Teams" / "org.json"],
     "build_skills_index.py": [REPO_ROOT / "Teams" / "skills" / "skills-index.json",
                               REPO_ROOT / "Teams" / "skills" / "CATEGORIES.md"],
-    "sync_ai_context.py": [REPO_ROOT / "AGENTS.md", REPO_ROOT / "GEMINI.md"],
 }
 
 

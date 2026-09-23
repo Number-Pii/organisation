@@ -15,7 +15,7 @@ This document is the entry point for AI-assisted project work at Number Pii.
 | **Skills** | Each role file has `## Core Skills`, `## Technical Skills`, and `## Agent Skills` sections with `@skill-name` references pointing to `Teams/skills/`. |
 | **Invocation** | Activate any skill with `@skill-name [your task]`, e.g. `@postgresql design a multi-tenant schema` |
 | **Skills Directory** | Browse all 1,294 skill modules in `Teams/skills/` |
-| **Project Initialization** | Tell your AI assistant: `initialize CLAUDE.md` (or `initialize GEMINI.md`) to trigger the full team assignment + project scaffolding workflow |
+| **Project Initialization** | Ask your AI assistant to "initialize" (or run `/np:init` in Claude Code); `INITIALIZE.md` covers team assignment and scaffolding |
 
 ---
 
@@ -280,5 +280,3 @@ Moved to **[philosophy.md](philosophy.md)** to keep this file lean for quick-loo
 ---
 
 *Document Version: 3.4 · Revised: 10 June 2026 · Author: Number Pii Leadership*
-
-<!-- CACHE_BOUNDARY -->

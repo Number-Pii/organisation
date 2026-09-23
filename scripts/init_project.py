@@ -2,8 +2,10 @@
 """
 init_project.py: Number Pii Project Scaffolder
 
-Creates the standard doc/ folder structure in any project directory.
-Run this after the AI coding assistant has determined the project brief and team.
+Creates the standard project scaffold in any project directory: the root
+AGENTS.md (with the toolkit's managed block) and its CLAUDE.md and GEMINI.md
+stubs, the doc/ tree, and the git and Claude Code guard hooks. Run it after the
+brief, level, and team are agreed. It never overwrites an existing file.
 
 Template content lives in templates/*.md at the toolkit root and is rendered
 with string.Template ($variable placeholders). Wording changes are markdown
@@ -17,11 +19,13 @@ Usage:
 
 Arguments:
     --project-name   Name of the project (used in file headers)
-    --departments    Comma-separated dept names for handover sub-folders (default: engineering)
+    --departments    Accepted for compatibility; handover is per branch since 4.0.0
     --output-dir     Directory to create doc/ in (default: current working directory)
     --level          Project classification level 1-4 (default: 2). Sets the quality gates
                      scaffolded into the doc files. Level 3+ adds architecture.md.
-    --existing       Brownfield mode: adds codebase-assessment.md and expands the handover template
+    --existing       Brownfield mode: adds codebase-assessment.md and an existing-product
+                     section in doc/handover/STATE.md
+    --no-claude-hooks  Skip the .claude/ guard hook (the git pre-push hook is always written)
     --dry-run        Preview what would be created without creating anything
 """
 
@@ -140,6 +144,11 @@ def load_template(name: str) -> Template:
     return Template(path.read_text(encoding="utf-8"))
 
 
+def load_raw(name: str) -> str:
+    """A template used verbatim (shell scripts, the managed block): no placeholders."""
+    return load_template(name).template
+
+
 def render(name: str, **context) -> str:
     """Render templates/<name> with the given context; a missing placeholder
     raises KeyError so a template/code mismatch fails loudly."""
@@ -168,9 +177,11 @@ def level_context(level: int) -> dict:
 
 
 def build_files(project_name: str, departments: list[str], output_dir: Path,
-                existing: bool = False, level: int = 2, today: str = TODAY) -> dict:
+                existing: bool = False, level: int = 2, today: str = TODAY,
+                claude_hooks: bool = True) -> dict:
     """Return {path: rendered content} for the full scaffold. Pure function of
-    its inputs so tests can compare output against golden files."""
+    its inputs so tests can compare output against golden files. `departments`
+    is kept for compatibility: handover is per branch, not per department."""
     doc_dir = output_dir / "doc"
     handover_dir = doc_dir / "handover"
 
@@ -178,34 +189,30 @@ def build_files(project_name: str, departments: list[str], output_dir: Path,
 
     level4_note = ""
     if level == 4:
-        level4_note = load_template("level4-architecture-note.md").template
-    existing_section = ""
-    if existing:
-        existing_section = load_template("existing-context-section.md").template
+        level4_note = load_raw("level4-architecture-note.md")
+    existing_section = load_raw("existing-context-section.md") if existing else ""
 
     files = {
+        output_dir / "AGENTS.md": render("agents-root.md", agents_block=load_raw("agents-block.md"), **ctx),
+        output_dir / "CLAUDE.md": load_raw("claude-stub.md"),
+        output_dir / "GEMINI.md": load_raw("gemini-stub.md"),
+        output_dir / ".githooks" / "pre-push": load_raw("pre-push"),
+        doc_dir / "README.md":          render("doc-README.md", **ctx),
         doc_dir / "project-brief.md":   render("project-brief.md", **ctx),
         doc_dir / "team-assignment.md": render("team-assignment.md", **ctx),
         doc_dir / "workflow.md":        render("workflow.md", **ctx),
         doc_dir / "version_control.md": render("version_control.md", **ctx),
         doc_dir / "task-board.md":      render("task-board.md", **ctx),
-        handover_dir / "consolidated_handover.md": render(
-            "consolidated_handover.md", existing_context_section=existing_section, **ctx),
-        handover_dir / "archive" / "README.md": render("handover-archive-README.md", **ctx),
+        handover_dir / "STATE.md": render(
+            "handover-state.md", existing_context_section=existing_section, **ctx),
+        handover_dir / "entries" / "README.md": load_raw("handover-entries-README.md"),
     }
 
-    for assistant_file in ("CLAUDE.md", "GEMINI.md", "AGENTS.md"):
-        files[output_dir / assistant_file] = render(
-            "context-pointer.md", assistant_file=assistant_file, **ctx)
-
-    # Enforcement-as-code for Claude Code sessions: hooks block direct
-    # commits/pushes to main and inject the context checklist at session
-    # start. The markdown contract above remains the fallback for
-    # assistants that do not execute hooks (Gemini CLI, Codex).
-    claude_dir = output_dir / ".claude"
-    files[claude_dir / "settings.json"] = render("claude-settings.json", **ctx)
-    files[claude_dir / "hooks" / "protect_main.py"] = render("claude-protect-main.py", **ctx)
-    files[claude_dir / "hooks" / "context-checklist.md"] = render("claude-context-checklist.md", **ctx)
+    # Claude Code catches commits on main inside the session, before git does.
+    if claude_hooks:
+        claude_dir = output_dir / ".claude"
+        files[claude_dir / "settings.json"] = render("claude-settings.json", **ctx)
+        files[claude_dir / "hooks" / "protect_main.py"] = load_raw("claude-protect-main.py")
 
     if level >= 3:
         files[doc_dir / "architecture.md"] = render(
@@ -214,21 +221,19 @@ def build_files(project_name: str, departments: list[str], output_dir: Path,
     if existing:
         files[doc_dir / "codebase-assessment.md"] = render("codebase-assessment.md", **ctx)
 
-    for dept in departments:
-        dept_clean = dept.strip()
-        dept_dir = handover_dir / dept_clean.lower().replace(" ", "-")
-        files[dept_dir / "handover-notes.md"] = render(
-            "dept-handover-notes.md", dept=dept_clean, dept_title=dept_clean.title(), **ctx)
-
     return files
 
 
 # ── Scaffold ──────────────────────────────────────────────────────────────────
 
+EXECUTABLE = {"pre-push"}
+
+
 def scaffold(project_name: str, departments: list[str], output_dir: Path,
-             dry_run: bool, existing: bool = False, level: int = 2):
+             dry_run: bool, existing: bool = False, level: int = 2,
+             claude_hooks: bool = True):
     files = build_files(project_name, departments, output_dir,
-                        existing=existing, level=level)
+                        existing=existing, level=level, claude_hooks=claude_hooks)
 
     if dry_run:
         print("\n[DRY RUN] Would create:")
@@ -242,11 +247,15 @@ def scaffold(project_name: str, departments: list[str], output_dir: Path,
             print(f"  [SKIP] {path.relative_to(output_dir)} already exists")
         else:
             path.write_text(content, encoding="utf-8")
+            if path.name in EXECUTABLE:
+                path.chmod(0o755)
             print(f"  [OK]   {path.relative_to(output_dir)}")
 
-    print(f"\n✓ Scaffolded doc/ structure for '{project_name}' in {output_dir}")
+    print(f"\n✓ Scaffolded '{project_name}' in {output_dir}")
     print(f"  Classification: Level {level} ({LEVELS[level]['name']}). Quality gates are in doc/workflow.md.")
-    print("  Next: ask your AI assistant to fill in the template files based on your project brief.")
+    print("  Next: describe the project at the top of AGENTS.md and fill in doc/.")
+    print("  Enable the push guard once per clone: git config core.hooksPath .githooks")
+    print("  and turn on branch protection for main in your hosting service.")
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────
@@ -260,7 +269,9 @@ if __name__ == "__main__":
     parser.add_argument("--level",         type=int, choices=[1, 2, 3, 4], default=2,
                         help="Project classification level 1-4 (default: 2). Level 3+ adds architecture.md")
     parser.add_argument("--existing",      action="store_true",
-                        help="Brownfield mode: add codebase-assessment.md and expand handover template")
+                        help="Brownfield mode: add codebase-assessment.md and existing-product context")
+    parser.add_argument("--no-claude-hooks", action="store_true",
+                        help="Skip the .claude/ guard hook (the git pre-push hook is always written)")
     parser.add_argument("--dry-run",       action="store_true", help="Preview without creating files")
     args = parser.parse_args()
 
@@ -284,4 +295,5 @@ if __name__ == "__main__":
         dry_run=args.dry_run,
         existing=args.existing,
         level=args.level,
+        claude_hooks=not args.no_claude_hooks,
     )
