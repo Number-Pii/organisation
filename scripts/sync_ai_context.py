@@ -21,23 +21,26 @@ import difflib
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.files import write_if_changed  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SOURCE = REPO_ROOT / "CLAUDE.md"
 
 SOURCE_HEADER = (
     "<!-- SYNC: This file is the SOURCE OF TRUTH. GEMINI.md and AGENTS.md are generated from it.\n"
-    "     Never edit GEMINI.md or AGENTS.md by hand — run `python3 scripts/sync_ai_context.py`\n"
+    "     Never edit GEMINI.md or AGENTS.md by hand; run `python3 scripts/sync_ai_context.py`\n"
     "     after editing this file. CI enforces sync with `--check`. -->"
 )
 
 GEMINI_TARGET_HEADER = (
-    "<!-- GENERATED FILE — do not edit by hand.\n"
+    "<!-- GENERATED FILE: do not edit by hand.\n"
     "     This file is generated from CLAUDE.md by scripts/sync_ai_context.py.\n"
     "     To change its contents, edit CLAUDE.md and re-run the sync script. -->"
 )
 
 AGENTS_TARGET_HEADER = (
-    "<!-- GENERATED FILE — do not edit by hand.\n"
+    "<!-- GENERATED FILE: do not edit by hand.\n"
     "     This file is generated from CLAUDE.md by scripts/sync_ai_context.py.\n"
     "     To change its contents, edit CLAUDE.md and re-run the sync script. -->"
 )
@@ -116,8 +119,8 @@ def main() -> int:
                 print("\nRun: python3 scripts/sync_ai_context.py")
                 drift = True
         else:
-            target_path.write_text(rendered, encoding="utf-8")
-            print(f"Wrote {target_path.relative_to(REPO_ROOT)} ({len(rendered)} bytes)")
+            verb = "Wrote" if write_if_changed(target_path, rendered) else "Unchanged"
+            print(f"{verb} {target_path.relative_to(REPO_ROOT)} ({len(rendered)} bytes)")
 
     return 1 if drift else 0
 

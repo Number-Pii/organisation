@@ -23,6 +23,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.files import write_if_changed  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 ORG_PATH = REPO_ROOT / "Teams" / "org.json"
@@ -156,9 +159,11 @@ def main() -> int:
         return 0
 
     AGENTS_DIR.mkdir(exist_ok=True)
-    for path, content in files.items():
-        path.write_text(content, encoding="utf-8")
+    written = [p for p, content in files.items() if write_if_changed(p, content)]
+    for path in written:
         print(f"Wrote {path.relative_to(REPO_ROOT)}")
+    if not written:
+        print(f"Unchanged: {len(files)} agent definitions already current.")
     return 0
 
 

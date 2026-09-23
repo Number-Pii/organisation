@@ -21,6 +21,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.files import write_if_changed  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 TEAMS_DIR = REPO_ROOT / "Teams"
@@ -110,9 +113,9 @@ def main() -> int:
         print("OK: Teams/org.json matches the role files.")
         return 0
 
-    ORG_PATH.write_text(output, encoding="utf-8")
+    verb = "Wrote" if write_if_changed(ORG_PATH, output) else "Unchanged"
     org = json.loads(output)
-    print(f"Wrote Teams/org.json ({len(org['roles'])} roles, "
+    print(f"{verb} Teams/org.json ({len(org['roles'])} roles, "
           f"{len(org['departments'])} departments)")
     return 0
 
