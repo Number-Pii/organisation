@@ -14,7 +14,7 @@ This document is the entry point for AI-assisted project work at Number Pii.
 | **Employees / Team Members / Virtual Employees / AI Agents** | All refer to the same thing: the role files in `Teams/`. Each role is a virtual expert you can invoke in any project. |
 | **Skills** | Each role file has `## Core Skills`, `## Technical Skills`, and `## Agent Skills` sections with `@skill-name` references pointing to `Teams/skills/`. |
 | **Invocation** | Activate any skill with `@skill-name [your task]`, e.g. `@postgresql design a multi-tenant schema` |
-| **Skills Directory** | Browse all 1,294 skill modules in `Teams/skills/` |
+| **Skills Directory** | Reviewed skill modules in `Teams/skills/`; search with `scripts/find_skill.py` |
 | **Project Initialization** | Ask your AI assistant to "initialize" (or run `/np:init` in Claude Code); `INITIALIZE.md` covers team assignment and scaffolding |
 
 ---

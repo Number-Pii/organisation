@@ -1,8 +1,6 @@
 ---
 name: content-strategy
 description: "Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program."
-risk: unknown
-tier: curated
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
 metadata: []
@@ -22,6 +20,9 @@ detail_sections:
   - Task-Specific Questions
   - References
   - Related Skills
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Content Strategy

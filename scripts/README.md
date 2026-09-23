@@ -72,11 +72,11 @@ gates on it. It also reports skill tier counts and lists curated skills whose
 ## `find_skill.py`: Skill Search
 
 Searches `Teams/skills/skills-index.json` by keyword without loading any SKILL.md.
-Reviewed skills show by default; `--all` adds the rest, `--domain` narrows.
+`--domain` narrows the search.
 
 ```bash
 python3 scripts/find_skill.py postgres
-python3 scripts/find_skill.py --domain "Testing & QA" --all e2e
+python3 scripts/find_skill.py --domain "Testing & QA" load
 ```
 
 ---

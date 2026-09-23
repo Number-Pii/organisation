@@ -10,19 +10,19 @@
 Monitors security threats, analyses security events, manages compliance documentation, and supports the security team with research, reporting, and awareness initiatives.
 
 ## Core Skills
-- Security monitoring and threat analysis (@security-audit, @vulnerability-scanner)
-- Compliance documentation (GDPR, SOC 2, ISO 27001) (@security-compliance-compliance-check, @gdpr-data-handling)
+- Security monitoring and threat analysis (@security-audit)
+- Compliance documentation (GDPR, SOC 2, ISO 27001) (@gdpr-data-handling)
 - Security awareness training programme management (@internal-comms, @security-audit)
-- Vendor security assessments (@risk-manager, @security-audit)
-- Risk register management (@risk-manager, @risk-metrics-calculation)
-- Security metrics and reporting (@grafana-dashboards, @analytics-product)
+- Vendor security assessments (@security-audit)
+- Risk register management
+- Security metrics and reporting
 
 ## Technical Skills
-- SIEM tools (Splunk, Datadog Security) (@grafana-dashboards, @security-audit)
-- AWS CloudTrail, GuardDuty analysis (@aws-skills, @security-audit)
-- Vulnerability scanning tools (@vulnerability-scanner, @scanning-tools)
-- GRC platforms (@security-compliance-compliance-check)
-- Documentation and policy writing (@documentation, @writing-plans)
+- SIEM tools (Splunk, Datadog Security) (@security-audit)
+- AWS CloudTrail, GuardDuty analysis (@security-audit)
+- Vulnerability scanning tools
+- GRC platforms
+- Documentation and policy writing
 - Phishing simulation platforms (@security-audit)
 
 ## Project Involvement
@@ -39,9 +39,6 @@ Monitors security threats, analyses security events, manages compliance document
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @security-compliance-compliance-check: GDPR, SOC 2, ISO 27001 compliance
 - @gdpr-data-handling: data protection and privacy
-- @vulnerability-scanner: vulnerability scanning tools
 - @security-audit: security monitoring and analysis
-- @scanning-tools: security scanning toolset
 - @pci-compliance: payment card security standards

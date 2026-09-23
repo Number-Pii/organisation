@@ -1,8 +1,6 @@
 ---
 name: systematic-debugging
 description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
-risk: unknown
-tier: curated
 canonical: true
 source: community
 date_added: "2026-02-27"
@@ -11,7 +9,7 @@ size_class: m
 summary: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
 detail_sections:
   - Overview
-  - The Iron Law
+  - The Principle
   - When to Use
   - The Four Phases
   - Red Flags - STOP and Follow Process
@@ -21,6 +19,9 @@ detail_sections:
   - "When Process Reveals \"No Root Cause\""
   - Supporting Techniques
   - Real-World Impact
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Systematic Debugging
@@ -31,15 +32,13 @@ Random fixes waste time and create new bugs. Quick patches mask underlying issue
 
 **Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
 
-**Violating the letter of this process is violating the spirit of debugging.**
+## The Principle
 
-## The Iron Law
-
-```
-NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST
-```
-
-If you haven't completed Phase 1, you cannot propose fixes.
+Find the root cause before proposing a fix. A fix aimed at a symptom tends to
+move the bug rather than remove it, and it hides the evidence the next person
+needs. Complete Phase 1 before proposing changes; if you have to ship a
+mitigation first (a production incident, say), label it as a mitigation and
+keep investigating.
 
 ## When to Use
 Use for ANY technical issue:
@@ -195,7 +194,7 @@ You MUST complete each phase before proceeding to the next.
    - Automated test if possible
    - One-off test script if no framework
    - MUST have before fixing
-   - Use the `superpowers:test-driven-development` skill for writing proper failing tests
+   - Use the `test-driven-development` skill for writing proper failing tests
 
 2. **Implement Single Fix**
    - Address the root cause identified
@@ -303,8 +302,8 @@ These techniques are part of systematic debugging and available in this director
 - **`condition-based-waiting.md`** - Replace arbitrary timeouts with condition polling
 
 **Related skills:**
-- **superpowers:test-driven-development** - For creating failing test case (Phase 4, Step 1)
-- **superpowers:verification-before-completion** - Verify fix worked before claiming success
+- **test-driven-development**: for creating the failing test case (Phase 4, Step 1)
+- Verify the fix worked (tests pass, the original symptom is gone) before claiming success
 
 ## Real-World Impact
 

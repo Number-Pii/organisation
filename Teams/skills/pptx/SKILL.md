@@ -1,7 +1,6 @@
 ---
 name: pptx-official
 description: "A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive containing XML files and other resources that you can read or edit. You have different tools and workflows available for different tasks."
-risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Documentation & Office"
@@ -19,6 +18,9 @@ detail_sections:
   - Code Style Guidelines
   - Dependencies
   - When to Use
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # PPTX creation, editing, and analysis

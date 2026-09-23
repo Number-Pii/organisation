@@ -10,18 +10,18 @@
 Owns the brand voice and community building. Manages Number Pii's presence across community channels, builds engagement, and ensures brand consistency across all touchpoints.
 
 ## Core Skills
-- Brand voice and identity management (@brand-guidelines, @content-creator)
-- Community building and engagement (@internal-comms-community, @social-content)
-- Event coordination and sponsorships (@project-development, @internal-comms)
-- Brand guidelines enforcement (@brand-guidelines)
-- PR and media relations support (@copywriting, @content-creator)
-- User community management (@discord-automation, @internal-comms-community)
+- Brand voice and identity management
+- Community building and engagement (@social-content)
+- Event coordination and sponsorships (@internal-comms)
+- Brand guidelines enforcement
+- PR and media relations support (@copywriting)
+- User community management
 
 ## Technical Skills
-- Community platforms (Discord, Slack communities) (@discord-automation)
-- Brand asset management tools (@brand-guidelines, @figma-automation)
+- Community platforms (Discord, Slack communities)
+- Brand asset management tools
 - Social listening tools (Brandwatch, Mention) (@analytics-tracking)
-- Design tools (Canva, basic Figma) (@figma-automation)
+- Design tools (Canva, basic Figma)
 - Email marketing platforms (@email-sequence)
 
 ## Project Involvement
@@ -38,9 +38,5 @@ Owns the brand voice and community building. Manages Number Pii's presence acros
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @brand-guidelines: brand voice and visual identity
 - @social-content: community-driven social content
-- @content-creator: brand content creation
-- @internal-comms-community: community communications
 - @copywriting: brand copywriting
-- @discord-automation: Discord community management

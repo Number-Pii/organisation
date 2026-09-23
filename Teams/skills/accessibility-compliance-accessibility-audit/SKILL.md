@@ -1,8 +1,6 @@
 ---
 name: accessibility-compliance-accessibility-audit
 description: "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct audits, identify barriers, and provide remediation guidance."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"
@@ -15,6 +13,9 @@ detail_sections:
   - Requirements
   - Instructions
   - Resources
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Accessibility Audit and Testing
@@ -40,7 +41,7 @@ The user needs to audit and improve accessibility to ensure compliance with WCAG
 
 ## Requirements
 
-$ARGUMENTS
+The page, component, or flow under review, as described in the request.
 
 ## Instructions
 

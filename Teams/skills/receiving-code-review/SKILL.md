@@ -1,8 +1,6 @@
 ---
 name: receiving-code-review
 description: "Code review requires technical evaluation, not emotional performance."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"
@@ -24,6 +22,9 @@ detail_sections:
   - GitHub Thread Replies
   - The Bottom Line
   - When to Use
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Code Review Reception

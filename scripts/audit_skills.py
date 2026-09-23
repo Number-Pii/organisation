@@ -214,7 +214,7 @@ def run_audit(write_report=False, fix=False):
         tier = fm.get("tier") if fm.get("tier") in VALID_TIERS else "standard"
         tier_counts[tier] += 1
         risk = fm.get("risk") if isinstance(fm.get("risk"), str) else ""
-        if tier == "curated" and risk in ("", "unknown"):
+        if risk not in ("low", "medium", "high") or not fm.get("last_reviewed"):
             curated_risk_gaps.append(folder)
 
         if all(k in fm for k in EXTENSION_FIELDS):
@@ -325,7 +325,7 @@ def run_audit(write_report=False, fix=False):
     p(bold("UNLINKED SKILLS (not referenced in any role)"))
     p(f"  Skills in Teams/skills/ referenced        : {len(skill_folders) - len(unlinked_skills)}")
     p(f"  Skills in Teams/skills/ NOT referenced    : {yellow(str(len(unlinked_skills)))}")
-    p(f"  (Many are highly specialised: Azure SDKs, health tools, etc.)")
+    p(f"  (Unreferenced skills stay findable with find_skill.py.)")
     p()
 
     if frontmatter_issues:
@@ -360,7 +360,7 @@ def run_audit(write_report=False, fix=False):
     p(bold("LEGEND"))
     p(f"  {green('✓')} All Core/Tech bullets have inline @skill refs")
     p(f"  {yellow('~')} Some Core/Tech bullets have inline @skill refs")
-    p(f"  {red('✗')} No Core/Tech bullets have inline @skill refs yet")
+    p(f"  {red('✗')} No Core/Tech bullets reference a skill (fine: a skill is linked only where one adds value)")
     p()
     p(bold("─" * 65))
     p(f"  Run this script again after updating role files to track progress.")
@@ -387,6 +387,7 @@ def run_audit(write_report=False, fix=False):
         "frontmatter_issues":    frontmatter_issues,
         "tier_counts":           tier_counts,
         "curated_risk_gaps":     curated_risk_gaps,
+        "risk_gaps":             curated_risk_gaps,
         "fixed_count":           fixed_count,
     }
 
@@ -404,7 +405,7 @@ if __name__ == "__main__":
 
     result = run_audit(write_report=args.report, fix=args.fix)
 
-    # Broken refs and unfixed frontmatter drift fail the audit so CI can gate
-    # on it; curated risk gaps are reported but do not fail (yet).
-    if result["broken_refs"] or result["frontmatter_issues"]:
+    # Broken refs, frontmatter drift, and any skill without a reviewed risk
+    # (low, medium, high) and a last_reviewed date fail the audit.
+    if result["broken_refs"] or result["frontmatter_issues"] or result.get("risk_gaps"):
         raise SystemExit(1)

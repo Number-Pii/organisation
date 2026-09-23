@@ -37,7 +37,7 @@ from any active state.
 
      Example rows (delete the comment markers and edit to use them):
      | 1 | Set up auth database schema | backend | p1 | Lead Backend Engineer | human | Ready | none |
-     | 2 | Implement JWT middleware    | backend | p1 | @backend-dev-guidelines | agent | Backlog | 1 |
+     | 2 | Implement JWT middleware    | backend | p1 | @postgresql | agent | Backlog | 1 |
 -->
 
 | ID | Title | Area | Priority | Owner | Owner Type | State | Depends On |

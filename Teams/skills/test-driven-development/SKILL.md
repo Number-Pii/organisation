@@ -1,8 +1,6 @@
 ---
 name: test-driven-development
 description: "Use when implementing any feature or bugfix, before writing implementation code"
-risk: unknown
-tier: curated
 canonical: true
 source: community
 date_added: "2026-02-27"
@@ -12,7 +10,7 @@ summary: "Use when implementing any feature or bugfix, before writing implementa
 detail_sections:
   - Overview
   - When to Use
-  - The Iron Law
+  - The Principle
   - Red-Green-Refactor
   - Good Tests
   - Why Order Matters
@@ -24,6 +22,9 @@ detail_sections:
   - Debugging Integration
   - Testing Anti-Patterns
   - Final Rule
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Test-Driven Development (TDD)
@@ -48,23 +49,14 @@ Write the test first. Watch it fail. Write minimal code to pass.
 - Generated code
 - Configuration files
 
-Thinking "skip TDD just this once"? Stop. That's rationalization.
+## The Principle
 
-## The Iron Law
+Write a failing test before the production code that makes it pass. A test
+written after the code tends to confirm what the code does rather than what it
+should do, and a test you never saw fail may not be testing anything.
 
-```
-NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST
-```
-
-Write code before the test? Delete it. Start over.
-
-**No exceptions:**
-- Don't keep it as "reference"
-- Don't "adapt" it while writing tests
-- Don't look at it
-- Delete means delete
-
-Implement fresh from tests. Period.
+If code already exists without a test, write the test, watch it fail by
+reverting or breaking the behaviour, then restore the code and watch it pass.
 
 ## Red-Green-Refactor
 
