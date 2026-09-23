@@ -55,3 +55,11 @@ def test_summary_prefers_front_matter_then_first_paragraph(tmp_path):
 
 def test_toolkit_itself_is_connected():
     assert docs.main(["--root", str(REPO_ROOT), "check"]) == 0
+
+
+def test_toolkit_mode_flags_missing_files_named_in_code(tmp_path, capsys):
+    (tmp_path / "AGENTS.md").write_text("Standards live in `STANDARDS.md`; see `README.md`.\n")
+    (tmp_path / "README.md").write_text("# Readme\n")
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    assert docs.main(["--root", str(tmp_path), "check"]) == 1
+    assert "`STANDARDS.md`" in capsys.readouterr().out

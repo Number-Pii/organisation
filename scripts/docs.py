@@ -112,6 +112,24 @@ def doc_orphans(root: Path) -> list[str]:
     return problems
 
 
+def missing_hub_mentions(root: Path) -> list[str]:
+    """Bare `NAME.md` names quoted in AGENTS.md or README.md that match no file.
+
+    Links are checked elsewhere; this catches references written as code, which
+    is how agent instructions usually name files."""
+    problems = []
+    known = {p.name for p in markdown_files(root)}
+    for hub in ("AGENTS.md", "README.md"):
+        path = root / hub
+        if not path.exists():
+            continue
+        text = re.sub(r"```.*?```", "", path.read_text(encoding="utf-8"), flags=re.DOTALL)
+        for name in sorted(set(re.findall(r"`([A-Za-z0-9_-]+\.md)`", text))):
+            if name not in known:
+                problems.append(f"{hub} names `{name}`, which does not exist")
+    return problems
+
+
 def root_orphans(root: Path) -> list[str]:
     hubs = " ".join((root / n).read_text(encoding="utf-8") for n in ("AGENTS.md", "README.md")
                     if (root / n).exists())
@@ -143,7 +161,7 @@ def cmd_check(args) -> int:
     if (root / "doc" / "README.md").exists():
         problems += doc_orphans(root)
     elif not (root / "doc").exists():
-        problems += root_orphans(root)
+        problems += root_orphans(root) + missing_hub_mentions(root)
     else:
         problems.append("doc/ has no README.md map; scaffold one with init_project.py")
     for p in problems:
