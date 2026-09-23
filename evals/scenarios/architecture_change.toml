@@ -1,0 +1,13 @@
+title = "Modify existing architecture"
+prompt = """Next quarter we'll move bookings from memory into SQLite. Prepare for that
+now: refactor so `BookingService` depends on a storage interface (a repository)
+with an in-memory implementation, without changing behaviour. `BookingService()`
+with no arguments must keep working. Record the design decision wherever this
+project keeps decisions."""
+allowed_paths = ["bookings/**", "tests/**", "doc/architecture.md"]
+
+[expect]
+tests = true
+validation = true
+handover = true
+decision_recorded = true

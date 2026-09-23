@@ -1,0 +1,13 @@
+title = "Perform a handover"
+smoke = true
+prompt = """I need to stop you here; someone else picks this up tomorrow morning.
+Leave the work so they can continue without talking to either of us."""
+allowed_paths = ["bookings/reminders.py", "tests/**"]
+
+[setup]
+branch = "feature/reminders"
+overlay = "reminders-wip"
+stay = true
+
+[expect]
+handover = true

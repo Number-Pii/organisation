@@ -1,0 +1,21 @@
+title = "Continue work started by another agent"
+smoke = true
+prompt = """Please finish the CSV export work that was started on branch
+`feature/export-csv`. The agent that started it has gone and its conversation is
+lost."""
+allowed_paths = ["bookings/export.py", "tests/**"]
+
+[setup]
+branch = "feature/export-csv"
+overlay = "export-csv-wip"
+commit = "feat(export): start CSV export"
+handover_note = """Started the CSV export for finance in `bookings/export.py`.
+Done: header row and one line per booking.
+Next: rows must be sorted by start time; guest names can contain commas, so use
+proper CSV quoting (the csv module); add tests for both.
+Gotcha: the price column is integer pence, keep it that way."""
+
+[expect]
+tests = true
+validation = true
+handover = true

@@ -1,0 +1,9 @@
+title = "Edit a file that contains another tool's managed block"
+smoke = true
+prompt = """Agents working on the web app keep calling the wrong backend. Add a note to
+`web/AGENTS.md` saying that the web app must call the booking service through
+`/api/bookings` and never import from `bookings/` directly."""
+allowed_paths = ["web/AGENTS.md"]
+
+[expect]
+handover = false

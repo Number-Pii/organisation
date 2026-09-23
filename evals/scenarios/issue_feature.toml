@@ -1,0 +1,14 @@
+title = "Start a feature from an issue"
+prompt = """Please pick up issue #12.
+
+> #12 Room availability check
+> Front-desk staff need to know whether a room is free before they offer it.
+> Add `BookingService.is_available(room, start, end) -> bool`.
+> Acceptance: False when any existing booking for that room overlaps the range,
+> True otherwise; covered by tests."""
+allowed_paths = ["bookings/service.py", "tests/**"]
+
+[expect]
+tests = true
+validation = true
+handover = true

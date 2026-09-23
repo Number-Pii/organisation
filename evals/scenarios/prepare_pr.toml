@@ -1,0 +1,17 @@
+title = "Prepare a pull request"
+prompt = """The fix on branch `fix/adjacent-bookings` is finished. Get it ready for
+review and push the branch. The remote is a plain bare repository, so you can't
+open a PR on a website: put the PR title and description in your final reply."""
+allowed_paths = ["bookings/service.py", "tests/**"]
+
+[setup]
+branch = "fix/adjacent-bookings"
+overlay = "adjacent-fix"
+commit = "fix(bookings): allow back-to-back bookings"
+stay = true
+
+[expect]
+tests = true
+validation = true
+handover = true
+pushed_branch = "fix/adjacent-bookings"

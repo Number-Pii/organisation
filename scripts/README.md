@@ -276,12 +276,26 @@ python3 scripts/build_org.py && python3 scripts/build_agents.py
 
 ---
 
+## `run_scenarios.py`: Scenario Evals
+
+Runs real coding agents (Claude Code, OpenAI Codex) against scenarios in
+`evals/scenarios/` and scores the git state they leave behind: tests, hidden
+completion tests, scope, dash churn, handover, doc discovery, main-branch
+safety, and merge conflicts between two parallel agents. See
+[evals/README.md](../evals/README.md).
+
+```bash
+python3 scripts/run_scenarios.py --list
+python3 scripts/run_scenarios.py --smoke --toolkit-ref v3.19.1
+```
+
+---
+
 ## `run_evals.py`: Skill Eval Runner
 
-Runs the golden tasks in `evals/tasks/` twice each (bare, and with the skill
-under test loaded) and writes side-by-side results for rubric judging. Needs
-the `claude` CLI for live runs; `--list` works without it. Method and task
-format: `evals/README.md`.
+Runs each golden task in `evals/tasks/` bare and with its skill loaded, through
+the same runner adapters (`--runner claude` or `--runner codex`), and stores
+both outputs for rubric judging.
 
 ---
 

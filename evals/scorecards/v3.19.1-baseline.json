@@ -1,0 +1,588 @@
+{
+  "toolkit_ref": "v3.19.1",
+  "date": "2026-09-23",
+  "runners": [
+    "claude",
+    "codex"
+  ],
+  "repeat": 1,
+  "scenarios": [
+    "architecture_change",
+    "bug_fix",
+    "continue_work",
+    "doc_discovery",
+    "handover",
+    "issue_feature",
+    "new_component",
+    "parallel_a",
+    "prepare_pr",
+    "run_validation",
+    "unfamiliar_area"
+  ],
+  "results": {
+    "claude": {
+      "bug_fix": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          13898
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.2923232,
+        "seconds": 35.1
+      },
+      "doc_discovery": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "docs_found": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          17190
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.39524319999999996,
+        "seconds": 51.2
+      },
+      "continue_work": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          15239
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.35943579999999997,
+        "seconds": 56.1
+      },
+      "architecture_change": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "decision_recorded": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          16737
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.4925946,
+        "seconds": 92.3
+      },
+      "handover": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 2,
+        "context_bytes": [
+          15069
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.408584,
+        "seconds": 68.6
+      },
+      "issue_feature": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          16153
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.40978879999999995,
+        "seconds": 56.0
+      },
+      "new_component": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          16546
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.356897,
+        "seconds": 52.7
+      },
+      "unfamiliar_area": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "no_changes": 1,
+          "docs_found": 1,
+          "answer_ok": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 0,
+        "context_bytes": [
+          13765
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.2198448,
+        "seconds": 26.0
+      },
+      "run_validation": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "no_changes": 1,
+          "validation_run": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 0,
+        "context_bytes": [
+          27656
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.3045046,
+        "seconds": 39.2
+      },
+      "parallel_a": {
+        "runs": 1,
+        "passed": 0,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1,
+          "parallel_merge_clean": 0
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          10411
+        ],
+        "parallel_conflicts": [
+          1
+        ],
+        "cost_usd": 0.41014899999999993,
+        "seconds": 64.1
+      },
+      "prepare_pr": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "branch_pushed": 1,
+          "tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          16191
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.3577168,
+        "seconds": 55.7
+      }
+    },
+    "codex": {
+      "doc_discovery": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "docs_found": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          22911
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 152.5
+      },
+      "bug_fix": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          17541
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 202.8
+      },
+      "continue_work": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          27066
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 215.3
+      },
+      "handover": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          0
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 137.0
+      },
+      "architecture_change": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "decision_recorded": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          17495
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 389.1
+      },
+      "new_component": {
+        "runs": 1,
+        "passed": 0,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 0,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          1563
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 162.0
+      },
+      "issue_feature": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          15110
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 227.0
+      },
+      "parallel_a": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "branch_named": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "tests_pass": 1,
+          "hidden_tests_pass": 1,
+          "parallel_merge_clean": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          3282
+        ],
+        "parallel_conflicts": [
+          0
+        ],
+        "cost_usd": 0.0,
+        "seconds": 174.2
+      },
+      "prepare_pr": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "handover_written": 1,
+          "validation_run": 1,
+          "branch_pushed": 1,
+          "tests_pass": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 1,
+        "context_bytes": [
+          22659
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 141.7
+      },
+      "unfamiliar_area": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "no_changes": 1,
+          "docs_found": 1,
+          "answer_ok": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 0,
+        "context_bytes": [
+          21741
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 125.5
+      },
+      "run_validation": {
+        "runs": 1,
+        "passed": 1,
+        "checks": {
+          "in_scope": 1,
+          "no_dash_churn": 1,
+          "foreign_block_intact": 1,
+          "toolkit_untouched": 1,
+          "main_untouched": 1,
+          "finished": 1,
+          "no_changes": 1,
+          "validation_run": 1
+        },
+        "dash_churn_lines": 0,
+        "out_of_scope_files": 0,
+        "shared_handover_edits": 0,
+        "context_bytes": [
+          22874
+        ],
+        "parallel_conflicts": [],
+        "cost_usd": 0.0,
+        "seconds": 203.8
+      }
+    }
+  }
+}

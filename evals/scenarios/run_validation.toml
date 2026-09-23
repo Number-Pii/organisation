@@ -1,0 +1,8 @@
+title = "Run validation"
+prompt = """Before I merge anything today: run whatever validation this project
+requires and tell me the result. Don't change any files."""
+allowed_paths = []
+
+[expect]
+no_changes = true
+validation = true

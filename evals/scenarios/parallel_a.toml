@@ -1,0 +1,13 @@
+title = "Parallel PRs, agent A (bug fix)"
+smoke = true
+pair = "parallel_b"
+prompt = """Front desk reports that back-to-back bookings are being rejected: if one
+booking ends at 10:00, nobody can book the same room from 10:00. Please fix it and
+push your branch. Another agent is working on a different task in this repository
+at the same time, on its own branch."""
+allowed_paths = ["bookings/service.py", "tests/**"]
+
+[expect]
+tests = true
+validation = true
+handover = true

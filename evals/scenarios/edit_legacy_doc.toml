@@ -1,0 +1,9 @@
+title = "Edit an existing document written in an older style"
+smoke = true
+prompt = """Add a short section to the front desk runbook explaining what staff should
+do when a guest wants to book a room starting at the exact time another booking
+ends (it's allowed now)."""
+allowed_paths = ["doc/runbooks/front-desk.md"]
+
+[expect]
+handover = false

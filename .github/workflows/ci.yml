@@ -72,12 +72,14 @@ jobs:
         run: python3 scripts/docs.py check
 
       # Enforce the Writing Standard (WRITING.md) on all maintained prose.
-      # Vendored skill modules and the generated audit report are out of scope.
+      # Vendored skill modules, scenario fixture data (which deliberately
+      # reproduces third-party text), and the generated audit report are out of scope.
       - name: Validate writing standard
         run: |
           git ls-files -z '*.md' \
             | tr '\0' '\n' \
             | grep -v '^Teams/skills/' \
+            | grep -v '^evals/scenarios/fixture/' \
             | grep -v '^tests/fixtures/' \
             | grep -v '^scripts/audit_report.md$' \
             | tr '\n' '\0' \

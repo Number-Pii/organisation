@@ -15,10 +15,11 @@ python3 scripts/check_plugin.py
 echo "pre-commit: documentation graph"
 python3 scripts/docs.py check
 
-# Writing standard on staged markdown (vendored skills and the generated
-# audit report are out of scope, matching CI).
+# Writing standard on staged markdown (vendored skills, scenario fixture
+# data, and the generated audit report are out of scope, matching CI).
 staged_md=$(git diff --cached --name-only --diff-filter=ACM -- '*.md' \
   | grep -v '^Teams/skills/' \
+  | grep -v '^evals/scenarios/fixture/' \
   | grep -v '^tests/fixtures/' \
   | grep -v '^scripts/audit_report.md$' || true)
 
