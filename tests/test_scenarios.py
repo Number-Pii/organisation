@@ -21,7 +21,7 @@ SCENARIOS = rs.load_scenarios()
 
 
 def test_every_brief_case_has_a_scenario():
-    assert len(SCENARIOS) >= 12
+    assert len(SCENARIOS) >= 14
     assert {"issue_feature", "unfamiliar_area", "bug_fix", "new_component",
             "architecture_change", "run_validation", "prepare_pr", "handover",
             "parallel_a", "parallel_b", "continue_work", "doc_discovery"} <= set(SCENARIOS)
@@ -73,6 +73,12 @@ def test_dash_churn_counts_punctuation_only_rewrites():
         "+A different sentence entirely.",
     ])
     assert rs.dash_churn(patch) == 1
+
+
+def test_managed_block_ignores_edits_outside_the_block():
+    original = b"<!-- BEGIN:nextjs-agent-rules -->\nText \xe2\x80\x94 here.\n<!-- END:nextjs-agent-rules -->\n"
+    assert rs.managed_block(original + b"\nOur note.\n") == rs.managed_block(original)
+    assert rs.managed_block(original.replace(b"\xe2\x80\x94", b":")) != rs.managed_block(original)
 
 
 def test_reads_before_first_edit_stops_at_edit():

@@ -245,6 +245,15 @@ def dash_churn(patch: str) -> int:
     return sum(1 for l in removed if any(d in l for d in DASHES) and _norm(l) in added)
 
 
+MANAGED_RE = re.compile(rb"<!-- BEGIN:(\S+) -->.*?<!-- END:\1 -->", re.S)
+
+
+def managed_block(content: bytes) -> bytes | None:
+    """The first tool-managed block in a file, markers included; None if absent."""
+    m = MANAGED_RE.search(content)
+    return m.group(0) if m else None
+
+
 def reads_before_first_edit(events: list[agents.Event]) -> list[str]:
     reads: list[str] = []
     for event in events:
@@ -336,11 +345,14 @@ def score(scen: dict, result: agents.RunResult, run_dir: Path, base: str,
     reads = reads_before_first_edit(result.events)
     handover_files = sorted(f for f in files if f.startswith("doc/handover/"))
 
-    web_ok = (work / "web" / "AGENTS.md").read_bytes() == originals["web"]
+    block = managed_block(originals["web"])
+    web_ok = managed_block((work / "web" / "AGENTS.md").read_bytes()) == block
+    for tree in worktrees(work):
+        web_ok = web_ok and managed_block((tree / "web" / "AGENTS.md").read_bytes()) == block
     for branch in branches(work):
         shown = subprocess.run(["git", "-C", str(work), "show", f"{branch}:web/AGENTS.md"],
                                capture_output=True)
-        web_ok = web_ok and shown.stdout == originals["web"]
+        web_ok = web_ok and managed_block(shown.stdout) == block
 
     metrics = {
         "files_changed": sorted(files),
