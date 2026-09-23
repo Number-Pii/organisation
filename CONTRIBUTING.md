@@ -48,7 +48,7 @@ Examples:
 4. Open a PR with a clear description of **what** changed and **why**
 5. Get approval before merging
 
-**Never push directly to `main`.** See [Version Control Discipline](CLAUDE.md#version-control-discipline).
+**Never push directly to `main`.** Branch protection enforces it; see [AGENTS.md](AGENTS.md#boundaries).
 
 ---
 
@@ -189,33 +189,29 @@ follow release tags, so merged but unreleased work on `main` never reaches them 
 
 ---
 
-## Keeping CLAUDE.md, GEMINI.md, and AGENTS.md in Sync
+## Instruction Files
 
-`CLAUDE.md` is the **source of truth**. `GEMINI.md` and `AGENTS.md` are generated from it by `scripts/sync_ai_context.py`; do not edit either generated file by hand.
+Two sets of agent instructions live here, and they are kept apart on purpose:
 
-### Why all three files exist
-Claude Code auto-loads `CLAUDE.md`; Gemini CLI auto-loads `GEMINI.md`; OpenAI Codex auto-loads `AGENTS.md`. The toolkit must work in all three, so all three files must be present.
+- **This repository's own:** `AGENTS.md` at the root, written for whoever maintains the
+  toolkit. `CLAUDE.md` and `GEMINI.md` are stubs that import it with `@AGENTS.md`, so
+  there is one file to edit and nothing to sync.
+- **What every consuming project is told:** the managed block in
+  `templates/agents-block.md`. `init_project.py` places it in each new project's
+  `AGENTS.md`; `sync_context.py` refreshes it in existing ones. Keep it under about 100
+  lines, and give every rule in it a stated reason. It is loaded into every session of
+  every project, so each line costs context everywhere.
 
-### How sync works
-Edit `CLAUDE.md`, then run:
-
-```bash
-python3 scripts/sync_ai_context.py
-```
-
-The script rewrites both `GEMINI.md` and `AGENTS.md` with the known substitutions per target:
-- Tool-name reference in the session-start acknowledgement list
-- Sync-comment header
-
-`INITIALIZE.md` (the Initialize Protocol body) is model-neutral and shared by all three
-context files directly; it needs no sync and is edited in place.
-
-CI and the pre-commit hook run the same script and fail the build if drift is detected (`python3 scripts/sync_ai_context.py --check`).
+Write instructions as outcomes and boundaries, not step-by-step procedures. Say what must
+be true and why, and leave the method to the model. Before changing the block, run the
+scenario smoke set against the current version and against your branch, then put both
+tables in the PR (`python3 scripts/run_scenarios.py --smoke --toolkit-ref <ref>`).
 
 ### Pre-commit hook
 
-The hook lives in `.githooks/pre-commit` and runs the version check, the adapter
-sync check, and the writing validator on staged markdown. Install it once per clone:
+The hook lives in `.githooks/pre-commit`. It runs the version check, the plugin
+packaging check, the documentation graph check (`scripts/docs.py check`), and the
+writing validator on staged markdown. Install it once per clone:
 
 ```bash
 git config core.hooksPath .githooks
@@ -237,44 +233,18 @@ git push origin v3.13.0
 
 ---
 
-## Cache-safe vs Volatile Blocks
+## Keeping the Toolkit Current
 
-Some parts of the toolkit change often; others barely change at all. Marking the stable blocks with a `<!-- CACHE_BOUNDARY -->` HTML comment gives contributors a clear "don't churn this without good reason" signal and gives future tooling a hook to place prompt-cache breakpoints.
+Models improve faster than this toolkit does, so parts of it expire. Review it once a
+quarter and after any major model release from Anthropic or OpenAI:
 
-**This is a contributor convention, not a live Claude Code directive.** Claude Code does not parse these sentinels today; Anthropic's prompt cache operates at the SDK level via explicit `cache_control` breakpoints on API requests, not by scanning markdown. The sentinels exist so that (a) contributors treat the marked blocks as stable by default, and (b) any future wrapper that reads them can translate them into real cache breakpoints without a schema change.
-
-### Where the sentinels sit today
-
-**Cache-safe** (end with `<!-- CACHE_BOUNDARY -->`):
-
-- `CLAUDE.md`: end of the Non-Negotiable Standards section
-- `GEMINI.md` and `AGENTS.md`: same placement (propagates automatically via `sync_ai_context.py`)
-- `INITIALIZE.md`: end of file
-- `WRITING.md`: end of file
-- `Teams/organisation.md`: end of file
-- `Teams/philosophy.md`: end of file
-
-**Volatile** (no sentinel, expect churn):
-
-- `doc/project-brief.md`, `doc/team-assignment.md`, `doc/workflow.md`, `doc/handover/**`: per-project, rewritten every engagement
-- `Agent Skills` sections inside role files: curated list changes as new skills land
-- `CHANGELOG.md`, `VERSION`: bumped every release
-- Individual `Teams/skills/**/SKILL.md`: edited as skills evolve
-
-### When editing a cache-safe block
-
-Churning a cache-safe block invalidates downstream cache for every context that loads it. Before editing one:
-
-1. Prefer a smaller, additive change over a rewrite
-2. Confirm the change is genuinely terminal, not "nice to have" wording
-3. Expect that the next session's warm cache is lost; this is fine for binding rules, wasteful for cosmetics
-
-`sync_ai_context.py` preserves HTML comments, so sentinels in `CLAUDE.md` appear in `GEMINI.md` automatically; never hand-edit `GEMINI.md` to add or remove one.
-
----
-
-## Why the Mandatory Reading Protocol Exists
-
-Past sessions have skipped project context files, expanded scope without permission, pushed directly to `main`, and created ad-hoc troubleshooting docs inside `doc/`. Every one of those failures traced back to an AI assistant treating the protocol as optional reading.
-
-The Mandatory Reading Protocol in `CLAUDE.md` / `GEMINI.md`, and every Non-Negotiable Standard under it, is written as a hard rule precisely because soft guidance produced repeated regressions. When tempted to compress further, remember: the rules are short because they are terminal, not because they are flexible.
+1. **Measure.** Run the full scenario suite on the current models
+   (`python3 scripts/run_scenarios.py --all --repeat 3`) and compare it with the latest
+   scorecard in `evals/scorecards/`.
+2. **Prune instructions.** For every rule in `templates/agents-block.md` and `AGENTS.md`,
+   ask whether current models still need it to behave well. A rule that no longer
+   changes behaviour, or that no one can give a reason for, goes.
+3. **Re-review skills.** Any skill whose `last_reviewed` date is more than two quarters
+   old gets re-read. Keep it if it still adds something a frontier model lacks;
+   otherwise remove it.
+4. **Record the outcome.** Put the findings and the new scorecard in the release PR.

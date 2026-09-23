@@ -4,24 +4,6 @@ Python 3 scripts that automate deterministic work, saving tokens and time.
 
 ---
 
-## `check_handover.py`: Handover Staleness Checker
-
-Flags a consolidated handover that has fallen behind the work it describes, by
-counting commits since the handover file was last touched.
-
-### Usage
-```bash
-# From a consuming project root (default limit: 20 commits)
-python3 organisation/scripts/check_handover.py
-
-# Stricter limit
-python3 organisation/scripts/check_handover.py --max-commits 10
-```
-
-Exit code 0 when fresh; 1 when the handover is stale, missing, or never committed.
-
----
-
 ## `check_writing.py`: Writing Standard Validator
 
 Checks prose deliverables (markdown or plain text) against `WRITING.md`. The banned-phrases
@@ -81,6 +63,22 @@ The audit exits non-zero on broken `@skill` refs or frontmatter drift, so CI
 gates on it. It also reports skill tier counts and lists curated skills whose
 `risk` field is still `unknown` (reported, not failing).
 
+### What It Reports
+| Metric | Description |
+|
+
+---
+
+## `find_skill.py`: Skill Search
+
+Searches `Teams/skills/skills-index.json` by keyword without loading any SKILL.md.
+Reviewed skills show by default; `--all` adds the rest, `--domain` narrows.
+
+```bash
+python3 scripts/find_skill.py postgres
+python3 scripts/find_skill.py --domain "Testing & QA" --all e2e
+```
+
 ---
 
 ## `build_skills_index.py`: Skills Index Generator
@@ -98,9 +96,7 @@ python3 scripts/build_skills_index.py
 python3 scripts/build_skills_index.py --check
 ```
 
-### What It Reports
-| Metric | Description |
-|--------|-------------|
+--------|-------------|
 | Total skill folders | How many skills exist in `Teams/skills/` |
 | Agent Skills refs | Unique `@skill` refs across all 53 Agent Skills sections |
 | Broken refs | `@skill` refs that have no matching folder |
@@ -112,73 +108,88 @@ python3 scripts/build_skills_index.py --check
 
 ## `init_project.py`: Project Scaffolder
 
-Creates the standard `doc/` folder structure in any project directory. Run after your AI
-coding assistant has determined the project brief and team assignment.
+Creates the standard scaffold in a consuming project. Run it once the brief,
+level, and team are agreed; it never overwrites an existing file.
 
-Content comes from `templates/*.md` at the toolkit root, rendered with Python's
+Content comes from `templates/` at the toolkit root, rendered with Python's
 `string.Template`; wording changes are markdown edits, not code edits. The
-classification level sets the quality gates, and it also writes level-matched
-Pull Request Rules and Release Process sections into `version_control.md`
-(Level 4 scaffolds two reviewers and CTO sign-off, not a generic one-review rule).
-Template changes must regenerate the golden files; see `tests/README.md`.
+classification level sets the quality gates and writes level-matched Pull Request
+Rules and Release Process sections into `version_control.md`. Template changes must
+regenerate the golden files; see `tests/README.md`.
 
 ### Usage
 ```bash
-# Basic: creates doc/ in the current directory
-python3 /path/to/org/scripts/init_project.py --project-name "My Project"
+python3 organisation/scripts/init_project.py \
+  --project-name "API Build" --level 2 --output-dir /path/to/my-project
 
-# With specific departments (creates dept handover sub-folders)
-python3 /path/to/org/scripts/init_project.py \
-  --project-name "Client Landing Page" \
-  --departments "engineering,design,marketing"
-
-# Into a specific project directory, with a classification level
-python3 /path/to/org/scripts/init_project.py \
-  --project-name "API Build" \
-  --departments "engineering" \
-  --output-dir /path/to/my-project \
-  --level 2
-
-# Preview without creating files
-python3 /path/to/org/scripts/init_project.py \
-  --project-name "Test" \
-  --dry-run
+# Existing product (brownfield), preview only
+python3 organisation/scripts/init_project.py \
+  --project-name "Inherited App" --level 3 --existing --output-dir . --dry-run
 ```
 
 ### Arguments
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--project-name` | (required) | Project name used in all file headers |
-| `--departments` | `engineering` | Comma-separated dept names for handover sub-folders |
-| `--output-dir` | `.` (current dir) | Directory where `doc/` will be created |
-| `--level` | `2` | Classification level 1-4; sets the quality gates written into the docs. Level 3+ adds `architecture.md` |
-| `--existing` | false | Brownfield mode; adds `codebase-assessment.md` and expands the handover template |
+| `--project-name` | (required) | Project name used in file headers |
+| `--output-dir` | `.` (current dir) | The consuming project root; refused if it is the toolkit itself |
+| `--level` | `2` | Classification level 1-4; sets the quality gates. Level 3+ adds `architecture.md` |
+| `--existing` | false | Brownfield mode; adds `codebase-assessment.md` and existing-product context in `STATE.md` |
+| `--no-claude-hooks` | false | Skip the `.claude/` hook; the git `pre-push` hook is always written |
+| `--departments` | `engineering` | Accepted for compatibility; handover is per branch since 4.0.0 |
 | `--dry-run` | false | Preview the structure without creating files |
 
 ### What It Creates
 ```
+AGENTS.md                     # Project description + the toolkit's managed block
+CLAUDE.md, GEMINI.md          # Stubs importing AGENTS.md
+.githooks/pre-push            # Refuses pushes to main (git config core.hooksPath .githooks)
+.claude/                      # Optional Claude Code guard hook
 doc/
-├── project-brief.md          # Goals, scope, client, constraints, classification level
-├── team-assignment.md        # Assigned team members and their responsibilities
-├── workflow.md               # Step-by-step task chain + level quality gates
-├── version_control.md        # Git strategy, branching, PR rules
-├── task-board.md             # Execution board config + backlog for gh_project_sync.py
-├── architecture.md           # System design (created at --level 3 and 4 only)
+├── README.md                 # The doc map: what each file and folder is for
+├── project-brief.md          # Goals, scope, constraints, classification level
+├── team-assignment.md        # Roles and responsibilities
+├── workflow.md               # Planned task chain + level quality gates
+├── version_control.md        # Branching, PR rules, parallel work, releases
+├── task-board.md             # Board config + backlog for gh_project_sync.py
+├── architecture.md           # Level 3 and 4 only
+├── codebase-assessment.md    # Brownfield only
 └── handover/
-    ├── consolidated_handover.md   # Current project state (always up to date)
-    └── [dept-name]/               # One folder per department in the team
-        └── handover-notes.md      # Dept-specific notes, updated as work progresses
+    ├── STATE.md              # Consolidated state; changes only in consolidation PRs
+    └── entries/              # One file per branch, edited only by that branch
 ```
 
-### Handover Workflow
-The `doc/handover/` system saves tokens and time when switching AI sessions:
+---
 
-1. **During work**: Each team member updates their dept `handover-notes.md`
-2. **At milestones**: Team lead pulls from dept notes → updates `consolidated_handover.md`
-3. **New session**: Tell the AI: *"Initialize CLAUDE.md and read doc/handover/consolidated_handover.md"*
-4. The new session has full context immediately, no re-explanation needed
+## `handover.py`: Per-Branch Handover
+
+Each branch keeps one entry in `doc/handover/entries/`; `STATE.md` changes only in
+`chore/handover-consolidate-*` PRs. Parallel branches never edit the same lines.
+
+```bash
+python3 organisation/scripts/handover.py new --issue 12     # this branch's entry, pre-filled from commits
+python3 organisation/scripts/handover.py status             # in flight and not yet consolidated
+python3 organisation/scripts/handover.py check              # fails if a PR edits another branch's entry
+python3 organisation/scripts/handover.py consolidate        # draft for STATE.md; --mark records the date
+```
 
 ---
+
+## `docs.py`: Documentation Map and Check
+
+`map` prints every document under `doc/` with a one-line summary. `check` fails when
+a top-level file or an unknown folder is missing from `doc/README.md`, or when a
+relative link is broken. Files inside mapped folders need no index edit. Run on the
+toolkit itself, it checks that every root document is referenced from `AGENTS.md` or
+`README.md`.
+
+---
+
+## `sync_context.py`: Managed Block Sync
+
+Replaces the `<!-- np:begin -->` ... `<!-- np:end -->` block in a project's `AGENTS.md`
+with the current `templates/agents-block.md`, touching nothing else and writing only
+when the bytes differ. `--check` reports staleness. A file without the block is
+refused; `--append` adds it to the end of a hand-written file.
 
 ---
 
@@ -224,8 +235,8 @@ python3 organisation/scripts/gh_project_sync.py link --issue 42 --blocked-by 40
 | `push` | Create issues from `doc/task-board.md`, label them, and add them to the project (idempotent: skips titles already on the board) |
 | `assign` | Set or clear an issue's owner and move its workflow state; sets the board Status field automatically. Refuses to take over a claimed item (assigned + In Progress) without `--force` |
 | `status` | Set the project board Status field for one issue (discovers the field and option IDs itself) |
-| `sync` | Write live board Status values back into the State column of `doc/task-board.md` |
-| `query` | List open board items with owner, state, and labels; add `--json` for raw output |
+| `sync` | Report where `doc/task-board.md` differs from the live board; `--write-back` snapshots the board into the file |
+| `query` | List open items with board status, owner, and blocking issues; add `--json` for structured output |
 | `link` | Record a blocked-by dependency between two issues |
 
 Every subcommand accepts `--dry-run`, which prints the `gh` calls without running them. The flag
@@ -256,15 +267,6 @@ Runs the golden tasks in `evals/tasks/` twice each (bare, and with the skill
 under test loaded) and writes side-by-side results for rubric judging. Needs
 the `claude` CLI for live runs; `--list` works without it. Method and task
 format: `evals/README.md`.
-
----
-
-## `draft_handover.py`: Handover Drafter
-
-Drafts a dated Work Completed entry for a department handover file from the
-consuming project's git history (grouped by conventional-commit type). Run it
-from the project root; add `--write` to append the draft to
-`doc/handover/<dept>/handover-notes.md`, then review and add the why.
 
 ---
 
@@ -333,6 +335,14 @@ python3 scripts/update_all.py
 
 Register or remove a consumer by editing `consumers.json`; entries are a name
 plus a path relative to the registry's `base`.
+
+---
+
+## `check_plugin.py`: Plugin Packaging Check
+
+Validates the Claude Code plugin surface: `plugin.json` and `hooks.json` parse,
+referenced hook scripts exist, `commands/init.md` and `agents/` are present, and the
+plugin and scaffold copies of the main-branch hook are byte-identical.
 
 ---
 

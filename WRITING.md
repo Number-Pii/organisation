@@ -1,11 +1,8 @@
 # Number Pii Writing Standard
 
-> **Binding contract, loaded on demand.** Versioned with `CLAUDE.md` (see its `_Version:` line).
-> Before producing any substantial prose deliverable (documentation, specifications,
-> architecture documents, reports, proposals, marketing copy, client communications,
-> knowledge-base articles, plans, README files), you MUST read this file in full and
-> apply it. It carries the same binding force as `CLAUDE.md`. The short rules in the
-> Writing Style standard of `CLAUDE.md` always apply, even when this file is not loaded.
+> Read this before writing a substantial prose deliverable: documentation,
+> specifications, reports, proposals, marketing or client copy, README files.
+> `python3 scripts/check_writing.py <file>` checks the mechanical rules.
 > Owner: Head of Content & SEO (`Teams/05-Growth-Marketing/Head-Content-SEO.md`).
 
 ## Scope
@@ -165,5 +162,3 @@ The same core directive applies to all five types; only tone, readability target
 5. Record editorial sign-off in the department handover notes when the gates require it.
 
 The validator's scorecard is the compliance measurement. Repeated failure patterns feed back into this file: when a new AI-signalling phrase shows up in rejected work, the Head of Content & SEO adds it to the banned list.
-
-<!-- CACHE_BOUNDARY -->

@@ -12,5 +12,3 @@ Teams/skills/last30days/assets/**           binary export-ignore
 Teams/skills/theme-factory/*.pdf            binary export-ignore
 Teams/skills/web-artifacts-builder/scripts/*.tar.gz  binary export-ignore
 
-# Generated file — do not diff in PRs by default
-GEMINI.md  linguist-generated

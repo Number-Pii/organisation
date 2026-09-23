@@ -50,7 +50,7 @@ PASSIVE_RE = re.compile(
 
 # Rule statements that name the dash characters, e.g. "no em dashes (—)", are
 # mentions rather than uses; strip them before scanning so the standard's own
-# text (WRITING.md, CLAUDE.md, scripts/README.md) does not flag itself.
+# text (WRITING.md, templates/agents-block.md, scripts/README.md) does not flag itself.
 DASH_MENTION_RE = re.compile(r"[Ee][mn] dash(es)?\s*\((?:—|–)\)")
 
 # Text owned by another tool or by the toolkit's sync step, not by the author.
