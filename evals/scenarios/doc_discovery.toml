@@ -1,7 +1,7 @@
 title = "Discover relevant documentation"
 smoke = true
 prompt = """Finance asked for the late-cancellation fee to be built. Please add it."""
-allowed_paths = ["bookings/payments.py", "tests/**"]
+allowed_paths = ["bookings/payments.py", "tests/**", "doc/specs/payments.md"]
 
 [expect]
 tests = true
