@@ -174,10 +174,11 @@ def cmd_status(args) -> int:
 
 # ── check ────────────────────────────────────────────────────────────────────
 
-def classify(files: list[str], branch: str) -> tuple[list[str], list[str]]:
-    """(failures, warnings) for a branch's changed files."""
+def classify(files: list[str], branch: str, migrating: bool = False) -> tuple[list[str], list[str]]:
+    """(failures, warnings) for a branch's changed files. `migrating` is true on
+    the branch that retires consolidated_handover.md and creates STATE.md."""
     fails, warns = [], []
-    consolidating = bool(CONSOLIDATION_BRANCH.match(branch))
+    consolidating = bool(CONSOLIDATION_BRANCH.match(branch)) or migrating
     entries = [f for f in files if f.startswith(ENTRIES.as_posix() + "/") and ENTRY_NAME.match(Path(f).name)]
     own = [f for f in entries if ENTRY_NAME.match(Path(f).name).group(2) == slug(branch)]
     if not consolidating:
@@ -192,12 +193,22 @@ def classify(files: list[str], branch: str) -> tuple[list[str], list[str]]:
     return fails, warns
 
 
+def retires_legacy_state(project: Path, base: str) -> bool:
+    """True when the base has consolidated_handover.md and HEAD replaces it with STATE.md."""
+    def has(ref: str, path: Path) -> bool:
+        return subprocess.run(["git", "-C", str(project), "cat-file", "-e", f"{ref}:{path.as_posix()}"],
+                              capture_output=True).returncode == 0
+    merge_base = git(project, "merge-base", base, "HEAD", check=False) or base
+    return (has(merge_base, LEGACY_STATE) and not has("HEAD", LEGACY_STATE)
+            and has("HEAD", STATE) and not has(merge_base, STATE))
+
+
 def cmd_check(args) -> int:
     project = Path(args.project).resolve()
     branch = args.branch or current_branch(project)
     base = args.base or default_base(project)
     files = git(project, "diff", "--name-only", f"{base}...HEAD").splitlines()
-    fails, warns = classify(files, branch)
+    fails, warns = classify(files, branch, migrating=retires_legacy_state(project, base))
     for w in warns:
         print(f"WARN  {w}")
     for f in fails:

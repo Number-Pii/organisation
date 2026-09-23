@@ -73,3 +73,17 @@ def test_summary_prefers_prose_over_lists_and_drops_dashes(tmp_path):
     listy = tmp_path / "l.md"
     listy.write_text("# Runbook\n\n1. Deploy — then verify the health check passes.\n")
     assert "—" not in docs.summary(listy)
+
+
+def test_route_group_parentheses_and_missing_toolkit_are_not_broken_links(tmp_path, capsys):
+    root = project(tmp_path)
+    (root / "web" / "src" / "app" / "(shop)").mkdir(parents=True)
+    (root / "web" / "src" / "app" / "(shop)" / "page.tsx").write_text("")
+    brief = root / "doc" / "project-brief.md"
+    brief.write_text(brief.read_text()
+                     + "\nSee [the page](../web/src/app/(shop)/page.tsx) and"
+                     + " [the standard](../organisation/GITHUB_ORCHESTRATION.md).\n")
+    assert docs.main(["--root", str(root), "check"]) == 0
+    brief.write_text(brief.read_text() + "\n[missing](../web/src/app/(shop)/gone.tsx)\n")
+    assert docs.main(["--root", str(root), "check"]) == 1
+    assert "(shop)/gone.tsx" in capsys.readouterr().out

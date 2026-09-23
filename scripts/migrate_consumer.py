@@ -21,6 +21,9 @@ What it does:
 - Adds the git pre-push hook, removes the SessionStart checklist hook, and
   updates an unmodified Claude protect-main hook to the worktree-aware version.
 - Replaces the scaffold's never-resolving placeholder link in team-assignment.md.
+- Points Markdown links at consolidated_handover.md to STATE.md, and swaps the
+  v3 "Concurrent Sessions" rules in version_control.md for the v4 "Parallel
+  Work" rules while that section is still the unedited v3 text.
 - Leaves doc/workflow.md Status columns alone unless --strip-status is passed.
 
 Usage (from the consuming project root):
@@ -46,6 +49,8 @@ LEVEL_LINE = re.compile(r"Project classification: Level (\d)")
 POINTER_END = "There are no exceptions for urgency, convenience, or confidence."
 V3_HOOK_MARKER = "Blocked by the toolkit"
 STATUS_HEADER = "| # | Task | Owner | Type | Depends On | Status |"
+LEGACY_LINK = re.compile(r"\[([^\]]*)\]\(((?:\.\./)*(?:doc/)?(?:handover/)?)consolidated_handover\.md\)")
+V3_CONCURRENCY_MARKER = "organisation/scripts/check_handover.py"
 # A toolkit-written placeholder link that never resolved in any project.
 V3_ROLE_LINK = "- [Role Name](../Teams/[department]/[role-file].md)"
 V4_ROLE_LINE = "- Role name: `organisation/Teams/<department>/<role-file>.md`"
@@ -238,6 +243,39 @@ def plan_team_link(plan: Plan):
                    "replace the scaffold's placeholder link, which never resolved")
 
 
+def plan_legacy_links(plan: Plan):
+    """Point Markdown links at consolidated_handover.md to STATE.md, which holds its content."""
+    root = plan.root
+    if not (root / "doc" / "handover" / "consolidated_handover.md").exists():
+        return
+    candidates = list(root.glob("*.md")) + list((root / "doc").rglob("*.md"))
+    for path in sorted(candidates):
+        rel = path.relative_to(root).as_posix()
+        if "/archive/" in f"/{rel}" or "/_archive" in f"/{rel}" or path.name == "consolidated_handover.md":
+            continue
+        text = plan.writes.get(path) or path.read_text(encoding="utf-8", errors="replace")
+        new = LEGACY_LINK.sub(lambda m: "[" + m.group(1).replace("consolidated_handover.md", "STATE.md")
+                              + "](" + m.group(2) + "STATE.md)", text)
+        if new != text:
+            count = len(LEGACY_LINK.findall(text))
+            plan.write(path, new, f"{count} link(s) to consolidated_handover.md now point to STATE.md")
+
+
+def plan_version_control(plan: Plan):
+    """Swap the v3 'Concurrent Sessions' rules for v4 'Parallel Work' while unedited."""
+    vc = plan.root / "doc" / "version_control.md"
+    if not vc.exists():
+        return
+    text = plan.writes.get(vc) or vc.read_text(encoding="utf-8")
+    m = re.search(r"^## Concurrent Sessions\n.*?(?=^## )", text, flags=re.MULTILINE | re.DOTALL)
+    if not m or V3_CONCURRENCY_MARKER not in m.group(0):
+        return
+    template = load_raw("version_control.md")
+    v4 = re.search(r"^## Parallel Work\n.*?(?=^## )", template, flags=re.MULTILINE | re.DOTALL).group(0)
+    plan.write(vc, text[:m.start()] + v4 + text[m.end():],
+               "v3 'Concurrent Sessions' rules replaced by v4 'Parallel Work'")
+
+
 def build_plan(root: Path, level: int | None, strip_status: bool) -> Plan:
     plan = Plan(root)
     plan_context_files(plan, level)
@@ -250,6 +288,8 @@ def build_plan(root: Path, level: int | None, strip_status: bool) -> Plan:
     plan_hooks(plan)
     plan_workflow(plan, strip_status)
     plan_team_link(plan)
+    plan_legacy_links(plan)
+    plan_version_control(plan)
     return plan
 
 

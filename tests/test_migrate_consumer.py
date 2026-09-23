@@ -95,3 +95,33 @@ def test_strip_status_is_opt_in(project):
 def test_refuses_to_run_on_the_toolkit():
     toolkit = Path(__file__).resolve().parent.parent
     assert mc.main(["--project", str(toolkit)]) == 1
+
+
+def test_links_to_the_old_handover_are_repointed(project):
+    prd = project / "doc" / "PRD.md"
+    prd.write_text(prd.read_text() + "\nState: [doc/handover/consolidated_handover.md](handover/consolidated_handover.md).\n")
+    notes = project / "doc" / "handover" / "engineering" / "handover-notes.md"
+    notes.write_text(notes.read_text() + "\nSee [consolidated_handover.md](../consolidated_handover.md).\n")
+    archive = project / "doc" / "handover" / "archive" / "2026-05.md"
+    archive.write_text("Old: [x](../consolidated_handover.md)\n")
+    mc.main(["--project", str(project), "--apply"])
+    assert "[doc/handover/STATE.md](handover/STATE.md)" in prd.read_text()
+    assert "[STATE.md](../STATE.md)" in notes.read_text()
+    assert "consolidated_handover.md" in archive.read_text(), "archives stay as history"
+    assert docs.main(["--root", str(project), "check"]) == 0
+
+
+def test_v3_parallel_rules_are_replaced_only_while_unedited(project):
+    mc.main(["--project", str(project), "--apply"])
+    vc = (project / "doc" / "version_control.md").read_text()
+    assert "## Parallel Work" in vc and "## Concurrent Sessions" not in vc
+    assert "check_handover.py" not in vc
+
+
+def test_edited_concurrency_section_is_left_alone(project):
+    vc = project / "doc" / "version_control.md"
+    vc.write_text(vc.read_text().replace(
+        "- Check handover freshness before starting: `python3 organisation/scripts/check_handover.py`",
+        "- Our own rule: ping the channel before starting."))
+    mc.main(["--project", str(project), "--apply"])
+    assert "Our own rule: ping the channel" in vc.read_text()

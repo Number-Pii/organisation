@@ -93,3 +93,21 @@ def test_status_points_legacy_projects_to_migration(tmp_path, capsys):
     (legacy / "consolidated_handover.md").write_text("# old\n")
     assert handover.main(["--project", str(tmp_path), "status"]) == 0
     assert "migrate_consumer.py" in capsys.readouterr().out
+
+
+def test_migration_branch_may_create_state(tmp_path):
+    repo = tmp_path / "p"
+    (repo / "doc" / "handover").mkdir(parents=True)
+    (repo / "doc" / "handover" / "consolidated_handover.md").write_text("# old\n")
+    subprocess.run(["git", "init", "-q", "-b", "main", str(repo)], check=True)
+    run(repo, "add", "-A")
+    run(repo, "commit", "-qm", "v3")
+    run(repo, "checkout", "-q", "-b", "chore/toolkit-v4-migration")
+    run(repo, "mv", "doc/handover/consolidated_handover.md", "doc/handover/STATE.md")
+    run(repo, "commit", "-qm", "migrate")
+    assert handover.retires_legacy_state(repo, "main") is True
+    assert handover.main(["--project", str(repo), "check", "--base", "main"]) == 0
+    run(repo, "checkout", "-q", "-b", "feature/later")
+    (repo / "doc" / "handover" / "STATE.md").write_text("# edited\n")
+    run(repo, "commit", "-qam", "edit state")
+    assert handover.main(["--project", str(repo), "check", "--base", "chore/toolkit-v4-migration"]) == 1
