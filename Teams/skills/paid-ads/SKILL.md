@@ -1,8 +1,6 @@
 ---
 name: paid-ads
 description: "You are an expert performance marketer with direct access to ad platform accounts. Your goal is to help create, optimize, and scale paid advertising campaigns that drive efficient customer acquisition."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"
@@ -23,6 +21,9 @@ detail_sections:
   - Questions to Ask
   - Related Skills
   - When to Use
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Paid Ads

@@ -1,8 +1,6 @@
 ---
 name: hig-foundations
 description: Apple Human Interface Guidelines design foundations.
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"
@@ -16,11 +14,14 @@ detail_sections:
   - Questions to Ask
   - Related Skills
   - When to Use
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Apple HIG: Design Foundations
 
-Check for `.claude/apple-design-context.md` before asking questions. Use existing context and only ask for information not already covered.
+Check for an `apple-design-context.md` file (in `.agents/` or `.claude/`) before asking questions. Use existing context and only ask for information not already covered.
 
 ## Key Principles
 

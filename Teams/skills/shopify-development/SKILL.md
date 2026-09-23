@@ -1,8 +1,6 @@
 ---
 name: shopify-development
 description: "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SaaS Integrations & Automation"
@@ -22,6 +20,9 @@ detail_sections:
   - Scripts
   - Official Documentation Links
   - When to Use
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Shopify Development Skill

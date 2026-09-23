@@ -11,13 +11,13 @@ The VP of Sales & Consultancy drives revenue from services and consultancy engag
 
 ## Core Skills
 - Enterprise and mid-market sales (@sales-enablement, @cold-email)
-- Consultancy practice management (@project-development, @customer-support)
-- Proposal and SOW writing (@writing-plans, @copywriting)
-- Client relationship management (@customer-support, @hubspot-automation)
-- Revenue forecasting and pipeline management (@revops, @risk-metrics-calculation)
+- Consultancy practice management
+- Proposal and SOW writing (@copywriting)
+- Client relationship management
+- Revenue forecasting and pipeline management (@revops)
 - Pricing strategy and negotiation (@pricing-strategy)
-- Cross-selling and upselling (@sales-enablement, @growth-engine)
-- Team coaching and sales enablement (@sales-enablement, @interview-coach)
+- Cross-selling and upselling (@sales-enablement)
+- Team coaching and sales enablement (@sales-enablement)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -38,6 +38,3 @@ Invoke these skills when working as this role:
 - @sales-enablement: sales strategy and enablement
 - @cold-email: outbound email sequences
 - @revops: revenue operations
-- @pipedrive-automation: CRM pipeline management
-- @hubspot-automation: HubSpot CRM workflows
-- @competitive-landscape: competitive positioning

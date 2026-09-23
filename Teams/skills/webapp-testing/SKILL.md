@@ -1,8 +1,6 @@
 ---
 name: webapp-testing
 description: "To test local web applications, write native Python Playwright scripts."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Testing & QA"
@@ -16,6 +14,9 @@ detail_sections:
   - Best Practices
   - Reference Files
   - When to Use
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Web Application Testing

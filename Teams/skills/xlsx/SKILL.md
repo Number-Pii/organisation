@@ -1,7 +1,6 @@
 ---
 name: xlsx-official
 description: Unless otherwise stated by the user or existing template
-risk: unknown
 source: community
 date_added: "2026-02-27"
 domain: "Documentation & Office"
@@ -21,6 +20,9 @@ detail_sections:
   - Best Practices
   - Code Style Guidelines
   - When to Use
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Requirements for Outputs

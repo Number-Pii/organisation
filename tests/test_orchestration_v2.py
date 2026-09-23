@@ -98,3 +98,14 @@ def test_rewrite_noop_when_states_match():
         BOARD, {"Set up schema": "Ready", "JWT middleware": "Backlog"})
     assert new == BOARD
     assert updated == []
+
+
+def test_query_row_carries_status_and_blockers():
+    from gh_project_sync import summarise_issue
+    row = summarise_issue(
+        {"number": 5, "title": "Login", "assignees": [{"login": "ada"}],
+         "labels": [{"name": "blocked"}],
+         "comments": [{"body": "Depends on #3 (blocked-by). Recorded by the orchestration layer."}]},
+        {5: "In Progress"})
+    assert (row["status"], row["owner"], row["blocked_by"]) == ("In Progress", "ada", [3])
+    assert summarise_issue({"number": 6, "title": "x"}, {})["status"] == "-"

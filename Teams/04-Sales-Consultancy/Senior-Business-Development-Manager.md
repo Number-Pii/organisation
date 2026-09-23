@@ -11,9 +11,9 @@ Acquires high-value development and consultancy contracts. Network and craft to 
 
 ## Core Skills
 - Enterprise and mid-market sales (@sales-enablement, @cold-email)
-- Technical sales and solution selling (@sales-enablement, @competitive-landscape)
-- Proposal and SOW writing (@writing-plans, @copywriting)
-- Client relationship management (@customer-support, @hubspot-automation)
+- Technical sales and solution selling (@sales-enablement)
+- Proposal and SOW writing (@copywriting)
+- Client relationship management
 - Contract negotiation (@pricing-strategy, @revops)
 
 ## Project Involvement
@@ -30,7 +30,4 @@ Acquires high-value development and consultancy contracts. Network and craft to 
 Invoke these skills when working as this role:
 - @cold-email: outbound email campaigns
 - @sales-enablement: sales collateral and process
-- @pipedrive-automation: CRM deal management
-- @hubspot-automation: HubSpot workflows
 - @copywriting: proposal and pitch writing
-- @linkedin-automation: LinkedIn outreach

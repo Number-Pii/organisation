@@ -25,6 +25,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+from lib.files import write_if_changed  # noqa: E402
 from lib.frontmatter import parse_frontmatter  # noqa: E402
 
 REPO_ROOT = HERE.parent
@@ -165,10 +166,10 @@ def main() -> int:
         print("OK: skills-index.json and CATEGORIES.md match skill frontmatter.")
         return 0
 
-    INDEX_PATH.write_text(index, encoding="utf-8")
-    CATEGORIES_PATH.write_text(categories, encoding="utf-8")
-    print(f"Wrote {display(INDEX_PATH)} ({len(skills)} skills)")
-    print(f"Wrote {display(CATEGORIES_PATH)}")
+    for path, content, note in ((INDEX_PATH, index, f" ({len(skills)} skills)"),
+                                (CATEGORIES_PATH, categories, "")):
+        verb = "Wrote" if write_if_changed(path, content) else "Unchanged"
+        print(f"{verb} {display(path)}{note}")
     return 0
 
 

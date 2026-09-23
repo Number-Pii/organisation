@@ -10,21 +10,21 @@
 Builds mobile applications for client projects across iOS and Android. Expert in cross-platform frameworks with the ability to drop into native code when needed.
 
 ## Core Skills
-- Cross-platform mobile development (@react-native-architecture, @flutter-expert)
+- Cross-platform mobile development
 - Native platform knowledge (iOS + Android) (@swiftui-expert-skill, @android-jetpack-compose-expert)
-- Mobile UI/UX implementation (@mobile-design, @hig-foundations)
-- App performance optimisation (@web-performance-optimization, @mobile-developer)
+- Mobile UI/UX implementation (@hig-foundations)
+- App performance optimisation (@web-performance-optimization)
 - App store submission and release management (@expo-deployment)
 
 ## Technical Skills
-- React Native, Expo (@react-native-architecture, @expo-dev-client)
-- Flutter, Dart (@flutter-expert)
+- React Native, Expo
+- Flutter, Dart
 - Swift / Kotlin (native when needed) (@swiftui-expert-skill, @android-jetpack-compose-expert)
-- Mobile APIs (push, camera, GPS, biometrics) (@mobile-developer)
-- Firebase, REST API integration (@firebase, @api-design-principles)
-- Detox, Appium (mobile testing) (@e2e-testing)
+- Mobile APIs (push, camera, GPS, biometrics)
+- Firebase, REST API integration
+- Detox, Appium (mobile testing)
 - Fastlane, EAS Build (CI/CD) (@expo-cicd-workflows)
-- Git, code review workflows (@git-pr-workflows-git-workflow, @code-review-excellence)
+- Git, code review workflows (@code-review-excellence)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -38,9 +38,4 @@ Builds mobile applications for client projects across iOS and Android. Expert in
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @react-native-architecture: React Native development
-- @expo-dev-client: Expo workflows
-- @flutter-expert: Flutter development
-- @firebase: Firebase integration
-- @mobile-design: mobile UI/UX patterns
 - @expo-deployment: app store submission

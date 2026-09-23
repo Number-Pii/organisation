@@ -1,132 +1,98 @@
-<!-- GENERATED FILE — do not edit by hand.
-     This file is generated from CLAUDE.md by scripts/sync_ai_context.py.
-     To change its contents, edit CLAUDE.md and re-run the sync script. -->
+# Number Pii Organisation Toolkit
 
-# Number Pii: Organisation Reference
+> **Reached this file from inside another project?** This folder is a vendored,
+> read-only copy of the toolkit. Your project's own root `AGENTS.md` (or
+> `CLAUDE.md`) is the file that governs your work. Don't edit anything here;
+> read what your project's routing table points you to and return.
 
-_Version: 2.15 | Last updated: 2026-07-06_
+This repository is Number Pii's toolkit for AI-assisted delivery. Consuming
+projects clone it into a gitignored `organisation/` folder and use it for the
+following:
+- a project scaffold (`scripts/init_project.py`)
+- the standards every project inherits (`STANDARDS.md`)
+- the virtual organisation of 53 roles (`Teams/`)
+- a library of skills (`Teams/skills/`)
+- supporting scripts
 
----
+This file is for agents and people maintaining the toolkit itself. The toolkit
+has no `doc/` folder of its own: it is not a delivery project.
 
-## ⛔ MANDATORY READING PROTOCOL: READ BEFORE ANY ACTION
-
-This file, `INITIALIZE.md`, `WRITING.md`, and the project's `doc/` folder are a binding contract. Before answering, coding, or running any command you MUST:
-
-1. **Read this file in full.**
-2. **Read every relevant `doc/` file**: `project-brief.md`, `team-assignment.md`, `workflow.md`, `version_control.md`, `handover/consolidated_handover.md` (and `codebase-assessment.md` on brownfield projects).
-3. **Acknowledge in plain text** at session start that you have read `AGENTS.md`, `doc/project-brief.md`, `doc/version_control.md`, and `doc/handover/consolidated_handover.md`.
-4. **Stop and escalate** if any required file is missing; do not infer or reconstruct.
-5. **Treat every Non-Negotiable Standard below as a hard blocker**: violating one is task failure, not a style choice.
-6. **When the Initialize Protocol is triggered, read `INITIALIZE.md` in full first** and follow its steps exactly; it carries the same binding force as this file.
-
-> Rationale and past-incident history for this protocol live in [CONTRIBUTING.md](CONTRIBUTING.md#why-the-mandatory-reading-protocol-exists).
-
----
-
-## What This Repo Is
-Virtual organisational blueprint for Number Pii. Contains role definitions for all 53 positions
-across 6 departments, plus a growing library of AI skill modules in `Teams/skills/`.
-Run `python3 scripts/audit_skills.py` for the current skill count.
+Throughout the toolkit, "employees", "team members", and "AI agents" mean the
+same thing: the role files in `Teams/`.
 
 ## Governance
-Number Pii has two layers, and the distinction is binding:
 
-1. **Human Leadership (final authority):** Olatunbosun Iyare (he/him) and Destiny Ihejirika (he/him), Co-Founders. They own and operate the company and hold final decision-making authority on all matters. Use these pronouns in every document that refers to either founder.
-2. **Virtual Organisation (execution):** every role in `Teams/` is an AI agent that executes tasks, produces outputs, conducts research, writes documentation, builds software, and supports delivery on the founders' behalf. Virtual roles hold delegated authority only; they are never owners, executives, or final decision makers, regardless of title. "User" and "PM" escalation paths in this file ultimately resolve to the founders.
+The founders hold final authority on every matter: Olatunbosun Iyare (he/him)
+and Destiny Ihejirika (he/him). Every role under `Teams/` is an AI agent with
+delegated authority only, whatever its title. All Number Pii products are
+treated equally; none is flagship unless the founders say so.
 
-**Product Neutrality:** all Number Pii products are treated equally. No product is flagship, primary, or priority unless the founders explicitly instruct otherwise. The toolkit must support, build, document, and scale any product without internal preference.
+## Boundaries
 
-## Terminology
-Throughout this repo "**employees**", "**team members**", "**virtual employees**", and "**AI agents**"
-all refer to the same thing: the role files in `Teams/`. Each role is a virtual expert that can be
-invoked in any project to perform its specialised function.
+- **Never commit or push to `main`.** Branch with `feature/`, `fix/`, `chore/`
+  or `hotfix/`, open a PR, and let a founder merge it. Branch protection
+  enforces this.
+- **Add a changelog fragment, not a version bump.** Every PR adds
+  `changes/<branch-name>.md` ([changes/README.md](changes/README.md)).
+  Releases happen in their own PR through `scripts/release.py`.
+- **Generated files are regenerated, never hand-edited.** When the source
+  changes, run the matching script:
 
-## Departments
-Full department structure lives in [Teams/organisation.md](Teams/organisation.md). Six departments: Executive Leadership, Engineering, Product & Design, Sales & Consultancy, Growth & Marketing, Operations.
+  | Generated file(s) | Regenerate with |
+  |---|---|
+  | `Teams/skills/skills-index.json`, `Teams/skills/CATEGORIES.md` | `build_skills_index.py` |
+  | `Teams/org.json` | `build_org.py` |
+  | `agents/np-*.md` | `build_agents.py` |
+  | `tests/golden/` | `tests/generate_goldens.py` |
 
-## Products
-Durable product facts live in `products/<product-name>.md`, one pack per product. Load a pack only when working on that product, never wholesale; see `products/README.md` for the rules. Product Neutrality applies to every pack.
+  If a generated file conflicts in a rebase, regenerate it; don't merge it by hand.
+- **Scaffold wording lives in `templates/`.** Don't put it inline in Python.
+  Template changes regenerate the goldens, and the golden diff is part of the
+  review.
+- **Consumers are not touched from here.** Nothing in this repo writes into a
+  consuming project except `init_project.py` (which never overwrites) and the
+  opt-in scripts the founders run on request.
+- **Change only what the task needs.** The writing standard covers prose you
+  write, not lines you are passing by.
 
-## Skills
-All skills live in `Teams/skills/`; each is a specialised AI expert module. Role files reference them in three layers: **Core Skills** and **Technical Skills** with inline `(@skill-name)` refs, and **Agent Skills** as a curated `@skill-name` list for direct invocation.
+## Where to look
 
-Every skill carries a tier. The `curated` tier is reviewed and role-referenced; it surfaces by default. A `standard` skill is unreviewed community content: search it with `--all` and check its `risk` field before loading. Anything tiered `archive` is off-charter and hidden from search. When several skills cover one topic, prefer the one marked `(canonical)`.
+| Task | Start with |
+|---|---|
+| Change what consuming projects are told | `templates/agents-block.md` (the managed block), `STANDARDS.md` |
+| Change the scaffold | `templates/`, `scripts/init_project.py`, `tests/test_init_project.py` |
+| Change the Initialize Protocol | `INITIALIZE.md` |
+| Change handover or doc conventions | `templates/`, `scripts/handover.py`, `scripts/docs.py` |
+| Add, remove, or review a skill | [CONTRIBUTING.md](CONTRIBUTING.md#adding-a-new-skill), `scripts/audit_skills.py` |
+| Change a role | `Teams/<department>/`, then regenerate `org.json` and `agents/` |
+| Board orchestration | `GITHUB_ORCHESTRATION.md`, `scripts/gh_project_sync.py` |
+| Durable product facts | `products/<name>.md`, one pack per product, loaded only for that product ([products/README.md](products/README.md)) |
+| Find a skill for a task | `python3 scripts/find_skill.py <keyword>` |
+| Measure agent behaviour | [evals/README.md](evals/README.md), `scripts/run_scenarios.py` |
+| Anything about a script | [scripts/README.md](scripts/README.md) |
 
-- **Find a skill (preferred before loading any SKILL.md):** `python3 scripts/find_skill.py <keyword>` searches curated names and summaries without loading files; add `--all` for the standard tier or `--domain <name>` to narrow
-- **Invoke:** `@skill-name [your task]`, e.g. `@postgresql design a multi-tenant schema for a SaaS product`
-- **Coverage and count:** `python3 scripts/audit_skills.py`
-- **Find the right role:** browse `Teams/[department]/` for the role file, then use its skill sections
+## Validation before a PR
 
-Already know what you need? Skip the init flow and invoke the skill directly.
+```bash
+python3 -m pytest tests/ -q
+python3 scripts/audit_skills.py
+python3 scripts/check_version.py
+python3 scripts/docs.py check
+python3 scripts/check_writing.py <changed .md files>
+```
 
----
+CI runs all of these plus the generated-file drift checks. Install the same
+checks locally once per clone:
 
-## Non-Negotiable Standards
+```bash
+git config core.hooksPath .githooks
+```
 
-Every standard below is **non-negotiable**. Each applies to every project, team member, session, and deliverable, regardless of client, project size, phase, urgency, timeline pressure, or which AI model or tool is executing. Violating one is task failure.
+When a change alters what agents are told or how they work, run the scenario
+smoke set before and after:
 
-### Security First
-Security is a fundamental part of the development process, not an afterthought. Every team member must:
-- Consider security implications at every stage: design, development, testing, and deployment
-- Raise security concerns immediately; never defer or suppress them
-- Apply secure coding practices by default (input validation, least privilege, secrets management, dependency hygiene)
-- Treat a security gap as a blocker, not a backlog item
+```bash
+python3 scripts/run_scenarios.py --smoke
+```
 
-### Consistent Quality
-Every project must be delivered to the highest possible standard. There is no tiered quality based on client type:
-- Internal stakeholders receive the same rigour and care as external clients
-- No shortcuts, no "good enough for now" that is not documented and tracked
-- Code, design, documentation, and communication must all meet the same bar
-
-### Documentation Discipline
-The `doc/` folder must contain only documentation that is directly required for building and maintaining the project. Every team member must:
-- Include only documents tied to active project deliverables, team coordination, or ongoing maintenance
-- Exclude any document created solely for troubleshooting, ad-hoc debugging, or investigation; these must not be committed to the project repository
-- Treat unnecessary documentation as a security surface: the less extraneous content in `doc/`, the smaller the exposure
-
-### Mandatory Context Files
-Before any work begins on a project (code, design, docs, planning, or advice), every team member (including AI agents) MUST read the project's context files. These files are not optional reference material; they are the project's operating contract:
-
-- `doc/project-brief.md`: defines scope, constraints, and success criteria
-- `doc/team-assignment.md`: defines who owns what
-- `doc/workflow.md`: defines execution order and dependencies
-- `doc/version_control.md`: defines branching rules (binding before any git command)
-- `doc/handover/consolidated_handover.md`: defines current state
-- `doc/codebase-assessment.md`: brownfield projects only
-
-Rules:
-- **Never act without reading the relevant context files first.** Answering a question, writing code, or running a command without having read them is a standards violation.
-- **If a required file is missing, stop and escalate to the PM/user.** Do not infer, reconstruct, or proceed from code alone.
-- **Instructions in these files override AI defaults and training priors.** If this file or a `doc/` file says to do (or not do) something, that rule wins.
-- **Do not silently skip, summarise away, or deprioritise the rules in these files.** Treat every directive as binding.
-
-### Version Control Discipline
-All code changes, regardless of size, urgency, or who is making them, must follow the branching strategy defined in `doc/version_control.md`. Every team member (including AI agents) must:
-- **Never push directly to `main`**: no exceptions, including hotfixes, typo fixes, or deployment retries
-- Create a branch using the correct prefix (`feature/`, `fix/`, `chore/`, `hotfix/`) before making any code change
-- Open a pull request and wait for the required approval before merging
-- If `doc/version_control.md` does not exist for the project, stop and ask the PM to define the branching strategy before writing any code
-
-**Before writing any code or running any git command, read `doc/version_control.md`.** If it specifies branch protection, PR reviews, or a specific branching model, those rules are binding and must be followed for every single change.
-
-### Writing Style
-All prose produced by any team member (including AI agents) must read like the work of a highly skilled human writer: natural, audience-appropriate, and free of AI signalling patterns. This applies to every written output: docs, handover notes, client-facing copy, and in-code comments alike.
-
-- **No em dashes (—) and no en dashes (–).** Use commas, semicolons, colons, or periods; write ranges with "to" or a plain hyphen.
-- **Before producing any substantial prose deliverable** (documentation, specs, reports, proposals, marketing or client copy), read `WRITING.md` at the toolkit root in full. It defines readability targets, vocabulary and structural rules, the banned-phrases list, and the editorial review process, and it carries the same binding force as this file.
-- **Validate before handover:** run `python3 scripts/check_writing.py <file>` and fix every FAIL finding. The Head of Content & SEO owns the standard; the Senior Content Strategist reviews client-facing deliverables.
-
-<!-- CACHE_BOUNDARY -->
-
----
-
-## Initialize Protocol
-
-The full protocol lives in [INITIALIZE.md](INITIALIZE.md) at the toolkit root; it is loaded on demand to keep the always-loaded context small, and it carries the same binding force as this file.
-
-When told **"initialize"**, **"initialize CLAUDE.md"**, **"initialize GEMINI.md"**, or **"initialize AGENTS.md"**: read `INITIALIZE.md` in full and follow its steps exactly, in order. The steps cover: welcome, project brief, brownfield intake, project classification (Levels 1-4), team assignment, scaffolding via `scripts/init_project.py`, doc population, scope discipline, handover rules, and project closure, mapped onto the six-stage Software Delivery Lifecycle (Discovery, Planning, Implementation, Verification, Deployment, Operations). Do not run the protocol from memory; if `INITIALIZE.md` is missing, stop and escalate.
-
-## GitHub Project Orchestration
-
-When a project has more than one contributor (human or AI), the toolkit plans the work and a GitHub Project board runs it. The rules for turning a plan into owned, tracked issues, the six standard workflow states, and the ownership-locking convention live in [GITHUB_ORCHESTRATION.md](GITHUB_ORCHESTRATION.md) at the toolkit root. It is loaded on demand and carries the same binding force as this file. The mechanics are the `@github-project-orchestrator` skill and `scripts/gh_project_sync.py`; the board is scaffolded into each project as `doc/task-board.md` (Step 5b of the Initialize Protocol). Before starting any task on a shared board, query it first and claim the task; never start work another contributor has already claimed.
-
+Put the before-and-after table in the PR description.

@@ -18,13 +18,13 @@
 
 ## Core Skills
 {Human-readable competencies. Each bullet should end with one or more inline skill refs.}
-- {competency} (@skill-one, @skill-two)
-- {competency} (@skill-three)
+- {competency}
+- {competency}
 
 ## Technical Skills
 {Specific tools, languages, frameworks, platforms. Each bullet should end with skill refs.}
-- {technology / tool} (@skill-one)
-- {technology / tool} (@skill-two)
+- {technology / tool}
+- {technology / tool}
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -37,10 +37,10 @@
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @skill-name: {one-line description}
 
 ---
 
+- None specific to this role; find one with `python3 scripts/find_skill.py <keyword>`.
 ## Style Notes (do not include these in the final role file)
 
 - **Core Skills and Agent Skills** must be present in every role file; `scripts/audit_skills.py` parses section headings. **Technical Skills** is required for technical roles (engineering, design tooling, data) and may be omitted where the role has no tool-specific competencies, as in most sales and executive roles. The audit accepts either shape.

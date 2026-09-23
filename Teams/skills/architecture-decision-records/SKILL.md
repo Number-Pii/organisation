@@ -1,8 +1,6 @@
 ---
 name: architecture-decision-records
 description: "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture the context and rationale behind significant technical decisions."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Backend & APIs"
@@ -41,6 +39,9 @@ detail_sections:
   - ADR Review Checklist
   - Best Practices
   - Resources
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Architecture Decision Records

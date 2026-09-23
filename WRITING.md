@@ -1,12 +1,22 @@
 # Number Pii Writing Standard
 
-> **Binding contract, loaded on demand.** Versioned with `CLAUDE.md` (see its `_Version:` line).
-> Before producing any substantial prose deliverable (documentation, specifications,
-> architecture documents, reports, proposals, marketing copy, client communications,
-> knowledge-base articles, plans, README files), you MUST read this file in full and
-> apply it. It carries the same binding force as `CLAUDE.md`. The short rules in the
-> Writing Style standard of `CLAUDE.md` always apply, even when this file is not loaded.
+> Read this before writing a substantial prose deliverable: documentation,
+> specifications, reports, proposals, marketing or client copy, README files.
+> `python3 scripts/check_writing.py <file>` checks the mechanical rules.
 > Owner: Head of Content & SEO (`Teams/05-Growth-Marketing/Head-Content-SEO.md`).
+
+## Scope
+
+The standard governs prose you write for people: documentation, specifications,
+reports, proposals, handover notes, and client or marketing copy. It does not
+reach into text you did not author in the current change:
+
+- Lines you are not otherwise editing stay exactly as they are, even if they break a rule here.
+- Generated files, vendored and third-party files, lockfiles, and dependency folders are out of scope.
+- Blocks managed by other tools, marked `<!-- BEGIN:name -->` ... `<!-- END:name -->` (Next.js writes one into `AGENTS.md` and `CLAUDE.md`), belong to that tool. Never edit them; commit the tool's own updates unchanged. `check_writing.py` skips them.
+- Code comments follow the conventions of the codebase they live in.
+
+Restyling text outside your change produces diffs that carry no meaning, collide with other branches, and get reverted by the tools that own the text.
 
 ## Core Directive
 
@@ -48,8 +58,6 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 - `dive into`
 - `deep dive`
 - `unpack`
-- `leverage`
-- `harness`
 - `unlock`
 - `unleash`
 - `empower`
@@ -57,7 +65,6 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 - `supercharge`
 - `seamless`
 - `seamlessly`
-- `robust`
 - `cutting-edge`
 - `state-of-the-art`
 - `game-changer`
@@ -113,7 +120,7 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 
 ### Use sparingly
 
-Legitimate words that signal machine writing when they recur: comprehensive, furthermore, moreover, additionally, significantly, essentially, basically, simply, very, really, streamline, ensure. One use per document is fine; a pattern is not.
+Legitimate words that signal machine writing when they recur: leverage, robust, harness (fine in their technical senses, such as a test harness), comprehensive, furthermore, moreover, additionally, significantly, essentially, basically, simply, very, really, streamline, ensure. One use per document is fine; a pattern is not.
 
 ### Banned patterns
 
@@ -155,5 +162,3 @@ The same core directive applies to all five types; only tone, readability target
 5. Record editorial sign-off in the department handover notes when the gates require it.
 
 The validator's scorecard is the compliance measurement. Repeated failure patterns feed back into this file: when a new AI-signalling phrase shows up in rejected work, the Head of Content & SEO adds it to the banned list.
-
-<!-- CACHE_BOUNDARY -->

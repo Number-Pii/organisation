@@ -11,19 +11,19 @@ Runs paid acquisition channels. Manages Google Ads, LinkedIn Ads, and Meta Ads w
 
 ## Core Skills
 - PPC campaign management (@paid-ads, @analytics-tracking)
-- Conversion rate optimisation (@page-cro, @ab-test-setup)
-- A/B testing (ads and landing pages) (@ab-test-setup)
-- Budget management and ROAS tracking (@risk-metrics-calculation, @cost-optimization)
-- Audience segmentation and retargeting (@paid-ads, @analytics-product)
-- Attribution modelling (@analytics-tracking, @analytics-product)
+- Conversion rate optimisation (@page-cro)
+- A/B testing (ads and landing pages)
+- Budget management and ROAS tracking
+- Audience segmentation and retargeting (@paid-ads)
+- Attribution modelling (@analytics-tracking)
 
 ## Technical Skills
 - Google Ads, LinkedIn Ads, Meta Ads (@paid-ads)
-- Google Analytics 4, Google Tag Manager (@google-analytics-automation, @analytics-tracking)
-- A/B testing tools (Optimizely, VWO, Google Optimize) (@ab-test-setup)
-- Landing page builders (Unbounce, Webflow) (@landing-page-generator, @page-cro)
+- Google Analytics 4, Google Tag Manager (@analytics-tracking)
+- A/B testing tools (Optimizely, VWO, Google Optimize)
+- Landing page builders (Unbounce, Webflow) (@page-cro)
 - UTM tracking and attribution (@analytics-tracking)
-- CRM integration for lead tracking (@hubspot-automation, @pipedrive-automation)
+- CRM integration for lead tracking
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -41,7 +41,4 @@ Runs paid acquisition channels. Manages Google Ads, LinkedIn Ads, and Meta Ads w
 Invoke these skills when working as this role:
 - @paid-ads: paid media strategy and execution
 - @analytics-tracking: conversion and attribution tracking
-- @ab-test-setup: A/B and multivariate testing
-- @google-analytics-automation: GA4 reporting
-- @seo-keyword-strategist: keyword and audience targeting
 - @page-cro: landing page conversion optimisation

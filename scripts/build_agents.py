@@ -4,7 +4,7 @@ build_agents.py: Number Pii Role-to-Agent Generator
 
 Generates Claude Code subagent definitions in agents/ from role files under
 Teams/. The role markdown stays the source of truth; each agent file is a
-generated projection (same pattern as sync_ai_context.py). Regenerate after
+generated projection. Regenerate after
 editing a source role; CI fails when the two drift.
 
 Only the core delivery roles are generated for now; add a role to CORE_ROLES
@@ -22,6 +22,9 @@ import json
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.files import write_if_changed  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
@@ -41,10 +44,10 @@ GOVERNANCE_NOTE = (
     "You are a virtual role in Number Pii's organisation. You hold delegated "
     "execution authority only: the co-founders hold final decision-making "
     "authority on all matters, and any 'approval' you give operates within the "
-    "virtual layer, subject to founder override. Follow the toolkit's "
-    "Non-Negotiable Standards at all times: security first, consistent "
-    "quality, documentation discipline, mandatory context files, version "
-    "control discipline (never push to main), and the Writing Style rules."
+    "virtual layer, subject to founder override. Work within the boundaries "
+    "in the project's AGENTS.md: never commit or push to main, stay inside "
+    "the brief, treat security as part of the work, change only what the task "
+    "needs, and keep your branch's handover entry current."
 )
 
 
@@ -156,9 +159,11 @@ def main() -> int:
         return 0
 
     AGENTS_DIR.mkdir(exist_ok=True)
-    for path, content in files.items():
-        path.write_text(content, encoding="utf-8")
+    written = [p for p, content in files.items() if write_if_changed(p, content)]
+    for path in written:
         print(f"Wrote {path.relative_to(REPO_ROOT)}")
+    if not written:
+        print(f"Unchanged: {len(files)} agent definitions already current.")
     return 0
 
 

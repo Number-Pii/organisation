@@ -33,7 +33,8 @@ def test_hook_blocks_push_to_main_refspec(tmp_path):
     repo = git_repo(tmp_path, "feature/x")
     result = run_hook(repo, "Bash", "git push origin main")
     assert result.returncode == 2
-    assert "protected branch" in result.stderr
+    assert "targets main" in result.stderr
+    assert run_hook(repo, "Bash", "git push origin HEAD:refs/heads/main").returncode == 2
 
 
 def test_hook_blocks_commit_on_main(tmp_path):
@@ -53,6 +54,25 @@ def test_hook_allows_feature_branch_flow(tmp_path):
     repo = git_repo(tmp_path, "feature/login")
     assert run_hook(repo, "Bash", 'git commit -m "wip"').returncode == 0
     assert run_hook(repo, "Bash", "git push -u origin feature/login").returncode == 0
+
+
+def test_hook_allows_branch_names_that_contain_main(tmp_path):
+    repo = git_repo(tmp_path, "feature/main-menu")
+    assert run_hook(repo, "Bash", "git push -u origin feature/main-menu").returncode == 0
+
+
+def test_hook_checks_the_worktree_the_command_targets(tmp_path):
+    """Parallel agents work in linked worktrees; the session folder stays on main."""
+    repo = git_repo(tmp_path / "repo", "main")
+    subprocess.run(["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@t",
+                    "commit", "-q", "--allow-empty", "-m", "init"], check=True)
+    worktree = tmp_path / "wt"
+    subprocess.run(["git", "-C", str(repo), "worktree", "add", "-q", "-b", "fix/x", str(worktree)],
+                   check=True)
+    assert run_hook(repo, "Bash", f'git -C {worktree} commit -m "fix"').returncode == 0
+    assert run_hook(repo, "Bash", f'cd {worktree} && git commit -m "fix"').returncode == 0
+    assert run_hook(repo, "Bash", 'git commit -m "on main"').returncode == 2
+    assert run_hook(worktree, "Bash", f'git -C {repo} commit -m "main again"').returncode == 2
 
 
 def test_hook_allows_non_git_commands(tmp_path):
@@ -102,6 +122,49 @@ def test_read_pin_absent_or_empty(tmp_path, monkeypatch):
     assert update_mod.read_pin() == ("", None)
     (clone / ".toolkit-pin").write_text("  \n", encoding="utf-8")
     assert update_mod.read_pin() == ("", None)
+
+
+# ── update.py release channel ────────────────────────────────────────────────
+
+def tagged_clone(tmp_path: Path) -> Path:
+    """A repo with v3.9.0 and v3.10.0 tags plus one unreleased commit on top."""
+    repo = git_repo(tmp_path / "clone", "main")
+    env = ["-c", "user.name=t", "-c", "user.email=t@t", "-c", "tag.gpgsign=false",
+           "-c", "commit.gpgsign=false"]
+    for version in ("3.9.0", "3.10.0", "3.10.1-dev"):
+        (repo / "VERSION").write_text(version + "\n", encoding="utf-8")
+        subprocess.run(["git", *env, "add", "VERSION"], cwd=repo, check=True)
+        subprocess.run(["git", *env, "commit", "-qm", version], cwd=repo, check=True)
+        if not version.endswith("-dev"):
+            subprocess.run(["git", *env, "tag", f"v{version}"], cwd=repo, check=True)
+    return repo
+
+
+class _Args:
+    check = False
+    yes = True
+
+
+def test_latest_release_tag_uses_version_order(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    assert update_mod.latest_release_tag() == "v3.10.0"
+
+
+def test_follow_release_never_moves_backwards(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    head = update_mod.get_current_commit()
+    update_mod.follow_release(_Args(), "3.10.1")
+    assert update_mod.get_current_commit() == head
+
+
+def test_follow_release_moves_forward_to_latest_tag(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    subprocess.run(["git", "checkout", "-q", "--detach", "v3.9.0"], cwd=repo, check=True)
+    update_mod.follow_release(_Args(), "3.9.0")
+    assert update_mod.get_current_commit() == update_mod.resolve_ref("v3.10.0")
 
 
 # ── update_all.py registry ───────────────────────────────────────────────────

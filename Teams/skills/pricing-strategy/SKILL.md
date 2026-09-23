@@ -1,8 +1,6 @@
 ---
 name: pricing-strategy
 description: "Design pricing, packaging, and monetization strategies based on value, customer willingness to pay, and growth objectives."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "SEO & Content Marketing"
@@ -24,6 +22,9 @@ detail_sections:
   - 13. Output Expectations
   - 14. Validation Checklist
   - When to Use
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Pricing Strategy

@@ -1,11 +1,9 @@
 
-## Existing Project Context
-> This project was active before the toolkit was introduced.
-> Fill from `doc/codebase-assessment.md`.
+## Existing product context
+This product was running before the toolkit was introduced. The detail lives in
+`doc/codebase-assessment.md`.
 
-- **Tech Stack:** [FILL IN]
+- **Stack:** [FILL IN]
 - **Architecture:** [FILL IN, one line]
-- **Key Tech Debt:** [top 2-3, see codebase-assessment.md]
-- **Prior Decisions to Honour:** [FILL IN]
-
----
+- **Main tech debt:** [top 2 or 3]
+- **Prior decisions to honour:** [FILL IN]

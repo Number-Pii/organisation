@@ -10,7 +10,7 @@
   - DDL is valid PostgreSQL with sensible types and constraints
 
 ## Task: idempotent-webhook
-- **Skill:** @api-design-principles
+- **Skill:** @stripe-integration
 - **Prompt:** Design the endpoint contract and processing flow for receiving payment webhooks that may be delivered more than once. Show the endpoint spec and the idempotency approach.
 - **Rubric:**
   - Uses an idempotency key or event id with a persisted dedupe record

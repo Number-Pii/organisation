@@ -10,20 +10,20 @@
 Designs and executes test strategies for products and client deliveries. Writes test plans, performs manual exploratory testing, and identifies regressions.
 
 ## Core Skills
-- Test planning and execution (@testing-qa, @test-driven-development)
-- Exploratory and regression testing (@testing-qa, @webapp-testing)
-- Bug reporting and severity classification (@systematic-debugging, @testing-qa)
-- UAT coordination (@testing-qa, @project-development)
-- Cross-browser and cross-device testing (@webapp-testing, @e2e-testing)
+- Test planning and execution (@test-driven-development)
+- Exploratory and regression testing (@webapp-testing)
+- Bug reporting and severity classification (@systematic-debugging)
+- UAT coordination
+- Cross-browser and cross-device testing (@webapp-testing)
 
 ## Technical Skills
-- Playwright, Cypress (E2E) (@playwright-skill, @e2e-testing)
-- Jest, Testing Library (unit/component) (@javascript-testing-patterns)
-- Postman (API testing) (@api-design-principles)
+- Playwright, Cypress (E2E)
+- Jest, Testing Library (unit/component)
+- Postman (API testing)
 - Lighthouse (performance) (@web-performance-optimization)
-- JIRA, Linear (bug tracking) (@project-development)
-- Git, CI/CD awareness (@git-pr-workflows-git-workflow, @cicd-automation-workflow-automate)
-- Mobile device testing (@e2e-testing)
+- JIRA, Linear (bug tracking)
+- Git, CI/CD awareness
+- Mobile device testing
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -37,9 +37,4 @@ Designs and executes test strategies for products and client deliveries. Writes 
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @playwright-skill: Playwright E2E testing
-- @e2e-testing: end-to-end test coverage
-- @javascript-testing-patterns: unit/component testing
-- @testing-qa: QA processes and standards
 - @webapp-testing: web application testing
-- @testing-patterns: test architecture patterns

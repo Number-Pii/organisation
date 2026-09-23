@@ -1,7 +1,7 @@
 # Writing Golden Tasks
 
 ## Task: client-proposal-summary
-- **Skill:** @professional-proofreader
+- **Skill:** @copywriting
 - **Prompt:** Write the one-page executive summary of a proposal to rebuild a client's booking system: current pain, proposed approach, timeline, and investment. Audience is the client's managing director.
 - **Rubric:**
   - Passes scripts/check_writing.py with zero FAILs (no em/en dashes, no banned phrases)
@@ -10,7 +10,7 @@
   - Reads at Flesch 30 to 40 for an executive audience
 
 ## Task: incident-postmortem
-- **Skill:** @professional-proofreader
+- **Skill:** @internal-comms
 - **Prompt:** Draft a blameless postmortem for a 90-minute checkout outage caused by an expired TLS certificate on a payment callback domain. Include timeline, impact, root cause, and actions.
 - **Rubric:**
   - Timeline uses absolute times and states detection, mitigation, and resolution separately
@@ -19,7 +19,7 @@
   - Passes scripts/check_writing.py with zero FAILs
 
 ## Task: release-notes
-- **Skill:** @professional-proofreader
+- **Skill:** @copywriting
 - **Prompt:** Write customer-facing release notes for a version that adds two features, fixes three bugs, and deprecates one API endpoint (with a migration path). Invent plausible specifics.
 - **Rubric:**
   - Deprecation includes the removal date and the migration path
