@@ -1,16 +1,13 @@
 # Number Pii: GitHub Project Orchestration Layer
 
-> **Binding contract, loaded on demand.** Versioned with `CLAUDE.md` (see its `_Version:` line).
-> This file defines how the toolkit turns a project plan into tracked, owned work on a
-> GitHub Project board. It carries the same binding force as `CLAUDE.md`. Load it when a
-> project uses GitHub Projects for execution tracking, which is the default for any project
-> with more than one active contributor (human or AI). The short rules here always apply
-> once a board exists, even when this file is not loaded.
+> How a plan becomes tracked, owned work on a GitHub Project board. Read it when a
+> project uses a board, which is the default once more than one contributor, human
+> or AI, works in parallel.
 
 ## Why this exists
 
 When several contributors share a project, two of them can pick up the same task without
-knowing it, dependencies stay implicit, and progress scatters across handover notes. The
+knowing it, dependencies stay implicit, and progress scatters across handover files. The
 toolkit already plans work well: `doc/workflow.md` holds the task chain, `team-assignment.md`
 holds who owns what. What it lacked was a live, shared board that every contributor reads
 before starting, and writes to as work moves.
@@ -96,17 +93,16 @@ new AI session reads the same claims a human teammate sees.
 
 ## Agent awareness rule
 
-Before starting any work, a contributor (human or AI) reads the board. This is not optional:
-it is how collisions are prevented.
+Before starting work, a contributor (human or AI) reads the board. That is how two
+contributors avoid picking up the same task.
 
 ```bash
 # From the consuming project root
 python3 organisation/scripts/gh_project_sync.py query
 ```
 
-The query reports every open item with its owner, state, labels, and blockers. Read it,
-confirm the task you intend to start is in Ready and unclaimed, then claim it before writing
-any code. An agent that skips this step and duplicates claimed work has violated this contract.
+The query reports every open item with its owner, state, labels, and blockers. Confirm the
+task you intend to start is Ready and unclaimed, then claim it before writing code.
 
 ## Independent task injection
 
@@ -136,11 +132,11 @@ Three components carry this layer, each with a single job:
    leans on the script for mechanics and on existing skills such as `@github-issue-creator`,
    `@create-issue-gate`, and `@acceptance-orchestrator` for issue quality.
 
-The flow runs both ways. A plan in `doc/workflow.md` becomes the backlog in
-`doc/task-board.md`, which the script pushes to GitHub, where contributors track execution;
-`sync` then writes the live board Status values back into the State column of
-`doc/task-board.md`, so the doc file never drifts from reality for long. Run `sync` before
-consolidating handovers or re-planning.
+A plan in `doc/workflow.md` becomes the backlog in `doc/task-board.md`, which the
+script pushes to GitHub. From then on the board owns live status. `sync` reports where
+the file's State column differs from the board, and changes nothing unless you pass
+`--write-back`. Status never needs committing on a feature branch, so parallel branches
+never collide over it.
 
 ## Prerequisites
 
@@ -155,5 +151,3 @@ It also needs the target GitHub Project number and owner, recorded in `doc/task-
 `gh` is missing, unauthenticated, or the project is not set, the script stops with a clear
 message rather than guessing. That follows the toolkit's stop-and-escalate posture: when a
 precondition is missing, surface it, do not work around it.
-
-<!-- CACHE_BOUNDARY -->

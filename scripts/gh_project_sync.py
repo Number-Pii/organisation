@@ -600,43 +600,76 @@ def cmd_status(args: argparse.Namespace) -> int:
     return 0
 
 
+def board_statuses(config: dict, dry_run: bool) -> tuple[dict[str, str], dict[int, str]]:
+    """Live Status values from the project: ({title: status}, {issue number: status})."""
+    data = _project_json(
+        ["project", "item-list", config["project_number"], "--owner",
+         config["project_owner"], "--format", "json", "--limit", "1000"],
+        dry_run,
+    )
+    by_title, by_number = {}, {}
+    for item in data.get("items", []):
+        content = item.get("content") or {}
+        title = (content.get("title") or item.get("title") or "").strip()
+        status = (item.get("status") or "").strip()
+        if status and title:
+            by_title[title] = status
+        if status and isinstance(content.get("number"), int):
+            by_number[content["number"]] = status
+    return by_title, by_number
+
+
 def cmd_sync(args: argparse.Namespace) -> int:
+    """Compare the board file's State column with the live board.
+
+    GitHub owns live status. By default this only reports the difference, so
+    running it on a feature branch never rewrites a shared, committed file.
+    --write-back updates the State column, for a deliberate snapshot commit."""
     require_live_preconditions(args.dry_run)
     board_path = Path(args.board)
     config, _ = parse_board(board_path)
     require_config(config, "project_number", "project_owner", "repository")
 
     if args.dry_run:
-        print("  [dry-run] would read project item statuses and rewrite the State "
-              f"column of {board_path}")
+        print("  [dry-run] would read project item statuses and compare them with the "
+              f"State column of {board_path}")
         return 0
 
-    data = _project_json(
-        ["project", "item-list", config["project_number"], "--owner",
-         config["project_owner"], "--format", "json", "--limit", "1000"],
-        args.dry_run,
-    )
-    statuses = {}
-    for item in data.get("items", []):
-        content = item.get("content") or {}
-        title = (content.get("title") or item.get("title") or "").strip()
-        status = (item.get("status") or "").strip()
-        if title and status:
-            statuses[title] = status
-
+    statuses, _ = board_statuses(config, args.dry_run)
     text = board_path.read_text(encoding="utf-8")
     new_text, updated, unmatched = rewrite_board_states(text, statuses)
 
-    if updated:
-        board_path.write_text(new_text, encoding="utf-8")
-    print(f"\nSync complete: {len(updated)} row(s) updated from the live board.")
     for title in updated:
-        print(f"  [ok]   {title} -> {statuses[title]}")
+        print(f"  [diff] {title}: file differs, board says {statuses[title]}")
     for title in unmatched:
         print(f"  [warn] no live board item matches: {title}")
-    if unmatched:
-        print("  (Unmatched rows keep their file state; check titles or run `push`.)")
+    if not updated:
+        print("The State column already matches the live board.")
+        return 0
+    if args.write_back:
+        board_path.write_text(new_text, encoding="utf-8")
+        print(f"\nWrote {len(updated)} row(s) to {board_path}. Commit this on its own branch.")
+    else:
+        print(f"\n{len(updated)} row(s) differ. The board is the source of truth; pass "
+              "--write-back to snapshot it into the file.")
     return 0
+
+
+DEPENDS_RE = re.compile(r"Depends on #(\d+)")
+
+
+def summarise_issue(issue: dict, statuses: dict[int, str]) -> dict:
+    """One awareness row: owner, board status, labels, and open blockers."""
+    blockers = sorted({int(n) for c in issue.get("comments", []) or []
+                       for n in DEPENDS_RE.findall(c.get("body", ""))})
+    return {
+        "number": issue["number"],
+        "title": issue["title"],
+        "owner": ", ".join(a["login"] for a in issue.get("assignees", [])) or "unassigned",
+        "status": statuses.get(issue["number"], "-"),
+        "labels": ", ".join(l["name"] for l in issue.get("labels", [])) or "-",
+        "blocked_by": blockers,
+    }
 
 
 def cmd_query(args: argparse.Namespace) -> int:
@@ -647,28 +680,31 @@ def cmd_query(args: argparse.Namespace) -> int:
 
     out = run_gh(
         ["issue", "list", "--repo", repo, "--state", "open", "--limit", "1000",
-         "--json", "number,title,assignees,labels"],
+         "--json", "number,title,assignees,labels,comments"],
         args.dry_run, capture=True,
     )
     if args.dry_run:
         print("Dry run: the command above lists open board items for awareness.")
         return 0
-    if args.json:
-        print(out or "[]")
-        return 0
 
-    items = json.loads(out) if out else []
-    if not items:
+    statuses: dict[int, str] = {}
+    if config.get("project_number") and config.get("project_owner"):
+        _, statuses = board_statuses(config, args.dry_run)
+    rows = [summarise_issue(it, statuses) for it in (json.loads(out) if out else [])]
+    if args.json:
+        print(json.dumps(rows, indent=2))
+        return 0
+    if not rows:
         print("No open issues on the board.")
         return 0
 
     print(f"\nOpen board items in {repo} (read this before claiming work):\n")
-    print(f"  {'#':>5}  {'Owner':<20} {'Labels':<28} Title")
+    print(f"  {'#':>5}  {'Status':<12} {'Owner':<18} {'Blocked by':<11} Title")
     print("  " + "-" * 78)
-    for it in items:
-        assignees = ", ".join(a["login"] for a in it.get("assignees", [])) or "unassigned"
-        labels = ", ".join(l["name"] for l in it.get("labels", [])) or "-"
-        print(f"  {it['number']:>5}  {assignees[:20]:<20} {labels[:28]:<28} {it['title']}")
+    for r in rows:
+        blocked = ", ".join(f"#{n}" for n in r["blocked_by"]) or "-"
+        print(f"  {r['number']:>5}  {r['status'][:12]:<12} {r['owner'][:18]:<18} "
+              f"{blocked[:11]:<11} {r['title']}")
     print()
     return 0
 
@@ -722,7 +758,9 @@ def build_parser() -> argparse.ArgumentParser:
     p_status.add_argument("--state", required=True,
                           help=f"Workflow state: {', '.join(WORKFLOW_STATES)}")
 
-    p_sync = sub.add_parser("sync", help="Write live board Status values back into doc/task-board.md")
+    p_sync = sub.add_parser("sync", help="Compare doc/task-board.md with the live board Status values")
+    p_sync.add_argument("--write-back", action="store_true", dest="write_back",
+                        help="Rewrite the State column from the board (a deliberate snapshot)")
 
     p_query = sub.add_parser("query", help="List open board items for awareness before claiming")
     p_query.add_argument("--json", action="store_true", help="Emit raw JSON instead of a table")
