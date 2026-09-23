@@ -10,18 +10,18 @@
 Sources, screens, and recruits top-1% candidates. Manages the hiring pipeline, coordinates interviews, and ensures every candidate has an exceptional hiring experience.
 
 ## Core Skills
-- Technical and non-technical recruiting (@hr-pro, @interview-coach)
-- Candidate sourcing (passive and active) (@linkedin-automation, @cold-email)
-- Interview coordination and scheduling (@interview-coach, @bamboohr-automation)
-- Employer branding (@brand-guidelines, @content-creator)
-- ATS management (@bamboohr-automation)
-- Offer negotiation support (@employment-contract-templates, @hr-pro)
+- Technical and non-technical recruiting
+- Candidate sourcing (passive and active) (@cold-email)
+- Interview coordination and scheduling
+- Employer branding
+- ATS management
+- Offer negotiation support
 
 ## Technical Skills
-- ATS platforms (Greenhouse, Lever, Workable) (@bamboohr-automation)
-- LinkedIn Recruiter (@linkedin-automation)
-- Sourcing tools (GitHub, AngelList, Clutch) (@linkedin-automation)
-- Calendar management and scheduling tools (@workflow-automation)
+- ATS platforms (Greenhouse, Lever, Workable)
+- LinkedIn Recruiter
+- Sourcing tools (GitHub, AngelList, Clutch)
+- Calendar management and scheduling tools
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -36,8 +36,5 @@ Sources, screens, and recruits top-1% candidates. Manages the hiring pipeline, c
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @interview-coach: job description writing and candidate scoring
-- @hr-pro: HR and recruitment processes
-- @linkedin-automation: LinkedIn sourcing
-- @interview-coach: interview design and coaching
-- @bamboohr-automation: applicant tracking in BambooHR
+
+- None specific to this role; find one with `python3 scripts/find_skill.py <keyword>`.

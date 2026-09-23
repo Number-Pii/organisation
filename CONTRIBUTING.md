@@ -71,81 +71,58 @@ Examples:
 
 ## Adding a New Skill
 
-1. Create a folder in `Teams/skills/` with a kebab-case name (e.g. `my-new-skill/`)
-2. Add a `SKILL.md` file (required) with the full frontmatter block; see the schema below
-3. Optionally add `scripts/`, `examples/`, or `resources/` subdirectories
-4. Reference the skill in the relevant role file(s) if appropriate
-5. Run `python3 scripts/audit_skills.py` to confirm the skill is detected and the frontmatter validates
+The library is deliberately small. A skill earns its place only when it gives a
+frontier model something the model lacks:
 
-### SKILL.md frontmatter schema
+- working bundled scripts or assets (the document skills, `webapp-testing`, `mcp-builder`)
+- tool- or API-specific knowledge that models get wrong or that changes quickly
+- a Number Pii process (`github-project-orchestrator`)
+- the one canonical approach to a topic where consistency across agents matters
 
-Every new skill MUST ship with all nine fields; the five base fields (present on every legacy skill) plus the four extension fields used by the scoped-discovery tooling (`scripts/find_skill.py`) and the coverage auditor.
+General expertise does not qualify: "You are an expert X" adds nothing a current
+model does not already bring.
+
+1. Create `Teams/skills/<name>/SKILL.md` with the frontmatter below. `name` and
+   `description` follow the open Agent Skills convention, so native skill loaders
+   in Claude Code and Codex can read the file too.
+2. Show that it helps. Add a task to `evals/tasks/` and run it bare and with the
+   skill on both runners (`python3 scripts/run_evals.py --runner claude`, then
+   `--runner codex`). Put the verdict in the PR.
+3. Reference it from the role files where it applies.
+4. Run `python3 scripts/build_skills_index.py` and `python3 scripts/audit_skills.py`,
+   and commit the regenerated index files.
+
+### SKILL.md frontmatter
 
 ```yaml
 ---
-# Base fields (required on every skill)
-name: my-new-skill                # kebab-case, must match folder name
-description: "One paragraph describing what the skill does and when to invoke it."
-risk: none                        # none | low | medium | high | unknown
+name: my-new-skill                # kebab-case, matches the folder name
+description: "What the skill does and when to use it."
+risk: low                         # low | medium | high, from reading every file in the skill
 source: community                 # community | vendor | internal | <attribution>
-date_added: "2026-04-18"          # ISO date, quoted
-
-# Extension fields (required on all new skills)
-domain: "Backend & APIs"          # MUST match one of the 17 headings in Teams/skills/CATEGORIES.md exactly
+date_added: "2026-09-23"
+last_reviewed: "2026-09-23"       # re-read during the quarterly review
+tier: curated
+domain: "Backend & APIs"          # one of the headings in Teams/skills/CATEGORIES.md
 size_class: m                     # xs <50 · s 50-199 · m 200-499 · l 500-999 · xl 1000+ lines
-summary: "One-line answer to 'what's this skill for'; ≤150 chars, surfaced by find_skill.py."
+summary: "One line surfaced by find_skill.py, 150 characters or fewer."
 detail_sections:
   - When to Use
-  - Core Concepts
-  - Examples
+canonical: true                   # optional: the preferred skill for its topic
+requires: claude-code             # optional: only when it depends on one agent's tools
 ---
 ```
 
-#### Rules
-- `domain` is validated against `Teams/skills/CATEGORIES.md`. If your skill doesn't fit an existing domain, open the discussion in your PR; do not invent a new value.
-- `size_class` must match the actual line count band; the auditor warns on mismatches.
-- `summary` is what `find_skill.py` surfaces in result rows; make it informative, not a persona opener.
-- `detail_sections` lists your top-level `## ` headers, so a loader can expand sections on demand.
+`audit_skills.py` fails on a skill without a `low`, `medium`, or `high` risk and a
+`last_reviewed` date, on frontmatter drift, and on any `@skill` reference that does
+not resolve.
 
-#### Bootstrap with the generator
+### Removing a skill
 
-`scripts/generate_skill_frontmatter.py` proposes all four extension fields from an existing SKILL.md:
-
-```bash
-# Preview the proposed block
-python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md
-
-# Write it in place (overwrites the four extension fields if already present)
-python3 scripts/generate_skill_frontmatter.py Teams/skills/my-new-skill/SKILL.md --write
-```
-
-Always human-review the proposal: domain lookup falls back to `uncategorised` for skills not yet in CATEGORIES.md, and the summary is taken from the first sentence of `description`; tighten or rewrite it if the first sentence is a persona opener or too terse.
-
-#### Legacy skills
-
-Existing skills without the four extension fields still validate (the auditor treats extensions as opt-in during backfill). Coverage is reported in `scripts/audit_skills.py` output and is being expanded domain-by-domain; no single-PR mandate.
-
-### Skill tiers and promotion
-
-Skills are third-party instructions injected into agent context, so the library is a supply chain and the tier field is its review gate:
-
-| Tier | Meaning | Search visibility |
-|------|---------|-------------------|
-| `curated` | Reviewed and referenced by at least one role file | Default (`find_skill.py`) |
-| `standard` | Unreviewed community content (the default when `tier` is absent) | `--all` or `--tier standard` |
-| `archive` | Off-charter or superseded; kept for reference | `--tier archive` only |
-
-`canonical: true` marks the preferred skill when several cover the same topic (one per cluster); it sorts first in search and in CATEGORIES.md.
-
-**Promotion checklist (standard to curated).** All five in one PR:
-
-1. Read the full SKILL.md and any bundled files; confirm the content does what the summary claims and nothing else.
-2. Set `risk:` to a reviewed value (`low`, `medium`, or `high` with a note); `unknown` blocks promotion, and the audit flags curated skills left at `unknown`.
-3. Confirm `source:` records where the content came from.
-4. Reference the skill from at least one role file section, or record in the PR why it is curated without a role.
-5. Set `tier: curated`, run `python3 scripts/build_skills_index.py`, and commit the regenerated index files.
-
-Demotion to `archive` needs only a PR stating the reason (off-charter, superseded by a canonical, licence concern).
+Open a PR that states why: superseded, stale, or no measurable benefit. Removed
+skills stay recoverable. The full 1,291-skill library as of 3.20 is tagged
+`v3-skills-full`; restore one with
+`git checkout v3-skills-full -- Teams/skills/<name>`, then review it as a new skill.
 
 ### Generated skill indexes
 

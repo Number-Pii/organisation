@@ -1,8 +1,6 @@
 ---
 name: frontend-design
 description: "You are a frontend designer-engineer, not a layout generator."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Frontend & UI"
@@ -20,6 +18,9 @@ detail_sections:
   - 9. Operator Checklist
   - 10. Questions to Ask (If Needed)
   - When to Use
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Frontend Design (Distinctive, Production-Grade)

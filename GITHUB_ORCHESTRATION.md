@@ -61,8 +61,8 @@ the toolkit already defines:
 
 - **Human role:** a position from `Teams/`, such as Lead Backend Engineer or Head of DevOps.
   On the board this is the GitHub user assigned to the issue, carrying the `human` label.
-- **Virtual agent or skill:** an AI agent invoked through a skill, such as `@security-audit`,
-  `@code-review-excellence`, or `@production-code-audit`. On the board this is recorded in the
+- **Virtual agent or skill:** an AI agent invoked through a skill, such as `@security-audit`
+  or `@code-review-excellence`. On the board this is recorded in the
   issue body and the `agent` label, since a skill has no GitHub user account.
 
 Owners are drawn from `doc/team-assignment.md` for human roles and from the skill library for
@@ -129,8 +129,7 @@ Three components carry this layer, each with a single job:
    first to see the `gh` calls it would make.
 3. **`@github-project-orchestrator`** is the skill that carries the judgement: how to break an
    epic into assignable tasks, match each to an owner, and run the claim-before-work loop. It
-   leans on the script for mechanics and on existing skills such as `@github-issue-creator`,
-   `@create-issue-gate`, and `@acceptance-orchestrator` for issue quality.
+   leans on the script for the mechanics.
 
 A plan in `doc/workflow.md` becomes the backlog in `doc/task-board.md`, which the
 script pushes to GitHub. From then on the board owns live status. `sync` reports where

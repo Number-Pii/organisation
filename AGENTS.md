@@ -67,7 +67,7 @@ treated equally; none is flagship unless the founders say so.
 | Change a role | `Teams/<department>/`, then regenerate `org.json` and `agents/` |
 | Board orchestration | `GITHUB_ORCHESTRATION.md`, `scripts/gh_project_sync.py` |
 | Durable product facts | `products/<name>.md`, one pack per product, loaded only for that product ([products/README.md](products/README.md)) |
-| Find a skill for a task | `python3 scripts/find_skill.py <keyword>` (add `--all` for unreviewed skills) |
+| Find a skill for a task | `python3 scripts/find_skill.py <keyword>` |
 | Measure agent behaviour | [evals/README.md](evals/README.md), `scripts/run_scenarios.py` |
 | Anything about a script | [scripts/README.md](scripts/README.md) |
 

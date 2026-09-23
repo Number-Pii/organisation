@@ -10,18 +10,18 @@
 Exceptional writer with B2B tech background. Understands product positioning, conversion copy, and long-form SEO content that drives organic leads. Acts as the editorial reviewer under the Writing Standard (`WRITING.md`): reviews client-facing and marketing deliverables for compliance before delivery, per the project's quality gates.
 
 ## Core Skills
-- B2B tech content writing (@copywriting, @content-creator)
-- Product positioning and messaging (@brand-guidelines, @content-strategy)
+- B2B tech content writing (@copywriting)
+- Product positioning and messaging (@content-strategy)
 - Conversion copywriting (@copywriting, @page-cro)
-- Long-form SEO content (@seo-content, @blog-writing-guide)
-- Content editing and quality assurance (@professional-proofreader, @copy-editing)
-- Thought leadership content (@content-creator, @data-storytelling)
+- Long-form SEO content
+- Content editing and quality assurance
+- Thought leadership content
 
 ## Technical Skills
-- SEO writing tools (Clearscope, SurferSEO) (@seo-content, @seo-keyword-strategist)
-- CMS platforms (@wordpress-plugin-development)
-- Google Analytics (content performance) (@google-analytics-automation, @analytics-tracking)
-- Basic HTML/Markdown (@frontend-dev-guidelines)
+- SEO writing tools (Clearscope, SurferSEO)
+- CMS platforms
+- Google Analytics (content performance) (@analytics-tracking)
+- Basic HTML/Markdown
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -39,7 +39,3 @@ Exceptional writer with B2B tech background. Understands product positioning, co
 Invoke these skills when working as this role:
 - @content-strategy: content planning and strategy
 - @copywriting: long-form content writing
-- @seo-content: SEO-optimised content
-- @content-creator: content production
-- @data-storytelling: insight-led content
-- @blog-writing-guide: blog content standards

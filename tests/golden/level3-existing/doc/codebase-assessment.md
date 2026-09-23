@@ -1,7 +1,7 @@
 # Codebase Assessment: Golden Sample
 
 > Created: 2026-01-01 | Maintained by: Lead Engineer / Technical Lead
-> Complete this from the output of an initial audit (@production-code-audit or equivalent).
+> Complete this from the output of an initial audit (a full read of the codebase, its tests, and its CI).
 
 ---
 

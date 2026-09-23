@@ -10,19 +10,19 @@
 Conducts user research, usability testing, and data analysis to inform design and product decisions. Ensures we build the right things, not just build things right.
 
 ## Core Skills
-- User interview design and facilitation (@product-design, @brainstorming)
-- Usability testing (moderated and unmoderated) (@webapp-testing, @product-design)
-- Survey design and analysis (@analytics-product, @data-storytelling)
-- Persona and journey mapping (@product-design, @hig-patterns)
-- Research synthesis and presentation (@data-storytelling, @writing-plans)
-- Data-informed design recommendations (@analytics-product, @product-design)
+- User interview design and facilitation
+- Usability testing (moderated and unmoderated) (@webapp-testing)
+- Survey design and analysis
+- Persona and journey mapping
+- Research synthesis and presentation
+- Data-informed design recommendations
 
 ## Technical Skills
 - User testing platforms (UserTesting, Maze, Lookback) (@webapp-testing)
 - Survey tools (Typeform, Google Forms) (@analytics-tracking)
-- Analytics (Mixpanel, Hotjar, FullStory) (@analytics-product, @posthog-automation)
-- Figma (prototype review) (@figma-automation)
-- Miro / FigJam (workshop facilitation) (@brainstorming)
+- Analytics (Mixpanel, Hotjar, FullStory)
+- Figma (prototype review)
+- Miro / FigJam (workshop facilitation)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -38,8 +38,5 @@ Conducts user research, usability testing, and data analysis to inform design an
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @analytics-product: quantitative research and analytics
-- @data-storytelling: communicating research insights
-- @brainstorming: research planning and synthesis
-- @writing-plans: research plans and reports
-- @product-design: design thinking application
+
+- None specific to this role; find one with `python3 scripts/find_skill.py <keyword>`.

@@ -1,8 +1,6 @@
 ---
 name: pci-compliance
 description: Master PCI DSS (Payment Card Industry Data Security Standard) compliance for secure payment processing and handling of cardholder data.
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
@@ -25,6 +23,9 @@ detail_sections:
   - Resources
   - Common Violations
   - Reducing PCI Scope
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # PCI Compliance

@@ -1,8 +1,6 @@
 ---
 name: secrets-management
 description: "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools."
-risk: unknown
-tier: curated
 source: community
 date_added: "2026-02-27"
 domain: "DevOps & Infrastructure"
@@ -25,6 +23,9 @@ detail_sections:
   - Secret Scanning
   - Reference Files
   - Related Skills
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Secrets Management

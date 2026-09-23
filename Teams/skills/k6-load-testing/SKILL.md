@@ -2,8 +2,6 @@
 name: k6-load-testing
 description: "Comprehensive k6 load testing skill for API, browser, and scalability testing. Write realistic load scenarios, analyze results, and integrate with CI/CD."
 category: testing
-risk: safe
-tier: curated
 source: community
 date_added: "2026-03-13"
 author: Kairo Official
@@ -38,6 +36,9 @@ detail_sections:
   - Common Pitfalls
   - Related Skills
   - Additional Resources
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # k6 Load Testing

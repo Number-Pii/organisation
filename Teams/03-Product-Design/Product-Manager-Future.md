@@ -10,19 +10,19 @@
 Leads product discovery and development for Number Pii's future SaaS products. Conducts market research, validates ideas, and takes new products from concept to MVP. Works alongside engineering and design to build new offerings for SMEs.
 
 ## Core Skills
-- Product discovery and idea validation (@product-manager, @brainstorming)
-- Market research and competitive analysis (@competitive-landscape, @startup-business-analyst-market-opportunity)
-- MVP scoping and rapid prototyping (@product-manager-toolkit, @writing-plans)
-- Customer interviews and problem validation (@product-design, @analytics-product)
-- Business case development (@business-analyst, @startup-business-analyst-business-case)
-- Cross-functional coordination (@project-development, @team-collaboration-standup-notes)
+- Product discovery and idea validation
+- Market research and competitive analysis
+- MVP scoping and rapid prototyping
+- Customer interviews and problem validation
+- Business case development
+- Cross-functional coordination
 
 ## Technical Skills
-- Product analytics tools (@analytics-product, @posthog-automation)
-- Prototyping tools (Figma, Framer) (@figma-automation, @frontend-design)
+- Product analytics tools
+- Prototyping tools (Figma, Framer) (@frontend-design)
 - Survey and feedback tools (Typeform, Hotjar) (@analytics-tracking)
-- Project management (Linear, Jira) (@project-development)
-- Basic SQL for data analysis (@sql-pro)
+- Project management (Linear, Jira)
+- Basic SQL for data analysis
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -37,8 +37,5 @@ Leads product discovery and development for Number Pii's future SaaS products. C
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @product-manager: product management methodology
-- @product-manager-toolkit: PM frameworks
-- @brainstorming: product discovery and ideation
-- @writing-plans: specs and roadmap documentation
-- @analytics-product: product data analysis
+
+- None specific to this role; find one with `python3 scripts/find_skill.py <keyword>`.

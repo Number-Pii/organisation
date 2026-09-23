@@ -19,7 +19,7 @@
   - Preserves correctness (filtering still matches, keys stable)
 
 ## Task: form-validation
-- **Skill:** @frontend-dev-guidelines
+- **Skill:** @accessibility-compliance-accessibility-audit
 - **Prompt:** Implement client-side validation for a signup form (email, password, confirm password) with accessible, inline error messages. Show the code.
 - **Rubric:**
   - Errors are announced to assistive tech (aria-describedby or live region)

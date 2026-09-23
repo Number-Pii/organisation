@@ -10,18 +10,18 @@
 Manages workspace, equipment, remote infrastructure, and physical/virtual facilities. Ensures the team has everything they need to do their best work, whether in-office or remote.
 
 ## Core Skills
-- Workspace management (physical and remote) (@workflow-automation, @internal-comms)
-- Equipment procurement and lifecycle management (@cost-optimization, @risk-manager)
-- Health and safety compliance (@security-compliance-compliance-check, @documentation)
-- Remote work infrastructure (@cloud-devops, @internal-comms)
-- Budget management for facilities (@cost-optimization, @risk-metrics-calculation)
-- Vendor coordination (IT, cleaning, maintenance) (@risk-manager, @workflow-automation)
+- Workspace management (physical and remote) (@internal-comms)
+- Equipment procurement and lifecycle management
+- Health and safety compliance
+- Remote work infrastructure (@internal-comms)
+- Budget management for facilities
+- Vendor coordination (IT, cleaning, maintenance)
 
 ## Technical Skills
-- IT asset management tools (@file-organizer, @workflow-automation)
+- IT asset management tools
 - Remote work platforms (Slack, Zoom, Teams) (@internal-comms)
-- MDM (Mobile Device Management) platforms (@secrets-management, @cloud-devops)
-- Office suite and productivity tools (@office-productivity)
+- MDM (Mobile Device Management) platforms (@secrets-management)
+- Office suite and productivity tools
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -37,8 +37,4 @@ Manages workspace, equipment, remote infrastructure, and physical/virtual facili
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @workflow-automation: facilities workflow automation
 - @internal-comms: facilities announcements and updates
-- @make-automation: process automation
-- @file-organizer: document and asset organisation
-- @cost-optimization: vendor cost management

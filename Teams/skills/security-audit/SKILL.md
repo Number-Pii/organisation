@@ -2,8 +2,6 @@
 name: security-audit
 description: "Comprehensive security auditing workflow covering web application testing, API security, penetration testing, vulnerability scanning, and security hardening."
 category: workflow-bundle
-risk: safe
-tier: curated
 source: personal
 date_added: "2026-02-27"
 domain: "Security & Penetration Testing"
@@ -16,6 +14,9 @@ detail_sections:
   - Security Testing Checklist
   - Quality Gates
   - Related Workflow Bundles
+risk: medium
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # Security Auditing Workflow Bundle

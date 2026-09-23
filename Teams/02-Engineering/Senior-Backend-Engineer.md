@@ -10,23 +10,23 @@
 Builds and maintains backend services, APIs, and database systems for Number Pii products. Capable of independently implementing complex features end-to-end on the server side.
 
 ## Core Skills
-- API development and integration (@api-design-principles, @backend-dev-guidelines)
-- Database queries and schema management (@postgresql, @database-design)
-- Background job processing (@bullmq-specialist)
-- Error handling and logging (@error-handling-patterns, @backend-dev-guidelines)
-- Unit and integration testing (@javascript-testing-patterns, @tdd-workflows-tdd-cycle)
-- Security-conscious coding practices (@security-audit, @auth-implementation-patterns)
+- API development and integration
+- Database queries and schema management (@postgresql)
+- Background job processing
+- Error handling and logging
+- Unit and integration testing
+- Security-conscious coding practices (@security-audit)
 
 ## Technical Skills
-- Node.js, TypeScript, Express/Fastify (@nodejs-best-practices, @typescript-expert)
+- Node.js, TypeScript, Express/Fastify
 - PostgreSQL, SQL, database migrations (@postgresql, @database-migration)
-- REST APIs, GraphQL resolvers (@api-design-principles)
-- Redis, caching strategies (@backend-dev-guidelines)
-- Prisma / Drizzle ORM (@drizzle-orm-expert, @prisma-expert)
-- JWT, session management (@auth-implementation-patterns)
-- Jest, Supertest (@javascript-testing-patterns)
-- Docker, CI/CD pipelines (@docker-expert, @cicd-automation-workflow-automate)
-- AWS services (S3, SQS, Lambda) (@aws-skills, @aws-serverless)
+- REST APIs, GraphQL resolvers
+- Redis, caching strategies
+- Prisma / Drizzle ORM
+- JWT, session management
+- Jest, Supertest
+- Docker, CI/CD pipelines
+- AWS services (S3, SQS, Lambda) (@aws-serverless)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -42,10 +42,4 @@ Builds and maintains backend services, APIs, and database systems for Number Pii
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @backend-dev-guidelines: backend coding standards
-- @nestjs-expert: NestJS patterns
 - @postgresql: PostgreSQL queries and migrations
-- @api-design-principles: API design standards
-- @nodejs-best-practices: Node.js best practices
-- @drizzle-orm-expert: ORM usage and migrations
-- @auth-implementation-patterns: authentication implementation

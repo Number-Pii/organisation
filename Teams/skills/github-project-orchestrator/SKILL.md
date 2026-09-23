@@ -1,7 +1,6 @@
 ---
 name: github-project-orchestrator
 description: Use when a project has more than one contributor and work must be tracked on a shared GitHub Project board, so tasks have clear owners and no two contributors duplicate effort.
-risk: safe
 source: internal
 date_added: "2026-06-23"
 domain: "Planning & Workflow"
@@ -15,6 +14,9 @@ detail_sections:
   - Workflow States and Locking
   - Running the Sync
   - Related Skills
+risk: low
+tier: curated
+last_reviewed: "2026-09-23"
 ---
 
 # GitHub Project Orchestrator

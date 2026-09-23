@@ -10,21 +10,21 @@
 Tracks product metrics, analyses feature performance, and provides data-driven insights to inform the product roadmap. Owns the dashboards and experiments that tell us whether we're building the right things.
 
 ## Core Skills
-- Product analytics and metrics tracking (@analytics-product, @startup-metrics-framework)
-- A/B testing design and analysis (@ab-test-setup)
-- Funnel analysis and cohort analysis (@analytics-product, @posthog-automation)
-- Dashboard creation and maintenance (@grafana-dashboards, @plotly)
-- Data storytelling and presentation (@data-storytelling)
-- SQL querying (@sql-pro, @postgresql)
+- Product analytics and metrics tracking
+- A/B testing design and analysis
+- Funnel analysis and cohort analysis
+- Dashboard creation and maintenance
+- Data storytelling and presentation
+- SQL querying (@postgresql)
 
 ## Technical Skills
-- Mixpanel, Amplitude (product analytics) (@analytics-product, @posthog-automation)
-- Google Analytics 4 (@google-analytics-automation, @analytics-tracking)
-- SQL (PostgreSQL) (@sql-pro, @postgresql)
-- Looker, Metabase, or equivalent BI tools (@grafana-dashboards, @plotly)
-- Python/R (statistical analysis) (@python-pro, @data-storytelling)
-- A/B testing tools (Optimizely, LaunchDarkly) (@ab-test-setup)
-- Google Sheets / Excel (advanced) (@data-storytelling)
+- Mixpanel, Amplitude (product analytics)
+- Google Analytics 4 (@analytics-tracking)
+- SQL (PostgreSQL) (@postgresql)
+- Looker, Metabase, or equivalent BI tools
+- Python/R (statistical analysis)
+- A/B testing tools (Optimizely, LaunchDarkly)
+- Google Sheets / Excel (advanced)
 
 ## Project Involvement
 | Project Type | Role in Project | Authority Level |
@@ -40,10 +40,5 @@ Tracks product metrics, analyses feature performance, and provides data-driven i
 
 ## Agent Skills
 Invoke these skills when working as this role:
-- @analytics-product: product analytics and metrics
-- @data-storytelling: data visualisation and storytelling
-- @sql-pro: SQL queries for product data
-- @plotly: data visualisation charts
-- @startup-metrics-framework: KPI frameworks
-- @ab-test-setup: A/B test design and analysis
-- @posthog-automation: PostHog product analytics
+
+- None specific to this role; find one with `python3 scripts/find_skill.py <keyword>`.
