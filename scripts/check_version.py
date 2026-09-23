@@ -2,25 +2,31 @@
 """
 check_version.py: Number Pii Version Sync Validator
 
-Checks that the version number is consistent across:
+Checks that the release version is consistent across:
   - VERSION
   - CHANGELOG.md (latest heading)
   - .claude-plugin/plugin.json (plugin manifest, when present)
-  - CLAUDE.md (protocol version line)
-  - GEMINI.md (protocol version line)
-  - AGENTS.md (protocol version line)
 
-Exit code 0 = all in sync, 1 = mismatch found.
+These three files change only in release PRs (scripts/release.py). Feature
+PRs add a changelog fragment under changes/ instead; `--require-fragment`
+enforces that in CI so parallel PRs never edit the same version lines.
+
+Exit code 0 = all in sync, 1 = mismatch or missing fragment.
 
 Usage:
     python3 scripts/check_version.py
+    python3 scripts/check_version.py --require-fragment origin/main
 """
 
+import argparse
+import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+
 
 def get_version_file():
     """Read version from VERSION file."""
@@ -40,7 +46,6 @@ def get_changelog_version():
 
 def get_plugin_version():
     """Read version from the plugin manifest; None when absent or unreadable."""
-    import json
     path = REPO_ROOT / ".claude-plugin" / "plugin.json"
     if not path.exists():
         return None
@@ -50,66 +55,63 @@ def get_plugin_version():
         return "unparseable"
 
 
-def get_md_protocol_version(filename):
-    """Extract protocol version from a context file (_Version: X.Y | ...)."""
-    path = REPO_ROOT / filename
-    for line in path.read_text(encoding="utf-8").splitlines():
-        m = re.search(r"_Version:\s*([\d.]+)", line)
-        if m:
-            return m.group(1)
-    return None
+def changed_files(base: str) -> list[str]:
+    result = subprocess.run(
+        ["git", "diff", "--name-only", f"{base}...HEAD"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or f"git diff against {base} failed")
+    return [line for line in result.stdout.splitlines() if line.strip()]
 
 
-def main():
+def fragment_problem(files: list[str]) -> str:
+    """'' when the change set is acceptable, else the reason it is not."""
+    if not files:
+        return ""
+    fragments = [f for f in files
+                 if f.startswith("changes/") and f.endswith(".md")
+                 and Path(f).name.lower() != "readme.md"]
+    is_release = "VERSION" in files
+    if is_release or fragments:
+        return ""
+    return ("no changelog fragment: add changes/<branch-name>.md describing this PR "
+            "(see changes/README.md)")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Check release version consistency")
+    parser.add_argument("--require-fragment", metavar="BASE",
+                        help="Also fail unless the diff against BASE adds a changes/ "
+                             "fragment or is a release (touches VERSION)")
+    args = parser.parse_args(argv)
+
     version_file = get_version_file()
-    changelog    = get_changelog_version()
-    claude_ver   = get_md_protocol_version("CLAUDE.md")
-
-    # Protocol version (in the context files) is a separate number from the toolkit
-    # version, but every generated context file must match CLAUDE.md.
-    protocol_sources = {
-        "GEMINI.md": get_md_protocol_version("GEMINI.md"),
-        "AGENTS.md": get_md_protocol_version("AGENTS.md"),
-    }
+    changelog = get_changelog_version()
+    plugin_version = get_plugin_version()
 
     errors = []
-
-    # Check toolkit version sync: VERSION vs CHANGELOG
     if changelog and changelog != version_file:
-        errors.append(
-            f"  VERSION says {version_file}, CHANGELOG.md says {changelog}"
-        )
-
-    # Check plugin manifest sync: VERSION vs .claude-plugin/plugin.json
-    plugin_version = get_plugin_version()
+        errors.append(f"  VERSION says {version_file}, CHANGELOG.md says {changelog}")
     if plugin_version is not None and plugin_version != version_file:
         errors.append(
-            f"  VERSION says {version_file}, .claude-plugin/plugin.json says {plugin_version}"
-        )
+            f"  VERSION says {version_file}, .claude-plugin/plugin.json says {plugin_version}")
 
-    # Check protocol version sync: each generated file vs CLAUDE.md
-    for name, ver in protocol_sources.items():
-        if ver != claude_ver:
-            errors.append(
-                f"  CLAUDE.md protocol version {claude_ver} != {name} protocol version {ver}"
-            )
+    if args.require_fragment:
+        try:
+            problem = fragment_problem(changed_files(args.require_fragment))
+        except RuntimeError as exc:
+            problem = f"could not diff against {args.require_fragment}: {exc}"
+        if problem:
+            errors.append(f"  {problem}")
 
     if errors:
-        print("VERSION SYNC FAILED:")
+        print("VERSION CHECK FAILED:")
         for e in errors:
             print(e)
-        print()
-        print(f"  VERSION file:             {version_file}")
-        print(f"  CHANGELOG.md latest:      {changelog}")
-        print(f"  CLAUDE.md protocol:       {claude_ver}")
-        for name, ver in protocol_sources.items():
-            print(f"  {name} protocol:       {ver}")
         sys.exit(1)
-    else:
-        print(f"All versions in sync.")
-        print(f"  Toolkit version:          {version_file}")
-        print(f"  Protocol version:         {claude_ver}")
-        sys.exit(0)
+    print(f"All versions in sync at {version_file}.")
+    sys.exit(0)
 
 
 if __name__ == "__main__":

@@ -319,6 +319,7 @@ python3 scripts/update.py --check
 ```bash
 python3 scripts/update.py
 ```
+Clones follow release tags, not the tip of `main`, and only ever move forward.
 
 ### What changes between versions
 See [CHANGELOG.md](CHANGELOG.md) for full release notes, or run:
@@ -326,8 +327,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full release notes, or run:
 python3 scripts/update.py --changelog
 ```
 
-Every release on `main` is tagged automatically by CI as `vX.Y.Z` (matching the
-`VERSION` file), so a specific release can always be checked out by tag.
+Releases are cut by a release PR that compiles the changelog fragments in
+`changes/`; CI tags each one as `vX.Y.Z` (matching the `VERSION` file), so a
+specific release can always be checked out by tag.
 
 ### Pin to a release
 Create a `.toolkit-pin` file in your project root (next to the `organisation/`

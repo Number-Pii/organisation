@@ -104,6 +104,49 @@ def test_read_pin_absent_or_empty(tmp_path, monkeypatch):
     assert update_mod.read_pin() == ("", None)
 
 
+# ── update.py release channel ────────────────────────────────────────────────
+
+def tagged_clone(tmp_path: Path) -> Path:
+    """A repo with v3.9.0 and v3.10.0 tags plus one unreleased commit on top."""
+    repo = git_repo(tmp_path / "clone", "main")
+    env = ["-c", "user.name=t", "-c", "user.email=t@t", "-c", "tag.gpgsign=false",
+           "-c", "commit.gpgsign=false"]
+    for version in ("3.9.0", "3.10.0", "3.10.1-dev"):
+        (repo / "VERSION").write_text(version + "\n", encoding="utf-8")
+        subprocess.run(["git", *env, "add", "VERSION"], cwd=repo, check=True)
+        subprocess.run(["git", *env, "commit", "-qm", version], cwd=repo, check=True)
+        if not version.endswith("-dev"):
+            subprocess.run(["git", *env, "tag", f"v{version}"], cwd=repo, check=True)
+    return repo
+
+
+class _Args:
+    check = False
+    yes = True
+
+
+def test_latest_release_tag_uses_version_order(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    assert update_mod.latest_release_tag() == "v3.10.0"
+
+
+def test_follow_release_never_moves_backwards(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    head = update_mod.get_current_commit()
+    update_mod.follow_release(_Args(), "3.10.1")
+    assert update_mod.get_current_commit() == head
+
+
+def test_follow_release_moves_forward_to_latest_tag(tmp_path, monkeypatch):
+    repo = tagged_clone(tmp_path)
+    monkeypatch.setattr(update_mod, "REPO_ROOT", repo)
+    subprocess.run(["git", "checkout", "-q", "--detach", "v3.9.0"], cwd=repo, check=True)
+    update_mod.follow_release(_Args(), "3.9.0")
+    assert update_mod.get_current_commit() == update_mod.resolve_ref("v3.10.0")
+
+
 # ── update_all.py registry ───────────────────────────────────────────────────
 
 def test_load_consumers_builds_clone_paths(tmp_path):

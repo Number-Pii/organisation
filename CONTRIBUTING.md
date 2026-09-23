@@ -166,12 +166,18 @@ Shared script logic (currently the frontmatter parser) lives in `scripts/lib/`; 
 
 ---
 
-## Bumping the Version
+## Changelog and Releases
 
-1. Update `VERSION` with the new version number
-2. Add a new section at the top of `CHANGELOG.md` with the changes and migration notes
-3. If the protocol changed, update the `_Version:` line in `CLAUDE.md`, then run `sync_ai_context.py` to propagate to `GEMINI.md` and `AGENTS.md`
-4. Run `python3 scripts/check_version.py` to confirm everything is in sync
+Feature and fix PRs never edit `VERSION`, `CHANGELOG.md`, or the plugin manifest version.
+Each PR adds one changelog fragment under `changes/` instead, named after its branch; CI
+fails a PR without one. That keeps parallel PRs from colliding on the same lines.
+[changes/README.md](changes/README.md) has the fragment format.
+
+A release is its own PR on a `chore/release-X.Y.Z` branch: run
+`python3 scripts/release.py`, which compiles the fragments into a `CHANGELOG.md`
+section, bumps `VERSION` and `.claude-plugin/plugin.json`, and deletes the fragments.
+`python3 scripts/check_version.py` confirms the three stay in sync. Consumer clones
+follow release tags, so merged but unreleased work on `main` never reaches them early.
 
 ### Version types
 
