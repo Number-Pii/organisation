@@ -78,6 +78,7 @@ jobs:
           git ls-files -z '*.md' \
             | tr '\0' '\n' \
             | grep -v '^Teams/skills/' \
+            | grep -v '^tests/fixtures/' \
             | grep -v '^scripts/audit_report.md$' \
             | tr '\n' '\0' \
             | xargs -0 python3 scripts/check_writing.py

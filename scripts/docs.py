@@ -41,7 +41,8 @@ SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "dist", "build", ".next", 
              "organisation"}
 # Vendored or fixture content, and templates whose links are written relative to
 # a consuming project's layout: never checked for links.
-EXCLUDED_PREFIXES = ("Teams/skills/", "evals/scenarios/fixture/", "tests/golden/", "templates/")
+EXCLUDED_PREFIXES = ("Teams/skills/", "evals/scenarios/fixture/", "tests/golden/", "tests/fixtures/",
+                     "templates/")
 
 
 def summary(path: Path) -> str:

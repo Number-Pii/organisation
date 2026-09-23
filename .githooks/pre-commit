@@ -19,6 +19,7 @@ python3 scripts/docs.py check
 # audit report are out of scope, matching CI).
 staged_md=$(git diff --cached --name-only --diff-filter=ACM -- '*.md' \
   | grep -v '^Teams/skills/' \
+  | grep -v '^tests/fixtures/' \
   | grep -v '^scripts/audit_report.md$' || true)
 
 if [ -n "$staged_md" ]; then
