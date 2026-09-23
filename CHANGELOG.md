@@ -4,7 +4,7 @@ All notable changes to the Number Pii Organisation Toolkit are documented here.
 
 Version format: `MAJOR.MINOR.PATCH`
 - **MAJOR**: breaking changes to the Initialize Protocol or doc/ template structure
-- **MINOR**: new features, new steps, significant additions to CLAUDE.md / GEMINI.md
+- **MINOR**: new features, new scripts, significant additions to the managed `AGENTS.md` block
 - **PATCH**: wording fixes, role file updates, skill additions
 
 > **Safe to update?** Any version bump that is MINOR or PATCH will not break existing projects.
@@ -12,6 +12,159 @@ Version format: `MAJOR.MINOR.PATCH`
 > your existing `doc/` files are always safe, but read the migration notes before re-initializing.
 
 ---
+
+## [4.0.0]: 2026-09-23
+
+### Breaking
+- **`AGENTS.md` is the one instruction file.** `CLAUDE.md` and `GEMINI.md` are
+  now stubs that import it with `@AGENTS.md`, in the toolkit and in every new
+  scaffold. `sync_ai_context.py` and its CI step are gone, along with 22 KB of
+  near-duplicate text.
+- **Context is progressive.** The fixed reading list, the session-start
+  acknowledgement, the "task failure" and "override your training" language,
+  and the SessionStart checklist hook are removed. Each project's `AGENTS.md`
+  instead carries a managed block of about 90 lines covering:
+  - boundaries, each with its reason
+  - a routing table ("when you are X, read Y")
+  - the PR checklist
+  - the handover format
+
+  The block is self-contained, so cloud agents that clone a project without
+  `organisation/` still have every rule they need.
+- **Handover is per branch.** Each branch writes only
+  `doc/handover/entries/<date>-<branch>.md`. `doc/handover/STATE.md` replaces
+  `consolidated_handover.md` and changes only in
+  `chore/handover-consolidate-*` PRs. The per-department `handover-notes.md`
+  files are no longer scaffolded. The v3.19.1 baseline showed the shared
+  notes file conflicting in 2 of 3 parallel-agent pairs.
+
+### Added
+- **`scripts/migrate_consumer.py` moves a pre-4.0 project to the v4 layout,
+  on request.** It is a dry run unless `--apply` is passed, and it never
+  commits. It makes these changes:
+  - `consolidated_handover.md` becomes `STATE.md`, with its content kept. The
+    department notes stay in place, frozen, with `STATE.md` linking to them.
+  - It adds the entries folder, and a `doc/README.md` map that lists the
+    documents already there.
+  - Toolkit-generated context pointers are replaced with `AGENTS.md` and its
+    stubs. Any text appended to a pointer is carried over. Hand-written context
+    files are recognised by their structure and never touched.
+  - It adds the pre-push hook, retires the SessionStart checklist, and updates
+    an unmodified protect-main hook.
+  - It fixes the placeholder link in `team-assignment.md`, which never
+    resolved in any v3 project.
+
+  A second run changes nothing. Status columns in `workflow.md` go only with
+  `--strip-status`.
+- **Scenario evals.** `scripts/run_scenarios.py` runs real coding agents (Claude
+  Code and OpenAI Codex) through twelve scenarios in a scaffolded fixture
+  project: an issue to a feature, an unfamiliar area, a bug fix, a new
+  component, an architecture change, validation, PR preparation, a handover,
+  two agents in parallel, continuing another agent's branch, and doc discovery.
+  Scoring comes from the git state the agent leaves: hidden completion tests,
+  scope, dash churn, main-branch safety, handover, doc discovery, and merge
+  conflicts between parallel agents. No judge model.
+- **Runner adapters.** `scripts/lib/agents.py` gives every eval one interface to
+  either CLI, so `run_evals.py` gains `--runner codex` and no script hard-codes
+  one vendor.
+- **Baseline scorecard.** `evals/scorecards/v3.19.1-baseline.json` records how
+  v3.19.1 performs, the reference every v4 phase is measured against.
+- `scripts/handover.py` (`new`, `status`, `check`, `consolidate`) replaces
+  `draft_handover.py` and `check_handover.py`.
+- `scripts/docs.py` (`map`, `check`): `doc/README.md` is the doc map. Files
+  inside mapped folders (`decisions/`, `specs/`, `runbooks/`, `reference/`)
+  need no index edit. `check` fails on unmapped top-level files, unknown
+  folders, and broken relative links, and CI runs it on the toolkit itself.
+- `scripts/sync_context.py` refreshes the managed block
+  (`<!-- np:begin -->` to `<!-- np:end -->`) in a project's `AGENTS.md`. It
+  writes only on change and has no version or date to churn. It refuses files
+  without the block unless `--append` is passed.
+- A git-native `.githooks/pre-push` in every scaffold refuses pushes to
+  `main`, whichever agent or person runs git.
+
+### Changed
+- **Every kept skill has a reviewed risk and a review date.** Each carries
+  `risk: low|medium|high` and `last_reviewed`, and `audit_skills.py` now fails
+  without them.
+- **Role files keep their prose.** Their `@skill` references point only at
+  kept skills, and a role with no specific skill points to `find_skill.py`.
+- **The TDD and systematic-debugging skills explain their rules.** Their
+  "Iron Law" sections now state the practice and the reason for it, not
+  absolutes. References to skills outside the library are fixed.
+- **The skill eval tasks target kept skills.**
+- **The Claude Code protect-main hook respects worktrees.** It checks the
+  repository each git command targets (`git -C`, `cd <dir> &&`). It no
+  longer blocks agents committing in a linked worktree on their own branch,
+  which the v3.19.1 baseline caught happening. It also no longer blocks
+  branches such as `feature/main-menu`. `--no-claude-hooks` skips the hook.
+- **`INITIALIZE.md` describes outcomes, not a script.** It covers the
+  decisions the user makes and what an initialized project contains.
+- **The board owns live status.** `gh_project_sync.py sync` only reports
+  differences unless `--write-back` is passed. `query` shows board status and
+  blocking issues. `doc/workflow.md` no longer has Status columns.
+- **Subagent governance notes follow the new boundaries.** The note
+  `build_agents.py` writes points to the project's `AGENTS.md`.
+- `harness`, `robust`, and `leverage` move from the banned list to "use
+  sparingly". All three are ordinary engineering terms.
+
+### Fixed
+- **The writing standard no longer causes git churn.** The dash ban and the
+  rest of `WRITING.md` now cover only prose the agent writes. Lines it isn't
+  otherwise changing, generated and vendored files, lockfiles, code comments,
+  and blocks managed by other tools are out of scope. The main case is the
+  `<!-- BEGIN:nextjs-agent-rules -->` block that Next.js rewrites into
+  `AGENTS.md` and `CLAUDE.md` on every `next dev`. Agents had been
+  "fixing" its em dashes, and Next kept putting them back. The same scope
+  clause is in `CLAUDE.md`, `WRITING.md`, and the scaffolded context files.
+- **`check_writing.py` respects that scope.** It skips `BEGIN:name`/`END:name`
+  and `np:begin`/`np:end` blocks (but not markers quoted in inline code) and
+  files under `node_modules`, `vendor`, `dist`, `build`, `.next`, and
+  lockfiles. It also gains `--profile technical|internal|marketing`.
+- **Generators write only when content changes.** `build_agents.py`,
+  `build_org.py`, `build_skills_index.py`, and `sync_ai_context.py` share
+  `scripts/lib/files.py:write_if_changed`, and tests check that a second run
+  leaves every output untouched.
+- **Scaffolded context files carry no render date.** The `_Generated: <date>`
+  line is gone from `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md`, so
+  re-rendering them on another day produces identical bytes.
+- **No em dashes in generated headers.** They came from the header strings in
+  `sync_ai_context.py`. An agent that "fixed" them broke the sync check.
+
+### Removed
+- **The skills library is cut from 1,291 skills (41 MB) to 54 reviewed ones
+  (5 MB).** A skill stays only when it gives a frontier model something it
+  lacks: bundled scripts, tool- or API-specific knowledge, a Number Pii
+  process, or the canonical approach to a topic. Removed:
+  - persona prompts ("You are an expert X") and filler stubs
+  - exact and near duplicates
+  - off-charter and non-English skills
+  - skills that only work through the Rube/Composio connector
+  - skills that told agents to skip permissions, push, or pipe installers
+    into a shell
+
+  The full library is tagged `v3-skills-full`:
+  `git checkout v3-skills-full -- Teams/skills/<name>` restores any skill.
+
+- `scripts/generate_skill_frontmatter.py` (the backfill it served is done),
+  `.gitattributes` (every entry pointed at a removed skill), and both duplicate
+  workflow-bundle READMEs.
+- `CACHE_BOUNDARY` sentinels (nothing parsed them), the separate protocol
+  `_Version` line, and README's "Document Version".
+
+### Migration
+Nothing changes in an existing consumer project until someone acts. Updating
+the clone (`python3 organisation/scripts/update.py`) moves it to the `v4.0.0`
+tag and leaves `doc/` and the root context files exactly as they are. To adopt
+the v4 layout in a project, on a `chore/` branch in that project:
+
+1. Run `python3 organisation/scripts/migrate_consumer.py` and read the dry run.
+2. Run it again with `--apply`, review `git diff`, and open a PR.
+3. Enable the push guard once per clone: `git config core.hooksPath .githooks`.
+
+Hand-written context files are never rewritten. To give one the toolkit's
+managed block, run `python3 organisation/scripts/sync_context.py --append` and
+review the result. After later toolkit updates, `sync_context.py` refreshes the
+block and nothing else.
 
 ## [3.20.0]: 2026-09-23
 
