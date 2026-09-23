@@ -140,4 +140,7 @@ def test_golden_project_name_renders_into_every_doc():
         if ".claude" in str(path) and path.suffix != ".md":
             continue  # hook code and settings carry no project header
         assert GOLDEN_PROJECT_NAME in content, f"{path} missing project name"
-        assert GOLDEN_TODAY in content or "archive" in str(path) or ".claude" in str(path), path
+        # Root context files are re-rendered on refresh, so they carry no date.
+        dated = not ("archive" in str(path) or ".claude" in str(path)
+                     or path.name in {"CLAUDE.md", "AGENTS.md", "GEMINI.md"})
+        assert (GOLDEN_TODAY in content) is dated, path

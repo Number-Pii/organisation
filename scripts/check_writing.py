@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-check_writing.py — Number Pii Writing Standard Validator
+check_writing.py: Number Pii Writing Standard Validator
 
 Checks prose deliverables (markdown or plain text) against WRITING.md:
   FAIL  em dashes, en dashes, banned phrases, 3+ consecutive identical sentence openers
@@ -10,19 +10,27 @@ Checks prose deliverables (markdown or plain text) against WRITING.md:
 The banned-phrases list is read live from WRITING.md (between the
 BANNED-PHRASES:START/END markers), so the standard has a single source of truth.
 
+Scope (WRITING.md, "Scope"): only text you author is checked. Blocks managed
+by other tools (<!-- BEGIN:name --> ... <!-- END:name -->) and the toolkit's own
+managed block (<!-- np:begin --> ... <!-- np:end -->) are skipped, and files in
+generated, vendored, or dependency paths are skipped unless --no-default-excludes
+is given. CI, the pre-commit hook, and consumer projects all get the same scope
+because it lives here.
+
 Usage:
     python3 scripts/check_writing.py FILE [FILE ...]
-    python3 scripts/check_writing.py FILE --target-min 50 --target-max 65   # marketing copy
-    python3 scripts/check_writing.py FILE --strict                          # WARN also fails
+    python3 scripts/check_writing.py FILE --profile marketing   # Flesch 50-65
+    python3 scripts/check_writing.py FILE --strict              # WARN also fails
 
 Exit codes:
-    0 — all files pass
-    1 — at least one FAIL (or WARN with --strict), or input error
+    0: all files pass
+    1: at least one FAIL (or WARN with --strict), or input error
 """
 
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import re
 import statistics
 import sys
@@ -44,6 +52,49 @@ PASSIVE_RE = re.compile(
 # mentions rather than uses; strip them before scanning so the standard's own
 # text (WRITING.md, CLAUDE.md, scripts/README.md) does not flag itself.
 DASH_MENTION_RE = re.compile(r"[Ee][mn] dash(es)?\s*\((?:—|–)\)")
+
+# Text owned by another tool or by the toolkit's sync step, not by the author.
+MANAGED_BEGIN_RE = re.compile(r"<!--\s*(?:BEGIN:(\S+)|np:begin)\s*-->")
+
+# Paths that hold generated, vendored, or dependency content.
+DEFAULT_EXCLUDES = [
+    "*/node_modules/*", "node_modules/*", "*/vendor/*", "vendor/*",
+    "*/dist/*", "dist/*", "*/build/*", "build/*", "*/.next/*", ".next/*",
+    "*.lock", "*package-lock.json", "*pnpm-lock.yaml", "*/.venv/*", ".venv/*",
+]
+
+PROFILES = {"technical": (30.0, 40.0), "marketing": (50.0, 65.0), "internal": (35.0, 55.0)}
+
+
+def excluded(path: Path) -> bool:
+    posix = path.as_posix()
+    return any(fnmatch.fnmatch(posix, pattern) for pattern in DEFAULT_EXCLUDES)
+
+
+def strip_managed_blocks(raw: str) -> str:
+    """Blank out managed regions, keeping line numbers stable for reporting."""
+    lines = raw.splitlines()
+    out = []
+    end_marker = None
+    for line in lines:
+        # Markers quoted in inline code are mentions, not real block boundaries.
+        live = re.sub(r"`[^`]*`", "", line)
+        if end_marker is None:
+            m = MANAGED_BEGIN_RE.search(live)
+            if m:
+                name = m.group(1)
+                end_marker = (re.compile(rf"<!--\s*END:{re.escape(name)}\s*-->") if name
+                              else re.compile(r"<!--\s*np:end\s*-->"))
+                out.append("")
+                if end_marker.search(live[m.end():]):
+                    end_marker = None
+                continue
+            out.append(line)
+        else:
+            out.append("")
+            if end_marker.search(live):
+                end_marker = None
+    return "\n".join(out)
 
 
 def load_banned_phrases() -> list[str]:
@@ -138,7 +189,7 @@ def flesch_reading_ease(sentences: list[str]) -> float | None:
 
 def check_file(path: Path, banned: list[str], target: tuple[float, float]) -> tuple[list[str], list[str], list[str]]:
     """Returns (fails, warns, infos) finding lists for one file."""
-    raw = path.read_text(encoding="utf-8")
+    raw = strip_managed_blocks(path.read_text(encoding="utf-8"))
     lines = scannable_lines(raw)
     fails: list[str] = []
     warns: list[str] = []
@@ -209,14 +260,19 @@ def check_file(path: Path, banned: list[str], target: tuple[float, float]) -> tu
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate prose against the Number Pii Writing Standard")
     parser.add_argument("files", nargs="+", help="Markdown or plain-text files to check")
-    parser.add_argument("--target-min", type=float, default=30.0,
-                        help="Flesch target lower bound (default 30; use 50 for marketing copy)")
-    parser.add_argument("--target-max", type=float, default=40.0,
-                        help="Flesch target upper bound (default 40; use 65 for marketing copy)")
+    parser.add_argument("--profile", choices=sorted(PROFILES), default="technical",
+                        help="Readability target by document type (WRITING.md calibration table)")
+    parser.add_argument("--target-min", type=float, help="Override the profile's Flesch lower bound")
+    parser.add_argument("--target-max", type=float, help="Override the profile's Flesch upper bound")
+    parser.add_argument("--no-default-excludes", action="store_true",
+                        help="Also check files in generated, vendored, and dependency paths")
     parser.add_argument("--strict", action="store_true", help="Treat WARN findings as failures")
     args = parser.parse_args()
 
     banned = load_banned_phrases()
+    lo, hi = PROFILES[args.profile]
+    target = (args.target_min if args.target_min is not None else lo,
+              args.target_max if args.target_max is not None else hi)
     exit_code = 0
 
     for name in args.files:
@@ -225,8 +281,11 @@ def main() -> int:
             print(f"ERROR: {path} not found")
             exit_code = 1
             continue
+        if not args.no_default_excludes and excluded(path):
+            print(f"\n── check_writing: {path} ── skipped (generated, vendored, or dependency path)")
+            continue
 
-        fails, warns, infos = check_file(path, banned, (args.target_min, args.target_max))
+        fails, warns, infos = check_file(path, banned, target)
 
         print(f"\n── check_writing: {path} ──")
         for f in fails:

@@ -8,6 +8,19 @@
 > Writing Style standard of `CLAUDE.md` always apply, even when this file is not loaded.
 > Owner: Head of Content & SEO (`Teams/05-Growth-Marketing/Head-Content-SEO.md`).
 
+## Scope
+
+The standard governs prose you write for people: documentation, specifications,
+reports, proposals, handover notes, and client or marketing copy. It does not
+reach into text you did not author in the current change:
+
+- Lines you are not otherwise editing stay exactly as they are, even if they break a rule here.
+- Generated files, vendored and third-party files, lockfiles, and dependency folders are out of scope.
+- Blocks managed by other tools, marked `<!-- BEGIN:name -->` ... `<!-- END:name -->` (Next.js writes one into `AGENTS.md` and `CLAUDE.md`), belong to that tool. Never edit them; commit the tool's own updates unchanged. `check_writing.py` skips them.
+- Code comments follow the conventions of the codebase they live in.
+
+Restyling text outside your change produces diffs that carry no meaning, collide with other branches, and get reverted by the tools that own the text.
+
 ## Core Directive
 
 Produce writing that is indistinguishable from the work of a highly skilled human writer. Every piece must be natural, engaging, persuasive, professional, context-aware, and appropriate to its audience. If a sentence sounds like a language model wrote it, rewrite the sentence.
@@ -48,8 +61,6 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 - `dive into`
 - `deep dive`
 - `unpack`
-- `leverage`
-- `harness`
 - `unlock`
 - `unleash`
 - `empower`
@@ -57,7 +68,6 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 - `supercharge`
 - `seamless`
 - `seamlessly`
-- `robust`
 - `cutting-edge`
 - `state-of-the-art`
 - `game-changer`
@@ -113,7 +123,7 @@ These are hard failures. `scripts/check_writing.py` reads this list directly fro
 
 ### Use sparingly
 
-Legitimate words that signal machine writing when they recur: comprehensive, furthermore, moreover, additionally, significantly, essentially, basically, simply, very, really, streamline, ensure. One use per document is fine; a pattern is not.
+Legitimate words that signal machine writing when they recur: leverage, robust, harness (fine in their technical senses, such as a test harness), comprehensive, furthermore, moreover, additionally, significantly, essentially, basically, simply, very, really, streamline, ensure. One use per document is fine; a pattern is not.
 
 ### Banned patterns
 

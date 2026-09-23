@@ -1,4 +1,4 @@
-<!-- GENERATED FILE — do not edit by hand.
+<!-- GENERATED FILE: do not edit by hand.
      This file is generated from CLAUDE.md by scripts/sync_ai_context.py.
      To change its contents, edit CLAUDE.md and re-run the sync script. -->
 
@@ -110,9 +110,10 @@ All code changes, regardless of size, urgency, or who is making them, must follo
 **Before writing any code or running any git command, read `doc/version_control.md`.** If it specifies branch protection, PR reviews, or a specific branching model, those rules are binding and must be followed for every single change.
 
 ### Writing Style
-All prose produced by any team member (including AI agents) must read like the work of a highly skilled human writer: natural, audience-appropriate, and free of AI signalling patterns. This applies to every written output: docs, handover notes, client-facing copy, and in-code comments alike.
+Prose written for people (documentation, specs, reports, proposals, handover notes, client and marketing copy) must read like the work of a highly skilled human writer: natural, audience-appropriate, and free of AI signalling patterns.
 
-- **No em dashes (—) and no en dashes (–).** Use commas, semicolons, colons, or periods; write ranges with "to" or a plain hyphen.
+- **No em dashes (—) and no en dashes (–) in prose you write.** Use commas, semicolons, colons, or periods; write ranges with "to" or a plain hyphen.
+- **The standard covers what you author, nothing else.** Leave untouched: lines you are not otherwise changing, generated files, vendored and third-party files, lockfiles, and blocks managed by other tools (such as `<!-- BEGIN:nextjs-agent-rules -->` sections in `AGENTS.md` or `CLAUDE.md`). When a tool rewrites its own block, commit its version unchanged. Code comments follow the conventions of the codebase they sit in. Restyling existing text as a side effect of another change creates noisy diffs and merge conflicts, so don't.
 - **Before producing any substantial prose deliverable** (documentation, specs, reports, proposals, marketing or client copy), read `WRITING.md` at the toolkit root in full. It defines readability targets, vocabulary and structural rules, the banned-phrases list, and the editorial review process, and it carries the same binding force as this file.
 - **Validate before handover:** run `python3 scripts/check_writing.py <file>` and fix every FAIL finding. The Head of Content & SEO owns the standard; the Senior Content Strategist reviews client-facing deliverables.
 

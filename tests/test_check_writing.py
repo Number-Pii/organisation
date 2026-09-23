@@ -101,3 +101,52 @@ def test_load_banned_phrases_reads_writing_md():
     phrases = load_banned_phrases()
     assert "delve" in phrases
     assert len(phrases) > 30
+
+
+# ── scope: managed blocks and excluded paths ─────────────────────────────────
+
+NEXT_BLOCK = (
+    "Our own intro sentence is fine.\n\n"
+    "<!-- BEGIN:nextjs-agent-rules -->\n"
+    "# This is NOT the Next.js you know\n\n"
+    "This version has breaking changes — APIs may differ.\n"
+    "<!-- END:nextjs-agent-rules -->\n\n"
+    "After the block — our text is checked again.\n"
+)
+
+
+def test_foreign_managed_block_is_skipped(tmp_path):
+    fails, _, _ = run(tmp_path, NEXT_BLOCK)
+    assert fails == ["Em dash (—) at line 9"], fails
+
+
+def test_toolkit_managed_block_is_skipped(tmp_path):
+    text = "<!-- np:begin -->\nManaged — text.\n<!-- np:end -->\nOwn text is clean.\n"
+    fails, _, _ = run(tmp_path, text)
+    assert fails == []
+
+
+def test_unterminated_block_skips_to_end_of_file(tmp_path):
+    fails, _, _ = run(tmp_path, "Clean.\n<!-- BEGIN:tool -->\nManaged — forever.\n")
+    assert fails == []
+
+
+def test_default_excludes_cover_generated_and_vendored_paths():
+    from check_writing import excluded
+    assert excluded(Path("web_app/node_modules/next/README.md"))
+    assert excluded(Path("dist/notes.md"))
+    assert excluded(Path("package-lock.json"))
+    assert not excluded(Path("doc/project-brief.md"))
+    assert not excluded(Path("AGENTS.md"))
+
+
+def test_engineering_terms_are_no_longer_banned():
+    banned = load_banned_phrases()
+    for word in ("harness", "robust", "leverage"):
+        assert word not in banned
+
+
+def test_marker_quoted_in_inline_code_is_not_a_block(tmp_path):
+    text = "Leave `<!-- BEGIN:nextjs-agent-rules -->` sections alone.\n\nLater text — still checked.\n"
+    fails, _, _ = run(tmp_path, text)
+    assert fails == ["Em dash (—) at line 3"], fails
