@@ -193,6 +193,21 @@ refused; `--append` adds it to the end of a hand-written file.
 
 ---
 
+## `migrate_consumer.py`: Move a Pre-4.0 Project to v4
+
+Opt-in. From a consuming project root it prints what it would change; `--apply`
+makes the changes, and it never commits. It turns `consolidated_handover.md` into
+`STATE.md`, adds the entries folder and a `doc/README.md` map listing existing
+documents, replaces toolkit-generated context pointers with `AGENTS.md` and stubs,
+and updates the hooks. Hand-written context files are never touched.
+
+```bash
+python3 organisation/scripts/migrate_consumer.py            # dry run
+python3 organisation/scripts/migrate_consumer.py --apply
+```
+
+---
+
 ## `gh_project_sync.py`: GitHub Project Orchestration Bridge
 
 Connects a project's planned backlog to a live GitHub Project board. The toolkit plans the
