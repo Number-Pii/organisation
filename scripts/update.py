@@ -5,16 +5,23 @@ update.py: Number Pii Toolkit Updater
 Checks for updates to the organisation toolkit and pulls the latest version safely.
 Your project files (doc/) are not in this repo and will never be touched.
 
+Releases: by default the clone follows the latest release tag (v*), not the
+tip of main. main can hold merged but unreleased work (changelog fragments
+waiting for a release PR), so tags are the stable channel. The clone only
+moves forward: if it already sits ahead of the latest release it is left
+alone. Pass --follow-main to track main instead.
+
 Pinning: a `.toolkit-pin` file containing a git ref (e.g. `v3.15.0`) in the
 consuming project root (next to the clone) or in the clone itself pins the
 toolkit to that ref. With a pin, update.py checks out the pinned ref instead
-of following main; remove the file to resume normal updates.
+of following releases; remove the file to resume normal updates.
 
 Usage:
-    python3 scripts/update.py             # Check for updates and prompt to install
-    python3 scripts/update.py --check     # Check only, do not update
-    python3 scripts/update.py --yes       # Update without prompting
-    python3 scripts/update.py --changelog # Show full changelog and exit
+    python3 scripts/update.py               # Check for updates and prompt to install
+    python3 scripts/update.py --check       # Check only, do not update
+    python3 scripts/update.py --yes         # Update without prompting
+    python3 scripts/update.py --follow-main # Track main instead of release tags
+    python3 scripts/update.py --changelog   # Show full changelog and exit
 """
 
 import subprocess
@@ -66,6 +73,26 @@ def resolve_ref(ref: str) -> str:
         if result.returncode == 0 and result.stdout.strip():
             return result.stdout.strip()
     return ""
+
+
+def latest_release_tag() -> str:
+    """Highest v* tag by version order; '' when the clone has none."""
+    result = run(["git", "tag", "--list", "v*", "--sort=-v:refname"])
+    if result.returncode != 0:
+        return ""
+    for tag in result.stdout.split():
+        if tag[1:].replace(".", "").isdigit():
+            return tag
+    return ""
+
+
+def is_ancestor(older: str, newer: str) -> bool:
+    return run(["git", "merge-base", "--is-ancestor", older, newer]).returncode == 0
+
+
+def version_at(ref: str) -> str:
+    result = run(["git", "show", f"{ref}:VERSION"])
+    return result.stdout.strip() if result.returncode == 0 else ""
 
 
 def checkout_detached(commit: str) -> bool:
@@ -131,11 +158,58 @@ def show_changelog(since_version: str = None):
         print(content)
 
 
+def major_of(version: str) -> int:
+    head = version.split(".")[0]
+    return int(head) if head.isdigit() else 0
+
+
+def follow_release(args, current_version: str) -> None:
+    """Move the clone forward to the latest release tag (the default channel)."""
+    tag = latest_release_tag()
+    if not tag:
+        print("No release tags found; use --follow-main to track main.")
+        sys.exit(1)
+    target = resolve_ref(tag)
+    current = get_current_commit()
+    if current == target:
+        print(f"You are on the latest release ({tag}).")
+        return
+    if is_ancestor(target, current):
+        print(f"Clone is ahead of the latest release ({tag}); leaving it as is.")
+        print("It will move again once a newer release is tagged.")
+        return
+
+    remote_version = version_at(tag) or tag.lstrip("v")
+    print(f"Latest release:  {tag} (version {remote_version})")
+    is_major = major_of(remote_version) > major_of(current_version)
+    if is_major:
+        print()
+        print("MAJOR version update: read the migration notes in CHANGELOG.md first.")
+    print()
+    print("Run `python3 scripts/update.py --changelog` to see full release notes.")
+    if args.check:
+        print("(Run without --check to install the update.)")
+        return
+    if not args.yes:
+        answer = input(f"Move to {tag} now? [y/N] ").strip().lower()
+        if answer not in ("y", "yes"):
+            print("Update cancelled.")
+            return
+    if not checkout_detached(target):
+        print("Checkout failed. Run `git status` in the clone to inspect.")
+        sys.exit(1)
+    print(f"Updated to {tag}. Your project doc/ files are untouched.")
+    print("New scaffold files may exist in this release; running init_project.py")
+    print("again in a project creates any missing ones and never overwrites.")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Update the Number Pii Organisation Toolkit")
     parser.add_argument("--check",     action="store_true", help="Check for updates only, do not pull")
     parser.add_argument("--yes",       action="store_true", help="Update without prompting")
     parser.add_argument("--changelog", action="store_true", help="Show full changelog and exit")
+    parser.add_argument("--follow-main", action="store_true",
+                        help="Track the tip of main instead of the latest release tag")
     args = parser.parse_args()
 
     if args.changelog:
@@ -168,7 +242,7 @@ def main():
             print(f"ERROR: pinned ref '{pin_ref}' does not resolve; fix or remove {pin_file}.")
             sys.exit(1)
         if get_current_commit() == target:
-            print("Already on the pinned ref. Remove the pin file to follow main again.")
+            print("Already on the pinned ref. Remove the pin file to follow releases again.")
             return
         if args.check:
             print(f"(Run without --check to move the clone to {pin_ref}.)")
@@ -186,7 +260,11 @@ def main():
             sys.exit(1)
         return
 
-    # No pin: follow main. A previously pinned clone sits on a detached HEAD,
+    if not args.follow_main:
+        follow_release(args, current_version)
+        return
+
+    # --follow-main: a previously pinned or released clone sits on a detached HEAD,
     # so move back to main before the fast-forward pull.
     if on_detached_head():
         print("Clone is on a detached HEAD (previously pinned); returning to main.")

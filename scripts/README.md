@@ -270,7 +270,7 @@ from the project root; add `--write` to append the draft to
 
 ## `update.py`: Toolkit Updater
 
-Checks for updates to this toolkit and pulls the latest version safely.
+Moves this toolkit clone forward to the latest release tag.
 **Your project `doc/` files are never affected**; they live in your own project repo, not here.
 
 ### Usage
@@ -284,23 +284,28 @@ python3 scripts/update.py
 # Update without prompting
 python3 scripts/update.py --yes
 
+# Track the tip of main instead of release tags
+python3 scripts/update.py --follow-main
+
 # Show full changelog
 python3 scripts/update.py --changelog
 ```
 
 ### What It Does
-1. Runs `git fetch --tags` to check the remote for new commits
-2. Shows the current and latest version numbers
-3. Lists what changed (commit summaries)
-4. Warns if a **MAJOR** version bump requires reading migration notes
-5. Runs `git pull --ff-only` if confirmed
+1. Runs `git fetch --tags` and finds the highest `vX.Y.Z` tag
+2. Leaves the clone alone if it is already on or ahead of that release
+3. Warns if a **MAJOR** version bump requires reading migration notes
+4. Checks out the release tag (detached HEAD) if confirmed
+
+`main` can hold merged work that has not been released yet (changelog
+fragments waiting for a release PR), which is why clones follow tags.
 
 ### Pinning a version
 A `.toolkit-pin` file containing a git ref (usually a release tag such as
 `v3.15.0`) pins the clone to that ref. Put it in the consuming project root,
 next to the `organisation/` clone; a pin inside the clone works as a fallback.
 While pinned, `update.py` checks out the pinned ref instead of following
-`main`; delete the file and run `update.py` again to resume normal updates.
+releases; delete the file and run `update.py` again to resume normal updates.
 
 ### Version Types
 | Bump | Meaning | Safe to update? |
@@ -328,6 +333,29 @@ python3 scripts/update_all.py
 
 Register or remove a consumer by editing `consumers.json`; entries are a name
 plus a path relative to the registry's `base`.
+
+---
+
+## `release.py`: Release Builder
+
+Compiles the changelog fragments in `changes/` into a new `CHANGELOG.md`
+section, bumps `VERSION` and `.claude-plugin/plugin.json` by the highest `bump`
+any fragment declares, and deletes the fragments. Run it on a
+`chore/release-X.Y.Z` branch; see [changes/README.md](../changes/README.md).
+
+```bash
+python3 scripts/release.py --dry-run         # preview
+python3 scripts/release.py                   # write the release
+python3 scripts/release.py --version 4.0.0   # force a version
+```
+
+---
+
+## `check_version.py`: Version Sync Check
+
+Fails if `VERSION`, the latest `CHANGELOG.md` heading, and the plugin manifest
+disagree. With `--require-fragment <base>` (CI on every PR) it also fails when
+the diff against `<base>` adds no `changes/` fragment and is not a release.
 
 ---
 
