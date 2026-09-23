@@ -52,13 +52,25 @@ def summary(path: Path) -> str:
         return str(fm["summary"])
     text = path.read_text(encoding="utf-8", errors="replace")
     text = re.sub(r"\A---\n.*?\n---\n", "", text, flags=re.DOTALL)
+    text = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
+    candidates = []
     for block in re.split(r"\n\s*\n", text):
         block = block.strip()
-        if not block or block.startswith(("#", "<!--", "|", ">", "```", "---")):
+        if not block or block.startswith(("#", "<!--", "|", ">", "---")):
             continue
-        line = " ".join(block.split())
-        return line[:117] + "..." if len(line) > 120 else line
-    return ""
+        prose = not re.match(r"^([-*+]|\d+\.)\s|^_.*_$", block)
+        candidates.append((prose, block))
+    # Prefer the first prose paragraph; fall back to a list or metadata line.
+    candidates.sort(key=lambda c: not c[0])
+    if not candidates:
+        return ""
+    line = " ".join(candidates[0][1].split())
+    line = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)       # links: keep text
+    line = re.sub(r"\s*[\u2014\u2013]\s*", ": ", line, count=1)  # table text avoids dashes
+    line = re.sub(r"\s*[\u2014\u2013]\s*", ", ", line)
+    first = re.match(r"(.+?[.!?])(\s|$)", line)
+    line = first.group(1) if first and len(first.group(1)) >= 40 else line
+    return line[:117] + "..." if len(line) > 120 else line
 
 
 def markdown_files(root: Path) -> list[Path]:
@@ -112,6 +124,24 @@ def doc_orphans(root: Path) -> list[str]:
     return problems
 
 
+def missing_hub_mentions(root: Path) -> list[str]:
+    """Bare `NAME.md` names quoted in AGENTS.md or README.md that match no file.
+
+    Links are checked elsewhere; this catches references written as code, which
+    is how agent instructions usually name files."""
+    problems = []
+    known = {p.name for p in markdown_files(root)}
+    for hub in ("AGENTS.md", "README.md"):
+        path = root / hub
+        if not path.exists():
+            continue
+        text = re.sub(r"```.*?```", "", path.read_text(encoding="utf-8"), flags=re.DOTALL)
+        for name in sorted(set(re.findall(r"`([A-Za-z0-9_-]+\.md)`", text))):
+            if name not in known:
+                problems.append(f"{hub} names `{name}`, which does not exist")
+    return problems
+
+
 def root_orphans(root: Path) -> list[str]:
     hubs = " ".join((root / n).read_text(encoding="utf-8") for n in ("AGENTS.md", "README.md")
                     if (root / n).exists())
@@ -143,7 +173,7 @@ def cmd_check(args) -> int:
     if (root / "doc" / "README.md").exists():
         problems += doc_orphans(root)
     elif not (root / "doc").exists():
-        problems += root_orphans(root)
+        problems += root_orphans(root) + missing_hub_mentions(root)
     else:
         problems.append("doc/ has no README.md map; scaffold one with init_project.py")
     for p in problems:

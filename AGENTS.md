@@ -9,7 +9,7 @@ This repository is Number Pii's toolkit for AI-assisted delivery. Consuming
 projects clone it into a gitignored `organisation/` folder and use it for the
 following:
 - a project scaffold (`scripts/init_project.py`)
-- the standards every project inherits (`STANDARDS.md`)
+- the standards every project inherits (the managed block in `templates/agents-block.md`)
 - the virtual organisation of 53 roles (`Teams/`)
 - a library of skills (`Teams/skills/`)
 - supporting scripts
@@ -59,7 +59,7 @@ treated equally; none is flagship unless the founders say so.
 
 | Task | Start with |
 |---|---|
-| Change what consuming projects are told | `templates/agents-block.md` (the managed block), `STANDARDS.md` |
+| Change what consuming projects are told | `templates/agents-block.md`, the managed block every project's `AGENTS.md` carries |
 | Change the scaffold | `templates/`, `scripts/init_project.py`, `tests/test_init_project.py` |
 | Change the Initialize Protocol | `INITIALIZE.md` |
 | Change handover or doc conventions | `templates/`, `scripts/handover.py`, `scripts/docs.py` |
