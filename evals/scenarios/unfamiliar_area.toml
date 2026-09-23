@@ -1,0 +1,9 @@
+title = "Understand an unfamiliar part of the repository"
+prompt = """I'm new here. How are refunds calculated when a guest cancels, and who has to
+approve a change to those rules? Don't change anything, just explain."""
+allowed_paths = []
+
+[expect]
+no_changes = true
+docs_read = ["doc/specs/payments.md"]
+answer_contains = ["48", "24", "finance"]

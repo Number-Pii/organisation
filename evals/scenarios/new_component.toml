@@ -1,0 +1,11 @@
+title = "Create a new component"
+prompt = """We want to email guests before their booking. Add a new module
+`bookings/reminders.py` with `due_reminders(bookings, now, hours=24)` that returns
+the bookings starting within the next `hours` hours (inclusive), excluding any
+that have already started, sorted by start time. Include tests."""
+allowed_paths = ["bookings/reminders.py", "tests/**"]
+
+[expect]
+tests = true
+validation = true
+handover = true

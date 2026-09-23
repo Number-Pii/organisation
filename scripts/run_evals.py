@@ -7,11 +7,13 @@ under test loaded into the prompt. Results land in evals/results/<timestamp>/
 as one markdown file per task, holding both outputs and the task's rubric for
 judging. See evals/README.md for the method.
 
-Needs the `claude` CLI on PATH for live runs; --list works without it.
+Runs through the shared runner adapters in scripts/lib/agents.py, so any
+supported agent CLI works (`--runner claude` or `--runner codex`); --list
+works without either.
 
 Usage:
     python3 scripts/run_evals.py --list
-    python3 scripts/run_evals.py --domain backend
+    python3 scripts/run_evals.py --domain backend --runner codex
     python3 scripts/run_evals.py
 """
 
@@ -20,10 +22,11 @@ from __future__ import annotations
 import argparse
 import datetime
 import re
-import shutil
-import subprocess
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib import agents  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
@@ -64,15 +67,6 @@ def parse_tasks(path: Path) -> list[dict]:
     return [t for t in tasks if t["prompt"] and t["rubric"]]
 
 
-def run_claude(prompt: str) -> str:
-    result = subprocess.run(
-        ["claude", "-p", prompt], capture_output=True, text=True, timeout=600,
-    )
-    if result.returncode != 0:
-        return f"[run failed]\n{result.stderr.strip()}"
-    return result.stdout.strip()
-
-
 def skill_preamble(skill: str) -> str:
     skill_md = SKILLS_DIR / skill / "SKILL.md"
     if not skill_md.exists():
@@ -99,6 +93,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run the toolkit skill evals")
     parser.add_argument("--domain", help="Run one domain (a file under evals/tasks/)")
     parser.add_argument("--list", action="store_true", help="List tasks and exit")
+    parser.add_argument("--runner", default="claude", choices=agents.RUNNERS,
+                        help="Agent CLI to run the tasks with (default: claude)")
     args = parser.parse_args()
 
     task_files = sorted(TASKS_DIR.glob("*.md"))
@@ -114,19 +110,21 @@ def main() -> int:
             print(f"{domain}/{task['slug']}  (@{task['skill']}, {len(task['rubric'])} criteria)")
         return 0
 
-    if shutil.which("claude") is None:
-        sys.exit("ERROR: the `claude` CLI is not on PATH; live runs need it. "
+    if not agents.available(args.runner):
+        sys.exit(f"ERROR: the `{args.runner}` CLI is not on PATH; live runs need it. "
                  "Use --list to inspect tasks.")
 
     stamp = datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
-    out_dir = RESULTS_DIR / stamp
+    out_dir = RESULTS_DIR / f"{stamp}-skills-{args.runner}"
     out_dir.mkdir(parents=True)
 
     for domain, task in all_tasks:
         print(f"[{domain}/{task['slug']}] bare run...", flush=True)
-        bare = run_claude(task["prompt"])
+        stem = out_dir / "transcripts" / f"{domain}--{task['slug']}"
+        bare = agents.ask(args.runner, task["prompt"], transcript=stem.with_suffix(".bare.jsonl"))
         print(f"[{domain}/{task['slug']}] skill run...", flush=True)
-        skilled = run_claude(skill_preamble(task["skill"]) + task["prompt"])
+        skilled = agents.ask(args.runner, skill_preamble(task["skill"]) + task["prompt"],
+                             transcript=stem.with_suffix(".skill.jsonl"))
         (out_dir / f"{domain}--{task['slug']}.md").write_text(
             result_doc(task, bare, skilled), encoding="utf-8")
 
