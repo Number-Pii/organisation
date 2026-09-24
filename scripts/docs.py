@@ -36,7 +36,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.frontmatter import parse_frontmatter  # noqa: E402
 
-LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+# Link targets may hold one level of parentheses, e.g. Next.js route groups
+# such as src/app/(shop)/page.tsx.
+LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(((?:[^()\s]|\([^()\s]*\))+)(?:\s+\"[^\"]*\")?\)")
+# The toolkit clone is gitignored and absent in cloud sessions and worktrees, so
+# a link into it is not a broken project link when the folder is missing.
+VENDORED = "organisation"
 SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "dist", "build", ".next", "__pycache__",
              "organisation"}
 # Vendored or fixture content, and templates whose links are written relative to
@@ -82,11 +87,16 @@ def markdown_files(root: Path) -> list[Path]:
     return [p for p in root.rglob("*.md") if not SKIP_DIRS & set(p.relative_to(root).parts)]
 
 
+def is_archive(rel: str) -> bool:
+    """Archived history keeps its original links, so they are not checked."""
+    return any(part == "archive" or part.startswith("_archive") for part in rel.split("/")[:-1])
+
+
 def broken_links(root: Path, files: list[Path]) -> list[str]:
     problems = []
     for path in files:
         rel = path.relative_to(root).as_posix()
-        if rel.startswith(EXCLUDED_PREFIXES):
+        if rel.startswith(EXCLUDED_PREFIXES) or is_archive(rel):
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         text = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
@@ -97,8 +107,12 @@ def broken_links(root: Path, files: list[Path]) -> list[str]:
             target_path = target.split("#", 1)[0]
             if not target_path:
                 continue
-            if not (path.parent / target_path).exists():
-                problems.append(f"{rel}: broken link to {target}")
+            resolved = path.parent / target_path
+            if resolved.exists():
+                continue
+            if VENDORED in Path(target_path).parts and not (root / VENDORED).is_dir():
+                continue
+            problems.append(f"{rel}: broken link to {target}")
     return problems
 
 
